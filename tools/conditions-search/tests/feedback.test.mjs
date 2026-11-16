@@ -4,7 +4,7 @@
 // by index.html's own card(), run here on every condition of the real data (data/conditions.json). The link to the
 // card in the email opens the page on that card: the page script runs here on the real data with the link's hash,
 // and the card must be rendered, marked and scrolled to.
-// Run: node --test tools/conditions-search/tests/
+// Run: node --test tools/conditions-search/tests/*.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";

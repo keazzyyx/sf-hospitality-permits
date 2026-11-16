@@ -1,7 +1,7 @@
 // Vercel Web Analytics on both pages (index.html, coverage.html): the plain-HTML snippet, the window.va queue
 // before it, served by the site itself (/_vercel/insights/script.js), and nothing else that tracks. The queue's
 // beforeSend takes the part of the address after "#" (the search typed) off every page view.
-// Run: node --test tools/conditions-search/tests/
+// Run: node --test tools/conditions-search/tests/*.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";

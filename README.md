@@ -203,7 +203,7 @@ The page and its data are in the repository, so you can open it straight away:
 
 ```bash
 python3 -m http.server 8765 --bind 127.0.0.1 --directory tools/conditions-search   # http://127.0.0.1:8765/
-node --test tools/conditions-search/tests/                                          # or: make test-conditions
+node --test tools/conditions-search/tests/*.test.mjs                               # or: make test-conditions
 ```
 
 The page's PDF links point at a local `pdf/` folder that is not in the repository. Both pages load Vercel Web

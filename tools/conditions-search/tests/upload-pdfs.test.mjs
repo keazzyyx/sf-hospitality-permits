@@ -1,6 +1,6 @@
 // Tests for upload-pdfs.mjs (the motion PDFs of the public site, to its Vercel Blob store). No network: put and
 // list are fakes, the token is a made-up string, and the PDFs are small files in a temp folder.
-// Run: node --test tools/conditions-search/tests/   (or `make test-conditions`)
+// Run: node --test tools/conditions-search/tests/*.test.mjs   (or `make test-conditions`)
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";

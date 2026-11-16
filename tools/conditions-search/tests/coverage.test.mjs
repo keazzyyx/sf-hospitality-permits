@@ -1,6 +1,6 @@
 // Tests for the coverage note (coverage.js), against the real data (data/conditions.json), the real page
 // (index.html), the detail page (coverage.html) and the README's Coverage section.
-// Run: node --test tools/conditions-search/tests/   (or `make test-conditions`)
+// Run: node --test tools/conditions-search/tests/*.test.mjs   (or `make test-conditions`)
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";

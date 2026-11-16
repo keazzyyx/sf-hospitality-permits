@@ -37,7 +37,7 @@ test-api:
 	cd $(API_DIR) && . .venv/bin/activate && pytest -q
 
 test-conditions:   ## the local conditions search page: search rules and the built data (node --test)
-	node --test tools/conditions-search/tests/
+	node --test tools/conditions-search/tests/*.test.mjs
 
 test-web:
 	pnpm --filter web lint && pnpm --filter web typecheck && pnpm --filter web build

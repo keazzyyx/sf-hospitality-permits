@@ -1,5 +1,5 @@
 // Tests for the conditions search page, against the real data (data/conditions.json) and the real page
-// (index.html). Run: node --test tools/conditions-search/tests/   (or `make test-conditions`)
+// (index.html). Run: node --test tools/conditions-search/tests/*.test.mjs   (or `make test-conditions`)
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";

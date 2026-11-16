@@ -1,6 +1,6 @@
 // Page links on the real data (data/conditions.json): an untitled older condition, stored as "Condition: text"
 // under the generic title "Condition" that the motion does not print, links to its page as exact ("at page"), not
-// "near page", when its opening words are on that page. Run: node --test tools/conditions-search/tests/
+// "near page", when its opening words are on that page. Run: node --test tools/conditions-search/tests/*.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
