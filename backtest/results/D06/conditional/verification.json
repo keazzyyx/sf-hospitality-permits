@@ -1,0 +1,457 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 28,
+  "supported": 5,
+  "trimmed": 9,
+  "downgraded": 6,
+  "dropped": 8
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An ABC Type 48 referral for a bar at this exact address was denied by Planning on September 8, 2022—two months ago—because Planning Code Section 202.12 requires a Conditional Use Authorization to convert a laundromat to any other use.",
+   "verdict": "partially_supported",
+   "supported_text": "An ABC Type 48 referral for a bar at this exact address was denied by Planning on September 8, 2022 because Planning Code Section 202.12 requires a Conditional Use Authorization to convert a laundromat to any other use.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An ABC Type 48 referral for a bar at this exact address was denied by Planning on September 8, 2022 because Planning Code Section 202.12 requires a Conditional Use Authorization to convert a laundromat to any other use.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-008099MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning Code Section 202.12, in effect from December 20, 2021 to December 20, 2024, requires a Conditional Use Authorization for any change of use or demolition of a laundromat, overriding the RC-4 principal-permitted status of bar use.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning Code Section 202.12 requires a Conditional Use Authorization for any change of use or demolition of a laundromat, overriding the RC-4 principal-permitted status of bar use.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning Code Section 202.12 requires a Conditional Use Authorization for any change of use or demolition of a laundromat, overriding the RC-4 principal-permitted status of bar use.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "zoning:RC-4"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "All bar approvals on the Bush Street corridor in RC-4 within the last decade (801, 845, 895, 925 Bush) were for continuation or transfer of existing bar uses, not new conversions from other use types.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "All bar approvals on the Bush Street corridor in RC-4 within the last decade (801, 845, 895, 925 Bush) were for continuation or transfer of existing bar uses, not new conversions from other use types.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Only 925 Bush states continuation/transfer; 801 and 895 Bush records don't mention this; 845 Bush is from 2003, outside the decade."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The only Conditional Use Authorization for a bar within 1,000 ft in the last decade (2013.0508C at 532–536 Sutter St in C-3-R) was filed April 24, 2013, and withdrawn April 2, 2015, after 708 days.",
+   "verdict": "partially_supported",
+   "supported_text": "2013.0508C at 532–536 Sutter St in C-3-R was filed April 24, 2013, and withdrawn April 2, 2015, after 708 days.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The only Conditional Use Authorization for a bar within 1,000 ft in the last decade (2013.0508C at 532–536 Sutter St in C-3-R) was filed April 24, 2013, and withdrawn April 2, 2015, after 708 days.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows one case but does not establish it is the only one within that distance and timeframe."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required because Planning Code Section 202.12 mandates discretionary approval for any change of use or demolition of a laundromat, even though bar use is principally permitted at ground floor in RC-4.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Conditional Use Authorization is required because Planning Code Section 202.12 mandates discretionary approval for any change of use or demolition of a laundromat, even though bar use is principally permitted at ground floor in RC-4.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "zoning:RC-4",
+    "app:datasf_planning:2021-009472MIS",
+    "app:datasf_planning:MB0300016",
+    "app:datasf_planning:MB1401206",
+    "app:datasf_planning:2018-016962MIS",
+    "app:datasf_planning:2013.0508C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "ABC will not issue a licence when Planning recommends denial on an agency referral; the September 2022 denial means ABC will not process an application until the operator obtains a CUA approving the laundromat conversion.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "ABC will not issue a licence when Planning recommends denial on an agency referral; the September 2022 denial means ABC will not process an application until the operator obtains a CUA approving the laundromat conversion.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows Planning's September 2022 denial and CUA requirement for laundromat conversion, but does not state what ABC will or will not do."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "92 on-sale ABC licences are on file within 1,000 ft of this address, and the density count flags undue concentration, which may trigger a Public Convenience or Necessity finding and add 1–3 months to ABC processing.",
+   "verdict": "partially_supported",
+   "supported_text": "92 on-sale ABC licences are on file within 1,000 ft of this address, and the density count flags undue concentration.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "92 on-sale ABC licences are on file within 1,000 ft of this address, and the density count flags undue concentration.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "stat:density"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "An ABC licence is needed but the type and process cannot be established because the description does not specify beer-and-wine or spirits, or whether a new licence or a transfer is planned.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "An ABC licence is needed but the type and process cannot be established because the description does not specify beer-and-wine or spirits, or whether a new licence or a transfer is planned.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "stat:density"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing under the California Retail Food Code and San Francisco Health Code Article 8.",
+   "verdict": "partially_supported",
+   "supported_text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is referred to Planning for review, but this referral does not replace the Conditional Use Authorization required by Section 202.12; it is a separate administrative check.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is referred to Planning for review, but this referral does not replace the Conditional Use Authorization required by Section 202.12; it is a separate administrative check.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the health permit process but does not mention Planning referral, Conditional Use Authorization, or Section 202.12."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is allowed: it is issued after plan check and inspection without a hearing, as required for any food or drink business.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A health permit to operate is allowed: it is issued after plan check and inspection without a hearing, as required for any food or drink business.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Laundromat to bar is a change of use under Planning Code Section 102, as stated in the September 2022 agency referral denial at this address.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Laundromat to bar is a change of use under Planning Code Section 102, as stated in the September 2022 agency referral denial at this address.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record cites Planning Code Section 202.12, not Section 102, regarding the laundromat change of use."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued per Planning Code Section 175 and San Francisco Building Code Section 106A.1.",
+   "verdict": "partially_supported",
+   "supported_text": "A change of use needs a building permit.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A change of use needs a building permit.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit",
+    "zoning:RC-4"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "The building permit application is referred to Planning for review per Planning Code Section 175(a), which will confirm that the CUA has been granted before approving the permit.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The building permit application is referred to Planning for review per Planning Code Section 175(a), which will confirm that the CUA has been granted before approving the permit.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The catalog entry does not mention the Planning referral, Planning Code Section 175(a), or the CUA confirmation process."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required for tenant improvements, and the permit must conform to the Planning Code, meaning it cannot be issued until the CUA is granted.",
+   "verdict": "partially_supported",
+   "supported_text": "A building permit with change of use is required, and the permit must conform to the Planning Code.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A building permit with change of use is required, and the permit must conform to the Planning Code.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "zoning:RC-4",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to close by 12 midnight or 1 am, consistent with the description that the bar will not close after midnight. Basis: The description states the bar will not close after midnight. Nearby bar approvals in RC-4 at 801, 845 and 895 Bush were for existing uses with no new hour restrictions extracted from the records, but discretionary approvals for new bars in mixed-use corridors typically impose closing-hour conditions to protect residential uses above or adjacent.",
+   "verdict": "partially_supported",
+   "supported_text": "Basis: Nearby bar approvals in RC-4 at 801, 845 and 895 Bush had no new hour restrictions extracted from the records.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show three bar approvals with no extracted hour restrictions but don't state they were existing uses or that new bars typically get closing-hour conditions."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Good-neighbor policy requiring the operator to respond to complaints, post a contact number and meet periodically with neighbors or a merchant association. Basis: Conditional Use Authorizations for bars and nightlife uses in residential-commercial districts routinely include good-neighbor commitments, especially where an existing business (such as a laundromat) serving the neighborhood is being replaced. Planning Code Section 303(c) findings require that the use will not be detrimental to nearby properties.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record describes the CUA process but does not mention good-neighbor policies, replacing existing businesses, or Planning Code Section 303(c) findings."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Sound limits or acoustic insulation to mitigate noise impact on upstairs residential units, if any exist above the space. Basis: Bars in mixed-use buildings with residential units above or adjacent are commonly conditioned to install soundproofing, limit amplified music volume, or restrict outdoor queuing. The Group Housing Special Use District overlay at this address (Planning Code Section 249.93) signals residential density nearby.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sound limits or acoustic insulation to mitigate noise impact on upstairs residential units, if any exist above the space. Basis: The Group Housing Special Use District overlay at this address (Planning Code Section 249.93).",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows the overlay exists but does not state what conditions are common for bars or what the overlay signals about residential density."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Security plan including trained staff, ID checks and incident log if the bar will serve spirits or stay open past 10 pm. Basis: The high density of alcohol uses in the area (24 on-sale licences within 500 ft, 92 within 1,000 ft) and ABC's undue-concentration flag suggest that both Planning and ABC will scrutinize security measures. Bars serving spirits (Types 47/48) typically commit to a security plan at the CUA hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Security plan including trained staff, ID checks and incident log if the bar will serve spirits or stay open past 10 pm. Basis: 24 on-sale licences within 500 ft, 92 within 1,000 ft, and ABC's undue-concentration flag.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Security plan including trained staff, ID checks and incident log if the bar will serve spirits or stay open past 10 pm. Basis: 24 on-sale licences within 500 ft, 92 within 1,000 ft, and ABC's undue-concentration flag.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "stat:density"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Obtain written confirmation from SF Planning that Section 202.12 requires a CUA for this laundromat conversion. What to say: Request a pre-application meeting or zoning letter from the SF Planning Department, citing the September 8, 2022 agency referral denial at 779 Bush St (case 2022-008099MIS) and asking whether a Conditional Use Authorization under Planning Code Section 202.12 is still required for a laundromat-to-bar conversion, and whether any other discretionary approvals apply. Bring the project description, floor plan and photographs of the existing space. Do not file or pay for any other application until you have this answer in writing.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Obtain written confirmation from SF Planning that Section 202.12 requires a CUA for this laundromat conversion. What to say: Request a pre-application meeting or zoning letter from the SF Planning Department, citing the September 8, 2022 agency referral denial at 779 Bush St (case 2022-008099MIS) and asking whether a Conditional Use Authorization under Planning Code Section 202.12 is still required for a laundromat-to-bar conversion, and whether any other discretionary approvals apply. Bring the project description, floor plan and photographs of the existing space. Do not file or pay for any other application until you have this answer in writing.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "zoning:RC-4"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: File Conditional Use Authorization application with SF Planning, including environmental review and neighborhood notification. What to say: Submit the CUA application (Planning Code Section 303) with required materials: project description, floor plans, elevation drawings showing the storefront, menu, proposed hours, security plan, good-neighbor commitments (contact number, complaint response protocol, periodic meetings with neighbors), and any acoustic or operational measures to mitigate noise. The application must explain why the laundromat conversion serves the public necessity and will not be detrimental to nearby properties (Section 303(c) findings). Schedule and conduct the required pre-application community meeting within 300 feet. Expect Planning to route the application for environmental review (likely a categorical exemption) and to post 300-foot mailed notice before the Planning Commission hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File Conditional Use Authorization application with SF Planning. Expect a Planning Commission hearing with 300-foot mailed notice before the hearing.",
+   "cut_problem": "keeps 'post 300-foot mailed notice', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm CUA filing with Planning Commission hearing and 300-foot mailed notice but do not detail the specific materials, code sections, findings, pre-application meeting, or environmental review routing."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Attend Planning Commission hearing and obtain approval of the Conditional Use Authorization. What to say: Present the project at the Commission hearing, emphasizing the quality and design of the bar, the good-neighbor commitments, security and noise-mitigation measures, and the public benefit of activating the vacant laundromat space. Be prepared to accept conditions on hours (closing by midnight or 1 am), sound limits, security staffing, and possibly a restriction to beer-and-wine service if Commissioners express concern about the high alcohol-license density in the area (24 on-sale licenses within 500 ft). If the Commission approves with conditions, the approval becomes final after a 30-day appeal period unless an appeal is filed.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Attend Planning Commission hearing and obtain approval of the Conditional Use Authorization. What to say: Present the project at the Commission hearing, emphasizing the quality and design of the bar, the good-neighbor commitments, security and noise-mitigation measures, and the public benefit of activating the vacant laundromat space. Be prepared to accept conditions on hours (closing by midnight or 1 am), sound limits, security staffing, and possibly a restriction to beer-and-wine service if Commissioners express concern about the high alcohol-license density in the area. If the Commission approves with conditions, the approval becomes final after a 30-day appeal period unless an appeal is filed.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms the Planning Commission hearing and 30-day appeal period but does not state the specific number of 24 on-sale licenses within 500 ft."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Apply for ABC licence (type to be determined) after the CUA is final and unappealed. What to say: Submit the ABC application (original or transfer, depending on your plan) with the signed lease, approved CUA decision, California seller's permit, entity registration, and proof that the business account is registered with SF Treasurer & Tax Collector. ABC will refer the application to SF Planning and SFPD for review; Planning will approve it based on the CUA. If the census tract is designated undue concentration, request a Public Convenience or Necessity letter from the SF Board of Supervisors or Planning at the same time you apply to ABC, explaining the community benefit and citing the CUA findings. Post the ABC notice at the premises for 30 days and expect 55–65 days for an unprotested beer-and-wine licence, or 90–180 days (plus escrow time) for a transferred spirits licence.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show Planning reviews ABC referrals and undue concentration exists, but do not state the application procedures, required documents, review processes, or timelines described."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: File building permit application with tenant-improvement plans, DPH plan check and change-of-use documentation. What to say: Submit the building permit application to SF Department of Building Inspection with architectural plans stamped by a licensed architect, showing the bar layout, kitchen (limited cooking equipment), restrooms, ADA access, exit paths and occupancy calculation. Route the application to DPH for plan check of food-service equipment, finishes and menu. Attach the approved CUA and state that the use has been authorized by the Planning Commission. DBI will refer the permit to Planning per Section 175(a); Planning will confirm that it conforms to the CUA conditions before issuing the permit. Schedule electrical, plumbing and mechanical permits with licensed subcontractors, and coordinate the grease-interceptor installation with SFPUC under the FOG ordinance.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File building permit application with tenant-improvement plans, DPH plan check and change-of-use documentation. What to say: Submit the building permit application to SF Department of Building Inspection with architectural plans stamped by a licensed architect, showing the bar layout, kitchen (limited cooking equipment), restrooms, ADA access, exit paths and occupancy calculation. Route the application to DPH for plan check of food-service equipment, finishes and menu. Attach the approved CUA and state that the use has been authorized by the Planning Commission. Schedule electrical, plumbing and mechanical permits with licensed subcontractors, and coordinate the grease-interceptor installation with SFPUC under the FOG ordinance.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not mention Section 175(a), the DBI-to-Planning referral, or Planning's CUA conformance confirmation."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Apply for health permit to operate after DPH plan check is approved and construction is substantially complete. What to say: Submit the health permit application online with the Business Account Number (BAN), Location ID and federal EIN at least one month before the planned opening. Confirm that a certified food safety manager is on staff (ServSafe or equivalent) and that all employees will obtain California food handler cards within 30 days of hire. Schedule the pre-opening inspection with DPH at about 80% construction complete to catch any issues early, then schedule the final inspection for after all equipment, finishes and hot water are in place. The permit is issued after the final inspection passes.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Apply for health permit to operate after DPH plan check is approved and construction is substantially complete. What to say: Submit the health permit application online with the Business Account Number (BAN), Location ID and federal EIN at least one month before the planned opening. Confirm that a certified food safety manager is on staff (ServSafe or equivalent) and that all employees will obtain California food handler cards within 30 days of hire. Schedule the pre-opening inspection with DPH at about 80% construction complete to catch any issues early, then schedule the final inspection for after all equipment, finishes and hot water are in place. The permit is issued after the final inspection passes.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Obtain sign permit for exterior business signage. What to say: Submit sign permit application to SF Planning and DBI with drawings and dimensions of the proposed exterior sign and any illuminated elements. Planning reviews for size and illumination compliance with the RC-4 district rules. If the building is in a historic district or is an Article 10/11 landmark, the review will take longer. File this in parallel with the building permit to avoid delaying the opening.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain sign permit for exterior business signage. What to say: Submit sign permit application to SF Planning and DBI with drawings and dimensions of the proposed exterior sign and any illuminated elements. Planning reviews for size and illumination compliance. If the building is in a historic district or is an Article 10/11 landmark, the review will take longer.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not specify RC-4 district rules or state it can be filed in parallel with building permit."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Complete all business formation, registration, tax and insurance filings before opening. What to say: Form the legal entity (LLC or corporation) with the California Secretary of State; obtain the federal EIN from the IRS online; register for a California seller's permit with CDTFA; register as an employer with EDD; obtain workers' compensation insurance; register the business with SF Treasurer & Tax Collector and file a fictitious business name statement with the County Clerk if the public name differs from the entity name. These are prerequisites for the ABC application, the building permit and the health permit, so complete them early. Also register for RBS training through the ABC portal and ensure every alcohol server and manager completes certification within 60 days of hire. Subscribe to ASCAP and BMI licences for recorded music before opening.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Complete all business formation, registration, tax and insurance filings before opening. What to say: Form the legal entity (LLC or corporation) with the California Secretary of State; obtain the federal EIN from the IRS online; register for a California seller's permit with CDTFA; register as an employer with EDD; obtain workers' compensation insurance; register the business with SF Treasurer & Tax Collector and file a fictitious business name statement with the County Clerk if the public name differs from the entity name. Also register for RBS training through the ABC portal and ensure every alcohol server and manager completes certification within 60 days of hire. Subscribe to ASCAP and BMI licences for recorded music before opening.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Complete all business formation, registration, tax and insurance filings before opening. What to say: Form the legal entity (LLC or corporation) with the California Secretary of State; obtain the federal EIN from the IRS online; register for a California seller's permit with CDTFA; register as an employer with EDD; obtain workers' compensation insurance; register the business with SF Treasurer & Tax Collector and file a fictitious business name statement with the County Clerk if the public name differs from the entity name. Also register for RBS training through the ABC portal and ensure every alcohol server and manager completes certification within 60 days of hire. Subscribe to ASCAP and BMI licences for recorded music before opening.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein",
+    "catalog:ca.sellers_permit",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.workers_comp_insurance",
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name",
+    "catalog:ca.rbs_training",
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day and cost ranges are for the Conditional Use Authorization, which is the critical-path approval; they are times and costs to approval when the CUA is granted. The catalog shows 120–300 days and $3,100–$15,000 for a CUA, with higher fees when construction valuation is high. The comparable CUA at 532–536 Sutter (2013.0508C) took 708 days from filing to withdrawal, illustrating the timeline and uncertainty of a discretionary hearing. After the CUA is approved and final, the ABC licence (type not yet determined) adds 60–240 days depending on type and undue-concentration status, the building permit adds 14–120 days, and the health permit adds 14–45 days; these approvals can overlap. Total timeline from CUA filing to opening is likely 10–18 months if the CUA is approved, or longer if appealed or denied. Business registration, entity formation, seller's permit and other administrative filings add minimal time (1–35 days) and $125–1,070 in government fees, and should be completed early.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The catalog shows 120–300 days and $3,100–$15,000 for a CUA, with higher fees when construction valuation is high. The comparable CUA at 532–536 Sutter (2013.0508C) took 708 days from filing to withdrawal.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The catalog shows 120–300 days and $3,100–$15,000 for a CUA, with higher fees when construction valuation is high. The comparable CUA at 532–536 Sutter (2013.0508C) took 708 days from filing to withdrawal.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.conditional_use_authorization",
+    "app:datasf_planning:2013.0508C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  }
+ ]
+}

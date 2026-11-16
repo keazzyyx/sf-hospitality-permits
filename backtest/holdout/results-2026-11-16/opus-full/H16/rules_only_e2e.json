@@ -1,0 +1,1401 @@
+{
+ "profile": {
+  "business_type": "restaurant",
+  "business_name": null,
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": 1882,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": false,
+  "alcohol_type": "none",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": true,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": null,
+  "licences_held": [],
+  "alcohol_transaction": null,
+  "formula_retail": true,
+  "no_alcohol_answer_over_description": false,
+  "no_alcohol_stated": false,
+  "outdoor_alcohol_answer_over_description": false,
+  "part_of_chain": true,
+  "other_locations": 11,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "retail",
+   "vacant"
+  ],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [
+   "first"
+  ],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "existing_occupancy_group": null,
+  "target_open_date": null,
+  "intake_cleared": {},
+  "intake_answered": [
+   "formula_retail",
+   "other_locations",
+   "part_of_chain",
+   "square_feet"
+  ],
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NCD-INNER SUNSET",
+   "permission": "principal",
+   "permission_label": "Permitted",
+   "existing_use": null,
+   "change_of_use": "yes",
+   "change_of_use_label": "Change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCD-INNER SUNSET: a Restaurant on the first story is principally permitted (Planning Code § 730, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 730",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-INNER SUNSET"
+     ]
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 730, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 730",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-INNER SUNSET"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1210 9th Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Retail to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-11-05 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 730",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25749",
+     "citations": [
+      "overlay:static:sf:nc_ncd_inner_sunset",
+      "zoning:NCD-INNER SUNSET"
+     ]
+    }
+   ],
+   "rules_date": "2024-11-05",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.cell",
+       "text": "Zoning district NCD-INNER SUNSET: a Restaurant on the first story is principally permitted (Planning Code § 730, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 730",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-INNER SUNSET"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCD-INNER SUNSET: formula retail is a conditional use (Planning Code § 730, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 730",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-INNER SUNSET"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+       "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.below",
+       "text": "Zoning district NCD-INNER SUNSET: a use below 2,500 square feet is principally permitted, and 1,882 square feet is below it (Planning Code § 730, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 730",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-INNER SUNSET"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 730, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 730",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-INNER SUNSET"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "yes",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1210 9th Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Retail to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 5 November 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district NCD-INNER SUNSET: a Restaurant on the first story is principally permitted (Planning Code § 730, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 730",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-INNER SUNSET: formula retail is a conditional use (Planning Code § 730, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 730",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+      "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+      "citations": []
+     },
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district NCD-INNER SUNSET: a use below 2,500 square feet is principally permitted, and 1,882 square feet is below it (Planning Code § 730, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 730",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 730, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 730",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1210 9th Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Retail to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: formula retail: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit with change of use",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1210 9th Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Retail to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "A Conditional Use Authorization is needed (formula retail). Of the 3 approvals this concept needs: 2 further review (zoning and use, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate; Building permit with change of use",
+  "open_questions": [],
+  "headline_findings": [
+   {
+    "kind": "conditional",
+    "sentence": "The concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What asks for one: formula retail.",
+    "area": "zoning_use",
+    "status": "further_review",
+    "trigger": "T5",
+    "trigger_label": "formula retail",
+    "definite": true,
+    "condition": null,
+    "missing_inputs": [],
+    "code_section": "Planning Code § 730",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-INNER SUNSET"
+    ],
+    "basis": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-INNER SUNSET: formula retail is a conditional use (Planning Code § 730, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 730",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-730.-inner-sunset-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-INNER SUNSET"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "records": {
+  "zoning": "NCD-INNER SUNSET",
+  "overlays": [
+   "Inner Sunset Neighborhood Commercial District",
+   "Family and Senior Housing Opportunity SUD",
+   "NCD-INNER SUNSET"
+  ],
+  "tract": "302.02",
+  "site_history": {
+   "matched_by": "Parcel 1742/051 or the address 1210 9th Ave",
+   "total": 4,
+   "by_kind": {
+    "use_decision": 1,
+    "agency_referral": 2,
+    "licence": 1
+   },
+   "entries": [
+    {
+     "application_id": "datasf_planning:2017-005936MIS",
+     "citation_id": "app:datasf_planning:2017-005936MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "ABC - Type 47 ABC Type -47 license permitted in conjunction with continued restaurant use per PC Section 730.44 and 790.91. Must operate as a bona fide eating place per PC Section 790.142.",
+     "address": "1200 09TH AVE 94122",
+     "filed_at": "2017-05-11",
+     "decided_at": "2017-05-16",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2017-005936MIS",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "abc:452118",
+     "citation_id": "app:abc:452118",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 47 – On-Sale General - Eating Place",
+     "description": "PACIFIC CATCH — Type 47 – On-Sale General - Eating Place (ACTIVE on 2024-11-05)",
+     "address": "1200 9TH AVE, SAN FRANCISCO, CA 94122",
+     "filed_at": null,
+     "decided_at": "2007-07-19",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=452118",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:2003.0032C",
+     "citation_id": "app:datasf_planning:2003.0032C",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Conditional Use Authorization",
+     "description": "Other Entertainment in Inner Sunset NCD",
+     "address": "1200 09TH AV, SAN FRANCISCO, CA",
+     "filed_at": "2003-01-14",
+     "decided_at": "2003-03-27",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2003.0032C",
+     "use_types": [],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:MB0000176",
+     "citation_id": "app:datasf_planning:MB0000176",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "ABC License Type 41 is permitted for a full-service restaurant in the NC-2 District per Planning Code Section 711.42/790.92 -",
+     "address": "1200 09TH AV, SAN FRANCISCO, CA",
+     "filed_at": "2000-02-10",
+     "decided_at": "2000-02-29",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0000176",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 20,
+   "bars": 2,
+   "abc_on_sale_licenses": 12,
+   "abc_licenses_1000ft": 33,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 2,
+   "approved_with_conditions": 3,
+   "denied": 0,
+   "withdrawn": 0,
+   "total": 5,
+   "window_years": 5,
+   "scope": "N = 5 dated decisions within 1,000 ft, last 5 years; too few for a rate; left out: 37 permits and licences, 232 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 37,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 232,
+   "counted": [
+    {
+     "source": "datasf_planning",
+     "source_id": "2014-001978MIS",
+     "source_url": "https://sfplanninggis.org/pim?search=2014-001978MIS",
+     "fetched_at": "2024-11-05T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2014-001978MIS",
+     "kind": "planning_other",
+     "permit_type": "Miscellaneous Permit",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Restaurant (Lale) - Formerly Villa Romana, continuation of exisitng restaurant use",
+     "address": "731 IRVING ST 94122",
+     "lat": 37.763814466069306,
+     "lng": -122.46580134960675,
+     "parcel": "1763/040",
+     "zoning_district": "NCD-INNER SUNSET",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2014-11-21",
+     "decided_at": "2022-03-01",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-INNER SUNSET",
+      "planner": "Laura Ajello",
+      "premises": true,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2022-03-01T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "MIS",
+      "zoning_name": "INNER SUNSET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Inner Sunset",
+      "project_name": "731 Irving Street"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2014-001980MIS",
+     "source_url": "https://sfplanninggis.org/pim?search=2014-001980MIS",
+     "fetched_at": "2024-11-05T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2014-001980MIS",
+     "kind": "planning_other",
+     "permit_type": "Miscellaneous Permit",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Restaurant (May Lee Restaurant) - currently operating as May Lee Restaurant, continuation of existing restaurant use",
+     "address": "1256 07TH AVE 94122",
+     "lat": 37.76486563010229,
+     "lng": -122.46396615617027,
+     "parcel": "1755/021",
+     "zoning_district": "RTO-C",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2014-11-21",
+     "decided_at": "2022-03-01",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "RTO-C",
+      "planner": "Laura Ajello",
+      "premises": true,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2022-03-01T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "MIS",
+      "zoning_name": "RESIDENTIAL TRANSIT ORIENTED DISTRICT - C",
+      "hearing_date": null,
+      "neighborhood": "Inner Sunset",
+      "project_name": "1256 7th Avenue"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2019-006316CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-006316CUA",
+     "fetched_at": "2024-11-05T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194646526050Z-y673-d69b-p0003.json",
+     "id": "datasf_planning:2019-006316CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization application to establish a formula retail use for a limited-restaurant d.b.a. Yi Fang Taiwan Fruit Tea.",
+     "address": "645 IRVING ST 94122",
+     "lat": 37.76385101563421,
+     "lng": -122.46496878304606,
+     "parcel": "1762/044",
+     "zoning_district": "NCD-INNER SUNSET",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2019-05-03",
+     "decided_at": "2020-02-06",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Signage: Any signs on the property shall be made to comply with the requirements of Article 6 of the Planning Code for signage.",
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The. Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three- year period. (standard)",
+      "Expiration and Renewal: Should a Buildu1g or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal. challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. For iraformntion about compliance, contact Code Enforcement, Planning Department at 415-575-6863, wwzo.s - pinntairtL'.org (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicab]e provisions of City Codes in effect at the time of such approval. For ifTformation about compliance, contact Code Enforcement, Planning Department at 415-575-6863, wzvw.s - planriin~org SAN FRANCISCO 1 7 (standard)",
+      "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public W orks Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within cone-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+      "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+      "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+      "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Worl<s. W orks at 415-554-.5810, http:Us~zu.or~. (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety but shall in no case be directed so as to constitute ~ nuisance to any surrounding.property. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this M otion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. SAN FRANCISCO ~ gP LANNING DEPARTMENT (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+      "Monitoring: The Project requires monitoring of the conditions of approval in this Motion. The Project Sponsor or the subsequent responsible parties for the Project sI1a11 pay fees as established under Planning Code Section 351(e) (1) and work with the Planning Department for information about compliance. (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-INNER SUNSET",
+      "planner": "Sharon Young",
+      "premises": true,
+      "parent_id": "2019-006316PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2020-02-06T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={CB3D96DA-4916-4557-9F49-861CD021B44A}&fileGUID={4B23DA96-6C43-4B28-B7E1-8EDE4F6E74B0}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "INNER SUNSET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Inner Sunset",
+      "project_name": "645 IRVING ST",
+      "applicant_org": "Yosemitea LLC",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Signage: Any signs on the property shall be made to comply with the requirements of Article 6 of the Planning Code for signage.",
+        "title": "Signage",
+        "number": "6",
+        "standard": false,
+        "categories": [
+         "signage"
+        ]
+       },
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The. Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three- year period.",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Buildu1g or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal. challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. For iraformntion about compliance, contact Code Enforcement, Planning Department at 415-575-6863, wwzo.s - pinntairtL'.org",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicab]e provisions of City Codes in effect at the time of such approval. For ifTformation about compliance, contact Code Enforcement, Planning Department at 415-575-6863, wzvw.s - planriin~org SAN FRANCISCO 1 7",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public W orks Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within cone-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code.",
+        "title": "Eating and Drinking Uses (A)",
+        "number": "7A",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance.",
+        "title": "Eating and Drinking Uses (B)",
+        "number": "7B",
+        "standard": true,
+        "categories": [
+         "noise"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises.",
+        "title": "Eating and Drinking Uses (C)",
+        "number": "7C",
+        "standard": true,
+        "categories": [
+         "odor"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Worl<s. W orks at 415-554-.5810, http:Us~zu.or~.",
+        "title": "Eating and Drinking Uses (D)",
+        "number": "7D",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety but shall in no case be directed so as to constitute ~ nuisance to any surrounding.property.",
+        "title": "Lighting",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "lighting"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this M otion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "10",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. SAN FRANCISCO ~ gP LANNING DEPARTMENT",
+        "title": "Revocation due to Violation of Conditions",
+        "number": "12",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "13",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       },
+       {
+        "text": "Monitoring: The Project requires monitoring of the conditions of approval in this Motion. The Project Sponsor or the subsequent responsible parties for the Project sI1a11 pay fees as established under Planning Code Section 351(e) (1) and work with the Planning Department for information about compliance.",
+        "title": "Monitoring",
+        "number": "17",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2020-000200CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2020-000200CUA",
+     "fetched_at": "2024-11-05T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194658390274Z-y673-d69b-p0005.json",
+     "id": "datasf_planning:2020-000200CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant",
+      "outdoor_seating"
+     ],
+     "description": "Conditional Use Authorization to permit an Outdoor Activity as defined in Planning Code Section 102 and pursuant to Planning Code Section 303 and 730 for a restaurant use of the second floor open-air deck for the purpose of restaurant seating.",
+     "address": "1240 09TH AVE 94122",
+     "lat": 37.765156390364616,
+     "lng": -122.46605966229886,
+     "parcel": "1742/029",
+     "zoning_district": "NCD-INNER SUNSET",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2020-01-07",
+     "decided_at": "2020-06-05",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Complaint Monitoring: One year after the receipt of Conditional Use Authorization and issuance of the Building Permit Application, the Planning Department shall assess the subject property's complaints on file. The Department shall issue a memo to the Planning Commissioners stating whether any noise complaints have been filed during the 12-months following Conditional Use Authorization.",
+      "Noise Control: The premises shall not have amplified music and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Vibrations shall also be contained within the enclosed structure. In the event there is excessive noise at the subject property, exceeding the decibel levels described in the San Francisco Control Ordinance, the Conditional Use Authorization may be subject to revocation.",
+      "Hours of Operation: The subject Outdoor Activity Area is limited to the following hours of operation: Sunday through Thursday from 10:00a.m. to 1 0:00p.m. and Friday through Saturday 10:00a.m. to 11:00pm.",
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor mus t seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the pr eceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. MONITORING - AFTER ENTITLEMENT (standard)",
+      "Enforcement: Violation of any of the Planning Department c onditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. T he Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. OPERATION (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-INNER SUNSET",
+      "planner": "Katherine Wilborn",
+      "premises": true,
+      "parent_id": "2020-000200PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2020-06-05T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={4764F587-14EC-4DC3-B449-DD3EFFDA77FF}&fileGUID={990FB415-B402-42A6-B826-CF6877347DF9}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "INNER SUNSET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Inner Sunset",
+      "project_name": "1240 09TH AVE",
+      "applicant_org": "Ground Floor Experiences, LLC.",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Complaint Monitoring: One year after the receipt of Conditional Use Authorization and issuance of the Building Permit Application, the Planning Department shall assess the subject property's complaints on file. The Department shall issue a memo to the Planning Commissioners stating whether any noise complaints have been filed during the 12-months following Conditional Use Authorization.",
+        "title": "Complaint Monitoring",
+        "number": "6",
+        "standard": false,
+        "categories": [
+         "noise"
+        ]
+       },
+       {
+        "text": "Noise Control: The premises shall not have amplified music and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Vibrations shall also be contained within the enclosed structure. In the event there is excessive noise at the subject property, exceeding the decibel levels described in the San Francisco Control Ordinance, the Conditional Use Authorization may be subject to revocation.",
+        "title": "Noise Control",
+        "number": "9",
+        "standard": false,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Hours of Operation: The subject Outdoor Activity Area is limited to the following hours of operation: Sunday through Thursday from 10:00a.m. to 1 0:00p.m. and Friday through Saturday 10:00a.m. to 11:00pm.",
+        "title": "Hours of Operation",
+        "number": "10",
+        "standard": false,
+        "categories": [
+         "hours",
+         "outdoor"
+        ]
+       },
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor mus t seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the pr eceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. MONITORING - AFTER ENTITLEMENT",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department c onditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. T he Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. OPERATION",
+        "title": "Revocation due to Violation of Conditions",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2024-002929CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2024-002929CUA",
+     "fetched_at": "2024-11-05T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194650972626Z-y673-d69b-p0004.json",
+     "id": "datasf_planning:2024-002929CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization pursuant to Planning Code Section 303.1 to establish a Formula Retail, Restaurant use (dba Super Duper Burgers). Project includes interior tenant improvements, and repairs to front facade. New business signage under separate permit.",
+     "address": "737 IRVING ST 94122",
+     "lat": 37.76384419305245,
+     "lng": -122.46590736890654,
+     "parcel": "1763/039B",
+     "zoning_district": "NCD-INNER SUNSET",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2024-04-02",
+     "decided_at": "2024-08-01",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Design – Compliance at Plan Stage (standard)",
+      "Final Materials: The Project Sponsor shall continue to work with Planning Department on the building design. Final materials, glazing, color, texture, landscaping, and detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": "Planning Commission Motion No. 21598 (August 1, 2024) approved with conditions Conditional Use Authorization 2024-002929CUA at 737 Irving Street by a 7-0 vote. Key operating conditions: Community Liaison.",
+     "extraction_confidence": "high",
+     "license_type": null,
+     "extra": {
+      "ayes": [
+       "McGarry",
+       "So",
+       "Williams",
+       "Braun",
+       "Imperial",
+       "Moore",
+       "Diamond"
+      ],
+      "nays": [],
+      "vote": "7-0",
+      "zoning": "NCD-INNER SUNSET",
+      "planner": "Joseph Sacchi",
+      "doc_name": "M-21598.pdf",
+      "premises": true,
+      "parent_id": "2024-002929PRJ",
+      "pdf_pages": 12,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2024-08-15T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1500984A-7287-48CF-A795-26D052AF6953}&fileGUID={665EC0B8-456B-476D-9C34-B39FA7F4E76F}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "INNER SUNSET NEIGHBORHOOD COMMERCIAL",
+      "zoning_text": "Inner Sunset Neighborhood Commercial",
+      "hearing_date": "2024-08-01",
+      "neighborhood": "Inner Sunset",
+      "project_name": "737 IRVING ST",
+      "motion_number": "21598",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Design – Compliance at Plan Stage",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Final Materials: The Project Sponsor shall continue to work with Planning Department on the building design. Final materials, glazing, color, texture, landscaping, and detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance.",
+        "title": "Final Materials",
+        "number": "6",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation",
+        "title": "Revocation due to Viola tion of Conditions",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "10",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)",
+      "condition_categories": [
+       "community_liaison"
+      ]
+     }
+    }
+   ]
+  },
+  "applications_within_1000ft": 224,
+  "licences_within_500ft": 13,
+  "licences_within_1000ft": 37,
+  "businesses_within_500ft": 20
+ }
+}

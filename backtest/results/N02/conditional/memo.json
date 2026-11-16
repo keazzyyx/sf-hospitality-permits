@@ -1,0 +1,1429 @@
+{
+ "format_version": 2,
+ "address": "735 Jackson St, San Francisco, CA 94133",
+ "lat": 37.79586250414225,
+ "lng": -122.40723539006964,
+ "parcel": "0193/033",
+ "concept_summary": "House of Dim Sum: a restaurant serving dim sum with beer and wine (ABC Type 41) at 735 Jackson St in San Francisco's Chinatown Residential Neighborhood Commercial (CRNC) district, with limited cooking, tenant improvements and exterior signage.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 3 further review (zoning and use, alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "next_step": "File a Conditional Use Authorization application with San Francisco Planning for a restaurant with beer & wine, committing to 7am–10pm daily hours and standard eating/drinking conditions, and confirm whether the business is part of a chain, the square footage, and the occupant load before filing.",
+  "citations": [
+   "zoning:CRNC"
+  ]
+ },
+ "pathway": {
+  "use": "restaurant",
+  "use_label": "Restaurant",
+  "district": "CRNC",
+  "permission": "conditional",
+  "permission_label": "Conditional use",
+  "existing_use": null,
+  "change_of_use": "yes",
+  "change_of_use_label": "Change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.cell",
+    "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+    "code_section": "Planning Code § 812",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+    "citations": [
+     "zoning:CRNC"
+    ]
+   },
+   {
+    "rule_id": "T11.missing",
+    "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-23:00; C 23:00-02:00; Planning Code § 812, in force since before 2022-01-01), so this is not decided.",
+    "code_section": "Planning Code § 812",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+    "citations": [
+     "zoning:CRNC"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 812",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729",
+    "citations": [
+     "overlay:static:sf:nc_crnc",
+     "zoning:CRNC"
+    ]
+   }
+  ],
+  "rules_date": "2022-04-20",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.none",
+      "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the business is part of a chain that shares its name, look or menu with other locations"
+    ],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district CRNC: formula retail is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T5.not_permitted_for",
+      "text": "Zoning district CRNC: formula retail is not permitted for Restaurant (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district CRNC: a use of 2,501 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the closing time"
+    ],
+    "lines": [
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-23:00; C 23:00-02:00; Planning Code § 812, in force since before 2022-01-01), so this is not decided.",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "yes",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+     "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_established",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "On 20 April 2022 neighbourhood notice for a change of use applied in Residential, NC, NCT and Eastern Neighborhoods Mixed Use districts. The rules do not place CRNC inside or outside that list, so whether notice was needed is not established.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+     "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+     "citations": [
+      "zoning:CRNC"
+     ]
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 812",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+     "citations": [
+      "zoning:CRNC"
+     ]
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: New use control of the district.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "summary": "A Conditional Use Authorization from the Planning Commission is required because a restaurant on the first story in CRNC is a conditional use per Planning Code § 812 as it stood in April 2022.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Zoning district CRNC treats a restaurant on the first story as a conditional use, requiring Planning Commission approval under Planning Code § 812 in force in April 2022.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show restaurant_permission as 'unknown' and do not state the conditional use requirement or Planning Commission approval.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Three restaurant CUAs with beer & wine in CRNC within 122 meters (650 Jackson St, 150 Waverly Pl) were approved 2019–2020 with 7am–10pm daily operating hours, establishing a consistent pattern for this corridor.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited records show only two restaurant CUAs, not three, and do not state the conclusion about establishing a pattern.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "Of N=10 dated use decisions within 1,000 ft over the last 5 years, 8 were approved (3 outright, 5 with conditions), 2 withdrawn, 0 denied; the 80% approval rate is shown.",
+     "confidence": "verified",
+     "citations": [
+      "stat:base_rate"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "The description gives no closing time; Planning Code § 812 in April 2022 treated hours after 11pm as conditional use in CRNC, so the hours trigger is not decided without a stated closing time.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record references § 812 but does not state what it said about hours after 11pm or conditional use.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The description does not state whether the business is part of a chain; CRNC made formula retail a conditional use (Planning Code § 812 in April 2022), and formula retail was not permitted for restaurants in that district, so this trigger is not decided.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows restaurant_permission as 'unknown' and does not state the formula retail rules or their conditional use status.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A 2011 application at this exact address (735–737 Jackson St) for a small self-service restaurant was denied, with the planner noting conditional use authorization was required.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:MB1100829"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence, Type 41 (on-sale beer and wine, eating place)",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "alcohol.licence",
+     "text": "The licence looked up is ABC Type 41 (on-sale beer and wine, eating place), as stated in the description.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.transaction",
+     "text": "The licence is to be obtained as a new licence, as the applicant states.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.status",
+     "text": "ABC investigates every licence application, and the applicant must post public notice, before a licence is issued: further review.",
+     "code_section": "California Business and Professions Code §§ 23958 (investigation) and 23985 (public notice)",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2022-04-20: 15 ABC licences within 1,000 ft and 0 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "ABC will investigate the Type 41 beer & wine eating-place licence application, and refer it to SFPD and Planning before issuing the licence.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "ABC Type 41 (on-sale beer and wine, eating place) is a non-quota licence that ABC issues directly after investigation and a 30-day public posting at the premises, per California Business and Professions Code §§ 23958 and 23985.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record does not cite California Business and Professions Code §§ 23958 and 23985.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "ABC refers every original licence application to the Police Department and to Planning for review under California Business and Professions Code § 23987.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is a Planning approval for a restaurant with alcohol license but does not state ABC's referral procedures or cite Business and Professions Code § 23987.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The density count shows 22 active ABC on-sale licences within 500 ft and 87 within 1,000 ft; the undue-concentration proxy flag is triggered.",
+     "confidence": "verified",
+     "citations": [
+      "stat:density"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Sixteen active Type 41 beer & wine eating-place licences are on file within 152 meters, demonstrating that ABC has issued numerous Type 41 licences in this immediate area.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows 22 abc_on_sale_licenses within 152m but does not specify Type 41 licenses or the number sixteen.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "A health permit to operate is issued by DPH after plan check and a pre-opening inspection confirm the facility matches approved plans and a certified food safety manager is on staff, without a discretionary hearing.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "San Francisco DPH issues a health permit to operate after plan review (FY2026–27 fee $828–$2,207 depending on scope), a pre-opening inspection, and confirmation that a certified food safety manager is on staff, per the California Retail Food Code §§ 114380–114381.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited records do not mention the California Retail Food Code or sections 114380–114381.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The DPH permit-to-operate application is referred to Planning for zoning review under the Interagency Permit Referrals process; Planning checks that the use conforms to the approved CUA.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record describes the Health Permit application process but does not mention referral to Planning, zoning review, or the Interagency Permit Referrals process.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Seven DPH limited-restaurant referrals in CRNC and CVR within 200 meters were approved 2018–2021 within one to three months as principally permitted or continuation of existing use.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Only 3 referrals cited (not seven), dates are 2019-2021 (not 2018-2021), and one record doesn't state basis for approval.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit with change of use",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+     "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "The cited records did not support this summary. See the findings below.",
+   "summary_verification": "downgraded",
+   "summary_note": "The rule record establishes Planning Code conformance review for the change of use, but not separately for tenant improvements.",
+   "findings": [
+    {
+     "text": "The applicant describes the last use as limited restaurant; the rules read limited restaurant to restaurant as a Planning Code change of use under Planning Code § 102.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record mentions § 102 but does not state what the applicant described or what the rules say about limited restaurant to restaurant being a change of use.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "No active ABC licence is on file at 735 Jackson St, so the records do not confirm what the space is used as now or when the limited-restaurant use ended.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record is only an address/parcel record and contains no information about ABC licences or space usage.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A 2005 agency referral at this address approved a full-service restaurant as permitted, and a 1989 CUA approved adding dim sum to an existing restaurant.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:MB0500563",
+      "app:datasf_planning:1989.286C"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The California Building Code treats a restaurant as Assembly Group A-2, but a space for fewer than 50 people is Group B; the description does not give the occupant load, so whether a change of occupancy is triggered is not established.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record mentions change of occupancy permits but does not state Building Code groups A-2 or B, the 50-person threshold, or address occupant load.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The building permit application for tenant improvements will be routed to Planning under Planning Code § 175(a) to confirm conformance with the approved CUA before DBI issues the permit.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record describes the building permit but does not mention routing to Planning, Planning Code § 175(a), or CUA conformance review.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the closing time. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "What is the occupant load of the space, and does it exceed 49 people?",
+   "needs": "plans",
+   "ask": "The architect's occupancy calculation on the building permit plans will show whether the space is Assembly A-2 (50+) or Group B (under 50), which determines whether a Building Code change of occupancy is triggered."
+  },
+  {
+   "question": "What is the current condition and last legal use of the space at 735 Jackson St?",
+   "needs": "inspection",
+   "ask": "A site visit and review of the last DBI permit of occupancy will confirm what use, if any, is operating now and whether the limited-restaurant equipment is still in place."
+  },
+  {
+   "question": "Is House of Dim Sum part of a chain of 11 or more establishments that share a name, standardized menu, décor or appearance?",
+   "needs": "applicant_history",
+   "ask": "The applicant: the Planning Code § 303.1 formula-retail definition applies if the business is one of 11+ similarly branded locations; if yes, formula retail is not permitted for restaurants in CRNC per § 812 as it stood in April 2022."
+  },
+  {
+   "question": "What is the gross floor area of the restaurant space in square feet?",
+   "needs": "plans",
+   "ask": "The lease or the architectural plans will show the square footage; CRNC required a CUA for restaurant uses of 2,501 sq ft or more per Planning Code § 812 in April 2022."
+  },
+  {
+   "question": "Does the census tract where 735 Jackson St sits exceed ABC's on-sale licence ratio, triggering a Public Convenience or Necessity finding requirement?",
+   "needs": "agency_answer",
+   "ask": "ABC's district office or Planning's Interagency Referral Unit: the undue-concentration proxy flag is set but the census tract PCN determination is not exposed in the records."
+  },
+  {
+   "question": "What was the reason for the 2011 denial of a small self-service restaurant application at 735–737 Jackson St?",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department: the hearing text or decision documents for case MB1100829 would show whether the denial was for failure to file a CUA, neighbourhood opposition, or another cause."
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "CRNC",
+  "name": "Chinatown Residential Neighborhood Commercial District",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 812 (Zoning Control Table 812); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:CRNC"
+ },
+ "overlays": [
+  {
+   "name": "Chinatown Residential Neighborhood Commercial District",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 812 (Zoning Control Table 812); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_crnc"
+  },
+  {
+   "name": "Group Housing Special Use District",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.93",
+   "citation_id": "overlay:datasf_sud:group_housing_special_use_district"
+  },
+  {
+   "name": "Priority Equity Geographies SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.97",
+   "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 49,
+  "bars": 4,
+  "abc_on_sale_licenses": 22,
+  "abc_licenses_1000ft": 87,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 3,
+  "approved_with_conditions": 5,
+  "denied": 0,
+  "withdrawn": 2,
+  "total": 10,
+  "window_years": 5,
+  "scope": "N = 10 dated decisions within 1,000 ft, last 5 years; left out: 90 permits and licences, 503 records that are not use decisions for this kind of business",
+  "rate_shown": true,
+  "approval_rate_pct": 80.0,
+  "excluded_grant_only": 90,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 503,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "Hours of operation limited to 7:00 AM to 10:00 PM daily.",
+   "basis": "The two CRNC restaurant CUAs with beer & wine at 650 Jackson St (114 m away) and 150 Waverly Pl (122 m away), approved October 2019 and May 2020, both imposed identical 7am–10pm daily hours.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "The business operator shall maintain the main entrance and all sidewalks abutting the property in clean and sanitary condition and monitor the sidewalk within a one-block radius during business hours to keep it free of litter associated with the business.",
+   "basis": "All three nearby restaurant CUA approvals (650 Jackson St, 150 Waverly Pl, 838 Grant Ave) included this standard eating and drinking condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA",
+    "app:datasf_planning:2021-008505CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Odor control equipment shall be installed in conformance with approved plans and maintained to prevent significant noxious or offensive odors from escaping the premises.",
+   "basis": "Standard eating and drinking condition required in all three nearby CUA approvals.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA",
+    "app:datasf_planning:2021-008505CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Prior to issuance of a building permit, the project sponsor shall appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide written notice of the liaison's name, business address and telephone number to the Zoning Administrator and…",
+   "basis": "Standard CUA condition imposed in all three nearby restaurant approvals.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA",
+    "app:datasf_planning:2021-008505CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "The authorization is valid for three years from the effective date; DBI shall have issued a building permit or site permit to construct the project and commence the approved use within that period, or the sponsor must seek renewal or the Commission may revoke the authorization.",
+   "basis": "Standard Planning Code § 303 validity condition in all three nearby CUA approvals; construction must commence within the DBI timeframe and be continued diligently to completion.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA",
+    "app:datasf_planning:2021-008505CUA"
+   ],
+   "verification": "supported",
+   "verification_note": null,
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2019-006948CUA",
+   "citation_id": "app:datasf_planning:2019-006948CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "650 JACKSON ST 94133",
+   "distance_m": 113.9,
+   "filed_at": "2019-05-17",
+   "decided_at": "2019-10-25",
+   "days_to_decision": 161,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Hours of Operation: The subject establishment is limited to the following hour of operation: 7:OOAM to 10:OOPM daily. www.s - Tannin .or , SAN FRANCISCO 8",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. wzvz~. s~ptanning. org (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have. passed since this Authorization was approved. zuwzv. s~pianrzing. org (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. wzi>zu.s~planning.org (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. For information about eomplia~ice, contact Code Enforcement, Plar2rtirtg Department at 415-575-6863, zvwzo. s~plantzin~. orb SAN FRANCISCO 5 DESIGN (standard)",
+    "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escaping the premises once the project is operational, the building permit application to implement the project shall include. air cleaning or odor control equipment details and manufacturer specifications on the plans if applicable as determined by the project planner. Odor control ducting shall not be applied to the primary facade of the building. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. wwzv.s~planning.vr~ (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within aone-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the SAN fRANCISC~ 6 premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. For inforniatiori about compliance with odor or other chemical air pollutants standards, contact the Bay Area Air Quality Management District, (BAAQMD), 1-800-334-ODOR (6367), wzvzu.ba~m~>oz~ c~nd Code Enforcement, Planning Department at 415-575-6863, zuzuzu_s~_ ~latmin~.or~ (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant. to garbage and recycling receptacles guidelines set forth by the Department of Public Works. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the. area with written notice of the name, business address, and telephone number of the community liaison. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.934,
+   "why_comparable": "Restaurant with Type 41 beer & wine CUA in CRNC at 650 Jackson St, 114 meters away on the same block, approved October 2019 with 7am–10pm daily hours.",
+   "key_takeaway": "This use decision approval for a beer & wine restaurant in CRNC within 120 meters established a 7am–10pm daily operating-hours condition, signaling that the Commission limits alcohol service hours for CRNC restaurants to daytime/early evening even when approving the use.",
+   "lat": 37.79636174607944,
+   "lng": -122.40610573246738,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-006948CUA"
+  },
+  {
+   "application_id": "datasf_planning:2019-020999CUA",
+   "citation_id": "app:datasf_planning:2019-020999CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "150 WAVERLY PL 94108",
+   "distance_m": 122.2,
+   "filed_at": "2019-11-07",
+   "decided_at": "2020-05-13",
+   "days_to_decision": 188,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Hours of Operation: The subject establishment is limited to the following hours of operation: 7:00 AM to 10:00 PM daily.",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pur suit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Curr ent Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation compl aints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. OPERATION (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In additio n, the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipm ent shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. Works at 415-554-.5810, http://sfdpw.org. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+    "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escaping the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans if applicable as determined by the project planner. Odor control ducting shall not be applied to the primary façade of the building. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.94,
+   "why_comparable": "Restaurant with beer & wine CUA in CRNC at 150 Waverly Pl, 122 meters away, approved May 2020 with 7am–10pm daily hours.",
+   "key_takeaway": "This use decision approval confirms the 7am–10pm hours pattern for CRNC beer & wine restaurants; the Commission imposed identical operating conditions within one block of the subject site, establishing a consistent approval standard.",
+   "lat": 37.79482251615117,
+   "lng": -122.40678103968911,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-020999CUA"
+  },
+  {
+   "application_id": "datasf_planning:2021-008505CUA",
+   "citation_id": "app:datasf_planning:2021-008505CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "838 GRANT AVE 94108",
+   "distance_m": 153.4,
+   "filed_at": "2021-08-31",
+   "decided_at": "2022-03-02",
+   "days_to_decision": 183,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Overhead Wiring: The Property owner will allow MUNI to inst all eyebolts in the building adjacent to its electric streetcar line to support its overhead wire system if requested by MUNI or MTA.",
+    "Bicycle Parking: Pursuant to Planning Code Sections 155, 155.1 and 155.2, the Project shall provide no fewer than 8 Class 1 or Class 2 bicycle parking spaces. SFMTA has final authority on the type, placement and number of Class 2 bicycle racks within the public ROW. Prior to issuance of first architectural addenda, the project sponsor shall contact the SFMTA Bike Parking Program at bikeparking@sfmta.com to coordinate the installation of on-street bicycle racks and ensure that the proposed bicycle racks meet the SFMTA’s bicycle parking guidelines.",
+    "Hours of Operation: The subject establishment is limited to the following hours of operation: Sunday through Saturday from 6:00 a.m. to 12:00 a.m. (midnight). EXHIBIT B: Plans & Renderings",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an applicati on for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Design – Compliance at Plan Stage (standard)",
+    "Final Materials: The Project Sponsor shall continue to work with Planning Department on the building design. Final materials, glazing, color, texture, landscaping, and detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance. (standard)",
+    "Garbage, Composting and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Rooftop Mechanical Equipment: Pursuant to Planning Code 141, the Project Sponsor shall submit a roof plan to the Planning Department prior to Planning approval of the building permit application. Rooftop mechanical equipment, if any is proposed as part of the Project, is required to be screened so as not to be visible from any point at or below the roof level of the subject building. (standard)",
+    "Noise: Plans submitted with the building permit applicatio n for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+    "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escaping the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans. Odor control ducting shall not be applied to the primary façade of the building. (standard)",
+    "Managing Traffic During Construction: The Project Sponsor and construction contractor(s) shall coordinate with the Traffic Engineering and Transit Divisions of the San Francisco Municipal Transportation Agency (SFMTA), the Poli ce Department, the Fire Department, the Planning Department, and other construction contractor(s) for any concurrent nearby Projects to manage traffic congestion and pedestrian circulation effects during construction of the Project. For information about c ompliance, contact Code Enforcement, Planning Department at 628.652.7463, Monitoring - After Entitlement (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also r efer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of th is Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liais on. (standard)",
+    "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be direct ed so as to constitute a nuisance to any surrounding property. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.96,
+   "why_comparable": "Restaurant CUA at 838 Grant Ave (CVR district, 153 meters away) approved March 2022 with 6am–midnight hours and bicycle parking, odor control, and standard eating/drinking conditions.",
+   "key_takeaway": "This use decision approval in the adjacent CVR district shows the Commission permits later hours (midnight closing) for restaurants outside CRNC, but the CVR district treats restaurants as conditional uses rather than requiring CUA for all restaurants, and this was a larger commercial building.",
+   "lat": 37.79482503240289,
+   "lng": -122.40608406224688,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008505CUA"
+  },
+  {
+   "application_id": "datasf_planning:2021-006497MIS",
+   "citation_id": "app:datasf_planning:2021-006497MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1041 STOCKTON ST 94108",
+   "distance_m": 115.6,
+   "filed_at": "2021-06-28",
+   "decided_at": "2021-09-30",
+   "days_to_decision": 94,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.913,
+   "why_comparable": "Limited restaurant agency referral in CRNC at 1041 Stockton St, 116 meters away, approved September 2021 as a DPH referral within three months.",
+   "key_takeaway": "This agency referral approval shows that limited restaurants without alcohol can proceed through the health-department referral pathway in CRNC and be approved quickly, but this is not a CUA and does not establish conditional use entitlement for a beer & wine restaurant.",
+   "lat": 37.79553305800936,
+   "lng": -122.40848048714852,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006497MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-006242MIS",
+   "citation_id": "app:datasf_planning:2021-006242MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "626 JACKSON ST 94133",
+   "distance_m": 139.6,
+   "filed_at": "2021-06-21",
+   "decided_at": "2021-07-20",
+   "days_to_decision": 29,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.904,
+   "why_comparable": "Limited restaurant agency referral in CRNC at 626 Jackson St, 140 meters away on the same block, approved July 2021 as principally permitted within one month.",
+   "key_takeaway": "This agency referral approval demonstrates that limited restaurants are principally permitted in CRNC when no alcohol is involved, but the planner's note cites Section 811 which treats restaurants with alcohol as conditional uses requiring a CUA hearing.",
+   "lat": 37.7963878497993,
+   "lng": -122.40579520885373,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006242MIS"
+  },
+  {
+   "application_id": "datasf_planning:2018-007366CUA",
+   "citation_id": "app:datasf_planning:2018-007366CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "838 GRANT AVE 94108",
+   "distance_m": 153.4,
+   "filed_at": "2018-09-13",
+   "decided_at": "2019-06-14",
+   "days_to_decision": 274,
+   "outcome": "withdrawn",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.859,
+   "why_comparable": "Withdrawn CUA at 838 Grant Ave (CVR, 153 meters away) for basement restaurant conversion, filed September 2018, withdrawn June 2019, then re-filed as 2021-008505CUA and approved.",
+   "key_takeaway": "This use decision withdrawal followed by re-application and eventual approval suggests the applicant needed to revise the proposal to address Planning concerns before winning approval; withdrawals in this area are not necessarily fatal but signal needed changes to the application.",
+   "lat": 37.79482503240289,
+   "lng": -122.40608406224688,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-007366CUA"
+  },
+  {
+   "application_id": "datasf_planning:2016-008214MIS",
+   "citation_id": "app:datasf_planning:2016-008214MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "801 KEARNY ST 94133",
+   "distance_m": 183.9,
+   "filed_at": "2016-06-23",
+   "decided_at": "2019-08-19",
+   "days_to_decision": 1152,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.864,
+   "why_comparable": "Restaurant agency referral at 801 Kearny St in CCB district, 184 meters away, denied in August 2019 after a three-year review from June 2016 filing.",
+   "key_takeaway": "This agency referral denial demonstrates that Planning does deny restaurant applications in Chinatown when zoning or other issues are unresolved; the three-year timeline suggests protracted issues with the application that were never cured.",
+   "lat": 37.79548657580948,
+   "lng": -122.40520191984298,
+   "source_url": "https://sfplanninggis.org/pim?search=2016-008214MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 0193/033 or the address 735 Jackson St",
+  "total": 4,
+  "by_kind": {
+   "use_decision": 2,
+   "agency_referral": 2
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2019-013905MIS",
+    "citation_id": "app:datasf_planning:2019-013905MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Recommend approval. Limited restaurant (bakery) dba Golden Gate Fortune Cookies Company principally permitted in Chinatown Residential NCD per Sec. 812.43. Continuation of existing use. Subject to eating/drinking uses operating conditions per Sec. 202.2.(a).",
+    "address": "56 ROSS ALY 94108",
+    "filed_at": "2019-07-12",
+    "decided_at": "2019-08-19",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-013905MIS"
+   },
+   {
+    "application_id": "datasf_planning:MB1100829",
+    "citation_id": "app:datasf_planning:MB1100829",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Conditional use authorization required for small self-service restaurant -",
+    "address": "735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133",
+    "filed_at": "2011-03-28",
+    "decided_at": "2011-04-01",
+    "outcome": "denied",
+    "status": "Closed - Disapproved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1100829"
+   },
+   {
+    "application_id": "datasf_planning:MB0500563",
+    "citation_id": "app:datasf_planning:MB0500563",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "FULL-SERVICE RESTAURANT PERMITTED PER SECTION 812.42. -",
+    "address": "735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133",
+    "filed_at": "2005-04-20",
+    "decided_at": "2005-05-20",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0500563"
+   },
+   {
+    "application_id": "datasf_planning:1989.286C",
+    "citation_id": "app:datasf_planning:1989.286C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "To allow small fast-food restaurant inA CRNC Districtper Sec. 812.43 add dim sum to existing restaurant.",
+    "address": "735 - 737 JACKSON ST, SAN FRANCISCO, CA 94133",
+    "filed_at": "1989-05-24",
+    "decided_at": "1989-07-13",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=1989.286C"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [],
+ "timeline_cost": {
+  "days_min": 155,
+  "days_max": 365,
+  "cost_min_usd": 5370.0,
+  "cost_max_usd": 23350.0,
+  "notes": "This is the timeline and government fee range to obtain approval of the four entitlements (CUA, ABC Type 41, health permit, building permit with change of use) when they are granted, not a time or cost to denial or withdrawal. The critical path is the CUA hearing (120–180 days from filing to Planning Commission decision in April 2022 practice) plus 30 days for the decision to become final, then the ABC investigation and referral review (60–120 days if unprotested; add 30–90 days if a Public Convenience or Necessity finding is required for an undue-concentration tract). The building permit and health plan check (21–60 days for DPH review, then 14–120 days for DBI permit issuance depending on plan quality) can overlap with the ABC timeline if construction drawings are ready when the CUA is approved. The health permit to operate (14–45 days after construction is complete) is the last approval before opening. Government fees: CUA application ~$2,700–$3,100 (2022 estimate), ABC Type 41 $1,000–$1,600, DPH plan check $828–$2,207, DPH permit to operate $470, building permit $800–$15,000 (percentage of construction valuation), business registration $55–$700, grease interceptor/FOG $0–$500, sign permit $300–$1,500. State business formation and tax registration (CA SOS $70–$150, seller's permit $0, EDD $0, EIN $0) and employee certifications (food safety manager $100–$250, food handler cards ~$50 for 5 employees, RBS training ~$75 for 5 staff) add roughly $300–$1,000. Private costs not counted here: attorney, architect, expediter, workers' comp insurance premiums, construction, lease, and music licences. The day range assumes a complete CUA application with no requested continuances, an ABC application filed immediately after CUA approval with no protests or PCN delay, complete building plans that pass review on first or second correction cycle, and inspections scheduled promptly.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Conditional Use Authorization (Planning Code § 303); ABC licence, Type 41 (on-sale beer and wine, eating place); Health permit to operate; Building permit with change of use",
+  "verification": "downgraded",
+  "verification_note": "The CUA timing references April 2022 practice but the cited records are from 2019-2020. Most government fees (CUA, business registration, sign permit, grease interceptor, state fees, employee certifications) are not in the cited records.",
+  "original_confidence": "likely_applicable"
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 37,
+  "supported": 5,
+  "trimmed": 7,
+  "downgraded": 16,
+  "dropped": 9
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:1989.286C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 735 - 737 JACKSON ST, SAN FRANCISCO, CA 94133 · approved (1989)",
+   "source_url": "https://sfplanninggis.org/pim?search=1989.286C",
+   "excerpt": "To allow small fast-food restaurant inA CRNC Districtper Sec. 812.43  add dim sum to existing restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2016-008214MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 801 KEARNY ST 94133 · denied (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2016-008214MIS",
+   "excerpt": "Health - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2018-007366CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 838 GRANT AVE 94108 · withdrawn (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-007366CUA",
+   "excerpt": "Change of use to convert the basement space into a new restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2019-006724MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 870 WASHINGTON ST 94108 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-006724MIS",
+   "excerpt": "Recommend approval. Liimted restaurant dba Chinatown Taiwanese Fruit Tea principally permitted in Chinatown Residential Neighborhood Commercial per Sec 812. Use established under BPA #2019.03.19.5591. Subject to eating/drinking uses operating conditions per Sec. 202.2(a)."
+  },
+  {
+   "id": "app:datasf_planning:2019-006948CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 650 JACKSON ST 94133 · approved with conditions (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-006948CUA",
+   "excerpt": "Request for a Conditional Use Authorization, pursuant to Planning Code Sections 303, 811 and 812, for the existing limited restaurant use (d.b.a. Pot & Noodle) to operate as a restaurant with a Type-41 On-Sale Beer and Wine for Bona fide Public Eating Place license. Reviewed per the  Community Busin"
+  },
+  {
+   "id": "app:datasf_planning:2019-013905MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 56 ROSS ALY 94108 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-013905MIS",
+   "excerpt": "Recommend approval. Limited restaurant (bakery) dba Golden Gate Fortune Cookies Company principally permitted in Chinatown Residential NCD per Sec. 812.43. Continuation of existing use. Subject to eating/drinking uses operating conditions per Sec. 202.2.(a)."
+  },
+  {
+   "id": "app:datasf_planning:2019-020999CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 150 WAVERLY PL 94108 · approved with conditions (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-020999CUA",
+   "excerpt": "(CB3P) Conditional Use Authorization request to operate as a Restaurant (permit the sale of beer and wine at bona fide eating establishment)."
+  },
+  {
+   "id": "app:datasf_planning:2021-006242MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 626 JACKSON ST 94133 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006242MIS",
+   "excerpt": "Recommend approval; Limited Restaurant is a Retail Sales and Service use principally permitted in the Chinatown \nVisitor Retail Zoning District per Planning Code Section 811."
+  },
+  {
+   "id": "app:datasf_planning:2021-006497MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1041 STOCKTON ST 94108 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006497MIS",
+   "excerpt": "DPH referral - Limited Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2021-008505CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 838 GRANT AVE 94108 · approved with conditions (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008505CUA",
+   "excerpt": "Conditional Use Authorization request to convert the basement space fronting Walter U. Lum Place into a new restaurant. The new use size would be not exceed 5,000 net square feet, which is a reduction from the current 18,000 square feet of retail use from the basement to 1st floor mezzanine."
+  },
+  {
+   "id": "app:datasf_planning:MB0500563",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133 · approved (2005)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0500563",
+   "excerpt": "FULL-SERVICE RESTAURANT PERMITTED PER SECTION 812.42. -"
+  },
+  {
+   "id": "app:datasf_planning:MB1100829",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133 · denied (2011)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1100829",
+   "excerpt": "Conditional use authorization required for small self-service restaurant -"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 735 Jackson St, San Francisco, CA 94133 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=279772",
+   "excerpt": "parcel 0193/033"
+  },
+  {
+   "id": "overlay:datasf_sud:group_housing_special_use_district",
+   "kind": "overlay",
+   "label": "Group Housing Special Use District — Planning Code § 249.93",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66044",
+   "excerpt": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+   "kind": "overlay",
+   "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+   "excerpt": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:nc_crnc",
+   "kind": "overlay",
+   "label": "Chinatown Residential Neighborhood Commercial District — Planning Code § 812 (Zoning Control Table 812); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729",
+   "excerpt": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 8 approved / 0 denied / 2 withdrawn; N = 10 dated decisions within 1,000 ft, last 5 years; left out: 90 permits and licences, 503 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 90 Entertainment Commission permits and ABC licences (lists of grants only), 503 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 49 food & drink businesses, 4 bars, 22 active on-sale ABC licenses within 500 ft; 87 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:CRNC",
+   "kind": "zoning",
+   "label": "Zoning CRNC — Planning Code § 812 (Zoning Control Table 812); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729",
+   "excerpt": "The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "The records show 735 Jackson St is in the Chinatown Residential Neighborhood Commercial (CRNC) district where a restaurant with beer & wine is a conditional use requiring a Planning Commission hearing. The site history reveals a 2011 denial for a small self-service restaurant at this exact address, followed by two earlier approvals (2005 full-service restaurant referral, 1989 CUA for dim sum). The immediate block is extremely dense: 49 registered food or drink businesses and 22 active ABC on-sale licenses within 500 feet, with 4 bars in the count. Over the past 5 years within 1,000 feet, 8 of 10 dated use decisions were approved (80% approval rate, N=10), with 2 withdrawals and no outright denials in that window.",
+ "data_gaps": [
+  "No hearing text or stated reason for the 2011 denial at this address",
+  "No conditions extracted from the 1989 CUA approval at this site",
+  "Census tract concentration data and ABC PCN determination are not exposed",
+  "Current occupancy and last permit of occupancy for 735 Jackson St are not shown",
+  "Two pending CUA cases nearby (2021-011235CUA, 2022-001553CUA) have no outcome or description yet"
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T08:20:52+00:00",
+ "model_versions": {
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2022-04-20"
+}

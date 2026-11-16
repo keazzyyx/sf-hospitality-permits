@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditions of Approval</title>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  window.va("beforeSend", event => ({ ...event, url: String(event.url).split("#")[0] }));
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+  :root {
+    --bg: #fafaf8; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6b66; --line: #e3e2dc;
+    --accent: #1f4e79; --accent-soft: #e8eef5; --tag: #f1f0ea; --mark: #fff1a8; --warn: #8a5a00; --warn-soft: #fbf3e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a3a29b; --line: #34332f;
+      --accent: #8fb6dd; --accent-soft: #24303c; --tag: #2a2a27; --mark: #5c5220; --warn: #e2b866; --warn-soft: #33291a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  header { padding: 28px 16px 8px; max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; font-weight: 650; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0; font-size: 14px; }
+  .coverage { margin: 10px 0 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px;
+              background: var(--panel); font-size: 13px; line-height: 1.5; color: var(--muted); max-width: 900px; }
+  .coverage b { color: var(--ink); font-weight: 600; }
+  .filters { position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .filters-inner { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: grid; gap: 10px;
+                   grid-template-columns: 2fr repeat(5, minmax(0, 1fr)); align-items: end; }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+  select, input[type=search] { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px;
+                                background: var(--panel); color: var(--ink); font: inherit; font-size: 14px; }
+  .bar { max-width: 1100px; margin: 0 auto; padding: 10px 16px 0; display: flex; justify-content: space-between;
+         align-items: center; color: var(--muted); font-size: 13px; gap: 12px; flex-wrap: wrap; }
+  button.reset, button.link { background: none; border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px;
+                 color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
+  button.link { border: 0; padding: 0; color: var(--accent); text-decoration: underline; }
+  main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 48px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+          margin-top: 10px; }
+  .card.target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+  .head { display: flex; gap: 10px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+  .title { font-weight: 600; }
+  .num { color: var(--muted); font-weight: 500; margin-right: 6px; }
+  .kind { font-size: 12px; padding: 1px 8px; border-radius: 99px; background: var(--tag); color: var(--muted);
+          white-space: nowrap; }
+  .kind.specific { background: var(--accent-soft); color: var(--accent); }
+  .text { margin: 8px 0 10px; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .unreadable { margin: 8px 0 10px; padding: 8px 10px; border-radius: 6px; background: var(--warn-soft); color: var(--warn); }
+  .unreadable details { color: var(--muted); margin-top: 6px; font-size: 13px; }
+  .meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .links { margin-top: 8px; font-size: 13px; display: flex; gap: 14px; flex-wrap: wrap; align-items: baseline; }
+  .links .alt { font-size: 12px; color: var(--muted); }
+  .links .alt a { color: var(--muted); }
+  .links .feedback { margin-left: auto; }
+  .tips { margin-top: 4px; font-size: 12px; color: var(--muted); }
+  .tips summary { cursor: pointer; width: max-content; }
+  .tips p { margin: 4px 0 0; }
+  .tips ul { margin: 2px 0 0; padding-left: 18px; }
+  a { color: var(--accent); }
+  mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2px; }
+  .tags { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+  .tag { font-size: 12px; padding: 0 6px; border-radius: 4px; background: var(--tag); }
+  .more { display: block; margin: 18px auto 0; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 12px; }
+  footer p { margin: 0 0 8px; }
+  footer details { margin: 0 0 8px; }
+  footer summary { cursor: pointer; color: var(--ink); }
+  footer table { border-collapse: collapse; margin-top: 6px; width: 100%; }
+  footer td { padding: 3px 8px 3px 0; vertical-align: top; border-top: 1px solid var(--line); }
+  footer td:first-child { white-space: nowrap; }
+  @media (max-width: 900px) { .filters-inner { grid-template-columns: 1fr 1fr; } .filters-inner .q { grid-column: 1 / -1; } }
+  @media (max-width: 480px) { .filters-inner { grid-template-columns: 1fr; } footer td:first-child { white-space: normal; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Conditions of approval</h1>
+  <p class="sub" id="sub">San Francisco Planning Commission motions, food, drink and entertainment premises.</p>
+  <p class="coverage" id="coverage"><b>Coverage.</b> <span id="coverage-text">Loading…</span>
+    <a href="coverage.html">Coverage details</a></p>
+</header>
+<div class="filters"><div class="filters-inner">
+  <div class="q"><label for="q">Search the conditions, a case number or an address (all words, any order)</label><input type="search" id="q" placeholder="e.g. odor, amplified music, 10 p.m., outdoor seating, patrons, 2351 Mission">
+    <details class="tips" id="tips"><summary>Search tips</summary>
+      <p>Every word must appear, in any order, in the condition, its motion's case number or its address: a case
+      number (2023-005418CUA) or an address (2351 Mission) finds that motion's conditions, and adding words narrows
+      them (2351 Mission noise). A street (Valencia St, 24th St) finds every motion on it, and the conditions that
+      name it; with its type (St, Ave) it is that street only, so 19th St is not 19th Ave. Word endings do not matter (guard, guards, guarding). Times match however they are
+      written (10 p.m., 10pm, 10:00 PM). These count as the same word:</p>
+      <ul id="synonyms"></ul></details></div>
+  <div><label for="business">Business type</label><select id="business"></select></div>
+  <div><label for="category">Condition category</label><select id="category"></select></div>
+  <div><label for="zoning">Zoning district</label><select id="zoning"></select></div>
+  <div><label for="year">Year decided</label><select id="year"></select></div>
+  <div><label for="kind">Which conditions</label><select id="kind"></select></div>
+</div></div>
+<div class="bar"><span id="count">Loading…</span><button class="reset" id="reset" type="button">Clear filters</button></div>
+<main id="results"></main>
+<footer id="footer"></footer>
+<script type="module">
+import { KINDS, STATE_KEYS, search, highlight, parseQuery, noMatchNote, recordMatches, addressMatches, synonymLines, stateFromHash, hashFromState, feedbackLink, cardTarget, cardIndex, shownFor } from "./search.js";
+import { coverageSentences } from "./coverage.js";
+
+const CATEGORY = { garbage: "Garbage and recycling", community_liaison: "Community liaison", noise: "Noise",
+  odor: "Odor", lighting: "Lighting", entertainment: "Entertainment", hours: "Hours", signage: "Signage",
+  security: "Security", good_neighbor: "Good neighbor", alcohol: "Alcohol", outdoor: "Outdoor area", other: "Other" };
+const KIND_LABEL = { specific: "Case-specific", standard: "Standard", boilerplate: "Approval boilerplate" };
+const IDS = STATE_KEYS;
+const PAGE = 50;
+// where the "Wrong or missing? Tell me" link on each card sends its email: empty here (no link on the local page);
+// the public build puts its contact address in
+const FEEDBACK_TO = "";
+let data = null, all = [], shown = PAGE;
+// the card the applied hash points at (a "Link to its card" in a feedback email): shown, marked and scrolled to
+// by the next render, then forgotten
+let target = null;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const catLabel = c => CATEGORY[c] || c.replace(/_/g, " ");
+const n = x => x.toLocaleString();
+const plural = (k, word) => `${n(k)} ${word}${k === 1 ? "" : "s"}`;
+
+function fill(id, values, label = v => v, allText = "All") {
+  $(id).innerHTML = (allText === null ? "" : `<option value="">${allText}</option>`)
+    + values.map(v => `<option value="${esc(v)}">${esc(label(v))}</option>`).join("");
+}
+function unique(f) { return [...new Set(all.flatMap(f))].filter(v => v !== "" && v != null); }
+
+// The search box and filters live in the URL hash, so a link shares a search. readState applies the hash (every
+// field the hash leaves out is cleared, and the card it names, if any, becomes the target); writeState puts the
+// current fields in it without a history entry.
+function readState() {
+  const state = stateFromHash(location.hash);
+  for (const id of IDS) $(id).value = state[id];
+  target = cardTarget(location.hash);
+}
+function writeState() {
+  const hash = hashFromState(Object.fromEntries(IDS.map(id => [id, $(id).value])));
+  if (hash !== (location.hash || "#")) history.replaceState(null, "", hash);
+}
+
+function card(c, terms, isTarget = false) {
+  const page = c.pdf ? `<a href="${esc(c.pdf)}${c.page ? "#page=" + c.page : ""}" target="_blank" rel="noopener">Open the motion${c.page ? (c.page_exact ? " at page " : " near page ") + c.page : ""}</a>` : "";
+  const src = c.motion_url ? `<span class="alt"><a href="${esc(c.motion_url)}" target="_blank" rel="noopener">Planning's copy</a> (downloads the PDF)</span>` : "";
+  const body = c.readable ? `<div class="text">${highlight(c.text, terms, esc)}</div>`
+    : `<div class="unreadable">The text of this condition could not be read cleanly. ${c.pdf
+        ? `<a href="${esc(c.pdf)}${c.page ? "#page=" + c.page : ""}" target="_blank" rel="noopener">Open the motion page${c.page ? " (" + c.page + ")" : ""}</a> to read it.`
+        : "Open Planning's copy of the motion to read it."}
+        <details><summary>Show the text as extracted anyway</summary>${esc(c.raw_text || c.text)}</details></div>`;
+  return `<article class="card${isTarget ? " target" : ""}"${isTarget ? ' id="target" tabindex="-1"' : ""}>
+    <div class="head"><div class="title"><span class="num">${esc(c.number)}.</span>${highlight(c.title, terms, esc)}</div>
+      <span class="kind ${c.kind}">${KIND_LABEL[c.kind] || "Not classified"}</span></div>
+    ${body}
+    <div class="meta"><span><b>${recordMatches(c, terms) ? `<mark>${esc(c.record)}</mark>` : esc(c.record)}</b></span><span>${addressMatches(c, terms) ? `<mark>${esc(c.address)}</mark>` : esc(c.address)}</span><span>Decided ${esc(c.decided || "date not on file")}</span>
+      <span>${esc(c.zoning)}</span><span>${esc(c.business)}</span>
+      <span class="tags">${c.categories.map(x => `<span class="tag">${esc(catLabel(x))}</span>`).join("")}</span></div>
+    <div class="links">${page}${src}${feedbackLink(c, { to: FEEDBACK_TO, base: location.origin + location.pathname }, esc)}</div>
+  </article>`;
+}
+
+function render() {
+  const f = Object.fromEntries(IDS.map(id => [id, $(id).value]));
+  writeState();
+  const terms = parseQuery(f.q, all);
+  const hits = search(all, f);
+  const at = cardIndex(hits, target);
+  target = null;
+  const motions = new Set(hits.map(c => c.record)).size;
+  let text = `${plural(hits.length, "condition")} from ${n(motions)} of ${n(data.motions_with_conditions)} motions`;
+  const hidden = f.kind === "" ? search(all, { ...f, kind: "boilerplate" }).length : 0;
+  $("count").innerHTML = esc(text) + (hidden ? ` · ${esc(plural(hidden, "approval-boilerplate condition"))} hidden <button class="link" id="showall" type="button">show them</button>` : "");
+  if (hidden) $("showall").onclick = () => { $("kind").value = "all"; shown = PAGE; render(); };
+  const box = $("results");
+  if (!hits.length) {
+    const note = f.q ? noMatchNote(all, f.q) : "";
+    box.innerHTML = `<p class="empty">No condition matches these filters.${note ? " " + esc(note) : ""}</p>`;
+    return;
+  }
+  if (at >= 0) shown = shownFor(at, shown, PAGE);
+  box.innerHTML = hits.slice(0, shown).map((c, i) => card(c, terms, i === at)).join("")
+    + (hits.length > shown ? `<button class="reset more" id="more" type="button">Show ${Math.min(PAGE, hits.length - shown)} more</button>` : "");
+  const more = $("more");
+  if (more) more.onclick = () => { shown += PAGE; render(); };
+  if (at >= 0) {
+    // below the sticky filters, and focused so the keyboard starts there
+    const el = $("target"), bar = document.querySelector(".filters");
+    el.style.scrollMarginTop = `${(bar ? bar.offsetHeight : 0) + 10}px`;
+    el.scrollIntoView({ block: "start" });
+    el.focus({ preventScroll: true });
+  }
+}
+
+function footer() {
+  const none = data.motions_without_conditions;
+  const removed = data.removed_motions;
+  const review = data.review || { decisions: [], added_back: [], removed: [] };
+  const unreadable = all.filter(c => !c.readable).length;
+  const split = all.filter(c => c.split_from).length;
+  $("footer").innerHTML = `
+    <p><b>Which conditions.</b> The list shows case-specific conditions first, then standard ones, newest decision first.
+    "Approval boilerplate" is hidden unless you pick it under "Which conditions": the conditions about the approval itself,
+    worded the same on every motion. They are the conditions titled ${data.boilerplate_titles.map(t => `"${esc(t)}"`).join(", ")}.
+    "Standard" means the same wording opens the same-titled condition on at least five motions, or the title is on at least
+    half of the approved motions for that kind of use, or it is a lettered part of a template set (such as "Liquor Stores (B)")
+    worded the same on at least two motions; otherwise "case-specific".</p>
+    <p><b>Counts.</b> ${n(data.motions)} motions on food, drink and entertainment premises were found.
+    ${n(data.motions_with_conditions)} of them have conditions, and every count on this page is out of those.
+    ${none.length ? `${plural(none.length, "motion")} had none to list: ${none.map(m => `${esc(m.record)} (${esc(m.address)}, ${esc(m.outcome || m.why)})`).join("; ")}.` : ""}</p>
+    <p><b>Text.</b> Each condition is shown as extracted from the motion, with page furniture removed (the "For information
+    about compliance" contact line, page footers, section headings). Scanned motions were re-read from the PDF text layer or
+    by OCR where the first reading was garbled; a second reading is only used when it is the same text, word for word, read
+    better. ${unreadable ? `${plural(unreadable, "condition")} still could not be read cleanly; ${unreadable === 1 ? "it links" : "they link"} to the motion page instead.` : ""}
+    ${split ? `${plural(split, "condition")} had run on into the condition before ${split === 1 ? "it" : "them"} (a missed heading) and ${split === 1 ? "is" : "are"} shown on ${split === 1 ? "its" : "their"} own.` : ""}
+    Page links open the local copy of the motion at the page where the condition starts.
+    <a href="coverage.html">What this page covers, and what it does not</a>.</p>
+    ${review.decisions.length ? `<p><b>Reviewed.</b> An AI classifier picked the food and drink motions; an AI review of every
+    motion then added back ${plural(review.added_back.length, "motion")} it had left out and removed
+    ${plural(review.removed.length, "motion")} it had kept. <a href="coverage.html#reviewed-list">The reviewed list</a>
+    gives each change and its reason.</p>` : ""}
+    <details><summary>${plural(removed.length, "motion")} left out: not food or drink</summary>
+      <table>${removed.map(m => `<tr><td>${esc(m.record)}</td><td>${esc(m.address)}</td><td>${esc(m.what)}</td><td>${m.left_out_by === "review" ? "removed by the review" : "left out by the classifier"}</td></tr>`).join("")}</table>
+    </details>`;
+}
+
+fetch("data/conditions.json").then(r => r.json()).then(d => {
+  data = d; all = d.conditions;
+  $("coverage-text").textContent = coverageSentences(d).join(" ");
+  $("sub").textContent = `${n(d.count)} conditions of approval from ${n(d.motions_with_conditions)} San Francisco Planning Commission motions on food, drink and entertainment premises.`;
+  fill("business", unique(c => [c.business]).sort());
+  fill("category", unique(c => c.categories).sort((a, b) => catLabel(a).localeCompare(catLabel(b))), catLabel);
+  fill("zoning", unique(c => [c.zoning]).sort());
+  fill("year", unique(c => [c.year]).sort().reverse());
+  fill("kind", KINDS.map(([v]) => v), v => Object.fromEntries(KINDS)[v], null);
+  $("synonyms").innerHTML = synonymLines().map(l => `<li>${esc(l)}</li>`).join("");
+  readState();
+  // a changed hash (a shared link opened in this tab, the back button, an edit in the address bar) runs its search
+  window.addEventListener("hashchange", () => { readState(); shown = PAGE; render(); });
+  for (const id of IDS.slice(1)) $(id).onchange = () => { shown = PAGE; render(); };
+  let t; $("q").oninput = () => { clearTimeout(t); t = setTimeout(() => { shown = PAGE; render(); }, 150); };
+  $("reset").onclick = () => { for (const id of IDS) $(id).value = ""; shown = PAGE; render(); };
+  footer();
+  render();
+}).catch(() => {
+  $("count").textContent = "Could not load data/conditions.json: run scripts/validation/build_conditions_index.py first.";
+  $("coverage-text").textContent = "Not known until the data loads.";
+});
+</script>
+</body>
+</html>

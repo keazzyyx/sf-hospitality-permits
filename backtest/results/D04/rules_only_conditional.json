@@ -1,0 +1,1484 @@
+{
+ "profile": {
+  "business_type": "restaurant",
+  "business_name": "Pacific Catch",
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": 1378,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": false,
+  "alcohol_type": "none",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": true,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": null,
+  "licences_held": [],
+  "alcohol_transaction": null,
+  "formula_retail": true,
+  "no_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": 689,
+  "existing_use_stated": [
+   "restaurant",
+   "retail",
+   "vacant"
+  ],
+  "changes_existing_business": "enlarge",
+  "merges_storefronts": true,
+  "stories": [
+   "first"
+  ],
+  "closing_hour": "23:00",
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": true,
+  "target_open_date": null,
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NC-2",
+   "permission": "principal",
+   "permission_label": "Permitted",
+   "existing_use": "restaurant",
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 711",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NC-2"
+     ]
+    },
+    {
+     "rule_id": "T11.principal",
+     "text": "Hours: a closing time of 11 p.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 711, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 711",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NC-2"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+     "code_section": "Planning Code § 102",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+     "citations": [
+      "app:abc:398433"
+     ]
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": [
+      "app:abc:398433"
+     ]
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2022-04-17 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+     "citations": [
+      "overlay:static:sf:nc_bar_rule_general",
+      "zoning:NC-2"
+     ]
+    }
+   ],
+   "rules_date": "2022-04-17",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      },
+      {
+       "rule_id": "T3.principal",
+       "text": "A Restaurant continues at this address. A new Restaurant would be principally permitted here, so enlarging or intensifying it needs no Conditional Use under this rule.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NC-2: formula retail is a conditional use (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+       "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.below",
+       "text": "Zoning district NC-2: a use below 4,000 square feet is principally permitted, and 1,378 square feet is below it (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Restaurant and a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": [
+        "app:abc:398433"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.principal",
+       "text": "Hours: a closing time of 11 p.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:398433"
+      ]
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description says the space is for fewer than 50 people, so the proposed occupancy is Group B.",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "The use does not change, so no neighbourhood notice was needed for a change of use on 17 April 2022.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "T3.principal",
+      "text": "A Restaurant continues at this address. A new Restaurant would be principally permitted here, so enlarging or intensifying it needs no Conditional Use under this rule.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NC-2: formula retail is a conditional use (Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+      "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Formula retail, Enlarging or intensifying an existing use.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description says the space is for fewer than 50 people, so the proposed occupancy is Group B.",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   },
+   {
+    "question": "What was the last legal use of the space at 2027 Chestnut St?",
+    "needs": "agency_answer",
+    "ask": "Planning's Property Information Map, or a Letter of Determination from San Francisco Planning"
+   }
+  ]
+ },
+ "rules_determinations": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NC-2",
+   "permission": "principal",
+   "permission_label": "Permitted",
+   "existing_use": "restaurant",
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 711",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NC-2"
+     ]
+    },
+    {
+     "rule_id": "T11.principal",
+     "text": "Hours: a closing time of 11 p.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 711, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 711",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NC-2"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+     "code_section": "Planning Code § 102",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+     "citations": [
+      "app:abc:398433"
+     ]
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": [
+      "app:abc:398433"
+     ]
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2022-04-17 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+     "citations": [
+      "overlay:static:sf:nc_bar_rule_general",
+      "zoning:NC-2"
+     ]
+    }
+   ],
+   "rules_date": "2022-04-17",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      },
+      {
+       "rule_id": "T3.principal",
+       "text": "A Restaurant continues at this address. A new Restaurant would be principally permitted here, so enlarging or intensifying it needs no Conditional Use under this rule.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NC-2: formula retail is a conditional use (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+       "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.below",
+       "text": "Zoning district NC-2: a use below 4,000 square feet is principally permitted, and 1,378 square feet is below it (Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Restaurant and a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": [
+        "app:abc:398433"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.principal",
+       "text": "Hours: a closing time of 11 p.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 711, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 711",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NC-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:398433"
+      ]
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description says the space is for fewer than 50 people, so the proposed occupancy is Group B.",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "The use does not change, so no neighbourhood notice was needed for a change of use on 17 April 2022.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.continues",
+      "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NC-2: a Restaurant on the first story is principally permitted (Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "T3.principal",
+      "text": "A Restaurant continues at this address. A new Restaurant would be principally permitted here, so enlarging or intensifying it needs no Conditional Use under this rule.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NC-2: formula retail is a conditional use (Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+      "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+      "citations": []
+     },
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district NC-2: a use below 4,000 square feet is principally permitted, and 1,378 square feet is below it (Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Restaurant and a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "T11.principal",
+      "text": "Hours: a closing time of 11 p.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 711, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 711",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-711.-nc-2-small-scale-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NC-2"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: formula retail: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NC-2"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 2027 Chestnut St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433",
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant and Retail. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:398433"
+      ]
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description says the space is for fewer than 50 people, so the proposed occupancy is Group B.",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   },
+   {
+    "question": "What was the last legal use of the space at 2027 Chestnut St?",
+    "needs": "agency_answer",
+    "ask": "Planning's Property Information Map, or a Letter of Determination from San Francisco Planning"
+   }
+  ]
+ },
+ "records": {
+  "zoning": "NC-2",
+  "overlays": [
+   "Neighborhood Commercial base districts: bar and restaurant use",
+   "Chestnut St Fin Svcs Restrict",
+   "Family and Senior Housing Opportunity SUD",
+   "NC-2"
+  ],
+  "tract": "128.02",
+  "site_history": {
+   "matched_by": "Parcel 0491/001 or the address 2027 Chestnut St",
+   "total": 17,
+   "by_kind": {
+    "use_decision": 1,
+    "agency_referral": 14,
+    "licence": 2
+   },
+   "entries": [
+    {
+     "application_id": "datasf_planning:2021-011436MIS",
+     "citation_id": "app:datasf_planning:2021-011436MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "EC referral - Place of Entertainment Permit -Recommend approval of nighttime entertainment use to an existing restaurant (D.B.A. “The Dorian”) at 2001 Chestnut Street as approved per Discretionary Review Case No. 2019-014251DRP (Discretionary Review Action DRA-0697) of Building Permit Application N…",
+     "address": "2001 CHESTNUT ST 94123",
+     "filed_at": "2021-11-09",
+     "decided_at": "2021-12-01",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2021-011436MIS"
+    },
+    {
+     "application_id": "datasf_planning:2021-000512MIS",
+     "citation_id": "app:datasf_planning:2021-000512MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "DPH referral - Restaurant - continuation of existing use.",
+     "address": "2015 CHESTNUT ST 94123",
+     "filed_at": "2021-01-13",
+     "decided_at": "2021-01-27",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2021-000512MIS"
+    },
+    {
+     "application_id": "datasf_planning:2019-014251DRP",
+     "citation_id": "app:datasf_planning:2019-014251DRP",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Discretionary Review - Public Initiated",
+     "description": "Discretionary Review Application for BPA 2019.0717.6081 for no construction, place of entertainment permit for (2) consistent (7) minute cabaret shows every Saturday & live music for corporate events.",
+     "address": "2001 CHESTNUT ST 94123",
+     "filed_at": "2019-10-31",
+     "decided_at": "2020-06-12",
+     "outcome": "approved",
+     "status": "Closed - DR taken-Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-014251DRP"
+    },
+    {
+     "application_id": "datasf_planning:2017-005937MIS",
+     "citation_id": "app:datasf_planning:2017-005937MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "ABC - Type 41 ABC Type-41 license permitted in conjunction with continued restaurant use in NC-2 Zoning District per PC Section 711.44 and 790.91. Must operate as a Bona Fide Eating Place per PC Section 790.142.",
+     "address": "2001 CHESTNUT ST 94123",
+     "filed_at": "2017-05-11",
+     "decided_at": "2017-05-16",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2017-005937MIS"
+    },
+    {
+     "application_id": "datasf_planning:2015-010636MIS",
+     "citation_id": "app:datasf_planning:2015-010636MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "The Dorian - Restaurant is a permitted use in the NC-2 zoning district per Planning Code Section 711.44.",
+     "address": "2001 CHESTNUT ST 94123",
+     "filed_at": "2015-08-19",
+     "decided_at": "2015-09-15",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2015-010636MIS"
+    },
+    {
+     "application_id": "abc:554921",
+     "citation_id": "app:abc:554921",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 47 – On-Sale General - Eating Place",
+     "description": "ABC licensee — Type 47 – On-Sale General - Eating Place (ACTIVE on 2022-04-17)",
+     "address": "2001 CHESTNUT ST, SAN FRANCISCO, CA",
+     "filed_at": null,
+     "decided_at": "2015-04-28",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=554921"
+    },
+    {
+     "application_id": "datasf_planning:2015-002708MIS",
+     "citation_id": "app:datasf_planning:2015-002708MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "The Dorian - Restaurant is a permitted use in the NC-2 Zoning District per Planning Code Section 711.44.",
+     "address": "2001 CHESTNUT ST 94123",
+     "filed_at": "2015-03-04",
+     "decided_at": "2015-03-20",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2015-002708MIS"
+    },
+    {
+     "application_id": "datasf_planning:MB1101474",
+     "citation_id": "app:datasf_planning:MB1101474",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- ABC License type 41 is permitted in conjuction with a small self service restaurant use per Planning Code Section 711.42",
+     "address": "2015 - 2027 CHESTNUT ST, SAN FRANCISCO, CA 94123",
+     "filed_at": "2011-08-10",
+     "decided_at": "2011-08-11",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1101474"
+    },
+    {
+     "application_id": "datasf_planning:MB1101329",
+     "citation_id": "app:datasf_planning:MB1101329",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- Small self service restaurant is permitted within the NC-2 Zoning District per Planning Code Section 711.42.",
+     "address": "2015 - 2027 CHESTNUT ST ST., SAN FRANCISCO, CA 94123",
+     "filed_at": "2011-07-19",
+     "decided_at": "2011-08-10",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1101329"
+    },
+    {
+     "application_id": "datasf_planning:MB1000828",
+     "citation_id": "app:datasf_planning:MB1000828",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- SMALL SELF-SERVICE RESTAURANT IS PERMITTED WITHIN THE NC-2 ZONING DISTRICT PER PLANNING CODE SECTION 711.44 OF THE PLANNING CODE. (SECTION 312 NOTIFICATION EOMPLETED FOR CHANGE OF USE UNDER BPA NO. 2010.03047560)",
+     "address": "2015 - 2022 CHESTNUT ST ST., SAN FRANCISCO, CA 94123",
+     "filed_at": "2010-08-05",
+     "decided_at": "2010-09-01",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1000828"
+    },
+    {
+     "application_id": "datasf_planning:MB0901015",
+     "citation_id": "app:datasf_planning:MB0901015",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- PERMITTED AS A CONTINUATION OF AN EXISTING FULL-SERVICE RESTAURANT WITH BAR USE PER SECTION 711.42 OF THE PLANNING CODE.",
+     "address": "2001 - 2027 CHESTNUT ST ST, SAN FRANCISCO, CA 94123",
+     "filed_at": "2009-10-01",
+     "decided_at": "2009-11-02",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0901015"
+    },
+    {
+     "application_id": "datasf_planning:MB0900504",
+     "citation_id": "app:datasf_planning:MB0900504",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- ABC LICENSE TYPE 41 IS PERMITTED IN CONJUNCTION WITH AN EXISTING FULL-SERVICE RESTAURANT WITH BAR USE",
+     "address": "2001 - 2027 CHESTNUT ST, SAN FRANCISCO, CA 94123",
+     "filed_at": "2009-05-18",
+     "decided_at": "2009-06-01",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0900504"
+    },
+    {
+     "application_id": "abc:398433",
+     "citation_id": "app:abc:398433",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 41 – On-Sale Beer & Wine - Eating Place",
+     "description": "PACIFIC CATCH — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2022-04-17)",
+     "address": "2027 CHESTNUT ST, SAN FRANCISCO, CA 94123",
+     "filed_at": null,
+     "decided_at": "2003-05-08",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=398433"
+    },
+    {
+     "application_id": "datasf_planning:MB0300401",
+     "citation_id": "app:datasf_planning:MB0300401",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Type 41 is permitted within the existing restaurant. -",
+     "address": "2027 - 2027 CHESTNUT ST, SAN FRANCISCO, CA 94123",
+     "filed_at": "2003-03-18",
+     "decided_at": "2003-04-02",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0300401"
+    },
+    {
+     "application_id": "datasf_planning:MB0300210",
+     "citation_id": "app:datasf_planning:MB0300210",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Continuation of small self-service restaurant is permitted. -",
+     "address": "2027 - 2027 CHESTNUT ST ST., SAN FRANCISCO, CA 94123",
+     "filed_at": "2003-02-13",
+     "decided_at": "2003-03-19",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0300210"
+    },
+    {
+     "application_id": "datasf_planning:MB0101032",
+     "citation_id": "app:datasf_planning:MB0101032",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Continuation of full service restaurant is permitted per Planning Code Sections 790.92 and 711.42. -",
+     "address": "2001 - 2027 CHESTNUT ST STREET, SAN FRANCISCO, CA 94123",
+     "filed_at": "2001-11-13",
+     "decided_at": "2001-11-29",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0101032"
+    },
+    {
+     "application_id": "datasf_planning:MA9901544",
+     "citation_id": "app:datasf_planning:MA9901544",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "A continuation of full service restaurant is permitted in the NC-2 District and limited beer brewing per approved type 23 ABC liscence on 11/2/98 . (711.42 / 790.92) -",
+     "address": "2001 - 2027 CHESTNUT ST 1ST & MEZZ, SAN FRANCISCO, CA 94123",
+     "filed_at": "1999-09-23",
+     "decided_at": "1999-10-18",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MA9901544"
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 16,
+   "bars": 5,
+   "abc_on_sale_licenses": 16,
+   "abc_licenses_1000ft": 42,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 4,
+   "approved_with_conditions": 0,
+   "denied": 0,
+   "withdrawn": 0,
+   "total": 4,
+   "window_years": 10,
+   "scope": "N = 4 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 44 permits and licences, 326 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 44,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 326
+  },
+  "applications_within_1000ft": 223,
+  "licences_within_500ft": 18,
+  "licences_within_1000ft": 44,
+  "businesses_within_500ft": 16
+ }
+}

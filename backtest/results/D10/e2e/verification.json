@@ -1,0 +1,431 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 27,
+  "supported": 4,
+  "trimmed": 11,
+  "downgraded": 9,
+  "dropped": 3
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 47 license (on-sale general, eating place) has been on file at 2351 Mission St since October 31, 2019, held by Down With This Sort of Thing LLC.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "An active ABC Type 47 license (on-sale general, eating place) has been on file at 2351 Mission St since October 31, 2019, held by Down With This Sort of Thing LLC.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:607603"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning approved continuation of the existing restaurant use at 2351 Mission St in December 2019, requiring operation as a Bona Fide Eating Place per Planning Code Sections 178 and 754.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Planning approved continuation of the existing restaurant use at 2351 Mission St in December 2019, requiring operation as a Bona Fide Eating Place per Planning Code Sections 178 and 754.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-022431MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "The restaurant at 2351 Mission St was noted by Planning in September 2018 as separate from the parking facility use on the same lot, confirming two distinct uses on the parcel.",
+   "verdict": "partially_supported",
+   "supported_text": "The restaurant at 2351 Mission St was noted by Planning in September 2018 as separate from the parking facility use on the same lot.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The restaurant at 2351 Mission St was noted by Planning in September 2018 as separate from the parking facility use on the same lot.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2018-011419MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A prior Conditional Use Authorization (case 2014.0704C, decided August 2014) is on file at this address for a formula retail use, and the proposal does not state whether it changes any condition of that earlier approval.",
+   "verdict": "partially_supported",
+   "supported_text": "A prior Conditional Use Authorization (case 2014.0704C, decided August 2014) is on file at this address for a formula retail use.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A prior Conditional Use Authorization (case 2014.0704C, decided August 2014) is on file at this address for a formula retail use.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2014.0704C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization at 2323 Mission St (73 m away, same zoning) approved outdoor seating at a bar/restaurant in December 2017 after a Planning Commission hearing; that case took 268 days from filing to approval.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization at 2323 Mission St (73 m away, same zoning) approved outdoor seating at a bar/restaurant in December 2017; that case took 268 days from filing to approval.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A Conditional Use Authorization at 2323 Mission St (73 m away, same zoning) approved outdoor seating at a bar/restaurant in December 2017; that case took 268 days from filing to approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2017-003058CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "Mission Alcoholic Beverage Special Use District § 249.60(d) requires expanded liquor establishments to provide outside lighting, limit window signage to 33%, and maintain 50% clear street-facing glazing, in addition to § 202.2 operating conditions.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Mission Alcoholic Beverage Special Use District § 249.60(d) requires expanded liquor establishments to provide outside lighting, limit window signage to 33%, and maintain 50% clear street-facing glazing, in addition to § 202.2 operating conditions.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district and code section but does not state the specific requirements mentioned (lighting, signage limits, glazing percentages, or § 202.2 conditions)."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Further review is required: enlarging the existing restaurant by adding outdoor seating triggers Conditional Use under Planning Code §§ 178 and 249.60(c)(3), and the outdoor area's compliance with § 202.2(a)(7) limits is not established.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Further review is required: enlarging the existing restaurant by adding outdoor seating triggers Conditional Use under Planning Code §§ 178 and 249.60(c)(3), and the outdoor area's compliance with § 202.2(a)(7) limits is not established.",
+   "confidence": null,
+   "citations": [
+    "app:abc:607603",
+    "app:datasf_planning:2019-022431MIS",
+    "app:datasf_planning:2018-011419MIS",
+    "app:datasf_planning:2014.0704C",
+    "app:datasf_planning:2017-003058CUA",
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "The applicant states the business already holds the license, and an active Type 47 (on-sale general, eating place) has been on file at 2351 Mission St since October 31, 2019.",
+   "verdict": "partially_supported",
+   "supported_text": "An active Type 47 (on-sale general, eating place) has been on file at 2351 Mission St since October 31, 2019.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active Type 47 (on-sale general, eating place) has been on file at 2351 Mission St since October 31, 2019.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:607603"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Within the Mission Alcoholic Beverage Special Use District, restaurants operating as Bona Fide Eating Places may serve alcohol, and Type 47 licenses may be transferred from inside or outside the district per § 249.60(b)(1)(A).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Within the Mission Alcoholic Beverage Special Use District, restaurants operating as Bona Fide Eating Places may serve alcohol, and Type 47 licenses may be transferred from inside or outside the district per § 249.60(b)(1)(A).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district but does not state what restaurants may do or what the code section says about Type 47 licenses."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "Insufficient information: the alcohol type (beer and wine, or full liquor) is not stated, so the rules cannot determine which license applies and whether the existing Type 47 can serve the outdoor area.",
+   "verdict": "partially_supported",
+   "supported_text": "Insufficient information: the alcohol type (beer and wine, or full liquor) is not stated, so the rules cannot determine which license applies.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Insufficient information: the alcohol type (beer and wine, or full liquor) is not stated, so the rules cannot determine which license applies.",
+   "confidence": null,
+   "citations": [
+    "app:abc:607603",
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "San Francisco Department of Public Health will route the health permit application to Planning for zoning review per the Interagency Permit Referrals guidelines.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "San Francisco Department of Public Health will route the health permit application to Planning for zoning review per the Interagency Permit Referrals guidelines.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows a Planning agency referral case but does not state that DPH routes health permits to Planning or mention Interagency Permit Referrals guidelines."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Health permit approvals for existing restaurants on Mission Street NCT (including 2351 Mission St, 2331 Mission St, and 2389 Mission St) were completed via agency referrals in 8 to 36 days between 2018 and 2021.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Health permit approvals for existing restaurants on Mission Street NCT (including 2351 Mission St, 2331 Mission St, and 2389 Mission St) were completed via agency referrals in 8 to 36 days between 2018 and 2021.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The 2351 Mission St record was a Planning approval for conditional use continuation, not a health permit approval."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "Allowed: a food or drink business needs a health permit to operate, issued after plan check and inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Allowed: a food or drink business needs a health permit to operate, issued after plan check and inspection without a hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Allowed: a food or drink business needs a health permit to operate, issued after plan check and inspection without a hearing.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2019-022431MIS",
+    "app:datasf_planning:2021-003739MIS",
+    "app:datasf_planning:2019-002300MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "California Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record contains no information about California Building Code occupancy classifications."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The existing occupancy group of the space is not in public records; only plans or an inspection show it.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The existing occupancy group of the space is not in public records; only plans or an inspection show it.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not address occupancy group documentation or how to determine existing occupancy groups."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Building permit applications are routed to Planning for zoning review per Planning Code § 175(a).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Building permit applications are routed to Planning for zoning review per Planning Code § 175(a).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not mention Planning Code § 175(a) or building permit routing procedures."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Insufficient information: without the occupant count (whether the space is for fewer than 50 people) and the existing occupancy group (shown only by plans or inspection), a change of occupancy cannot be established.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Insufficient information: without the occupant count (whether the space is for fewer than 50 people) and the existing occupancy group (shown only by plans or inspection), a change of occupancy cannot be established.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:outdoor:0",
+   "kind": "finding",
+   "original": "Planning Code § 202.2(a)(7) allows an outdoor activity area without Conditional Use if it is ground level, operates only 9 a.m.–10 p.m., is not associated with a Bar use, is seated only (for a Restaurant), and alcohol is dispensed inside or by wait staff at the patron's seat.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 202.2(a)(7) allows an outdoor activity area without Conditional Use if it is ground level, operates only 9 a.m.–10 p.m., is not associated with a Bar use, is seated only (for a Restaurant), and alcohol is dispensed inside or by wait staff at the patron's seat.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not contain the text of Planning Code § 202.2(a)(7) or its outdoor activity area conditions."
+  },
+  {
+   "item_id": "row:outdoor:1",
+   "kind": "finding",
+   "original": "The description states outdoor seating is in a parking lot and that outdoor alcohol service is true, but does not specify hours, whether standing is permitted, or how alcohol is dispensed.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description states outdoor seating is in a parking lot and that outdoor alcohol service is true, but does not specify hours, whether standing is permitted, or how alcohol is dispensed.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning record contains district rules, not information about what the description states or specifies."
+  },
+  {
+   "item_id": "row:outdoor:2",
+   "kind": "finding",
+   "original": "At 2323 Mission St (73 m away, same zoning), a Conditional Use Authorization approved outdoor seating at a bar/restaurant through a Planning Commission hearing in 2017; that case took 268 days.",
+   "verdict": "partially_supported",
+   "supported_text": "At 2323 Mission St (73 m away, same zoning), a Conditional Use Authorization approved outdoor seating at a bar/restaurant in 2017; that case took 268 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "At 2323 Mission St (73 m away, same zoning), a Conditional Use Authorization approved outdoor seating at a bar/restaurant in 2017; that case took 268 days.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2017-003058CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:outdoor",
+   "kind": "summary",
+   "original": "Insufficient information: the rules cannot determine whether the outdoor area meets all Planning Code § 202.2(a)(7) limits (hours 9 a.m.–10 p.m., seated only, alcohol dispensed inside or by wait staff) without those details.",
+   "verdict": "partially_supported",
+   "supported_text": "Insufficient information: the rules cannot determine whether the outdoor area meets all Planning Code § 202.2(a)(7) limits without those details.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Insufficient information: the rules cannot determine whether the outdoor area meets all Planning Code § 202.2(a)(7) limits without those details.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION",
+    "app:datasf_planning:2017-003058CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Operate as a Bona Fide Eating Place: alcohol service must be subordinate and incidental to meal service, consistent with the Mission Alcoholic Beverage Special Use District requirements. Basis: The December 2019 Planning approval at 2351 Mission St required operation as a Bona Fide Eating Place, and the Mission SUD permits restaurants to serve alcohol only when operated in that manner per § 249.60(b)(1)(A) and (d).",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Operate as a Bona Fide Eating Place. Basis: The December 2019 Planning approval at 2351 Mission St required operation as a Bona Fide Eating Place.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Operate as a Bona Fide Eating Place. Basis: The December 2019 Planning approval at 2351 Mission St required operation as a Bona Fide Eating Place.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-022431MIS",
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Good-neighbor policies under Planning Code § 202.2: maintain sidewalks, control noise and odor, keep garbage inside, and appoint a community liaison if a hearing is held. Basis: The Mission SUD requires compliance with § 202.2 operating conditions, and the restaurant CUA at 3372 19th St (134 m away) imposed sidewalk maintenance within one block, noise and odor controls, indoor garbage containment, and a community liaison.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Good-neighbor policies under Planning Code § 202.2: maintain sidewalks, control noise and odor, keep garbage inside, and appoint a community liaison if a hearing is held. Basis: The restaurant CUA at 3372 19th St (134 m away) imposed sidewalk maintenance within one block, noise and odor controls, indoor garbage containment, and a community liaison.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The overlay record does not state that the Mission SUD requires compliance with § 202.2."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Outdoor area hours limited to 9:00 a.m. to 10:00 p.m., seated service only, no standing, and alcohol dispensed inside or by wait staff at the patron's seat, if the outdoor area is to avoid Conditional Use under § 202.2(a)(7). Basis: Planning Code § 202.2(a)(7) allows an outdoor activity area as of right if it meets these limits. The only outdoor seating CUA nearby (2323 Mission St, 73 m away) required a full hearing, suggesting that outdoor areas not meeting these limits face discretionary review.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The zoning record does not contain Planning Code § 202.2(a)(7) or its outdoor area requirements; only the nearby CUA address and distance are in the records."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, composting, and recycling storage in enclosed areas on the property, labeled and illustrated on building permit plans, meeting San Francisco Recycling Program standards. Basis: The restaurant CUA at 3372 19th St (134 m away) imposed this condition. It is a standard requirement for eating and drinking uses.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, composting, and recycling storage in enclosed areas on the property, labeled and illustrated on building permit plans, meeting San Francisco Recycling Program standards. Basis: The restaurant CUA at 3372 19th St (134 m away) imposed this condition.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Garbage, composting, and recycling storage in enclosed areas on the property, labeled and illustrated on building permit plans, meeting San Francisco Recycling Program standards. Basis: The restaurant CUA at 3372 19th St (134 m away) imposed this condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2018-012727CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms Conditional Use is required, file a Conditional Use Authorization application with San Francisco Planning, including a project description, site plan showing the outdoor area, and a statement of compliance with Mission SUD § 249.60(d) design requirements. What to say: Frame the outdoor seating as an accessory expansion of the existing restaurant use on the same parcel, with alcohol service subordinate to meals consistent with the Bona Fide Eating Place requirement. Commit to operating hours ending by 10 p.m. (or the time confirmed with Planning), seated service only with no standing, and alcohol dispensed inside or by wait staff at patrons' outdoor seats. Address good-neighbor policies: sidewalk maintenance within one block, noise and odor controls, indoor garbage containment, and a designated community liaison. Provide outside lighting, limit window signage to 33%, and maintain 50% clear glazing per § 249.60(d).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records reference § 249.60 but do not provide its specific requirements; the cited application is at a different address with no conditions shown."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Apply for a health permit to operate with the expanded outdoor seating area from San Francisco Department of Public Health, Environmental Health Branch. What to say: Submit the application online with the Business Account Number (BAN), Location ID (LIN), and federal tax ID. Confirm that a certified food safety manager is on staff (required before the permit is issued). Schedule a pre-opening inspection at least two weeks in advance once the outdoor area is ready. The outdoor seating is an expansion of the existing restaurant use approved in December 2019.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for a health permit to operate from San Francisco Department of Public Health, Environmental Health Branch. What to say: Submit the application online with the Business Account Number (BAN), Location ID (LIN), and federal tax ID. Confirm that a certified food safety manager is on staff (required before the permit is issued).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for a health permit to operate from San Francisco Department of Public Health, Environmental Health Branch. What to say: Submit the application online with the Business Account Number (BAN), Location ID (LIN), and federal tax ID. Confirm that a certified food safety manager is on staff (required before the permit is issued).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 27,
+  "supported": 5,
+  "trimmed": 8,
+  "downgraded": 9,
+  "dropped": 5
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning approved restaurant use at this address in 1998 and 2014 as continuation of existing use permitted under Planning Code Section 810.42 and 810.43 in the CCB district.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved restaurant use at this address in 1998 and 2014 in the CCB district.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "Planning approved restaurant use at this address in 1998 and 2014 as continuation of existing use permitted under Planning Code Section 810.42 and 810.43 in the CCB district.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The 1998 record does not describe it as continuation of existing use and cites only Section 810.42; the 2014 record cites only Section 810.43."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A new restaurant in CCB is a conditional use per Planning Code Section 810, but Planning Code Section 178 requires a new conditional use authorization when an existing conditional use is significantly altered, enlarged or intensified.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A new restaurant in CCB is a conditional use per Planning Code Section 810, but Planning Code Section 178 requires a new conditional use authorization when an existing conditional use is significantly altered, enlarged or intensified.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown' and contains no information about Section 178 or requirements for altered conditional uses."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Adding beer and wine service to an established restaurant has been treated by Planning as continuation of use: at 653 Clay St (44m away, CCB), Planning approved a Type 41 license in 28 days as permitted in conjunction with existing restaurant use, and at 653 Commercial St (21m away, CCB), Planning approved a Type 47 full-bar license in 27 days as continuation of existing conditional use.",
+   "verdict": "partially_supported",
+   "supported_text": "At 653 Clay St (44m away, CCB), Planning approved a Type 41 license in 28 days as permitted in conjunction with existing restaurant use, and at 653 Commercial St (21m away, CCB), Planning approved a Type 47 full-bar license in 27 days as continuation of existing conditional use.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Adding beer and wine service to an established restaurant has been treated by Planning as continuation of use: at 653 Clay St (44m away, CCB), Planning approved a Type 41 license in 28 days as permitted in conjunction with existing restaurant use, and at 653 Commercial St (21m away, CCB), Planning approved a Type 47 full-bar license in 27 days as continuation of existing conditional use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show the two specific cases but do not state the general conclusion about how Planning treats such additions."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The description does not state whether the business is part of a chain sharing its name, look or menu with other locations. Formula retail is not permitted for restaurants in CCB per Planning Code Section 810.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description does not state whether the business is part of a chain sharing its name, look or menu with other locations. Formula retail is not permitted for restaurants in CCB per Planning Code Section 810.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown', not that formula retail restaurants are not permitted."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "A pending Miscellaneous Permit (2022-011138MIS) was filed at this address on November 14, 2022 with no description in the public record; its purpose is unknown.",
+   "verdict": "partially_supported",
+   "supported_text": "A pending Miscellaneous Permit (2022-011138MIS) was filed at this address on November 14, 2022 with no description in the public record.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A pending Miscellaneous Permit (2022-011138MIS) was filed at this address on November 14, 2022 with no description in the public record.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-011138MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Adding alcohol to an existing restaurant in CCB is an intensification of a conditional use that triggers further review under Planning Code Section 178, though the records do not establish whether the business is formula retail or what occupancy the space holds.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Adding alcohol to an existing restaurant in CCB is an intensification of a conditional use that triggers further review under Planning Code Section 178, though the records do not establish whether the business is formula retail or what occupancy the space holds.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:MA9900405",
+    "app:datasf_planning:MB1400941",
+    "zoning:CCB",
+    "app:datasf_planning:2020-010940MIS",
+    "app:datasf_planning:2017-013358MIS",
+    "app:datasf_planning:2022-011138MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "No ABC license of any type is on file at 667 Commercial St as of December 5, 2022.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "No ABC license of any type is on file at 667 Commercial St as of December 5, 2022.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The address record contains no information about ABC licenses."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Census tract 611.01 holds 55 active on-sale retail licenses against 6 authorized per ABC's September 2026 census tract authorizations, placing it in undue concentration under California Business and Professions Code Section 23958.4.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Census tract 611.01 holds 55 active on-sale retail licenses against 6 authorized per ABC's September 2026 census tract authorizations, placing it in undue concentration under California Business and Professions Code Section 23958.4.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Record shows 14 on-sale licenses within 500 ft, not 55 in census tract 611.01; does not give authorization number or code section."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "ABC Type 41 is a non-quota license issued directly by ABC for bona fide eating places, but undue-concentration tracts require a Public Convenience or Necessity finding from the city and can add one to three months to ABC's 55–65 day timeline.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "ABC Type 41 is a non-quota license issued directly by ABC for bona fide eating places, but undue-concentration tracts require a Public Convenience or Necessity finding from the city and can add one to three months to ABC's 55–65 day timeline.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:ca.abc_type_41"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "Planning approved Type 41 licenses for existing restaurants in the immediate area (653 Clay St in 2020, 550 Kearny St in 2021 and 2019) as continuation of use with no reference to undue concentration in the approval language.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved Type 41 licenses for existing restaurants in the immediate area (653 Clay St in 2020, 550 Kearny St in 2021 and 2019).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Planning approved Type 41 licenses for existing restaurants in the immediate area (653 Clay St in 2020, 550 Kearny St in 2021 and 2019) as continuation of use with no reference to undue concentration in the approval language.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Only the 2021 record mentions 'continuation of use'; the absence of undue concentration language is a conclusion not stated in the records."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description does not state how the Type 41 license will be obtained (original application or transfer), so the rules cannot determine which ABC review path applies, but census tract 611.01 is over-concentrated with 55 active on-sale licenses against 6 authorized.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The description does not state how the Type 41 license will be obtained (original application or transfer), so the rules cannot determine which ABC review path applies, but census tract 611.01 is over-concentrated with 55 active on-sale licenses against 6 authorized.",
+   "confidence": null,
+   "citations": [
+    "geo:address",
+    "stat:density",
+    "catalog:ca.abc_type_41",
+    "app:datasf_planning:2020-010940MIS",
+    "app:datasf_planning:2021-012069MIS",
+    "app:datasf_planning:2019-019756MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "San Francisco Department of Public Health issues a permit to operate after a pre-opening inspection confirms the facility matches approved plans and a certified food safety manager is on staff, per California Retail Food Code Sections 114380–114381 and San Francisco Health Code Article 8.",
+   "verdict": "partially_supported",
+   "supported_text": "San Francisco Department of Public Health issues a permit to operate after a pre-opening inspection confirms the facility matches approved plans and a certified food safety manager is on staff.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "San Francisco Department of Public Health issues a permit to operate after a pre-opening inspection confirms the facility matches approved plans and a certified food safety manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Planning approved health department referrals for restaurant use at 667 Commercial St in 1998 and for continuation of limited restaurant use in 2014.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved referrals for restaurant use at 667 Commercial St in 1998 and for continuation of limited restaurant use in 2014.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved referrals for restaurant use at 667 Commercial St in 1998 and for continuation of limited restaurant use in 2014.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MA9900405",
+    "app:datasf_planning:MB1400941"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and inspection for any food facility; the records show prior health approvals at this address in 1998 and 2014, though the current permit status is not in the data.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:MA9900405",
+    "app:datasf_planning:MB1400941"
+   ],
+   "note": "The 1998 and 2014 records are Planning Department agency referrals (miscellaneous permits), not health approvals."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Planning approved a building permit referral for continuation of limited restaurant use at this address in 2014 under case MB1400941.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved a referral for continuation of limited restaurant use at this address in 2014 under case MB1400941.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved a referral for continuation of limited restaurant use at this address in 2014 under case MB1400941.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MB1400941"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules cannot determine whether a building permit is needed because the description does not state the occupant load (whether fewer than 50 people) and the existing occupancy group is not shown in public records.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules cannot determine whether a building permit is needed because the description does not state the occupant load (whether fewer than 50 people) and the existing occupancy group is not shown in public records.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:MB1400941"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: ABC Type 41 license limits service to beer and wine only, no distilled spirits, and minors are allowed on the premises with food service. Basis: Type 41 is defined as on-sale beer and wine for eating places under California Business and Professions Code Section 23394. Every Type 41 approval in the comparables (653 Clay St, 550 Kearny St, 653 Commercial St) carried these limits by license type.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: ABC Type 41 license limits service to beer and wine only, and minors are allowed on the premises with food service. Basis: Type 41 is defined as on-sale beer and wine for eating places.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: ABC Type 41 license limits service to beer and wine only, and minors are allowed on the premises with food service. Basis: Type 41 is defined as on-sale beer and wine for eating places.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.abc_type_41",
+    "app:datasf_planning:2020-010940MIS",
+    "app:datasf_planning:2021-012069MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Bona fide eating place requirement: the premises must be regularly and principally used for the service of meals to guests, with a kitchen, seating, and food sales exceeding alcohol sales. Basis: Type 41 licenses are restricted to bona fide eating places per California Business and Professions Code Section 23038. ABC enforces this through inspections and sales ratio audits. The permit catalog states minors are allowed, which distinguishes it from bar licenses.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Bona fide eating place requirement: the premises must be regularly and principally used for the service of meals to guests, with a kitchen, seating, and food sales exceeding alcohol sales. Basis: Type 41 licenses are restricted to bona fide eating places. The permit catalog states minors are allowed.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record mentions bona fide eating places and minors allowed, but does not cite Section 23038, enforcement methods, or compare to bar licenses."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Thirty-day public posting at the premises during the ABC application period, with ABC's notice placard visible from the street. Basis: ABC requires a 30-day posting at the premises for all original applications and premises-to-premises transfers per California Business and Professions Code Section 24013. The permit catalog notes this posting period and that local protests can trigger a Public Convenience or Necessity hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Thirty-day public posting at the premises during the ABC application period. Basis: ABC requires a 30-day posting at the premises. The permit catalog notes this posting period and that local protests can trigger a Public Convenience or Necessity finding.",
+   "cut_problem": "keeps 'Public Convenience or Necessity hearing', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not cite Section 24013, does not specify application types, does not mention street visibility, and states 'PCN finding' not 'hearing'."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Responsible Beverage Service (RBS) certification for all alcohol servers and managers within 60 days of hire, registered with ABC at $3 plus course fees of $10–$25 per person. Basis: California AB 1221 mandates RBS training for every person who serves alcohol and their managers. The permit catalog entry for ca.rbs_training states this is required within 60 days and that ABC inspects for certification lists on site.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Responsible Beverage Service (RBS) certification for all alcohol servers and managers within 60 days of hire, registered with ABC at $3 plus course fees of $10–$25 per person. Basis: California AB 1221 mandates RBS training for every person who serves alcohol and their managers. The permit catalog entry for ca.rbs_training states this is required within 60 days and that ABC inspects for certification lists on site.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.rbs_training"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: If Planning treats the addition of alcohol as continuation of use, expect no new operating-hour restrictions beyond existing restaurant hours; if it requires a new CUA, expect a midnight closing condition. Basis: The one CUA for a new restaurant in the comparables (838 Grant Ave CVR, case 2021-008505CUA) imposed a midnight closing condition. By contrast, every agency referral for continuation of an existing restaurant with alcohol (653 Clay, 653 Commercial, 550 Kearny) had no new hours conditions.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If Planning treats the addition of alcohol as continuation of use, expect no new operating-hour restrictions beyond existing restaurant hours; if it requires a new CUA, expect a midnight closing condition. Basis: The one CUA for a new restaurant in the comparables (838 Grant Ave CVR, case 2021-008505CUA) imposed a midnight closing condition. By contrast, every agency referral for continuation of an existing restaurant with alcohol (653 Clay, 653 Commercial) had no new hours conditions.",
+   "cut_problem": "keeps '550 Kearny had no new hours conditions', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records support 653 Clay and 653 Commercial but do not include a record for 550 Kearny."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Contact San Francisco Planning by phone at (628) 652-7600 or email to confirm in writing that adding beer and wine service qualifies as continuation of use under Planning Code Sections 810.44 and 178, and does not require a new Conditional Use Authorization. What to say: State that you operate an existing restaurant at 667 Commercial St that has been legally established since at least 1998 (Planning approval MA9900405) and 2014 (MB1400941), and you wish to add ABC Type 41 beer and wine service. Ask whether this is treated as continuation of the existing conditional use or as an intensification requiring a new CUA hearing. Reference comparable approvals at 653 Commercial St (Type 47 approved as continuation, case 2017-013358MIS) and 653 Clay St (Type 41 approved as continuation, case 2020-010940MIS). Request a written determination or a pre-application meeting to confirm the pathway before filing ABC or health applications.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Contact San Francisco Planning by email to confirm in writing that adding beer and wine service qualifies as continuation of use under Planning Code Sections 810.44 and 178, and does not require a new Conditional Use Authorization. What to say: State that you operate an existing restaurant at 667 Commercial St that has been legally established since at least 1998 (Planning approval MA9900405) and 2014 (MB1400941), and you wish to add ABC Type 41 beer and wine service. Ask whether this is treated as continuation of the existing conditional use or as an intensification requiring a new CUA hearing. Reference comparable approvals at 653 Commercial St (Type 47 approved as continuation, case 2017-013358MIS) and 653 Clay St (Type 41 approved as continuation, case 2020-010940MIS). Request a written determination or a pre-application meeting to confirm the pathway before filing ABC or health applications.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Contact San Francisco Planning by email to confirm in writing that adding beer and wine service qualifies as continuation of use under Planning Code Sections 810.44 and 178, and does not require a new Conditional Use Authorization. What to say: State that you operate an existing restaurant at 667 Commercial St that has been legally established since at least 1998 (Planning approval MA9900405) and 2014 (MB1400941), and you wish to add ABC Type 41 beer and wine service. Ask whether this is treated as continuation of the existing conditional use or as an intensification requiring a new CUA hearing. Reference comparable approvals at 653 Commercial St (Type 47 approved as continuation, case 2017-013358MIS) and 653 Clay St (Type 41 approved as continuation, case 2020-010940MIS). Request a written determination or a pre-application meeting to confirm the pathway before filing ABC or health applications.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:CCB",
+    "app:datasf_planning:MA9900405",
+    "app:datasf_planning:MB1400941",
+    "app:datasf_planning:2017-013358MIS",
+    "app:datasf_planning:2020-010940MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms continuation of use, file the ABC Type 41 original application online through ABC's online portal, including the signed lease, entity documents, seller's permit, and the Planning Department's written confirmation that the restaurant use is established. What to say: In the ABC application, describe the premises as a bona fide eating place with a full commercial kitchen, table seating, and meals served during all hours of alcohol service. Attach Planning's written confirmation that the restaurant use is legally established and authorized to continue in the CCB district per Planning Code Section 810. Submit the signed lease, California Secretary of State entity registration, seller's permit, and photos of the interior showing kitchen and dining areas. ABC will route the application to SFPD and Planning for 30-day referral review, then post a notice at the premises for 30 days. Budget 60–120 days if unprotested; add one to three months if the census tract's undue concentration triggers a Public Convenience or Necessity finding request from the city.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records don't specify online filing, the detailed description requirements, Section 810, or routing to SFPD and Planning for 30-day referral review."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File for or renew the San Francisco Business Registration Certificate and the Health Permit to Operate through the SF Department of Public Health online portal, confirming continuation of the existing restaurant use. What to say: State that the restaurant use at 667 Commercial St continues as previously approved by Planning in 1998 and 2014, and that beer and wine service is being added under an ABC Type 41 application. DPH will route the health permit application to Planning for a zoning referral; Planning should approve it administratively as continuation of use if step 1 confirmed that pathway. Attach the ABC application receipt, the certified food safety manager certificate, and proof of workers' compensation insurance. The health permit referral typically takes 14–45 days for administrative approval.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File for or renew the San Francisco Business Registration Certificate and the Health Permit to Operate through the SF Department of Public Health online portal, confirming continuation of the existing restaurant use. What to say: State that the restaurant use at 667 Commercial St continues, and that beer and wine service is being added under an ABC Type 41 application. DPH will route the health permit application to Planning for a zoning referral; Planning should approve it administratively as continuation of use if step 1 confirmed that pathway. Attach the ABC application receipt, the certified food safety manager certificate, and proof of workers' compensation insurance. The health permit referral typically takes 14–45 days for administrative approval.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File for or renew the San Francisco Business Registration Certificate and the Health Permit to Operate through the SF Department of Public Health online portal, confirming continuation of the existing restaurant use. What to say: State that the restaurant use at 667 Commercial St continues, and that beer and wine service is being added under an ABC Type 41 application. DPH will route the health permit application to Planning for a zoning referral; Planning should approve it administratively as continuation of use if step 1 confirmed that pathway. Attach the ABC application receipt, the certified food safety manager certificate, and proof of workers' compensation insurance. The health permit referral typically takes 14–45 days for administrative approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:sf.business_registration",
+    "app:datasf_planning:2021-005768MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California Seller's Permit from CDTFA (free, online, often same-day) and register for California EDD payroll taxes if not already done, as both are prerequisites for the ABC license. What to say: Register online through the CDTFA portal for the seller's permit (no fee) and the EDD e-Services for Business portal for employer registration (no fee). ABC will not issue the Type 41 license until the seller's permit number is on file. If you already hold these registrations, provide the account numbers on the ABC application.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain a California Seller's Permit from CDTFA (free, online, often same-day) as it is a prerequisite for the ABC license, and register for California EDD payroll taxes if not already done. What to say: Register online through the CDTFA portal for the seller's permit (no fee) and the EDD e-Services for Business portal for employer registration (no fee). ABC will not issue the Type 41 license until the seller's permit number is on file. If you already hold these registrations, provide the account numbers on the ABC application.",
+   "cut_problem": "keeps 'EDD payroll taxes as prerequisite for the ABC license', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The ABC record lists only the seller's permit as a prerequisite, not EDD employer registration."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Enroll all alcohol-serving staff and managers in ABC-approved Responsible Beverage Service (RBS) training within 60 days of hire, and post the certification list on site for ABC inspections. What to say: Register each employee on the ABC RBS Portal ($3 per person), complete an approved RBS course (about $10–$25 per person), and pass the exam. Download the certificates and keep a current list of certified staff on the premises. ABC inspectors will ask for this list during routine inspections and at the time of license issuance.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Enroll all alcohol-serving staff and managers in ABC-approved Responsible Beverage Service (RBS) training within 60 days of hire, and post the certification list on site for ABC inspections. What to say: Register each employee on the ABC RBS Portal ($3 per person), complete an approved RBS course (about $10–$25 per person), and pass the exam. Download the certificates and keep a current list of certified staff on the premises.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Enroll all alcohol-serving staff and managers in ABC-approved Responsible Beverage Service (RBS) training within 60 days of hire, and post the certification list on site for ABC inspections. What to say: Register each employee on the ABC RBS Portal ($3 per person), complete an approved RBS course (about $10–$25 per person), and pass the exam. Download the certificates and keep a current list of certified staff on the premises.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.rbs_training"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 60 to 210 days. Estimated government cost: $1,470 to $2,600. Notes: Timeline of 60–210 days and cost of $1,470–$2,600 are for approvals when granted, covering the Conditional Use Authorization (if required) and the Health Permit to Operate. ABC Type 41 application: 60–120 days per the permit catalog if unprotested; one to three months longer if census tract 611.01's undue concentration requires a Public Convenience or Necessity finding from the city. Health permit to operate: 14–45 days per the catalog entry. The timeline assumes Planning confirms continuation of use; if Planning requires a new Conditional Use Authorization, add 120–300 days and $3,100–$15,000 per catalog entry sf.conditional_use_authorization, based on the one CUA comparable at 838 Grant Ave that took 183 days from filing to approval. Government fees: ABC Type 41 application $1,000–$1,600, health permit to operate $470–$1,000 (2026–27 schedule). Not included: San Francisco Business Registration Certificate $55–$700 (prerequisite, typically $55–$95 for a small restaurant), California Seller's Permit (free), EDD employer registration (free), RBS training $13–$55 per employee, ASCAP and BMI music licenses $600–$5,000 combined (not government fees), and any building permit if a change of occupancy is determined. The pending Miscellaneous Permit 2022-011138MIS filed November 14, 2022 at this address may affect the timeline; verify its status with Planning before filing.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 60 to 210 days. Estimated government cost: $1,470 to $2,600. Notes: Timeline of 60–210 days and cost of $1,470–$2,600 are for approvals when granted, covering the Conditional Use Authorization (if required) and the Health Permit to Operate. ABC Type 41 application: 60–120 days per the permit catalog if unprotested; one to three months longer if undue concentration requires a Public Convenience or Necessity finding from the city. Health permit to operate: 14–45 days per the catalog entry. The timeline assumes Planning confirms continuation of use; if Planning requires a new Conditional Use Authorization, add the one CUA comparable at 838 Grant Ave that took 183 days from filing to approval. Government fees: ABC Type 41 application $1,000–$1,600, health permit to operate $470–$1,000. Not included: San Francisco Business Registration Certificate $55–$700 (prerequisite), and any building permit if a change of occupancy is determined.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 60 to 210 days. Estimated government cost: $1,470 to $2,600. Notes: Timeline of 60–210 days and cost of $1,470–$2,600 are for approvals when granted, covering the Conditional Use Authorization (if required) and the Health Permit to Operate. ABC Type 41 application: 60–120 days per the permit catalog if unprotested; one to three months longer if census tract 611.01's undue concentration requires a Public Convenience or Necessity finding from the city. Health permit to operate: 14–45 days per the catalog entry. The timeline assumes Planning confirms continuation of use; if Planning requires a new Conditional Use Authorization, add 120–300 days and $3,100–$15,000 per catalog entry sf.conditional_use_authorization, based on the one CUA comparable at 838 Grant Ave that took 183 days from filing to approval. Government fees: ABC Type 41 application $1,000–$1,600, health permit to operate $470–$1,000 (2026–27 schedule). Not included: San Francisco Business Registration Certificate $55–$700 (prerequisite, typically $55–$95 for a small restaurant), California Seller's Permit (free), EDD employer registration (free), RBS training $13–$55 per employee, ASCAP and BMI music licenses $600–$5,000 combined (not government fees), and any building permit if a change of occupancy is determined. The pending Miscellaneous Permit 2022-011138MIS filed November 14, 2022 at this address may affect the timeline; verify its status with Planning before filing.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show 2020-010940MIS filed 2020-11-25, not 2022-011138MIS; census tract, seller's permit, EDD, RBS training, music licenses, CUA time/cost ranges, and fee schedule year not in cited records."
+  }
+ ]
+}

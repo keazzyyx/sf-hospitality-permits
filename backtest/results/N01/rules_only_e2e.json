@@ -1,0 +1,659 @@
+{
+ "profile": {
+  "business_type": "food_truck",
+  "business_name": null,
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": 5000,
+  "employees": 1,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": false,
+  "alcohol_type": "none",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": false,
+  "new_construction": false,
+  "exterior_signage": false,
+  "plays_recorded_music": true,
+  "mobile_vending": true,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": null,
+  "licences_held": [],
+  "alcohol_transaction": null,
+  "formula_retail": null,
+  "no_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "target_open_date": null,
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "C-2",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The rule table covers bars, restaurants, cafes and nighttime entertainment. It has no use on file for this kind of business, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district C-2 has no hours of operation control on file (Planning Code § 210.1, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 210.1",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-210.-description-and-purpose-of-commercial-industrial-and-production-distribution-repair/sec.-210.1.-c-2-districts-community-business",
+     "citations": [
+      "zoning:C-2"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 430 Beach St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2022-04-14 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 210.1",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20117",
+     "citations": [
+      "zoning:C-2"
+     ]
+    }
+   ],
+   "rules_date": "2022-04-14",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "a use the rule table covers (it has none on file for this kind of business)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The rule table covers bars, restaurants, cafes and nighttime entertainment. It has no use on file for this kind of business, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.below",
+       "text": "Zoning district C-2: a use below 50,001 square feet is principally permitted, and 5,000 square feet is below it (Planning Code § 210.1, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 210.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-210.-description-and-purpose-of-commercial-industrial-and-production-distribution-repair/sec.-210.1.-c-2-districts-community-business",
+       "citations": [
+        "zoning:C-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what the space was last used as"
+     ],
+     "lines": [
+      {
+       "rule_id": "T8.missing",
+       "text": "From 2021-12-20 to 2024-12-20 a change of use or demolition of a laundromat needed a Conditional Use (Planning Code § 202.12). The description does not say what the space was last used as, so this is not decided.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district C-2 has no hours of operation control on file (Planning Code § 210.1, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 210.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-210.-description-and-purpose-of-commercial-industrial-and-production-distribution-repair/sec.-210.1.-c-2-districts-community-business",
+       "citations": [
+        "zoning:C-2"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 430 Beach St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_established",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "On 14 April 2022 a change of use could need neighbourhood notice. Whether the use changes is not established, so whether notice was needed is not established.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Use authorization (not covered by the rule table)",
+    "agency": "San Francisco Planning",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The rule table covers bars, restaurants, cafes and nighttime entertainment. It has no use on file for this kind of business, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district C-2: a use below 50,001 square feet is principally permitted, and 5,000 square feet is below it (Planning Code § 210.1, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 210.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-210.-description-and-purpose-of-commercial-industrial-and-production-distribution-repair/sec.-210.1.-c-2-districts-community-business",
+      "citations": [
+       "zoning:C-2"
+      ]
+     },
+     {
+      "rule_id": "T8.missing",
+      "text": "From 2021-12-20 to 2024-12-20 a change of use or demolition of a laundromat needed a Conditional Use (Planning Code § 202.12). The description does not say what the space was last used as, so this is not decided.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district C-2 has no hours of operation control on file (Planning Code § 210.1, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 210.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-210.-description-and-purpose-of-commercial-industrial-and-production-distribution-repair/sec.-210.1.-c-2-districts-community-business",
+      "citations": [
+       "zoning:C-2"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 430 Beach St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The rules could not decide: use control of the zoning district and removal of a laundromat. What is missing: a use the rule table covers (it has none on file for this kind of business); what the space was last used as. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "a use the rule table covers (it has none on file for this kind of business)",
+     "what the space was last used as"
+    ]
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 430 Beach St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "insufficient_information",
+  "overall_line": "Of the 3 approvals this concept needs: 2 insufficient information (zoning and use, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: a use the rule table covers (it has none on file for this kind of business). Needed for: zoning and use.",
+    "needs": "agency_answer",
+    "ask": "A written answer from San Francisco Planning, such as a Letter of Determination"
+   },
+   {
+    "question": "Not known: what the space was last used as. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant, or Planning's Property Information Map"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ },
+ "records": {
+  "zoning": "C-2",
+  "overlays": [
+   "Priority Equity Geographies SUD",
+   "Waterfront 2",
+   "C-2"
+  ],
+  "tract": "101.01",
+  "site_history": {
+   "matched_by": "Parcel 0012/003A or the address 430 Beach St",
+   "total": 3,
+   "by_kind": {
+    "agency_referral": 3
+   },
+   "entries": [
+    {
+     "application_id": "datasf_planning:2018-005598MIS",
+     "citation_id": "app:datasf_planning:2018-005598MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Health - Restaurant: Recommend Approval - Restaurant operating as a Bona Fide Eating Place with outdoor activity and food service is permitted in the C-2 District per P.C. Sec. 210.1. Continuation of existing use.",
+     "address": "430 BEACH ST 94133",
+     "filed_at": "2018-04-12",
+     "decided_at": "2018-04-17",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2018-005598MIS"
+    },
+    {
+     "application_id": "datasf_planning:2018-003754MIS",
+     "citation_id": "app:datasf_planning:2018-003754MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Health - Other: Tea Shop (Limited Restaurant)",
+     "address": "430 BEACH ST 94133",
+     "filed_at": "2018-03-16",
+     "decided_at": "2018-03-26",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2018-003754MIS"
+    },
+    {
+     "application_id": "datasf_planning:2018-001584MIS",
+     "citation_id": "app:datasf_planning:2018-001584MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Health - Limited Restaurant: Recommend Approval - Limited Restaurant is permitted in the C-2 District per P.C. Sec. 210.1. Continuation of existing use.",
+     "address": "430 BEACH ST 94133",
+     "filed_at": "2018-01-29",
+     "decided_at": "2018-02-06",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2018-001584MIS"
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 20,
+   "bars": 0,
+   "abc_on_sale_licenses": 11,
+   "abc_licenses_1000ft": 27,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 0,
+   "approved_with_conditions": 0,
+   "denied": 0,
+   "withdrawn": 0,
+   "total": 0,
+   "window_years": 10,
+   "scope": "N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 30 permits and licences, 193 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 30,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 193
+  },
+  "applications_within_1000ft": 203,
+  "licences_within_500ft": 13,
+  "licences_within_1000ft": 30,
+  "businesses_within_500ft": 20
+ }
+}

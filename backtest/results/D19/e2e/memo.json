@@ -1,0 +1,1524 @@
+{
+ "format_version": 2,
+ "address": "1463 Haight St, San Francisco, CA 94117",
+ "lat": 37.769836766344646,
+ "lng": -122.44642837262933,
+ "parcel": "1244/025",
+ "concept_summary": "A full-service restaurant with alcohol service and full cooking at 1463 Haight St in the NCD-HAIGHT district, converting from the limited restaurant approved at this address in 2017 with no alcohol permitted.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 1 further review (building permit and change of use), 2 insufficient information (zoning and use, alcohol licence), 1 allowed (health permit).",
+  "next_step": "Confirm with the applicant the type of alcohol to be served (beer and wine only, or full liquor), whether the business is part of a chain, and the square footage; then file for Conditional Use Authorization with San Francisco Planning if required.",
+  "citations": [
+   "zoning:NCD-HAIGHT",
+   "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+  ]
+ },
+ "pathway": {
+  "use": "restaurant",
+  "use_label": "Restaurant",
+  "district": "NCD-HAIGHT",
+  "permission": "not_covered",
+  "permission_label": "Not decided by the rules",
+  "existing_use": null,
+  "change_of_use": "yes",
+  "change_of_use_label": "Change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.cell",
+    "text": "Zoning district NCD-HAIGHT: a Restaurant on the first story is principally permitted (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+    "code_section": "Planning Code § 719",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-HAIGHT"
+    ]
+   },
+   {
+    "rule_id": "T4:haight.new_on_sale_establishment",
+    "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The description does not say what alcohol will be served (beer and wine, or spirits too), so the licence type is not known and this is not decided (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+    "code_section": "Planning Code § 781.9(c)(2)",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+    "citations": [
+     "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+    ]
+   },
+   {
+    "rule_id": "T11.missing",
+    "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+    "code_section": "Planning Code § 719",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-HAIGHT"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1463 Haight St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 719",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+    "citations": [
+     "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+     "overlay:static:sf:nc_ncd_haight",
+     "zoning:NCD-HAIGHT"
+    ]
+   }
+  ],
+  "rules_date": "2024-11-19",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district NCD-HAIGHT: a Restaurant on the first story is principally permitted (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ],
+    "in_force_from": "2024-01-14",
+    "ordinance": "Ord. 249-23, File No. 230701",
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what alcohol will be served: beer and wine, or spirits too"
+    ],
+    "lines": [
+     {
+      "rule_id": "T4:haight.new_on_sale_establishment",
+      "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The description does not say what alcohol will be served (beer and wine, or spirits too), so the licence type is not known and this is not decided (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 781.9(c)(2)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+      "citations": [
+       "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+      ]
+     }
+    ],
+    "in_force_from": "2024-01-14",
+    "ordinance": "Ord. 249-23, File No. 230701",
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the business is part of a chain that shares its name, look or menu with other locations"
+    ],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-HAIGHT: formula retail is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "yes",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1463 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 19 November 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Use authorization (not decided: an input is missing)",
+   "agency": "San Francisco Planning",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCD-HAIGHT: a Restaurant on the first story is principally permitted (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "T3.no_use",
+     "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The description does not say what alcohol will be served (beer and wine, or spirits too), so the licence type is not known and this is not decided (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T5.row",
+     "text": "Zoning district NCD-HAIGHT: formula retail is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "T5.missing",
+     "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 719, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "T8.not_laundromat",
+     "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+     "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1463 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "zoning.status",
+     "text": "The rules could not decide: liquor licence rule of a restricted district, formula retail and use size. What is missing: what alcohol will be served: beer and wine, or spirits too; whether the business is part of a chain that shares its name, look or menu with other locations; the floor area of the business, in square feet. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [
+    "what alcohol will be served: beer and wine, or spirits too",
+    "whether the business is part of a chain that shares its name, look or menu with other locations",
+    "the floor area of the business, in square feet"
+   ],
+   "summary": "The rules could not decide whether a use authorization is required because the alcohol type, chain status and square footage were not given; restaurants are principally permitted but the Haight alcohol subdistrict requires CUA for new on-sale licenses and uses over 2,500 sq ft also need CUA.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "1463 Haight St sits in zoning district NCD-HAIGHT under Planning Code Section 719.",
+     "confidence": "verified",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use Authorization for any new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57) per Planning Code Section 781.9(c)(2), in force from January 14, 2024 (Ordinance 249-23).",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record confirms the district name and general code section but does not state the specific CU requirement, ABC types, subsection, effective date, or ordinance number.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "This address was approved in December 2017 as a limited restaurant with the explicit restriction that no alcohol is permitted on-site under Planning Code Section 202.2(a).",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2017-013960MIS"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Converting from limited restaurant to full-service restaurant is a change of use under Planning Code Section 102 with the last use as described.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record mentions Section 102 relates to Bar and Restaurant but does not state that this conversion constitutes a change of use.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "At 1457 Haight St, 13 meters away in the same district, Planning approved a Conditional Use Authorization in September 2024 for the identical change (limited to full-service restaurant, no construction) under Section 719 and Ordinance 249-23; the Commission passed it 7-0.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2024-004781CUA"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Before Ordinance 249-23 (enacted 2023), nearby restaurants at 1419, 1466, and 1401 Haight added ABC Type 41 (beer and wine) licenses via agency referral without CUA in 1–20 days; after 2023 all new on-sale licenses in the alcohol subdistrict require CUA.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show the historical cases but don't mention Ordinance 249-23 or post-2023 CUA requirements.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The description does not say what alcohol will be served (beer and wine, or spirits too), so the licence type is not known and this is not decided (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "alcohol.status",
+     "text": "The description does not give what alcohol will be served: beer and wine, or spirits too and how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2024-11-19: none within 1,000 ft or in the census tract.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what alcohol will be served: beer and wine, or spirits too",
+    "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+   ],
+   "summary": "The rules could not decide which ABC licence is required because the alcohol type (beer and wine, or full liquor) and how the licence will be obtained (new or transfer) were not given; the Haight alcohol subdistrict requires CUA for any new on-sale licence.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use Authorization for any new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57) per Planning Code Section 781.9(c)(2).",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record identifies the district and code section but does not state the Conditional Use Authorization requirement, ABC license types, or subsection (c)(2).",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Six active ABC on-sale licenses exist within 500 ft (Types 17, 48, 41, 20, 41, 41) and 16 total within 1,000 ft, triggering the density undue-concentration flag.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The records show the flag is true but don't state that these counts trigger it; the note says the 500 ft count is a proxy, not the actual test.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "ABC licence applications for any type are sent to the Police Department ABC Liaison Unit and to the Planning Department for review; these are referral steps inside the ABC application, not separate approvals.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record identifies the alcohol subdistrict but does not describe the ABC application review process or which departments conduct reviews.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "At 1390 Haight St, 131 meters away, Planning denied an ABC Type 01 referral in May 2021 because it did not fit restaurant use per Section 102, but stated Type 23 would be approvable.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2021-004815MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "A food business needs a health permit to operate, issued after plan check and inspection without a hearing; allowed.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "A food or drink business needs a health permit to operate, issued after inspection; the FY2026-27 schedule shows $470 permit application fee (includes initial inspection) and $0 annual license fee for restaurants for 2026-28.",
+     "confidence": "likely_applicable",
+     "citations": [
+      "catalog:sf.health_permit"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The Department of Public Health permit application is sent to the Planning Department for review as a referral step inside the health permit, not a separate approval.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record describes the health permit process but does not mention Planning Department review or referral steps.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit with change of use",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1463 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "Limited restaurant to restaurant is a change of use requiring a building permit that must conform to the Planning Code; the building code change of occupancy is not established, so further review is required.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Limited restaurant to restaurant is a change of use under Planning Code Section 102 with the last use as described.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record references Section 102 but does not state what constitutes a change of use or whether limited restaurant to restaurant qualifies as one.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "Under the Building Code a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; the proposed occupancy group depends on the occupant load, which is not given.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so a change of occupancy is not established.",
+     "confidence": "professional_review_required",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record identifies the zoning district but does not state the building permit or Planning Code conformance requirements.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "Building permit applications are sent to the Planning Department for review as a referral step inside the building permit, not a separate approval.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The zoning district record does not describe the building permit review process or referral procedures.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what alcohol will be served: beer and wine, or spirits too. Needed for: zoning and use; alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Whether the business is part of a chain that shares its name, look or menu with other locations (formula retail needs CUA in NCD-HAIGHT per Section 719).",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say."
+  },
+  {
+   "question": "The floor area of the business in square feet (uses of 2,500 sq ft or more need CUA in NCD-HAIGHT per Section 719).",
+   "needs": "applicant_history",
+   "ask": "The applicant or the lease."
+  },
+  {
+   "question": "The occupant load and whether the space is for fewer than 50 people (affects Building Code occupancy group and whether a Fire Department Place of Assembly permit is required).",
+   "needs": "plans",
+   "ask": "The architect or code consultant preparing the building permit plans."
+  },
+  {
+   "question": "The existing occupancy group of the space (only plans or an inspection show it, so whether a change of occupancy is required is not established).",
+   "needs": "inspection",
+   "ask": "The Department of Building Inspection or the building owner's records."
+  },
+  {
+   "question": "Whether the census tract at 1463 Haight St is flagged by ABC as an undue-concentration tract requiring a Public Convenience or Necessity finding from the city.",
+   "needs": "agency_answer",
+   "ask": "California ABC or San Francisco Planning ABC liaison."
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NCD-HAIGHT",
+  "name": "Haight Street Neighborhood Commercial District",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 719 (Zoning Control Table 719); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:NCD-HAIGHT"
+ },
+ "overlays": [
+  {
+   "name": "Haight Street Alcohol Restricted Use Subdistrict",
+   "kind": "alcohol_sud",
+   "effect": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 781.9",
+   "citation_id": "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+  },
+  {
+   "name": "Haight Street Neighborhood Commercial District",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 719 (Zoning Control Table 719); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_ncd_haight"
+  },
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  },
+  {
+   "name": "Fringe Financial Services RUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:fringe_financial_services_rud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 17,
+  "bars": 2,
+  "abc_on_sale_licenses": 6,
+  "abc_licenses_1000ft": 16,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 1,
+  "approved_with_conditions": 2,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 3,
+  "window_years": 10,
+  "scope": "N = 3 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 17 permits and licences, 120 records that are not use decisions for this kind of business, 1 undated",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 17,
+  "excluded_undated": 1,
+  "excluded_not_use_decision": 120,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "Three-year validity: the authorization expires three years from the effective date unless a building or site permit is issued within that period.",
+   "basis": "The September 2024 CUA at 1457 Haight for the same limited-to-full upgrade imposed standard three-year validity.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Community liaison: before issuing a building permit the project sponsor must appoint a community liaison officer and provide written notice of the name, business address and telephone number to the Zoning Administrator and all registered neighborhood groups.",
+   "basis": "The September 2024 CUA at 1457 Haight imposed this standard community liaison condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Sidewalk maintenance: the project sponsor must maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition per Department of Public Works Streets and Sidewalk Maintenance Standards.",
+   "basis": "The September 2024 CUA at 1457 Haight imposed this standard sidewalk maintenance condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2024-004781CUA",
+   "citation_id": "app:datasf_planning:2024-004781CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1457 HAIGHT ST 94117",
+   "distance_m": 12.7,
+   "filed_at": "2024-05-29",
+   "decided_at": "2024-09-12",
+   "days_to_decision": 106,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Monitoring - After Entitlement (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.994,
+   "why_comparable": "Nearest and most directly comparable: identical change of use (limited restaurant to full-service restaurant) at 1457 Haight Street, just 13 meters away in the same NCD-HAIGHT zoning district and Haight Street Alcohol Restricted Use Subdistrict, decided in September 2024. No construction proposed.",
+   "key_takeaway": "This use decision approved the limited-to-full upgrade via Conditional Use Authorization under Planning Code Section 719 and Board Ordinance 249-23, establishing that a CUA is the required path for this intensification in the alcohol subdistrict. The Commission approved it 7-0 with standard conditions including community liaison, three-year validity, and sidewalk maintenance—no special operating…",
+   "lat": 37.769802203018116,
+   "lng": -122.44629040936209,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-004781CUA"
+  },
+  {
+   "application_id": "datasf_planning:2017-013960MIS",
+   "citation_id": "app:datasf_planning:2017-013960MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1463 HAIGHT ST 94117",
+   "distance_m": 0.0,
+   "filed_at": "2017-10-30",
+   "decided_at": "2017-12-13",
+   "days_to_decision": 44,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.846,
+   "why_comparable": "The subject property itself: this is the 2017 agency referral (Health Department plan check) that approved 1463 Haight Street as a limited restaurant with the explicit restriction that no alcohol is permitted on-site under Planning Code Section 202.2(a).",
+   "key_takeaway": "This agency referral documents the baseline: 1463 Haight was permitted as a limited restaurant in December 2017 with a no-alcohol condition. The proposed concept represents a change of use from that approved baseline, requiring Planning review under the Haight Street Alcohol Restricted Use Subdistrict rules.",
+   "lat": 37.76983676754395,
+   "lng": -122.44642837145702,
+   "source_url": "https://sfplanninggis.org/pim?search=2017-013960MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-004815MIS",
+   "citation_id": "app:datasf_planning:2021-004815MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1390 HAIGHT ST 94117",
+   "distance_m": 130.5,
+   "filed_at": "2021-05-11",
+   "decided_at": "2021-05-28",
+   "days_to_decision": 17,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.865,
+   "why_comparable": "ABC referral at 1390 Haight Street, 131 meters away in the same NCD-HAIGHT zoning and alcohol subdistrict, decided in May 2021. Shows Planning's stance on license types for restaurants in this corridor.",
+   "key_takeaway": "This agency referral was denied for an ABC Type 01 (off-sale beer and wine) because it did not fit the restaurant use, but the decision explicitly stated that a Type 23 (small beer manufacturer) would be approvable for the existing restaurant/brewpub. The distinction matters: Planning approved on-sale licenses tied to bona fide eating places but rejected an off-sale-only license as inconsistent w…",
+   "lat": 37.77040275053105,
+   "lng": -122.44512989366059,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004815MIS"
+  },
+  {
+   "application_id": "datasf_planning:2019-013435MIS",
+   "citation_id": "app:datasf_planning:2019-013435MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1419 HAIGHT ST 94117",
+   "distance_m": 70.6,
+   "filed_at": "2019-07-01",
+   "decided_at": "2019-07-02",
+   "days_to_decision": 1,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.852,
+   "why_comparable": "ABC Type 41 (beer and wine, eating place) approval at 1419 Haight Street, 71 meters away in NCD-HAIGHT, decided in July 2019. Agency referral for an existing restaurant adding alcohol.",
+   "key_takeaway": "This agency referral approved a Type 41 license in conjunction with an existing restaurant use, noting it was a continuation of a legal nonconforming restaurant. Planning approved the alcohol addition over-the-counter as an ABC referral without requiring a CUA, but the 2017 case predates Board Ordinance 249-23 (enacted in 2023) that now mandates CUAs for new on-sale licenses in the Haight alcohol…",
+   "lat": 37.76998818151556,
+   "lng": -122.44564995555044,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-013435MIS"
+  },
+  {
+   "application_id": "datasf_planning:2015-007789MIS",
+   "citation_id": "app:datasf_planning:2015-007789MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1466 HAIGHT ST 94117",
+   "distance_m": 51.6,
+   "filed_at": "2015-06-22",
+   "decided_at": "2015-06-25",
+   "days_to_decision": 3,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.796,
+   "why_comparable": "ABC Type 41 approval at 1466 Haight Street (Veganburg), 52 meters away in NCD-HAIGHT, decided in June 2015. Another restaurant adding beer and wine.",
+   "key_takeaway": "This agency referral approved a Type 41 license as a continuation of an existing restaurant use per Section 719.44, handled over-the-counter in three days. Like the 2019 case, this predates Ordinance 249-23, showing that before 2023 restaurants could add beer and wine via simple ABC referral; the new ordinance now channels all new on-sale alcohol through the CUA process.",
+   "lat": 37.77030036193487,
+   "lng": -122.44647841779775,
+   "source_url": "https://sfplanninggis.org/pim?search=2015-007789MIS"
+  },
+  {
+   "application_id": "datasf_planning:2016-008984MIS",
+   "citation_id": "app:datasf_planning:2016-008984MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1401 HAIGHT ST 94117",
+   "distance_m": 70.6,
+   "filed_at": "2016-07-12",
+   "decided_at": "2016-08-01",
+   "days_to_decision": 20,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.808,
+   "why_comparable": "ABC Type 41 approval at 1401 Haight Street, 71 meters away in NCD-HAIGHT, decided in August 2016. Existing restaurant adding beer and wine.",
+   "key_takeaway": "This agency referral approved a Type 41 in conjunction with an existing legal nonconforming restaurant use, processed in 20 days. Again, this is a pre-2023 case that bypassed the CUA process, confirming the pattern that the Haight corridor historically permitted alcohol additions to restaurants administratively until Ordinance 249-23 required CUAs.",
+   "lat": 37.76998818151556,
+   "lng": -122.44564995555044,
+   "source_url": "https://sfplanninggis.org/pim?search=2016-008984MIS"
+  },
+  {
+   "application_id": "datasf_planning:2020-008561MIS",
+   "citation_id": "app:datasf_planning:2020-008561MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1599 HAIGHT ST 94117",
+   "distance_m": 168.8,
+   "filed_at": "2020-09-24",
+   "decided_at": "2020-09-30",
+   "days_to_decision": 6,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.846,
+   "why_comparable": "Health Department referral for a restaurant at 1599 Haight Street, 169 meters away in NCD-HAIGHT, decided in September 2020. Notes the use was permitted under a prior CUA (Case No. 2010.0116C, Motion No. 18079).",
+   "key_takeaway": "This agency referral shows that full-service restaurants with alcohol on this corridor have historically required Conditional Use Authorization: the 2020 continuation cited the 2010 CUA as the basis for the restaurant use. This reinforces that restaurant uses with alcohol are conditional, not principally permitted, in NCD-HAIGHT even before Ordinance 249-23.",
+   "lat": 37.76963633641785,
+   "lng": -122.4483275092901,
+   "source_url": "https://sfplanninggis.org/pim?search=2020-008561MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-001717MIS",
+   "citation_id": "app:datasf_planning:2021-001717MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1419 HAIGHT ST 94117",
+   "distance_m": 70.6,
+   "filed_at": "2021-02-18",
+   "decided_at": "2021-03-12",
+   "days_to_decision": 22,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.877,
+   "why_comparable": "Health Department referral for a restaurant at 1419 Haight Street, 71 meters away in NCD-HAIGHT, decided in March 2021. Same address as the 2019 ABC Type 41 approval.",
+   "key_takeaway": "This agency referral approved the restaurant use continuation at the same address that previously added a Type 41 license. The quick 22-day approval for the health permit suggests that once a restaurant use (with or without alcohol) is established, continuations and owner changes are handled administratively unless the use intensifies further.",
+   "lat": 37.76998818151556,
+   "lng": -122.44564995555044,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-001717MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 1244/025 or the address 1463 Haight St",
+  "total": 2,
+  "by_kind": {
+   "agency_referral": 2
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2017-013960MIS",
+    "citation_id": "app:datasf_planning:2017-013960MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Health - Restaurant - Approved as LIMITED-Restaurant. Must operate under conditions of PCS 202.2(a). No alcohol permitted on-site. Approved via BPA No. 2016.0802.3978.",
+    "address": "1463 HAIGHT ST 94117",
+    "filed_at": "2017-10-30",
+    "decided_at": "2017-12-13",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2017-013960MIS"
+   },
+   {
+    "application_id": "datasf_planning:MB0000193",
+    "citation_id": "app:datasf_planning:MB0000193",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "The proposed use of a juice bar is permitted in the Haight Neighborhood Comercial District per Planning Code Section 719.40/790.102 on street level only. -",
+    "address": "1467 - 1467 HAIGHT ST STREET LEV, SAN FRANCISCO, CA 94117",
+    "filed_at": "2000-02-15",
+    "decided_at": "2000-02-29",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0000193"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 4,
+   "action": "Attend the Planning Commission hearing and present the application.",
+   "what_to_say": "Present the concept as a full-service restaurant converting from limited restaurant, with alcohol incidental to meals. Cite the September 2024 approval at 1457 Haight as directly comparable precedent and agree to standard conditions. If the census tract is flagged for undue concentration, explain that the restaurant will serve a Public Convenience or Necessity by providing a bona fide eating place with table service, not adding to bar density.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 7,
+   "action": "If a change of occupancy is required (depends on occupant load and existing occupancy group), file the building permit with plans stamped by an architect showing compliance with the Building Code occupancy group requirements.",
+   "what_to_say": "The building permit is for a change of use from limited restaurant to full-service restaurant. If the occupant load is 50 or more, the occupancy group is Assembly A-2; if fewer than 50, it is Group B. Attach the CUA approval as zoning sign-off and coordinate with DPH plan check. If a change of occupancy is required, show ADA compliance, egress, and fire separation upgrades.",
+   "confidence": "professional_review_required",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 134,
+  "days_max": 345,
+  "cost_min_usd": 4216.0,
+  "cost_max_usd": 19950.0,
+  "notes": "This is a time and cost to approval for the health permit and building permit (if required), which are the approvals in the entitlement path that the rules established. A Conditional Use Authorization—if one is required after the missing inputs are confirmed—would add 120–300 days and $3,100–$15,000 to this range (catalog entry sf.conditional_use_authorization is not in the path because the zoning row status is insufficient information). The 134–345 day range assumes the health permit (14–45 days, $470–$1,000) and a building permit with change of use (14–120 days, $800–$15,000, plus prerequisite business registration 1–5 days, $55–$700, and health plan check 21–60 days, $828–$2,500, and food safety manager certificate 1–14 days, $100–$250). If the CUA is required the total timeline becomes 254–645 days and the cost becomes $7,316–$34,950. ABC licence time (60–240 days depending on type and transfer vs. new) and cost ($1,000–$450,000) are not included because the alcohol row status is insufficient information. No time or cost is given for formula retail, size over 2,500 sq ft, or hours triggers because those inputs are missing. State and federal registrations (EIN, entity, seller's permit, workers' comp, business registration certificate, fictitious business name) add 4–71 days and $185–$970 but can run in parallel. Music licenses (ASCAP, BMI) add 2–14 days and $600–$5,000. The September 2024 CUA at 1457 Haight took 106 days from filing to approval.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Health permit to operate; Building permit with change of use",
+  "verification": "downgraded",
+  "verification_note": "Records provide health permit (14–45 days, $470–$1,000), business registration (1–5 days, $55–$700), food safety cert (1–14 days, $100–$250), and 1457 Haight CUA (106 days); building permit, health plan check, combined ranges, and other costs/times not in cited records.",
+  "original_confidence": "likely_applicable"
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 31,
+  "supported": 4,
+  "trimmed": 9,
+  "downgraded": 11,
+  "dropped": 7
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2015-007789MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1466 HAIGHT ST 94117 · approved (2015)",
+   "source_url": "https://sfplanninggis.org/pim?search=2015-007789MIS",
+   "excerpt": "Veganburg\n-ABC License Type 41 is permitted in conjunction with an existing restaurant use per Planning Code Section 719.44.  Continuation of a existing use."
+  },
+  {
+   "id": "app:datasf_planning:2016-008984MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1401 HAIGHT ST 94117 · approved (2016)",
+   "source_url": "https://sfplanninggis.org/pim?search=2016-008984MIS",
+   "excerpt": "ABC - Type 41\n-ABC License Type 41 is permitted in conjunction with an existing restaurant use. (Continuation of an existing legal nonconforming restaurant use.)"
+  },
+  {
+   "id": "app:datasf_planning:2017-013960MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1463 HAIGHT ST 94117 · approved (2017)",
+   "source_url": "https://sfplanninggis.org/pim?search=2017-013960MIS",
+   "excerpt": "Health - Restaurant - Approved as LIMITED-Restaurant. Must operate under conditions of PCS 202.2(a). No alcohol permitted on-site. Approved via BPA No. 2016.0802.3978."
+  },
+  {
+   "id": "app:datasf_planning:2018-005566MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1476 HAIGHT ST 94117 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-005566MIS",
+   "excerpt": "Health - Limited Restaurant - Continuation of existing Limited-Restaurant use. Approved via BPA 9213020. Permitted use per PCS 719."
+  },
+  {
+   "id": "app:datasf_planning:2019-013435MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1419 HAIGHT ST 94117 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-013435MIS",
+   "excerpt": "ABC - Type 41\n-ABC License Type 41 is permitted in conjunction with an existing restaurant use. Continuation of a legal nonconforming restaurant use.)"
+  },
+  {
+   "id": "app:datasf_planning:2019-022974MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1476 HAIGHT ST 94117 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-022974MIS",
+   "excerpt": "DPH - Cafeteria - dba Wake Cup (limited-restaurant). Continuation of previous use (limited restaurant dba Bing & Boba)."
+  },
+  {
+   "id": "app:datasf_planning:2020-008561MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1599 HAIGHT ST 94117 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-008561MIS",
+   "excerpt": "DPH referral - Restaurant  use is permitted per conditional use authorization under Case No. 2010.0116C C Motion No. 18079. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2021-001717MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1419 HAIGHT ST 94117 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-001717MIS",
+   "excerpt": "DPH referral - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2021-004815MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1390 HAIGHT ST 94117 · denied (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004815MIS",
+   "excerpt": "ABC referral - Type 01 is not permitted per sec 102 (Restaurant); but Type 23 would be approvable."
+  },
+  {
+   "id": "app:datasf_planning:2024-004781CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1457 HAIGHT ST 94117 · approved with conditions (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-004781CUA",
+   "excerpt": "Planning Commission Motion No. 21606 (September 12, 2024) approved with conditions Conditional Use Authorization 2024-004781CUA at 1457 Haight Street by a 7-0 vote. Key operating conditions: Community Liaison."
+  },
+  {
+   "id": "app:datasf_planning:MB0000193",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1467 - 1467 HAIGHT ST STREET LEV, SAN FRANCISCO, CA 94117 · approved (2000)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0000193",
+   "excerpt": "The proposed use of a juice bar is permitted in the Haight Neighborhood Comercial District per Planning Code Section 719.40/790.102 on street level only. -"
+  },
+  {
+   "id": "catalog:sf.health_permit",
+   "kind": "catalog",
+   "label": "Health Permit to Operate a food facility — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/get-health-permit-open-restaurant-bar-or-other-retail-food-location",
+   "excerpt": "14–45 days; $470–$1,000; verified"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 1463 Haight St, San Francisco, CA 94117 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=446282",
+   "excerpt": "parcel 1244/025"
+  },
+  {
+   "id": "license:abc:155874",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 1437 HAIGHT ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=155874",
+   "excerpt": "ABC licensee — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:279378",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1430 HAIGHT ST, SAN FRANCISCO, CA · REV PENDING",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=279378",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (REV PENDING on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:382927",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1428 HAIGHT ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=382927",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:546274",
+   "kind": "license",
+   "label": "ABC Type 20 – Off-Sale Beer & Wine · 1416 HAIGHT ST, SAN FRANCISCO, CA 94117 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=546274",
+   "excerpt": "AMAL'S DELI — Type 20 – Off-Sale Beer & Wine (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:559171",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1418 HAIGHT ST, SAN FRANCISCO, CA 94117 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=559171",
+   "excerpt": "JASF THAI INC. — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:622203",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1419 HAIGHT ST, SAN FRANCISCO, CA 94117 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=622203",
+   "excerpt": "FLIPPIN BURGER — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "license:abc:638142",
+   "kind": "license",
+   "label": "ABC Type 17 – Beer and Wine Wholesaler · 624 ASHBURY ST, SAN FRANCISCO, CA 94117 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=638142",
+   "excerpt": "GHOSTNOTE WINES — Type 17 – Beer and Wine Wholesaler (ACTIVE on 2024-11-19)"
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:fringe_financial_services_rud",
+   "kind": "overlay",
+   "label": "Fringe Financial Services RUD — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+   "kind": "overlay",
+   "label": "Haight Street Alcohol Restricted Use Subdistrict — Planning Code § 781.9",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25960",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:nc_ncd_haight",
+   "kind": "overlay",
+   "label": "Haight Street Neighborhood Commercial District — Planning Code § 719 (Zoning Control Table 719); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 3 approved / 0 denied / 0 withdrawn; N = 3 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 17 permits and licences, 120 records that are not use decisions for this kind of business, 1 undated",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 17 Entertainment Commission permits and ABC licences (lists of grants only), 120 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 1 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 17 food & drink businesses, 2 bars, 6 active on-sale ABC licenses within 500 ft; 16 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:NCD-HAIGHT",
+   "kind": "zoning",
+   "label": "Zoning NCD-HAIGHT — Planning Code § 719 (Zoning Control Table 719); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+   "excerpt": "The controls as they stood on 2024-11-19 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "1463 Haight St sits in the Haight Street NCD-HAIGHT zoning district, where restaurants on the first story are principally permitted, but the Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use Authorization for any new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57) serving alcohol. The site was approved as a limited restaurant with no alcohol in December 2017; converting to a full-service restaurant with alcohol is a change of use. The block is heavily saturated: 17 food and drink businesses within 500 ft, 6 active ABC on-sale licenses within 500 ft and 16 within 1,000 ft, triggering the undue-concentration flag. Only three dated use decisions for similar concepts have been filed within 1,000 ft in the last 10 years—too few to compute an approval rate—but nearby restaurant applications with alcohol have been approved, including one just 13 meters away in September 2024 for the same limited-to-full-service upgrade.",
+ "data_gaps": [
+  "The exact alcohol type (beer & wine vs. full liquor) the applicant intends to serve is not stated, which affects whether a CUA is required",
+  "Census tract undue-concentration status for ABC purposes is noted as a flag but not confirmed by the records"
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T07:52:03+00:00",
+ "model_versions": {
+  "intake": "claude-sonnet-4-5",
+  "records": "claude-sonnet-4-5",
+  "precedent": "claude-sonnet-4-5",
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2024-11-19"
+}

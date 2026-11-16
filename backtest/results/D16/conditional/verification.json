@@ -1,0 +1,402 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 24,
+  "supported": 3,
+  "trimmed": 9,
+  "downgraded": 7,
+  "dropped": 5
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The Type 48 full-bar license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024, the same day as this report.",
+   "verdict": "partially_supported",
+   "supported_text": "The Type 48 license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The Type 48 license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024.",
+   "confidence": "verified",
+   "citations": [
+    "license:abc:559557",
+    "app:abc:559557"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning approved continuation of the bar use (DBA Uptown) at this address in 2019 and an ownership transfer of the Type 48 license in 2015, stating no intensification or expansion would be allowed in the Mission Alcoholic Beverage SUD without Conditional Use.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Planning approved continuation of the bar use (DBA Uptown) at this address in 2019 and an ownership transfer of the Type 48 license in 2015, stating no intensification or expansion would be allowed in the Mission Alcoholic Beverage SUD without Conditional Use.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-002293MIS",
+    "app:datasf_planning:2015-009416MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Zoning district NCT-MISSION treats a bar as a conditional use on the first story per Planning Code Section 754, in force from January 14, 2024.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Zoning district NCT-MISSION treats a bar as a conditional use on the first story per Planning Code Section 754, in force from January 14, 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows bar_permission as 'unknown' and does not state the conditional use status, first story specification, or the January 14, 2024 effective date."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The Mission Alcoholic Beverage Special Use District requires a new bar to use a Type 48 license transferred from another bar already located inside the district per Planning Code Section 249.60(b)(2)(C).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Mission Alcoholic Beverage Special Use District requires a new bar to use a Type 48 license transferred from another bar already located inside the district per Planning Code Section 249.60(b)(2)(C).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state the Type 48 license transfer requirement or the specific subsection (b)(2)(C); bar_permission is shown as unknown."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Planning approved a Type 48 bar use 195 meters away at 2901 16th St by confirming the license was transferred from within the Mission Alcoholic Beverage SUD (from 2950 16th St), demonstrating the district's transfer requirement.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved a Type 48 bar use 195 meters away at 2901 16th St by confirming the license was transferred from within the Mission Alcoholic Beverage SUD (from 2950 16th St).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved a Type 48 bar use 195 meters away at 2901 16th St by confirming the license was transferred from within the Mission Alcoholic Beverage SUD (from 2950 16th St).",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "The rules say a Conditional Use Authorization is required, citing legacy business replacement as the reason; the concept is described as a vacant or existing bar, and the Type 48 license at this address was surrendered on the date of this report.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules say a Conditional Use Authorization is required, citing legacy business replacement as the reason, and the Type 48 license at this address was surrendered on the date of this report.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The rules say a Conditional Use Authorization is required, citing legacy business replacement as the reason, and the Type 48 license at this address was surrendered on the date of this report.",
+   "confidence": null,
+   "citations": [
+    "license:abc:559557",
+    "app:abc:559557",
+    "app:datasf_planning:2019-002293MIS",
+    "app:datasf_planning:2015-009416MIS",
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Four active ABC on-sale licenses sit within 500 feet (N = 4), and 44 on-sale licenses within 1,000 feet, signaling high license density.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Four active ABC on-sale licenses sit within 500 feet (N = 4), and 44 on-sale licenses within 1,000 feet, signaling high license density.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show 39 ABC licenses within 1,000 ft, not 44, and do not state the conclusion about high license density."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "If the bar requires a Type 48 full-bar license and is treated as a new use, the Mission Alcoholic Beverage SUD mandates the license be transferred from another bar already within the district.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "If the bar requires a Type 48 full-bar license and is treated as a new use, the Mission Alcoholic Beverage SUD mandates the license be transferred from another bar already within the district.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The overlay record does not contain the rule text; the application record shows one case where a transfer occurred but does not state the SUD mandate itself."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "Insufficient information: the description does not say whether the bar will serve beer-and-wine or full liquor, or whether a license will be new, transferred, or a continuation of the surrendered Type 48.",
+   "verdict": "partially_supported",
+   "supported_text": "Insufficient information: the description does not say whether the bar will serve beer-and-wine or full liquor, or whether a license will be new or transferred.",
+   "cut_problem": "adds or moves 'transferred': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "stat:density",
+    "license:abc:593577",
+    "license:abc:580999",
+    "license:abc:584581",
+    "license:abc:400218",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2017-008715MIS"
+   ],
+   "note": "The rule record's missing_inputs ask about new vs. transfer but do not mention continuation of a surrendered Type 48."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A bar with a limited kitchen serving food needs a health permit to operate, issued by DPH after plan review and pre-opening inspection per California Retail Food Code Sections 114380–114381.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar with a limited kitchen serving food needs a health permit to operate, issued by DPH after plan review and pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A bar with a limited kitchen serving food needs a health permit to operate, issued by DPH after plan review and pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Planning approved health permits for the bar use at this address in 2019 and for many restaurants on the Mission Street corridor within 500 feet through administrative agency referral.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved health permits for the bar use at this address in 2019 and for restaurants on the Mission Street corridor within 500 feet through administrative agency referral.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved health permits for the bar use at this address in 2019 and for restaurants on the Mission Street corridor within 500 feet through administrative agency referral.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-002293MIS",
+    "app:datasf_planning:2016-010368MIS",
+    "app:datasf_planning:2017-004208MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "Allowed: a health permit to operate is issued after plan check and inspection without a hearing for bars and restaurants serving food.",
+   "verdict": "partially_supported",
+   "supported_text": "Allowed: a health permit to operate is issued after plan check and inspection without a hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Allowed: a health permit to operate is issued after plan check and inspection without a hearing.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2019-002293MIS",
+    "app:datasf_planning:2016-010368MIS",
+    "app:datasf_planning:2017-004208MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The concept describes tenant improvements, which require a building permit per San Francisco Building Code Section 106A.1, routed to Planning for zoning review per Planning Code Section 175(a).",
+   "verdict": "partially_supported",
+   "supported_text": "The concept describes tenant improvements, which require a building permit.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The concept describes tenant improvements, which require a building permit per San Francisco Building Code Section 106A.1, routed to Planning for zoning review per Planning Code Section 175(a).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms tenant improvements require a building permit but does not cite the specific code sections or mention routing to Planning."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Allowed: tenant improvements need a building permit; the use is stated to continue as a bar, so no Planning Code change of use, and the occupancy group is read as unchanged because no enlargement is stated.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Allowed: tenant improvements need a building permit; the use is stated to continue as a bar, so no Planning Code change of use, and the occupancy group is read as unchanged because no enlargement is stated.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: If a new bar, the Type 48 license must be transferred from another bar already located within the Mission Alcoholic Beverage Special Use District. Basis: Planning Code Section 249.60(b)(2)(C) requires new bars in the Mission Alcoholic Beverage SUD to use a license transferred from within the district. Two agency referrals 195 meters away at 2901 16th St approved a Type 48 bar by confirming the license came from 2950 16th St within the SUD.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If a new bar, the Type 48 license must be transferred from another bar already located within the Mission Alcoholic Beverage Special Use District. Basis: Two agency referrals 195 meters away at 2901 16th St approved a Type 48 bar by confirming the license came from 2950 16th St within the SUD.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: If a new bar, the Type 48 license must be transferred from another bar already located within the Mission Alcoholic Beverage Special Use District. Basis: Two agency referrals 195 meters away at 2901 16th St approved a Type 48 bar by confirming the license came from 2950 16th St within the SUD.",
+   "confidence": "verified",
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Operating conditions under Planning Code Section 202.2(a): maintain sidewalks, prevent audible noise beyond premises, install odor control, keep garbage hidden, and monitor litter within one block. Basis: Planning Code Section 249.60(d) applies Section 202.2 operating conditions to every liquor establishment in the Mission Alcoholic Beverage SUD. Commission approvals on the Mission corridor within 500 feet imposed these as standard conditions.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Operating conditions under Planning Code Section 202.2(a): maintain sidewalks, prevent audible noise beyond premises, install odor control, keep garbage hidden, and monitor litter within one block. Basis: Commission approvals on the Mission corridor imposed these as standard conditions.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The overlay record does not state that Section 249.60(d) applies Section 202.2 conditions. The cited approvals are at 178m, 192m, and 222m, all exceeding 500 feet (152m)."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Provide exterior lighting, limit window signage to 33% coverage, and maintain 50% clear glazing on street-facing facades. Basis: Planning Code Section 249.60(d) requires new, relocated, or expanded liquor establishments in the Mission Alcoholic Beverage SUD to provide these features. If this is treated as a new or relocated bar, these requirements apply.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms the district and code section but does not state the specific requirements or what liquor establishments must provide."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: If a Conditional Use Authorization is required, expect closing hours between 10 p.m. and 2 a.m., with soundproofing, a community liaison, and notices posted urging patrons to leave quietly. Basis: Three CUA approvals on the Mission corridor within 500 feet (N = 3) imposed 10 p.m. closing for a beer-and-wine restaurant and for outdoor dining, and 2 a.m. closing for a restaurant with entertainment. All required soundproofing, community liaison, and patron behavior notices.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If a Conditional Use Authorization is required, expect closing hours between 10 p.m. and 2 a.m., with soundproofing, a community liaison, and notices posted urging patrons to leave quietly. Basis: Three CUA approvals on the Mission corridor (N = 3) imposed 10 p.m. closing for a beer-and-wine restaurant and for outdoor dining, and 2 a.m. closing for a restaurant with entertainment. All required soundproofing, community liaison, and patron behavior notices.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show distances of 178m, 192m, and 222m, which exceed 500 feet."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms a Conditional Use Authorization is required, file the CUA application with SF Planning Commission before or concurrently with lease execution, with a lease contingency on CUA approval. What to say: Describe the concept as a neighborhood bar with limited food service in a 1,300 sq ft space at 200 Capp St, continuing the bar use that operated at this location from at least 2015 to early 2024. Commit to the Planning Code Section 202.2 operating conditions: maintain sidewalks, soundproof to prevent audible noise beyond the premises, install odor control, keep garbage hidden, monitor litter within one block, and post notices urging patrons to leave quietly. Propose operating hours between 11 a.m. and midnight (or 2 a.m. with justification). If a Type 48 license is required, identify the bar within the Mission Alcoholic Beverage SUD from which the license will be transferred, and attach a letter of intent from that license holder. Provide exterior lighting, window signage limited to 33% coverage, and 50% clear glazing on street-facing facades per Section 249.60(d). Appoint a community l…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show similar conditions were imposed on nearby CUAs but do not cite Planning Code Section 202.2 or Section 249.60(d), and do not state the specific glazing, signage, hours, or license transfer requirements."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File the DPH plan check application for the limited kitchen and bar layout with SF Department of Public Health, concurrent with or immediately after filing the ABC application. What to say: Submit scaled drawings of the kitchen, bar, hand sinks, restrooms, finishes, equipment list, and menu. Show the three-compartment sink, hand sinks at the bar and food prep areas, hot water supply, sealed surfaces, and mechanical ventilation. Include the food safety manager certificate. Schedule a pre-final inspection at 80% complete and a final pre-opening inspection at least two weeks in advance. Budget 21–60 days for plan review and 14–45 days for the permit to operate after the final inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the DPH plan check application for the limited kitchen and bar layout with SF Department of Public Health. What to say: Submit scaled drawings of the kitchen, bar, hand sinks, restrooms, finishes, equipment list, and menu. Show the three-compartment sink, hand sinks at the bar and food prep areas, hot water supply, sealed surfaces, and mechanical ventilation. Include the food safety manager certificate. Schedule a pre-final inspection at 80% complete and a final pre-opening inspection at least two weeks in advance. Budget 21–60 days for plan review and 14–45 days for the permit to operate after the final inspection.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records do not state when to file relative to the ABC application."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: File the building permit application for tenant improvements with SF Department of Building Inspection, routed to Planning for zoning review, concurrent with the DPH plan check. What to say: Submit stamped plans for the bar build-out, kitchen hood and suppression system (if installing a new hood), ADA restroom upgrades, and any structural or mechanical work. Identify the project as tenant improvements with no change of use (bar to bar) and no change of occupancy. Include the DPH plan check approval as part of the routing. Coordinate electrical, plumbing, and mechanical permits with licensed subcontractors. Budget 14–120 days depending on the scope of work and whether Planning review is required.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the building permit application for tenant improvements with SF Department of Building Inspection. What to say: Submit stamped plans for the kitchen hood and suppression system (if installing a new hood), ADA restroom upgrades, and any structural or mechanical work. Coordinate electrical, plumbing, and mechanical permits with licensed subcontractors. Budget 14–120 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File the building permit application for tenant improvements with SF Department of Building Inspection. What to say: Submit stamped plans for the kitchen hood and suppression system (if installing a new hood), ADA restroom upgrades, and any structural or mechanical work. Coordinate electrical, plumbing, and mechanical permits with licensed subcontractors. Budget 14–120 days.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: If the limited kitchen uses grease (cooking oil, butter, or animal fat), register with SF Public Utilities Commission for the Fats, Oils & Grease program and install a grease interceptor before the final building inspection. What to say: Submit the Installation Verification Form to SFPUC after the interceptor is installed, sized per the Discharger Category assigned by the inspector. Budget 14–45 days for SFPUC review. An undersized or missing interceptor will delay the building permit final sign-off.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: If the limited kitchen uses grease (cooking oil, butter, or animal fat), register with SF Public Utilities Commission for the Fats, Oils & Grease program and install a grease interceptor before the final building inspection. What to say: Submit the Installation Verification Form to SFPUC after the interceptor is installed, sized per the Discharger Category assigned by the inspector. Budget 14–45 days for SFPUC review. An undersized or missing interceptor will delay the building permit final sign-off.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Before opening, ensure all staff complete California Food Handler cards and RBS alcohol server training, subscribe to ASCAP and BMI music licenses, and register with EDD as an employer. What to say: Every employee handling food must obtain a Food Handler card within 30 days of hire (online, 2 hours, $7–15). Every employee serving alcohol must complete RBS training within 60 days of hire ($3 registration plus $10–25 course). Subscribe to ASCAP and BMI public performance licenses for recorded music ($300–2,500 each annually). Register with EDD for payroll taxes within 15 days of the first payroll. These are quick but often forgotten.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Before opening, ensure all staff complete California Food Handler cards and RBS alcohol server training, subscribe to ASCAP and BMI music licenses, and register with EDD as an employer. What to say: Every employee handling food must obtain a Food Handler card within 30 days of hire (online, 2 hours, $7–15). Every employee serving alcohol must complete RBS training within 60 days of hire ($3 registration plus $10–25 course). Subscribe to ASCAP and BMI public performance licenses for recorded music ($300–2,500 each annually). These are quick but often forgotten.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Before opening, ensure all staff complete California Food Handler cards and RBS alcohol server training, subscribe to ASCAP and BMI music licenses, and register with EDD as an employer. What to say: Every employee handling food must obtain a Food Handler card within 30 days of hire (online, 2 hours, $7–15). Every employee serving alcohol must complete RBS training within 60 days of hire ($3 registration plus $10–25 course). Subscribe to ASCAP and BMI public performance licenses for recorded music ($300–2,500 each annually). These are quick but often forgotten.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_handler_card",
+    "catalog:ca.rbs_training",
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license",
+    "catalog:ca.edd_employer_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $5,900 to $21,200. Notes: The timeline and cost ranges cover a Conditional Use Authorization (120–300 days, $3,100–15,000 per the catalog entry for sf.conditional_use_authorization), health permit to operate (14–45 days, $470–1,000 per catalog:sf.health_permit), health plan check (21–60 days, $828–2,500 per catalog:sf.health_plan_check), and building permit (14–120 days, $800–15,000 per catalog:sf.building_permit). These are times to approval when the approvals are granted, measured from filing to decision; they do not include time to a denial or withdrawal. The ranges assume the CUA, health plan check, and building permit are filed concurrently or in close sequence, so the overall timeline is dominated by the CUA (the longest single approval). ABC license timelines and fees are not included because the alcohol type and license-acquisition strategy are not known. If the concept is confirmed to be a continuation of the prior bar use without a CUA, the timeline drops to 35–165 days and the cost to $2,800–6,200 (health and building only). The figures are from the permit catalog entries cited and do not include construction costs, architect fees, or license transfer purchase prices.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $5,900 to $21,200. Notes: The timeline and cost ranges cover a Conditional Use Authorization (120–300 days, $3,100–15,000 per the catalog entry for sf.conditional_use_authorization), health permit to operate (14–45 days, $470–1,000 per catalog:sf.health_permit), health plan check (21–60 days, $828–2,500 per catalog:sf.health_plan_check), and building permit (14–120 days, $800–15,000 per catalog:sf.building_permit). These are times to approval when the approvals are granted, measured from filing to decision; they do not include time to a denial or withdrawal. The ranges assume the CUA, health plan check, and building permit are filed concurrently or in close sequence, so the overall timeline is dominated by the CUA (the longest single approval). ABC license timelines and fees are not included because the alcohol type and license-acquisition strategy are not known. If the concept is confirmed to be a continuation of the prior bar use without a CUA, the timeline drops to 35–165 days and the cost to $2,800–6,200 (health and building only). The figures are from the permit catalog entries cited and do not include construction costs, architect fees, or license transfer purchase prices.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records give individual ranges but not the overall sums stated; the alternative scenario numbers are not in the records; the descriptions of what times measure are not stated in the catalog entries."
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+# Railway: a SECOND service from the same repo/Dockerfile for the nightly jobs.
+#   New service → same GitHub repo → Settings → Config-as-code path: apps/api/railway.cron.toml
+#   Variables: same as the API service (PRECEDENT_DATABASE_URL, NEATLOGS_API_KEY, RESEND_API_KEY, SUPABASE_*, WEB_URL, ...)
+# Railway runs the start command on the cron schedule and expects the process to exit.
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/api/Dockerfile"
+
+[deploy]
+# 09:10 UTC daily = 02:10 PT: refresh every precedent source, then send due 90-day feedback emails.
+cronSchedule = "10 9 * * *"
+startCommand = "sh -c 'cd /srv/apps/api && python -m precedent.ingest --all && python -m app.jobs.feedback_emails'"
+restartPolicyType = "NEVER"

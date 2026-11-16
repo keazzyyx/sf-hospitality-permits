@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Permit Memo palette: ink navy on warm paper, signal orange for the critical path. */
+  --paper: #f7f3ec;
+  --paper-deep: #efe9dd;
+  --ink: #141b2d;
+  --ink-2: #1f2940;
+  --signal: #e4572e;
+  --signal-soft: #fbe9e2;
+  --verified: #1a7f4b;
+  --verified-soft: #e3f3ea;
+  --estimated: #b7791f;
+  --estimated-soft: #fbf1dc;
+  --dead: #b42318;
+  --dead-soft: #fde8e6;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #fffdf9;
+  --card-foreground: var(--ink);
+  --popover: #fffdf9;
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: #f7f3ec;
+  --secondary: #ebe5d8;
+  --secondary-foreground: var(--ink);
+  --muted: #efeae0;
+  --muted-foreground: #5c6270;
+  --accent: #ece6da;
+  --accent-foreground: var(--ink);
+  --destructive: var(--dead);
+  --border: #e1dacc;
+  --input: #d7cfbf;
+  --ring: var(--signal);
+  --chart-1: var(--signal);
+  --chart-2: var(--ink);
+  --chart-3: var(--estimated);
+  --chart-4: var(--verified);
+  --chart-5: #7c6f9b;
+  --radius: 0.5rem;
+  --sidebar: var(--ink);
+  --sidebar-foreground: #f7f3ec;
+  --sidebar-primary: var(--signal);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1f2940;
+  --sidebar-accent-foreground: #f7f3ec;
+  --sidebar-border: #2a3550;
+  --sidebar-ring: var(--signal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-signal: var(--signal);
+  --color-signal-soft: var(--signal-soft);
+  --color-verified: var(--verified);
+  --color-verified-soft: var(--verified-soft);
+  --color-estimated: var(--estimated);
+  --color-estimated-soft: var(--estimated-soft);
+  --color-dead: var(--dead);
+  --color-dead-soft: var(--dead-soft);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--signal-soft);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .paper-grid {
+    background-image:
+      linear-gradient(to right, rgb(20 27 45 / 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(20 27 45 / 0.045) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .ink-panel {
+    background: var(--ink);
+    color: var(--paper);
+  }
+}

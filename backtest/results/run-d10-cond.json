@@ -1,0 +1,85 @@
+{
+ "label": "d10-cond",
+ "cases": [
+  {
+   "case": "D10",
+   "as_of": "2023-03-29",
+   "rules_only": "done",
+   "conditional": "done"
+  }
+ ],
+ "minutes": 17.6,
+ "cost_usd": 0.834,
+ "replayed_from_journal": 0,
+ "stopped": null,
+ "batches": [
+  {
+   "id": "msgbatch_removed_19",
+   "requests": 1,
+   "stages": [
+    "conditional/risk"
+   ],
+   "estimate_usd": 0.1623,
+   "cost_usd": 0.1626,
+   "errors": {},
+   "minutes": 8.9
+  },
+  {
+   "id": "msgbatch_removed_20",
+   "requests": 1,
+   "stages": [
+    "conditional/risk"
+   ],
+   "estimate_usd": 0.1782,
+   "cost_usd": 0.1712,
+   "errors": {},
+   "minutes": 3.4
+  },
+  {
+   "id": "msgbatch_removed_21",
+   "requests": 43,
+   "stages": [
+    "conditional/verify"
+   ],
+   "estimate_usd": 0.7768,
+   "cost_usd": 0.3473,
+   "errors": {},
+   "minutes": 2.1
+  },
+  {
+   "id": "msgbatch_removed_22",
+   "requests": 21,
+   "stages": [
+    "conditional/verify"
+   ],
+   "estimate_usd": 0.3832,
+   "cost_usd": 0.1529,
+   "errors": {},
+   "minutes": 1.7
+  }
+ ],
+ "by_case_run_stage": [
+  {
+   "case": "D10",
+   "run": "conditional",
+   "stage": "risk",
+   "calls": 2.0,
+   "cost_usd": 0.3338331,
+   "input_tokens": 138825.0,
+   "output_tokens": 16379.0,
+   "cache_read_input_tokens": 18354.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D10",
+   "run": "conditional",
+   "stage": "verify",
+   "calls": 64.0,
+   "cost_usd": 0.5001656999999999,
+   "input_tokens": 99772.0,
+   "output_tokens": 43167.0,
+   "cache_read_input_tokens": 178368.0,
+   "cache_creation_input_tokens": 0.0
+  }
+ ]
+}

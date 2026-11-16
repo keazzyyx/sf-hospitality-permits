@@ -1,0 +1,3758 @@
+{
+  "_doc": "Generated, do not edit by hand. What app.memo.pathway.determine returns for the case 'valencia-wine-bar' of apps/api/tests/fixtures/pathway_cases.json (a wine bar at 995 Valencia St), under the rules in force on 2026-11-10: as the records are ('with_licence': an active Type 41 licence at the address) and with no licence on file ('no_licence'); and for the case 'pacific-bar' ('not_permitted': a bar where the district's table does not permit one, with the zoning record and the citations the rule lines cite). The concept is run as its description reads, so a row whose input the description does not give is 'insufficient_information' and names the input. The web fixture, the landing sample and the Playwright suite take every rule-set field from here: the pathway with its triggers and change-of-use answers, each row's approval, agency, status, status note, rule lines, referral steps and missing inputs, the overall status and line, the entitlement path and the rules' open questions; and the facts the rules read, each with where it came from ('facts', and each row's known facts in 'row_facts'). Regenerate: cd apps/api && WRITE_WEB_FIXTURE=1 .venv/bin/pytest -q tests/test_pathway_cases.py -k web_fixture",
+  "case": "valencia-wine-bar",
+  "with_licence": {
+    "pathway": {
+      "use": "bar",
+      "use_label": "Bar",
+      "district": "NCT-VALENCIA",
+      "permission": "not_covered",
+      "permission_label": "Not decided by the rules",
+      "existing_use": "restaurant",
+      "change_of_use": "yes",
+      "change_of_use_label": "Change of use",
+      "lines": [
+        {
+          "rule_id": "zoning.use",
+          "text": "The concept is looked up as a Bar (Planning Code § 102).",
+          "code_section": "Planning Code § 102",
+          "source_url": null,
+          "citations": []
+        },
+        {
+          "rule_id": "T1.story",
+          "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+          "citations": [
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "T1.historic",
+          "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+          "code_section": "Planning Code § 202.11",
+          "source_url": null,
+          "citations": []
+        },
+        {
+          "rule_id": "T2:mission.new_or_relocated_bar",
+          "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(b)(2)(C)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+          "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(b)(2)(C)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T4:mission.good_neighbor_policies",
+          "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(d)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T11.principal",
+          "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+          "citations": [
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "zoning.existing_use",
+          "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 995 Valencia St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+          "code_section": "Planning Code § 102",
+          "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=651564",
+          "citations": [
+            "app:abc:651564"
+          ]
+        },
+        {
+          "rule_id": "zoning.change_of_use",
+          "text": "Restaurant to Bar is a change of use.",
+          "code_section": "Planning Code § 102",
+          "source_url": null,
+          "citations": [
+            "app:abc:651564"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "rule_id": "zoning.note",
+          "text": "Note on file, not evaluated by the rules: Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178",
+          "citations": [
+            "overlay:static:sf:nc_nct_valencia",
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "zoning.note",
+          "text": "Note on file, not evaluated by the rules: No new Liquor Stores. A Restaurant operating as a Bona Fide Eating Place may serve alcohol (licenses may be transferred in from inside or outside the SUD), as may non-profit theaters, bowling alleys/mini-golf with an integrated Restaurant, single-screen movie theaters (beer and wine) and ABC Type 90 music venues. A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD. Existing liquor establishments may relocate or expand only with CU. East of the western boundary of the Mission Street NCT and north of Cesar Chavez Street, any new Restaurant requires CU and new ABC Type 75 (brewpub) licenses are prohibited. Good-neighbor operating conditions (§ 202.2 plus lighting and window-signage limits) apply.",
+          "code_section": "Planning Code § 249.60",
+          "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-34810",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        }
+      ],
+      "rules_date": "2026-11-10",
+      "triggers": [
+        {
+          "rule_id": "T1",
+          "family": "new_use_control",
+          "label": "Use control of the zoning district",
+          "control": "not_decided",
+          "missing_inputs": [
+            "which stories the business occupies"
+          ],
+          "lines": [
+            {
+              "rule_id": "T1.story",
+              "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T1.historic",
+              "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+              "code_section": "Planning Code § 202.11",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the business occupies no story other than the first story or the basement",
+              "missing_inputs": [
+                "which stories the business occupies"
+              ]
+            },
+            {
+              "control": "not_permitted",
+              "condition": "the business occupies the second story or the third story or above",
+              "missing_inputs": [
+                "which stories the business occupies"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T2",
+          "family": "special_district_use_control",
+          "label": "Use control of a special use district",
+          "control": "conditional",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T2:mission.new_or_relocated_bar",
+              "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(b)(2)(C)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T3",
+          "family": "enlarge_or_intensify",
+          "label": "Enlarging or intensifying an existing use",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T3.none",
+              "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T4",
+          "family": "licence_in_restricted_district",
+          "label": "Liquor licence rule of a restricted district",
+          "control": "principal",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+              "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(b)(2)(C)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            },
+            {
+              "rule_id": "T4:mission.good_neighbor_policies",
+              "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(d)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T5",
+          "family": "formula_retail",
+          "label": "Formula retail",
+          "control": "not_decided",
+          "missing_inputs": [
+            "whether the business is part of a chain that shares its name, look or menu with other locations"
+          ],
+          "lines": [
+            {
+              "rule_id": "T5.row",
+              "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T5.missing",
+              "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the business is part of a chain with eleven or more other locations",
+              "missing_inputs": [
+                "whether the business is part of a chain that shares its name, look or menu with other locations"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T6",
+          "family": "nighttime_entertainment",
+          "label": "Nighttime entertainment",
+          "control": "not_decided",
+          "missing_inputs": [
+            "whether there is entertainment, and what kind",
+            "which stories the business occupies"
+          ],
+          "lines": [
+            {
+              "rule_id": "T6.story",
+              "text": "Zoning district NCT-VALENCIA: the table sets a different control for Nighttime Entertainment on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T6.kind_missing",
+              "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T6.historic",
+              "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+              "code_section": "Planning Code § 202.11",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T7",
+          "family": "use_size",
+          "label": "Use size",
+          "control": "not_decided",
+          "missing_inputs": [
+            "the floor area of the business, in square feet"
+          ],
+          "lines": [
+            {
+              "rule_id": "T7.missing",
+              "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            }
+          ],
+          "in_force_from": "2025-10-06",
+          "ordinance": "Ord. 173-25, File No. 250634",
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the floor area is 3,001 square feet or more and either the floor area grows or storefronts are merged",
+              "missing_inputs": [
+                "the floor area of the business, in square feet",
+                "the floor area before the project",
+                "whether storefronts are to be merged"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T8",
+          "family": "laundromat_removal",
+          "label": "Removal of a laundromat",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T8.outside",
+              "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2026-11-10, so this trigger does not apply.",
+              "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+              "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T9",
+          "family": "outdoor_activity_area",
+          "label": "Outdoor activity area",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T9.none",
+              "text": "No outdoor area is described, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T10",
+          "family": "amend_prior_conditions",
+          "label": "Changing the conditions of an earlier approval",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T10.none",
+              "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T11",
+          "family": "hours_of_operation",
+          "label": "Hours of operation",
+          "control": "principal",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T11.principal",
+              "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        }
+      ],
+      "changes": {
+        "planning_use": "yes",
+        "planning_use_lines": [
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 995 Valencia St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+            "code_section": "Planning Code § 102",
+            "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=651564",
+            "citations": [
+              "app:abc:651564"
+            ]
+          },
+          {
+            "rule_id": "zoning.change_of_use",
+            "text": "Restaurant to Bar is a change of use.",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": [
+              "app:abc:651564"
+            ]
+          }
+        ],
+        "building_occupancy": "not_established",
+        "building_occupancy_lines": [
+          {
+            "rule_id": "change.occupancy",
+            "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2025 California Building Code).",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The description gives 40 seats. A count of seats is not the occupant load, which is worked out from the floor plan and can be higher, so fewer than 50 seats does not show whether the proposed occupancy is Group B or Group A-2.",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "neighbourhood_notice": "not_required",
+        "neighbourhood_notice_lines": [
+          {
+            "rule_id": "change.notice",
+            "text": "Under the Planning Code as in force on 10 November 2026, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+            "code_section": "Planning Code § 311(b)(1)-(4)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+            "citations": []
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "area": "zoning_use",
+        "approval": "Use authorization (not decided: an input is missing)",
+        "agency": "San Francisco Planning",
+        "status": "insufficient_information",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "zoning.use",
+            "text": "The concept is looked up as a Bar (Planning Code § 102).",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T1.historic",
+            "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+            "code_section": "Planning Code § 202.11",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T2:mission.new_or_relocated_bar",
+            "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+            "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T4:mission.good_neighbor_policies",
+            "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(d)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T5.row",
+            "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T5.missing",
+            "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T6.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for Nighttime Entertainment on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T6.kind_missing",
+            "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T6.historic",
+            "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+            "code_section": "Planning Code § 202.11",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T7.missing",
+            "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T11.principal",
+            "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 995 Valencia St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+            "code_section": "Planning Code § 102",
+            "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=651564",
+            "citations": [
+              "app:abc:651564"
+            ]
+          },
+          {
+            "rule_id": "zoning.change_of_use",
+            "text": "Restaurant to Bar is a change of use.",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": [
+              "app:abc:651564"
+            ]
+          },
+          {
+            "rule_id": "zoning.status",
+            "text": "The rules could not decide: use control of the zoning district, formula retail, nighttime entertainment and use size. What is missing: which stories the business occupies; whether the business is part of a chain that shares its name, look or menu with other locations; whether there is entertainment, and what kind; the floor area of the business, in square feet. No story is assumed, so until that is known the rules cannot say what zoning asks of the concept, although use control of a special use district already asks for a Conditional Use Authorization: insufficient information.",
+            "code_section": null,
+            "source_url": null,
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ],
+        "referral_steps": [],
+        "missing_inputs": [
+          "which stories the business occupies",
+          "whether the business is part of a chain that shares its name, look or menu with other locations",
+          "whether there is entertainment, and what kind",
+          "the floor area of the business, in square feet"
+        ]
+      },
+      {
+        "area": "alcohol",
+        "approval": "ABC licence, Type 42 (on-sale beer and wine, public premises)",
+        "agency": "California Department of Alcoholic Beverage Control",
+        "status": "insufficient_information",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "alcohol.licence",
+            "text": "The description does not state a licence type. The rules derived ABC Type 42 (on-sale beer and wine, public premises) from the kind of business and what it pours.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+            "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "alcohol.tract_concentration",
+            "text": "Census tract 208.01: 28 active on-sale retail licences in ABC's licence export of 9 November 2026, against 12 authorised in ABC's census tract authorisations of September 2026.",
+            "code_section": "California Business and Professions Code § 23958.4",
+            "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+            "citations": []
+          },
+          {
+            "rule_id": "alcohol.tract_concentration",
+            "text": "The tract is over its authorised number. State law tests a new licence and a transfer from other premises for undue concentration, and the applicant does not say how the liquor licence will be obtained.",
+            "code_section": "California Business and Professions Code § 23958.4",
+            "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+            "citations": []
+          },
+          {
+            "rule_id": "alcohol.status",
+            "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+            "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+            "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+            "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+            "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+            "citations": []
+          }
+        ],
+        "missing_inputs": [
+          "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+        ]
+      },
+      {
+        "area": "entertainment",
+        "approval": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit",
+        "agency": "San Francisco Entertainment Commission",
+        "status": "further_review",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "entertainment.status",
+            "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit, and dancing by patrons needs no permit of its own. Where a permit is needed: further review.",
+            "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+            "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+            "code_section": "Police Code § 1060.2(b)(2)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: until 16 August 2025 this application was also sent to the Department of Building Inspection (Police Code § 1060.2(b)(3); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2(b)(3)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4) until 2025-08-16, renumbered (b)(3) from 2025-08-17).",
+            "code_section": "Police Code § 1060.2(b)(4) until 2025-08-16, renumbered (b)(3) from 2025-08-17",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5) until 2025-08-16, renumbered (b)(4) from 2025-08-17).",
+            "code_section": "Police Code § 1060.2(b)(5) until 2025-08-16, renumbered (b)(4) from 2025-08-17",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Limited Live Performance Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.1(b)).",
+            "code_section": "Police Code § 1060.2.1(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Limited Live Performance Permit application: until 16 August 2025 this application was also sent to the Planning Department (Police Code § 1060.2.1(b); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.1(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.2(b)).",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: until 16 August 2025 this application was also sent to the Planning Department (Police Code § 1060.2.2(b); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: until 13 January 2024 this application was also sent to the Department of Public Health (Police Code § 1060.2.2(b); ended by Ord. 250-23, File No. 230861). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          }
+        ],
+        "missing_inputs": []
+      },
+      {
+        "area": "health",
+        "approval": "Health permit to operate",
+        "agency": "San Francisco Department of Public Health",
+        "status": "allowed",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "health.status",
+            "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+            "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+            "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+            "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+            "citations": []
+          }
+        ],
+        "missing_inputs": []
+      },
+      {
+        "area": "building_change_of_use",
+        "approval": "Building permit with change of use",
+        "agency": "San Francisco Department of Building Inspection",
+        "status": "further_review",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "An active ABC Type 41 licence (on-sale beer and wine, eating place) is on file at 995 Valencia St. That is a licence type a Restaurant holds (Planning Code § 102), so the rules read the space as a Restaurant; other uses can hold it too.",
+            "code_section": "Planning Code § 102",
+            "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=651564",
+            "citations": [
+              "app:abc:651564"
+            ]
+          },
+          {
+            "rule_id": "zoning.change_of_use",
+            "text": "Restaurant to Bar is a change of use.",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": [
+              "app:abc:651564"
+            ]
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2025 California Building Code).",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The description gives 40 seats. A count of seats is not the occupant load, which is worked out from the floor plan and can be higher, so fewer than 50 seats does not show whether the proposed occupancy is Group B or Group A-2.",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "building.status",
+            "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+            "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)). It has applied in this form since 6 October 2025 (Ord. 170-25, File No. 240803).",
+            "code_section": "Planning Code § 175(a)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-175.-approval-of-permits",
+            "citations": []
+          }
+        ],
+        "missing_inputs": []
+      }
+    ],
+    "overall_status": "further_review",
+    "overall_line": "A Conditional Use Authorization is needed (use control of a special use district). A Conditional Use Authorization is needed if the business occupies no story other than the first story or the basement (use control of the zoning district). Zoning does not permit the concept if the business occupies the second story or the third story or above (use control of the zoning district). A Conditional Use Authorization is needed if the business is part of a chain with eleven or more other locations (formula retail). A Conditional Use Authorization is needed if the floor area is 3,001 square feet or more and either the floor area grows or storefronts are merged (use size). Of the 5 approvals this concept needs: 2 further review (entertainment permit, building permit and change of use), 2 insufficient information (zoning and use, alcohol licence), 1 allowed (health permit).",
+    "entitlement_path": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit; Health permit to operate; Building permit with change of use",
+    "open_questions": [
+      {
+        "question": "Not known: which stories the business occupies. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "stories"
+      },
+      {
+        "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "part_of_chain"
+      },
+      {
+        "question": "Not known: whether there is entertainment, and what kind. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "entertainment"
+      },
+      {
+        "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "floor_area_sqft"
+      },
+      {
+        "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "liquor_licence"
+      }
+    ],
+    "headline_findings": [
+      {
+        "kind": "conditional",
+        "sentence": "Whatever the story, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What asks for one: use control of a special use district. Which stories the business occupies is not known, so the rules cannot yet say whether zoning permits the use there at all.",
+        "area": "zoning_use",
+        "status": "further_review",
+        "trigger": "T2",
+        "trigger_label": "use control of a special use district",
+        "definite": true,
+        "condition": null,
+        "missing_inputs": [],
+        "code_section": "Planning Code § 249.60(b)(2)(C)",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+        "citations": [
+          "overlay:datasf_sud:mission_alcohol_restrict"
+        ],
+        "basis": [
+          {
+            "rule_id": "T2:mission.new_or_relocated_bar",
+            "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the business occupies no story other than the first story or the basement, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use control of the zoning district. Not known: which stories the business occupies.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T1",
+        "trigger_label": "use control of the zoning district",
+        "definite": false,
+        "condition": "the business occupies no story other than the first story or the basement",
+        "missing_inputs": [
+          "which stories the business occupies"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "not_permitted_if",
+        "sentence": "If the business occupies the second story or the third story or above, zoning does not permit the concept as described at this address. What would bar it: use control of the zoning district. Not known: which stories the business occupies.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T1",
+        "trigger_label": "use control of the zoning district",
+        "definite": false,
+        "condition": "the business occupies the second story or the third story or above",
+        "missing_inputs": [
+          "which stories the business occupies"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the business is part of a chain with eleven or more other locations, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: formula retail. Not known: whether the business is part of a chain that shares its name, look or menu with other locations.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T5",
+        "trigger_label": "formula retail",
+        "definite": false,
+        "condition": "the business is part of a chain with eleven or more other locations",
+        "missing_inputs": [
+          "whether the business is part of a chain that shares its name, look or menu with other locations"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T5.row",
+            "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the floor area is 3,001 square feet or more and either the floor area grows or storefronts are merged, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area of the business, in square feet; the floor area before the project; whether storefronts are to be merged.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T7",
+        "trigger_label": "use size",
+        "definite": false,
+        "condition": "the floor area is 3,001 square feet or more and either the floor area grows or storefronts are merged",
+        "missing_inputs": [
+          "the floor area of the business, in square feet",
+          "the floor area before the project",
+          "whether storefronts are to be merged"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T7.missing",
+            "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "fact": "planning_uses",
+        "label": "Kind of business (Planning Code use)",
+        "value": "Bar",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "alcohol_served",
+        "label": "Alcohol served",
+        "value": "Beer and wine",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "licence_type",
+        "label": "Liquor licence type",
+        "value": "Type 42 (on-sale beer and wine, public premises)",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "closing",
+        "label": "Closing time",
+        "value": "After midnight",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "open until 1am"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "entertainment_described",
+        "label": "Live music, amplified sound or dancing",
+        "value": "Live music or performance",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "occasional live music"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "seats",
+        "label": "Seats",
+        "value": "40",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "40-seat"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "alcohol_transaction",
+        "label": "How the liquor licence is obtained",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "formula_retail",
+        "label": "Part of a chain (formula retail)",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "floor_area_sqft",
+        "label": "Floor area",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "stories",
+        "label": "Stories the business is on",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "entertainment_kind",
+        "label": "Kind of entertainment",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      }
+    ],
+    "row_facts": {
+      "zoning_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "closing",
+          "label": "Closing time",
+          "value": "After midnight",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "open until 1am"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "entertainment_described",
+          "label": "Live music, amplified sound or dancing",
+          "value": "Live music or performance",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "occasional live music"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Restaurant",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": [
+            "app:abc:651564"
+          ]
+        },
+        {
+          "fact": "prior_approvals",
+          "label": "Earlier approved use decisions at this address",
+          "value": "None on file",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "alcohol": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "alcohol_served",
+          "label": "Alcohol served",
+          "value": "Beer and wine",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "active_licences",
+          "label": "Active ABC licences at this address",
+          "value": "Type 41 (on-sale beer and wine, eating place)",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": [
+            "app:abc:651564"
+          ]
+        }
+      ],
+      "entertainment": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "entertainment_described",
+          "label": "Live music, amplified sound or dancing",
+          "value": "Live music or performance",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "occasional live music"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "closing",
+          "label": "Closing time",
+          "value": "After midnight",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "open until 1am"
+          ],
+          "citations": []
+        }
+      ],
+      "health": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        }
+      ],
+      "building_change_of_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "seats",
+          "label": "Seats",
+          "value": "40",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "40-seat"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Restaurant",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": [
+            "app:abc:651564"
+          ]
+        }
+      ]
+    }
+  },
+  "no_licence": {
+    "pathway": {
+      "use": "bar",
+      "use_label": "Bar",
+      "district": "NCT-VALENCIA",
+      "permission": "not_covered",
+      "permission_label": "Not decided by the rules",
+      "existing_use": null,
+      "change_of_use": "not_established",
+      "change_of_use_label": "Change of use not established",
+      "lines": [
+        {
+          "rule_id": "zoning.use",
+          "text": "The concept is looked up as a Bar (Planning Code § 102).",
+          "code_section": "Planning Code § 102",
+          "source_url": null,
+          "citations": []
+        },
+        {
+          "rule_id": "T1.story",
+          "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+          "citations": [
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "T1.historic",
+          "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+          "code_section": "Planning Code § 202.11",
+          "source_url": null,
+          "citations": []
+        },
+        {
+          "rule_id": "T2:mission.new_or_relocated_bar",
+          "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(b)(2)(C)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+          "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(b)(2)(C)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T4:mission.good_neighbor_policies",
+          "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+          "code_section": "Planning Code § 249.60(d)",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        },
+        {
+          "rule_id": "T11.principal",
+          "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+          "citations": [
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "zoning.existing_use",
+          "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 995 Valencia St, so the records do not show what the space is used as now.",
+          "code_section": null,
+          "source_url": null,
+          "citations": []
+        },
+        {
+          "rule_id": "change.planning_use",
+          "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+          "code_section": null,
+          "source_url": null,
+          "citations": []
+        }
+      ],
+      "notes": [
+        {
+          "rule_id": "zoning.note",
+          "text": "Note on file, not evaluated by the rules: Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+          "code_section": "Planning Code § 762",
+          "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178",
+          "citations": [
+            "overlay:static:sf:nc_nct_valencia",
+            "zoning:NCT-VALENCIA"
+          ]
+        },
+        {
+          "rule_id": "zoning.note",
+          "text": "Note on file, not evaluated by the rules: No new Liquor Stores. A Restaurant operating as a Bona Fide Eating Place may serve alcohol (licenses may be transferred in from inside or outside the SUD), as may non-profit theaters, bowling alleys/mini-golf with an integrated Restaurant, single-screen movie theaters (beer and wine) and ABC Type 90 music venues. A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD. Existing liquor establishments may relocate or expand only with CU. East of the western boundary of the Mission Street NCT and north of Cesar Chavez Street, any new Restaurant requires CU and new ABC Type 75 (brewpub) licenses are prohibited. Good-neighbor operating conditions (§ 202.2 plus lighting and window-signage limits) apply.",
+          "code_section": "Planning Code § 249.60",
+          "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-34810",
+          "citations": [
+            "overlay:datasf_sud:mission_alcohol_restrict"
+          ]
+        }
+      ],
+      "rules_date": "2026-11-10",
+      "triggers": [
+        {
+          "rule_id": "T1",
+          "family": "new_use_control",
+          "label": "Use control of the zoning district",
+          "control": "not_decided",
+          "missing_inputs": [
+            "which stories the business occupies"
+          ],
+          "lines": [
+            {
+              "rule_id": "T1.story",
+              "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T1.historic",
+              "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+              "code_section": "Planning Code § 202.11",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the business occupies no story other than the first story or the basement",
+              "missing_inputs": [
+                "which stories the business occupies"
+              ]
+            },
+            {
+              "control": "not_permitted",
+              "condition": "the business occupies the second story or the third story or above",
+              "missing_inputs": [
+                "which stories the business occupies"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T2",
+          "family": "special_district_use_control",
+          "label": "Use control of a special use district",
+          "control": "conditional",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T2:mission.new_or_relocated_bar",
+              "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(b)(2)(C)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T3",
+          "family": "enlarge_or_intensify",
+          "label": "Enlarging or intensifying an existing use",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T3.none",
+              "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T4",
+          "family": "licence_in_restricted_district",
+          "label": "Liquor licence rule of a restricted district",
+          "control": "principal",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+              "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(b)(2)(C)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            },
+            {
+              "rule_id": "T4:mission.good_neighbor_policies",
+              "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+              "code_section": "Planning Code § 249.60(d)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+              "citations": [
+                "overlay:datasf_sud:mission_alcohol_restrict"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T5",
+          "family": "formula_retail",
+          "label": "Formula retail",
+          "control": "not_decided",
+          "missing_inputs": [
+            "whether the business is part of a chain that shares its name, look or menu with other locations"
+          ],
+          "lines": [
+            {
+              "rule_id": "T5.row",
+              "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T5.missing",
+              "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the business is part of a chain with eleven or more other locations",
+              "missing_inputs": [
+                "whether the business is part of a chain that shares its name, look or menu with other locations"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T6",
+          "family": "nighttime_entertainment",
+          "label": "Nighttime entertainment",
+          "control": "not_decided",
+          "missing_inputs": [
+            "whether there is entertainment, and what kind",
+            "which stories the business occupies"
+          ],
+          "lines": [
+            {
+              "rule_id": "T6.story",
+              "text": "Zoning district NCT-VALENCIA: the table sets a different control for Nighttime Entertainment on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            },
+            {
+              "rule_id": "T6.kind_missing",
+              "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T6.historic",
+              "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+              "code_section": "Planning Code § 202.11",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T7",
+          "family": "use_size",
+          "label": "Use size",
+          "control": "not_decided",
+          "missing_inputs": [
+            "the floor area of the business, in square feet"
+          ],
+          "lines": [
+            {
+              "rule_id": "T7.missing",
+              "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            }
+          ],
+          "in_force_from": "2025-10-06",
+          "ordinance": "Ord. 173-25, File No. 250634",
+          "differs_today": false,
+          "contingent": [
+            {
+              "control": "conditional",
+              "condition": "the floor area is 3,001 square feet or more and either the space was last used as another use (not a Bar, a Restaurant, a Limited Restaurant, Nighttime Entertainment, a retail use or a laundromat), or the floor area grows, or storefronts are merged",
+              "missing_inputs": [
+                "the floor area of the business, in square feet",
+                "what the space was last used as",
+                "the floor area before the project",
+                "whether storefronts are to be merged"
+              ]
+            }
+          ],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T8",
+          "family": "laundromat_removal",
+          "label": "Removal of a laundromat",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T8.outside",
+              "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2026-11-10, so this trigger does not apply.",
+              "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+              "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T9",
+          "family": "outdoor_activity_area",
+          "label": "Outdoor activity area",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T9.none",
+              "text": "No outdoor area is described, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T10",
+          "family": "amend_prior_conditions",
+          "label": "Changing the conditions of an earlier approval",
+          "control": "does_not_apply",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T10.none",
+              "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        },
+        {
+          "rule_id": "T11",
+          "family": "hours_of_operation",
+          "label": "Hours of operation",
+          "control": "principal",
+          "missing_inputs": [],
+          "lines": [
+            {
+              "rule_id": "T11.principal",
+              "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 762",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+              "citations": [
+                "zoning:NCT-VALENCIA"
+              ]
+            }
+          ],
+          "in_force_from": null,
+          "ordinance": null,
+          "differs_today": false,
+          "contingent": [],
+          "unsettled_by": []
+        }
+      ],
+      "changes": {
+        "planning_use": "not_established",
+        "planning_use_lines": [
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 995 Valencia St, so the records do not show what the space is used as now.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "change.planning_use",
+            "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "building_occupancy": "not_established",
+        "building_occupancy_lines": [
+          {
+            "rule_id": "change.occupancy",
+            "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2025 California Building Code).",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The description gives 40 seats. A count of seats is not the occupant load, which is worked out from the floor plan and can be higher, so fewer than 50 seats does not show whether the proposed occupancy is Group B or Group A-2.",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "neighbourhood_notice": "not_required",
+        "neighbourhood_notice_lines": [
+          {
+            "rule_id": "change.notice",
+            "text": "Under the Planning Code as in force on 10 November 2026, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+            "code_section": "Planning Code § 311(b)(1)-(4)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+            "citations": []
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "area": "zoning_use",
+        "approval": "Use authorization (not decided: an input is missing)",
+        "agency": "San Francisco Planning",
+        "status": "insufficient_information",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "zoning.use",
+            "text": "The concept is looked up as a Bar (Planning Code § 102).",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T1.historic",
+            "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+            "code_section": "Planning Code § 202.11",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T2:mission.new_or_relocated_bar",
+            "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+            "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T4:mission.good_neighbor_policies",
+            "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(d)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "T5.row",
+            "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T5.missing",
+            "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T6.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for Nighttime Entertainment on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T6.kind_missing",
+            "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T6.historic",
+            "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+            "code_section": "Planning Code § 202.11",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T7.missing",
+            "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "T11.principal",
+            "text": "Hours: closing after midnight (read at 1 a.m.) falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          },
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 995 Valencia St, so the records do not show what the space is used as now.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "change.planning_use",
+            "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "zoning.status",
+            "text": "The rules could not decide: use control of the zoning district, formula retail, nighttime entertainment and use size. What is missing: which stories the business occupies; whether the business is part of a chain that shares its name, look or menu with other locations; whether there is entertainment, and what kind; the floor area of the business, in square feet. No story is assumed, so until that is known the rules cannot say what zoning asks of the concept, although use control of a special use district already asks for a Conditional Use Authorization: insufficient information.",
+            "code_section": null,
+            "source_url": null,
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ],
+        "referral_steps": [],
+        "missing_inputs": [
+          "which stories the business occupies",
+          "whether the business is part of a chain that shares its name, look or menu with other locations",
+          "whether there is entertainment, and what kind",
+          "the floor area of the business, in square feet"
+        ]
+      },
+      {
+        "area": "alcohol",
+        "approval": "ABC licence, Type 42 (on-sale beer and wine, public premises)",
+        "agency": "California Department of Alcoholic Beverage Control",
+        "status": "insufficient_information",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "alcohol.licence",
+            "text": "The description does not state a licence type. The rules derived ABC Type 42 (on-sale beer and wine, public premises) from the kind of business and what it pours.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T4:mission.new_bar_licence_from_bar_in_district",
+            "text": "Mission Alcoholic Beverage Special Use District: A new Bar must use a liquor licence transferred from another Bar located inside the district. This is a requirement, not a control (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          },
+          {
+            "rule_id": "alcohol.tract_concentration",
+            "text": "Census tract 208.01: 28 active on-sale retail licences in ABC's licence export of 9 November 2026, against 12 authorised in ABC's census tract authorisations of September 2026.",
+            "code_section": "California Business and Professions Code § 23958.4",
+            "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+            "citations": []
+          },
+          {
+            "rule_id": "alcohol.tract_concentration",
+            "text": "The tract is over its authorised number. State law tests a new licence and a transfer from other premises for undue concentration, and the applicant does not say how the liquor licence will be obtained.",
+            "code_section": "California Business and Professions Code § 23958.4",
+            "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+            "citations": []
+          },
+          {
+            "rule_id": "alcohol.status",
+            "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+            "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+            "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+            "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+            "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+            "citations": []
+          }
+        ],
+        "missing_inputs": [
+          "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+        ]
+      },
+      {
+        "area": "entertainment",
+        "approval": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit",
+        "agency": "San Francisco Entertainment Commission",
+        "status": "further_review",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "entertainment.status",
+            "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit, and dancing by patrons needs no permit of its own. Where a permit is needed: further review.",
+            "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+            "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+            "code_section": "Police Code § 1060.2(b)(2)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: until 16 August 2025 this application was also sent to the Department of Building Inspection (Police Code § 1060.2(b)(3); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2(b)(3)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4) until 2025-08-16, renumbered (b)(3) from 2025-08-17).",
+            "code_section": "Police Code § 1060.2(b)(4) until 2025-08-16, renumbered (b)(3) from 2025-08-17",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5) until 2025-08-16, renumbered (b)(4) from 2025-08-17).",
+            "code_section": "Police Code § 1060.2(b)(5) until 2025-08-16, renumbered (b)(4) from 2025-08-17",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Limited Live Performance Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.1(b)).",
+            "code_section": "Police Code § 1060.2.1(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Limited Live Performance Permit application: until 16 August 2025 this application was also sent to the Planning Department (Police Code § 1060.2.1(b); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.1(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.2(b)).",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: until 16 August 2025 this application was also sent to the Planning Department (Police Code § 1060.2.2(b); ended by Ord. 118-25, File No. 250537). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+            "citations": []
+          },
+          {
+            "rule_id": "referral.step",
+            "text": "Fixed Place Outdoor Amplified Sound Permit application: until 13 January 2024 this application was also sent to the Department of Public Health (Police Code § 1060.2.2(b); ended by Ord. 250-23, File No. 230861). That step has ended. The permit is still required.",
+            "code_section": "Police Code § 1060.2.2(b)",
+            "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+            "citations": []
+          }
+        ],
+        "missing_inputs": []
+      },
+      {
+        "area": "health",
+        "approval": "Health permit to operate",
+        "agency": "San Francisco Department of Public Health",
+        "status": "allowed",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "health.status",
+            "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+            "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+            "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+            "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+            "citations": []
+          }
+        ],
+        "missing_inputs": []
+      },
+      {
+        "area": "building_change_of_use",
+        "approval": "Building permit",
+        "agency": "San Francisco Department of Building Inspection",
+        "status": "insufficient_information",
+        "status_note": null,
+        "basis": [
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 995 Valencia St, so the records do not show what the space is used as now.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "change.planning_use",
+            "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2025 California Building Code).",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The description gives 40 seats. A count of seats is not the occupant load, which is worked out from the floor plan and can be higher, so fewer than 50 seats does not show whether the proposed occupancy is Group B or Group A-2.",
+            "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+            "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+            "citations": []
+          },
+          {
+            "rule_id": "change.occupancy",
+            "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "building.status",
+            "text": "Without what the space was last used as, whether the space is for fewer than 50 people and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+            "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "referral_steps": [
+          {
+            "rule_id": "referral.step",
+            "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)). It has applied in this form since 6 October 2025 (Ord. 170-25, File No. 240803).",
+            "code_section": "Planning Code § 175(a)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-175.-approval-of-permits",
+            "citations": []
+          }
+        ],
+        "missing_inputs": [
+          "what the space was last used as",
+          "whether the space is for fewer than 50 people",
+          "the existing occupancy group of the space, which only plans or an inspection show"
+        ]
+      }
+    ],
+    "overall_status": "further_review",
+    "overall_line": "A Conditional Use Authorization is needed (use control of a special use district). A Conditional Use Authorization is needed if the business occupies no story other than the first story or the basement (use control of the zoning district). Zoning does not permit the concept if the business occupies the second story or the third story or above (use control of the zoning district). A Conditional Use Authorization is needed if the business is part of a chain with eleven or more other locations (formula retail). A Conditional Use Authorization is needed if the floor area is 3,001 square feet or more and either the space was last used as another use (not a Bar, a Restaurant, a Limited Restaurant, Nighttime Entertainment, a retail use or a laundromat), or the floor area grows, or storefronts are merged (use size). Of the 5 approvals this concept needs: 1 further review (entertainment permit), 3 insufficient information (zoning and use, alcohol licence, building permit and change of use), 1 allowed (health permit).",
+    "entitlement_path": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit; Health permit to operate",
+    "open_questions": [
+      {
+        "question": "Not known: which stories the business occupies. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "stories"
+      },
+      {
+        "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "part_of_chain"
+      },
+      {
+        "question": "Not known: whether there is entertainment, and what kind. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "entertainment"
+      },
+      {
+        "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "floor_area_sqft"
+      },
+      {
+        "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "liquor_licence"
+      },
+      {
+        "question": "Not known: what the space was last used as. Needed for: building permit and change of use.",
+        "needs": "applicant_history",
+        "ask": "The applicant, or Planning's Property Information Map",
+        "intake_question": "last_use"
+      },
+      {
+        "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+        "needs": "applicant_history",
+        "ask": "The applicant: the project description does not say",
+        "intake_question": "fewer_than_50_people"
+      },
+      {
+        "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+        "needs": "plans",
+        "ask": "Plans or a code analysis of the existing space",
+        "intake_question": "existing_occupancy_group"
+      }
+    ],
+    "headline_findings": [
+      {
+        "kind": "conditional",
+        "sentence": "Whatever the story, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What asks for one: use control of a special use district. Which stories the business occupies is not known, so the rules cannot yet say whether zoning permits the use there at all.",
+        "area": "zoning_use",
+        "status": "further_review",
+        "trigger": "T2",
+        "trigger_label": "use control of a special use district",
+        "definite": true,
+        "condition": null,
+        "missing_inputs": [],
+        "code_section": "Planning Code § 249.60(b)(2)(C)",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+        "citations": [
+          "overlay:datasf_sud:mission_alcohol_restrict"
+        ],
+        "basis": [
+          {
+            "rule_id": "T2:mission.new_or_relocated_bar",
+            "text": "Mission Alcoholic Beverage Special Use District: A new or relocated Bar is considered under the underlying zoning, but always as a Conditional Use. Here: a Bar is a conditional use (Planning Code § 249.60(b)(2)(C), in force since before 2022-01-01).",
+            "code_section": "Planning Code § 249.60(b)(2)(C)",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+            "citations": [
+              "overlay:datasf_sud:mission_alcohol_restrict"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the business occupies no story other than the first story or the basement, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use control of the zoning district. Not known: which stories the business occupies.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T1",
+        "trigger_label": "use control of the zoning district",
+        "definite": false,
+        "condition": "the business occupies no story other than the first story or the basement",
+        "missing_inputs": [
+          "which stories the business occupies"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "not_permitted_if",
+        "sentence": "If the business occupies the second story or the third story or above, zoning does not permit the concept as described at this address. What would bar it: use control of the zoning district. Not known: which stories the business occupies.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T1",
+        "trigger_label": "use control of the zoning district",
+        "definite": false,
+        "condition": "the business occupies the second story or the third story or above",
+        "missing_inputs": [
+          "which stories the business occupies"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T1.story",
+            "text": "Zoning district NCT-VALENCIA: the table sets a different control for a Bar on different stories. Which story the business is on is not given, so no story is assumed and this is not decided until it is (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the business is part of a chain with eleven or more other locations, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: formula retail. Not known: whether the business is part of a chain that shares its name, look or menu with other locations.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T5",
+        "trigger_label": "formula retail",
+        "definite": false,
+        "condition": "the business is part of a chain with eleven or more other locations",
+        "missing_inputs": [
+          "whether the business is part of a chain that shares its name, look or menu with other locations"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T5.row",
+            "text": "Zoning district NCT-VALENCIA: formula retail is a conditional use (Planning Code § 762, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "conditional_if",
+        "sentence": "If the floor area is 3,001 square feet or more and either the space was last used as another use (not a Bar, a Restaurant, a Limited Restaurant, Nighttime Entertainment, a retail use or a laundromat), or the floor area grows, or storefronts are merged, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area of the business, in square feet; what the space was last used as; the floor area before the project; whether storefronts are to be merged.",
+        "area": "zoning_use",
+        "status": "insufficient_information",
+        "trigger": "T7",
+        "trigger_label": "use size",
+        "definite": false,
+        "condition": "the floor area is 3,001 square feet or more and either the space was last used as another use (not a Bar, a Restaurant, a Limited Restaurant, Nighttime Entertainment, a retail use or a laundromat), or the floor area grows, or storefronts are merged",
+        "missing_inputs": [
+          "the floor area of the business, in square feet",
+          "what the space was last used as",
+          "the floor area before the project",
+          "whether storefronts are to be merged"
+        ],
+        "code_section": "Planning Code § 762",
+        "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+        "citations": [
+          "zoning:NCT-VALENCIA"
+        ],
+        "basis": [
+          {
+            "rule_id": "T7.missing",
+            "text": "Zoning district NCT-VALENCIA: a use of 3,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 762, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+            "code_section": "Planning Code § 762",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-762.-valencia-street-neighborhood-commercial-transit-district",
+            "citations": [
+              "zoning:NCT-VALENCIA"
+            ]
+          }
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "fact": "planning_uses",
+        "label": "Kind of business (Planning Code use)",
+        "value": "Bar",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "alcohol_served",
+        "label": "Alcohol served",
+        "value": "Beer and wine",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "licence_type",
+        "label": "Liquor licence type",
+        "value": "Type 42 (on-sale beer and wine, public premises)",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "wine bar"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "closing",
+        "label": "Closing time",
+        "value": "After midnight",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [
+          "open until 1am"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "entertainment_described",
+        "label": "Live music, amplified sound or dancing",
+        "value": "Live music or performance",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "occasional live music"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "seats",
+        "label": "Seats",
+        "value": "40",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [
+          "40-seat"
+        ],
+        "citations": []
+      },
+      {
+        "fact": "alcohol_transaction",
+        "label": "How the liquor licence is obtained",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "formula_retail",
+        "label": "Part of a chain (formula retail)",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "floor_area_sqft",
+        "label": "Floor area",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "existing_use_stated",
+        "label": "Last use of the space, as described",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "stories",
+        "label": "Stories the business is on",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "entertainment_kind",
+        "label": "Kind of entertainment",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "occupants_under_50",
+        "label": "Fewer than 50 people",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      }
+    ],
+    "row_facts": {
+      "zoning_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "closing",
+          "label": "Closing time",
+          "value": "After midnight",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "open until 1am"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "entertainment_described",
+          "label": "Live music, amplified sound or dancing",
+          "value": "Live music or performance",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "occasional live music"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Not shown by the records",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "prior_approvals",
+          "label": "Earlier approved use decisions at this address",
+          "value": "None on file",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "alcohol": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "alcohol_served",
+          "label": "Alcohol served",
+          "value": "Beer and wine",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "active_licences",
+          "label": "Active ABC licences at this address",
+          "value": "None on file",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "entertainment": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "entertainment_described",
+          "label": "Live music, amplified sound or dancing",
+          "value": "Live music or performance",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "occasional live music"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "closing",
+          "label": "Closing time",
+          "value": "After midnight",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "open until 1am"
+          ],
+          "citations": []
+        }
+      ],
+      "health": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        }
+      ],
+      "building_change_of_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [
+            "wine bar"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "seats",
+          "label": "Seats",
+          "value": "40",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [
+            "40-seat"
+          ],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Not shown by the records",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ]
+    }
+  },
+  "not_permitted": {
+    "case": "pacific-bar",
+    "address": "1448 PACIFIC AVE, San Francisco, CA 94109",
+    "parcel": "0154/014",
+    "lat": 37.795534,
+    "lng": -122.419063,
+    "concept": "Wine bar, beer and wine, closes 10pm",
+    "zoning": {
+      "district": "NCD-PACIFIC",
+      "name": "Pacific Avenue Neighborhood Commercial District",
+      "code_section": "Planning Code § 726 (Zoning Control Table 726); § 102 (Bar, Restaurant)",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "rules": "Bar not permitted; Restaurant principally permitted (First and Second Story). Bar NP at all stories; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699"
+    },
+    "citations": [
+      {
+        "id": "zoning:NCD-PACIFIC",
+        "kind": "zoning",
+        "label": "Zoning NCD-PACIFIC — Planning Code § 726 (Zoning Control Table 726); § 102 (Bar, Restaurant)",
+        "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699",
+        "excerpt": "Bar not permitted; Restaurant principally permitted (First and Second Story). Bar NP at all stories; Liquor Store NP."
+      },
+      {
+        "id": "overlay:static:sf:nc_ncd_pacific",
+        "kind": "overlay",
+        "label": "Pacific Avenue Neighborhood Commercial District — Planning Code § 726 (Zoning Control Table 726); § 102 (Bar, Restaurant)",
+        "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699",
+        "excerpt": "Bar not permitted; Restaurant principally permitted (First and Second Story). Bar NP at all stories; Liquor Store NP."
+      }
+    ],
+    "determinations": {
+      "pathway": {
+        "use": "bar",
+        "use_label": "Bar",
+        "district": "NCD-PACIFIC",
+        "permission": "not_permitted",
+        "permission_label": "Not permitted",
+        "existing_use": null,
+        "change_of_use": "not_established",
+        "change_of_use_label": "Change of use not established",
+        "lines": [
+          {
+            "rule_id": "zoning.use",
+            "text": "The concept is looked up as a Bar (Planning Code § 102).",
+            "code_section": "Planning Code § 102",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T1.cell",
+            "text": "Zoning district NCD-PACIFIC: a Bar on the first story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 726",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+            "citations": [
+              "zoning:NCD-PACIFIC"
+            ]
+          },
+          {
+            "rule_id": "T1.cell",
+            "text": "Zoning district NCD-PACIFIC: a Bar on the second story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 726",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+            "citations": [
+              "zoning:NCD-PACIFIC"
+            ]
+          },
+          {
+            "rule_id": "T1.cell",
+            "text": "Zoning district NCD-PACIFIC: a Bar on the third story or above is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+            "code_section": "Planning Code § 726",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+            "citations": [
+              "zoning:NCD-PACIFIC"
+            ]
+          },
+          {
+            "rule_id": "T1.story",
+            "text": "Which story the business is on is not given. The table reads the same for a Bar on every story, so the story does not change this.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T1.historic",
+            "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+            "code_section": "Planning Code § 202.11",
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "T11.missing",
+            "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; C 22:00-02:00; NP 02:00-06:00; Planning Code § 726, in force since before 2022-01-01), so this is not decided.",
+            "code_section": "Planning Code § 726",
+            "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+            "citations": [
+              "zoning:NCD-PACIFIC"
+            ]
+          },
+          {
+            "rule_id": "zoning.existing_use",
+            "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1448 PACIFIC AVE, so the records do not show what the space is used as now.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          },
+          {
+            "rule_id": "change.planning_use",
+            "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+            "code_section": null,
+            "source_url": null,
+            "citations": []
+          }
+        ],
+        "notes": [
+          {
+            "rule_id": "zoning.note",
+            "text": "Note on file, not evaluated by the rules: Bar not permitted; Restaurant principally permitted (First and Second Story). Bar NP at all stories; Liquor Store NP.",
+            "code_section": "Planning Code § 726",
+            "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699",
+            "citations": [
+              "overlay:static:sf:nc_ncd_pacific",
+              "zoning:NCD-PACIFIC"
+            ]
+          }
+        ],
+        "rules_date": "2026-11-10",
+        "triggers": [
+          {
+            "rule_id": "T1",
+            "family": "new_use_control",
+            "label": "Use control of the zoning district",
+            "control": "not_permitted",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T1.cell",
+                "text": "Zoning district NCD-PACIFIC: a Bar on the first story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              },
+              {
+                "rule_id": "T1.cell",
+                "text": "Zoning district NCD-PACIFIC: a Bar on the second story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              },
+              {
+                "rule_id": "T1.cell",
+                "text": "Zoning district NCD-PACIFIC: a Bar on the third story or above is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              },
+              {
+                "rule_id": "T1.story",
+                "text": "Which story the business is on is not given. The table reads the same for a Bar on every story, so the story does not change this.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              },
+              {
+                "rule_id": "T1.historic",
+                "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+                "code_section": "Planning Code § 202.11",
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T2",
+            "family": "special_district_use_control",
+            "label": "Use control of a special use district",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T2.none",
+                "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T3",
+            "family": "enlarge_or_intensify",
+            "label": "Enlarging or intensifying an existing use",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T3.none",
+                "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T4",
+            "family": "licence_in_restricted_district",
+            "label": "Liquor licence rule of a restricted district",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T4.none",
+                "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T5",
+            "family": "formula_retail",
+            "label": "Formula retail",
+            "control": "not_decided",
+            "missing_inputs": [
+              "whether the business is part of a chain that shares its name, look or menu with other locations"
+            ],
+            "lines": [
+              {
+                "rule_id": "T5.row",
+                "text": "Zoning district NCD-PACIFIC: formula retail is a conditional use (Planning Code § 726, in force since before 2022-01-01).",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              },
+              {
+                "rule_id": "T5.missing",
+                "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [
+              {
+                "control": "conditional",
+                "condition": "the business is part of a chain with eleven or more other locations",
+                "missing_inputs": [
+                  "whether the business is part of a chain that shares its name, look or menu with other locations"
+                ]
+              }
+            ],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T6",
+            "family": "nighttime_entertainment",
+            "label": "Nighttime entertainment",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T6.none",
+                "text": "No entertainment is described, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T7",
+            "family": "use_size",
+            "label": "Use size",
+            "control": "not_decided",
+            "missing_inputs": [
+              "the floor area of the business, in square feet"
+            ],
+            "lines": [
+              {
+                "rule_id": "T7.missing",
+                "text": "Zoning district NCD-PACIFIC: a use of 2,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 726, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              }
+            ],
+            "in_force_from": "2025-10-06",
+            "ordinance": "Ord. 173-25, File No. 250634",
+            "differs_today": false,
+            "contingent": [
+              {
+                "control": "conditional",
+                "condition": "the floor area is 2,001 square feet or more and either the space was last used as another use (not a Bar, a Restaurant, a Limited Restaurant, Nighttime Entertainment, a retail use or a laundromat), or the floor area grows, or storefronts are merged",
+                "missing_inputs": [
+                  "the floor area of the business, in square feet",
+                  "what the space was last used as",
+                  "the floor area before the project",
+                  "whether storefronts are to be merged"
+                ]
+              }
+            ],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T8",
+            "family": "laundromat_removal",
+            "label": "Removal of a laundromat",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T8.outside",
+                "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2026-11-10, so this trigger does not apply.",
+                "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+                "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T9",
+            "family": "outdoor_activity_area",
+            "label": "Outdoor activity area",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T9.none",
+                "text": "No outdoor area is described, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T10",
+            "family": "amend_prior_conditions",
+            "label": "Changing the conditions of an earlier approval",
+            "control": "does_not_apply",
+            "missing_inputs": [],
+            "lines": [
+              {
+                "rule_id": "T10.none",
+                "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+                "code_section": null,
+                "source_url": null,
+                "citations": []
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          },
+          {
+            "rule_id": "T11",
+            "family": "hours_of_operation",
+            "label": "Hours of operation",
+            "control": "not_decided",
+            "missing_inputs": [
+              "the closing time"
+            ],
+            "lines": [
+              {
+                "rule_id": "T11.missing",
+                "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; C 22:00-02:00; NP 02:00-06:00; Planning Code § 726, in force since before 2022-01-01), so this is not decided.",
+                "code_section": "Planning Code § 726",
+                "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+                "citations": [
+                  "zoning:NCD-PACIFIC"
+                ]
+              }
+            ],
+            "in_force_from": null,
+            "ordinance": null,
+            "differs_today": false,
+            "contingent": [],
+            "unsettled_by": []
+          }
+        ],
+        "changes": {
+          "planning_use": "not_established",
+          "planning_use_lines": [
+            {
+              "rule_id": "zoning.existing_use",
+              "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1448 PACIFIC AVE, so the records do not show what the space is used as now.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "change.planning_use",
+              "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "building_occupancy": "not_established",
+          "building_occupancy_lines": [
+            {
+              "rule_id": "change.occupancy",
+              "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2025 California Building Code).",
+              "code_section": "California Building Code 2025 edition, § 303.1.1, § 303.3, § 105.1; San Francisco Building Code 2025 edition, § 106A.1.12, § 109A.1",
+              "source_url": "https://gocodebook.com/library/us/ca/ca-building-code/chapter-3-occupancy-classification-and-use/section-303-assembly-group-a",
+              "citations": []
+            },
+            {
+              "rule_id": "change.occupancy",
+              "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "change.occupancy",
+              "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "neighbourhood_notice": "not_required",
+          "neighbourhood_notice_lines": [
+            {
+              "rule_id": "change.notice",
+              "text": "Under the Planning Code as in force on 10 November 2026, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+              "code_section": "Planning Code § 311(b)(1)-(4)",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+              "citations": []
+            }
+          ]
+        }
+      },
+      "rows": [
+        {
+          "area": "zoning_use",
+          "approval": "Not permitted at this address",
+          "agency": "San Francisco Planning",
+          "status": "not_permitted",
+          "status_note": null,
+          "basis": [
+            {
+              "rule_id": "zoning.use",
+              "text": "The concept is looked up as a Bar (Planning Code § 102).",
+              "code_section": "Planning Code § 102",
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T1.cell",
+              "text": "Zoning district NCD-PACIFIC: a Bar on the first story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "T1.cell",
+              "text": "Zoning district NCD-PACIFIC: a Bar on the second story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "T1.cell",
+              "text": "Zoning district NCD-PACIFIC: a Bar on the third story or above is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "T1.story",
+              "text": "Which story the business is on is not given. The table reads the same for a Bar on every story, so the story does not change this.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T1.historic",
+              "text": "From 2026-04-11 a qualifying Historic Building may read differently (Planning Code § 202.11). The Planning Director decides whether a building qualifies; the rules do not evaluate it.",
+              "code_section": "Planning Code § 202.11",
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T5.row",
+              "text": "Zoning district NCD-PACIFIC: formula retail is a conditional use (Planning Code § 726, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "T5.missing",
+              "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "T7.missing",
+              "text": "Zoning district NCD-PACIFIC: a use of 2,001 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 726, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "T11.missing",
+              "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; C 22:00-02:00; NP 02:00-06:00; Planning Code § 726, in force since before 2022-01-01), so this is not decided.",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            },
+            {
+              "rule_id": "zoning.existing_use",
+              "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1448 PACIFIC AVE, so the records do not show what the space is used as now.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "change.planning_use",
+              "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "zoning.status",
+              "text": "Zoning does not permit the concept as described at this address. What bars it: use control of the zoning district: not permitted.",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            }
+          ],
+          "referral_steps": [],
+          "missing_inputs": []
+        },
+        {
+          "area": "alcohol",
+          "approval": "ABC licence, Type 42 (on-sale beer and wine, public premises)",
+          "agency": "California Department of Alcoholic Beverage Control",
+          "status": "not_permitted",
+          "status_note": null,
+          "basis": [
+            {
+              "rule_id": "alcohol.licence",
+              "text": "The description does not state a licence type. The rules derived ABC Type 42 (on-sale beer and wine, public premises) from the kind of business and what it pours.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "alcohol.tract_concentration",
+              "text": "Census tract 110.02: 11 active on-sale retail licences in ABC's licence export of 9 November 2026, against 8 authorised in ABC's census tract authorisations of September 2026.",
+              "code_section": "California Business and Professions Code § 23958.4",
+              "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+              "citations": []
+            },
+            {
+              "rule_id": "alcohol.status",
+              "text": "Zoning does not permit a new Bar at this address, and ABC may not issue a retail licence where using the licence would be contrary to zoning: not permitted.",
+              "code_section": "California Business and Professions Code § 23790",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "referral_steps": [],
+          "missing_inputs": []
+        },
+        {
+          "area": "health",
+          "approval": "Health permit to operate",
+          "agency": "San Francisco Department of Public Health",
+          "status": "not_permitted",
+          "status_note": null,
+          "basis": [
+            {
+              "rule_id": "health.status",
+              "text": "Zoning does not permit a new Bar at this address, and no City department may issue a permit or licence that would authorize a use the Planning Code prohibits: not permitted.",
+              "code_section": "Planning Code § 175(a)",
+              "source_url": null,
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            }
+          ],
+          "referral_steps": [],
+          "missing_inputs": []
+        },
+        {
+          "area": "building_change_of_use",
+          "approval": "Building permit",
+          "agency": "San Francisco Department of Building Inspection",
+          "status": "not_permitted",
+          "status_note": null,
+          "basis": [
+            {
+              "rule_id": "zoning.existing_use",
+              "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1448 PACIFIC AVE, so the records do not show what the space is used as now.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "change.planning_use",
+              "text": "The records do not show what the space is used as, and the description does not say what it was last used as, so whether the proposed use (Bar) is a change of use is not established.",
+              "code_section": null,
+              "source_url": null,
+              "citations": []
+            },
+            {
+              "rule_id": "building.status",
+              "text": "Zoning does not permit a new Bar at this address, and no City department may issue a permit or licence that would authorize a use the Planning Code prohibits: not permitted.",
+              "code_section": "Planning Code § 175(a)",
+              "source_url": null,
+              "citations": []
+            }
+          ],
+          "referral_steps": [],
+          "missing_inputs": []
+        }
+      ],
+      "overall_status": "not_permitted",
+      "overall_line": "Zoning does not permit the concept as described here (use control of the zoning district). Of the 4 approvals this concept needs: 4 not permitted (zoning and use, alcohol licence, health permit, building permit and change of use).",
+      "entitlement_path": "No approval path: zoning does not permit the concept as described at this address.",
+      "open_questions": [],
+      "headline_findings": [
+        {
+          "kind": "not_permitted",
+          "sentence": "Zoning does not permit the concept as described at this address. What bars it: use control of the zoning district.",
+          "area": "zoning_use",
+          "status": "not_permitted",
+          "trigger": "T1",
+          "trigger_label": "use control of the zoning district",
+          "definite": true,
+          "condition": null,
+          "missing_inputs": [],
+          "code_section": "Planning Code § 726",
+          "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+          "citations": [
+            "zoning:NCD-PACIFIC"
+          ],
+          "basis": [
+            {
+              "rule_id": "T1.cell",
+              "text": "Zoning district NCD-PACIFIC: a Bar on the first story is not permitted (Planning Code § 726, in force since before 2022-01-01).",
+              "code_section": "Planning Code § 726",
+              "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-726.-pacific-avenue-neighborhood-commercial-district",
+              "citations": [
+                "zoning:NCD-PACIFIC"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "facts": [
+      {
+        "fact": "planning_uses",
+        "label": "Kind of business (Planning Code use)",
+        "value": "Bar",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "alcohol_served",
+        "label": "Alcohol served",
+        "value": "Beer and wine",
+        "origin": "description",
+        "origin_label": "Your description",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "licence_type",
+        "label": "Liquor licence type",
+        "value": "Type 42 (on-sale beer and wine, public premises)",
+        "origin": "description",
+        "origin_label": "Worked out by the rules from your description",
+        "derived": true,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "formula_retail",
+        "label": "Part of a chain (formula retail)",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "floor_area_sqft",
+        "label": "Floor area",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      },
+      {
+        "fact": "closing",
+        "label": "Closing time",
+        "value": null,
+        "origin": "not_known",
+        "origin_label": "Not known",
+        "derived": false,
+        "quotes": [],
+        "citations": []
+      }
+    ],
+    "row_facts": {
+      "zoning_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Not shown by the records",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "prior_approvals",
+          "label": "Earlier approved use decisions at this address",
+          "value": "None on file",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "alcohol": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "alcohol_served",
+          "label": "Alcohol served",
+          "value": "Beer and wine",
+          "origin": "description",
+          "origin_label": "Your description",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "licence_type",
+          "label": "Liquor licence type",
+          "value": "Type 42 (on-sale beer and wine, public premises)",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "active_licences",
+          "label": "Active ABC licences at this address",
+          "value": "None on file",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "health": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        }
+      ],
+      "building_change_of_use": [
+        {
+          "fact": "planning_uses",
+          "label": "Kind of business (Planning Code use)",
+          "value": "Bar",
+          "origin": "description",
+          "origin_label": "Worked out by the rules from your description",
+          "derived": true,
+          "quotes": [],
+          "citations": []
+        },
+        {
+          "fact": "existing_use_records",
+          "label": "Use the records show at this address",
+          "value": "Not shown by the records",
+          "origin": "record",
+          "origin_label": "Records on file at this address",
+          "derived": false,
+          "quotes": [],
+          "citations": []
+        }
+      ]
+    }
+  }
+}

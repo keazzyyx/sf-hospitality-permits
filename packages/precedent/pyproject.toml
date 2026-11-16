@@ -1,0 +1,49 @@
+[project]
+name = "permit-memo-precedent"
+version = "0.1.0"
+description = "Permit Memo precedent data layer: ingestion of SF permit / license / zoning records into PostGIS, plus spatial queries"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2.7",
+  "httpx>=0.27",
+  "psycopg[binary,pool]>=3.2",
+  "shapely>=2.0",
+  "pypdf>=4.3",
+  "neatlogs>=1.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "pytest-asyncio>=0.23", "respx>=0.21", "ruff>=0.5", "mypy>=1.10"]
+
+[project.scripts]
+precedent-ingest = "precedent.ingest:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["precedent*"]
+
+[tool.setuptools.package-data]
+precedent = ["static/*.json", "store/*.sql"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "W", "N", "ASYNC", "RUF"]
+ignore = ["B008", "RUF012", "E501", "RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+ignore_missing_imports = true
+exclude = ["tests/"]
+disable_error_code = ["untyped-decorator"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

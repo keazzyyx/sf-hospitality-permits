@@ -1,0 +1,1193 @@
+{
+ "profile": {
+  "business_type": "other",
+  "business_name": "SF Heritage",
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": null,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": true,
+  "alcohol_type": "unknown",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": true,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": false,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": null,
+  "licences_held": [],
+  "alcohol_transaction": null,
+  "formula_retail": null,
+  "no_alcohol_answer_over_description": false,
+  "no_alcohol_stated": false,
+  "outdoor_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "other"
+  ],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": "rear_or_side",
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "existing_occupancy_group": null,
+  "target_open_date": null,
+  "intake_cleared": {},
+  "intake_answered": [],
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "RH-2",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; NP 22:00-06:00; Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)), so this is not decided.",
+     "code_section": "Planning Code § 209.1",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+     "citations": [
+      "zoning:RH-2"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2007 Franklin St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-06-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 209.1",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077",
+     "citations": [
+      "zoning:RH-2"
+     ]
+    }
+   ],
+   "rules_date": "2025-06-04",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.none",
+       "text": "Zoning district RH-2 states no use size threshold (Planning Code § 209.1, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 209.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+       "citations": [
+        "zoning:RH-2"
+       ]
+      },
+      {
+       "rule_id": "T7.corner_cap",
+       "text": "Zoning district RH-2: a Limited Corner Commercial Use may not be larger than 1,200 square feet. The rules cannot tell whether the use is one (Planning Code § 209.1, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 209.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+       "citations": [
+        "zoning:RH-2"
+       ]
+      }
+     ],
+     "in_force_from": "2024-01-14",
+     "ordinance": "Ord. 249-23, File No. 230701",
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-06-04, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "not_permitted",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.elsewhere",
+       "text": "Zoning district RH-2: an outdoor activity area elsewhere on the lot is not permitted (Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)).",
+       "code_section": "Planning Code § 209.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+       "citations": [
+        "zoning:RH-2"
+       ]
+      }
+     ],
+     "in_force_from": "2024-05-27",
+     "ordinance": "Ord. 85-24, File No. 231221",
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the closing time"
+     ],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; NP 22:00-06:00; Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)), so this is not decided.",
+       "code_section": "Planning Code § 209.1",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+       "citations": [
+        "zoning:RH-2"
+       ]
+      }
+     ],
+     "in_force_from": "2024-05-27",
+     "ordinance": "Ord. 85-24, File No. 231221",
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2007 Franklin St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 4 June 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Not permitted at this address",
+    "agency": "San Francisco Planning",
+    "status": "not_permitted",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.none",
+      "text": "Zoning district RH-2 states no use size threshold (Planning Code § 209.1, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "T7.corner_cap",
+      "text": "Zoning district RH-2: a Limited Corner Commercial Use may not be larger than 1,200 square feet. The rules cannot tell whether the use is one (Planning Code § 209.1, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "T9.elsewhere",
+      "text": "Zoning district RH-2: an outdoor activity area elsewhere on the lot is not permitted (Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)).",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-22:00; NP 22:00-06:00; Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)), so this is not decided.",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2007 Franklin St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "Zoning does not permit the concept as described at this address. What bars it: outdoor activity area: not permitted.",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "not_permitted",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.status",
+      "text": "Zoning does not permit the concept as described at this address (outdoor activity area), and ABC may not issue a retail licence where using the licence would be contrary to zoning: not permitted.",
+      "code_section": "California Business and Professions Code § 23790",
+      "source_url": null,
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-06-04: none within 1,000 ft or in the census tract.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2007 Franklin St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   },
+   {
+    "area": "outdoor",
+    "approval": "Outdoor activity area: not permitted as described",
+    "agency": "San Francisco Planning, Public Works and the SFMTA",
+    "status": "not_permitted",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T9.elsewhere",
+      "text": "Zoning district RH-2: an outdoor activity area elsewhere on the lot is not permitted (Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)).",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     },
+     {
+      "rule_id": "outdoor.status",
+      "text": "The outdoor activity area as described is not permitted here: not permitted.",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "not_permitted",
+  "overall_line": "Zoning does not permit the concept as described here (outdoor activity area). Of the 5 approvals this concept needs: 3 not permitted (zoning and use, alcohol licence, outdoor seating or activity area), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "No approval path: zoning does not permit the concept as described at this address.",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": [
+   {
+    "kind": "not_permitted",
+    "sentence": "Zoning does not permit the concept as described at this address. What bars it: outdoor activity area.",
+    "area": "outdoor",
+    "status": "not_permitted",
+    "trigger": "T9",
+    "trigger_label": "outdoor activity area",
+    "definite": true,
+    "condition": null,
+    "missing_inputs": [],
+    "code_section": "Planning Code § 209.1",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+    "citations": [
+     "zoning:RH-2"
+    ],
+    "basis": [
+     {
+      "rule_id": "T9.elsewhere",
+      "text": "Zoning district RH-2: an outdoor activity area elsewhere on the lot is not permitted (Planning Code § 209.1, in force from 2024-05-27 (Ord. 85-24, File No. 231221)).",
+      "code_section": "Planning Code § 209.1",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.1.-rh-residential-house-districts",
+      "citations": [
+       "zoning:RH-2"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "records": {
+  "zoning": "RH-2",
+  "overlays": [
+   "Family and Senior Housing Opportunity SUD",
+   "RH-2"
+  ],
+  "tract": "131.01",
+  "site_history": {
+   "matched_by": "Parcel 0600/002 or the address 2007 Franklin St",
+   "total": 1,
+   "by_kind": {
+    "use_decision": 1
+   },
+   "entries": [
+    {
+     "application_id": "datasf_planning:CU73.029",
+     "citation_id": "app:datasf_planning:CU73.029",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Conditional Use Authorization",
+     "description": "Apartments",
+     "address": "2007 FRANKLIN ST, SAN FRANCISCO, CA 94109",
+     "filed_at": "1973-05-24",
+     "decided_at": "1973-07-05",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=CU73.029",
+     "use_types": [],
+     "hours_close": null,
+     "conditions": []
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 0,
+   "bars": 0,
+   "abc_on_sale_licenses": 0,
+   "abc_licenses_1000ft": 0,
+   "undue_concentration_flag": false,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 0,
+   "approved_with_conditions": 1,
+   "denied": 0,
+   "withdrawn": 0,
+   "total": 1,
+   "window_years": 10,
+   "scope": "N = 1 dated decision within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 100 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 0,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 100,
+   "counted": [
+    {
+     "source": "datasf_planning",
+     "source_id": "2014.1573CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2014.1573CUA",
+     "fetched_at": "2025-06-04T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194658390274Z-y673-d69b-p0005.json",
+     "id": "datasf_planning:2014.1573CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "bar",
+      "restaurant"
+     ],
+     "description": "The project site at 2050 Van Ness Avenue / 1675 Pacific Avenue is an approximately 10,268-square-foot lot in the Nob Hill neighborhood and within the Van Ness Special Use District (Van Ness SUD). The project site is located on the block bounded by Pacific Avenue to the north, Jackson Street to the south, Van Ness Avenue to the west, and Polk Street to the east. The project site is currently developed with an approximately 12,409-gross-square-foot (gsf), 32-foot-tall, one-story-with-mezzanine building with former office (670 gross square feet), industrial (6,625 gross square feet automotive repair), and retail-restaurant/bar/place-of-entertainment (5,113 gross square feet) uses. \n\nThe proposed project would demolish the existing structures and construct an approximately 49,268-gross-square-foot, seven-story 72-foot-tall (up to 80 feet tall including parapets, stairs, boiler room, and elevator penthouse) residential mixed-use building with retail and residential on the ground floor and a one-level basement with residential vehicular parking. The residential portion of the proposed project would accommodate approximately 46 one-bedroom apartments, 11 two-bedroom apartments, and six three-bedroom apartments, for a total of up to approximately 63 residential dwelling units. The retail portion of the proposed project would be comprised of up to an approximately 874-square-foot area on the ground floor. The new approximately 8,705-square-foot basement would provide space for storage and an approximately 6,099-square-foot garage for 24 vehicles. The new garage would be accessed via a new curb cut on Pacific Avenue up to 14 feet in width, replacing an existing 11-foot-4-inch-wide curb cut in approximately the same location. The proposed passenger loading would occur on Pacific Avenue at the northeast site frontage. The project would replace one Pacific Avenue on-street metered parking space with one on-street passenger loading space (approximately 20-feet long), and add new street trees. Approximately 64 class-1 bicycle parking spaces would be provided within the basement of the building, and six class-2 bicycle parking spaces (four residential and two retail) would be installed on the adjacent sidewalks. The proposed project would include excavation of approximately 5,268 cubic yards (8,436 square feet) of material, in a 1,666-square-foot area, to a maximum depth of 22 feet below grade. Up to approximately four new street trees would be planted (approximately five on Pacific Avenue and one on Van Ness Avenue).",
+     "address": "2050 VAN NESS AV, SAN FRANCISCO, CA 94109",
+     "lat": 37.79463218583357,
+     "lng": -122.42279549518908,
+     "parcel": "0595/008",
+     "zoning_district": "RC-4",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2017-01-18",
+     "decided_at": "2019-09-10",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Chapter 116 Residential Projects (A): Community Outreach. Project Sponsor shall include in its community outreach process any businesses located within 300 feet of the proposed project that operate between the hours of 9PM-5AM. Notice shall be made in person, written or electronic form.",
+      "Chapter 116 Residential Projects (B): Sound Study. Project sponsor shall conduct an acoustical sound study, which shall include sound readings taken when performances are taking place at the proximate Places of Entertainment, as well as when patrons arrive and leave these locations at closing time. Readings should be taken at locations that most accurately capture sound from the Place of Entertainment to best of their ability. Any recommendations) in the sound study regarding window glaze ratings and soundproofing materials including but not limited to walls, doors, roofing, etc.",
+      "Chapter 116 Residential Projects (C): Design Considerations. i. During design phase, project sponsor shall consider the entrance and egress location and paths of travel at the Places) of Entertainment in designing the location of (a) any entrance/egress for the residential building and (b) any parking garage in the building. ii. In designing doors, windows, and other openings for the residential building, project sponsor should consider the POE's operations and noise during all hours of the day and night.",
+      "Chapter 116 Residential Projects (D): Construction Impacts. Project sponsor shall communicate with adjacent or nearby Places) of Entertainment as to the construction schedule, daytime and nighttime, and consider how this schedule and any storage of construction materials may impact the POE operations.",
+      "Chapter 116 Residential Projects (E): Communication. Project Sponsor shall make a cell phone number available to Places) of Entertainment management during all phases of development through construction. In addition, a line of communication should be created to ongoing building management throughout the occupation phase and beyond. DESIGN - COMPLIANCE AT PLAN STAGE",
+      "Overhead Wiring: The Property owner will allow MUNI to install eyebolts in the building adjacent to its electric streetcar line to support its overhead wire system if requested by MUNI or M TA.",
+      "Parking for Affordable Units: All off-street parking spaces shall be made available to Project residents only as a separate \"add-on\" option for purchase or rent and shall not be bundled with any Project dwelling unit for the life of the dwelling units. Tl1e required parking spaces may be made available to residents within a quarter mile of the project. All affordable dwelling units pursuant to Planning Code Section 415 shall have equal access to use of the parking as the market rate units, with parking spaces priced commensurate with the affordability of the dwelling unit.",
+      "Car Share: Pursuant to Planning Code Section 1.66, no fewer than one (1) car share space shall be made available, at no cost, to a certified car share organization for the purposes of providing car share services for its service subscribers.",
+      "Parking Maximum: Pursuant to Planning Code Section 151.1, the Project shall provide no more than thirty-two (32) off-street parking spaces. P LANNING DEPARTMENT 24 www.s~lanning.org",
+      "Corporate Housing: The project is hereby prohibited from renting any of the units as corporate rentals. For informatior2 about compliance, contact the Case Planner, Planning Department at 415-575-9Q87, wzuw.s~platining.org",
+      "Anti-Discriminatory Housing: The Project shall adhere to the requirements of the Anti- Discriminatory Housing policy, pursuant to Administrative Code Section 1.61. zuzuz~~. s~ilnnnir~•or~",
+      "Transportation Sustainability Fee: The Project. is subject to the Transportation Sustainability Fee (TSF), as applicable, pursuant to Planning Code Section 411A. wwzo. s~lanf7ifi~ . org",
+      "Residential Child Care Impact Fee: The Project is subject to the Residential Child Care Fee, as applicable, pursuant to Planning Code Section 414A. wzvzv. s fplan n ing. org P LANNING DEPARTMENT 'L5",
+      "Affordable Units (A): Number of Required Units. Pursuant to Planning Code Section 415.3, the Project is required to provide 18% of the proposed dwelling units as affordable to qualifying households. The Project contains 63 units; therefore, 11 affordable units are currently required. The Project Sponsor will fulfill this requirement by providing the 11 affordable units on-site.",
+      "Affordable Units (B): Unit Mix. The Project contains 46 one-bedroom, 11 two-bedroom, and 6three-bedroom units; therefore, the required affordable unit mix is 8one-bedroom, 2two-bedroom, and 1 three- bedroom units. If the market-rate unit mix changes, the affordable unit mix will be modified accordingly with written approval from Planning Department staff in consultation with M OHCD. zvzvzv.s{plann_inQ.org or the Mayor's Office of Housing and Community Development at 415-701-5500, wzvzo.s~ moh.or~",
+      "Affordable Units (C): Mixed Income Levels for Affordable Units. Pursuant to Planning Code Section 415.3, the Project is required to provide 18% of the proposed dwelling units as affordable to qualifying households. At least 10% must be affordable to low-income households, at least 4% must be affordable to moderate income households, and at least 4% must be affordable to middle income households.",
+      "Affordable Units (D): Minimum Unit Sizes. The affordable units shall meet the minimum unit sizes standards established by the California Tax Credit Allocation Committee (TCAC) as of May 16, 2017. One-bedroom units must be at least 450 square feet, two-bedroom units must be at least 700 square feet, and three-bedroom units must be at least 900 square feet. Studio units must be at least 300 square feet pursuant to Planning Code Section 415.6(f)(2).",
+      "Affordable Units (E): Conversion of Rental Units: In the event one or more of the Rental Units are converted to Ownership units, the project sponsor shall either (A) reimburse the City the proportional amount of the inclusionary affordable housing fee, which would be equivalent to the then- current inclusionary affordable fee requirement for Owned Units, or (B) provide additional on-site or off-site affordable units equivalent to the difference between the on-site rate for rental units approved at the time of entitlement and the then-current inclusionary requirements for Owned Units, The…",
+      "Affordable Units (F): Notice of Special Restrictions. The affordable units shall be designated on a reduced set of plans recorded as a Notice of Special Restrictions on the property prior to architectural addenda. The designation shall comply with the designation standards published by the Planning Department and updated periodically. wzvw.s~planning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, towzu. s =moh. o~ P LANNING DEPARTMENT 27",
+      "Affordable Units (G): Phasing. If any building permit is issued for partial phasing of the Project, the Project Sponsor shall have designated not less than eighteen percent (18%), or the applicable percentage as discussed above, of the each phase's total number of dwelling units as on-site affordable units. wzvz~.sfplanning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, www.s~ moh.org_",
+      "Affordable Units (H): Duration. Under Planning Code Section 415.8, all units constructed pursuant to Section 415.6, m ust remain affordable to qualifying households for the life of the project. _z..uzuzu~s~lanning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, wzuzu.s -moh.or . I. Expiration of the Inclusionary Rate. Pursuant to Planning Code Section 415.6(a)(10), if the Project has not obtained a site or building permit within 30 months of I~lanning Commission Approval of this Motion No.",
+      "Validity: The. authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. zvzvzv.s~{plarzning.org (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project. sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the. Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. zvzvzv. s~plan n i n~. org (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. wwzv.s,{plannir2~o~ (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. For irTformation about compliance, contact Cede Enforcement, Planning Department at 415-575-6863, wwzo. s~plann ing. o~~~ P LANNING DEPARTMENT 2'~ ENTERTAINMENT COMMISSION —NOISE ATTENUATION CONDITIONS (standard)",
+      "Final Materials: The Project Sponsor shall continue to work with Planning Department on the building design. Final materials, glazing, color, texture, landscaping, Ind detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance. zvzuw. sft~tari n irtg.org P LANNING DEPARTMENT 22 (standard)",
+      "Garbage, Composting and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. wzv_,u?;~larrraing.or~ (standard)",
+      "Rooftop Mechanical Equipment: Pursuant to Planning Code 141, the Project Sponsor shall submit a roof plan to the Planning Department prior to Planning approval of the' building permit application. Rooftop mechanical equipment, if any is proposed as part of the Project, is required to be screened so as not to be visible from any point at or below the roof level of the subject building. www.s~planning.org (standard)",
+      "Transformer Vault Location: The location of individual project PG&E Transformer Vault installations has significant effects to San Francisco streetscapes when improperly located. However, they may not have any impact if they are installed in preferred locations. The Project Sponsor shall continue to work with the Planning Department, in consultation with Public W orks, regarding the final locations) for transformer vaults) for this project. (standard)",
+      "Managing Traffic During Construction: The Project Sponsor and construction contractors) shall coordinate with the Traffic Engineering and Transit Divisions of the San Francisco Municipal Transportation Agency (SFMTA), the Police Department, the Fire Department, the Planning Department, and other construction contractors) for any concurrent nearby Projects to manage traffic congestion and pedestrian circulation effects during construction of the Project. (standard)",
+      "First Source Hiring: The Project shall adhere to the requirements of the First Source Hiring Construction and End-Use Employment Program approved by the First Source Hiring Administrator, pursuant to Section 83.4(m) of the Administrative Code. The Project Sponsor shall comply with the requirements of this Program regarding construction work and on-going employment required for the Project. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. www.s,~lanning.o~ (standard)",
+      "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. zvzvzu. s{plan n ing. org OPERATION (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+      "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall. be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. zvww. s~plararun~ orQ P LANNING DEPARTMENT 31 (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "RC-4",
+      "planner": "Christopher May",
+      "premises": true,
+      "parent_id": "2014.1573",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2019-09-10T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={814EB9B0-5EBD-4FCF-BEB4-E236426672D0}&fileGUID={DC40553D-D29F-4AAA-ABC9-70799E143379}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "RESIDENTIAL- COMMERCIAL, HIGH DENSITY",
+      "hearing_date": null,
+      "neighborhood": "Russian Hill",
+      "project_name": "2050 Van Ness Ave / 1675 Pacific Ave",
+      "applicant_org": "Reuben, Junius & Rose, LLP",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Chapter 116 Residential Projects (A): Community Outreach. Project Sponsor shall include in its community outreach process any businesses located within 300 feet of the proposed project that operate between the hours of 9PM-5AM. Notice shall be made in person, written or electronic form.",
+        "title": "Chapter 116 Residential Projects (A)",
+        "number": "6A",
+        "standard": false,
+        "categories": [
+         "hours"
+        ]
+       },
+       {
+        "text": "Chapter 116 Residential Projects (B): Sound Study. Project sponsor shall conduct an acoustical sound study, which shall include sound readings taken when performances are taking place at the proximate Places of Entertainment, as well as when patrons arrive and leave these locations at closing time. Readings should be taken at locations that most accurately capture sound from the Place of Entertainment to best of their ability. Any recommendations) in the sound study regarding window glaze ratings and soundproofing materials including but not limited to walls, doors, roofing, etc.",
+        "title": "Chapter 116 Residential Projects (B)",
+        "number": "6B",
+        "standard": false,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Chapter 116 Residential Projects (C): Design Considerations. i. During design phase, project sponsor shall consider the entrance and egress location and paths of travel at the Places) of Entertainment in designing the location of (a) any entrance/egress for the residential building and (b) any parking garage in the building. ii. In designing doors, windows, and other openings for the residential building, project sponsor should consider the POE's operations and noise during all hours of the day and night.",
+        "title": "Chapter 116 Residential Projects (C)",
+        "number": "6C",
+        "standard": false,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Chapter 116 Residential Projects (D): Construction Impacts. Project sponsor shall communicate with adjacent or nearby Places) of Entertainment as to the construction schedule, daytime and nighttime, and consider how this schedule and any storage of construction materials may impact the POE operations.",
+        "title": "Chapter 116 Residential Projects (D)",
+        "number": "6D",
+        "standard": false,
+        "categories": [
+         "entertainment"
+        ]
+       },
+       {
+        "text": "Chapter 116 Residential Projects (E): Communication. Project Sponsor shall make a cell phone number available to Places) of Entertainment management during all phases of development through construction. In addition, a line of communication should be created to ongoing building management throughout the occupation phase and beyond. DESIGN - COMPLIANCE AT PLAN STAGE",
+        "title": "Chapter 116 Residential Projects (E)",
+        "number": "6E",
+        "standard": false,
+        "categories": [
+         "entertainment",
+         "outdoor"
+        ]
+       },
+       {
+        "text": "Overhead Wiring: The Property owner will allow MUNI to install eyebolts in the building adjacent to its electric streetcar line to support its overhead wire system if requested by MUNI or M TA.",
+        "title": "Overhead Wiring",
+        "number": "11",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Parking for Affordable Units: All off-street parking spaces shall be made available to Project residents only as a separate \"add-on\" option for purchase or rent and shall not be bundled with any Project dwelling unit for the life of the dwelling units. Tl1e required parking spaces may be made available to residents within a quarter mile of the project. All affordable dwelling units pursuant to Planning Code Section 415 shall have equal access to use of the parking as the market rate units, with parking spaces priced commensurate with the affordability of the dwelling unit.",
+        "title": "Parking for Affordable Units",
+        "number": "13",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Car Share: Pursuant to Planning Code Section 1.66, no fewer than one (1) car share space shall be made available, at no cost, to a certified car share organization for the purposes of providing car share services for its service subscribers.",
+        "title": "Car Share",
+        "number": "14",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Parking Maximum: Pursuant to Planning Code Section 151.1, the Project shall provide no more than thirty-two (32) off-street parking spaces. P LANNING DEPARTMENT 24 www.s~lanning.org",
+        "title": "Parking Maximum",
+        "number": "16",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Corporate Housing: The project is hereby prohibited from renting any of the units as corporate rentals. For informatior2 about compliance, contact the Case Planner, Planning Department at 415-575-9Q87, wzuw.s~platining.org",
+        "title": "Corporate Housing",
+        "number": "18",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Anti-Discriminatory Housing: The Project shall adhere to the requirements of the Anti- Discriminatory Housing policy, pursuant to Administrative Code Section 1.61. zuzuz~~. s~ilnnnir~•or~",
+        "title": "Anti-Discriminatory Housing",
+        "number": "19",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Transportation Sustainability Fee: The Project. is subject to the Transportation Sustainability Fee (TSF), as applicable, pursuant to Planning Code Section 411A. wwzo. s~lanf7ifi~ . org",
+        "title": "Transportation Sustainability Fee",
+        "number": "21",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Residential Child Care Impact Fee: The Project is subject to the Residential Child Care Fee, as applicable, pursuant to Planning Code Section 414A. wzvzv. s fplan n ing. org P LANNING DEPARTMENT 'L5",
+        "title": "Residential Child Care Impact Fee",
+        "number": "22",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (A): Number of Required Units. Pursuant to Planning Code Section 415.3, the Project is required to provide 18% of the proposed dwelling units as affordable to qualifying households. The Project contains 63 units; therefore, 11 affordable units are currently required. The Project Sponsor will fulfill this requirement by providing the 11 affordable units on-site.",
+        "title": "Affordable Units (A)",
+        "number": "23A",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (B): Unit Mix. The Project contains 46 one-bedroom, 11 two-bedroom, and 6three-bedroom units; therefore, the required affordable unit mix is 8one-bedroom, 2two-bedroom, and 1 three- bedroom units. If the market-rate unit mix changes, the affordable unit mix will be modified accordingly with written approval from Planning Department staff in consultation with M OHCD. zvzvzv.s{plann_inQ.org or the Mayor's Office of Housing and Community Development at 415-701-5500, wzvzo.s~ moh.or~",
+        "title": "Affordable Units (B)",
+        "number": "23B",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (C): Mixed Income Levels for Affordable Units. Pursuant to Planning Code Section 415.3, the Project is required to provide 18% of the proposed dwelling units as affordable to qualifying households. At least 10% must be affordable to low-income households, at least 4% must be affordable to moderate income households, and at least 4% must be affordable to middle income households.",
+        "title": "Affordable Units (C)",
+        "number": "23C",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (D): Minimum Unit Sizes. The affordable units shall meet the minimum unit sizes standards established by the California Tax Credit Allocation Committee (TCAC) as of May 16, 2017. One-bedroom units must be at least 450 square feet, two-bedroom units must be at least 700 square feet, and three-bedroom units must be at least 900 square feet. Studio units must be at least 300 square feet pursuant to Planning Code Section 415.6(f)(2).",
+        "title": "Affordable Units (D)",
+        "number": "23D",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (E): Conversion of Rental Units: In the event one or more of the Rental Units are converted to Ownership units, the project sponsor shall either (A) reimburse the City the proportional amount of the inclusionary affordable housing fee, which would be equivalent to the then- current inclusionary affordable fee requirement for Owned Units, or (B) provide additional on-site or off-site affordable units equivalent to the difference between the on-site rate for rental units approved at the time of entitlement and the then-current inclusionary requirements for Owned Units, The…",
+        "title": "Affordable Units (E)",
+        "number": "23E",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (F): Notice of Special Restrictions. The affordable units shall be designated on a reduced set of plans recorded as a Notice of Special Restrictions on the property prior to architectural addenda. The designation shall comply with the designation standards published by the Planning Department and updated periodically. wzvw.s~planning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, towzu. s =moh. o~ P LANNING DEPARTMENT 27",
+        "title": "Affordable Units (F)",
+        "number": "23F",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (G): Phasing. If any building permit is issued for partial phasing of the Project, the Project Sponsor shall have designated not less than eighteen percent (18%), or the applicable percentage as discussed above, of the each phase's total number of dwelling units as on-site affordable units. wzvz~.sfplanning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, www.s~ moh.org_",
+        "title": "Affordable Units (G)",
+        "number": "23G",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Affordable Units (H): Duration. Under Planning Code Section 415.8, all units constructed pursuant to Section 415.6, m ust remain affordable to qualifying households for the life of the project. _z..uzuzu~s~lanning.org or the Mayor's Office of Housing and Community Development at 415-701-5500, wzuzu.s -moh.or . I. Expiration of the Inclusionary Rate. Pursuant to Planning Code Section 415.6(a)(10), if the Project has not obtained a site or building permit within 30 months of I~lanning Commission Approval of this Motion No.",
+        "title": "Affordable Units (H)",
+        "number": "23H",
+        "standard": false,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Validity: The. authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. zvzvzv.s~{plarzning.org",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project. sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the. Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. zvzvzv. s~plan n i n~. org",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. wwzv.s,{plannir2~o~",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. For irTformation about compliance, contact Cede Enforcement, Planning Department at 415-575-6863, wwzo. s~plann ing. o~~~ P LANNING DEPARTMENT 2'~ ENTERTAINMENT COMMISSION —NOISE ATTENUATION CONDITIONS",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Final Materials: The Project Sponsor shall continue to work with Planning Department on the building design. Final materials, glazing, color, texture, landscaping, Ind detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance. zvzuw. sft~tari n irtg.org P LANNING DEPARTMENT 22",
+        "title": "Final Materials",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Garbage, Composting and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. wzv_,u?;~larrraing.or~",
+        "title": "Garbage, Composting and Recycling Storage",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Rooftop Mechanical Equipment: Pursuant to Planning Code 141, the Project Sponsor shall submit a roof plan to the Planning Department prior to Planning approval of the' building permit application. Rooftop mechanical equipment, if any is proposed as part of the Project, is required to be screened so as not to be visible from any point at or below the roof level of the subject building. www.s~planning.org",
+        "title": "Rooftop Mechanical Equipment",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Transformer Vault Location: The location of individual project PG&E Transformer Vault installations has significant effects to San Francisco streetscapes when improperly located. However, they may not have any impact if they are installed in preferred locations. The Project Sponsor shall continue to work with the Planning Department, in consultation with Public W orks, regarding the final locations) for transformer vaults) for this project.",
+        "title": "Transformer Vault Location",
+        "number": "10",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Managing Traffic During Construction: The Project Sponsor and construction contractors) shall coordinate with the Traffic Engineering and Transit Divisions of the San Francisco Municipal Transportation Agency (SFMTA), the Police Department, the Fire Department, the Planning Department, and other construction contractors) for any concurrent nearby Projects to manage traffic congestion and pedestrian circulation effects during construction of the Project.",
+        "title": "Managing Traffic During Construction",
+        "number": "17",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "First Source Hiring: The Project shall adhere to the requirements of the First Source Hiring Construction and End-Use Employment Program approved by the First Source Hiring Administrator, pursuant to Section 83.4(m) of the Administrative Code. The Project Sponsor shall comply with the requirements of this Program regarding construction work and on-going employment required for the Project.",
+        "title": "First Source Hiring",
+        "number": "20",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. www.s,~lanning.o~",
+        "title": "Enforcement",
+        "number": "24",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. zvzvzu. s{plan n ing. org OPERATION",
+        "title": "Revocation due to Violation of Conditions",
+        "number": "25",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "26",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "27",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       },
+       {
+        "text": "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall. be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. zvww. s~plararun~ orQ P LANNING DEPARTMENT 31",
+        "title": "Lighting",
+        "number": "28",
+        "standard": true,
+        "categories": [
+         "lighting"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)"
+     }
+    }
+   ]
+  },
+  "applications_within_1000ft": 109,
+  "licences_within_500ft": 0,
+  "licences_within_1000ft": 0,
+  "businesses_within_500ft": 0
+ }
+}

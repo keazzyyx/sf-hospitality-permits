@@ -1,0 +1,1556 @@
+{
+ "format_version": 2,
+ "address": "2127 Irving St, San Francisco, CA 94122",
+ "lat": 37.763157148808084,
+ "lng": -122.4807515889349,
+ "parcel": "1777/001A",
+ "concept_summary": "A limited-cooking cafe with 5 employees, part of an 11-location chain, proposing tenant improvements and exterior signage at 2127 Irving St in the Irving Street Neighborhood Commercial District.",
+ "overall": {
+  "status": "not_permitted",
+  "line": "Of the 3 approvals this concept needs: 1 not permitted (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "next_step": "Obtain written confirmation from San Francisco Planning that Planning Code Section 732 prohibits formula retail limited restaurants in the NCD-IRVING district, or that a Conditional Use Authorization pathway exists, before signing a lease or filing any application.",
+  "citations": []
+ },
+ "pathway": {
+  "use": "limited_restaurant",
+  "use_label": "Limited Restaurant",
+  "district": "NCD-IRVING",
+  "permission": "not_permitted",
+  "permission_label": "Not permitted at this address",
+  "existing_use": null,
+  "change_of_use": "no",
+  "change_of_use_label": "No change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Limited Restaurant (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.maybe_continues",
+    "text": "The space is, or was last, a Limited Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.missing",
+    "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 732, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+    "code_section": "Planning Code § 732",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-732.-irving-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-IRVING"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2127 Irving St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The last use of the space, as described, is Limited Restaurant. The proposed use is Limited Restaurant, so this is not a change of use.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+    "code_section": "Planning Code § 732",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25777",
+    "citations": [
+     "overlay:static:sf:nc_ncd_irving",
+     "zoning:NCD-IRVING"
+    ]
+   }
+  ],
+  "rules_date": "2024-07-30",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether an existing business is to be enlarged or intensified"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.maybe_continues",
+      "text": "The space is, or was last, a Limited Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.none",
+      "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_permitted",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-IRVING: formula retail is a conditional use (Planning Code § 732, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 732",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-732.-irving-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-IRVING"
+      ]
+     },
+     {
+      "rule_id": "T5.not_permitted_for",
+      "text": "Zoning district NCD-IRVING: formula retail is not permitted for Limited Restaurant (Planning Code § 732, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 732",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-732.-irving-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-IRVING"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01 until 2025-05-31).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+      "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district NCD-IRVING: a use of 4,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 732, in force since before 2022-01-01 until 2025-10-05).",
+      "code_section": "Planning Code § 732",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-732.-irving-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-IRVING"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 732, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 732",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-732.-irving-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-IRVING"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "no",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2127 Irving St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Limited Restaurant. The proposed use is Limited Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 30 July 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Not permitted at this address",
+   "agency": "San Francisco Planning",
+   "status": "not_permitted",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run from the decision record (trigger inventory, rules in force at filing): not_permitted. Triggers: Formula retail.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "summary": "Planning Code Section 732 prohibits formula retail limited restaurants in the NCD-IRVING district as described, according to the trigger rules applied on the rules date of July 30, 2024.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The concept is a Limited Restaurant under Planning Code Section 102, which is principally permitted in the Irving Street Neighborhood Commercial District per Planning Code Section 732.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The records state 'Restaurant' is principally permitted, but do not specify 'Limited Restaurant.'",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The concept profile states this is formula retail (part of a chain with 11 locations), and Planning Code Section 732 states formula retail is not permitted for Limited Restaurant in the NCD-IRVING district as of July 30, 2024.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record discusses restaurant permissions generally but does not mention formula retail, Limited Restaurant, or chain restrictions.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Two recent Conditional Use Authorization applications for formula retail food concepts on this block—The Mochi Donut Shop at 2126 Irving St (filed November 2021) and Krispy Krunchy Chicken at 2130 Irving St (filed March 2021)—were both cancelled within 22 days and 10 months respectively.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2021-011182CUA",
+      "app:datasf_planning:2021-002788CUA"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "In December 2021 Planning approved a health permit for The Mochi Donut Shop at 2126 Irving St as a non-formula retail limited restaurant, explicitly stating 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and restricting the business to standardized merchandise only (50% or more from a single distributor) with no other standardized features.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is a DPH referral/miscellaneous permit (agency referral), not a health permit approval.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A formula retail bank branch at 2257 Irving St (132 m away) was approved by the Planning Commission in October 2022 with standard conditions under Planning Code Sections 178(3)(c), 303, and 303.1.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2021-011365CUA"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The permit at 2127 Irving St was approved in January 2020 for Sip Tea 1011 SF, a limited restaurant, and was exempt from neighborhood notice under Ordinance 199-18; the approval states it was a change of use from the prior occupant.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2019-019552MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "The cited records did not support this summary. See the findings below.",
+   "summary_verification": "downgraded",
+   "summary_note": "Records show 'Limited Restaurant' not 'limited-cooking cafe'; no record cites California Retail Food Code Sections 114380–114381 or SF Health Code Article 8.",
+   "findings": [
+    {
+     "text": "Every food facility must obtain a health permit to operate from the San Francisco Department of Public Health after plan check, final inspection, and proof of a certified food safety manager on staff.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.health_permit",
+      "catalog:sf.health_plan_check"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Dozens of agency referrals for limited restaurant continuations on the Irving Street corridor have been routinely approved by Planning in the last 10 years, including dessert cafes at 2245 Irving St (approved March 2018) and 1919 Irving St (approved October 2018).",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show 3 approvals, not 'dozens'; 2245 Irving St was Happy Bakery, not a dessert cafe; 'routinely' is a conclusion not stated in records.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The health permit application is routed to the Planning Department for zoning review, so the formula retail question will be raised again during the health permit referral process.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record does not mention routing to Planning Department, zoning review, or formula retail questions during the health permit process.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 2127 Irving St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Limited Restaurant. The proposed use is Limited Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without whether the space is for fewer than 50 people, whether an existing business is to be enlarged or intensified and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "whether the space is for fewer than 50 people",
+    "whether an existing business is to be enlarged or intensified",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "summary": "The status is insufficient information because the records do not establish whether the space is for fewer than 50 people, whether an existing business is to be enlarged, or the existing occupancy group, all of which only plans or an inspection show.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The description does not give the number of seats or occupant load; a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B under the 2022 California Building Code.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record discusses permit requirements but does not state occupancy group classifications, the 50-person threshold, or reference the California Building Code.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The description states the last use of the space was Limited Restaurant (Sip Tea 1011 SF, approved 2020), and the proposed use is also Limited Restaurant, so this is not a Planning Code change of use; however, whether it is a Building Code change of occupancy depends on the occupant load and existing occupancy group, which are not established.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows Sip Tea was approved as Limited Restaurant but does not state what the proposed use is or draw conclusions about change of use or occupancy.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Tenant improvements are described, which will require a building permit with plans routed to Planning, Public Health, Fire, and PUC; plan review takes 2–4 months and fees are a percentage of construction valuation.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.building_permit"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "The building permit application is routed to the Planning Department for review.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.building_permit"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: whether an existing business is to be enlarged or intensified. Needed for: building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space"
+  },
+  {
+   "question": "Whether Planning Code Section 732 categorically prohibits formula retail limited restaurants in the NCD-IRVING district, or whether a Conditional Use Authorization pathway exists under Planning Code Section 303.1.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department Zoning Counter or a pre-application meeting"
+  },
+  {
+   "question": "Why the two recent formula retail food CUA applications on this block (Mochi Donut Shop 2021-011182CUA and Krispy Krunchy Chicken 2021-002788CUA) were cancelled without reaching a Commission hearing.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department or the applicants' representatives"
+  },
+  {
+   "question": "Whether the business can qualify as non-formula retail by limiting standardized features to merchandise sourcing (as The Mochi Donut Shop did in 2021) if it shares a name, menu, decor, or operating procedures with 10 other locations.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department in a pre-application meeting with the formula retail ordinance text and the concept's operating documentation"
+  },
+  {
+   "question": "Whether the prior tenant Sip Tea 1011 SF is still operating or whether the space is vacant, which affects whether this is a continuation of use or a new establishment.",
+   "needs": "inspection",
+   "ask": "A site visit or contact with the landlord"
+  },
+  {
+   "question": "The occupant load of the space and the existing Building Code occupancy group, which determine whether a change of occupancy is required.",
+   "needs": "plans",
+   "ask": "Plans prepared by a licensed architect showing the proposed layout and occupant load calculation"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NCD-IRVING",
+  "name": "Irving Street Neighborhood Commercial District",
+  "bar_permission": "conditional",
+  "restaurant_permission": "principal",
+  "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+  "code_section": "Planning Code § 732 (Zoning Control Table 732); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:NCD-IRVING"
+ },
+ "overlays": [
+  {
+   "name": "Irving Street Neighborhood Commercial District",
+   "kind": "nc_rule",
+   "effect": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+   "code_section": "Planning Code § 732 (Zoning Control Table 732); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_ncd_irving"
+  },
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "Family and Senior Housing Opportunity SUD: special use district on the SF Zoning Map; its controls are in Planning Code § 249.94.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 22,
+  "bars": 0,
+  "abc_on_sale_licenses": 4,
+  "abc_licenses_1000ft": 17,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 0,
+  "approved_with_conditions": 0,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 0,
+  "window_years": 10,
+  "scope": "N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 18 permits and licences, 131 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 18,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 131,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "If a Conditional Use Authorization is granted, expect standard conditions for formula retail: signage program approved by Planning staff, community liaison officer, noise control measures, nighttime lighting restrictions, landscaping plan, and sidewalk maintenance.",
+   "basis": "The October 2022 CUA approval for a formula retail bank at 2257 Irving St imposed these standard conditions under Planning Code Sections 178(3)(c), 303, and 303.1. No specialized operational restrictions (hours, occupant limits, merchandise displays) were imposed for that approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2021-011365CUA"
+   ],
+   "verification": "supported",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "condition": "Hours of operation limited to 6:00 a.m. to 2:00 a.m., the principally permitted range in the NCD-IRVING district; hours between 2:00 a.m. and 6:00 a.m. require conditional use.",
+   "basis": "Planning Code Section 732 sets principally permitted hours at 6:00 a.m. to 2:00 a.m. and conditional hours at 2:00 a.m. to 6:00 a.m. for the Irving Street Neighborhood Commercial District.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "The business must be open to the public.",
+   "basis": "Planning staff noted this restriction in multiple limited restaurant approvals on the Irving corridor, including the 2020 approval at 2142 Irving St and the 2021 approval at the same address.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2020-004606MIS",
+    "app:datasf_planning:2021-008028MIS"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2019-019552MIS",
+   "citation_id": "app:datasf_planning:2019-019552MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "2127 IRVING ST 94122",
+   "distance_m": 0.0,
+   "filed_at": "2019-10-16",
+   "decided_at": "2020-01-24",
+   "days_to_decision": 100,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.482,
+   "why_comparable": "This is the most recent permit at the exact same address (2127 Irving St), 0 m away. It approved a limited restaurant use (Sip Tea 1011 SF, a boba shop) in 2020—the identical use category to the proposed cafe.",
+   "key_takeaway": "This agency referral shows limited restaurants are permitted in the NCD-IRVING district and were exempt from neighborhood notice under Ordinance 199-18. However, this was an agency referral for continuation of use, not a formula retail Conditional Use Authorization, so it does not address the formula retail question that applies to this 11-location chain concept.",
+   "lat": 37.7631571497805,
+   "lng": -122.48075158802557,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-019552MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-011182CUA",
+   "citation_id": "app:datasf_planning:2021-011182CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [],
+   "address": "2126 IRVING ST 94122",
+   "distance_m": 46.3,
+   "filed_at": "2021-11-09",
+   "decided_at": "2021-12-01",
+   "days_to_decision": 22,
+   "outcome": "cancelled",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.489,
+   "why_comparable": "Filed in November 2021 at 2126 Irving St (46 m away, same block) for a formula retail mochi donut shop with drinks and snacks—a cafe-style concept. This was a Conditional Use Authorization application that was cancelled in December 2021.",
+   "key_takeaway": "This cancellation occurred within 22 days of filing, suggesting the applicant withdrew before the hearing process began. The record does not state why it was cancelled, but it shows recent formula retail cafe applications on this block have not proceeded to approval. The companion health referral 2021-008816MIS was approved as non-formula retail with a note that 'Formula retail use not permitted,…",
+   "lat": 37.763569779776994,
+   "lng": -122.48067709266293,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-011182CUA"
+  },
+  {
+   "application_id": "datasf_planning:2021-002788CUA",
+   "citation_id": "app:datasf_planning:2021-002788CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [],
+   "address": "2130 IRVING ST 94122",
+   "distance_m": 56.4,
+   "filed_at": "2021-03-18",
+   "decided_at": "2022-01-26",
+   "days_to_decision": 314,
+   "outcome": "cancelled",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.488,
+   "why_comparable": "Filed in March 2021 at 2130 Irving St (56 m away, same block) for formula retail Krispy Krunchy Chicken, a limited restaurant use. This Conditional Use Authorization was cancelled in January 2022 after 10 months.",
+   "key_takeaway": "A second formula retail food concept on this immediate block was cancelled without approval. Like the mochi donut case, the record does not state a reason for cancellation, but the pattern of two consecutive formula retail CUA cancellations in 2021–2022 within 60 m raises a question about the viability of formula retail approvals here in the current regulatory climate.",
+   "lat": 37.76364421493988,
+   "lng": -122.4809341024396,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-002788CUA"
+  },
+  {
+   "application_id": "datasf_planning:2021-008816MIS",
+   "citation_id": "app:datasf_planning:2021-008816MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "2126 IRVING ST 94122",
+   "distance_m": 46.3,
+   "filed_at": "2021-08-30",
+   "decided_at": "2021-12-01",
+   "days_to_decision": 93,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.499,
+   "why_comparable": "This is the DPH health referral for the same Mochi Donut Shop at 2126 Irving St that filed the cancelled CUA 2021-011182CUA. It was approved in December 2021 as an agency referral, 0 m away on the same block.",
+   "key_takeaway": "Planning approved the health permit for The Mochi Donut Shop as a limited restaurant but explicitly stated 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and allowed only 'standardized array of merchandise (50% or more from a single distributor)' with no other standardized features. This suggests the business was approved as technically non-formula retail…",
+   "lat": 37.763569779776994,
+   "lng": -122.48067709266293,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008816MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-011365CUA",
+   "citation_id": "app:datasf_planning:2021-011365CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [],
+   "address": "2257 IRVING ST 94122",
+   "distance_m": 131.8,
+   "filed_at": "2021-11-10",
+   "decided_at": "2022-10-17",
+   "days_to_decision": 341,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Landscaping: Pursuant to Planning Code Section 132, the Project Sponsor shall submit a site plan to the Planning Department prior to Planning approval of the building permit application indicating that 50% of the front setback areas shall be surfaced in permeable materials and further, that 20% of the front setback areas shall be landscaped with approved plant species. The size and specie of plant materials and the nature of the permeable surface shall be as approved by the Department of Publi c Works.",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three -year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission sh all conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time o f such approval. (standard)",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) become effective. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commis sion shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since the date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) became effective. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time o f such approval. (standard)",
+    "Garbage, Composting, and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly label ed and illustrated on the building permit plans. Space for the collection and storage of recyclable an d compostable materials that meets the size, location, accessibility, and other standards specified by t h e San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Streetscape Plan: Pursuant to Planning Code Section 138.1, the Project Sponsor shall continue to work with Planning Department staff, in consultation with other City agencies, to refine the desi g n a nd programming of the Streetscape Plan so that the plan generally meets the standards of the Better Streets Plan and all applicable City standards. (standard)",
+    "Signage: The Project Sponsor shall develop a signage program for the Project which shall be subjec t to review and approval by Planning Department staff before submitting any building permits for construction of the Project. All subsequent sign permits shall conform to the approved signage program. Once approved by the Department, the signage program/plan information shall be submitted and approved as part of the site permit for the Project. (standard)",
+    "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Ad ministrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with t he Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+    "Lighting: All Project lighting shall be directed onto the Project site and immediate ly surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent resident s. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.54,
+   "why_comparable": "Approved October 2022 at 2257 Irving St (132 m away, same NCD-IRVING corridor) for a formula retail bank branch. This is a use decision from a Planning Commission hearing with 20 conditions of approval.",
+   "key_takeaway": "This approval shows that formula retail CUAs are still being granted on the Irving Street corridor as recently as 2022, though for a bank (financial service) rather than a restaurant. The Commission imposed standard conditions (landscaping, signage program, noise control, community liaison, lighting) but no specialized operating restrictions, indicating formula retail per se is not prohibited if…",
+   "lat": 37.763091381565296,
+   "lng": -122.48224505408369,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-011365CUA"
+  },
+  {
+   "application_id": "datasf_planning:1985.432C",
+   "citation_id": "app:datasf_planning:1985.432C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "cafe"
+   ],
+   "address": "2123 IRVING ST, SAN FRANCISCO, CA 94122",
+   "distance_m": 0.0,
+   "filed_at": "1985-09-06",
+   "decided_at": "1985-10-17",
+   "days_to_decision": 41,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.85,
+   "why_comparable": "Approved October 1985 at 2123 Irving St (immediately adjacent, 0 m) for a fast-food ice cream/dessert cafe. This is a use decision from a Planning Commission CUA hearing for a cafe use.",
+   "key_takeaway": "This approval at the next-door address shows cafe and dessert uses requiring CUA have historically been approved on this block. However, this predates the formula retail controls added to the Planning Code (Section 303.1 enacted 2004, revised 2006–2008), so it speaks only to cafe use acceptability, not formula retail viability.",
+   "lat": 37.7631571497805,
+   "lng": -122.48075158802557,
+   "source_url": "https://sfplanninggis.org/pim?search=1985.432C"
+  },
+  {
+   "application_id": "datasf_planning:1994.632C",
+   "citation_id": "app:datasf_planning:1994.632C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "cafe"
+   ],
+   "address": "1914 - 1920 IRVING ST, SAN FRANCISCO, CA 94122",
+   "distance_m": 199.7,
+   "filed_at": "1994-12-07",
+   "decided_at": "1995-02-02",
+   "days_to_decision": 57,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.8,
+   "why_comparable": "Approved February 1995 at 1914-1920 Irving St (200 m away, same NCD-IRVING district) for a small self-service coffee shop. This is a use decision from a Planning Commission CUA hearing for a cafe concept.",
+   "key_takeaway": "The Commission approved a self-service coffee shop on the Irving corridor under the former NC-2 rules (predecessor to NCD-IRVING). Like the 1985 case, this predates formula retail restrictions and demonstrates general receptivity to cafe uses, but does not address formula retail.",
+   "lat": 37.763712758269094,
+   "lng": -122.4785960640188,
+   "source_url": "https://sfplanninggis.org/pim?search=1994.632C"
+  },
+  {
+   "application_id": "datasf_planning:1992.582C",
+   "citation_id": "app:datasf_planning:1992.582C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "cafe"
+   ],
+   "address": "2227 - 2229 IRVING ST, SAN FRANCISCO, CA 94122",
+   "distance_m": 104.0,
+   "filed_at": "1992-09-30",
+   "decided_at": "1992-12-17",
+   "days_to_decision": 78,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.824,
+   "why_comparable": "Denied December 1992 at 2227-2229 Irving St (104 m away, same NCD-IRVING district) for a small self-service restaurant and bakery cafe. This is a use decision—the only denial among the candidates—from a Planning Commission CUA hearing.",
+   "key_takeaway": "This is the only outright denial in the candidate set for a cafe use on the Irving corridor. The record does not state the reason for denial. The application was for a 'fast food' use under the then-applicable NC-2 rules; it is unclear whether concerns were use-specific, site-specific, or related to fast-food characteristics. Formula retail was not yet regulated.",
+   "lat": 37.76310527085644,
+   "lng": -122.48192969584761,
+   "source_url": "https://sfplanninggis.org/pim?search=1992.582C"
+  },
+  {
+   "application_id": "datasf_planning:2018-014502MIS",
+   "citation_id": "app:datasf_planning:2018-014502MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant",
+    "cafe"
+   ],
+   "address": "1919 IRVING ST 94122",
+   "distance_m": 197.6,
+   "filed_at": "2018-10-24",
+   "decided_at": "2018-10-29",
+   "days_to_decision": 5,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.614,
+   "why_comparable": "Approved October 2018 at 1919 Irving St (198 m away, same NCD-IRVING district) for continuation of an existing limited restaurant, Oh Dessert Café. This is an agency referral for a dessert cafe, similar concept.",
+   "key_takeaway": "This agency referral approved a dessert cafe as a limited restaurant continuation, showing the use type remains permitted. However, as an agency referral it was approved administratively without a Commission hearing and does not address whether the concept was formula retail or subject to Section 303.1.",
+   "lat": 37.7632225023797,
+   "lng": -122.47851093869504,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-014502MIS"
+  },
+  {
+   "application_id": "datasf_planning:2018-003715MIS",
+   "citation_id": "app:datasf_planning:2018-003715MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant",
+    "cafe"
+   ],
+   "address": "2245 IRVING ST 94122",
+   "distance_m": 131.8,
+   "filed_at": "2018-03-15",
+   "decided_at": "2018-03-30",
+   "days_to_decision": 15,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.622,
+   "why_comparable": "Approved March 2018 at 2245 Irving St (132 m away, same NCD-IRVING district) for continuation of an existing limited restaurant, Happy Bakery. This is an agency referral for a cafe/bakery use.",
+   "key_takeaway": "Another agency referral approving a limited restaurant cafe/bakery on the same corridor, reinforcing that the use category is principally permitted under Section 732. Like other agency referrals, it does not address formula retail status.",
+   "lat": 37.763091381565296,
+   "lng": -122.48224505408369,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-003715MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 1777/001A or the address 2127 Irving St",
+  "total": 11,
+  "by_kind": {
+   "use_decision": 1,
+   "agency_referral": 9,
+   "licence": 1
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2021-002568MIS",
+    "citation_id": "app:datasf_planning:2021-002568MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "ABC referral - Type 41 Recommend approval. Type 41 license is permitted with a continuation of a full service restaurant (732); however, it must operate as a Bona Fide Eating Place.",
+    "address": "2123 IRVING ST 94122",
+    "filed_at": "2021-03-15",
+    "decided_at": "2021-08-05",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2021-002568MIS"
+   },
+   {
+    "application_id": "datasf_planning:2021-003673MIS",
+    "citation_id": "app:datasf_planning:2021-003673MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "DPH referral - Restaurant- CONTINUATION OF EXISTING USE, PER PLANNING CODE SECTION 732 FULL SERVICE RESTAURANT ONLY (202 (a)).",
+    "address": "2123 IRVING ST 94122",
+    "filed_at": "2021-04-13",
+    "decided_at": "2021-08-05",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2021-003673MIS"
+   },
+   {
+    "application_id": "abc:624715",
+    "citation_id": "app:abc:624715",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 41 – On-Sale Beer & Wine - Eating Place",
+    "description": "BANGKOK HOUSE THAI CUISINE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-07-30)",
+    "address": "2123 IRVING ST, SAN FRANCISCO, CA 94122",
+    "filed_at": null,
+    "decided_at": "2021-05-03",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=624715"
+   },
+   {
+    "application_id": "datasf_planning:2019-019552MIS",
+    "citation_id": "app:datasf_planning:2019-019552MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "DPH - Health –Limited Restaurant (DBA Sip Tea 1011 SF) permitted in IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT per PC Section 732 Zoning District. Change of use 9/5/2019 BPA 201909050761 EXEMPT FROM PLANNING CODE SECTION 312/311 NEIGHBORHOOD NOTICE 1 PER Ordinance 199-18.",
+    "address": "2127 IRVING ST 94122",
+    "filed_at": "2019-10-16",
+    "decided_at": "2020-01-24",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-019552MIS"
+   },
+   {
+    "application_id": "datasf_planning:MB1201282",
+    "citation_id": "app:datasf_planning:MB1201282",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "- Recommend approval. Continuation of existing restaurant (790.91) in NC-2 w/in Irving St. Fast Food SUD & is permitted to continue per P.C. Sec. 186.1.",
+    "address": "2123 IRVING ST ST, SAN FRANCISCO, CA 94122",
+    "filed_at": "2012-06-12",
+    "decided_at": "2012-08-28",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1201282"
+   },
+   {
+    "application_id": "datasf_planning:MB1200939",
+    "citation_id": "app:datasf_planning:MB1200939",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "- Recommend approval. Type 41 license is permitted with a restaurant (790.91); however, it must operate as a Bona Fide Eating Place (790.142).",
+    "address": "2123 IRVING ST, SAN FRANCISCO, CA 94122",
+    "filed_at": "2012-05-08",
+    "decided_at": "2012-06-13",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1200939"
+   },
+   {
+    "application_id": "datasf_planning:MB0600113",
+    "citation_id": "app:datasf_planning:MB0600113",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "CONTINUATION OF EXISTING USE, PER PLANNING CODE SECTION 186.1 - FULL SERVICE RESTAURANT ONLY.",
+    "address": "2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122",
+    "filed_at": "2006-01-23",
+    "decided_at": "2006-02-03",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0600113"
+   },
+   {
+    "application_id": "datasf_planning:MB0600085",
+    "citation_id": "app:datasf_planning:MB0600085",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY",
+    "address": "2123 IRVING ST STREET, SAN FRANCISCO, CA 94122",
+    "filed_at": "2006-01-17",
+    "decided_at": "2006-01-23",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0600085"
+   },
+   {
+    "application_id": "datasf_planning:MB0500596",
+    "citation_id": "app:datasf_planning:MB0500596",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY.",
+    "address": "2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122",
+    "filed_at": "2005-04-20",
+    "decided_at": "2005-05-05",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0500596"
+   },
+   {
+    "application_id": "datasf_planning:MA9700882",
+    "citation_id": "app:datasf_planning:MA9700882",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY.",
+    "address": "2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122",
+    "filed_at": "1997-05-15",
+    "decided_at": "1997-05-20",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MA9700882"
+   },
+   {
+    "application_id": "datasf_planning:1985.432C",
+    "citation_id": "app:datasf_planning:1985.432C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Fast-food establishment in a C-2 district within an NC-2 district (ice cream/dessert)",
+    "address": "2123 IRVING ST, SAN FRANCISCO, CA 94122",
+    "filed_at": "1985-09-06",
+    "decided_at": "1985-10-17",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=1985.432C"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 1,
+   "action": "Request a written zoning determination from San Francisco Planning Department stating whether Planning Code Section 732 prohibits formula retail limited restaurants in the NCD-IRVING district or whether a Conditional Use Authorization pathway exists.",
+   "what_to_say": "Submit a Zoning Interpretation Request or request a pre-application meeting with the Zoning Administrator. Provide the concept profile (11-location cafe chain serving limited food), the address (2127 Irving St, NCD-IRVING district), and cite Planning Code Sections 732 (use controls), 102 (Limited Restaurant definition), and 303.1 (formula retail). Reference the December 2021 staff comment on case 2021-008816MIS stating 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and ask whether that reflects current policy or whether a CUA application would be accepted. Request the determination in writing before signing a lease or making further expenditures.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 0,
+  "days_max": 0,
+  "cost_min_usd": 0.0,
+  "cost_max_usd": 0.0,
+  "notes": "No time or cost range is given because zoning does not permit a formula retail limited restaurant as described at this address under Planning Code Section 732 as applied on the rules date of July 30, 2024. The zoning row's rule lines cite Planning Code Section 732 and the zoning record for NCD-IRVING. Before any timeline or cost can be estimated, the operator must obtain written confirmation from San Francisco Planning whether a Conditional Use Authorization pathway exists or whether the concept must be modified to qualify as non-formula retail. If Planning confirms a CUA pathway is available, the timeline would include 120–300 days for a Conditional Use Authorization hearing (including pre-application, environmental review, 300-foot notice, and hearing scheduling) at a cost of approximately $3,100–$15,000 in CUA fees, plus building permit plan review (14–120 days, $800–$15,000), health plan check and permit (35–105 days combined, $1,298–$3,500), and ancillary permits. If the concept can be restructured as non-formula retail by limiting standardized features to merchandise sourcing only (as The Mochi Donut Shop did in 2021), the timeline would be the building permit, health plan check, and health permit without a CUA, approximately 49–225 days and $2,098–$18,500 in city fees, plus state and federal registrations.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "No approval path: zoning does not permit the concept as described at this address.",
+  "verification": "downgraded",
+  "verification_note": "The records show formula retail is not permitted in NCD-IRVING and The Mochi Donut Shop used merchandise sourcing only in 2021, but none of the time or cost ranges are in the cited records.",
+  "original_confidence": null
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 21,
+  "supported": 4,
+  "trimmed": 7,
+  "downgraded": 9,
+  "dropped": 1
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:abc:624715",
+   "kind": "application",
+   "label": "Type 41 – On-Sale Beer & Wine - Eating Place · 2123 IRVING ST, SAN FRANCISCO, CA 94122 · approved (2021)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=624715",
+   "excerpt": "BANGKOK HOUSE THAI CUISINE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-07-30)"
+  },
+  {
+   "id": "app:datasf_planning:1985.432C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2123 IRVING ST, SAN FRANCISCO, CA 94122 · approved (1985)",
+   "source_url": "https://sfplanninggis.org/pim?search=1985.432C",
+   "excerpt": "Fast-food establishment in a C-2 district within an NC-2 district (ice cream/dessert)"
+  },
+  {
+   "id": "app:datasf_planning:1992.582C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2227 - 2229 IRVING ST, SAN FRANCISCO, CA 94122 · denied (1992)",
+   "source_url": "https://sfplanninggis.org/pim?search=1992.582C",
+   "excerpt": "Allow a small self serv rest in nc-2  & fast food rusd per PC & 781.2  Establish  a bakery."
+  },
+  {
+   "id": "app:datasf_planning:1994.632C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1914 - 1920 IRVING ST, SAN FRANCISCO, CA 94122 · approved (1995)",
+   "source_url": "https://sfplanninggis.org/pim?search=1994.632C",
+   "excerpt": "Conditional use to establish small self-service rest.in the irving st.sub-dist./nc-2 dist.  Establish a Small Self-Service coffee shop in an existing one story commercial building."
+  },
+  {
+   "id": "app:datasf_planning:2007.1454C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2100 - 2126 IRVING ST, SAN FRANCISCO, CA 94122 · approved (2008)",
+   "source_url": "https://sfplanninggis.org/pim?search=2007.1454C",
+   "excerpt": "Conditional use request to legalize existing formula retail use (dba \"Quickly\")."
+  },
+  {
+   "id": "app:datasf_planning:2018-003715MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2245 IRVING ST 94122 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-003715MIS",
+   "excerpt": "Recommend approval of limited restaurant (dba Happy Bakery) permitted in the Irving Street NCD per Planning Code Sections 102 and 732. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2018-014502MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1919 IRVING ST 94122 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-014502MIS",
+   "excerpt": "Recommend approval of the continuation of an existing limited restaurant use (d.b.a. Oh Dessert Café). Subject to Planning Code Sections 732 and 102. Health - Limited Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2019-019552MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2127 IRVING ST 94122 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-019552MIS",
+   "excerpt": "DPH - Health –Limited Restaurant (DBA Sip Tea 1011 SF) permitted in IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT per PC Section 732 Zoning District. Change of use 9/5/2019  BPA 201909050761 EXEMPT FROM PLANNING CODE SECTION 312/311 NEIGHBORHOOD NOTICE 1 PER Ordinance 199-18."
+  },
+  {
+   "id": "app:datasf_planning:2020-004606MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2142 IRVING ST 94122 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-004606MIS",
+   "excerpt": "DPH referral - Cafeteria (not defined). recommend approval as continuation of existing Limited Restaurant use as defined in Planning Code Section 102. No catering allowed, and must be open to the public."
+  },
+  {
+   "id": "app:datasf_planning:2021-002568MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST 94122 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-002568MIS",
+   "excerpt": "ABC referral - Type 41 Recommend approval. Type 41 license is permitted with a continuation of a full service restaurant (732); however, it must operate as a Bona Fide Eating Place."
+  },
+  {
+   "id": "app:datasf_planning:2021-002788CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2130 IRVING ST 94122 · cancelled (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-002788CUA",
+   "excerpt": "Conditional Use Authorization request for Formula Retail dba Krispy Krunchy Chicken."
+  },
+  {
+   "id": "app:datasf_planning:2021-003673MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST 94122 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-003673MIS",
+   "excerpt": "DPH referral - Restaurant- CONTINUATION OF EXISTING USE, PER PLANNING CODE SECTION 732\nFULL SERVICE RESTAURANT ONLY (202 (a))."
+  },
+  {
+   "id": "app:datasf_planning:2021-008028MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2142 IRVING ST 94122 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008028MIS",
+   "excerpt": "DPH referral - Limited Restaurant. Recommend approval as continuation of existing Limited Restaurant use as defined in Planning Code Section 102. No formula retail use allowed, and must be open to the public."
+  },
+  {
+   "id": "app:datasf_planning:2021-008816MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2126 IRVING ST 94122 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008816MIS",
+   "excerpt": "DPH referral - Limited Restaurant-Health –Limited Restaurant (DBA The Mochi Donut Shop) permitted in IRVING STREET NEIGHBORHOOD COMMERCIAL\nDISTRICT per PC Section 732 Zoning District. Change of use from full service Restaurant is EXEMPT FROM NEIGHBORHOOD\nNOTICE and Building Permit Requirements due t"
+  },
+  {
+   "id": "app:datasf_planning:2021-011182CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2126 IRVING ST 94122 · cancelled (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-011182CUA",
+   "excerpt": "Conditional Use Authorization request for change of use to formula retail use to permit the sales of mochi donuts, different  drinks, and other snacks."
+  },
+  {
+   "id": "app:datasf_planning:2021-011365CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 2257 IRVING ST 94122 · approved with conditions (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-011365CUA",
+   "excerpt": "The project seeks Conditional Use authorization under Planning Code Sections 178(3)(c), 303, and 303.1 to establish a formula retail bank branch at the Property.\n\nThe Project does not propose any interior or exterior physical alterations, except for the replacement of existing exterior signage."
+  },
+  {
+   "id": "app:datasf_planning:MA9700882",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122 · approved (1997)",
+   "source_url": "https://sfplanninggis.org/pim?search=MA9700882",
+   "excerpt": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY."
+  },
+  {
+   "id": "app:datasf_planning:MB0500596",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122 · approved (2005)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0500596",
+   "excerpt": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY."
+  },
+  {
+   "id": "app:datasf_planning:MB0600085",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST STREET, SAN FRANCISCO, CA 94122 · approved (2006)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0600085",
+   "excerpt": "FOR FULL SERVICE RESTAURANT ONLY, CONTINUATION OF EXISTING USE. - FOR FULL SERVICE RESTAURANT ONLY"
+  },
+  {
+   "id": "app:datasf_planning:MB0600113",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST STREET LEV, SAN FRANCISCO, CA 94122 · approved (2006)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0600113",
+   "excerpt": "CONTINUATION OF EXISTING USE, PER PLANNING CODE SECTION 186.1 - FULL SERVICE RESTAURANT ONLY."
+  },
+  {
+   "id": "app:datasf_planning:MB1200939",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST, SAN FRANCISCO, CA 94122 · approved (2012)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1200939",
+   "excerpt": "- Recommend approval.  Type 41 license is permitted with a restaurant (790.91); however, it must operate as a Bona Fide Eating Place (790.142)."
+  },
+  {
+   "id": "app:datasf_planning:MB1201282",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2123 IRVING ST ST, SAN FRANCISCO, CA 94122 · approved (2012)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1201282",
+   "excerpt": "- Recommend approval.  Continuation of existing restaurant (790.91) in NC-2 w/in Irving St. Fast Food SUD & is permitted to continue per P.C. Sec. 186.1."
+  },
+  {
+   "id": "catalog:sf.building_permit",
+   "kind": "catalog",
+   "label": "Building permit (tenant improvements / change of occupancy) — SF Department of Building Inspection (DBI)",
+   "source_url": "https://www.sf.gov/departments--department-building-inspection",
+   "excerpt": "14–120 days; $800–$15,000; estimated"
+  },
+  {
+   "id": "catalog:sf.health_permit",
+   "kind": "catalog",
+   "label": "Health Permit to Operate a food facility — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/get-health-permit-open-restaurant-bar-or-other-retail-food-location",
+   "excerpt": "14–45 days; $470–$1,000; verified"
+  },
+  {
+   "id": "catalog:sf.health_plan_check",
+   "kind": "catalog",
+   "label": "Public Health plan check (new or remodeled food facility) — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/plan-check-guide-building-and-remodeling-food-facility",
+   "excerpt": "21–60 days; $828–$2,500; verified"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 2127 Irving St, San Francisco, CA 94122 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=470156",
+   "excerpt": "parcel 1777/001A"
+  },
+  {
+   "id": "license:abc:186938",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 2225 IRVING ST, SAN FRANCISCO, CA 94122 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=186938",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-07-30)"
+  },
+  {
+   "id": "license:abc:548337",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 2191 IRVING ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=548337",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-07-30)"
+  },
+  {
+   "id": "license:abc:624715",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 2123 IRVING ST, SAN FRANCISCO, CA 94122 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=624715",
+   "excerpt": "BANGKOK HOUSE THAI CUISINE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-07-30)"
+  },
+  {
+   "id": "license:abc:640704",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 2026 IRVING ST, SAN FRANCISCO, CA 94122 · REV PENDING",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=640704",
+   "excerpt": "SUSHI UMA INC — Type 41 – On-Sale Beer & Wine - Eating Place (REV PENDING on 2024-07-30)"
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "Family and Senior Housing Opportunity SUD: special use district on the SF Zoning Map; its controls are in Planning Code § 249.94."
+  },
+  {
+   "id": "overlay:static:sf:nc_ncd_irving",
+   "kind": "overlay",
+   "label": "Irving Street Neighborhood Commercial District — Planning Code § 732 (Zoning Control Table 732); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25777",
+   "excerpt": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 0 approved / 0 denied / 0 withdrawn; N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 18 permits and licences, 131 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 18 Entertainment Commission permits and ABC licences (lists of grants only), 131 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 22 food & drink businesses, 0 bars, 4 active on-sale ABC licenses within 500 ft; 17 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:NCD-IRVING",
+   "kind": "zoning",
+   "label": "Zoning NCD-IRVING — Planning Code § 732 (Zoning Control Table 732); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25777",
+   "excerpt": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only."
+  }
+ ],
+ "records_summary": "The records show 2127 Irving St is in the Irving Street Neighborhood Commercial District (NCD-IRVING), where limited restaurants are principally permitted on the first floor. The most recent record at this exact address is a 2019 DPH approval for \"Sip Tea 1011 SF,\" a limited restaurant (boba shop), which was exempt from neighborhood notice requirements. The immediate neighbor at 2123 Irving St operates as Bangkok House Thai Cuisine with an active Type 41 beer-and-wine license issued in 2021. Within 500 feet there are 22 registered food and drink businesses and 4 active ABC on-sale licenses; the density summary flags undue concentration as a potential concern for any future alcohol application, though this cafe concept serves no alcohol. The base-rate analysis shows zero dated use decisions within 1,000 feet in the last 10 years (N=0), so no approval rate can be calculated; however, dozens of agency referrals for restaurant continuations have been routinely approved on this block.",
+ "data_gaps": [
+  "No hearing transcripts or detailed conditions are available for the 2019 limited restaurant approval at this address",
+  "The records do not show whether the previous tenant (Sip Tea 1011 SF) is still operating or if the space is now vacant",
+  "No dated use decisions within 1,000 feet in the last 10 years means no approval rate can be calculated for comparable cafe or limited restaurant projects",
+  "The two cancelled formula retail CUA applications nearby (2021-2022) do not state reasons for cancellation",
+  "ABC license conditions are not exposed in the records, so requirements tied to the neighbor's Type 41 license are unknown",
+  "The records do not indicate whether any current or recent Planning enforcement actions affect this address or parcel"
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T05:57:38+00:00",
+ "model_versions": {
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2026-11-09"
+}

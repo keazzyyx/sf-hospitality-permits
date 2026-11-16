@@ -1,0 +1,523 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 33,
+  "supported": 3,
+  "trimmed": 11,
+  "downgraded": 12,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district, where a Bar use on the first story is a conditional use requiring Planning Commission approval.",
+   "verdict": "partially_supported",
+   "supported_text": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:CCB",
+    "overlay:static:sf:nc_ccb"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning approved an ABC Type 20 (off-sale beer/wine) referral for a gallery and liquor store at 555 Grant Ave in April 2023, describing the use as Retail Sales and Services principally permitted in the CCB district.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved an ABC Type 20 referral for a gallery and liquor store at 555 Grant Ave in April 2023, describing the use as Retail Sales and Services principally permitted in the CCB district.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved an ABC Type 20 referral for a gallery and liquor store at 555 Grant Ave in April 2023, describing the use as Retail Sales and Services principally permitted in the CCB district.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-003336MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "The proposed change from retail to a Bar is a change of use under Planning Code Section 102, as stated in the pathway determination.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The proposed change from retail to a Bar is a change of use under Planning Code Section 102, as stated in the pathway determination.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions Section 102 but does not state what constitutes a change of use under it or contain a pathway determination."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A bar CUA was approved at 690 Sacramento Street (219 m away, same CCB district) in November 2023 after 171 days (filed June 2023, decided November 2023) with conditions for noise control, community liaison, and patron notices but no hour restrictions.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar CUA was approved at 690 Sacramento Street (219 m away, same CCB district) in November 2023 (filed June 2023, decided November 2023) with conditions for noise control, community liaison, and patron notices but no hour restrictions.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A bar CUA was approved at 690 Sacramento Street (219 m away, same CCB district) in November 2023 (filed June 2023, decided November 2023) with conditions for noise control, community liaison, and patron notices but no hour restrictions.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "CCB zoning also requires CU authorization for formula retail and for uses over 2,500 square feet (Planning Code Section 810, in force since January 2025), but the description does not say whether this business is part of a chain or give the floor area.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "CCB zoning also requires CU authorization for formula retail and for uses over 2,500 square feet (Planning Code Section 810, in force since January 2025), but the description does not say whether this business is part of a chain or give the floor area.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record cites Section 810 but does not state what it requires; the actual CU authorization requirements, size thresholds, and effective date are not in the record."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "Within 1,000 feet there is only one dated use decision in the last 10 years (N = 1), a withdrawn CUA at 717 California Street, so no local approval rate can be shown.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Within 1,000 feet there is only one dated use decision in the last 10 years (N = 1), a withdrawn CUA at 717 California Street, so no local approval rate can be shown.",
+   "confidence": "verified",
+   "citations": [
+    "stat:base_rate",
+    "app:datasf_planning:2019-021010CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Bar use at 555 Grant Ave in the CCB district requires a Conditional Use Authorization under Planning Code Section 810, and formula retail and use size over 2,500 sq ft would also trigger CU review, but the records do not show whether the business is part of a chain or its floor area.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Bar use at 555 Grant Ave in the CCB district requires a Conditional Use Authorization under Planning Code Section 810, and formula retail and use size over 2,500 sq ft would also trigger CU review, but the records do not show whether the business is part of a chain or its floor area.",
+   "confidence": null,
+   "citations": [
+    "zoning:CCB",
+    "overlay:static:sf:nc_ccb",
+    "app:datasf_planning:2023-003336MIS",
+    "app:datasf_planning:2023-005339CUA",
+    "stat:base_rate",
+    "app:datasf_planning:2019-021010CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "Census tract 117.00 shows 89 active on-sale retail licenses on file as of March 2025, against 6 authorized under ABC's September 2026 tract authorizations, placing the tract over its authorized number.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Census tract 117.00 shows 89 active on-sale retail licenses on file as of March 2025, against 6 authorized under ABC's September 2026 tract authorizations, placing the tract over its authorized number.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows only nearby license counts within specific radii, not census tract totals or authorization limits."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "State law (Business and Professions Code Section 23958.4) tests a new license application and a premises-to-premises transfer for undue concentration when the tract is over quota; the description does not say whether the Type 42 will be a new application or a transfer.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "State law (Business and Professions Code Section 23958.4) tests a new license application and a premises-to-premises transfer for undue concentration when the tract is over quota; the description does not say whether the Type 42 will be a new application or a transfer.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record is a zoning district record and does not mention Business and Professions Code Section 23958.4, undue concentration, or license applications."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "Planning approved a Public Convenience or Necessity referral to the Board of Supervisors for the Type 48 bar at 690 Sacramento Street (same CCB district) in January 2024, confirming that PCN findings are granted for bar licenses in this area.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved a Public Convenience or Necessity referral to the Board of Supervisors for the Type 48 bar at 690 Sacramento Street (same CCB district) in January 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved a Public Convenience or Necessity referral to the Board of Supervisors for the Type 48 bar at 690 Sacramento Street (same CCB district) in January 2024.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-010036MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "Within 500 feet of 555 Grant Ave there are 3 active on-sale ABC licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 64 active on-sale licenses within 1,000 feet, reflecting the density of Chinatown's restaurant and bar corridor.",
+   "verdict": "partially_supported",
+   "supported_text": "Within 500 feet of 555 Grant Ave there are 3 active on-sale ABC licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 64 active on-sale licenses within 1,000 feet.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Within 500 feet of 555 Grant Ave there are 3 active on-sale ABC licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 64 active on-sale licenses within 1,000 feet.",
+   "confidence": "verified",
+   "citations": [
+    "stat:density",
+    "license:abc:557010",
+    "license:abc:362201",
+    "license:abc:534529"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:4",
+   "kind": "finding",
+   "original": "ABC will route the license application to SF Planning and the Police Department for review (Business and Professions Code Section 23987); Planning's zoning referral approval follows the CUA approval and is routine for an approved use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "ABC will route the license application to SF Planning and the Police Department for review (Business and Professions Code Section 23987); Planning's zoning referral approval follows the CUA approval and is routine for an approved use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show Planning referral approvals for ABC licenses but do not state ABC's routing process, the legal code section, or that referrals are routine."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description states the license type is ABC Type 42 but does not say how the license will be obtained (new application or transfer), and the census tract shows 89 active on-sale licenses against 6 authorized, which may require a Public Convenience or Necessity finding if applying new.",
+   "verdict": "partially_supported",
+   "supported_text": "The description states the license type is ABC Type 42 but does not say how the license will be obtained (new application or transfer), and the census tract shows 89 active on-sale licenses against 6 authorized.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The description states the license type is ABC Type 42 but does not say how the license will be obtained (new application or transfer), and the census tract shows 89 active on-sale licenses against 6 authorized.",
+   "confidence": null,
+   "citations": [
+    "stat:density",
+    "zoning:CCB",
+    "app:datasf_planning:2023-010036MIS",
+    "license:abc:557010",
+    "license:abc:362201",
+    "license:abc:534529",
+    "app:datasf_planning:2023-005386MIS",
+    "app:datasf_planning:2022-004266MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A business serving beverages to the public needs a health permit to operate under the California Retail Food Code and San Francisco Health Code Article 8, issued by DPH Environmental Health after inspection.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A business serving beverages to the public needs a health permit to operate under the California Retail Food Code and San Francisco Health Code Article 8, issued by DPH Environmental Health after inspection.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record is about business registration certificates from the Treasurer & Tax Collector, not health permits for food/beverage service."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is sent to the Planning Department for zoning review under Planning's interagency referral guidelines, but this referral step is not a separate approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is sent to the Planning Department for zoning review under Planning's interagency referral guidelines, but this referral step is not a separate approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not mention health permit applications, interagency referrals, or Planning Department review procedures."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A bar serving beverages needs a health permit to operate, issued after plan review and inspection without a hearing; the health permit application is routed to Planning for zoning confirmation.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar serving beverages needs a health permit to operate, issued after plan review and inspection without a hearing; the health permit application is routed to Planning.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.business_registration",
+    "zoning:CCB"
+   ],
+   "note": "The records state the application is sent to Planning for review, but do not specify 'for zoning confirmation.'"
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "A change of use requires a building permit under San Francisco Building Code Section 106A.1, and the permit must conform to the Planning Code (Section 175) before it is issued.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A change of use requires a building permit under San Francisco Building Code Section 106A.1, and the permit must conform to the Planning Code (Section 175) before it is issued.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not mention Building Code Section 106A.1 or Planning Code Section 175, or state permit requirements for change of use."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a), which confirms that the use has been authorized by CUA before the permit is issued.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a), which confirms that the use has been authorized by CUA before the permit is issued.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is a zoning district record with no information about permit routing, Section 175(a), or CUA requirements."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Under the 2022 California Building Code a bar is Assembly Group A-2, but a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group and whether a change of occupancy is required are not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under the 2022 California Building Code a bar is Assembly Group A-2, but a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group and whether a change of occupancy is required are not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is a zoning district record and does not address Building Code occupancy classifications or groups."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Tenant improvements and a change of use from retail to a bar require a building permit routed to Planning for zoning conformance; the description does not give the occupant load, so whether a Building Code change of occupancy is needed is not established.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Tenant improvements and a change of use from retail to a bar require a building permit routed to Planning for zoning conformance; the description does not give the occupant load, so whether a Building Code change of occupancy is needed is not established.",
+   "confidence": null,
+   "citations": [
+    "zoning:CCB"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Noise control and soundproofing: fixed-source equipment and incidental noise shall not be audible beyond the premises or exceed Noise Control Ordinance limits. Basis: The bar CUA at 690 Sacramento Street (CCB district, 2023) was conditioned to require acoustical insulation and sound proofing, and that incidental noise not be audible beyond the premises. This is a standard eating-and-drinking-use condition in San Francisco CUAs.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Noise control and soundproofing: fixed-source equipment and incidental noise shall not be audible beyond the premises or exceed Noise Control Ordinance limits. Basis: The bar CUA at 690 Sacramento Street (CCB district, 2023) was conditioned to require acoustical insulation and sound proofing, and that incidental noise not be audible beyond the premises.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Noise control and soundproofing: fixed-source equipment and incidental noise shall not be audible beyond the premises or exceed Noise Control Ordinance limits. Basis: The bar CUA at 690 Sacramento Street (CCB district, 2023) was conditioned to require acoustical insulation and sound proofing, and that incidental noise not be audible beyond the premises.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Sidewalk and litter maintenance: the operator shall maintain the entrance and all sidewalks abutting the property, and monitor the sidewalk within a one-block radius daily to remove litter associated with the business. Basis: The 690 Sacramento CUA and standard eating-and-drinking conditions (Planning Code Section 202.2) require daily litter monitoring within a one-block radius and sidewalk maintenance in compliance with DPW standards.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sidewalk and litter maintenance: the operator shall maintain the entrance and all sidewalks abutting the property, and monitor the sidewalk within a one-block radius daily to remove litter associated with the business. Basis: The 690 Sacramento CUA and standard eating-and-drinking conditions require daily litter monitoring within a one-block radius and sidewalk maintenance in compliance with DPW standards.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Sidewalk and litter maintenance: the operator shall maintain the entrance and all sidewalks abutting the property, and monitor the sidewalk within a one-block radius daily to remove litter associated with the business. Basis: The 690 Sacramento CUA and standard eating-and-drinking conditions require daily litter monitoring within a one-block radius and sidewalk maintenance in compliance with DPW standards.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Community liaison officer: appoint a liaison to address concerns of nearby owners and occupants, with contact information provided to Planning and registered neighborhood groups. Basis: The 690 Sacramento CUA required a community liaison officer before the building permit was issued. This is a standard condition for bars and entertainment venues in San Francisco to manage neighborhood relations.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Community liaison officer: appoint a liaison to address concerns of nearby owners and occupants, with contact information provided to Planning and registered neighborhood groups. Basis: The 690 Sacramento CUA required a community liaison officer before the building permit was issued.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Community liaison officer: appoint a liaison to address concerns of nearby owners and occupants, with contact information provided to Planning and registered neighborhood groups. Basis: The 690 Sacramento CUA required a community liaison officer before the building permit was issued.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Patron notices at exits: post well-lit notices at all entrances and exits urging patrons to leave quietly, not litter, and not block driveways. Basis: The 690 Sacramento CUA required prominent notices at exits urging patrons to leave in a quiet and orderly fashion. This is a standard condition for bars to reduce late-evening noise and neighborhood impact.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Patron notices at exits: post well-lit notices at all entrances and exits urging patrons to leave quietly, not litter, and not block driveways. Basis: The 690 Sacramento CUA required notices urging patrons to leave in a quiet and orderly fashion.",
+   "cut_problem": "keeps 'prominent notices at exits (record says 'at all entrances to and exits')', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record required notices at all entrances and exits, not just exits; the stated purpose is not in the record."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling and compost storage: provide enclosed, labeled space for collection and storage meeting SFPUC and DPW standards, with containers kept inside and placed out only for service. Basis: Standard eating-and-drinking-use conditions (Planning Code Section 202.2) and the 690 Sacramento CUA require that garbage, recycling and compost containers be hidden from public view and placed outside only when serviced.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, recycling and compost storage: provide enclosed, labeled space for collection and storage, with containers kept inside and placed out only for service. Basis: The 690 Sacramento CUA requires that garbage, recycling and compost containers be hidden from public view and placed outside only when serviced.",
+   "cut_problem": "adds or moves 'requires': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not mention Planning Code Section 202.2 or specifically state SFPUC and DPW standards as requirements."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Type 42 license restrictions: no minors allowed on the premises, and hours of alcohol service are limited by ABC to 6 a.m. to 2 a.m. daily under state law. Basis: ABC Type 42 (on-sale beer and wine, public premises) prohibits minors and restricts alcohol service to 6 a.m.–2 a.m. (Business and Professions Code Section 25631). These are license-type conditions set by state law, not Planning.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Type 42 license restrictions: no minors allowed on the premises. Basis: ABC Type 42 (on-sale beer and wine, public premises) prohibits minors.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Type 42 license restrictions: no minors allowed on the premises. Basis: ABC Type 42 (on-sale beer and wine, public premises) prohibits minors.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.abc_type_42"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: File the Conditional Use Authorization application with SF Planning (Planning Code Section 303). What to say: Submit the CUA application online through SF Planning's portal, including the project description, floor plans showing the bar area and occupant load, a operations plan describing hours (if closing before midnight state that clearly), patron management, and any soundproofing or odor control measures. Pay the CUA application fee (approximately $3,100 for a no-construction CUA as of 2026–27, higher if construction cost exceeds thresholds; confirm the current fee schedule). The application triggers a 300-foot mailed notice to property owners, a posted notice at the site for 30 days, and assignment to a planner for environmental review (likely a categorical exemption for an existing commercial space) and a hearing date. Schedule a pre-application meeting with the assigned planner to review the operations plan and any neighborhood concerns before the hearing. The hearing will be before the P…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records cite Planning Code Section 810, not 303; fee is stated as 'about $3,150 now' (2025), not 2026-27; online portal, specific materials, pre-application meeting not mentioned."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Obtain Planning Commission approval of the CUA at the public hearing. What to say: At the Commission hearing, present the operations plan and respond to any public comment. Emphasize the business's fit with the neighborhood (Chinatown visitor and arts corridor), the existing retail use at the address, measures to manage noise and litter (community liaison, posted exit notices, daily sidewalk monitoring), and compliance with the conditions imposed at 690 Sacramento Street (same district, 2023). If the Commission approves the CUA, a 30-day appeal period follows (Planning Code Section 308.1); if no appeal is filed or an appeal is denied, the CUA becomes effective and you may proceed to the building permit and ABC application. If the Commission continues the hearing for revisions, address the requested changes and return for approval.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain Planning Commission approval of the CUA at the public hearing. What to say: At the Commission hearing, present the operations plan and respond to any public comment. Emphasize the business's fit with the neighborhood (Chinatown visitor and arts corridor), measures to manage noise and litter (community liaison, posted exit notices, daily sidewalk monitoring), and compliance with the conditions imposed at 690 Sacramento Street (2023). If the Commission approves the CUA. If the Commission continues the hearing for revisions, address the requested changes and return for approval.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain Planning Commission approval of the CUA at the public hearing. What to say: At the Commission hearing, present the operations plan and respond to any public comment. Emphasize the business's fit with the neighborhood (Chinatown visitor and arts corridor), measures to manage noise and litter (community liaison, posted exit notices, daily sidewalk monitoring), and compliance with the conditions imposed at 690 Sacramento Street (2023). If the Commission approves the CUA. If the Commission continues the hearing for revisions, address the requested changes and return for approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File the building permit application with DBI for tenant improvements and change of use, after the CUA is effective. What to say: Submit the building permit application with architectural plans stamped by a licensed architect, showing the bar layout, sinks, restrooms, ADA compliance, finishes, mechanical systems, and the occupant load calculation. The application will be routed to Planning for zoning conformance (Planning Code Section 175); Planning will confirm that CUA 2023-005339CUA (or your case number) has been approved and issue a zoning referral approval. DBI will also route the permit to other departments (Fire, DPH if any plumbing or food-contact surfaces are modified). Plan check typically takes 4–12 weeks; if the plans are incomplete or code issues arise, revisions will add time. Once the permit is issued, tenant improvement construction may begin; schedule inspections for rough, final, and certificate of occupancy.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The catalog confirms stamped architectural plans are needed but does not describe routing to Planning, Section 175, the 4-12 week plan check timeline, or inspection requirements."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the ABC Type 42 license with the California Department of Alcoholic Beverage Control, submitting the approved CUA and building permit as supporting documents. What to say: File the ABC Type 42 application online through ABC's licensing portal, including the signed lease, the approved CUA motion, the seller's permit (CDTFA), the business registration certificate (SF Treasurer), the entity registration (CA Secretary of State), and proof that the entity has applied for or received a building permit. Pay the ABC filing fee (approximately $1,000–$1,600 including first-year license fee). ABC will post a public notice at the premises for 30 days and send the application to SF Planning and SFPD for review. Planning will issue a zoning referral approval (routine once the CUA is granted); SFPD will review for location and any concerns. If the census tract is over quota (89 active licenses against 6 authorized), ABC or the Board of Supervisors may require a Public Convenience or Necessity finding; coordinate with the Board of Supervisors (via ABC's notification) to…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the ABC Type 42 license with the California Department of Alcoholic Beverage Control. Pay the ABC filing fee (approximately $1,000–$1,600 including first-year license fee). If the census tract is over quota, ABC or the Board of Supervisors may require a Public Convenience or Necessity finding.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show the fee range and that Public Convenience or Necessity process exists, but not the specific filing procedures, required documents, posting/referral process, or quota numbers stated."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Obtain the health permit to operate from SF Department of Public Health after the final building inspection. What to say: Apply online for the health permit through DPH's Environmental Health portal after the building permit final inspection is complete and the space is ready for a pre-opening inspection. The application requires the Business Account Number (SF Treasurer), the Location ID (LIN), and proof that at least one manager or owner has a Certified Food Protection Manager certificate (not required for a bar with no food, but RBS certification for alcohol servers is required under state law). DPH will schedule a pre-opening inspection to confirm that sinks, surfaces, lighting, and waste disposal meet code. The permit is issued after the inspection passes. Do not serve the public before the permit is in hand.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited record is about business registration, not health permits; it contains no information about DPH, health permit procedures, or inspections."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: File for the sign permit with SF Planning and DBI if installing or replacing exterior signage. What to say: Submit a sign permit application with drawings of the proposed exterior sign (dimensions, materials, illumination) to Planning for design review and to DBI for structural review. The CCB district may have design guidelines for signage; confirm with Planning whether the sign complies with size and illumination limits (Planning Code Section 602 et seq.). The permit is typically approved in 2–6 weeks if the sign is not in a historic district and does not exceed size limits. Schedule the sign installation after the permit is issued.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File for the sign permit with SF Planning and DBI if installing or replacing exterior signage. What to say: Submit a sign permit application with drawings of the proposed exterior sign (dimensions, materials, illumination) to Planning for design review and to DBI for structural review. Schedule the sign installation after the permit is issued.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record shows 7-45 days (not 2-6 weeks); does not mention CCB district design guidelines or Planning Code Section 602 et seq."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $4,155 to $18,250. Notes: The day range (120–300 days) and cost range ($4,155–$18,250 in government fees) are the time and cost to obtain the three approvals in the entitlement path when they are granted: Conditional Use Authorization (120–300 days, $3,100–$15,000 per the catalog, depending on construction cost and fee waiver eligibility), Health permit to operate (14–45 days to issue after application, $470 application fee in 2026–27, included in the building permit timeline), and Building permit with change of use (14–120 days for plan check and issuance, $800–$15,000 depending on construction valuation, per the catalog). The timeline assumes the CUA is approved at the first hearing and no appeal is filed (add 1–2 months if appealed), that building plans are complete and pass review without major revisions (incomplete plans can add 2–4 months), and that the ABC Type 42 application and PCN finding (if required) proceed in parallel with construction (60–150 days per the catalog, with $1,000–$1,600 in ABC fees not included in this range because the alcohol row status is insufficient information and the ABC license is not in the entitlement path). The cost range includes only the Planning CUA fee, the building permit fee, the health permit application fee, and the SF business registration fee ($55–$700); it does not include architect fees, construction costs, ABC license fees, state business registration ($70–$150), or ongoing costs such as insurance and payroll taxes. If the CUA is denied or the building permit uncovers a code issue that cannot be resolved, the timeline and cost figures do not apply. Confirm the current CUA and building permit fee schedules with Planning and DBI, as fees are adjusted annually for CPI and by construction valuation.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $4,155 to $18,250. Notes: The day range (120–300 days) and cost range ($4,155–$18,250 in government fees) are the time and cost to obtain the three approvals in the entitlement path when they are granted: Conditional Use Authorization (120–300 days, $3,100–$15,000 per the catalog, depending on construction cost and fee waiver eligibility), Health permit to operate (14–45 days to issue after application, $470 application fee in 2026–27, included in the building permit timeline), and Building permit with change of use (14–120 days for plan check and issuance, $800–$15,000 depending on construction valuation, per the catalog). The timeline assumes the CUA is approved at the first hearing and no appeal is filed (add 1–2 months if appealed), that building plans are complete and pass review without major revisions (incomplete plans can add 2–4 months), and that the ABC Type 42 application and PCN finding (if required) proceed in parallel with construction (60–150 days per the catalog, with $1,000–$1,600 in ABC fees not included in this range because the alcohol row status is insufficient information and the ABC license is not in the entitlement path). The cost range includes only the Planning CUA fee, the building permit fee, the health permit application fee, and the SF business registration fee ($55–$700); it does not include architect fees, construction costs, ABC license fees, state business registration ($70–$150), or ongoing costs such as insurance and payroll taxes. If the CUA is denied or the building permit uncovers a code issue that cannot be resolved, the timeline and cost figures do not apply. Confirm the current CUA and building permit fee schedules with Planning and DBI, as fees are adjusted annually for CPI and by construction valuation.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited catalog entries show CUA (120-300 days, $3,100-$15,000), building permit (14-120 days, $800-$15,000), and business registration (1-5 days, $55-$700), but no health permit or ABC entries are cited to support the health permit times/fees or ABC times/fees mentioned, and the stated cost range is not clearly der…"
+  }
+ ]
+}

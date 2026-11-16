@@ -1,0 +1,476 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 29,
+  "supported": 7,
+  "trimmed": 10,
+  "downgraded": 7,
+  "dropped": 5
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Super Duper Burgers is a formula retail business (11 other locations) and the NCT-FILLMORE zoning district makes formula retail a conditional use, per Planning Code Section 760 in force since before 2022.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Super Duper Burgers is a formula retail business (11 other locations) and the NCT-FILLMORE zoning district makes formula retail a conditional use, per Planning Code Section 760 in force since before 2022.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown', not conditional use, and does not identify the business or state when the rule came into force."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A prior Conditional Use Authorization application for Super Duper Burgers at this exact address (1701 Fillmore St, 2,950 sq ft, formula retail restaurant) was filed June 1, 2023 and cancelled October 30, 2024 after 517 days without a Planning Commission hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A prior Conditional Use Authorization application for Super Duper Burgers at this exact address (1701 Fillmore St, 2,950 sq ft, formula retail restaurant) was filed June 1, 2023 and cancelled October 30, 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A prior Conditional Use Authorization application for Super Duper Burgers at this exact address (1701 Fillmore St, 2,950 sq ft, formula retail restaurant) was filed June 1, 2023 and cancelled October 30, 2024.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-004973CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "The space was previously occupied by Burger King; a 2016 health referral approved continuation of a self-service/fast food restaurant at 1701 Fillmore, and the 2023 CUA application described the space as 'previously occupied by Burger King.'",
+   "verdict": "partially_supported",
+   "supported_text": "A 2016 health referral approved continuation of a self-service/fast food restaurant at 1701 Fillmore, and the 2023 CUA application described the space as 'previously occupied by Burger King.'",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A 2016 health referral approved continuation of a self-service/fast food restaurant at 1701 Fillmore, and the 2023 CUA application described the space as 'previously occupied by Burger King.'",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2016-012908MIS",
+    "app:datasf_planning:2023-004973CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Two nearby formula retail Conditional Use Authorizations were approved: Orangetheory Fitness at 1633 Fillmore St (90 m away, approved July 2019 after 364 days) and Pinot's Palette at 1981 Sutter St (76 m away, approved November 2015 after 167 days).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Two nearby formula retail Conditional Use Authorizations were approved: Orangetheory Fitness at 1633 Fillmore St (90 m away, approved July 2019 after 364 days) and Pinot's Palette at 1981 Sutter St (76 m away, approved November 2015 after 167 days).",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2018-009861CUA",
+    "app:datasf_planning:2015-007413CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Non-formula restaurants on the same block received agency referral approvals in 2–44 days: 1700 Fillmore (across the street, Type 47 approved in 7 days, October 2022) and 1730 Fillmore (next door, Type 41 approved in 44 days, June 2023).",
+   "verdict": "partially_supported",
+   "supported_text": "Non-formula restaurants received agency referral approvals in 2–44 days: 1700 Fillmore (Type 47 approved in 7 days, October 2022) and 1730 Fillmore (Type 41 approved in 44 days, June 2023).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Non-formula restaurants received agency referral approvals in 2–44 days: 1700 Fillmore (Type 47 approved in 7 days, October 2022) and 1730 Fillmore (Type 41 approved in 44 days, June 2023).",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-009513MIS",
+    "app:datasf_planning:2023-004198MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "Within 1,000 ft over the last 10 years, N = 3 dated use decisions for this business type are on file: 1 approved, 1 approved with conditions, 1 withdrawn; too few to calculate an approval rate.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Within 1,000 ft over the last 10 years, N = 3 dated use decisions for this business type are on file: 1 approved, 1 approved with conditions, 1 withdrawn; too few to calculate an approval rate.",
+   "confidence": "verified",
+   "citations": [
+    "stat:base_rate"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Formula retail requires a Conditional Use Authorization under Planning Code Section 303.1 in NCT-FILLMORE; the restaurant use itself (under 6,001 sq ft) is principally permitted per Section 760, but formula retail status triggers discretionary review at a Planning Commission hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Formula retail requires a Conditional Use Authorization under Planning Code Section 303.1 in NCT-FILLMORE; the restaurant use itself (under 6,001 sq ft) is principally permitted per Section 760.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-FILLMORE",
+    "app:datasf_planning:2023-004973CUA",
+    "app:datasf_planning:2016-012908MIS",
+    "app:datasf_planning:2018-009861CUA",
+    "app:datasf_planning:2015-007413CUA",
+    "app:datasf_planning:2022-009513MIS",
+    "app:datasf_planning:2023-004198MIS",
+    "stat:base_rate"
+   ],
+   "note": "Records show formula retail requires Conditional Use Authorization but do not state it triggers discretionary review at a Planning Commission hearing."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "California Retail Food Code and San Francisco Health Code Article 8 require a health permit to operate for any food or drink business; the permit is issued after Department of Public Health plan check approval and a final pre-opening inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate for any food or drink business; the permit is issued after Department of Public Health plan check approval and a final pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate for any food or drink business; the permit is issued after Department of Public Health plan check approval and a final pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "A health permit referral for 1701 Fillmore St was approved November 15, 2016 for 'the continuation of a self-service/fast food restaurant,' confirming the space has been in restaurant use.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit referral for 1701 Fillmore St was approved November 15, 2016 for 'the continuation of a self-service/fast food restaurant.'",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "A health permit referral for 1701 Fillmore St was approved November 15, 2016 for 'the continuation of a self-service/fast food restaurant,' confirming the space has been in restaurant use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows the approval but does not itself state the conclusion that this confirms prior restaurant use."
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "Health permit applications for new or remodeled food facilities in San Francisco require a plan check fee of $2,207 (8 hours at $276/hour for a new restaurant) and a $470 permit application fee per the FY2026–27 schedule.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Health permit applications for new or remodeled food facilities in San Francisco require a plan check fee of $2,207 (8 hours at $276/hour for a new restaurant) and a $470 permit application fee per the FY2026–27 schedule.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check",
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued by San Francisco Department of Public Health after plan check and final inspection without a discretionary hearing; it is allowed as of right for a restaurant with full cooking.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is issued by San Francisco Department of Public Health after plan check and final inspection without a discretionary hearing; it is allowed as of right for a restaurant.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is issued by San Francisco Department of Public Health after plan check and final inspection without a discretionary hearing; it is allowed as of right for a restaurant.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2016-012908MIS",
+    "catalog:sf.health_plan_check"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Under the California Building Code a restaurant is Assembly Group A-2, and a space for fewer than 50 people is Group B; the concept description does not give the occupant load, so the proposed occupancy group is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under the California Building Code a restaurant is Assembly Group A-2, and a space for fewer than 50 people is Group B; the concept description does not give the occupant load, so the proposed occupancy group is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions change of occupancy but does not state the Building Code group classifications or occupant load thresholds."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The description states tenant improvements will be needed but does not say whether the existing business (if any) is to be enlarged or otherwise changed, and the existing occupancy group of the 2,950 sq ft space is not in the public records.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description states tenant improvements will be needed but does not say whether the existing business (if any) is to be enlarged or otherwise changed, and the existing occupancy group of the 2,950 sq ft space is not in the public records.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The description states the conversion from Burger King to Super Duper Burgers and explicitly says there will be no expansion of the existing building envelope."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "The 2023 Super Duper Burgers CUA application stated the proposal 'will involve exterior and interior improvements to the ground floor space' with 'no expansion of the existing building envelope,' but did not specify whether a change of occupancy was triggered.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 2023 Super Duper Burgers CUA application stated the proposal 'will involve exterior and interior improvements to the ground floor space' with 'no expansion of the existing building envelope,' but did not specify whether a change of occupancy was triggered.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-004973CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "A kitchen build-out with full cooking (fryers, grills, hood) will require building, plumbing, mechanical, and electrical permits with stamped plans, and a grease interceptor under the SF FOG ordinance; permit fees are a percentage of construction valuation.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A kitchen build-out with full cooking (fryers, grills, hood) will require building, plumbing, mechanical, and electrical permits with stamped plans, and a grease interceptor under the SF FOG ordinance; permit fees are a percentage of construction valuation.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The building permit requirement and whether a change of occupancy is triggered are not established because the records do not show the occupant load, whether the business is to be enlarged or intensified, or the existing occupancy group of the space.",
+   "verdict": "partially_supported",
+   "supported_text": "The building permit requirement and whether a change of occupancy is triggered are not established because the records do not show whether the business is to be enlarged or intensified, or the existing occupancy group of the space.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit",
+    "app:datasf_planning:2023-004973CUA",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": "Records say 'whether the space is for fewer than 50 people', not 'occupant load'."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to daytime and evening hours, likely 7:00 AM to 11:00 PM or similar, to align with neighborhood commercial character. Basis: The AMC Theaters formula retail CUA at 1881 Post St (94 m away, approved 2023) was conditioned to operate Monday–Sunday 11:00 AM to 11:00 PM. Fast-casual restaurants in NCT-FILLMORE typically close by 10:00 or 11:00 PM.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to daytime and evening hours. Basis: The AMC Theaters formula retail CUA at 1881 Post St (94 m away, approved 2023) was conditioned to operate Monday–Sunday 11:00 AM to 11:00 PM.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation limited to daytime and evening hours. Basis: The AMC Theaters formula retail CUA at 1881 Post St (94 m away, approved 2023) was conditioned to operate Monday–Sunday 11:00 AM to 11:00 PM.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017055CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Noise and bass containment: building shall be adequately soundproofed so that incidental noise is not audible beyond the premises and bass/vibrations are contained within the enclosed structure. Basis: The AMC Theaters CUA at 1881 Post St included a condition that 'the building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure.'",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Noise and bass containment: building shall be adequately soundproofed so that incidental noise is not audible beyond the premises and bass/vibrations are contained within the enclosed structure. Basis: The AMC Theaters CUA at 1881 Post St included a condition that 'the building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure.'",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017055CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, composting, and recycling storage provided within enclosed areas on the property, meeting SF Recycling Program size, location, and accessibility standards. Basis: The AMC Theaters CUA at 1881 Post St included a condition requiring 'space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property' meeting city recycling program standards. This is a standard condition for formula retail food businesses.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, composting, and recycling storage provided within enclosed areas on the property, meeting SF Recycling Program size, location, and accessibility standards. Basis: The AMC Theaters CUA at 1881 Post St included a condition requiring 'space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property' meeting city recycling program standards.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Garbage, composting, and recycling storage provided within enclosed areas on the property, meeting SF Recycling Program size, location, and accessibility standards. Basis: The AMC Theaters CUA at 1881 Post St included a condition requiring 'space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property' meeting city recycling program standards.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017055CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Validity period of three years from the effective date of the Motion: a building permit or site permit to commence the approved use must be issued within three years or the authorization expires. Basis: The AMC Theaters CUA at 1881 Post St included the standard three-year validity condition: 'The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.'",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Validity period of three years from the effective date of the Motion: a building permit or site permit to commence the approved use must be issued within three years or the authorization expires. Basis: The AMC Theaters CUA at 1881 Post St included the standard three-year validity condition: 'The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.'",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017055CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Schedule a pre-application meeting with San Francisco Planning Department to discuss the prior cancelled CUA, formula retail review process, and community outreach expectations. What to say: Explain that Super Duper Burgers is a local Bay Area chain (founded in San Francisco, 11 other locations) seeking to occupy the former Burger King space at 1701 Fillmore for a fast-casual burger restaurant with no alcohol service. Ask what led to the cancellation of the prior application (2023-004973CUA) and what concerns or gaps need to be addressed. Request guidance on the community outreach plan, public notice timeline, and whether any neighborhood groups or merchants associations should be contacted before filing. Confirm the CUA fee (approximately $3,150 for no-construction formula retail per the 2025–26 schedule) and whether the First Year Free fee waiver for new storefronts might apply.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Schedule a pre-application meeting with San Francisco Planning Department to discuss the prior cancelled CUA, formula retail review process, and community outreach expectations. What to say: Explain that Super Duper Burgers is a local Bay Area chain seeking to occupy the former Burger King space at 1701 Fillmore for a fast-casual burger restaurant with no alcohol service. Ask what led to the cancellation of the prior application (2023-004973CUA) and what concerns or gaps need to be addressed. Request guidance on the community outreach plan, public notice timeline, and whether any neighborhood groups or merchants associations should be contacted before filing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Schedule a pre-application meeting with San Francisco Planning Department to discuss the prior cancelled CUA, formula retail review process, and community outreach expectations. What to say: Explain that Super Duper Burgers is a local Bay Area chain seeking to occupy the former Burger King space at 1701 Fillmore for a fast-casual burger restaurant with no alcohol service. Ask what led to the cancellation of the prior application (2023-004973CUA) and what concerns or gaps need to be addressed. Request guidance on the community outreach plan, public notice timeline, and whether any neighborhood groups or merchants associations should be contacted before filing.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-004973CUA",
+    "catalog:sf.business_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Form the California legal entity (LLC or corporation) with the Secretary of State and obtain a federal Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the California Secretary of State bizfile Online portal. The entity name must match the lease and the CUA application. Within 90 days file the Statement of Information ($20 LLC, due every two years; $25 corporation, due annually). Once the entity is approved, apply for an EIN online at irs.gov; it is issued immediately and free. The EIN is required before opening a business bank account, registering for payroll taxes, and filing the San Francisco Business Registration Certificate.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the California legal entity (LLC or corporation) with the Secretary of State and obtain a federal Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the California Secretary of State bizfile Online portal. Within 90 days file the Statement of Information ($20 LLC, due every two years; $25 corporation, due annually). Once the entity is approved, apply for an EIN online at irs.gov; it is issued immediately and free. The EIN is required before opening a business bank account, registering for payroll taxes, and filing the San Francisco Business Registration Certificate.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not state that entity name must match the lease and CUA application."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN), and file a Fictitious Business Name (DBA) statement with the County Clerk if the public-facing name differs from the legal entity name. What to say: Apply online for a San Francisco Business Registration Certificate; the fee is tiered by gross receipts (e.g. $55 for under $100k, $95 for $100k–$250k, plus a $4 state fee). The BAN is issued within 1–5 days and is required for every other city permit and license. If operating as 'Super Duper Burgers' under an entity with a different legal name, file the Fictitious Business Name statement with the SF County Clerk ($60–120), then publish the statement in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days. Banks and the building permit application require the filed DBA statement.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN), and file a Fictitious Business Name (DBA) statement with the County Clerk if the public-facing name differs from the legal entity name. What to say: The fee is tiered by gross receipts (e.g. $55 for under $100k, $95 for $100k–$250k, plus a $4 state fee). The BAN is issued within 1–5 days and is required for every other city permit and license. If operating as 'Super Duper Burgers' under an entity with a different legal name, file the Fictitious Business Name statement with the SF County Clerk ($60–120), then publish the statement in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN), and file a Fictitious Business Name (DBA) statement with the County Clerk if the public-facing name differs from the legal entity name. What to say: The fee is tiered by gross receipts (e.g. $55 for under $100k, $95 for $100k–$250k, plus a $4 state fee). The BAN is issued within 1–5 days and is required for every other city permit and license. If operating as 'Super Duper Burgers' under an entity with a different legal name, file the Fictitious Business Name statement with the SF County Clerk ($60–120), then publish the statement in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Engage an architect or MEP engineer to prepare tenant improvement plans, including kitchen layout, hood and grease interceptor sizing, ADA compliance, and a code analysis of occupancy group and occupant load. What to say: The plans must show the full scope of work: demolition, new kitchen equipment, plumbing and gas lines, electrical panels and outlets, HVAC and exhaust hood, restrooms, ADA path of travel, finishes, and storefront/signage. Include a grease interceptor sized per SFPUC FOG ordinance requirements. Request a code analysis memo stating the proposed occupancy group (A-2 if 50+ occupants, B if under 50) and whether a change of occupancy is triggered. If the space is under 50 occupants and the existing certificate of occupancy shows Group B, no change of occupancy may be required. Hire an architect who has done SF restaurant projects and who will coordinate the plan check routing to Planning, DPH, DBI, SFFD, and SFPUC.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Engage an architect to prepare tenant improvement plans, including kitchen layout, hood and grease interceptor sizing, ADA compliance, and a code analysis of occupancy group and occupant load. What to say: The plans must show the full scope of work: new kitchen equipment, plumbing, exhaust hood, restrooms, and ADA path of travel. Include a grease interceptor sized per SFPUC FOG ordinance requirements. Request a code analysis memo stating the proposed occupancy group and whether a change of occupancy is triggered. Hire an architect who has done SF restaurant projects.",
+   "cut_problem": "adds or moves 'ADA': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state architect needed for plans with kitchen, hood, restrooms, ADA and grease interceptor per FOG ordinance, but do not specify occupancy group thresholds, detailed plan elements, or agency routing."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: File the Conditional Use Authorization application with San Francisco Planning, including the project description, formula retail affidavit, architectural drawings, site photos, community outreach plan, and BAN. What to say: State that Super Duper Burgers is a Bay Area-born, locally founded fast-casual burger chain (11 other locations) seeking to occupy a 2,950 sq ft ground-floor space previously used as a restaurant (Burger King). Emphasize that this is a restaurant-to-restaurant conversion with no change of use, no alcohol service, no entertainment, and daytime/evening hours. The concept serves fresh, locally sourced burgers, fries, and shakes with a neighborhood-friendly, family-oriented atmosphere. Attach the formula retail affidavit, floor plans, elevations, storefront rendering, photos of other Super Duper locations, a draft good-neighbor policy (hours, noise, waste management), and letters of support from the property owner and any neighborhood merchants or residents who have been contacted. Include the community outreach summary: who was contacted (Upper Fillmore Merchants Association, Japantown Mer…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the Conditional Use Authorization application with San Francisco Planning. What to say: State that Super Duper Burgers is a Bay Area-born, locally founded burger chain seeking to occupy a 2,950 sq ft ground-floor space previously used as a restaurant (Burger King). This is a restaurant-to-restaurant conversion with no change of use.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File the Conditional Use Authorization application with San Francisco Planning. What to say: State that Super Duper Burgers is a Bay Area-born, locally founded burger chain seeking to occupy a 2,950 sq ft ground-floor space previously used as a restaurant (Burger King). This is a restaurant-to-restaurant conversion with no change of use.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-004973CUA",
+    "zoning:NCT-FILLMORE"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Submit the DPH plan check application in parallel with the CUA application, and ensure 'health' is a routing station on any building permit application filed concurrently. What to say: File the DPH plan check application online with the BAN, Location ID (LIN), and EIN. Attach two sets of scaled drawings showing the kitchen layout, equipment list, menu, finishes schedule, and plumbing fixtures (hand sinks, prep sinks, three-compartment sink, mop sink). The fee is $2,207 (8 hours at $276/hour for a new restaurant) per the FY2026–27 schedule. DPH will route the plans internally and may schedule a pre-final inspection at approximately 80% construction completion. Do not open or serve food until the final inspection is passed and the health permit to operate is issued. If a building permit is filed at the same time, ensure the DBI plan check routing includes DPH as a department stop.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit the DPH plan check application, and ensure 'health' is a routing station on any building permit application filed concurrently. What to say: File the DPH plan check application online with the BAN, Location ID (LIN), and EIN. Attach scaled drawings showing the kitchen layout, equipment list, menu, finishes schedule, and plumbing fixtures. The fee is $2,207 (8 hours at $276/hour for a new restaurant) per the FY2026–27 schedule. DPH may schedule a pre-final inspection at approximately 80% construction completion. Do not open or serve food until the final inspection is passed and the health permit to operate is issued. If a building permit is filed at the same time, ensure the DBI plan check routing includes DPH as a department stop.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not specify parallel filing with CUA, two sets of drawings, the detailed fixture list, or internal routing."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Attend the Planning Commission hearing, present the concept, respond to questions about formula retail impacts and good-neighbor commitments, and accept any recommended conditions of approval. What to say: Introduce Super Duper Burgers as a locally founded, San Francisco-born brand (emphasize the local origin and Bay Area roots). Describe the menu (fresh burgers, hand-cut fries, organic ice cream shakes), the service model (fast-casual counter service, no table service, quick turnover), and the proposed hours (e.g. 10:00 AM to 10:00 PM daily, no late-night operation). Address formula retail findings under Section 303(i): explain that the existing storefronts and architectural character will be preserved, signage will be designed to fit the neighborhood context, the space will be occupied by an active ground-floor use (replacing a vacant or underutilized restaurant), and the brand is locally founded and community-oriented. Commit to a good-neighbor policy: prompt trash pickup, no loitering, noise control, participation in neighborhood clean-up days, and a community liaison contact for any…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The AMC record is an approval at a different address; neither record states hearing requirements or what must be presented for the report address."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Once the CUA is approved by the Planning Commission, wait out the 30-day appeal period, then file the building permit application with DBI and proceed with tenant improvement construction. What to say: After the Planning Commission approves the CUA by Motion, the decision is not final until the 30-day appeal period expires (or any appeal is resolved). Once final, submit the building permit application to DBI with the approved CUA Motion number, stamped architectural plans, MEP plans signed by licensed contractors, and proof of workers' compensation insurance. Pay the building permit fee (calculated as a percentage of construction valuation, typically $800–$15,000 for a restaurant TI). DBI will route the application to Planning, DPH, SFFD, SFPUC, and other departments as needed. Address any plan check corrections promptly. Schedule inspections (rough, final, hood suppression, fire, health pre-opening) at each construction milestone. Do not open to the public until the final DBI sign-off, the SFFD inspection, and the DPH health permit to operate are issued.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Once the CUA is approved by the Planning Commission, file the building permit application with DBI and proceed with tenant improvement construction. What to say: Pay the building permit fee (calculated as a percentage of construction valuation, typically $800–$15,000 for a restaurant TI). Do not open to the public until the final DBI sign-off, the SFFD inspection, and the DPH health permit to operate are issued.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records support the fee range and prohibition on opening before permits issue, but do not describe the CUA appeal period, submission requirements, DBI routing, or inspection schedule."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $5,800 to $22,000. Notes: This is a timeline and cost range for the approvals in the entitlement path when they are granted: Conditional Use Authorization and Health permit to operate. The CUA in NCT-FILLMORE typically takes 120–300 days from filing to Planning Commission approval, including pre-application meeting, environmental review, 300-foot mailed notice, and hearing scheduling. The comparable formula retail CUAs took 167 days (Pinot's Palette, 2015-007413CUA) and 364 days (Orangetheory Fitness, 2018-009861CUA); the cancelled Super Duper CUA at this address took 517 days before cancellation, but that is not a time to approval. Health permit plan check and issuance after final inspection adds 21–60 days for plan review plus 14–45 days for permit issuance, typically overlapping with CUA review and construction. Total government costs: CUA application fee approximately $3,100 (2025–26 schedule for formula retail), DPH plan check $2,207, health permit application $470, business registration $55–700, and building permit $800–15,000 (varies by construction valuation). This does not include construction costs, architect fees, or the building permit timeline (14–120 days for plan check and inspections). The day range is from CUA filing to Commission approval and health permit issuance; it does not include the 30-day appeal period after CUA approval or the time to complete tenant improvement construction.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $5,800 to $22,000. Notes: The comparable formula retail CUAs took 167 days (Pinot's Palette, 2015-007413CUA) and 364 days (Orangetheory Fitness, 2018-009861CUA); the cancelled Super Duper CUA at this address took 517 days before cancellation, but that is not a time to approval. Health permit plan check and issuance after final inspection adds 21–60 days for plan review plus 14–45 days for permit issuance. DPH plan check $2,207, health permit application $470, business registration $55–700.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $5,800 to $22,000. Notes: This is a timeline and cost range for the approvals in the entitlement path when they are granted: Conditional Use Authorization and Health permit to operate. The CUA in NCT-FILLMORE typically takes 120–300 days from filing to Planning Commission approval, including pre-application meeting, environmental review, 300-foot mailed notice, and hearing scheduling. The comparable formula retail CUAs took 167 days (Pinot's Palette, 2015-007413CUA) and 364 days (Orangetheory Fitness, 2018-009861CUA); the cancelled Super Duper CUA at this address took 517 days before cancellation, but that is not a time to approval. Health permit plan check and issuance after final inspection adds 21–60 days for plan review plus 14–45 days for permit issuance, typically overlapping with CUA review and construction. Total government costs: CUA application fee approximately $3,100 (2025–26 schedule for formula retail), DPH plan check $2,207, health permit application $470, business registration $55–700, and building permit $800–15,000 (varies by construction valuation). This does not include construction costs, architect fees, or the building permit timeline (14–120 days for plan check and inspections). The day range is from CUA filing to Commission approval and health permit issuance; it does not include the 30-day appeal period after CUA approval or the time to complete tenant improvement construction.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show three CUA examples (167, 364, 517 days) and health permit timelines (21-60 + 14-45 days), but do not state the CUA typically takes 120-300 days, the CUA process steps, CUA fee, building permit costs/timeline, or appeal period."
+  }
+ ]
+}

@@ -1,0 +1,1761 @@
+{
+ "assumption": "every licence whose status on the cut-off day is not in ABC's archive counted as active",
+ "e2e": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCD-POLK",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": "bar",
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-POLK"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+     "code_section": "Planning Code § 102",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+     "citations": [
+      "app:abc:461958"
+     ]
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-02-15 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25662",
+     "citations": [
+      "overlay:static:sf:nc_ncd_polk",
+      "zoning:NCD-POLK"
+     ]
+    }
+   ],
+   "rules_date": "2023-02-15",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.missing",
+       "text": "Zoning district NCD-POLK: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 723, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Bar and a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": [
+        "app:abc:461958"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_established",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "On 15 February 2023 a change of use could need neighbourhood notice. Whether the use changes is not established, so whether notice was needed is not established.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": []
+     },
+     {
+      "rule_id": "change.notice",
+      "text": "On 15 February 2023 establishing a Formula Retail use in an NC district needed neighbourhood notice, whether or not the use changed. The description does not say whether the business is part of a chain, so whether notice was needed is not established.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Use authorization (not covered by the rule table)",
+    "agency": "San Francisco Planning",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district NCD-POLK: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 723, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Bar and a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The rules could not decide: use control of the zoning district and use size. What is missing: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue); the floor area of the business, in square feet. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the floor area of the business, in square feet"
+    ]
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "insufficient_information",
+  "overall_line": "Of the 3 approvals this concept needs: 2 insufficient information (zoning and use, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ },
+ "conditional": {
+  "pathway": {
+   "use": "nighttime_entertainment",
+   "use_label": "Nighttime Entertainment",
+   "district": "NCD-POLK",
+   "permission": "conditional",
+   "permission_label": "Conditional use",
+   "existing_use": "bar",
+   "change_of_use": "yes",
+   "change_of_use_label": "Change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as Nighttime Entertainment (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.entertainment",
+     "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T6.cell",
+     "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-POLK"
+     ]
+    },
+    {
+     "rule_id": "T6.first_story",
+     "text": "No story is stated, so the first story was read.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-POLK"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+     "code_section": "Planning Code § 102",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+     "citations": [
+      "app:abc:461958"
+     ]
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": [
+      "app:abc:461958"
+     ]
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-02-15 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25662",
+     "citations": [
+      "overlay:static:sf:nc_ncd_polk",
+      "zoning:NCD-POLK"
+     ]
+    }
+   ],
+   "rules_date": "2023-02-15",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.entertainment",
+       "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.cell",
+       "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      },
+      {
+       "rule_id": "T6.first_story",
+       "text": "No story is stated, so the first story was read.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.missing",
+       "text": "Zoning district NCD-POLK: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 723, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Bar and a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": [
+        "app:abc:461958"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "yes",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:461958"
+      ]
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "On 15 February 2023 a change of use to Nighttime Entertainment in an NC district needed neighbourhood notice unless the new use was principally permitted. It is not principally permitted here, so notice was required.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T6.cell",
+      "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "T6.first_story",
+      "text": "No story is stated, so the first story was read.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Nighttime entertainment.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "entertainment",
+    "approval": "Place of Entertainment permit",
+    "agency": "San Francisco Entertainment Commission",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "entertainment.permit",
+      "text": "The description gives the kind of entertainment, so the permit looked up is the Place of Entertainment permit.",
+      "code_section": "Police Code § 1060.1(a); § 1060.5(a); § 1060 (definition of Place of Entertainment)",
+      "source_url": "https://web.archive.org/web/20230520014052/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_police/0-0-0-3313",
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.status",
+      "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+      "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.closing",
+      "text": "The description does not give the closing time. Staying open to patrons between 2 a.m. and 6 a.m. would also need an Extended-Hours Premises permit.",
+      "code_section": "San Francisco Police Code § 1070 et seq. (Extended-Hours Premises)",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+      "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+      "code_section": "Police Code § 1060.2(b)(2)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)).",
+      "code_section": "Police Code § 1060.2(b)(3)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+      "code_section": "Police Code § 1060.2(b)(4)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+      "code_section": "Police Code § 1060.2(b)(5)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit with change of use",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 4 approvals this concept needs: 3 further review (zoning and use, entertainment permit, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment permit; Health permit to operate; Building permit with change of use",
+  "open_questions": [
+   {
+    "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   }
+  ]
+ },
+ "rules_conditional_unsupplied": {
+  "pathway": {
+   "use": "nighttime_entertainment",
+   "use_label": "Nighttime Entertainment",
+   "district": "NCD-POLK",
+   "permission": "conditional",
+   "permission_label": "Conditional use",
+   "existing_use": "bar",
+   "change_of_use": "yes",
+   "change_of_use_label": "Change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as Nighttime Entertainment (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.entertainment",
+     "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T6.cell",
+     "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-POLK"
+     ]
+    },
+    {
+     "rule_id": "T6.first_story",
+     "text": "No story is stated, so the first story was read.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-POLK"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+     "code_section": "Planning Code § 102",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+     "citations": [
+      "app:abc:461958"
+     ]
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": [
+      "app:abc:461958"
+     ]
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-02-15 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 723",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25662",
+     "citations": [
+      "overlay:static:sf:nc_ncd_polk",
+      "zoning:NCD-POLK"
+     ]
+    }
+   ],
+   "rules_date": "2023-02-15",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.entertainment",
+       "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.cell",
+       "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      },
+      {
+       "rule_id": "T6.first_story",
+       "text": "No story is stated, so the first story was read.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.missing",
+       "text": "Zoning district NCD-POLK: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 723, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Bar and a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": [
+        "app:abc:461958"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 723",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-POLK"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "yes",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:461958"
+      ]
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "On 15 February 2023 a change of use to Nighttime Entertainment in an NC district needed neighbourhood notice unless the new use was principally permitted. It is not principally permitted here, so notice was required.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as Nighttime Entertainment (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.entertainment",
+      "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T6.cell",
+      "text": "Zoning district NCD-POLK: Nighttime Entertainment on the first story is a conditional use (Planning Code § 723, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "T6.first_story",
+      "text": "No story is stated, so the first story was read.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district NCD-POLK: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 723, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Bar and a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 723, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 723",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-723.-polk-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: nighttime entertainment. Not decided as well: use size; the lines above name what is missing: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-POLK"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "entertainment",
+    "approval": "Place of Entertainment permit",
+    "agency": "San Francisco Entertainment Commission",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "entertainment.permit",
+      "text": "The description gives the kind of entertainment, so the permit looked up is the Place of Entertainment permit.",
+      "code_section": "Police Code § 1060.1(a); § 1060.5(a); § 1060 (definition of Place of Entertainment)",
+      "source_url": "https://web.archive.org/web/20230520014052/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_police/0-0-0-3313",
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.status",
+      "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+      "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.closing",
+      "text": "The description does not give the closing time. Staying open to patrons between 2 a.m. and 6 a.m. would also need an Extended-Hours Premises permit.",
+      "code_section": "San Francisco Police Code § 1070 et seq. (Extended-Hours Premises)",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+      "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+      "code_section": "Police Code § 1060.2(b)(2)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)).",
+      "code_section": "Police Code § 1060.2(b)(3)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+      "code_section": "Police Code § 1060.2(b)(4)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+      "code_section": "Police Code § 1060.2(b)(5)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit with change of use",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "An active ABC Type 48 licence (on-sale general, public premises) is on file at 1237 Polk St. That is a licence type a Bar holds (Planning Code § 102), so the rules read the space as a Bar; other uses can hold it too.",
+      "code_section": "Planning Code § 102",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=461958",
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Bar and Restaurant to Nighttime Entertainment is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": [
+       "app:abc:461958"
+      ]
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 4 approvals this concept needs: 3 further review (zoning and use, entertainment permit, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment permit; Health permit to operate; Building permit with change of use",
+  "open_questions": [
+   {
+    "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   }
+  ]
+ }
+}

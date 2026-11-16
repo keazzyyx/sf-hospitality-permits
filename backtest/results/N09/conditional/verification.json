@@ -1,0 +1,260 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 16,
+  "supported": 3,
+  "trimmed": 4,
+  "downgraded": 8,
+  "dropped": 1
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning Code §732 (Zoning Control Table for the Irving Street NCD, in force since before 2022-01-01) lists formula retail as a conditional use in this district but excludes limited restaurants from that conditional use: formula retail is not permitted for limited restaurant use here.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code §732 (Zoning Control Table for the Irving Street NCD, in force since before 2022-01-01) lists formula retail as a conditional use in this district but excludes limited restaurants from that conditional use: formula retail is not permitted for limited restaurant use here.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records do not state what the code says about formula retail or limited restaurants; both show restaurant_permission as unknown."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Two formula retail food applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) filed Conditional Use Authorization requests in 2021 and were both cancelled in 2021–2022 without reaching a Commission hearing (22 days and 314 days elapsed).",
+   "verdict": "partially_supported",
+   "supported_text": "Two formula retail food applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) filed Conditional Use Authorization requests in 2021 and were both cancelled in 2021–2022 (22 days and 314 days elapsed).",
+   "cut_problem": "drops 'without' and keeps the words after it",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Two formula retail food applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) filed Conditional Use Authorization requests in 2021 and were both cancelled in 2021–2022 without reaching a Commission hearing (22 days and 314 days elapsed).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show both applications were cancelled but do not state whether a Commission hearing was reached."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "In August 2021 Planning approved a health referral for The Mochi Donut Shop as a limited restaurant but stated explicitly that 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and that only standardized merchandise was allowed; additional standardized features would not be permitted.",
+   "verdict": "partially_supported",
+   "supported_text": "In August 2021 Planning approved a health referral for The Mochi Donut Shop as a limited restaurant but stated explicitly that 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and that additional standardized features would not be permitted.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "In August 2021 Planning approved a health referral for The Mochi Donut Shop as a limited restaurant but stated explicitly that 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT' and that additional standardized features would not be permitted.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-008816MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The concept description states the business is part of a formula retail chain with 11 other locations, which meets Planning Code §303.1's definition of formula retail (11 or more establishments with standardized features).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The concept description states the business is part of a formula retail chain with 11 other locations, which meets Planning Code §303.1's definition of formula retail (11 or more establishments with standardized features).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention formula retail, Planning Code §303.1, or its definition."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Formula retail is not permitted for limited restaurants in the Irving Street NCD under Planning Code §732, as given by the zoning row's rule lines.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Formula retail is not permitted for limited restaurants in the Irving Street NCD under Planning Code §732, as given by the zoning row's rule lines.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving",
+    "app:datasf_planning:2021-011182CUA",
+    "app:datasf_planning:2021-002788CUA",
+    "app:datasf_planning:2021-008816MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Every food facility needs a Department of Public Health permit to operate under California Retail Food Code §§114380–114381 and San Francisco Health Code Article 8, issued after plan check and a pre-opening inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Every food facility needs a Department of Public Health permit to operate, issued after plan check and a pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Every food facility needs a Department of Public Health permit to operate, issued after plan check and a pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The 2019 health referral for the prior tenant at 2127 Irving St (DBA Sip Tea 1011 SF, a boba tea shop) was approved as a limited restaurant in a change of use exempted from Section 312/311 neighborhood notice, with no conditions listed.",
+   "verdict": "partially_supported",
+   "supported_text": "The 2019 health referral for the tenant at 2127 Irving St (DBA Sip Tea 1011 SF) was approved as a limited restaurant in a change of use exempted from Section 312/311 neighborhood notice, with no conditions listed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 2019 health referral for the tenant at 2127 Irving St (DBA Sip Tea 1011 SF) was approved as a limited restaurant in a change of use exempted from Section 312/311 neighborhood notice, with no conditions listed.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "The health permit application is sent to the Planning Department for review under the Planning Department's interagency referral guidelines, so the zoning prohibition above will surface when DPH routes the application.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is sent to the Planning Department for review under the Planning Department's interagency referral guidelines, so the zoning prohibition above will surface when DPH routes the application.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the health permit process but does not mention referral to Planning Department or interagency review."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and inspection without a hearing, so it is allowed, but the health permit application is routed to Planning for zoning review.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A health permit to operate is issued after plan check and inspection without a hearing, so it is allowed, but the health permit application is routed to Planning for zoning review.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The description does not give the occupant load. A restaurant or bar is California Building Code Assembly Group A-2, but a space for fewer than 50 people is Group B, so the proposed occupancy group is not established without the occupant count.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description does not give the occupant load. A restaurant or bar is California Building Code Assembly Group A-2, but a space for fewer than 50 people is Group B, so the proposed occupancy group is not established without the occupant count.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions change of occupancy permits but does not state building code occupancy group classifications, the 50-person threshold, or that occupancy group depends on occupant count."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The last use of the space as described is limited restaurant. The proposed use is also limited restaurant, so this is not a Planning Code change of use per Planning Code §102.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The last use of the space as described is limited restaurant. The proposed use is also limited restaurant, so this is not a Planning Code change of use per Planning Code §102.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows a 2019 limited restaurant approval but doesn't establish the last vs proposed use or state the §102 conclusion."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Tenant improvements are described, which will need a building permit routed to Planning for zoning review under Planning Code §175(a).",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements are described, which will need a building permit.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "Tenant improvements are described, which will need a building permit routed to Planning for zoning review under Planning Code §175(a).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms building permits are needed for tenant improvements but does not mention routing to Planning or Planning Code §175(a)."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The building row has insufficient information status because the records do not show whether the space is for fewer than 50 people, whether the existing business is to be enlarged, or the existing occupancy group.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The building row has insufficient information status because the records do not show whether the space is for fewer than 50 people, whether the existing business is to be enlarged, or the existing occupancy group.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit",
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Request written confirmation from SF Planning Department zoning staff that Planning Code §732 does not permit formula retail for limited restaurant use in the Irving NCD. What to say: State that the concept is a formula retail cafe (11+ locations with standardized features under Planning Code §303.1) and that the zoning row's rule lines cite Planning Code §732 as prohibiting formula retail for limited restaurants in this district. Ask whether that reading is correct, whether a CUA could override that prohibition, and if so what the likelihood of approval is given that two formula retail food CUA applications on this block (2126 and 2130 Irving) were cancelled in 2021–2022. Request the answer in writing before signing the lease.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Request written confirmation from SF Planning Department zoning staff. What to say: State that the concept is a formula retail cafe. Ask whether that reading is correct, whether a CUA could override that prohibition, and if so what the likelihood of approval is given that two formula retail CUA applications on this block (2126 and 2130 Irving) were cancelled in 2021–2022. Request the answer in writing before signing the lease.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Request written confirmation from SF Planning Department zoning staff. What to say: State that the concept is a formula retail cafe. Ask whether that reading is correct, whether a CUA could override that prohibition, and if so what the likelihood of approval is given that two formula retail CUA applications on this block (2126 and 2130 Irving) were cancelled in 2021–2022. Request the answer in writing before signing the lease.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving",
+    "app:datasf_planning:2021-011182CUA",
+    "app:datasf_planning:2021-002788CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms in writing that no approval path exists, withdraw before filing or paying for any permit application. What to say: No application, cost, or timeline is given when zoning does not permit the use as described. Do not file a building permit, health permit, or CUA application unless Planning provides a written path to approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record identifies the zoning district but states no rules about withdrawal procedures or requirements for written Planning confirmation."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No time or cost is given because zoning does not permit the concept as described at this address. The zoning row's rule lines state that Planning Code §732 (Zoning Control Table for the Irving Street NCD, in force since before 2022-01-01) makes formula retail a conditional use in this district but excludes limited restaurants from that conditional use, so formula retail is not permitted for this use here. Obtain written confirmation from SF Planning before signing the lease or filing any application.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No time or cost is given because zoning does not permit the concept as described at this address. The zoning row's rule lines state that Planning Code §732 (Zoning Control Table for the Irving Street NCD, in force since before 2022-01-01) makes formula retail a conditional use in this district but excludes limited restaurants from that conditional use, so formula retail is not permitted for this use here. Obtain written confirmation from SF Planning before signing the lease or filing any application.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records mention § 732 but do not contain the rule lines or state the controls about formula retail, limited restaurants, or conditional uses."
+  }
+ ]
+}

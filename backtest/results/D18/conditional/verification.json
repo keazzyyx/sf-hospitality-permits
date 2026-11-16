@@ -1,0 +1,531 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 33,
+  "supported": 10,
+  "trimmed": 8,
+  "downgraded": 9,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The space at 737 Irving St has operated as a restaurant continuously since at least 2003, with six Planning Department approvals on file between 2003 and 2020, including multiple ABC Type 47 full-bar licenses and a 2020 limited-restaurant approval.",
+   "verdict": "partially_supported",
+   "supported_text": "The space at 737 Irving St has six Planning Department approvals on file between 2003 and 2020, including multiple ABC Type 47 full-bar licenses and a 2020 limited-restaurant approval.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The space at 737 Irving St has operated as a restaurant continuously since at least 2003, with six Planning Department approvals on file between 2003 and 2020, including multiple ABC Type 47 full-bar licenses and a 2020 limited-restaurant approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show six approvals and mention 'existing restaurant use' but do not explicitly state continuous operation since 2003."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The most recent approval at 737 Irving St was a Department of Public Health referral for a limited restaurant filed 5 November 2020 and approved 30 November 2020, a 25-day review.",
+   "verdict": "partially_supported",
+   "supported_text": "At 737 Irving St a Department of Public Health referral for a limited restaurant was filed 5 November 2020 and approved 30 November 2020, a 25-day review.",
+   "cut_problem": "adds or moves 'was': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The most recent approval at 737 Irving St was a Department of Public Health referral for a limited restaurant filed 5 November 2020 and approved 30 November 2020, a 25-day review.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not establish this was the most recent approval; it only documents this single approval."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A formula retail limited-restaurant (Yi Fang Taiwan Fruit Tea) 83 meters away at 645 Irving St in the same NCD-Inner Sunset district was approved via Conditional Use Authorization on 6 February 2020 after filing on 3 May 2019, taking 279 days from filing to approval.",
+   "verdict": "partially_supported",
+   "supported_text": "A formula retail limited-restaurant (Yi Fang Taiwan Fruit Tea) 83 meters away at 645 Irving St in the same NCD-Inner Sunset district was approved via Conditional Use Authorization on 6 February 2020 after filing on 3 May 2019.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A formula retail limited-restaurant (Yi Fang Taiwan Fruit Tea) 83 meters away at 645 Irving St in the same NCD-Inner Sunset district was approved via Conditional Use Authorization on 6 February 2020 after filing on 3 May 2019.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Yi Fang's CUA was approved with standard eating-and-drinking conditions: sidewalk maintenance within one-block radius, soundproofing so noise is not audible beyond the premises, odor control equipment, trash containers kept inside and hidden from view, community liaison appointment, and monitoring fees.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Yi Fang's CUA was approved with standard eating-and-drinking conditions: sidewalk maintenance within one-block radius, soundproofing so noise is not audible beyond the premises, odor control equipment, trash containers kept inside and hidden from view, community liaison appointment, and monitoring fees.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "A 7-location chain restaurant (Pluto's) at 627 Irving St, 106 meters away, received an agency referral approval in 2019 with Planning's finding that seven locations did not constitute formula retail in the Inner Sunset NCD; Super Duper's 11 locations may be treated differently.",
+   "verdict": "partially_supported",
+   "supported_text": "A 7-location chain restaurant (Pluto's) at 627 Irving St, 106 meters away, received an agency referral approval in 2019 with Planning's finding that seven locations did not constitute formula retail.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A 7-location chain restaurant (Pluto's) at 627 Irving St, 106 meters away, received an agency referral approval in 2019 with Planning's finding that seven locations did not constitute formula retail.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-021139MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "N = 5 dated use decisions in the NCD-Inner Sunset district within 1,000 feet over the past 5 years: 2 approved, 3 approved with conditions, 0 denied, 0 withdrawn; too few cases to establish an approval rate.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "N = 5 dated use decisions in the NCD-Inner Sunset district within 1,000 feet over the past 5 years: 2 approved, 3 approved with conditions, 0 denied, 0 withdrawn; too few cases to establish an approval rate.",
+   "confidence": "verified",
+   "citations": [
+    "stat:base_rate"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Formula retail in the NCD-Inner Sunset requires Conditional Use Authorization per Planning Code Section 730, which the rules applied on 2024-04-01; a Planning Commission hearing with 300-foot notice is required.",
+   "verdict": "partially_supported",
+   "supported_text": "Formula retail in the NCD-Inner Sunset requires Conditional Use Authorization per Planning Code Section 730, which the rules applied on 2024-04-01.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Formula retail in the NCD-Inner Sunset requires Conditional Use Authorization per Planning Code Section 730, which the rules applied on 2024-04-01.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:MB0300249",
+    "app:datasf_planning:MB0600549",
+    "app:datasf_planning:MB0900604",
+    "app:datasf_planning:MB1001152",
+    "app:datasf_planning:MB1001182",
+    "app:datasf_planning:2020-010191MIS",
+    "app:datasf_planning:2019-006316CUA",
+    "app:datasf_planning:2019-021139MIS",
+    "stat:base_rate"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Every food facility that prepares food must have at least one certified food protection manager within 60 days of opening, and DPH inspectors verify the certificate at the pre-opening inspection.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Every food facility that prepares food must have at least one certified food protection manager within 60 days of opening, and DPH inspectors verify the certificate at the pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Limited cooking (the concept's cooking type) requires DPH plan review and approval of kitchen layout, finishes, equipment and menu; FY2026-27 plan-check fees range from $828 for a small remodel to $2,207 for a new restaurant.",
+   "verdict": "partially_supported",
+   "supported_text": "DPH plan review and approval of kitchen layout, finishes, equipment and menu is required; FY2026-27 plan-check fees range from $828 for a small remodel to $2,207 for a new restaurant.",
+   "cut_problem": "adds or moves 'is': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Limited cooking (the concept's cooking type) requires DPH plan review and approval of kitchen layout, finishes, equipment and menu; FY2026-27 plan-check fees range from $828 for a small remodel to $2,207 for a new restaurant.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not specify that 'limited cooking' triggers this requirement, only that food facilities with kitchens need DPH approval."
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "The FY2026-27 Permit to Operate application fee is $470 including the initial inspection, and the annual license fee for restaurants and bars for 2026-28 is $0; reinspections are $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The FY2026-27 Permit to Operate application fee is $470 including the initial inspection, and the annual license fee for restaurants and bars for 2026-28 is $0; reinspections are $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:3",
+   "kind": "finding",
+   "original": "DPH permits to operate are routinely referred to Planning for zoning review under the interagency referral process; nearby restaurant referrals in this district were decided in 5 to 30 days when the use was a continuation.",
+   "verdict": "partially_supported",
+   "supported_text": "Nearby restaurant referrals in this district were decided in 5 to 30 days.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "DPH permits to operate are routinely referred to Planning for zoning review under the interagency referral process; nearby restaurant referrals in this district were decided in 5 to 30 days when the use was a continuation.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show one DPH referral and two ABC referrals; none state the use was a continuation."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and final inspection without a hearing; the permit is allowed as of right for a restaurant with a kitchen.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is issued after plan check and final inspection without a hearing for a restaurant with a kitchen.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:sf.health_plan_check",
+    "app:datasf_planning:2020-010191MIS",
+    "app:datasf_planning:2022-009403MIS",
+    "app:datasf_planning:2023-010683MIS"
+   ],
+   "note": "The records say the permit is 'Allowed' but do not characterize it as 'as of right'; the use pathway is 'Not decided by the rules'."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Under the California Building Code, a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; without the occupant load the proposed occupancy group cannot be established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under the California Building Code, a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; without the occupant load the proposed occupancy group cannot be established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record is a zoning district record; it does not address California Building Code occupancy group classifications."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The description states the space was last used as a restaurant or is vacant, and that the proposed use is a restaurant, so the Planning Code change of use is no change of use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description states the space was last used as a restaurant or is vacant, and that the proposed use is a restaurant, so the Planning Code change of use is no change of use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning record provides district information but does not state what the description says about past or proposed uses or the change-of-use conclusion."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "The description states tenant improvements are planned; kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy require a DBI building permit with architect-stamped plans, and fees run $800 to $15,000 as a percentage of construction valuation.",
+   "verdict": "partially_supported",
+   "supported_text": "Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy require a DBI building permit with architect-stamped plans, and fees run $800 to $15,000 as a percentage of construction valuation.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy require a DBI building permit with architect-stamped plans, and fees run $800 to $15,000 as a percentage of construction valuation.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Building permit applications are referred to Planning for zoning review under Planning Code Section 175(a); Planning reviews the use, checks for formula retail, and confirms compliance with any Special Use District rules.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Building permit applications are referred to Planning for zoning review under Planning Code Section 175(a); Planning reviews the use, checks for formula retail, and confirms compliance with any Special Use District rules.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the zoning district but does not mention Section 175(a), building permit referrals, or Planning's review procedures."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules could not establish whether this is a Building Code change of occupancy because the description does not give whether the space is for fewer than 50 people, whether an existing business is to be enlarged, and the existing occupancy group is not in public records.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules could not establish whether this is a Building Code change of occupancy because the description does not give whether the space is for fewer than 50 people, whether an existing business is to be enlarged, and the existing occupancy group is not in public records.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-INNER SUNSET",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: The business shall maintain the main entrance and all sidewalks abutting 737 Irving St in a clean condition and monitor the sidewalk within one-block radius daily during business hours to keep it free of litter from the business. Basis: The Yi Fang formula retail restaurant CUA at 645 Irving St in the same district was conditioned to maintain the entrance and abutting sidewalks and to monitor within one block, per Article 1 Section 34 of the Police Code.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The business shall maintain the main entrance and all sidewalks abutting 737 Irving St in a clean condition and monitor the sidewalk within one-block radius daily during business hours to keep it free of litter from the business. Basis: The Yi Fang formula retail restaurant CUA at 645 Irving St was conditioned to maintain the entrance and abutting sidewalks and to monitor within one block, per Article 1 Section 34 of the Police Code.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The business shall maintain the main entrance and all sidewalks abutting 737 Irving St in a clean condition and monitor the sidewalk within one-block radius daily during business hours to keep it free of litter from the business. Basis: The Yi Fang formula retail restaurant CUA at 645 Irving St was conditioned to maintain the entrance and abutting sidewalks and to monitor within one block, per Article 1 Section 34 of the Police Code.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: The premises shall be soundproofed so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed decibel levels in the Noise Control Ordinance. Basis: Yi Fang's CUA included a standard eating-and-drinking condition that the space be adequately soundproofed or insulated for noise.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: The premises shall be soundproofed so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed decibel levels in the Noise Control Ordinance. Basis: Yi Fang's CUA included a standard eating-and-drinking condition that the space be adequately soundproofed or insulated for noise.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Odor control equipment shall be installed per approved plans and maintained to prevent noxious or offensive odors from escaping the premises. Basis: Yi Fang's CUA required odor control equipment in conformance with approved plans as a standard eating-and-drinking condition.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Odor control equipment shall be installed per approved plans and maintained to prevent noxious or offensive odors from escaping the premises. Basis: Yi Fang's CUA required odor control equipment in conformance with approved plans as a standard eating-and-drinking condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling and compost containers shall be kept inside and hidden from public view, and placed outside only when serviced by the disposal company, per DPW guidelines. Basis: Yi Fang's CUA required trash to be contained inside and hidden from view, a standard eating-and-drinking condition.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Garbage, recycling and compost containers shall be kept inside and hidden from public view, and placed outside only when serviced by the disposal company, per DPW guidelines. Basis: Yi Fang's CUA required trash to be contained inside and hidden from view, a standard eating-and-drinking condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: The project sponsor shall appoint a community liaison to address concerns from nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with the liaison's contact information. Basis: Yi Fang's CUA required a community liaison appointment before issuance of a building permit, a standard condition for discretionary approvals.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The project sponsor shall appoint a community liaison to address concerns from nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with the liaison's contact information. Basis: Yi Fang's CUA required a community liaison appointment before issuance of a building permit.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The project sponsor shall appoint a community liaison to address concerns from nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with the liaison's contact information. Basis: Yi Fang's CUA required a community liaison appointment before issuance of a building permit.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: The authorization is valid for three years from the effective date; a building or site permit must be issued within that period or the sponsor must file for renewal or the Commission may revoke. Basis: Yi Fang's CUA included standard validity, expiration and diligent-pursuit conditions that are boilerplate for Conditional Use Authorizations.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: The authorization is valid for three years from the effective date; a building or site permit must be issued within that period or the sponsor must file for renewal or the Commission may revoke. Basis: Yi Fang's CUA included standard validity, expiration and diligent-pursuit conditions that are boilerplate for Conditional Use Authorizations.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:6",
+   "kind": "condition",
+   "original": "Expected condition: Exterior signage shall comply with Article 6 of the Planning Code, and a separate sign permit is required from Planning and DBI. Basis: Yi Fang's CUA conditioned signage to comply with Planning Code Article 6, and the catalog shows a sign permit is required for exterior business signage.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Exterior signage shall comply with Article 6 of the Planning Code, and a separate sign permit is required from Planning and DBI. Basis: Yi Fang's CUA conditioned signage to comply with Planning Code Article 6, and the catalog shows a sign permit is required for exterior business signage.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006316CUA",
+    "catalog:sf.sign_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Confirm formula retail status in writing with SF Planning Department via pre-application meeting or zoning counter inquiry. What to say: Request a written determination of whether Super Duper Burgers' 11 locations and standardized trade dress meet Planning Code Section 303.1(b) formula retail thresholds in the NCD-Inner Sunset district. Provide the business name, number of locations, franchise structure (if any), and any variations in menu, layout or branding across locations. Ask whether Planning Code Section 730 allows formula retail restaurants by Conditional Use or prohibits them, and cite the Yi Fang CUA (2019-006316CUA) as a comparable formula retail restaurant approval in the district. If formula retail applies, ask whether First Year Free fee waivers under Planning Code Section 351 are available for a new storefront business.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm Yi Fang CUA was a formula retail restaurant approval in NCD-Inner Sunset, but don't state the content of Planning Code sections 303.1(b), 730, or 351."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If formula retail CUA is required, file the Conditional Use Authorization application with SF Planning, including the pre-application meeting summary, project narrative, site plan, elevation drawings, and neighborhood outreach plan. What to say: Frame the application as a fast-casual restaurant serving the Inner Sunset's established dining corridor, with 2,231 square feet under the 2,500 sq ft size threshold. Emphasize that restaurant use is principally permitted in the district and that the space has continuous restaurant history since 2003, most recently approved in 2020 as a limited restaurant. Describe Super Duper as a local Bay Area chain (founded in San Francisco) offering fresh, quality burgers in a neighborhood-friendly format, not a national formula retail chain. Commit to the standard eating-and-drinking conditions: daily sidewalk maintenance within one block, soundproofing, odor control, interior trash storage, and a community liaison. Provide letters of support from the existing business (if staying) and from nearby merchants if possible. State operating hours (if not closing after 2 a.m., note that and cite Plannin…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The CUA record is for 645 Irving St (83m away), not the report address at 737 Irving St. The zoning record shows restaurant permission as unknown, not principally permitted."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Complete the 30-day posted notice and 300-foot mailed notice for the CUA, and attend the pre-hearing community meeting required by Planning. What to say: Post the yellow notice at the site for 30 days and photograph it weekly for proof. Mail notice to all property owners and occupants within 300 feet using Planning's mailing list. At the community meeting (typically held 2–4 weeks before the hearing), present the project as a local fast-casual restaurant with quality ingredients, a family-friendly atmosphere, and a commitment to being a good neighbor. Address concerns about trash, noise, odor and parking by describing the operational controls: trash stored inside, limited cooking (no deep fryers), soundproofed interior, and no customer parking requirement in the transit-rich Inner Sunset. Offer the community liaison's contact information and invite neighbors to visit an existing Super Duper location.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not describe 30-day posted notice, 300-foot mailed notice, or pre-hearing community meeting requirements."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Attend the Planning Commission hearing and present the project for Conditional Use Authorization under Planning Code Section 303. What to say: At the hearing, emphasize the Planning Code Section 303(c) findings: the use is necessary or desirable for the neighborhood (the Inner Sunset has 43 food businesses within 500 feet, showing demand); it will not be detrimental to nearby properties (standard conditions mitigate impacts); and it is consistent with the General Plan's economic development and neighborhood commercial policies. Note that the only comparable formula retail restaurant CUA in the district (Yi Fang, 645 Irving St) was approved with standard conditions and no special restrictions. If Planning staff recommends approval, thank the Commission and commit to all recommended conditions. If there is organized opposition, respond calmly: reiterate the operational commitments, offer to meet with concerned neighbors post-approval, and note the space's long restaurant history.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Attend the Planning Commission hearing and present the project for Conditional Use Authorization under Planning Code Section 303. What to say: At the hearing, emphasize the Planning Code Section 303(c) findings: the use is necessary or desirable for the neighborhood; it will not be detrimental to nearby properties (standard conditions mitigate impacts); and it is consistent with the General Plan's economic development and neighborhood commercial policies. Note that Yi Fang, 645 Irving St was approved with standard conditions and no special restrictions. If Planning staff recommends approval, thank the Commission and commit to all recommended conditions. If there is organized opposition, respond calmly: reiterate the operational commitments, offer to meet with concerned neighbors post-approval.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not state the number of food businesses nearby, that Yi Fang was the only comparable CUA, or the space's restaurant history."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: After Commission approval, wait out the 30-day appeal period and obtain the final CUA approval letter from SF Planning. What to say: The Commission's motion granting the CUA becomes final 30 days after the hearing date unless an appeal is filed with the Board of Supervisors. If an appeal is filed, coordinate with Planning staff and legal counsel to prepare a response and attend the Board hearing. Once the 30-day period expires with no appeal, request the final approval letter from Planning and attach it to the building permit application.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not describe the 30-day appeal period, appeal procedures, or post-approval steps mentioned in the playbook step."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: If formula retail does not apply, file the building permit application with DBI, including the CUA approval (if one was required) and architect-stamped plans for tenant improvements. What to say: Submit the building permit with a cover letter stating that restaurant use is principally permitted in the NCD-Inner Sunset per Planning Code Section 730, the space has continuous restaurant history since 2003, and the CUA (if required) is attached. Include plans stamped by a licensed architect showing the kitchen layout, hood and fire suppression system, ADA accessibility, restrooms, and finishes. Route the application to Planning (for zoning review), DPH (for plan check), and the Fire Department (if the occupant load is 50 or more). Request expedited review if the space was recently a restaurant and the TI scope is limited to cosmetic upgrades and equipment replacement.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If formula retail does not apply, file the building permit application with DBI, including the CUA approval (if one was required) and architect-stamped plans for tenant improvements. What to say: Include plans stamped by a licensed architect showing the kitchen layout, hood and fire suppression system, ADA accessibility, restrooms, and finishes.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: If formula retail does not apply, file the building permit application with DBI, including the CUA approval (if one was required) and architect-stamped plans for tenant improvements. What to say: Include plans stamped by a licensed architect showing the kitchen layout, hood and fire suppression system, ADA accessibility, restrooms, and finishes.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit",
+    "app:datasf_planning:2020-010191MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Submit the DPH plan check application concurrently with or before the building permit, including kitchen plans, equipment list, menu, and finishes schedule. What to say: File the plan check through the DPH portal with the Business Account Number (BAN), the federal tax ID, and scaled drawings of the kitchen. Describe the menu (burgers, fries, shakes) and cooking methods (griddle, limited fryer, no charbroiler) to show this is limited cooking. List all equipment: griddle, prep tables, three-compartment sink, hand sinks, refrigeration, and the hood and fire suppression system. Show that surfaces are smooth, sealed and cleanable per the California Retail Food Code. Schedule a pre-submittal meeting with the DPH plan reviewer if the space layout has changed since 2020, and ask whether the existing hood and grease interceptor are adequate for the new concept.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit the DPH plan check application concurrently with or before the building permit, including kitchen plans, equipment list, menu, and finishes schedule.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record confirms DPH approval needed for plans, finishes, equipment and menu but does not provide the specific filing portal, documentation requirements, or meeting procedures."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: After DPH plan approval and building permit issuance, complete construction and schedule the DPH pre-opening inspection and the DBI final inspection. What to say: Book the DPH pre-opening inspection at least two weeks in advance with the assigned plan reviewer. Before the inspection, walk the space against the DPH checklist: hot and cold running water at all sinks, hand soap and towels at hand sinks, all surfaces sealed, food contact surfaces smooth and cleanable, thermometers in refrigeration, sanitizer test strips available, and a certified food manager on site. The inspector will verify that the built space matches the approved plans. After DPH approval, schedule the DBI final and the Fire Department final (if required), then apply for the Health Permit to Operate. The permit is issued after all inspections pass and the $470 application fee is paid.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: After DPH plan approval and building permit issuance, complete construction and schedule the DPH pre-opening inspection and the DBI final inspection. What to say: Book the DPH pre-opening inspection at least two weeks in advance with the assigned plan reviewer. The inspector will verify that the built space matches the approved plans. After DPH approval, schedule the DBI final and the Fire Department final (if required), then apply for the Health Permit to Operate. The permit is issued after all inspections pass and the $470 application fee is paid.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: After DPH plan approval and building permit issuance, complete construction and schedule the DPH pre-opening inspection and the DBI final inspection. What to say: Book the DPH pre-opening inspection at least two weeks in advance with the assigned plan reviewer. The inspector will verify that the built space matches the approved plans. After DPH approval, schedule the DBI final and the Fire Department final (if required), then apply for the Health Permit to Operate. The permit is issued after all inspections pass and the $470 application fee is paid.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:sf.health_plan_check"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The timeline and cost assume a Conditional Use Authorization is required for formula retail and is approved. CUA filing to Commission approval: 120 to 300 days, as shown by the Yi Fang formula retail restaurant CUA at 645 Irving St which took 279 days from filing (3 May 2019) to approval (6 February 2020). The range reflects variation in hearing scheduling, environmental review (categorical exemption expected), and whether discretionary review or an appeal is filed. The CUA application fee was $2,747 on the 2023-24 schedule and is CPI-adjusted annually (roughly $3,100 now for a no-construction CUA; fees rise with construction cost). Building permit fees ($800 to $15,000) and DPH plan check ($828 to $2,207) are additional and depend on construction valuation and TI scope. If formula retail does not apply, the over-the-counter building permit and health permit path takes 14 to 120 days at lower cost. This timeline is to approval of the CUA and issuance of permits, not to opening; construction, final inspections and permit-to-operate issuance add 2 to 4 months after permit issuance.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The Yi Fang formula retail restaurant CUA at 645 Irving St took 279 days from filing (3 May 2019) to approval (6 February 2020). The range reflects variation in hearing scheduling, environmental review, and whether discretionary review or an appeal is filed. Building permit fees ($800 to $15,000) are additional and depend on construction valuation and TI scope.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The timeline and cost assume a Conditional Use Authorization is required for formula retail and is approved. CUA filing to Commission approval: 120 to 300 days, as shown by the Yi Fang formula retail restaurant CUA at 645 Irving St which took 279 days from filing (3 May 2019) to approval (6 February 2020). The range reflects variation in hearing scheduling, environmental review (categorical exemption expected), and whether discretionary review or an appeal is filed. The CUA application fee was $2,747 on the 2023-24 schedule and is CPI-adjusted annually (roughly $3,100 now for a no-construction CUA; fees rise with construction cost). Building permit fees ($800 to $15,000) and DPH plan check ($828 to $2,207) are additional and depend on construction valuation and TI scope. If formula retail does not apply, the over-the-counter building permit and health permit path takes 14 to 120 days at lower cost. This timeline is to approval of the CUA and issuance of permits, not to opening; construction, final inspections and permit-to-operate issuance add 2 to 4 months after permit issuance.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show DPH plan check fees to $2,500 (not $2,207), health permit takes 14-45 days (not 14-120), and do not state the CUA fee amounts or the 2-4 month post-permit timeline."
+  }
+ ]
+}

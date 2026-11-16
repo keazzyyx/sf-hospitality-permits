@@ -1,0 +1,381 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 24,
+  "supported": 3,
+  "trimmed": 8,
+  "downgraded": 11,
+  "dropped": 2
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning Code § 715 as it stood on 20 November 2023 permitted Nighttime Entertainment on the first story as a conditional use but prohibited it on the second story in the Castro NCD.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 715 as it stood on 20 November 2023 permitted Nighttime Entertainment on the first story as a conditional use but prohibited it on the second story in the Castro NCD.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state any permissions for Nighttime Entertainment; it only identifies the district and references the code section."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The concept description states the venue occupies both first and second stories, which triggers the prohibition on Nighttime Entertainment on the second story.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The concept description states the venue occupies both first and second stories, which triggers the prohibition on Nighttime Entertainment on the second story.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not contain text about any prohibition on Nighttime Entertainment on the second story."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "An active ABC Type 47 full-bar restaurant license (Harvey's) is on file at 500 Castro Street, indicating the current legal use is Restaurant.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 47 license (Harvey's) is on file at 500 Castro Street.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 47 license (Harvey's) is on file at 500 Castro Street.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:555702"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The Commission approved Conditional Use Authorizations for live entertainment at this parcel in 1996 and 1998 (cases 1996.576C and 1998.034C), limiting entertainment hours to midnight.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The Commission approved Conditional Use Authorizations for live entertainment at this parcel in 1996 and 1998 (cases 1996.576C and 1998.034C), limiting entertainment hours to midnight.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:1996.576C",
+    "app:datasf_planning:1998.034C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "In 1996 Planning denied a miscellaneous permit for place of entertainment at this address (MA9600409) because a Conditional Use Authorization was required and had not been obtained.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "In 1996 Planning denied a miscellaneous permit for place of entertainment at this address (MA9600409) because a Conditional Use Authorization was required and had not been obtained.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MA9600409"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Nighttime Entertainment is not permitted at this address because the concept occupies both first and second stories and the Castro NCD prohibits Nighttime Entertainment on the second story under Planning Code § 715.",
+   "verdict": "partially_supported",
+   "supported_text": "Nighttime Entertainment is not permitted at this address. The Castro NCD prohibits Nighttime Entertainment on the second story under Planning Code § 715.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Nighttime Entertainment is not permitted at this address. The Castro NCD prohibits Nighttime Entertainment on the second story under Planning Code § 715.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-CASTRO",
+    "app:abc:555702",
+    "app:datasf_planning:1996.576C",
+    "app:datasf_planning:1998.034C",
+    "app:datasf_planning:MA9600409"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "kind": "finding",
+   "original": "Planning Code § 175(a) prohibits the Entertainment Commission from issuing a Place of Entertainment permit for a use that is not permitted by the Planning Code at the proposed location.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 175(a) prohibits the Entertainment Commission from issuing a Place of Entertainment permit for a use that is not permitted by the Planning Code at the proposed location.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is a zoning district record and does not mention Planning Code § 175(a) or Entertainment Commission permit requirements."
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "kind": "finding",
+   "original": "Nearby precedent: the Commission approved a CUA for dancing at Badlands bar at 4121 18th Street (30 meters away) in 1999, showing that entertainment uses are approvable in this district when zoning permits them.",
+   "verdict": "partially_supported",
+   "supported_text": "Nearby precedent: the Commission approved a CUA for dancing at Badlands bar at 4121 18th Street (30 meters away) in 1999.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Nearby precedent: the Commission approved a CUA for dancing at Badlands bar at 4121 18th Street (30 meters away) in 1999, showing that entertainment uses are approvable in this district when zoning permits them.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows the specific approval but does not state the general conclusion about entertainment uses being approvable in the district."
+  },
+  {
+   "item_id": "summary:entertainment",
+   "kind": "summary",
+   "original": "A Place of Entertainment permit is not permitted because Planning Code § 175(a) prohibits any City department from issuing a permit that would authorize a use the Planning Code does not permit.",
+   "verdict": "partially_supported",
+   "supported_text": "A Place of Entertainment permit is not permitted.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A Place of Entertainment permit is not permitted.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-CASTRO",
+    "app:datasf_planning:1999.371C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8 require a health permit for any business serving food or drink, issued after the facility passes inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit is required for any business serving food or drink, issued after the facility passes inspection.",
+   "cut_problem": "adds or moves 'is': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8 require a health permit for any business serving food or drink, issued after the facility passes inspection.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not cite California Retail Food Code §§  114380–114381 or San Francisco Health Code Article 8."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The Department of Public Health will refer the health permit application to Planning for zoning review, and Planning will not approve it if the underlying use is prohibited.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Department of Public Health will refer the health permit application to Planning for zoning review, and Planning will not approve it if the underlying use is prohibited.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the health permit process but does not mention any referral to Planning or Planning's zoning review role."
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "DPH approved health permits for limited restaurants at nearby addresses in the Castro NCD in 2019–2021, showing routine approval when the use is permitted.",
+   "verdict": "partially_supported",
+   "supported_text": "Limited restaurants at nearby addresses in the Castro NCD were approved in 2019–2021.",
+   "cut_problem": "adds or moves 'were': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "DPH approved health permits for limited restaurants at nearby addresses in the Castro NCD in 2019–2021, showing routine approval when the use is permitted.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records are Planning agency referrals, not health permits; the conclusion about routine approval is not stated in the records."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate a food facility with limited cooking is allowed and is issued after plan check and pre-opening inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate a food facility is allowed and is issued after plan check and pre-opening inspection without a discretionary hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate a food facility is allowed and is issued after plan check and pre-opening inspection without a discretionary hearing.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2019-014871MIS",
+    "app:datasf_planning:2021-008815MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "San Francisco Building Code § 106A.1 requires a building permit for tenant improvements and any change of use, and the permit must be routed to Planning for zoning review.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "San Francisco Building Code § 106A.1 requires a building permit for tenant improvements and any change of use, and the permit must be routed to Planning for zoning review.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows when building permits apply but does not cite Building Code § 106A.1 or state that permits must be routed to Planning for zoning review."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "Planning Code § 175 prohibits DBI from issuing a building permit for a use that the Planning Code does not permit at the address.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 175 prohibits DBI from issuing a building permit for a use that the Planning Code does not permit at the address.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention Planning Code § 175 or its prohibition on DBI issuing building permits."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Merging three storefronts (500, 506, 508 Castro) will trigger neighborhood notification under Planning Code § 311/312 because the use is not principally permitted and involves a change of use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Merging three storefronts (500, 506, 508 Castro) will trigger neighborhood notification under Planning Code § 311/312 because the use is not principally permitted and involves a change of use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the zoning district but does not mention § 311/312, neighborhood notification requirements, or what triggers them."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The building permit and change of use require further review because the Planning Code change of use is established (Restaurant to Nighttime Entertainment) but the permit must conform to Planning Code § 175 before DBI will issue it.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The building permit and change of use require further review because the Planning Code change of use is established (Restaurant to Nighttime Entertainment) but the permit must conform to Planning Code § 175 before DBI will issue it.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit",
+    "zoning:NCD-CASTRO"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to 6 a.m. to midnight or 1 a.m., rather than the proposed 2 a.m. closing, based on the 1998 entertainment approval at this parcel. Basis: CUA 1998.034C at the same parcel limited live entertainment hours to midnight. The most recent comparable CUA (2019-021378CUA, 59m away) approved 2 a.m. closing for a restaurant with alcohol, but that was a food-primary use, not a nightclub. The Commission may limit late-night hours for a new nighttime entertainment use in a residential neighborhood.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to 6 a.m. to midnight or 1 a.m., rather than the proposed 2 a.m. closing, based on the 1998 entertainment approval at this parcel. Basis: CUA 1998.034C at the same parcel limited live entertainment hours to midnight. The most recent comparable CUA (2019-021378CUA, 59m away) approved 2 a.m. closing for a restaurant with alcohol.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation limited to 6 a.m. to midnight or 1 a.m., rather than the proposed 2 a.m. closing, based on the 1998 entertainment approval at this parcel. Basis: CUA 1998.034C at the same parcel limited live entertainment hours to midnight. The most recent comparable CUA (2019-021378CUA, 59m away) approved 2 a.m. closing for a restaurant with alcohol.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:1998.034C",
+    "app:datasf_planning:2019-021378CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing and noise insulation to prevent incidental noise from being audible beyond the premises or in adjacent residential units. Basis: Standard condition in CUA 2019-021378CUA required soundproofing so that noise is not audible beyond the premises. Entertainment venues in mixed-use buildings routinely face this condition.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Soundproofing and noise insulation to prevent incidental noise from being audible beyond the premises or in adjacent residential units. Basis: Standard condition in CUA 2019-021378CUA required soundproofing so that noise is not audible beyond the premises.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows a restaurant CUA with a soundproofing condition, but does not state what entertainment venues routinely face."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Daily sidewalk maintenance within a one-block radius and trash/litter pickup associated with the business during operating hours. Basis: Standard eating and drinking use condition in CUA 2019-021378CUA. The Castro corridor has high pedestrian traffic and the Commission routinely conditions nighttime uses to maintain sidewalks and remove litter.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Daily sidewalk maintenance within a one-block radius and trash/litter pickup associated with the business during operating hours. Basis: Standard eating and drinking use condition in CUA 2019-021378CUA.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Daily sidewalk maintenance within a one-block radius and trash/litter pickup associated with the business during operating hours. Basis: Standard eating and drinking use condition in CUA 2019-021378CUA.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-021378CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Appointment of a community liaison officer to address concerns of nearby owners and occupants, with contact information provided to the Zoning Administrator and neighborhood groups. Basis: Standard condition in CUA 2019-021378CUA. New entertainment uses in residential neighborhoods are routinely required to designate a liaison for ongoing neighbor communication.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Appointment of a community liaison officer to address concerns of nearby owners and occupants, with contact information provided to the Zoning Administrator and neighborhood groups. Basis: Standard condition in CUA 2019-021378CUA.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Appointment of a community liaison officer to address concerns of nearby owners and occupants, with contact information provided to the Zoning Administrator and neighborhood groups. Basis: Standard condition in CUA 2019-021378CUA.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-021378CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: No expansion of the entertainment use to the second story without a new CUA, if the use is redesigned to occupy only the first story. Basis: Planning Code § 715 prohibits Nighttime Entertainment on the second story in the Castro NCD. If the applicant redesigns the concept to occupy only the first story, the approval would restrict the second story to non-entertainment use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms § 715 applies but does not state the prohibition of Nighttime Entertainment on the second story or the consequences of redesigning the use."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Request a written zoning determination from San Francisco Planning confirming that Nighttime Entertainment on the second story is prohibited under Planning Code § 715 and whether a first-story-only version would be permitted. What to say: Submit a letter or email to the Planning Department Information Counter describing the concept (nighttime entertainment venue with limited food service, no alcohol, closing at 2 a.m., occupying first and second stories at 500 Castro Street) and asking: (1) whether Nighttime Entertainment is prohibited on the second story under § 715 as it stood on 20 November 2023; (2) whether a redesigned concept occupying only the first story would be a conditional use; and (3) what the applicable use size threshold and notification requirements are. Cite the rule lines from this report and ask for a written determination before filing any application. This costs nothing and takes 2–4 weeks.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Request a written zoning determination from San Francisco Planning confirming that Nighttime Entertainment on the second story is prohibited under Planning Code § 715 and whether a first-story-only version would be permitted. What to say: Submit a letter or email to the Planning Department Information Counter describing the concept (nighttime entertainment venue with limited food service, no alcohol, closing at 2 a.m., occupying first and second stories at 500 Castro Street) and asking: (1) whether Nighttime Entertainment is prohibited on the second story under § 715 as it stood on 20 November 2023; (2) whether a redesigned concept occupying only the first story would be a conditional use; and (3) what the applicable use size threshold and notification requirements are. Cite the rule lines from this report and ask for a written determination before filing any application.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Request a written zoning determination from San Francisco Planning confirming that Nighttime Entertainment on the second story is prohibited under Planning Code § 715 and whether a first-story-only version would be permitted. What to say: Submit a letter or email to the Planning Department Information Counter describing the concept (nighttime entertainment venue with limited food service, no alcohol, closing at 2 a.m., occupying first and second stories at 500 Castro Street) and asking: (1) whether Nighttime Entertainment is prohibited on the second story under § 715 as it stood on 20 November 2023; (2) whether a redesigned concept occupying only the first story would be a conditional use; and (3) what the applicable use size threshold and notification requirements are. Cite the rule lines from this report and ask for a written determination before filing any application.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCD-CASTRO"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or government cost is given because zoning does not permit the concept as described at this address. Planning Code § 715 as it stood on 20 November 2023 prohibited Nighttime Entertainment on the second story in the Castro NCD, and the concept occupies both first and second stories. The recommended next step is to confirm the zoning answer in writing with Planning (no fee, 2–4 weeks) and, if confirmed, to determine whether the concept can be redesigned to occupy only the first story, which would make it a conditional use requiring a CUA hearing. If a first-story-only version were approvable, the entitlement path would include a CUA (120–300 days, $3,100–$15,000 application fee per the catalog entry sf.conditional_use_authorization), an Entertainment Commission Place of Entertainment permit (45–120 days, $2,708 application fee), a building permit with change of use (14–120 days, $800–$15,000), and a health permit (14–45 days, $470–$1,000). The total would be approximately 200–585 days and $7,000–$33,000 in government fees, but those figures apply only if the concept is redesigned and zoning permits it; they are not given here because the concept as described is not permitted.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or government cost is given because zoning does not permit the concept as described at this address. Planning Code § 715 as it stood on 20 November 2023 prohibited Nighttime Entertainment on the second story in the Castro NCD, and the concept occupies both first and second stories. The recommended next step is to confirm the zoning answer in writing with Planning (no fee, 2–4 weeks) and, if confirmed, to determine whether the concept can be redesigned to occupy only the first story, which would make it a conditional use requiring a CUA hearing. If a first-story-only version were approvable, the entitlement path would include a CUA (120–300 days, $3,100–$15,000 application fee per the catalog entry sf.conditional_use_authorization), an Entertainment Commission Place of Entertainment permit (45–120 days, $2,708 application fee), a building permit with change of use (14–120 days, $800–$15,000), and a health permit (14–45 days, $470–$1,000). The total would be approximately 200–585 days and $7,000–$33,000 in government fees, but those figures apply only if the concept is redesigned and zoning permits it; they are not given here because the concept as described is not permitted.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district but does not state what § 715 prohibited, the concept's configuration, or any of the timelines and costs mentioned."
+  }
+ ]
+}

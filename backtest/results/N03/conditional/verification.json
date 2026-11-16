@@ -1,0 +1,507 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 32,
+  "supported": 2,
+  "trimmed": 12,
+  "downgraded": 10,
+  "dropped": 8
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 48 (on-sale general, public premises) license has been on file at 1237 Polk St since June 2008, issued under a Conditional Use Authorization for bar use granted in March 2008 (Motion #17569, case 2007.1281C).",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 48 (on-sale general, public premises) license has been on file at 1237 Polk St since June 2008. A Conditional Use Authorization for bar use was granted in March 2008 (case 2007.1281C).",
+   "cut_problem": "keeps 'issued under a Conditional Use Authorization', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "An active ABC Type 48 (on-sale general, public premises) license has been on file at 1237 Polk St since June 2008, issued under a Conditional Use Authorization for bar use granted in March 2008 (Motion #17569, case 2007.1281C).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show both approvals but don't state the ABC license was issued under the CUA, and Motion #17569 is not in the records."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The space operated as a bar/restaurant with a Type 47 license from at least 1986 until the 2008 conversion to Type 48 per an ABC inspector note in a 2003 agency referral.",
+   "verdict": "partially_supported",
+   "supported_text": "The space operated as a bar/restaurant with a Type 47 license from at least 1986 per an ABC inspector note in a 2003 agency referral.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The space operated as a bar/restaurant with a Type 47 license from at least 1986 per an ABC inspector note in a 2003 agency referral.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MB0300025"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Nighttime Entertainment is a conditional use on the first story in the Polk Street NCD per Planning Code § 723, as applied on 2023-02-15.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Nighttime Entertainment is a conditional use on the first story in the Polk Street NCD per Planning Code § 723, as applied on 2023-02-15.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district and code section but does not state what uses are permitted or conditional; it says the controls are in rule lines not shown."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Three bars within 120 meters added entertainment via CUA in NCD-POLK between 1993 and 2021: 1233 Polk (10 m, approved 1993 and extended to 2 a.m. with amplified music in 2018), 1176 Sutter (51 m, approved 2000), and 1131 Polk (102 m, approved 2021 with strict soundproofing conditions). All were approved.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Three bars within 120 meters added entertainment via CUA in NCD-POLK between 1993 and 2021: 1233 Polk (10 m, approved 1993 and extended to 2 a.m. with amplified music in 2018), 1176 Sutter (51 m, approved 2000), and 1131 Polk (102 m, approved 2021 with strict soundproofing conditions). All were approved.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows 1176 Sutter at 71m (not 51m) and approved in 2001 (not 2000)."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The most recent entertainment CUA in this district (1131 Polk, 102 m away, filed October 2019 and decided April 2021) imposed conditions requiring that incidental noise not be audible beyond the premises, bass and vibrations be contained within the structure, and that the operator maintain a community liaison and post patron behavior notices at exits.",
+   "verdict": "partially_supported",
+   "supported_text": "The entertainment CUA at 1131 Polk, 102 m away, filed October 2019 and decided April 2021, imposed conditions requiring that incidental noise not be audible beyond the premises, bass and vibrations be contained within the structure, and that the operator maintain a community liaison and post patron behavior notices at exits.",
+   "cut_problem": "adds or moves '1131': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The most recent entertainment CUA in this district (1131 Polk, 102 m away, filed October 2019 and decided April 2021) imposed conditions requiring that incidental noise not be audible beyond the premises, bass and vibrations be contained within the structure, and that the operator maintain a community liaison and post patron behavior notices at exits.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state that this is the most recent entertainment CUA in the district."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Nighttime Entertainment is a conditional use on the first story in NCD-POLK under Planning Code § 723; the existing bar holds a 2008 CUA (Motion #17569) but adding entertainment requires a new CUA per the nighttime entertainment trigger.",
+   "verdict": "partially_supported",
+   "supported_text": "Nighttime Entertainment is a conditional use on the first story in NCD-POLK under Planning Code § 723; the existing bar holds a 2008 CUA but adding entertainment requires a new CUA per the nighttime entertainment trigger.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Nighttime Entertainment is a conditional use on the first story in NCD-POLK under Planning Code § 723; the existing bar holds a 2008 CUA but adding entertainment requires a new CUA per the nighttime entertainment trigger.",
+   "confidence": null,
+   "citations": [
+    "app:abc:461958",
+    "app:datasf_planning:2007.1281C",
+    "app:datasf_planning:MB0300025",
+    "zoning:NCD-POLK",
+    "app:datasf_planning:1993.422C",
+    "app:datasf_planning:2016-010348CUA",
+    "app:datasf_planning:2000.985C",
+    "app:datasf_planning:2019-020049CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "kind": "finding",
+   "original": "Live performance in a bar needs a Place of Entertainment or Limited Live Performance permit under Police Code § 1060. The description says live entertainment with no amplification stated and no closing time, so the permit looked up is the Place of Entertainment permit.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Live performance in a bar needs a Place of Entertainment or Limited Live Performance permit under Police Code § 1060. The description says live entertainment with no amplification stated and no closing time, so the permit looked up is the Place of Entertainment permit.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record discusses Limited Live Performance permit requirements but does not state Police Code § 1060, what the description says, or the conclusion about which permit to look up."
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "kind": "finding",
+   "original": "A Place of Entertainment permit application is referred by the Entertainment Commission to the Police, Planning, DBI, DPH and Fire departments for review per Police Code § 1060.2(b).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A Place of Entertainment permit application is referred by the Entertainment Commission to the Police, Planning, DBI, DPH and Fire departments for review per Police Code § 1060.2(b).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record describes the Limited Live Performance permit process, not the Place of Entertainment permit referral process."
+  },
+  {
+   "item_id": "row:entertainment:2",
+   "kind": "finding",
+   "original": "Planning recommended approval of a Place of Entertainment permit for a bar at 1160 Polk (118 m away) in a 2018 agency referral, stating that the permit is conditionally permitted in the NCD-POLK district.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Planning recommended approval of a Place of Entertainment permit for a bar at 1160 Polk (118 m away) in a 2018 agency referral, stating that the permit is conditionally permitted in the NCD-POLK district.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2018-015981MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:entertainment",
+   "kind": "summary",
+   "original": "A Place of Entertainment permit is required for live entertainment in a bar; the Entertainment Commission holds a public hearing and refers the application to Police, Planning, DBI, DPH and Fire for review.",
+   "verdict": "partially_supported",
+   "supported_text": "The Entertainment Commission holds a public hearing and refers the application to Police, Planning, DBI, DPH and Fire for review.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The Entertainment Commission holds a public hearing and refers the application to Police, Planning, DBI, DPH and Fire for review.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.limited_live_performance_permit",
+    "app:datasf_planning:2018-015981MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food or drink business needs a health permit to operate, which is issued by DPH after plan check and final inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A food or drink business needs a health permit to operate, which is issued by DPH after plan check and final inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A food or drink business needs a health permit to operate, which is issued by DPH after plan check and final inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The bar use at this address has been on file since 2008 with agency referrals approving continuation of the bar in 2014 and earlier.",
+   "verdict": "partially_supported",
+   "supported_text": "The bar use at this address has been on file since 2008 with agency referrals in 2014 and earlier.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The bar use at this address has been on file since 2008 with agency referrals in 2014 and earlier.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MB1400501",
+    "app:datasf_planning:MB0701106"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is required for the limited kitchen and is issued after plan check and inspection; the bar use is already established so this is a continuation of the food service component.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is required for the limited kitchen and is issued after plan check and inspection; the bar use is already established.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:MB1400501",
+    "app:datasf_planning:MB0701106"
+   ],
+   "note": "The records do not state that this represents a continuation of a food service component."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Bar and Restaurant to Nighttime Entertainment is a Planning Code change of use per Planning Code § 102, with the last use of the space read from the active Type 48 license on file.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Bar and Restaurant to Nighttime Entertainment is a Planning Code change of use per Planning Code § 102, with the last use of the space read from the active Type 48 license on file.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows an active Type 48 license for bar use only, but does not mention restaurant use, nighttime entertainment, or Planning Code § 102."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B per California Building Code § 303. The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B per California Building Code § 303. The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The permit catalog entry does not contain Building Code occupancy classifications or references to CBC § 303."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "A change of use needs a building permit per San Francisco Building Code § 106A.1, and the permit must conform to the Planning Code before it is issued per Planning Code § 175.",
+   "verdict": "partially_supported",
+   "supported_text": "A change of use needs a building permit.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A change of use needs a building permit.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required because the Planning Code change of use from Bar to Nighttime Entertainment triggers a permit; whether a Building Code change of occupancy is also needed depends on whether the space is for fewer than 50 people, which is not stated.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A building permit with change of use is required because the Planning Code change of use from Bar to Nighttime Entertainment triggers a permit; whether a Building Code change of occupancy is also needed depends on whether the space is for fewer than 50 people, which is not stated.",
+   "confidence": null,
+   "citations": [
+    "app:abc:461958",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Nighttime entertainment shall be performed within the enclosed building only, with the building adequately soundproofed so that incidental noise is not audible beyond the premises and bass and vibrations are contained within the structure. Basis: The most recent entertainment CUA in NCD-POLK (1131 Polk, 102 m away, decided April 2021) imposed this condition verbatim. It reflects heightened acoustic standards for new entertainment approvals on the Polk corridor, where residential uses are above and adjacent to ground-floor bars.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows a 2021 CUA at 1131 Polk with a similar (not verbatim) acoustic condition, but does not state it was the most recent NCD-POLK entertainment CUA or that it reflects heightened standards for the corridor."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide written notice of the liaison's name, address and telephone number to the Zoning Administrator and all registered neighborhood groups. Basis: The 2021 entertainment CUA at 1131 Polk required a community liaison as a condition of approval. This condition appears in recent entertainment and late-night approvals in NC districts as a standard good-neighbor measure.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide written notice of the liaison's name, address and telephone number to the Zoning Administrator and all registered neighborhood groups. Basis: The 2021 entertainment CUA at 1131 Polk required a community liaison as a condition of approval.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide written notice of the liaison's name, address and telephone number to the Zoning Administrator and all registered neighborhood groups. Basis: The 2021 entertainment CUA at 1131 Polk required a community liaison as a condition of approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-020049CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Post well-lit notices at all entrances and exits urging patrons to leave the establishment and neighborhood quietly and peacefully, and to not litter or block driveways. Basis: The 2021 entertainment CUA at 1131 Polk required patron behavior notices at exits. This is a standard condition for bars and entertainment venues in SF to address neighbor complaints about noise and litter after hours.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Post well-lit notices at all entrances and exits urging patrons to leave the establishment and neighborhood quietly and peacefully, and to not litter or block driveways. Basis: The 2021 entertainment CUA at 1131 Polk required patron behavior notices at exits.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Post well-lit notices at all entrances and exits urging patrons to leave the establishment and neighborhood quietly and peacefully, and to not litter or block driveways. Basis: The 2021 entertainment CUA at 1131 Polk required patron behavior notices at exits.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-020049CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor the sidewalk within a one-block radius daily during business hours to keep it free of litter associated with the business. Basis: The 2021 entertainment CUA at 1131 Polk imposed a one-block sidewalk maintenance and litter monitoring condition. Planning Code § 34 and DPW standards require operators to keep sidewalks clean, and entertainment approvals routinely extend the radius to address cumulative impacts.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor the sidewalk within a one-block radius daily during business hours to keep it free of litter associated with the business. Basis: The 2021 entertainment CUA at 1131 Polk imposed a one-block sidewalk maintenance and litter monitoring condition. Planning Code § 34 and DPW standards require operators to keep sidewalks clean.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor the sidewalk within a one-block radius daily during business hours to keep it free of litter associated with the business. Basis: The 2021 entertainment CUA at 1131 Polk imposed a one-block sidewalk maintenance and litter monitoring condition. Planning Code § 34 and DPW standards require operators to keep sidewalks clean.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-020049CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: If the entertainment includes amplified sound or operates after midnight, operating hours may be conditioned to end by 11 p.m., midnight, 1 a.m. or 2 a.m. depending on the proximity of residential uses and soundproofing measures. Basis: The 2018 extension of hours at 1233 Polk (10 m away) approved operation until 2 a.m. with amplified music. The 2021 CUA at 1131 Polk did not state a closing time but imposed strict noise containment. NCD-POLK permits hours to 2 a.m. principally and to 6 a.m. conditionally per § 723; in practice, entertainment approvals often cap hours earlier than 2 a.m. unless soundproofing is demonstrated.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If the entertainment includes amplified sound or operates after midnight, operating hours may be conditioned to end by 11 p.m., midnight, 1 a.m. or 2 a.m. depending on the proximity of residential uses and soundproofing measures. Basis: The 2018 extension of hours at 1233 Polk (10 m away) approved operation until 2 a.m. with amplified music. The 2021 CUA at 1131 Polk did not state a closing time but imposed strict noise containment.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The zoning record does not state the hours permitted under § 723, and the generalization about practice is not supported by the two cited cases."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: All project lighting shall be directed onto the project site and immediately surrounding sidewalk only, and nighttime lighting shall be the minimum necessary to ensure safety and not constitute a nuisance to surrounding property. Basis: The 2021 entertainment CUA at 1131 Polk imposed a lighting condition to prevent nuisance to adjacent residents. This is a standard condition for entertainment uses in mixed residential/commercial districts.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: All project lighting shall be directed onto the project site and immediately surrounding sidewalk only, and nighttime lighting shall be the minimum necessary to ensure safety and not constitute a nuisance to surrounding property. Basis: The 2021 entertainment CUA at 1131 Polk imposed a lighting condition to prevent nuisance to adjacent residents.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record marks the condition as '(standard)' but does not state it is standard for entertainment uses in mixed residential/commercial districts."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain a federal EIN from the IRS online. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the CA SOS bizfile portal, then apply for the EIN at irs.gov the same day. The entity name and EIN are needed for the business registration, seller's permit, lease, and all permits. File the Statement of Information within 90 days ($20 LLC, $25 corporation).",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain a federal EIN from the IRS online. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the CA SOS bizfile portal, then apply for the EIN. File the Statement of Information within 90 days ($20 LLC, $25 corporation).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain a federal EIN from the IRS online. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the CA SOS bizfile portal, then apply for the EIN. File the Statement of Information within 90 days ($20 LLC, $25 corporation).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the SF Treasurer & Tax Collector to obtain a Business Account Number (BAN) and register the fictitious business name (DBA) with the County Clerk. What to say: Register online at sftreasurer.org within 30 days of starting business; fee is tiered by gross receipts ($55–$700 plus $4 state fee). The BAN is required by every other city department. File the FBN statement with the County Clerk in person or by mail (photo ID required), then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days. Banks and ABC need the filed FBN statement.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the SF Treasurer & Tax Collector to obtain a Business Account Number (BAN) and register the fictitious business name (DBA) with the County Clerk. What to say: Register within 30 days of starting business; fee is tiered by gross receipts ($55–$700 plus $4 state fee). The BAN is required by every other city department. File the FBN statement with the County Clerk in person or by mail (photo ID required), then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days. Banks and ABC need the filed FBN statement.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the SF Treasurer & Tax Collector to obtain a Business Account Number (BAN) and register the fictitious business name (DBA) with the County Clerk. What to say: Register within 30 days of starting business; fee is tiered by gross receipts ($55–$700 plus $4 state fee). The BAN is required by every other city department. File the FBN statement with the County Clerk in person or by mail (photo ID required), then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days. Banks and ABC need the filed FBN statement.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California seller's permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register for the seller's permit online at cdtfa.ca.gov (free, often issued same day); it is required before applying for the health permit and ABC license. If hiring, register with EDD e-Services within 15 days of paying wages; your payroll provider will need the EDD account number.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain a California seller's permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register for the seller's permit online at cdtfa.ca.gov (free, often issued same day); it is required before applying for the ABC license. If hiring, register with EDD e-Services within 15 days of paying wages; your payroll provider will need the EDD account number.",
+   "cut_problem": "keeps 'required before applying for the health permit', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state seller's permit is required before ABC license but do not mention health permit requirement."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Schedule a pre-application meeting with the SF Planning Department to discuss the Conditional Use Authorization for nighttime entertainment and the acoustic plan required. What to say: Email the planner assigned to the Polk Street NCD and describe the proposal: adding live entertainment to an existing bar at 1237 Polk St (case 2007.1281C, Motion #17569). Ask whether the 2008 CUA conditions allow entertainment or require a new hearing, and confirm what acoustic studies and soundproofing plans are needed. Request the full text of Motion #17569. Bring the architect and acoustic consultant to the meeting to discuss the soundproofing strategy (bass and vibration containment) that the most recent entertainment CUA in the district required.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Schedule a pre-application meeting with the SF Planning Department to discuss the Conditional Use Authorization for nighttime entertainment and the acoustic plan required. What to say: Email the planner assigned to the Polk Street NCD and describe the proposal: adding live entertainment to an existing bar at 1237 Polk St (case 2007.1281C). Ask whether the 2008 CUA conditions allow entertainment or require a new hearing, and confirm what acoustic studies and soundproofing plans are needed. Bring the architect and acoustic consultant to the meeting to discuss the soundproofing strategy (bass and vibration containment) that entertainment CUA in the district required.",
+   "cut_problem": "keeps 'the most recent entertainment CUA in the district', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records do not mention Motion #17569, and do not establish that 2019-020049CUA is the most recent entertainment CUA in the district."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Prepare and file the Conditional Use Authorization application with Planning for nighttime entertainment use, including the acoustic plan, a good-neighbor operations plan, and the BAN and entity documents. What to say: File online or at 49 South Van Ness; the 2023–24 fee was approximately $3,150 for a CUA with no construction, adjusted annually for CPI. The application will trigger a 300-foot mailed notice, a posted notice for 30 days, environmental review, referral to neighborhood groups, and a Planning Commission hearing. State in the application that the business is an existing bar authorized under Motion #17569, that live entertainment is proposed as a secondary use, and commit to the soundproofing measures from the acoustic plan, a community liaison, patron behavior notices at exits, and sidewalk maintenance within one block. Attach the acoustic consultant's report showing that bass and vibrations will be contained and incidental noise will not be audible beyond the premises. The Commission will review the CUA at a public hearing approximately 4–10 months after filing; the 30-day appeal period fo…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Prepare and file the Conditional Use Authorization application with Planning for nighttime entertainment use, including the acoustic plan and a good-neighbor operations plan. The application will trigger a Planning Commission hearing. Commit to the soundproofing measures from the acoustic plan, a community liaison, patron behavior notices at exits, and sidewalk maintenance within one block. Attach the acoustic consultant's report showing that bass and vibrations will be contained and incidental noise will not be audible beyond the premises.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show CUA conditions but not filing location, fees, Motion #17569, specific notice requirements, BAN documents, or timelines."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: File the Place of Entertainment permit application with the SF Entertainment Commission, including the lease, BAN, and a description of the entertainment (type, hours, sound equipment). What to say: Email the Deputy Director at the Entertainment Commission to confirm eligibility before applying. File the application online with the $2,708 fee (2026–27 schedule). The Commission will refer it to Police, Planning, DBI, DPH and Fire for review. Post a yellow notice at the premises for 30 days and conduct neighbor outreach as instructed. State that the entertainment is live performance in an existing bar, that soundproofing will contain bass and vibrations per the CUA conditions, and that a community liaison and patron behavior notices will be in place. The Commission holds a public hearing (1st and 3rd Tuesdays) approximately 3–4 months after filing; approval is by motion. Do not file the POE application until after the Planning Commission approves the CUA, so that the Planning referral response can reference the CUA approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The catalog shows a fee of $612-$900 for the LLP permit, not $2,708. Most procedural details (referrals, timeline, filing prerequisites, required documents) are not in the cited records."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: If tenant improvements are needed (soundproofing, new finishes, equipment), file a building permit application with DBI after the CUA is approved. What to say: Submit stamped plans from a licensed architect showing the scope of work, the acoustic improvements (wall/ceiling insulation, vibration isolation, door seals), and any kitchen or restroom upgrades. The permit will be routed to Planning for zoning conformance (the CUA satisfies the use requirement), DPH for plan check, Fire if the occupant load is 50 or more, and other departments. A Planning Code change of use from Bar to Nighttime Entertainment is established, but whether a Building Code change of occupancy is needed depends on the occupant load and existing occupancy group; confirm with DBI at plan check. If a change of occupancy is required, the permit fees and review time increase. Building permit fees are a percentage of construction valuation; plan for $800–$15,000 depending on scope. The permit is issued after all departments approve; inspection and sign-off follow completion of…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If tenant improvements are needed (soundproofing, new finishes, equipment), file a building permit application with DBI after the CUA is approved. What to say: Submit stamped plans from a licensed architect showing the scope of work, the acoustic improvements (wall/ceiling insulation, vibration isolation, door seals), and any kitchen or restroom upgrades. Building permit fees are a percentage of construction valuation; plan for $800–$15,000 depending on scope.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not describe routing to specific departments, the Bar to Nighttime Entertainment change, or how occupant load determines change of occupancy requirements."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: File the DPH plan check for the kitchen (if remodeling) and apply for the health permit to operate, with proof of a certified food safety manager and a seller's permit. What to say: Submit kitchen plans, equipment specs, finishes and the menu to DPH online or at 49 South Van Ness. The 2026–27 plan check fee is $828 (small remodel, 3 hrs) to $2,207 (new restaurant, 8 hrs). One owner or employee must pass an accredited food safety certification exam (ServSafe or equivalent, $100–$250) within 60 days of opening. After plan approval, schedule a pre-final inspection at ~80% complete and a final inspection at least two weeks in advance. The health permit to operate ($470 application fee, $0 annual license for bars/restaurants in 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff. Do not serve food to the public before the permit is issued.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the DPH plan check for the kitchen (if remodeling) and apply for the health permit to operate, with proof of a certified food safety manager. What to say: Submit kitchen plans, equipment specs, finishes and the menu to DPH online. The 2026–27 plan check fee is $828 (small remodel, 3 hrs) to $2,207 (new restaurant, 8 hrs). One owner or employee must pass an accredited food safety certification exam (ServSafe or equivalent, $100–$250) within 60 days of opening. After plan approval, schedule a pre-final inspection at ~80% complete and a final inspection at least two weeks in advance. The health permit to operate ($470 application fee, $0 annual license for bars/restaurants in 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff. Do not serve food to the public before the permit is issued.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File the DPH plan check for the kitchen (if remodeling) and apply for the health permit to operate, with proof of a certified food safety manager. What to say: Submit kitchen plans, equipment specs, finishes and the menu to DPH online. The 2026–27 plan check fee is $828 (small remodel, 3 hrs) to $2,207 (new restaurant, 8 hrs). One owner or employee must pass an accredited food safety certification exam (ServSafe or equivalent, $100–$250) within 60 days of opening. After plan approval, schedule a pre-final inspection at ~80% complete and a final inspection at least two weeks in advance. The health permit to operate ($470 application fee, $0 annual license for bars/restaurants in 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff. Do not serve food to the public before the permit is issued.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check",
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,800 to $18,000. Notes: The day range is the time to obtain the discretionary approvals when they are granted: Conditional Use Authorization (120–300 days from filing to approval per the catalog and the one comparable with a filing date, which took 538 days but is an outlier) and Place of Entertainment permit (45–120 days per the catalog). The building permit (14–120 days per the catalog) and health permit (14–45 days) follow approval of the CUA and are not discretionary hearings, so their time is not the long pole. Cost range covers the CUA application fee (~$3,150 CPI-adjusted), the POE application fee ($2,708 in 2026–27), the building permit ($800–$15,000 depending on construction valuation for soundproofing and tenant improvements), and the health plan check and permit ($828–$2,207 plan check, $470 permit application). The total does not include the acoustic consultant's fee (likely $2,000–$5,000 for a report and soundproofing plan), the architect's fee for building permit plans (typically $5,000–$15,000 for a bar/entertainment remodel), or construction costs (soundproofing, finishes, equipment). These are professional service and construction costs, not government permit fees, so they are not in the range above. The CUA is the critical path: 4–10 months including pre-application meeting, filing, environmental review, neighborhood notice, hearing scheduling and the 30-day appeal period. File it immediately after the entity is formed and the BAN is obtained. The POE application should be filed after the CUA is approved so that the Planning referral can reference the CUA approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,800 to $18,000. Notes: The day range is the time to obtain the discretionary approvals when they are granted: Conditional Use Authorization (120–300 days from filing to approval per the catalog and the one comparable with a filing date, which took 538 days but is an outlier) and Place of Entertainment permit (45–120 days per the catalog). The building permit (14–120 days per the catalog) and health permit (14–45 days) follow approval of the CUA and are not discretionary hearings, so their time is not the long pole. Cost range covers the CUA application fee (~$3,150 CPI-adjusted), the POE application fee ($2,708 in 2026–27), the building permit ($800–$15,000 depending on construction valuation for soundproofing and tenant improvements), and the health plan check and permit ($828–$2,207 plan check, $470 permit application). The total does not include the acoustic consultant's fee (likely $2,000–$5,000 for a report and soundproofing plan), the architect's fee for building permit plans (typically $5,000–$15,000 for a bar/entertainment remodel), or construction costs (soundproofing, finishes, equipment). These are professional service and construction costs, not government permit fees, so they are not in the range above. The CUA is the critical path: 4–10 months including pre-application meeting, filing, environmental review, neighborhood notice, hearing scheduling and the 30-day appeal period. File it immediately after the entity is formed and the BAN is obtained. The POE application should be filed after the CUA is approved so that the Planning referral can reference the CUA approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "No CUA catalog entry cited; POE timing/fees not in records (only LLP permit at 30-60 days, $612-900); multiple fees differ from or absent in cited records."
+  }
+ ]
+}

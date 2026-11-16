@@ -1,0 +1,468 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 28,
+  "supported": 8,
+  "trimmed": 6,
+  "downgraded": 8,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "This address was approved in December 2017 as a limited restaurant with the explicit restriction that no alcohol is permitted on-site under Planning Code Section 202.2(a), via BPA No. 2016.0802.3978.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "This address was approved in December 2017 as a limited restaurant with the explicit restriction that no alcohol is permitted on-site under Planning Code Section 202.2(a), via BPA No. 2016.0802.3978.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2017-013960MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "1457 Haight Street, 13 meters away in the same NCD-HAIGHT zoning and alcohol subdistrict, received CUA approval in September 2024 (Case No. 2024-004781CUA) for an identical change: limited restaurant to full-service restaurant, no construction. The Commission approved it 7-0 with standard conditions (three-year validity, community liaison, sidewalk maintenance) and no special restrictions on hours, capacity, security, or sound.",
+   "verdict": "partially_supported",
+   "supported_text": "1457 Haight Street, 13 meters away in the same NCD-HAIGHT zoning, received CUA approval in September 2024 (Case No. 2024-004781CUA) for an identical change: limited restaurant to full-service restaurant, no construction. The Commission approved it 7-0 with standard conditions (three-year validity, community liaison, sidewalk maintenance).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "1457 Haight Street, 13 meters away in the same NCD-HAIGHT zoning and alcohol subdistrict, received CUA approval in September 2024 (Case No. 2024-004781CUA) for an identical change: limited restaurant to full-service restaurant, no construction. The Commission approved it 7-0 with standard conditions (three-year validity, community liaison, sidewalk maintenance) and no special restrictions on hours, capacity, security, or sound.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention alcohol subdistrict or state there are no special restrictions on hours, capacity, security, or sound."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Board Ordinance 249-23 (enacted 2024) now requires Conditional Use Authorization for any new on-sale liquor establishment in the Haight Street Alcohol Restricted Use Subdistrict. Before 2023, restaurants on this corridor added beer-and-wine licenses via agency referral without CUA, approved in 1–20 days.",
+   "verdict": "partially_supported",
+   "supported_text": "Restaurants on this corridor added beer-and-wine licenses via agency referral, approved in 1–20 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Restaurants on this corridor added beer-and-wine licenses via agency referral, approved in 1–20 days.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+    "app:datasf_planning:2019-013435MIS",
+    "app:datasf_planning:2015-007789MIS",
+    "app:datasf_planning:2016-008984MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Six active ABC on-sale licenses are on file within 500 feet (Types 17, 48, 41, 20, 41, 41), and sixteen within 1,000 feet, triggering the density undue-concentration flag.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Six active ABC on-sale licenses are on file within 500 feet (Types 17, 48, 41, 20, 41, 41), and sixteen within 1,000 feet, triggering the density undue-concentration flag.",
+   "confidence": "verified",
+   "citations": [
+    "stat:density",
+    "license:abc:638142",
+    "license:abc:155874",
+    "license:abc:622203",
+    "license:abc:382927",
+    "license:abc:559171",
+    "license:abc:546274"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required because the Haight Street Alcohol Restricted Use Subdistrict mandates CUA for any new on-sale liquor establishment serving alcohol (Planning Code § 781.9(c)(2), in force from January 2024).",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization is required because the Haight Street Alcohol Restricted Use Subdistrict requires it for a liquor licence (Planning Code § 781.9, in force from January 2024).",
+   "cut_problem": "adds or moves 'requires': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2017-013960MIS",
+    "app:datasf_planning:2024-004781CUA",
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+    "app:datasf_planning:2019-013435MIS",
+    "app:datasf_planning:2015-007789MIS",
+    "app:datasf_planning:2016-008984MIS",
+    "stat:density",
+    "license:abc:638142",
+    "license:abc:155874",
+    "license:abc:622203",
+    "license:abc:382927",
+    "license:abc:559171",
+    "license:abc:546274"
+   ],
+   "note": "Records show CUA required for liquor licence in restricted district (§ 781.9), in force from Jan 2024, but don't cite subsection (c)(2) or state it mandates CUA for any new on-sale establishment."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Planning denied an ABC Type 01 (off-sale beer and wine) referral at 1390 Haight Street in May 2021, stating it was not permitted for a restaurant use per Section 102, but Type 23 (small beer manufacturer) would be approvable. Planning has consistently approved on-sale licenses tied to bona fide eating places but rejected off-sale-only licenses as inconsistent with restaurant use.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning denied an ABC Type 01 (off-sale beer and wine) referral at 1390 Haight Street in May 2021, stating it was not permitted for a restaurant use per Section 102, but Type 23 (small beer manufacturer) would be approvable.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Planning denied an ABC Type 01 (off-sale beer and wine) referral at 1390 Haight Street in May 2021, stating it was not permitted for a restaurant use per Section 102, but Type 23 (small beer manufacturer) would be approvable. Planning has consistently approved on-sale licenses tied to bona fide eating places but rejected off-sale-only licenses as inconsistent with restaurant use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows one referral case but does not state a pattern of consistent approvals or rejections."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "ABC Type 41 referrals at 1419, 1466, and 1401 Haight Street in 2015–2019 were approved over-the-counter in 1–20 days for existing restaurants adding beer and wine, before Ordinance 249-23 required CUAs for all new on-sale licenses.",
+   "verdict": "partially_supported",
+   "supported_text": "ABC Type 41 referrals at 1419, 1466, and 1401 Haight Street in 2015–2019 were approved in 1–20 days for existing restaurants.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "ABC Type 41 referrals at 1419, 1466, and 1401 Haight Street in 2015–2019 were approved in 1–20 days for existing restaurants.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-013435MIS",
+    "app:datasf_planning:2015-007789MIS",
+    "app:datasf_planning:2016-008984MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The records cannot say which ABC licence rules apply because the description does not specify whether the restaurant will serve beer and wine only (Type 41) or full liquor (Type 47), or how the licence will be obtained (new application or transfer).",
+   "verdict": "partially_supported",
+   "supported_text": "The records cannot say which ABC licence rules apply because the description does not specify whether the restaurant will serve beer and wine only or full liquor, or how the licence will be obtained (new application or transfer).",
+   "cut_problem": "keeps 'Type 41 is beer and wine only', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2021-004815MIS",
+    "app:datasf_planning:2019-013435MIS",
+    "app:datasf_planning:2015-007789MIS",
+    "app:datasf_planning:2016-008984MIS"
+   ],
+   "note": "The records state the conclusion and missing inputs but do not define what Type 41 or Type 47 are."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "San Francisco Department of Public Health requires a permit to operate for every food facility, issued after the final inspection confirms the facility matches approved plans and a certified food safety manager is on staff. The FY2026–27 application fee is $470 (includes initial inspection), with a $0 annual license fee for restaurants and bars for 2026–28.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "San Francisco Department of Public Health requires a permit to operate for every food facility, issued after the final inspection confirms the facility matches approved plans and a certified food safety manager is on staff. The FY2026–27 application fee is $470 (includes initial inspection), with a $0 annual license fee for restaurants and bars for 2026–28.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The concept describes limited cooking (cooking type: limited), so SFPUC's Fats, Oils & Grease (FOG) program requires grease-capturing equipment to be installed before opening, with registration taking 14–45 days and costing $0–$500.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The concept describes limited cooking (cooking type: limited), so SFPUC's Fats, Oils & Grease (FOG) program requires grease-capturing equipment to be installed before opening, with registration taking 14–45 days and costing $0–$500.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is required for any food or drink business and is issued after plan check and inspection without a hearing, so it is allowed as of right.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is required for any food or drink business and is issued after plan check and inspection without a hearing, so it is allowed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is required for any food or drink business and is issued after plan check and inspection without a hearing, so it is allowed.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The description states the last use was limited restaurant, and limited restaurant to restaurant is a change of use under Planning Code § 102.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description states the last use was limited restaurant, and limited restaurant to restaurant is a change of use under Planning Code § 102.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references § 102 but does not state what constitutes a change of use or that limited restaurant to restaurant is one."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The description states no tenant improvements are proposed (tenant_improvements = false), so the building permit application would be for change of use without construction. Building permits with change of use are routed to Planning for zoning review.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description states no tenant improvements are proposed (tenant_improvements = false), so the building permit application would be for change of use without construction. Building permits with change of use are routed to Planning for zoning review.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not state building permit routing procedures or what the description says about tenant improvements."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Under Planning Code § 311 as in force on 19 November 2024, a change of use does not by itself require neighborhood notice: the change-of-use trigger was removed from Section 311 on 14 January 2024 (Ord. 248-23, File No. 230446).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under Planning Code § 311 as in force on 19 November 2024, a change of use does not by itself require neighborhood notice: the change-of-use trigger was removed from Section 311 on 14 January 2024 (Ord. 248-23, File No. 230446).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record is about Planning Code § 781.9 (Haight Street Alcohol Restricted Use Subdistrict) and contains no information about § 311, neighborhood notice, or any ordinance amendments."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required because the Planning Code change from limited restaurant to restaurant is a change of use, and the permit must conform to the Planning Code before it is issued.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A building permit with change of use is required because the Planning Code change from limited restaurant to restaurant is a change of use, and the permit must conform to the Planning Code before it is issued.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-HAIGHT",
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Three-year validity: the authorization expires three years from the effective date unless a building or site permit is issued within that period. Basis: The September 2024 CUA approval at 1457 Haight Street for the identical limited-to-full-service restaurant change imposed standard Planning Commission conditions including three-year validity (Motion No. 21606). This is a standard condition on all CUAs.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Three-year validity: the authorization expires three years from the effective date unless a building or site permit is issued within that period. Basis: The September 2024 CUA approval at 1457 Haight Street for the identical limited-to-full-service restaurant change imposed standard Planning Commission conditions including three-year validity (Motion No. 21606).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows the condition was marked standard in this case but does not state it applies to all CUAs."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Community liaison: the project sponsor must appoint a community liaison officer to deal with concerns from nearby owners and occupants before the building permit is issued. Basis: The September 2024 CUA approval at 1457 Haight Street required a community liaison, which is a standard condition on CUAs in neighborhood commercial districts. The liaison's name, address, and phone number must be provided to the Zoning Administrator and all registered neighborhood groups.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Community liaison: the project sponsor must appoint a community liaison officer to deal with concerns from nearby owners and occupants before the building permit is issued. Basis: The September 2024 CUA approval at 1457 Haight Street required a community liaison, which is a standard condition on CUAs in neighborhood commercial districts. The liaison's name, address, and phone number must be provided to the Zoning Administrator and all registered neighborhood groups.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Sidewalk maintenance: the project sponsor must maintain the main entrance and all abutting sidewalks in a clean and sanitary condition per DPW Streets and Sidewalk Maintenance Standards. Basis: The September 2024 CUA approval at 1457 Haight Street required sidewalk maintenance, which is a standard condition on all CUAs. Comparable approvals on this corridor in 2015–2024 imposed the same condition.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sidewalk maintenance: the project sponsor must maintain the main entrance and all abutting sidewalks in a clean and sanitary condition per DPW Streets and Sidewalk Maintenance Standards. Basis: The September 2024 CUA approval at 1457 Haight Street required sidewalk maintenance.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Sidewalk maintenance: the project sponsor must maintain the main entrance and all abutting sidewalks in a clean and sanitary condition per DPW Streets and Sidewalk Maintenance Standards. Basis: The September 2024 CUA approval at 1457 Haight Street required sidewalk maintenance.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Conformity with current law: no building permit or other entitlement shall be approved unless it complies with all City Codes in effect at the time of approval. Basis: The September 2024 CUA approval at 1457 Haight Street imposed a conformity-with-current-law condition, which is a standard condition on all CUAs. This ensures that changes to the Planning Code or Building Code between CUA approval and permit issuance are honored.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Conformity with current law: no building permit or other entitlement shall be approved unless it complies with all City Codes in effect at the time of approval. Basis: The September 2024 CUA approval at 1457 Haight Street imposed a conformity-with-current-law condition, which is a standard condition on all CUAs.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not state what the condition ensures or its purpose regarding code changes."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an Employer Identification Number (EIN) from the IRS. What to say: File online at the Secretary of State's bizfile portal (LLC Articles of Organization, $70; corporation, $100) and apply for the EIN at irs.gov the same day. The EIN is issued immediately Monday–Friday. Both are prerequisites for the San Francisco business registration, the seller's permit, and the ABC license application. File the Statement of Information within 90 days of registering the entity ($20 for an LLC, due every two years; $25 for a corporation, due yearly).",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an Employer Identification Number (EIN) from the IRS. What to say: File online at the Secretary of State's bizfile portal (LLC Articles of Organization, $70; corporation, $100) and apply for the EIN at irs.gov. The EIN is issued immediately Monday–Friday. Both are prerequisites for the San Francisco business registration, the seller's permit, and the ABC license application. File the Statement of Information within 90 days of registering the entity ($20 for an LLC, due every two years; $25 for a corporation, due yearly).",
+   "cut_problem": "keeps 'apply for the EIN at irs.gov the same day', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records do not state to apply for the EIN 'the same day' as forming the entity."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Register online within 30 days of starting business in San Francisco. The registration year runs April 1 to March 31; renewal is due by the last day of February. Fees are tiered by gross receipts: $55 up to $100k, $95 up to $250k, $625 at $1–1.5M for 2026–27, each plus a $4 state fee. Every other city department (Planning, DPH, DBI, ABC) requires the BAN, so obtain it before filing any permit application.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Register online within 30 days of starting business in San Francisco. The registration year runs April 1 to March 31; renewal is due by the last day of February. Fees are tiered by gross receipts: $55 up to $100k, $95 up to $250k, $625 at $1–1.5M for 2026–27, each plus a $4 state fee.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record says every other city department asks for the BAN but does not name specific departments or state to obtain it before filing any permit application."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File a Fictitious Business Name (DBA) statement with the San Francisco County Clerk if the public-facing name differs from the legal entity name. What to say: File in person (bring photo ID) or by mail with the County Clerk. Publish the statement in a court-approved newspaper once a week for four weeks, then file proof of publication within 45 days. Total time 1–35 days, cost $60–$120. Banks and ABC require the filed statement, so complete this before opening the business bank account and applying for the ABC license.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: File a Fictitious Business Name (DBA) statement with the San Francisco County Clerk if the public-facing name differs from the legal entity name. What to say: File in person (bring photo ID) or by mail with the County Clerk. Publish the statement in a court-approved newspaper once a week for four weeks, then file proof of publication within 45 days. Total time 1–35 days, cost $60–$120. Banks and ABC require the filed statement, so complete this before opening the business bank account and applying for the ABC license.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File the Conditional Use Authorization application with San Francisco Planning for a change of use from limited restaurant to full-service restaurant with alcohol service. What to say: State that the concept is a bona fide eating place serving beer and wine (or full liquor, if that is the plan) incidental to meals, not a bar. Cite the September 2024 approval at 1457 Haight Street (Case No. 2024-004781CUA, Motion No. 21606) for the identical limited-to-full-service upgrade with no construction, and request the same standard conditions. Attach a menu, floor plan, and a good-neighbor policy. The application fee for a no-construction CUA is approximately $3,150 (2024–25 rate, CPI-adjusted yearly); new storefront businesses may qualify for a First Year Free fee waiver. Planning will route the application to DPH, Police, and other departments for review, schedule a Planning Commission hearing with 300-foot mailed notice and posted notice, and allow a 30-day appeal period after approval.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the Conditional Use Authorization application with San Francisco Planning for a change of use from limited restaurant to full-service restaurant with alcohol service. What to say: State that the concept is a bona fide eating place serving beer and wine (or full liquor, if that is the plan) incidental to meals, not a bar. Cite the September 2024 approval at 1457 Haight Street (Case No. 2024-004781CUA, Motion No. 21606) for the identical limited-to-full-service upgrade with no construction, and request the same standard conditions. Attach a menu, floor plan, and a good-neighbor policy.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File the Conditional Use Authorization application with San Francisco Planning for a change of use from limited restaurant to full-service restaurant with alcohol service. What to say: State that the concept is a bona fide eating place serving beer and wine (or full liquor, if that is the plan) incidental to meals, not a bar. Cite the September 2024 approval at 1457 Haight Street (Case No. 2024-004781CUA, Motion No. 21606) for the identical limited-to-full-service upgrade with no construction, and request the same standard conditions. Attach a menu, floor plan, and a good-neighbor policy.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-004781CUA",
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the ABC license (Type 41 for beer and wine, or Type 47 for full liquor) after the CUA is approved or during the CUA review if ABC will accept a contingent application. What to say: Submit the ABC application online with a copy of the signed lease, the seller's permit, the entity registration, the DBA statement, and the San Francisco business registration. For a Type 41 (beer and wine, eating place), the application takes 60–120 days and costs $1,000–$1,600; ABC will post a 30-day public notice at the premises and send the application to the Police Department ABC Liaison Unit and Planning for review. For a Type 47 (full liquor, eating place), you must first purchase an existing license on the open market ($100k–$450k in San Francisco) and file a person-to-person and premises-to-premises transfer, which takes 90–240 days. If the census tract is an undue-concentration tract, ABC will require a Public Convenience or Necessity (PCN) letter from the city, adding 1–3 months; start that process with the Police Department ABC Liaison Unit before filing the ABC application.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows only the undue-concentration flag; it does not state the license types, costs, timelines, procedures, or PCN requirements."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California seller's permit from CDTFA and register as an employer with EDD if you have employees. What to say: Register online at the CDTFA portal for the seller's permit (free, often issued same day) and at the EDD e-Services for Business portal to register as an employer (free, 1–7 days). ABC will not issue a license until the seller's permit exists. Your payroll provider will need the EDD account number before the first pay run. Workers' compensation insurance is mandatory from the first employee; quote through a broker or the State Compensation Insurance Fund.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Obtain a California seller's permit from CDTFA and register as an employer with EDD if you have employees. What to say: Register online at the CDTFA portal for the seller's permit (free, often issued same day) and at the EDD e-Services for Business portal to register as an employer (free, 1–7 days). ABC will not issue a license until the seller's permit exists. Your payroll provider will need the EDD account number before the first pay run. Workers' compensation insurance is mandatory from the first employee; quote through a broker or the State Compensation Insurance Fund.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sellers_permit",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.workers_comp_insurance"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the health permit to operate at least one month before opening, after a certified food safety manager is on staff. What to say: Apply online with the BAN, Location ID (LIN), and federal tax ID. The FY2026–27 permit-to-operate application fee is $470 (includes initial inspection); the annual license fee for restaurants and bars is $0 for 2026–28. DPH will schedule a final inspection; the permit is issued after the inspection confirms the facility matches the approved plans, surfaces are sealed, hand sinks are installed, hot water is available, and a certified food safety manager is on staff. A change of ownership or entity type requires a new permit. Do not serve the public before the permit is issued. If the space requires any remodel or new equipment, submit a health plan check first with scaled drawings, photos, a menu, and an equipment list; approval takes 21–60 days.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the health permit to operate at least one month before opening. What to say: Apply online with the BAN, Location ID (LIN), and federal tax ID. The FY2026–27 permit-to-operate application fee is $470 (includes initial inspection); the annual license fee for restaurants and bars is $0 for 2026–28. The permit is issued after the inspection confirms the facility matches the approved plans and a certified food safety manager is on staff. A change of ownership or entity type requires a new permit. Do not serve the public before the permit is issued.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for the health permit to operate at least one month before opening. What to say: Apply online with the BAN, Location ID (LIN), and federal tax ID. The FY2026–27 permit-to-operate application fee is $470 (includes initial inspection); the annual license fee for restaurants and bars is $0 for 2026–28. The permit is issued after the inspection confirms the facility matches the approved plans and a certified food safety manager is on staff. A change of ownership or entity type requires a new permit. Do not serve the public before the permit is issued.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: File the building permit application for change of use with DBI, after the CUA is approved. What to say: The building permit must conform to the Planning Code before it is issued, so file after the CUA is approved and the 30-day appeal period has passed. If no construction is proposed, the permit application is for change of use without tenant improvements. DBI will route the application to Planning for zoning review, and over-the-counter approval may be possible if the use is principally permitted under the CUA and no neighborhood notification is triggered. Fees are a percentage of construction valuation; for a no-work change of use, expect a base fee of $800–$1,500. The building permit must be issued before the health permit final inspection.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The zoning district record contains only district identification and address matching information, not filing procedures, fees, or permit requirements."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: These are the days and government fees to obtain the three approvals in the entitlement path (Conditional Use Authorization, health permit to operate, and building permit with change of use) when they are granted. The CUA is the critical path: 120–300 days from filing to Planning Commission approval, including pre-application consultation, environmental review, 300-foot mailed notice, posted notice, the hearing, and a 30-day appeal period. The health permit takes 14–45 days after the final inspection is passed. The building permit for change of use without construction is routed to Planning for zoning review and may be issued over-the-counter in 14–90 days once the CUA is approved. Government fees: approximately $3,100–$15,000 for the CUA (higher with construction cost; new businesses may qualify for First Year Free fee waiver), $470–$1,000 for the health permit, and $800–$15,000 for the building permit (higher with construction). The ABC license is not included because the licence type is not specified: a Type 41 adds 60–120 days and $1,000–$1,600; a Type 47 transfer adds 90–240 days and $17,000–$450,000 (mostly license purchase price). If the census tract is an undue-concentration tract, add 1–3 months for a PCN letter. These figures are for approvals, not denials or withdrawals.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: These are the days and government fees to obtain the three approvals in the entitlement path (Conditional Use Authorization, health permit to operate, and building permit with change of use) when they are granted. The CUA is the critical path: 120–300 days from filing to Planning Commission approval, including pre-application consultation, environmental review, 300-foot mailed notice, posted notice, the hearing, and a 30-day appeal period. The health permit takes 14–45 days after the final inspection is passed. The building permit for change of use without construction is routed to Planning for zoning review and may be issued over-the-counter in 14–90 days once the CUA is approved. Government fees: approximately $3,100–$15,000 for the CUA (higher with construction cost; new businesses may qualify for First Year Free fee waiver), $470–$1,000 for the health permit, and $800–$15,000 for the building permit (higher with construction). The ABC license is not included because the licence type is not specified: a Type 41 adds 60–120 days and $1,000–$1,600; a Type 47 transfer adds 90–240 days and $17,000–$450,000 (mostly license purchase price). If the census tract is an undue-concentration tract, add 1–3 months for a PCN letter. These figures are for approvals, not denials or withdrawals.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Only health permit timing (14-45 days) and fees ($470-$1,000) are in the cited records; CUA and building permit data are not cited."
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+# gitleaks configuration of this repository (gitleaks 8.25 or later reads .gitleaks.toml from the scanned folder).
+# It keeps every default rule and allowlists only the false positives that were reviewed by hand. Each allowlist
+# is limited to one rule, one file and the exact shape of the value, so a real secret in the same file, or a
+# different value at the same place, is still reported.
+#
+#   gitleaks git . --redact     # history
+#   gitleaks dir . --redact     # working tree
+
+title = "sf-hospitality-permits"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "apps/api/tests/conftest.py: the test-only SUPABASE_JWT_SECRET placeholder the tests set (no real project uses it)"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''(^|/)apps/api/tests/conftest\.py$''']
+regexes = ['''^test-jwt-secret-with-enough-length-0123456789$''']
+
+[[allowlists]]
+description = "apps/api/app/memo/triggers.py: a rule-line id (key = \"T5.count_missing\"), not a key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''(^|/)apps/api/app/memo/triggers\.py$''']
+regexes = ['''^T5\.count_missing$''']
+
+[[allowlists]]
+description = "backtest/holdout/selection.json: the \"key\" of each candidate case is the sha256 ordering hash that froze the holdout selection"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''(^|/)backtest/holdout/selection\.json$''']
+regexes = ['''^[0-9a-f]{64}$''']
+
+[[allowlists]]
+description = "docs/validation/final5/run5-memo.json: a memo's \"key_takeaway\" sentence (report prose)"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|/)docs/validation/final5/run5-memo\.json$''']
+regexes = ['''^key_takeaway": "''']
+
+[[allowlists]]
+description = "apps/web/.next/: gitignored Next.js build output; each local `next build` writes new preview and encryption keys there"
+paths = ['''(^|/)apps/web/\.next/''']

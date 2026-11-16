@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  catalog:
+    name: Catalog schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 packages/catalog/scripts/validate.py
+
+  conditions:
+    name: Conditions search (node --test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node --test tools/conditions-search/tests/
+
+  api:
+    name: API + precedent (ruff, mypy, pytest, PostGIS, neatlogs doctor)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/api } }
+    services:
+      postgis:
+        image: postgis/postgis:16-3.4
+        env: { POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres, POSTGRES_DB: sfhp_test }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 10s --health-timeout 5s --health-retries 10
+    env:
+      ENV: test
+      WEB_VERIFY_ENABLED: "false"
+      PRECEDENT_TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sfhp_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          # The Python pins are apps/api/requirements-lock.txt (uv pip compile), not a uv.lock: key the cache on it
+          # and the project files instead of the default **/uv.lock.
+          cache-dependency-glob: "apps/api/requirements-lock.txt\napps/api/pyproject.toml\npackages/precedent/pyproject.toml"
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: uv venv .venv && . .venv/bin/activate && uv pip install -r requirements-lock.txt -e "../../packages/precedent[dev]" -e ".[dev]"
+      - run: . .venv/bin/activate && ruff check app tests && ruff format --check app tests
+      - run: . .venv/bin/activate && mypy app
+      - name: precedent lint + tests (parsers, PostGIS store)
+        working-directory: packages/precedent
+        run: ../../apps/api/.venv/bin/ruff check precedent tests && ../../apps/api/.venv/bin/mypy precedent && ../../apps/api/.venv/bin/pytest -q
+      - run: . .venv/bin/activate && pytest -q
+      - run: . .venv/bin/activate && python -m neatlogs doctor --local --json
+      - name: Docker build
+        working-directory: .
+        run: docker build -f apps/api/Dockerfile --build-arg GIT_SHA=${{ github.sha }} -t permit-memo-api:ci .
+
+  web:
+    name: Web (eslint, tsc, build, playwright)
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_PUBLIC_SITE_URL: http://localhost:3100
+    steps:
+      - uses: actions/checkout@v4
+      # pnpm's version comes from the root package.json "packageManager" field (one source of truth);
+      # pnpm/action-setup fails when a version is also given here.
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter web lint
+      - run: pnpm --filter web typecheck
+      - run: pnpm --filter web build
+      - run: pnpm --filter web exec playwright install --with-deps chromium
+      - run: pnpm --filter web test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: apps/web/playwright-report
+          retention-days: 7

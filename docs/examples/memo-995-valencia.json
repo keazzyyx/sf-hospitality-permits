@@ -1,0 +1,859 @@
+{
+  "address": "995 Valencia St, San Francisco, CA 94110",
+  "lat": 37.7570827038447,
+  "lng": -122.42083810363145,
+  "parcel": "3609/026",
+  "concept_summary": "A 40-seat wine bar with limited kitchen, live acoustic music and amplified sound operating until after midnight at 995 Valencia Street in the Mission's NCT-Valencia district.",
+  "verdict": {
+    "label": "conditional",
+    "reason": "Bar use requires Conditional Use Authorization in NCT-Valencia, and the Mission Alcoholic Beverage SUD mandates a Type 42 license transferred from another bar within the district; comparables show consistent approval for food-and-entertainment hybrids on this corridor.",
+    "citations": [
+      "zoning:NCT-VALENCIA",
+      "overlay:datasf_sud:mission_alcohol_restrict",
+      "catalog:sf.conditional_use_authorization",
+      "app:datasf_entertainment:1243",
+      "app:datasf_entertainment:1947",
+      "app:datasf_planning:2020-009376MIS",
+      "app:datasf_planning:MB1400584"
+    ]
+  },
+  "zoning": {
+    "district": "NCT-VALENCIA",
+    "name": "Valencia Street Neighborhood Commercial Transit District",
+    "bar_permission": "conditional",
+    "restaurant_permission": "principal",
+    "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+    "code_section": "Planning Code § 762 (Zoning Control Table 762); § 102 (Bar, Restaurant)",
+    "citation_id": "zoning:NCT-VALENCIA"
+  },
+  "overlays": [
+    {
+      "name": "Mission Alcoholic Beverage Special Use District",
+      "kind": "alcohol_sud",
+      "effect": "No new Liquor Stores. A Restaurant operating as a Bona Fide Eating Place may serve alcohol (licenses may be transferred in from inside or outside the SUD), as may non-profit theaters, bowling alleys/mini-golf with an integrated Restaurant, single-screen movie theaters (beer and wine) and ABC Type 90 music venues. A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD. Existing liquor establishments may relocate or expand only with CU. East of the western boundary of the Mission Street NCT and north of Cesar Chavez Street, any new Restaurant requires CU and new ABC Type 75 (brewpub) licenses are prohibited. Good-neighbor operating conditions (§ 202.2 plus lighting and window-signage limits) apply.",
+      "code_section": "Planning Code § 249.60 (§ 781.8 cross-references it)",
+      "citation_id": "overlay:datasf_sud:mission_alcohol_restrict"
+    },
+    {
+      "name": "Valencia Street Neighborhood Commercial Transit District",
+      "kind": "nc_rule",
+      "effect": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+      "code_section": "Planning Code § 762 (Zoning Control Table 762); § 102 (Bar, Restaurant)",
+      "citation_id": "overlay:static:sf:nc_nct_valencia"
+    },
+    {
+      "name": "Fringe Financial Services RUD",
+      "kind": "special_use_district",
+      "effect": "Fringe Financial Services RUD: restricted use district on the SF Zoning Map; its controls are in Planning Code § 249.35.",
+      "code_section": "Planning Code § 249.35",
+      "citation_id": "overlay:datasf_sud:fringe_financial_services_rud"
+    },
+    {
+      "name": "Priority Equity Geographies SUD",
+      "kind": "special_use_district",
+      "effect": "Priority Equity Geographies SUD: special use district on the SF Zoning Map; its controls are in Planning Code § 249.97.",
+      "code_section": "Planning Code § 249.97",
+      "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+    },
+    {
+      "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+      "kind": "special_use_district",
+      "effect": "Within 1/4 Mile of an Existing Fringe Financial Service: special use district on the SF Zoning Map; its controls are in Planning Code § 249.35.",
+      "code_section": "Planning Code § 249.35",
+      "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+    }
+  ],
+  "density": {
+    "radius_m": 152,
+    "food_or_drink_businesses": 24,
+    "bars": 0,
+    "abc_on_sale_licenses": 9,
+    "abc_licenses_1000ft": 51,
+    "undue_concentration_flag": true,
+    "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy. At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City.",
+    "citation_id": "stat:density"
+  },
+  "base_rate": {
+    "approved": 1,
+    "approved_with_conditions": 0,
+    "denied": 0,
+    "withdrawn": 0,
+    "total": 3,
+    "window_years": 5,
+    "scope": "within 1,000 ft",
+    "approval_rate_pct": 100.0,
+    "citation_id": "stat:base_rate"
+  },
+  "blocking_issues": [
+    {
+      "rank": 1,
+      "title": "Type 42 license must be transferred from another bar within the Mission Alcohol SUD",
+      "severity": "high",
+      "explanation": "Planning Code §249.60 prohibits new bar licenses from outside the SUD at 995 Valencia; you must locate, negotiate purchase of, and escrow an existing Type 42 (beer-and-wine bar) license held by a bar closing or relocating within the district boundaries before ABC will approve the transfer. Only a handful of Type 42 licenses exist in the SUD, and sellers typically ask $20,000–$60,000. Without a signed purchase agreement and ABC escrow filing, the CUA application is incomplete and the lease is at risk.",
+      "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict",
+        "zoning:NCT-VALENCIA",
+        "catalog:ca.abc_type_42",
+        "app:datasf_planning:2023-002340CUA"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Conditional Use Authorization hearing is the critical path (5–10 months)",
+      "severity": "high",
+      "explanation": "Bar use in NCT-Valencia requires Planning Commission approval after 300-foot mailed notice, a posted notice, a pre-application community meeting, and environmental review. The CUA timeline runs 120–300 days and is the long pole in the entitlement process. Neighbors can file discretionary review requests or oppose at the hearing, and the Commission will condition hours of operation, sound levels, security plans, and good-neighbor commitments. The one 2010 bar CUA on this block was withdrawn before decision, indicating that unresolved neighbor or SUD issues can derail applications.",
+      "citations": [
+        "catalog:sf.conditional_use_authorization",
+        "zoning:NCT-VALENCIA",
+        "app:datasf_planning:2010.0680C",
+        "overlay:static:sf:nc_nct_valencia"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Hours after midnight are conditional and will be capped by the Planning Commission",
+      "severity": "medium",
+      "explanation": "Planning Code §762 makes hours between midnight and 2:00 a.m. conditional in NCT-Valencia. The Commission will set your closing time based on the sound plan, neighborhood input, and precedent; expect 1:00 a.m. Sunday–Thursday and possibly 2:00 a.m. Friday–Saturday if you present a strong mitigation plan and the Mission Alcoholic Beverage SUD good-neighbor commitments. Operating past the conditioned hours without a permit modification is a code violation and ABC license risk.",
+      "citations": [
+        "overlay:static:sf:nc_nct_valencia",
+        "zoning:NCT-VALENCIA",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "ABC will require a Public Convenience or Necessity finding due to license concentration",
+      "severity": "medium",
+      "explanation": "With 51 active on-sale licenses within 1,000 feet, this census tract exceeds ABC's concentration ratio. ABC will require a Public Convenience or Necessity letter from the SF Board of Supervisors or Planning Commission before issuing or transferring the Type 42 license. The city routinely issues PCN findings for food-oriented uses in commercial corridors, but it adds 30–60 days to the ABC timeline and requires a separate request routed through Planning after the CUA is approved.",
+      "citations": [
+        "stat:density",
+        "catalog:ca.abc_type_42",
+        "app:datasf_planning:2023-002340CUA"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Place of Entertainment permit required for live music and amplified sound after midnight",
+      "severity": "medium",
+      "explanation": "Live entertainment with amplified sound operating past midnight requires a Place of Entertainment permit from the Entertainment Commission under Police Code §1060. The POE process includes an intake meeting, 30-day posted notice, Police and Planning referrals, and a Commission hearing. The CUA must be approved before the POE can be issued, so the POE adds 45–120 days after the CUA decision. Nearby POE permits (Amado's at 998 Valencia, Hidden Frequency at 2500 Mission) were approved, but all are subject to the Good Neighbor Policy and sound-level conditions.",
+      "citations": [
+        "catalog:sf.place_of_entertainment_permit",
+        "app:datasf_entertainment:1243",
+        "app:datasf_entertainment:1947",
+        "app:datasf_planning:2026-005475MIS"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Sound isolation and neighbor relations are decisive at the CUA hearing",
+      "severity": "medium",
+      "explanation": "The Planning Commission and Entertainment Commission both condition POE and late-night CUAs on sound-mitigation plans, especially in mixed-use buildings with residential units above or adjacent. Commission an acoustic study, design solid-core doors and sound isolation for the performance area, and conduct pre-application outreach to upstairs tenants and the Valencia Corridor Merchants Association. The one recent denial on Valencia (1034 Valencia formula retail) and the one withdrawn bar CUA (970 Valencia) both occurred at sites with opposition history; proactive neighbor engagement is essential.",
+      "citations": [
+        "app:datasf_planning:2025-006395CUA",
+        "app:datasf_planning:2010.0680C",
+        "catalog:sf.place_of_entertainment_permit",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    }
+  ],
+  "expected_conditions": [
+    {
+      "condition": "Hours of alcohol service and entertainment capped at 1:00 a.m. Sunday–Thursday and 2:00 a.m. Friday–Saturday, or more restrictive if neighbors request",
+      "basis": "Planning Code §762 makes hours between midnight and 2 a.m. conditional in NCT-Valencia; the Commission routinely conditions bar and POE approvals on closing hours tied to sound plans and neighborhood input, and the Mission Alcohol SUD imposes good-neighbor operating conditions under §249.60.",
+      "citations": [
+        "overlay:static:sf:nc_nct_valencia",
+        "zoning:NCT-VALENCIA",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    },
+    {
+      "condition": "ABC Type 42 (beer and wine only, no distilled spirits) as the maximum license type permitted",
+      "basis": "The concept specifies beer and wine service; Type 47 full-liquor licenses are quota licenses costing $100k–$450k, and the Mission Alcohol SUD allows restaurants to transfer Type 47 licenses in but bars are restricted to Type 42 transfers from within the SUD.",
+      "citations": [
+        "catalog:ca.abc_type_42",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    },
+    {
+      "condition": "Food service must remain the primary use, with alcohol sales accessory to bona fide meal service under ABC Type 42 rules",
+      "basis": "ABC Type 42 (bar license) allows minors when food is served but requires that alcohol service not dominate the business model. The Mission Alcohol SUD and Planning precedent favor restaurant-entertainment hybrids over pure bars; emphasizing the limited kitchen and small-plates menu will reduce opposition.",
+      "citations": [
+        "catalog:ca.abc_type_42",
+        "overlay:datasf_sud:mission_alcohol_restrict",
+        "app:datasf_planning:2020-009376MIS"
+      ]
+    },
+    {
+      "condition": "Sound-mitigation plan including acoustic treatment, solid-core doors, and bass isolation, with ongoing monitoring and neighbor hotline",
+      "basis": "Entertainment Commission POE permits and Planning CUAs for late-night music venues routinely condition approval on sound studies, isolation measures, and a Good Neighbor Policy hotline. Nearby POE approvals (Amado's, Hidden Frequency, Arcana) all operate under Good Neighbor commitments, and §249.60 codifies lighting and window-signage limits.",
+      "citations": [
+        "catalog:sf.place_of_entertainment_permit",
+        "overlay:datasf_sud:mission_alcohol_restrict",
+        "app:datasf_entertainment:1243",
+        "app:datasf_entertainment:1947"
+      ]
+    },
+    {
+      "condition": "No dancing or DJ use; live entertainment limited to acoustic or lightly amplified performances in a performance area not exceeding one-third of the gross floor area",
+      "basis": "The concept specifies live entertainment and amplified sound but no dancing. Planning Code §102 defines bars vs. nightclubs partly by dancing, and prior NCT-Valencia POE approvals for restaurant-accessory entertainment capped the performance area at one-third of floor area per Police Code §1060(r).",
+      "citations": [
+        "app:datasf_planning:MB1400584",
+        "catalog:sf.place_of_entertainment_permit"
+      ]
+    },
+    {
+      "condition": "Security plan including ID checks at the door after 9 p.m., incident log, and coordination with SFPD Mission Station",
+      "basis": "Entertainment Commission and Planning routinely condition POE and bar CUAs on security staffing, ID checks, and incident logs, especially in high-density nightlife corridors. The Mission Alcohol SUD's good-neighbor rules expect coordination with the police district.",
+      "citations": [
+        "catalog:sf.place_of_entertainment_permit",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    },
+    {
+      "condition": "Compliance with Mission Alcoholic Beverage SUD good-neighbor operating conditions: exterior lighting, no window advertising of alcohol, and quarterly reporting to the Planning Department",
+      "basis": "Planning Code §249.60 imposes good-neighbor conditions (§202.2 plus lighting and signage limits) on all alcohol establishments in the SUD. These are codified conditions, not discretionary.",
+      "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    }
+  ],
+  "comparable_cases": [
+    {
+      "application_id": "datasf_entertainment:1243",
+      "citation_id": "app:datasf_entertainment:1243",
+      "permit_type": "Place of Entertainment",
+      "use_types": [
+        "live_entertainment"
+      ],
+      "address": "998 VALENCIA ST, San Francisco, CA",
+      "distance_m": 31.1,
+      "filed_at": null,
+      "decided_at": null,
+      "outcome": "approved",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.592,
+      "why_comparable": "Place of Entertainment permit at 998 Valencia (Amado's), only 31m away on the same Valencia Street NCT corridor, approved for live entertainment",
+      "key_takeaway": "POE permits for live entertainment are routinely approved in the NCT-Valencia district immediately adjacent to the subject property, demonstrating Planning and Entertainment Commission support for music venues on this block",
+      "lat": 37.756995645,
+      "lng": -122.421174593,
+      "source_url": "https://data.sf.gov/d/86e8-rfem"
+    },
+    {
+      "application_id": "datasf_entertainment:1947",
+      "citation_id": "app:datasf_entertainment:1947",
+      "permit_type": "Place of Entertainment, Extended Hours Premises",
+      "use_types": [
+        "live_entertainment"
+      ],
+      "address": "2500 MISSION ST, San Francisco, CA",
+      "distance_m": 143.8,
+      "filed_at": null,
+      "decided_at": null,
+      "outcome": "approved",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.614,
+      "why_comparable": "Hidden Frequency nightclub at 2500 Mission (145m away) received both Place of Entertainment and Extended Hours Premises permits for late-night operation with live entertainment in the NCT-Mission district",
+      "key_takeaway": "Entertainment Commission approved both POE and extended hours for a late-night venue in the adjacent NCT-Mission district within 500 ft, showing the agencies support nightlife uses with proper permitting even in high-density residential areas",
+      "lat": 37.756872,
+      "lng": -122.419224,
+      "source_url": "https://data.sf.gov/d/86e8-rfem"
+    },
+    {
+      "application_id": "datasf_planning:2020-009376MIS",
+      "citation_id": "app:datasf_planning:2020-009376MIS",
+      "permit_type": "Miscellaneous Permit",
+      "use_types": [
+        "restaurant",
+        "live_entertainment"
+      ],
+      "address": "2512 MISSION ST 94110",
+      "distance_m": 151.4,
+      "filed_at": "2020-10-15",
+      "decided_at": "2020-11-05",
+      "outcome": "approved",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.556,
+      "why_comparable": "Arcana restaurant at 2512 Mission (151m away) received Planning approval for combined restaurant and nighttime entertainment use with POE permit in NCT-Mission, similar mix of food service and live music",
+      "key_takeaway": "Planning approved a restaurant + nighttime entertainment hybrid use requiring POE in the nearby NCT-Mission corridor in 2020, establishing precedent for food-and-music concepts in the immediate neighborhood",
+      "lat": 37.75673046755493,
+      "lng": -122.41917406913448,
+      "source_url": "https://sfplanninggis.org/pim?search=2020-009376MIS"
+    },
+    {
+      "application_id": "datasf_planning:MB1400584",
+      "citation_id": "app:datasf_planning:MB1400584",
+      "permit_type": "Miscellaneous Permit",
+      "use_types": [
+        "live_entertainment"
+      ],
+      "address": "998 - 998 VALENCIA ST, SAN FRANCISCO, CA 94110",
+      "distance_m": 52.4,
+      "filed_at": "2014-04-15",
+      "decided_at": "2014-05-19",
+      "outcome": "approved",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.587,
+      "why_comparable": "POE permit as accessory to retail at 998 Valencia (52m away) in NCT-Valencia district, approved in 2014 with explicit reference to Planning Code §703.2 allowing entertainment accessory to principal use",
+      "key_takeaway": "Planning Department recommended approval of POE as an accessory use in NCT-Valencia on the same block, confirming that live entertainment can be approved when subordinate to a principal permitted use like food service",
+      "lat": 37.75704011706318,
+      "lng": -122.42143125345893,
+      "source_url": "https://sfplanninggis.org/pim?search=MB1400584"
+    },
+    {
+      "application_id": "datasf_planning:2026-005475MIS",
+      "citation_id": "app:datasf_planning:2026-005475MIS",
+      "permit_type": "Miscellaneous Permit",
+      "use_types": [
+        "live_entertainment"
+      ],
+      "address": "2500 MISSION ST 94110",
+      "distance_m": 144.9,
+      "filed_at": "2026-06-18",
+      "decided_at": "2026-07-14",
+      "outcome": "approved",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.71,
+      "why_comparable": "Most recent Entertainment Commission referral for POE and Extended Hours permits at 2500 Mission (145m), approved by Planning in July 2026 after one-month review",
+      "key_takeaway": "Planning approved an EC referral for POE and extended hours as recently as July 2026 in the immediately adjacent NCT-Mission district, showing current agency practice supports late-night entertainment permits in this neighborhood",
+      "lat": 37.75687093355928,
+      "lng": -122.41921143059871,
+      "source_url": "https://sfplanninggis.org/pim?search=2026-005475MIS"
+    },
+    {
+      "application_id": "datasf_planning:2015-004381MIS",
+      "citation_id": "app:datasf_planning:2015-004381MIS",
+      "permit_type": "Miscellaneous Permit",
+      "use_types": [
+        "live_entertainment"
+      ],
+      "address": "1034 VALENCIA ST 94110",
+      "distance_m": 94.2,
+      "filed_at": "2015-04-08",
+      "decided_at": "2015-04-24",
+      "outcome": "denied",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.576,
+      "why_comparable": "Limited Live Performance permit application at 1034 Valencia (94m away) in NCT-Valencia was denied in 2015, one of only two denials in the candidate set",
+      "key_takeaway": "A 2015 LLP application at Lost Weekend Video 94m away was disapproved, though the record does not show the reason; this is the only entertainment-permit denial within 500 ft in the past decade, suggesting high but not perfect approval rates",
+      "lat": 37.7563453563273,
+      "lng": -122.42136475784646,
+      "source_url": "https://sfplanninggis.org/pim?search=2015-004381MIS"
+    },
+    {
+      "application_id": "datasf_planning:2025-006395CUA",
+      "citation_id": "app:datasf_planning:2025-006395CUA",
+      "permit_type": "Conditional Use Authorization",
+      "use_types": [],
+      "address": "1034 VALENCIA ST 94110",
+      "distance_m": 94.2,
+      "filed_at": "2025-07-14",
+      "decided_at": "2025-10-02",
+      "outcome": "denied",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": true,
+      "similarity_score": 0.561,
+      "why_comparable": "Recent CUA denial at 1034 Valencia (94m away, same parcel as the 2015 LLP denial) for a formula-retail fitness studio in October 2025, with recorded opposition and 6-1 Planning Commission vote against",
+      "key_takeaway": "The only recent denial on Valencia Street was for formula retail at a site with neighborhood opposition history; the decision reflects sensitivity to formula retail and community input rather than opposition to entertainment or bar uses",
+      "lat": 37.7563453563273,
+      "lng": -122.42136475784646,
+      "source_url": "https://sfplanninggis.org/pim?search=2025-006395CUA"
+    },
+    {
+      "application_id": "datasf_planning:2010.0680C",
+      "citation_id": "app:datasf_planning:2010.0680C",
+      "permit_type": "Conditional Use Authorization",
+      "use_types": [
+        "bar",
+        "restaurant"
+      ],
+      "address": "970 - 974 VALENCIA ST, SAN FRANCISCO, CA 94110",
+      "distance_m": 65.5,
+      "filed_at": "2010-08-12",
+      "decided_at": "2011-01-14",
+      "outcome": "withdrawn",
+      "hours_close": null,
+      "conditions": [],
+      "opposition_noted": null,
+      "similarity_score": 0.507,
+      "why_comparable": "CUA application for a bar within a full-service restaurant at 970-974 Valencia (65m away) in NCT-Valencia was withdrawn in 2011 before decision",
+      "key_takeaway": "A bar-in-restaurant CUA was withdrawn before hearing at 970 Valencia; the record does not indicate whether the withdrawal was due to neighborhood opposition, Mission Alcohol SUD complications, or applicant business reasons",
+      "lat": 37.757358438395315,
+      "lng": -122.42149642745294,
+      "source_url": "https://sfplanninggis.org/pim?search=2010.0680C"
+    }
+  ],
+  "filing_playbook": [
+    {
+      "step": 1,
+      "action": "Form LLC with California Secretary of State, obtain EIN, open business bank account, register for CA sales tax (seller's permit), and register San Francisco business account with the Treasurer & Tax Collector.",
+      "what_to_say": "Complete entity formation and tax registrations before signing the lease so the Business Account Number (BAN) is available for all city permit applications. File a Fictitious Business Name statement with the County Clerk if the DBA differs from the LLC name, and publish it in an approved newspaper within 45 days. Budget two weeks for the full registration sequence.",
+      "citations": [
+        "catalog:ca.sos_entity_registration",
+        "catalog:us.ein",
+        "catalog:ca.sellers_permit",
+        "catalog:sf.business_registration",
+        "catalog:sf.fictitious_business_name"
+      ]
+    },
+    {
+      "step": 2,
+      "action": "Identify and negotiate purchase of an existing ABC Type 42 license held by a bar within the Mission Alcoholic Beverage SUD, open escrow with an ABC license broker, and file the ABC transfer application with signed lease and zoning clearance request.",
+      "what_to_say": "Start the license search immediately; only a handful of Type 42 licenses exist in the SUD, and the transfer process takes 90–150 days including the 30-day public posting. Make the lease contingent on ABC transfer approval. In the ABC application, describe the concept as a wine bar with a limited kitchen serving charcuterie, small plates and panini, emphasizing bona fide meal service. Request a Public Convenience or Necessity determination from SF Planning in the same filing package.",
+      "citations": [
+        "catalog:ca.abc_type_42",
+        "overlay:datasf_sud:mission_alcohol_restrict",
+        "stat:density"
+      ]
+    },
+    {
+      "step": 3,
+      "action": "File the Conditional Use Authorization application with SF Planning for bar use in NCT-Valencia, including a project narrative, site plan, concept rendering, sound-mitigation plan, and good-neighbor operating proposal.",
+      "what_to_say": "Frame the application as a neighborhood wine bar with live music, food service as the primary use, and beer-and-wine accessory to meals. Commit to acoustic or lightly amplified music only (no DJs, no dancing), 40-person occupancy, voluntary 1 a.m. close Sun–Thu and 2 a.m. Fri–Sat subject to Commission input, sound isolation (solid doors, acoustic panels, bass traps), security with ID checks after 9 p.m., and Mission Alcohol SUD good-neighbor conditions (lighting, no window alcohol ads, quarterly reporting). Attach support letters and cite 998 Valencia (Amado's) and 2512 Mission (Arcana) POE precedent.",
+      "citations": [
+        "catalog:sf.conditional_use_authorization",
+        "zoning:NCT-VALENCIA",
+        "overlay:datasf_sud:mission_alcohol_restrict",
+        "app:datasf_entertainment:1243",
+        "app:datasf_planning:2020-009376MIS"
+      ]
+    },
+    {
+      "step": 4,
+      "action": "Conduct the pre-application community meeting required by Planning Code §312, inviting all property owners and tenants within 300 feet, the Valencia Corridor Merchants Association, and the Mission Police District captain.",
+      "what_to_say": "Present the concept, sound plan, hours proposal, and security measures. Solicit feedback on closing times, sound concerns, and trash/smoking management. Document attendees and comments in the meeting summary submitted to Planning. Address concerns in writing and, if necessary, adjust the hours proposal or sound plan before the Planning Commission hearing. Pre-application outreach that results in neighbor support letters significantly improves CUA approval odds.",
+      "citations": [
+        "catalog:sf.conditional_use_authorization",
+        "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+    },
+    {
+      "step": 5,
+      "action": "Submit building permit application for tenant improvements (kitchen build-out, ADA upgrades, sound isolation, grease interceptor) with architectural plans routed to Planning, DBI, Public Health, Fire, and PUC.",
+      "what_to_say": "The building permit application should include the DPH plan check for the limited commercial kitchen, the FOG interceptor design, and the sound-isolation details committed to in the CUA application. Start the building permit process in parallel with the CUA filing so that once the CUA is approved the building permit is in advanced plan review and ready for issuance. Hire an architect with SF restaurant and entertainment-venue experience; incomplete plan sets add months to the DBI routing cycle.",
+      "citations": [
+        "catalog:sf.building_permit",
+        "catalog:sf.health_plan_check",
+        "catalog:sf.fog_wastewater_permit"
+      ]
+    },
+    {
+      "step": 6,
+      "action": "After CUA approval, file the Place of Entertainment permit application with the Entertainment Commission, requesting an intake meeting and submitting the CUA approval, site plan, sound plan, security plan, and proof of lease.",
+      "what_to_say": "Describe the entertainment use as live acoustic music (solo and duo acts, open mic, wine-tasting events with background music) in a performance area not exceeding one-third of the floor area, operating under the hours conditioned in the CUA. Commit to the Entertainment Commission's Good Neighbor Policy, including a neighbor hotline, incident log, sound monitoring, and quarterly meetings with the Mission Police District. Reference the approved POE permits at 998 Valencia and 2500 Mission as precedent.",
+      "citations": [
+        "catalog:sf.place_of_entertainment_permit",
+        "app:datasf_entertainment:1243",
+        "app:datasf_entertainment:1947",
+        "app:datasf_planning:2026-005475MIS"
+      ]
+    },
+    {
+      "step": 7,
+      "action": "Complete the DPH pre-opening inspection (kitchen equipment, hand sinks, food-safety manager certificate, three-compartment sink, hot water) and obtain the Health Permit to Operate.",
+      "what_to_say": "Schedule the pre-opening inspection at least two weeks in advance and walk the space against the DPH checklist a week before the appointment. Have the certified food safety manager on site, proof of workers' compensation insurance, and the seller's permit and business registration on file. The Health Permit cannot be issued until the building permit receives final sign-off from DBI, so coordinate the DBI final inspection, Fire final, and DPH pre-opening inspection in sequence within the same week.",
+      "citations": [
+        "catalog:sf.health_permit",
+        "catalog:ca.food_safety_manager_cert",
+        "catalog:ca.workers_comp_insurance"
+      ]
+    },
+    {
+      "step": 8,
+      "action": "Complete ABC posting period (30 days), respond to any protests, obtain the transferred Type 42 license, and secure ASCAP and BMI music performance licenses before opening to the public.",
+      "what_to_say": "ABC requires a 30-day notice posted at the premises; neighbors and police can file protests during that window. If a protest is filed, ABC may schedule an additional hearing or request a supplemental PCN letter from the city, adding 60–90 days. Once ABC issues the license, register for RBS training for all alcohol servers and managers (complete within 60 days of hire), and sign up for ASCAP and BMI blanket licenses online (each takes under a week and costs $300–$800/year for a 40-seat venue).",
+      "citations": [
+        "catalog:ca.abc_type_42",
+        "catalog:ca.rbs_training",
+        "catalog:us.ascap_license",
+        "catalog:us.bmi_license"
+      ]
+    }
+  ],
+  "timeline_cost": {
+    "path": "Conditional Use Authorization for bar use in NCT-Valencia + Place of Entertainment permit + ABC Type 42 license transfer from within Mission Alcohol SUD + building permit for tenant improvements + health permit",
+    "days_min": 240,
+    "days_max": 365,
+    "cost_min_usd": 8200.0,
+    "cost_max_usd": 25000.0,
+    "notes": "The critical path is the Conditional Use Authorization (120–300 days from filing to approval, $3,100–$6,000 application fee depending on construction valuation) followed by the Place of Entertainment permit (45–120 days after CUA approval, $2,708 application fee). ABC Type 42 license transfer runs 90–150 days in parallel with the CUA and costs $1,000–$1,600 in state fees plus $20,000–$60,000 to purchase the license from the seller (not included in government-fee totals). Building permit for kitchen TI, sound isolation, ADA and grease interceptor adds 60–120 days and $2,000–$8,000 in permit fees (percentage of construction valuation). Health plan check ($828–$2,207) and permit ($470) add 35–60 days and must follow the building permit approval. The eight-to-twelve-month total assumes no neighborhood opposition, no ABC protests, and efficient plan review; add three to six months if discretionary review is filed on the CUA or if the ABC license search takes longer than 60 days. Government fees shown exclude the ABC license purchase price, construction costs, architect and expediter fees, and ongoing annual costs (business registration renewal $55–$700/year, health permit $0 through 2028, RBS training $3–$30 per employee, ASCAP/BMI $600–$1,600/year combined). The First Year Free fee waiver for new storefront businesses in certain districts may reduce the CUA application fee; confirm eligibility with Planning at intake.",
+    "citations": [
+      "catalog:sf.conditional_use_authorization",
+      "catalog:sf.place_of_entertainment_permit",
+      "catalog:ca.abc_type_42",
+      "catalog:sf.building_permit",
+      "catalog:sf.health_plan_check",
+      "catalog:sf.health_permit",
+      "overlay:datasf_sud:mission_alcohol_restrict",
+      "app:datasf_entertainment:1243",
+      "app:datasf_planning:2020-009376MIS"
+    ]
+  },
+  "narrative": "A 40-seat wine bar with a limited kitchen, live music and amplified sound operating until after midnight at 995 Valencia Street is approvable but will require a Conditional Use Authorization for the bar use, a Place of Entertainment permit from the Entertainment Commission, and a Type 42 beer-and-wine license transferred from another bar within the Mission Alcoholic Beverage Special Use District. The NCT-Valencia zoning makes bars conditional rather than permitted by right, and Planning Code §249.60 prohibits new bar licenses from outside the SUD, so you must locate and escrow an existing Type 42 license held by a bar closing or relocating within the district boundaries before you apply to ABC. Hours after midnight are also conditional in this district, so the Planning Commission hearing will set your closing time, likely capping you at 1:00 a.m. on weeknights and possibly 2:00 a.m. on weekends based on neighborhood input and a sound plan.\n\nThe comparables strongly favor approval. Amado's restaurant at 998 Valencia—only one door north at 31 meters—holds an active Place of Entertainment permit for live music, and the Hidden Frequency nightclub at 2500 Mission (145 meters away in NCT-Mission) received both POE and Extended Hours Premises permits as recently as July 2026. Arcana at 2512 Mission won Planning approval in 2020 for a combined restaurant and nighttime entertainment use with a POE permit, establishing that hybrid food-and-music concepts are welcome in this corridor. The one recent denial on Valencia Street was a formula-retail fitness studio at 1034 Valencia that drew organized opposition; denials for entertainment or bar uses are not in the record. The undue-concentration flag—51 on-sale ABC licenses within 1,000 feet—will trigger a Public Convenience or Necessity requirement at the state level, but the city routinely issues PCN letters for food-oriented alcohol uses in high-density commercial corridors, and Planning approved a Type 20 off-sale grocery license transfer into the SUD at 999 Valencia (your neighbor) in 2023 over the same concentration concerns.\n\nThe critical path is the CUA hearing, which takes five to ten months from filing to approval and consumes the majority of your timeline and cost. You should file the CUA application within 30 days of signing the lease (ideally making the lease contingent on CUA approval), conduct the required pre-application community meeting with the Valencia Corridor Merchants Association and nearby residents, and prepare a sound-mitigation plan and good-neighbor operating proposal for the hearing. Emphasize that live music will be acoustic or lightly amplified (no DJs, no dancing), that food service is the primary use with wine as an accessory, and that you will voluntarily cap hours at 1:00 a.m. Sunday through Thursday and request 2:00 a.m. Friday and Saturday only if the neighborhood supports it. Commission the Entertainment Commission's POE intake meeting in parallel with the CUA filing so that once Planning approves the CUA you can move directly to the 30-day posted notice and EC hearing. Budget eight to twelve months from lease signing to opening, with government fees of roughly $8,000 to $12,000 (CUA application, POE permit, health plan check and permit, building permit for kitchen and ADA work, ABC license transfer purchase separately) and construction and professional costs on top.\n\nStart now by searching for an available Type 42 license within the Mission Alcohol SUD; there are only a handful, and prices run $20,000 to $60,000 depending on the seller's urgency. Confirm with a title report that 995 Valencia's current Certificate of Occupancy allows bar use or can be amended through the building permit, because a change of occupancy from restaurant to bar may trigger additional ADA and exiting requirements. Line up an architect experienced with SF entertainment venues to design the sound isolation (solid-core doors, acoustic panels, bass traps) that will satisfy both the Fire Marshal's inspection and the neighbors' concerns, and budget for that work in your tenant improvement plans before the CUA hearing so you can commit to it on the record.",
+  "citations": [
+    {
+      "id": "app:datasf_entertainment:1243",
+      "kind": "application",
+      "label": "Place of Entertainment · 998 VALENCIA ST, San Francisco, CA · approved",
+      "source_url": "https://data.sf.gov/d/86e8-rfem",
+      "excerpt": "Amados: Place of Entertainment"
+    },
+    {
+      "id": "app:datasf_entertainment:1947",
+      "kind": "application",
+      "label": "Place of Entertainment, Extended Hours Premises · 2500 MISSION ST, San Francisco, CA · approved",
+      "source_url": "https://data.sf.gov/d/86e8-rfem",
+      "excerpt": "HIDDEN FREQUENCY: Place of Entertainment, Extended Hours Premises"
+    },
+    {
+      "id": "app:datasf_planning:2010.0680C",
+      "kind": "application",
+      "label": "Conditional Use Authorization · 970 - 974 VALENCIA ST, SAN FRANCISCO, CA 94110 · withdrawn (2011)",
+      "source_url": "https://sfplanninggis.org/pim?search=2010.0680C",
+      "excerpt": "Bar within Full Service Restaurant"
+    },
+    {
+      "id": "app:datasf_planning:2011.0255C",
+      "kind": "application",
+      "label": "Conditional Use Authorization · 991 - 999 VALENCIA ST, SAN FRANCISCO, CA 94110 · approved (2011)",
+      "source_url": "https://sfplanninggis.org/pim?search=2011.0255C",
+      "excerpt": "Existing full service restaurant changing ABC license from a Type 41 to a Type 47."
+    },
+    {
+      "id": "app:datasf_planning:2015-004381MIS",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 1034 VALENCIA ST 94110 · denied (2015)",
+      "source_url": "https://sfplanninggis.org/pim?search=2015-004381MIS",
+      "excerpt": "Per 726.48, recommend approval for the establishment of a Limited Live Performance (Other Entertainment as defined in 790.38) as an accessory use to the store (D.B.A. Lost Weekend Video) per 703.2 within an NCT zoning district."
+    },
+    {
+      "id": "app:datasf_planning:2020-009376MIS",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 2512 MISSION ST 94110 · approved (2020)",
+      "source_url": "https://sfplanninggis.org/pim?search=2020-009376MIS",
+      "excerpt": "EC - Place of Entertainment permit - Recommend approval to establish Restaurant and Nighttime Entertainment uses(dba. Arcana) within an existing double-height one-story commercial building per BPA# 202011048158."
+    },
+    {
+      "id": "app:datasf_planning:2020-012158MIS",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 995 VALENCIA ST 94110 · approved (2021)",
+      "source_url": "https://sfplanninggis.org/pim?search=2020-012158MIS",
+      "excerpt": "DPH referral - Restaurant\n\nRecommend approval for  995 Valencia Street  as  a continuation of  restaurant use per Section 102 and 762 and  Conditional Use authorization Motion No. 18363"
+    },
+    {
+      "id": "app:datasf_planning:2023-002340CUA",
+      "kind": "application",
+      "label": "Conditional Use Authorization · 999 VALENCIA ST 94110 · approved (2023)",
+      "source_url": "https://sfplanninggis.org/pim?search=2023-002340CUA",
+      "excerpt": "The Project is seeking Conditional Use authorization from Planning Code Section 249.60 related to Valencia Whole Foods' purchase of a Type 20 liquor license from Ish's Community Market Corp."
+    },
+    {
+      "id": "app:datasf_planning:2025-006395CUA",
+      "kind": "application",
+      "label": "Conditional Use Authorization · 1034 VALENCIA ST 94110 · denied (2025)",
+      "source_url": "https://sfplanninggis.org/pim?search=2025-006395CUA",
+      "excerpt": "Planning Commission Motion No. 21840 (October 2, 2025) disapproved Conditional Use Authorization 2025-006395CUA at 1034 Valencia Street by a 6-1 vote. Opposition was recorded in public comment."
+    },
+    {
+      "id": "app:datasf_planning:2026-005475MIS",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 2500 MISSION ST 94110 · approved (2026)",
+      "source_url": "https://sfplanninggis.org/pim?search=2026-005475MIS",
+      "excerpt": "EC referral - Place of Entertainment permit and Extended Hours Premises permit"
+    },
+    {
+      "id": "app:datasf_planning:MA9901527",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 991 - 999 VALENCIA ST BSMT, SAN FRANCISCO, CA 94110 · approved (1999)",
+      "source_url": "https://sfplanninggis.org/pim?search=MA9901527",
+      "excerpt": "- Large full service restaurant approved per Planning Code Sections 726.42 and 790.92 (waiter service and seating)."
+    },
+    {
+      "id": "app:datasf_planning:MB0100446",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 995 - 999 VALENCIA ST STREET, SAN FRANCISCO, CA 94110 · approved (2001)",
+      "source_url": "https://sfplanninggis.org/pim?search=MB0100446",
+      "excerpt": "Large full service restaurant permitted per Planning Code Section 726.42 and 730.92. -"
+    },
+    {
+      "id": "app:datasf_planning:MB1400584",
+      "kind": "application",
+      "label": "Miscellaneous Permit · 998 - 998 VALENCIA ST, SAN FRANCISCO, CA 94110 · approved (2014)",
+      "source_url": "https://sfplanninggis.org/pim?search=MB1400584",
+      "excerpt": "Recommend approval of Place of Entertainment Permitas accessory to (e) retail use per P.C. Sec. 703.2(b)(1)(C)(viii)  - in conformance with Police Code Section 1060(r) and may not exceed 1/3 of the gross flooor area of the (e) retail use."
+    },
+    {
+      "id": "catalog:ca.abc_type_42",
+      "kind": "catalog",
+      "label": "ABC Type 42 – On-Sale Beer & Wine, Public Premises (bar / wine bar / taproom) — California Department of Alcoholic Beverage Control (ABC)",
+      "source_url": "https://www.abc.ca.gov/licensing/license-types/",
+      "excerpt": "60–150 days; $1,000–$1,600; estimated"
+    },
+    {
+      "id": "catalog:ca.food_safety_manager_cert",
+      "kind": "catalog",
+      "label": "Certified Food Protection Manager (one per facility) — ANSI-accredited exam provider (ServSafe, Prometric, NRFSP, 360training) per CalCode §113947.1",
+      "source_url": "https://www.servsafe.com/ServSafe-Manager",
+      "excerpt": "1–14 days; $100–$250; estimated"
+    },
+    {
+      "id": "catalog:ca.rbs_training",
+      "kind": "catalog",
+      "label": "Responsible Beverage Service (RBS) certification for alcohol servers and managers — California Department of Alcoholic Beverage Control (ABC) – RBS Portal",
+      "source_url": "https://www.abc.ca.gov/education/rbs/",
+      "excerpt": "1–7 days; $3–$30; verified"
+    },
+    {
+      "id": "catalog:ca.sellers_permit",
+      "kind": "catalog",
+      "label": "California Seller's Permit (sales tax) — California Department of Tax and Fee Administration (CDTFA)",
+      "source_url": "https://cdtfa.ca.gov/formspubs/pub107/applying-for-a-sellers-permit.htm",
+      "excerpt": "1–14 days; $0–$0; verified"
+    },
+    {
+      "id": "catalog:ca.sos_entity_registration",
+      "kind": "catalog",
+      "label": "Form your legal entity with the California Secretary of State (LLC / corporation) — California Secretary of State (bizfile Online)",
+      "source_url": "https://bizfileonline.sos.ca.gov/",
+      "excerpt": "1–10 days; $70–$150; verified"
+    },
+    {
+      "id": "catalog:ca.workers_comp_insurance",
+      "kind": "catalog",
+      "label": "Workers' compensation insurance — Any licensed carrier or State Compensation Insurance Fund (regulated by CA Dept. of Industrial Relations)",
+      "source_url": "https://www.dir.ca.gov/dwc/employer.htm",
+      "excerpt": "1–14 days; $0–$0; estimated"
+    },
+    {
+      "id": "catalog:sf.building_permit",
+      "kind": "catalog",
+      "label": "Building permit (tenant improvements / change of occupancy) — SF Department of Building Inspection (DBI)",
+      "source_url": "https://www.sf.gov/departments--department-building-inspection",
+      "excerpt": "14–120 days; $800–$15,000; estimated"
+    },
+    {
+      "id": "catalog:sf.business_registration",
+      "kind": "catalog",
+      "label": "San Francisco Business Registration Certificate — SF Office of the Treasurer & Tax Collector",
+      "source_url": "https://sftreasurer.org/business/register-business",
+      "excerpt": "1–5 days; $55–$700; verified"
+    },
+    {
+      "id": "catalog:sf.conditional_use_authorization",
+      "kind": "catalog",
+      "label": "Conditional Use Authorization (bar / nightlife use) — SF Planning Commission",
+      "source_url": "https://sfplanning.org/process-cua-small-businesses",
+      "excerpt": "120–300 days; $3,100–$15,000; estimated"
+    },
+    {
+      "id": "catalog:sf.fictitious_business_name",
+      "kind": "catalog",
+      "label": "Fictitious Business Name (DBA) statement — SF Office of the County Clerk",
+      "source_url": "https://www.sf.gov/step-by-step--file-fictitious-business-name-fbn",
+      "excerpt": "1–35 days; $60–$120; estimated"
+    },
+    {
+      "id": "catalog:sf.fog_wastewater_permit",
+      "kind": "catalog",
+      "label": "Fats, Oils & Grease (FOG) program registration / grease interceptor — SF Public Utilities Commission – Wastewater Enterprise",
+      "source_url": "https://www.sfpuc.gov/programs/pretreatment-program/fats-oils-grease-fog-control",
+      "excerpt": "14–45 days; $0–$500; estimated"
+    },
+    {
+      "id": "catalog:sf.health_permit",
+      "kind": "catalog",
+      "label": "Health Permit to Operate a food facility — SF Department of Public Health – Environmental Health Branch",
+      "source_url": "https://www.sf.gov/get-health-permit-open-restaurant-bar-or-other-retail-food-location",
+      "excerpt": "14–45 days; $470–$1,000; verified"
+    },
+    {
+      "id": "catalog:sf.health_plan_check",
+      "kind": "catalog",
+      "label": "Public Health plan check (new or remodeled food facility) — SF Department of Public Health – Environmental Health Branch",
+      "source_url": "https://www.sf.gov/plan-check-guide-building-and-remodeling-food-facility",
+      "excerpt": "21–60 days; $828–$2,500; verified"
+    },
+    {
+      "id": "catalog:sf.place_of_entertainment_permit",
+      "kind": "catalog",
+      "label": "Place of Entertainment (POE) permit — SF Entertainment Commission",
+      "source_url": "https://www.sf.gov/get-place-entertainment-permit-your-business",
+      "excerpt": "45–120 days; $2,708–$3,800; verified"
+    },
+    {
+      "id": "catalog:us.ascap_license",
+      "kind": "catalog",
+      "label": "ASCAP public performance license — American Society of Composers, Authors and Publishers (ASCAP)",
+      "source_url": "https://www.ascap.com/music-users/types/restaurant-bar-tavern-nightclub",
+      "excerpt": "1–7 days; $300–$2,500; estimated"
+    },
+    {
+      "id": "catalog:us.bmi_license",
+      "kind": "catalog",
+      "label": "BMI public performance license — Broadcast Music, Inc. (BMI)",
+      "source_url": "https://www.bmi.com/licensing",
+      "excerpt": "1–7 days; $300–$2,500; estimated"
+    },
+    {
+      "id": "catalog:us.ein",
+      "kind": "catalog",
+      "label": "Employer Identification Number (EIN) — Internal Revenue Service (IRS)",
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+      "excerpt": "0–1 days; $0–$0; verified"
+    },
+    {
+      "id": "geo:address",
+      "kind": "statistic",
+      "label": "Address record: 995 Valencia St, San Francisco, CA 94110 (datasf_eas)",
+      "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=443862",
+      "excerpt": "parcel 3609/026"
+    },
+    {
+      "id": "license:abc:535955",
+      "kind": "license",
+      "label": "ABC Type 47 – On-Sale General - Eating Place · 974 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=535955",
+      "excerpt": "LOLO RESTAURANT — Type 47 – On-Sale General - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "license:abc:570685",
+      "kind": "license",
+      "label": "ABC Type 47 – On-Sale General - Eating Place · 998 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=570685",
+      "excerpt": "AMADO'S — Type 47 – On-Sale General - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "license:abc:603037",
+      "kind": "license",
+      "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 990 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=603037",
+      "excerpt": "SENOR SISIG — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "license:abc:612253",
+      "kind": "license",
+      "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1007 1/2 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=612253",
+      "excerpt": "UDUPI PALACE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "license:abc:640844",
+      "kind": "license",
+      "label": "ABC Type 21 – Off-Sale General · 1001 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=640844",
+      "excerpt": "VALENCIA EXOTIC CIGARS & LIQUOR INC — Type 21 – Off-Sale General (ACTIVE)"
+    },
+    {
+      "id": "license:abc:649768",
+      "kind": "license",
+      "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 983 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=649768",
+      "excerpt": "MISSION PICNIC — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "license:abc:650575",
+      "kind": "license",
+      "label": "ABC Type 20 – Off-Sale Beer & Wine · 999 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=650575",
+      "excerpt": "VALENCIA WHOLE FOODS — Type 20 – Off-Sale Beer & Wine (ACTIVE)"
+    },
+    {
+      "id": "license:abc:651564",
+      "kind": "license",
+      "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 995 VALENCIA ST, SAN FRANCISCO, CA 94110 · ACTIVE",
+      "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=651564",
+      "excerpt": "SARITA'S GRILL & BEER — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE)"
+    },
+    {
+      "id": "overlay:datasf_sud:fringe_financial_services_rud",
+      "kind": "overlay",
+      "label": "Fringe Financial Services RUD — Planning Code § 249.35",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+      "excerpt": "Fringe Financial Services RUD: restricted use district on the SF Zoning Map; its controls are in Planning Code § 249.35."
+    },
+    {
+      "id": "overlay:datasf_sud:mission_alcohol_restrict",
+      "kind": "overlay",
+      "label": "Mission Alcoholic Beverage Special Use District — Planning Code § 249.60 (§ 781.8 cross-references it)",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-34810",
+      "excerpt": "No new Liquor Stores. A Restaurant operating as a Bona Fide Eating Place may serve alcohol (licenses may be transferred in from inside or outside the SUD), as may non-profit theaters, bowling alleys/mini-golf with an integrated Restaurant, single-screen movie theaters (beer and wine) and ABC Type 90"
+    },
+    {
+      "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+      "kind": "overlay",
+      "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+      "excerpt": "Priority Equity Geographies SUD: special use district on the SF Zoning Map; its controls are in Planning Code § 249.97."
+    },
+    {
+      "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+      "kind": "overlay",
+      "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+      "excerpt": "Within 1/4 Mile of an Existing Fringe Financial Service: special use district on the SF Zoning Map; its controls are in Planning Code § 249.35."
+    },
+    {
+      "id": "overlay:static:sf:nc_nct_valencia",
+      "kind": "overlay",
+      "label": "Valencia Street Neighborhood Commercial Transit District — Planning Code § 762 (Zoning Control Table 762); § 102 (Bar, Restaurant)",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178",
+      "excerpt": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD."
+    },
+    {
+      "id": "stat:base_rate",
+      "kind": "statistic",
+      "label": "Base rate: 1 approved / 0 denied / 0 withdrawn of 3 comparable applications, within 1,000 ft, last 5 years",
+      "source_url": "https://data.sf.gov",
+      "excerpt": null
+    },
+    {
+      "id": "stat:density",
+      "kind": "statistic",
+      "label": "Density: 24 food & drink businesses, 0 bars, 9 active on-sale ABC licenses within 500 ft; 51 licenses within 1,000 ft",
+      "source_url": "https://data.sf.gov",
+      "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy. At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City."
+    },
+    {
+      "id": "zoning:NCT-VALENCIA",
+      "kind": "zoning",
+      "label": "Zoning NCT-VALENCIA — Planning Code § 762 (Zoning Control Table 762); § 102 (Bar, Restaurant)",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178",
+      "excerpt": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD."
+    }
+  ],
+  "records_summary": "995 Valencia St sits in the Valencia Street NCT where bars require Conditional Use Authorization and are subject to the Mission Alcoholic Beverage Special Use District, which mandates that any new bar use a Type 42 license transferred from another bar within the SUD. The parcel has a long history as a restaurant (Papalote Mexican Grill) with an active Type 41 license issued in 2023. The immediate block is densely populated with 24 food/drink businesses within 500 ft and 51 active ABC on-sale licenses within 1,000 ft, triggering ABC's undue-concentration flag. Recent comparable applications show 100% approval: one CUA at the same address (2011) upgraded a restaurant's license from Type 41 to Type 47, and nearby live entertainment permits (POE at 998 Valencia, 31m away; recent POE at 2500 Mission, 145m away) were approved without recorded opposition.",
+  "data_gaps": [
+    "No extracted hearing transcripts or opposition letters for the 2011 CUA at 995 Valencia; cannot assess specific conditions or neighbor concerns",
+    "No detailed conditions text for the POE permits at 998 Valencia or 2500 Mission; sound/hours restrictions unknown",
+    "ABC protest history and PCN findings for nearby licenses not exposed in the dataset",
+    "No zoning referral or DBI records showing whether 995 Valencia's current layout meets bar-use requirements (e.g., kitchen size, ADA, occupancy)",
+    "Entertainment Commission good-neighbor policies and compliance history for nearby POE venues not available"
+  ],
+  "disclaimers": [
+    "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+    "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+    "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+    "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+    "Verdicts are probabilistic judgments from precedent, not guarantees. Planning Commission and ABC decisions are discretionary."
+  ],
+  "generated_at": "2026-10-22T04:41:45+00:00",
+  "model_versions": {
+    "intake": "claude-sonnet-4-5",
+    "records": "claude-sonnet-4-5",
+    "precedent": "claude-sonnet-4-5",
+    "risk": "claude-sonnet-4-5"
+  },
+  "data_as_of": "2026-10-22"
+}

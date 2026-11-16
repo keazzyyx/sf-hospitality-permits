@@ -1,0 +1,1527 @@
+{
+ "assumption": "every licence whose status on the cut-off day is not in ABC's archive counted as active",
+ "e2e": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NCT-FILLMORE",
+   "permission": "not_covered",
+   "permission_label": "Not decided by the rules",
+   "existing_use": null,
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.maybe_continues",
+     "text": "The space is, or was last, a Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-11-24 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    }
+   ],
+   "rules_date": "2025-11-24",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "whether an existing business is to be enlarged or intensified"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.maybe_continues",
+       "text": "The space is, or was last, a Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.below",
+       "text": "Zoning district NCT-FILLMORE: a use below 6,001 square feet is principally permitted, and 2,950 square feet is below it (Planning Code § 760, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      }
+     ],
+     "in_force_from": "2025-10-06",
+     "ordinance": "Ord. 173-25, File No. 250634",
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-11-24, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 24 November 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.maybe_continues",
+      "text": "The space is, or was last, a Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district NCT-FILLMORE: a use below 6,001 square feet is principally permitted, and 2,950 square feet is below it (Planning Code § 760, in force from 2025-10-06 (Ord. 173-25, File No. 250634)).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: formula retail. Not decided as well: use control of the zoning district; the lines above name what is missing: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without whether the space is for fewer than 50 people, whether an existing business is to be enlarged or intensified and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)). It has applied in this form since 6 October 2025 (Ord. 170-25, File No. 240803).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-175.-approval-of-permits",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "whether the space is for fewer than 50 people",
+     "whether an existing business is to be enlarged or intensified",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: whether an existing business is to be enlarged or intensified. Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ },
+ "conditional": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NCT-FILLMORE",
+   "permission": "principal",
+   "permission_label": "Permitted",
+   "existing_use": null,
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCT-FILLMORE: a Restaurant on the first story is principally permitted (Planning Code § 760, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-11-24 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    }
+   ],
+   "rules_date": "2025-11-24",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.no_change",
+       "text": "A Restaurant continues at this address, and the description says it is not to be enlarged or intensified.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.not_new",
+       "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-11-24, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "no",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues and the description states no enlargement or other change to the business, so the rules read the occupancy group as unchanged: not a change of occupancy. The existing group itself is not in public records; plans or an inspection show it.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 24 November 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Principally permitted use: no Conditional Use Authorization for the use itself",
+    "agency": "San Francisco Planning",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): no Conditional Use Authorization is required. What requires it: Formula retail, Formula retail: change of operator.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues and the description states no enlargement or other change to the business, so the rules read the occupancy group as unchanged: not a change of occupancy. The existing group itself is not in public records; plans or an inspection show it.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "The use does not change, so a building permit is needed only for building work that is not exempt, and it is a permit without a change of use: allowed.",
+      "code_section": "San Francisco Building Code §§ 106A.1 and 106A.2; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)). It has applied in this form since 6 October 2025 (Ord. 170-25, File No. 240803).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-175.-approval-of-permits",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "allowed",
+  "overall_line": "Of the 3 approvals this concept needs: 3 allowed (zoning and use, health permit, building permit and change of use).",
+  "entitlement_path": "Health permit to operate; Building permit",
+  "open_questions": []
+ },
+ "rules_conditional_unsupplied": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "NCT-FILLMORE",
+   "permission": "principal",
+   "permission_label": "Permitted",
+   "existing_use": null,
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCT-FILLMORE: a Restaurant on the first story is principally permitted (Planning Code § 760, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-11-24 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    }
+   ],
+   "rules_date": "2025-11-24",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.no_change",
+       "text": "A Restaurant continues at this address, and the description says it is not to be enlarged or intensified.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      },
+      {
+       "rule_id": "T5.operator",
+       "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+       "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.not_new",
+       "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-11-24, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 760",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-FILLMORE"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "no",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues and the description states no enlargement or other change to the business, so the rules read the occupancy group as unchanged: not a change of occupancy. The existing group itself is not in public records; plans or an inspection show it.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 24 November 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.continues",
+      "text": "A Restaurant already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T3.no_change",
+      "text": "A Restaurant continues at this address, and the description says it is not to be enlarged or intensified.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C and D; this text in force from 2025-06-01 (Ord. 62-25, File No. 250101, App. 5/1/2025, Eff. 6/1/2025)).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(D)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "T7.not_new",
+      "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: formula retail: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The same use continues and the description states no enlargement or other change to the business, so the rules read the occupancy group as unchanged: not a change of occupancy. The existing group itself is not in public records; plans or an inspection show it.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "The use does not change, so a building permit is needed only for building work that is not exempt, and it is a permit without a change of use: allowed.",
+      "code_section": "San Francisco Building Code §§ 106A.1 and 106A.2; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)). It has applied in this form since 6 October 2025 (Ord. 170-25, File No. 240803).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-175.-approval-of-permits",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 2 allowed (health permit, building permit and change of use).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate; Building permit",
+  "open_questions": []
+ }
+}

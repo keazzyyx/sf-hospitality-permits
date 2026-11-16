@@ -1,0 +1,581 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 37,
+  "supported": 10,
+  "trimmed": 7,
+  "downgraded": 10,
+  "dropped": 10
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Zoning district NCT-MISSION: a Restaurant on the first story is a conditional use per Planning Code § 754.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Zoning district NCT-MISSION: a Restaurant on the first story is a conditional use per Planning Code § 754.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown' and does not state the conditional use status for restaurants on the first story."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Mission Alcoholic Beverage Special Use District requires Conditional Use for any proposed Restaurant in the sub-area east of the Mission Street NCT western boundary and north of Cesar Chavez; this parcel lies inside that sub-area (Planning Code § 249.60(f)(1)).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Mission Alcoholic Beverage Special Use District requires Conditional Use for any proposed Restaurant in the sub-area east of the Mission Street NCT western boundary and north of Cesar Chavez; this parcel lies inside that sub-area (Planning Code § 249.60(f)(1)).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown' and states the controls are in rule lines not shown; it does not state the Conditional Use requirement, sub-area boundaries, or subsection."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "NCT-MISSION Table 754 Note 7 caps eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district at 167 total, and a new one is not permitted if it would take the total above that; the records do not show how many exist.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "NCT-MISSION Table 754 Note 7 caps eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district at 167 total, and a new one is not permitted if it would take the total above that; the records do not show how many exist.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references Table 754 but does not state the cap of 167 or the permission rule."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A prior CUA application (2010.0852C) for outdoor seating on adjacent property used as surface parking at 2214 Mission St was filed September 2010 and withdrawn June 2012 after 21 months, with no decision rendered.",
+   "verdict": "partially_supported",
+   "supported_text": "A prior CUA application (2010.0852C) for outdoor seating on adjacent property used as surface parking at 2214 Mission St was filed September 2010 and withdrawn June 2012, with no decision rendered.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A prior CUA application (2010.0852C) for outdoor seating on adjacent property used as surface parking at 2214 Mission St was filed September 2010 and withdrawn June 2012, with no decision rendered.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2010.0852C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Two comparable outdoor seating CUAs nearby were approved: 2011.0894C at 3481 18th St (rear outdoor area, RTO-M, approved January 2012, 5 months from filing) and 2017-003058CUA at 2323 Mission St (rear outdoor area for bar/restaurant, NCT-MISSION, approved December 2017, 9 months from filing).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Two comparable outdoor seating CUAs nearby were approved: 2011.0894C at 3481 18th St (rear outdoor area, RTO-M, approved January 2012, 5 months from filing) and 2017-003058CUA at 2323 Mission St (rear outdoor area for bar/restaurant, NCT-MISSION, approved December 2017, 9 months from filing).",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2011.0894C",
+    "app:datasf_planning:2017-003058CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "Restaurant CUA 2018-012727CUA at 3372 19th St (135 m away, NCT-MISSION, Mission Alcohol SUD) was approved March 2019 with conditions including hours (Tue–Sun 11 am to 1:45 am), daily sidewalk monitoring within a one-block radius, soundproofing, odor control, and appointment of a community liaison before building permit issuance.",
+   "verdict": "partially_supported",
+   "supported_text": "Restaurant CUA 2018-012727CUA at 3372 19th St (135 m away, NCT-MISSION) was approved March 2019 with conditions including hours (Tue–Sun 11 am to 1:45 am), daily sidewalk monitoring within a one-block radius, soundproofing, odor control, and appointment of a community liaison before building permit issuance.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Restaurant CUA 2018-012727CUA at 3372 19th St (135 m away, NCT-MISSION) was approved March 2019 with conditions including hours (Tue–Sun 11 am to 1:45 am), daily sidewalk monitoring within a one-block radius, soundproofing, odor control, and appointment of a community liaison before building permit issuance.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2018-012727CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "The concept needs Conditional Use Authorization here because the Mission Alcoholic Beverage Special Use District requires CU for any Restaurant in this sub-area (Planning Code § 249.60(f)(1)); the NCT-MISSION district table also lists Restaurant as conditional use, and the table caps total eating/d…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The concept needs Conditional Use Authorization here because the Mission Alcoholic Beverage Special Use District requires CU for any Restaurant in this sub-area (Planning Code § 249.60(f)(1)); the NCT-MISSION district table also lists Restaurant as conditional use, and the table caps total eating/d…",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2010.0852C",
+    "app:datasf_planning:2011.0894C",
+    "app:datasf_planning:2017-003058CUA",
+    "app:datasf_planning:2018-012727CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Mission Alcoholic Beverage Special Use District § 249.60(b)(1)(A) permits a Restaurant operating as a Bona Fide Eating Place to serve alcohol and allows its license to be transferred from inside or outside the district, adding no Conditional Use for the license itself.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Mission Alcoholic Beverage Special Use District § 249.60(b)(1)(A) permits a Restaurant operating as a Bona Fide Eating Place to serve alcohol and allows its license to be transferred from inside or outside the district, adding no Conditional Use for the license itself.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms the district exists but does not state the specific permissions or requirements; restaurant_permission is marked 'unknown'."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "The Mission Alcohol SUD requires every liquor establishment to comply with § 202.2 operating conditions, and new, relocated or expanded ones must provide exterior lighting, keep window signage to 33% and maintain 50% clear glazing on street-facing facades (Planning Code § 249.60(d)).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Mission Alcohol SUD requires every liquor establishment to comply with § 202.2 operating conditions, and new, relocated or expanded ones must provide exterior lighting, keep window signage to 33% and maintain 50% clear glazing on street-facing facades (Planning Code § 249.60(d)).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district and code section § 249.60 but does not state any of the specific requirements mentioned (§ 202.2 compliance, exterior lighting, 33% signage limit, 50% glazing)."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description states the business already holds an alcohol license but does not specify the type (beer and wine, or full liquor), so the rules cannot determine which ABC license rules and Mission Alcohol SUD transfer provisions apply.",
+   "verdict": "partially_supported",
+   "supported_text": "The description states the business already holds an alcohol license but does not specify the type (beer and wine, or full liquor), so the rules cannot determine which ABC license rules apply.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The description states the business already holds an alcohol license but does not specify the type (beer and wine, or full liquor), so the rules cannot determine which ABC license rules apply.",
+   "confidence": null,
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food or drink business needs a health permit to operate, issued by San Francisco Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff (California Retail Food Code §§ 114380–114381, San Francisco Health Code Article 8).",
+   "verdict": "partially_supported",
+   "supported_text": "A food or drink business needs a health permit to operate, issued by San Francisco Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A food or drink business needs a health permit to operate, issued by San Francisco Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is referred to the Planning Department for zoning review per Planning Code § 175(a).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is referred to the Planning Department for zoning review per Planning Code § 175(a).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the health permit process but does not mention referral to Planning Department or Planning Code § 175(a)."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and inspection without a hearing; the application is referred to Planning for review under Planning Code § 175(a).",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is issued after plan check and inspection without a hearing; the application is referred to Planning for review.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is issued after plan check and inspection without a hearing; the application is referred to Planning for review.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "No active ABC license of a type the rules read is on file at 2214 Mission St, so the records do not show what the space is used as now.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "No active ABC license of a type the rules read is on file at 2214 Mission St, so the records do not show what the space is used as now.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is a planning application for outdoor seating and does not mention ABC licenses."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "A restaurant or bar is Building Code Assembly Group A-2, and a space for fewer than 50 people is Group B; the description does not give whether the space is for fewer than 50, so the proposed occupancy group is not established (2022 California Building Code § 303).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A restaurant or bar is Building Code Assembly Group A-2, and a space for fewer than 50 people is Group B; the description does not give whether the space is for fewer than 50, so the proposed occupancy group is not established (2022 California Building Code § 303).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record discusses building permit process but does not state occupancy group classifications or the 50-person threshold."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The building permit status is insufficient information because the records do not show what the space was last used as, whether occupant load is fewer than 50 people, and the existing occupancy group (which only plans or inspection show), so the rules cannot determine whether this is a change of us…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The building permit status is insufficient information because the records do not show what the space was last used as, whether occupant load is fewer than 50 people, and the existing occupancy group (which only plans or inspection show), so the rules cannot determine whether this is a change of us…",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2010.0852C",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:outdoor:0",
+   "kind": "finding",
+   "original": "Planning Code § 202.2(a)(7) permits an outdoor activity area elsewhere on the lot as of right if it is on the ground level, operates only 9 am to 10 pm, is not associated with a Bar use, is seated only (for Restaurant or Limited Restaurant), and alcohol is dispensed only inside the premises or by wait staff at the patron's seat.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 202.2(a)(7) permits an outdoor activity area elsewhere on the lot as of right if it is on the ground level, operates only 9 am to 10 pm, is not associated with a Bar use, is seated only (for Restaurant or Limited Restaurant), and alcohol is dispensed only inside the premises or by wait staff at the patron's seat.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited records do not contain the text of Planning Code § 202.2(a)(7) or any of its provisions regarding outdoor activity areas."
+  },
+  {
+   "item_id": "row:outdoor:2",
+   "kind": "finding",
+   "original": "The 2010.0852C CUA application at this exact address proposed to 'install outdoor seating area on adjacent property under the same ownership, which is currently use as surface parking' and was withdrawn in June 2012 after 21 months without a decision.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 2010.0852C CUA application at this exact address proposed to 'install outdoor seating area on adjacent property under the same ownership, which is currently use as surface parking' and was withdrawn in June 2012 after 21 months without a decision.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2010.0852C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:outdoor",
+   "kind": "summary",
+   "original": "Insufficient information: the rules cannot determine whether the parking-lot outdoor area needs a Conditional Use Authorization without knowing whether it meets every limit of Planning Code § 202.2(a)(7) (ground level only, 9 am–10 pm hours, not a Bar use, seated only, alcohol dispensed inside or b…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Insufficient information: the rules cannot determine whether the parking-lot outdoor area needs a Conditional Use Authorization without knowing whether it meets every limit of Planning Code § 202.2(a)(7) (ground level only, 9 am–10 pm hours, not a Bar use, seated only, alcohol dispensed inside or b…",
+   "confidence": null,
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "zoning:NCT-MISSION",
+    "app:datasf_planning:2010.0852C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation capped at closing by 1:45 am or earlier (typically 10 pm for outdoor areas under § 202.2(a)(7) unless a later hour is granted by CUA). Basis: Restaurant CUA 2018-012727CUA at 3372 19th St in NCT-MISSION Mission Alcohol SUD was conditioned to operate Tue–Sun 11 am to 1:45 am. Planning Code § 202.2(a)(7) allows outdoor activity areas as of right only if they close by 10 pm.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation capped at closing by 1:45 am or earlier. Basis: Restaurant CUA 2018-012727CUA at 3372 19th St in NCT-MISSION Mission Alcohol SUD was conditioned to operate Tue–Sun 11 am to 1:45 am.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation capped at closing by 1:45 am or earlier. Basis: Restaurant CUA 2018-012727CUA at 3372 19th St in NCT-MISSION Mission Alcohol SUD was conditioned to operate Tue–Sun 11 am to 1:45 am.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2018-012727CUA",
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Daily sidewalk monitoring and cleaning within a one-block radius during business hours, in compliance with Police Code Article 1 § 34 and DPW Street and Sidewalk Maintenance Standards. Basis: Standard condition imposed on eating and drinking uses in NCT-MISSION per Motion No. 20397 (2018-012727CUA): 'the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours.'",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Daily sidewalk monitoring within a one-block radius during business hours, in compliance with Police Code Article 1 § 34 and DPW Street and Sidewalk Maintenance Standards. Basis: Standard condition imposed on eating and drinking uses in NCT-MISSION per Motion No. 20397 (2018-012727CUA): 'the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours.'",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record requires 'monitoring' the sidewalk within one-block radius to maintain it free of litter, but does not explicitly require 'cleaning' as stated in the expected condition."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing and noise control so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed San Francisco Noise Ordinance decibel levels. Basis: Standard condition for eating and drinking uses in enclosed spaces per 2018-012727CUA Motion: 'the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises.'",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Soundproofing and noise control so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed San Francisco Noise Ordinance decibel levels. Basis: Per 2018-012727CUA Motion: 'the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises.'",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows this condition in this case but does not state it is a standard condition."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Odor control equipment installed and maintained to prevent noxious or offensive odors from escaping the premises, in compliance with BAAQMD standards. Basis: Standard condition for restaurants per 2018-012727CUA Motion: 'appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises.'",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Odor control equipment installed and maintained to prevent noxious or offensive odors from escaping the premises. Basis: Standard condition for restaurants per 2018-012727CUA Motion: 'appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises.'",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record mentions BAAQMD as contact for information, not as compliance requirement."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Appointment of a community liaison officer before building permit issuance, with name and contact information provided to the Zoning Administrator and all registered neighborhood groups. Basis: Standard condition for CUAs in this corridor per 2018-012727CUA Motion: 'Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties.'",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Appointment of a community liaison officer before building permit issuance, with name and contact information provided to the Zoning Administrator and all registered neighborhood groups. Basis: 2018-012727CUA Motion: 'Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties.'",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows this condition but does not state it is standard for CUAs in this corridor."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Mission Alcoholic Beverage SUD operating requirements: exterior lighting, window signage limited to 33% of window area, and 50% clear glazing on street-facing facades (for new, relocated or expanded liquor establishments). Basis: Planning Code § 249.60(d) mandates these conditions for every new, relocated or expanded liquor establishment in the Mission Alcohol SUD and any with a license referred to Planning by ABC.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record states the controls are in the rule lines and not shown; it does not provide the specific requirements or what § 249.60(d) mandates."
+  },
+  {
+   "item_id": "condition:6",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling and composting storage in enclosed areas on the property, clearly labeled on building permit plans and meeting San Francisco Recycling Program standards. Basis: Standard condition for eating and drinking uses per 2018-012727CUA Motion and Planning Department template conditions: 'Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans.'",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, recycling and composting storage in enclosed areas on the property, clearly labeled on building permit plans and meeting San Francisco Recycling Program standards. Basis: Per 2018-012727CUA Motion: 'Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans.'",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record contains the condition and quote but doesn't state it's a standard condition for eating and drinking uses or from Planning Department template conditions."
+  },
+  {
+   "item_id": "condition:7",
+   "kind": "condition",
+   "original": "Expected condition: Outdoor seating area limited to seated patrons only (no standing service), with alcohol service only inside the premises or by wait staff at the patron's outdoor seat, if § 202.2(a)(7) applies. Basis: Planning Code § 202.2(a)(7) allows outdoor activity areas for Restaurant or Limited Restaurant as of right only if 'seated areas only, no standing' and 'alcohol dispensed only inside the premises or by wait staff at the patron's outdoor seat.'",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record identifies the overlay district but does not contain the text or requirements of Planning Code § 202.2(a)(7)."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If the Letter confirms a CUA is required, file a Conditional Use Authorization application with San Francisco Planning for the Restaurant use and outdoor activity area. What to say: Prepare the CUA application package: project description emphasizing that this is an existing restaurant (if true) or a new restaurant within the Mission Alcohol SUD bona fide eating place provisions, outdoor seating in a private parking lot not on the public right-of-way, limited cooking, no late-night hours, and compliance with § 202.2 good-neighbor policies. Include a site plan showing the parking-lot patio layout, seating count, barriers or fencing, and distance from residential windows. Include a neighborhood outreach summary documenting pre-application meetings with the Mission neighborhood association and abutting residents. Address the 2010 withdrawn CUA in the narrative: explain what has changed (e.g., revised design, reduced footprint, noise mitigation measures) and why this application will succeed. Emphasize compatibility with the high-density Mission corridor and cite the t…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records are approved CUAs at other addresses; they do not state the Mission Alcohol SUD provisions, § 202.2 policies, or mention a 2010 withdrawn CUA, nor do they describe filing requirements."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: In parallel with or after the CUA application, register the business entity with the California Secretary of State (LLC or corporation) and obtain an Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online at the California Secretary of State bizfile portal; allow 1–10 days. Apply for an EIN online at irs.gov (free, issued immediately Mon–Fri). These are prerequisites for the San Francisco business registration, sellers permit, and all other licenses.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business entity with the California Secretary of State (LLC or corporation) and obtain an Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online at the California Secretary of State bizfile portal; allow 1–10 days. Apply for an EIN online at irs.gov (free, issued immediately Mon–Fri). These are prerequisites for other licenses.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records don't mention timing relative to CUA or specifically name San Francisco business registration and sellers permit."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Register for a San Francisco Business Account Number (BAN) with the Treasurer & Tax Collector and file a Fictitious Business Name statement with the County Clerk. What to say: Apply online for a Business Registration Certificate within 30 days of starting business; fee is tiered by gross receipts (e.g., $55 up to $100k, $625 at $1–1.5M for 2026–27, plus $4 state fee); allow 1–5 days. File the Fictitious Business Name statement (if the public name differs from the entity name) in person or by mail with the SF County Clerk, then publish the statement in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days; total elapsed time ~35 days, fee ~$60–120. Every other city department asks for the BAN, so complete this step before filing health or building permit applications.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Register for a San Francisco Business Account Number (BAN) with the Treasurer & Tax Collector and file a Fictitious Business Name statement with the County Clerk. What to say: Apply online for a Business Registration Certificate within 30 days of starting business; fee is tiered by gross receipts (e.g., $55 up to $100k, $625 at $1–1.5M for 2026–27, plus $4 state fee); allow 1–5 days. File the Fictitious Business Name statement (if the public name differs from the entity name) in person or by mail with the SF County Clerk, then publish the statement in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days; total elapsed time ~35 days, fee ~$60–120. Every other city department asks for the BAN, so complete this step before filing health or building permit applications.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California Seller's Permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register online for a Seller's Permit at CDTFA (free, often issued same day); this is required before ABC will issue an alcohol license. If hiring employees, register with EDD for payroll taxes within 15 days of paying more than $100 in wages (free, online, 1–7 days). Obtain workers' compensation insurance from a licensed carrier or State Fund before the first employee starts (no government fee, but coverage is mandatory from day one).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Obtain a California Seller's Permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register online for a Seller's Permit at CDTFA (free, often issued same day); this is required before ABC will issue an alcohol license. If hiring employees, register with EDD for payroll taxes within 15 days of paying more than $100 in wages (free, online, 1–7 days). Obtain workers' compensation insurance from a licensed carrier or State Fund before the first employee starts (no government fee, but coverage is mandatory from day one).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sellers_permit",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.workers_comp_insurance"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: If the concept includes tenant improvements for the parking-lot patio (surfaces, utilities, barriers) or any kitchen work, submit a building permit application with DBI and route it to Planning for zoning review and DPH for plan check. What to say: Prepare construction drawings stamped by a licensed architect showing patio construction (deck, barriers, drainage, lighting, utilities), any kitchen or hood upgrades for limited cooking, and ADA access. Submit the building permit application online and select 'health' and 'planning' as routing stations. DBI will send the application to Planning for zoning review; if the CUA has been approved, Planning clears the permit over the counter. DPH plan check for a remodeled food facility costs $828–$2,207 flat fee and takes 21–60 days. Schedule a DPH pre-final inspection at ~80% complete and a final inspection at least two weeks in advance. DBI building permit fees are a percentage of construction valuation; allow 14–120 days for permit issuance depending on plan complexity, and budget $800–$15,000 for small tenant improvement work.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If the concept includes tenant improvements for the parking-lot patio (surfaces, utilities, barriers) or any kitchen work, submit a building permit application with DBI and route it to Planning for zoning review and DPH for plan check. What to say: Prepare construction drawings stamped by a licensed architect showing patio construction (deck, barriers, drainage, lighting, utilities), any kitchen or hood upgrades for limited cooking, and ADA access. Submit the building permit application online and select 'health' and 'planning' as routing stations. DBI will send the application to Planning for zoning review. DPH plan check for a remodeled food facility takes 21–60 days. Schedule a DPH pre-final inspection at ~80% complete and a final inspection at least two weeks in advance. DBI building permit fees are a percentage of construction valuation; allow 14–120 days for permit issuance depending on plan complexity, and budget $800–$15,000 for small tenant improvement work.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "DPH plan check fee upper bound is $2,500 in the record, not $2,207. The CUA approval and over-the-counter clearance claim is not in the cited records."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: If the concept involves a grease interceptor or any cooking equipment, submit FOG program registration paperwork to SFPUC before the final building inspection. What to say: Contact SFPUC Wastewater Enterprise for a Discharger Category assignment (1–3) based on the limited cooking described; install the required grease-capturing equipment per the category, and submit the Installation Verification Form to SFPUC to earn a 14.2% sewer bill reduction. Allow 14–45 days for registration, with fees up to $500 for plan review if required. An undersized or missing interceptor will block DBI final sign-off.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: If the concept involves a grease interceptor or any cooking equipment, submit FOG program registration paperwork to SFPUC before the final building inspection. What to say: Contact SFPUC Wastewater Enterprise for a Discharger Category assignment (1–3) based on the limited cooking described; install the required grease-capturing equipment per the category, and submit the Installation Verification Form to SFPUC to earn a 14.2% sewer bill reduction. Allow 14–45 days for registration, with fees up to $500 for plan review if required. An undersized or missing interceptor will block DBI final sign-off.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Apply for a Health Permit to Operate at least one month before the planned opening, after DPH plan check is approved and a certified food safety manager is on staff. What to say: Register online through the DPH Environmental Health portal with the BAN, Location ID (LIN) and federal EIN. Pay the $470 Permit to Operate application fee (includes initial inspection; 2026–27 annual license fee is $0 for restaurants). Ensure one owner or employee has passed an ANSI-accredited food safety manager exam (ServSafe, Prometric, NRFSP; ~$125–$200 course plus exam, valid 5 years) and all food employees have California Food Handler Cards (~$7–$15, online, valid 3 years). Schedule the pre-opening inspection at least two weeks in advance; the permit is issued after the inspector confirms the facility matches approved plans, equipment is installed, hand sinks and hot water are operational, and the food safety manager certificate is on file. Walk the space against the DPH checklist a week before the inspection to avoid failed inspections that push openings by 2–3 weeks. Allow 14–4…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Apply for a Health Permit to Operate at least one month before the planned opening, after DPH plan check is approved and a certified food safety manager is on staff. What to say: Register online through the DPH Environmental Health portal with the BAN, Location ID (LIN) and federal EIN. Pay the $470 Permit to Operate application fee (includes initial inspection; 2026–27 annual license fee is $0 for restaurants). Ensure one owner or employee has passed an ANSI-accredited food safety manager exam (ServSafe, Prometric, NRFSP; ~$125–$200 course plus exam, valid 5 years) and all food employees have California Food Handler Cards (~$7–$15, online, valid 3 years). Schedule the pre-opening inspection at least two weeks in advance; the permit is issued after the inspector confirms the facility matches approved plans, equipment is installed, hand sinks and hot water are operational, and the food safety manager certificate is on file. Walk the space against the DPH checklist a week before the inspection to avoid failed inspections that push openings by 2–3 weeks. Allow 14–4…",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:8",
+   "kind": "playbook",
+   "original": "Filing step: If the concept involves recorded music, obtain ASCAP and BMI public performance licenses before opening. What to say: Apply online for blanket licenses from ASCAP and BMI (not government permits, but required by federal copyright law for any business playing music publicly). Annual fees are formula-based on occupancy and music use (typically $300–$2,500 each); licenses are effective immediately upon payment. Most venues need both because their catalogs do not overlap. Alternatively, subscribe to a licensed commercial music service (e.g., Soundtrack Your Brand) that includes performance rights. This takes under a week and operators often forget it entirely, then receive demand letters after opening.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: If the concept involves recorded music, obtain ASCAP and BMI public performance licenses before opening. What to say: Apply online for blanket licenses from ASCAP and BMI (not government permits, but required by federal copyright law for any business playing music publicly). Annual fees are formula-based on occupancy and music use (typically $300–$2,500 each); licenses are effective immediately upon payment. Most venues need both because their catalogs do not overlap. Alternatively, subscribe to a licensed commercial music service (e.g., Soundtrack Your Brand) that includes performance rights. This takes under a week and operators often forget it entirely, then receive demand letters after opening.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:9",
+   "kind": "playbook",
+   "original": "Filing step: If alcohol is served, confirm that the existing ABC license held by the operator is active, transferred to this address, and the correct type (Type 41 for beer and wine, Type 47 for full liquor in a restaurant). What to say: Contact ABC to verify the license status and submit a premises-to-premises transfer application if the license is currently at another address. ABC will refer the transfer to San Francisco Planning for zoning sign-off; if the CUA has been approved, Planning will approve the referral. A Type 41 (beer and wine, eating place) transfer takes 60–120 days if unprotested; a Type 47 (full liquor, eating place) transfer takes 90–240 days including escrow if purchased on the open market ($100k–$450k in SF). Ensure all alcohol servers and managers complete Responsible Beverage Service (RBS) training within 60 days of hire (ABC RBS Portal, $3 registration plus ~$10–$25 course, 1–7 days). Post the ABC license and RBS certification list on site for inspections.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If alcohol is served, confirm that the existing ABC license held by the operator is active, transferred to this address, and the correct type. What to say: Ensure all alcohol servers and managers complete Responsible Beverage Service (RBS) training within 60 days of hire (ABC RBS Portal, $3 registration plus ~$10–$25 course, 1–7 days). Post the RBS certification list on site for inspections.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: If alcohol is served, confirm that the existing ABC license held by the operator is active, transferred to this address, and the correct type. What to say: Ensure all alcohol servers and managers complete Responsible Beverage Service (RBS) training within 60 days of hire (ABC RBS Portal, $3 registration plus ~$10–$25 course, 1–7 days). Post the RBS certification list on site for inspections.",
+   "confidence": "needs_confirmation",
+   "citations": [
+    "catalog:ca.rbs_training"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $4,900 to $22,000. Notes: The day range is the time to obtain the Conditional Use Authorization (120–300 days from filing to approval per the 2017-003058CUA and 2018-012727CUA comparables) and Health Permit to Operate (14–45 days after plan check approval). This is a time to approval for those two approvals in the entitlement path. It does not include time to a withdrawal or a denial. The cost range covers the CUA filing fee (~$3,100 base for no-construction CUA, 2026–27 schedule), health plan check ($828–$2,207), health permit to operate ($470), business registration ($55–$625 depending on gross receipts), and entity formation ($70–$150), totaling roughly $4,900–$6,500 in government fees. If a building permit is required for patio construction or kitchen work, add 14–120 days and $800–$15,000 in DBI fees (shown as the high end of the range). The alcohol license row status is insufficient information so no ABC time or cost is included here; if a Type 41 or Type 47 transfer is needed, add 60–240 days and $1,000–$450,000 (license purchase cost) to both ranges. The zoning row status is further review, meaning a CUA is needed, and the outdoor row status is insufficient information, meaning the outdoor area may also need CUA or may be permitted as of right under § 202.2(a)(7); the playbook assumes both are resolved by the single Restaurant plus outdoor area CUA filed in Step 2, so the timeline reflects one CUA hearing. The 2010 withdrawn CUA at this exact address (21 months without decision per site history) is a red flag; the timeline here assumes a successful application with neighborhood support and revised design, not a repeat withdrawal.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $4,900 to $22,000. Notes: The day range is the time to obtain the Conditional Use Authorization (120–300 days from filing to approval per the 2017-003058CUA and 2018-012727CUA comparables) and Health Permit to Operate (14–45 days after plan check approval). This is a time to approval for those two approvals in the entitlement path. It does not include time to a withdrawal or a denial. The cost range covers health plan check ($828–$2,207), health permit to operate ($470), business registration ($55–$625 depending on gross receipts). If a building permit is required for patio construction or kitchen work, add 14–120 days and $800–$15,000 in DBI fees (shown as the high end of the range). If a Type 41 or Type 47 transfer is needed, add 60–240 days and $1,000–$450,000 (license purchase cost) to both ranges. The 2010 withdrawn CUA at this exact address (21 months without decision) is a red flag.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $4,900 to $22,000. Notes: The day range is the time to obtain the Conditional Use Authorization (120–300 days from filing to approval per the 2017-003058CUA and 2018-012727CUA comparables) and Health Permit to Operate (14–45 days after plan check approval). This is a time to approval for those two approvals in the entitlement path. It does not include time to a withdrawal or a denial. The cost range covers the CUA filing fee (~$3,100 base for no-construction CUA, 2026–27 schedule), health plan check ($828–$2,207), health permit to operate ($470), business registration ($55–$625 depending on gross receipts), and entity formation ($70–$150), totaling roughly $4,900–$6,500 in government fees. If a building permit is required for patio construction or kitchen work, add 14–120 days and $800–$15,000 in DBI fees (shown as the high end of the range). The alcohol license row status is insufficient information so no ABC time or cost is included here; if a Type 41 or Type 47 transfer is needed, add 60–240 days and $1,000–$450,000 (license purchase cost) to both ranges. The zoning row status is further review, meaning a CUA is needed, and the outdoor row status is insufficient information, meaning the outdoor area may also need CUA or may be permitted as of right under § 202.2(a)(7); the playbook assumes both are resolved by the single Restaurant plus outdoor area CUA filed in Step 2, so the timeline reflects one CUA hearing. The 2010 withdrawn CUA at this exact address (21 months without decision per site history) is a red flag; the timeline here assumes a successful application with neighborhood support and revised design, not a repeat withdrawal.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records do not state the CUA filing fee ($3,100), entity formation cost ($70–$150), § 202.2(a)(7), or the various interpretations about row statuses and what the timeline assumes."
+  }
+ ]
+}

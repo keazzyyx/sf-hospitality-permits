@@ -1,0 +1,42 @@
+# deps
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# builds
+.next/
+out/
+dist/
+build/
+*.egg-info/
+# env
+.env
+.env.*
+!.env.example
+# misc
+.DS_Store
+*.log
+coverage/
+playwright-report/
+test-results/
+.vercel
+.turbo
+supabase/.branches
+supabase/.temp
+
+# precedent ingestion output (raw responses + JSONL snapshots)
+data/
+# ...but not the rule data the API ships with (dated zoning controls, census tracts)
+!apps/api/app/memo/data/
+# ...and not the permit catalog (the checklist and its CI schema job read it)
+!packages/catalog/data/
+
+# agent worktrees
+.claude/worktrees/
+
+# conditions search page: local links to cached motion PDFs, never committed
+tools/conditions-search/pdf/
+!tools/conditions-search/data/

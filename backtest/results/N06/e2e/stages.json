@@ -1,0 +1,403 @@
+{
+ "records": {
+  "summary": "659 Columbus Ave operates as Piazza Pellegrini, a full-service restaurant with an active Type 47 liquor license that has been continuously permitted since 1995. The site history shows three prior Conditional Use Authorizations: the original 1,000 sq ft restaurant in 1995, expansion to over 2,000 sq ft in 2009, and addition of a full bar in 2003. The North Beach Special Use District rule at Planning Code §780.3(c)(1)(B) explicitly prohibits a restaurant from enlarging its existing space, which the pathway analysis confirms makes this proposed 1,486 sq ft to 2,820 sq ft expansion \"not permitted\" even though the restaurant use itself continues. The immediate area is densely packed with 20 food/drink businesses and 11 on-sale ABC licenses within 500 ft, with 42 licenses within 1,000 ft.",
+  "flags": [
+   {
+    "flag": "North Beach Special Use District prohibits enlarging an existing restaurant space per Planning Code §780.3(c)(1)(B); the proposal increases floor area from 1,486 to 2,820 sq ft",
+    "citations": [
+     "overlay:static:sf:north_beach_sud",
+     "app:datasf_planning:2009.0798C"
+    ]
+   },
+   {
+    "flag": "Active Type 47 full-bar license at the address since May 2021, originally authorized by CUA in 2003",
+    "citations": [
+     "license:abc:624380",
+     "app:datasf_planning:2003.0924C"
+    ]
+   },
+   {
+    "flag": "Prior restaurant expansion CUA approved in 2010 for use size over 2,000 sq ft at this same address",
+    "citations": [
+     "app:datasf_planning:2009.0798C"
+    ]
+   },
+   {
+    "flag": "Limited Live Performance permit approved February 2023 for indoor/outdoor entertainment with amplified sound in private lot",
+    "citations": [
+     "app:datasf_planning:2023-001062MIS"
+    ]
+   },
+   {
+    "flag": "Restaurant use continuously permitted at this address since 1995 through multiple ownership changes and expansions",
+    "citations": [
+     "app:datasf_planning:1995.322C",
+     "app:datasf_planning:2003.0924C",
+     "app:datasf_planning:2009.0798C"
+    ]
+   },
+   {
+    "flag": "High density: 11 active on-sale ABC licenses within 500 ft and 42 within 1,000 ft triggers undue concentration flag",
+    "citations": [
+     "stat:density"
+    ]
+   },
+   {
+    "flag": "Only 7 dated use decisions in NCD-NORTH BEACH within 1,000 ft over last 10 years; too few for a statistically meaningful approval rate",
+    "citations": [
+     "stat:base_rate"
+    ]
+   },
+   {
+    "flag": "Inside Priority Equity Geographies Special Use District, which may offer fee waivers or expedited processing",
+    "citations": [
+     "overlay:datasf_sud:priority_equity_geographies_sud"
+    ]
+   }
+  ],
+  "noteworthy_application_ids": [
+   "datasf_planning:2009.0798C",
+   "datasf_planning:2003.0924C",
+   "datasf_planning:1995.322C",
+   "datasf_planning:2023-001062MIS",
+   "datasf_planning:2015-014718CUA",
+   "datasf_planning:2021-009021MIS",
+   "datasf_planning:2019-013418CUA"
+  ],
+  "data_gaps": [
+   "No conditions text extracted for the 2009 expansion CUA or 2003 full-bar CUA; cannot confirm whether prior approvals restricted further enlargement",
+   "No hearing transcripts or commission discussion available to understand how Planning evaluated the 2009 expansion under the North Beach SUD rules",
+   "Cannot determine whether the 2009 CUA was approved before or after the current North Beach SUD enlargement prohibition took effect",
+   "Limited Live Performance permit approved in 2023 has no conditions shown; unclear what restrictions apply to outdoor amplified sound",
+   "No ABC license conditions data for the Type 47 at this address to confirm hours or operational restrictions"
+  ]
+ },
+ "precedent": {
+  "comparables": [
+   {
+    "application_id": "datasf_planning:2021-009021MIS",
+    "why_comparable": "Restaurant at 716 Columbus (91 meters away), same North Beach NCD and SUD. Agency referral approving change from Limited Restaurant to full Restaurant under temporary COVID-era ordinance relief.",
+    "key_takeaway": "This agency referral (not a use decision) shows Planning approved expansion of restaurant service scope on the same block in 2021, though under special legislation. It demonstrates that restaurant use changes in the North Beach SUD have continued to be approved, but through legislation rather than standard CUA process."
+   },
+   {
+    "application_id": "datasf_planning:2019-013418CUA",
+    "why_comparable": "Restaurant at 526 Columbus (220 meters), same North Beach NCD and SUD. CUA approved adding a full kitchen to an established restaurant in basement and ground floor.",
+    "key_takeaway": "This use decision approved intensification of an existing restaurant (adding full kitchen) in 2020 within the North Beach SUD. Filed July 2019, approved June 2020 (11 months). Standard operational conditions included odor control, noise limits, sidewalk maintenance and community liaison requirements."
+   },
+   {
+    "application_id": "datasf_planning:2015-014178CUA",
+    "why_comparable": "Restaurant at 653 Union St (145 meters), same North Beach NCD. CUA approved upgrading liquor license from Type 41 to Type 47 in an existing restaurant.",
+    "key_takeaway": "This use decision shows that intensifying an existing restaurant's alcohol service required CUA approval but was granted. Filed October 2015, approved March 2016 (about 4.5 months). Since the current concept serves no alcohol, it avoids this layer of review."
+   },
+   {
+    "application_id": "datasf_planning:2023-002096MIS",
+    "why_comparable": "Restaurant at 1609 Powell St (174 meters), same North Beach NCD and SUD. Agency referral approving person-to-person transfer of Type 41 ABC license with continuation of existing restaurant use.",
+    "key_takeaway": "This agency referral approved in March 2023 shows that ABC license transfers for existing restaurants are routinely approved as continuation of use. However, this is a referral response, not a use decision requiring Commission hearing."
+   },
+   {
+    "application_id": "datasf_planning:2021-001215MIS",
+    "why_comparable": "Restaurant at 725 Columbus (63 meters, closest candidate), same North Beach NCD and SUD. Agency referral approving ABC License 41 for existing restaurant use (Piccolo Forno).",
+    "key_takeaway": "This agency referral approved in March 2021 shows Planning routinely recommends approval for ABC licenses at established restaurants in the immediate vicinity. However, it is an agency referral for continuation of existing use, not a CUA for physical expansion."
+   },
+   {
+    "application_id": "datasf_planning:2022-009279MIS",
+    "why_comparable": "Restaurant at 532 Columbus (210 meters), same North Beach NCD and SUD. Agency referral for Type 47 ABC license for existing restaurant (Flour and Water).",
+    "key_takeaway": "This agency referral from October 2022 shows that even Type 47 full-bar licenses are approved for existing restaurants in the North Beach corridor as continuation of use. All nearby referrals since 2019 have been approved, but none addressed physical expansion of restaurant square footage."
+   },
+   {
+    "application_id": "datasf_planning:2021-003881MIS",
+    "why_comparable": "Restaurant at 716 Columbus (91 meters), same North Beach NCD and SUD. Agency referral approving ABC Type 41 license for restaurant use under Ordinance 182-20.",
+    "key_takeaway": "This agency referral from April 2021 at the same address as 2021-009021MIS confirms restaurant use is permitted at this Columbus Avenue location following 2020 legislation. Both are referrals, not use decisions testing physical expansion rules."
+   },
+   {
+    "application_id": "datasf_planning:2022-001132MIS",
+    "why_comparable": "Restaurant at 1609 Powell St (174 meters), same North Beach NCD and SUD. Agency referral approving DPH restaurant referral for continuation of existing restaurant use.",
+    "key_takeaway": "This agency referral from February 2022 shows standard health permit reviews are routinely approved for existing restaurants in the North Beach SUD. Like all recent nearby actions, it addresses continuation, not expansion, of restaurant space."
+   },
+   {
+    "application_id": "datasf_planning:2020-011712MIS",
+    "why_comparable": "Restaurant at 561 Columbus (175 meters), same North Beach NCD and SUD. Agency referral approving ABC Type 41 for new restaurant (North Beach Gyros) as continuation of existing restaurant use.",
+    "key_takeaway": "This agency referral from December 2020 approved a Type 41 license for a restaurant in a space last legally occupied by a restaurant. It demonstrates the SUD rule allows restaurant-to-restaurant succession without CUA, but does not address enlarging the footprint."
+   }
+  ],
+  "patterns": [
+   {
+    "pattern": "All 19 Planning actions for restaurants in the North Beach NCD within 500 ft since 2019 were approved. However, 17 of 19 were agency referrals (ABC license reviews, DPH health permits) labeled as continuation of existing use, not use decisions requiring Commission hearings.",
+    "citations": [
+     "app:datasf_planning:2023-002096MIS",
+     "app:datasf_planning:2022-009279MIS",
+     "app:datasf_planning:2022-001132MIS",
+     "app:datasf_planning:2021-009021MIS",
+     "app:datasf_planning:2021-003881MIS",
+     "app:datasf_planning:2021-001215MIS",
+     "app:datasf_planning:2020-011712MIS",
+     "app:datasf_planning:2020-003400MIS",
+     "app:datasf_planning:2019-022493MIS",
+     "app:datasf_planning:2019-022336MIS",
+     "app:datasf_planning:2019-015543MIS",
+     "app:datasf_planning:2019-012733MIS"
+    ]
+   },
+   {
+    "pattern": "Only two use decisions requiring Commission hearings appear in the North Beach NCD candidates since 2015: the 2019-013418CUA adding a full kitchen (approved June 2020 after 11 months) and the 2015-014178CUA upgrading a liquor license (approved March 2016 after 4.5 months). Both were approved with standard restaurant operating conditions.",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA",
+     "app:datasf_planning:2015-014178CUA"
+    ]
+   },
+   {
+    "pattern": "Restaurant CUAs approved in the North Beach NCD imposed standard operating conditions: odor control equipment, noise insulation, sidewalk maintenance within one-block radius, garbage kept indoors, and appointment of a community liaison officer.",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "pattern": "Special legislation in 2020 (Ordinance 182-20) temporarily allowed Limited Restaurants in the North Beach SUD to convert to full Restaurants without CUA if they operated as bona fide eating places for three years. This temporary pathway expired and does not apply to physical expansions.",
+    "citations": [
+     "app:datasf_planning:2021-009021MIS",
+     "app:datasf_planning:2021-003881MIS"
+    ]
+   },
+   {
+    "pattern": "ABC license transfers and upgrades at existing North Beach restaurants have been routinely approved as continuation of use, including Type 41 beer-and-wine and Type 47 full-bar licenses, when the restaurant space itself is not being enlarged.",
+    "citations": [
+     "app:datasf_planning:2023-002096MIS",
+     "app:datasf_planning:2022-009279MIS",
+     "app:datasf_planning:2021-001215MIS",
+     "app:datasf_planning:2020-011712MIS",
+     "app:datasf_planning:2019-022493MIS"
+    ]
+   }
+  ],
+  "approval_signals": [
+   "Continuation of an existing, long-established restaurant use",
+   "No alcohol service (avoids the additional CUA scrutiny applied to bar uses and liquor license upgrades)",
+   "Standard restaurant operations without late-night hours, entertainment, or outdoor amplified sound",
+   "Restaurant-to-restaurant transitions in the North Beach SUD are routinely approved when space is not enlarged"
+  ],
+  "denial_signals": [
+   "North Beach Special Use District Planning Code §780.3(c)(1)(B) expressly prohibits enlarging existing restaurant space",
+   "No documented use decisions approving restaurant square-footage expansion in the North Beach SUD in the candidate set since 2010",
+   "The record shows only agency referrals (continuation of use) have been approved since 2019; physical expansions requiring CUAs are absent from the recent record",
+   "High alcohol license concentration (11 on-sale licenses within 500 ft) signals saturated dining/drinking environment"
+  ]
+ },
+ "risk": {
+  "concept_summary": "A restaurant at 659 Columbus Ave in the North Beach NCD seeks to expand from 1,486 sq ft to 2,820 sq ft with tenant improvements, limited cooking, no alcohol service, and recorded music.",
+  "overall": {
+   "next_step": "Request a written Letter of Determination from San Francisco Planning to confirm whether Planning Code §780.3(c)(1)(B) prohibits this expansion, and whether any variance or exception pathway exists, before signing the lease or filing any application."
+  },
+  "approvals": [
+   {
+    "area": "zoning_use",
+    "summary": "A Conditional Use Authorization is needed because the restaurant is over 2,000 sq ft and is enlarging a nonconforming use, but the North Beach Special Use District rule at §780.3(c)(1)(B) prohibits enlarging an existing restaurant space, so the status is further review.",
+    "findings": [
+     {
+      "text": "An active Type 47 on-sale general eating-place license has been on file at 659 Columbus Ave since May 2021, indicating the space operates as a restaurant.",
+      "confidence": "verified",
+      "citations": [
+       "app:abc:624380"
+      ]
+     },
+     {
+      "text": "Planning Code §780.3(c)(1)(B) provides that a new restaurant in the North Beach Special Use District may be approved by Conditional Use on the first story only if the Zoning Administrator first finds the space is currently or was last legally occupied by a restaurant or bar, that use was not discontinued or abandoned, and the new restaurant will not enlarge the space.",
+      "confidence": "verified",
+      "citations": [
+       "overlay:static:sf:north_beach_sud"
+      ]
+     },
+     {
+      "text": "The concept proposes to increase the floor area from 1,486 sq ft to 2,820 sq ft, which is an enlargement, so the condition that the new restaurant will not enlarge the space is not met.",
+      "confidence": "verified",
+      "citations": [
+       "overlay:static:sf:north_beach_sud"
+      ]
+     },
+     {
+      "text": "Three prior Conditional Use Authorizations are on file at this address: the original 1,000 sq ft restaurant approved in August 1995, expansion to over 2,000 sq ft approved in February 2010, and addition of a full bar approved in December 2003.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:1995.322C",
+       "app:datasf_planning:2009.0798C",
+       "app:datasf_planning:2003.0924C"
+      ]
+     },
+     {
+      "text": "The 2010 Conditional Use Authorization (case 2009.0798C) approved expansion of the full-service restaurant for use size over 2,000 sq ft, demonstrating that a prior enlargement was authorized under the North Beach rules as they stood in 2010.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2009.0798C"
+      ]
+     },
+     {
+      "text": "No conditions text is available for the 2009 or 2003 CUAs, and no record in the candidate set since 2010 shows a restaurant square-footage expansion approved in the North Beach Special Use District, so whether current Planning practice permits enlargement despite §780.3(c)(1)(B) is not established.",
+      "confidence": "needs_confirmation",
+      "citations": []
+     }
+    ]
+   },
+   {
+    "area": "health",
+    "summary": "A health permit to operate is allowed for a food facility with limited cooking; it is issued after plan check and inspection without a discretionary hearing.",
+    "findings": [
+     {
+      "text": "California Retail Food Code §§114380–114381 and San Francisco Health Code Article 8 require a health permit to operate for any food or drink business, issued after plan check and inspection.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_permit"
+      ]
+     },
+     {
+      "text": "The health permit application is sent to the Planning Department for a zoning review referral, which is a review step inside the health permit approval, not a separate approval.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_permit"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "building_change_of_use",
+    "summary": "A building permit is needed for tenant improvements, but whether a change of occupancy is required is insufficient information because the number of occupants and the existing occupancy group are not known.",
+    "findings": [
+     {
+      "text": "The California Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B, so the proposed occupancy group depends on the number of occupants.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "The description does not state whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so a change of occupancy is not established.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "San Francisco Building Code §106A.1 requires a building permit for tenant improvements, alterations, and any change of occupancy, with fees based on a percentage of construction valuation.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     }
+    ]
+   }
+  ],
+  "could_not_establish": [
+   {
+    "question": "Whether the business is part of a chain that shares its name, look or menu with other locations (formula retail).",
+    "needs": "applicant_history",
+    "ask": "The applicant or the lease agreement; formula retail is not permitted in the North Beach NCD."
+   },
+   {
+    "question": "Whether the proposal changes a condition of the 2010, 2003, or 1995 Conditional Use Authorizations on file at this address.",
+    "needs": "applicant_history",
+    "ask": "The applicant and the conditions of approval in Planning Commission Motions 17787 (2010), 16696 (2003), and 13945 (1995)."
+   },
+   {
+    "question": "Whether the space is for fewer than 50 people, which determines the proposed occupancy group.",
+    "needs": "plans",
+    "ask": "Plans showing the seating layout, standing area, and occupant load calculation per California Building Code."
+   },
+   {
+    "question": "The existing occupancy group of the space at 659 Columbus Ave.",
+    "needs": "inspection",
+    "ask": "The Certificate of Occupancy on file with the Department of Building Inspection, or a code analysis of the existing space."
+   },
+   {
+    "question": "Whether Planning Code §780.3(c)(1)(B) absolutely prohibits this expansion, or whether a variance, exception, or discretionary finding exists that would allow the Zoning Administrator or Planning Commission to approve it.",
+    "needs": "agency_answer",
+    "ask": "San Francisco Planning Department, via a pre-application meeting or a Letter of Determination."
+   },
+   {
+    "question": "Whether the 2010 CUA for expansion to over 2,000 sq ft was approved before or after the current North Beach Special Use District enlargement prohibition took effect, and whether that CUA exhausted the right to expand further.",
+    "needs": "agency_answer",
+    "ask": "San Francisco Planning Department and the Planning Code historical archive; the rule line cites §780.3 as in force since before January 2022, but the 2010 approval suggests the rule may have been interpreted differently then."
+   },
+   {
+    "question": "The condition of the kitchen equipment, hood, and grease interceptor currently installed at 659 Columbus Ave, and whether they meet current code for the proposed expanded use.",
+    "needs": "inspection",
+    "ask": "A licensed contractor or MEP engineer, and the Department of Public Health plan check comments."
+   }
+  ],
+  "expected_conditions": [
+   {
+    "condition": "The authorization is valid for three years; a building permit must be issued and construction commenced within that period or the authorization lapses.",
+    "basis": "This is a standard condition in every San Francisco Planning Commission CUA. The 2019 CUA at 526 Columbus (case 2019-013418CUA) included validity, expiration, and diligent pursuit conditions requiring a building permit within three years and continuous construction to completion.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "condition": "Odor control equipment must be installed, maintained, and shown on building permit plans to prevent noxious or offensive odors from escaping the premises; odor control ducting shall not be applied to the primary façade.",
+    "basis": "The 2019 CUA at 526 Columbus required odor control equipment details and manufacturer specifications on the building permit plans, and prohibited ducting on the primary façade. This is standard for restaurant CUAs with cooking.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "condition": "The premises shall be soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels in the San Francisco Noise Control Ordinance.",
+    "basis": "The 2019 CUA at 526 Columbus imposed this noise condition. It is standard for eating and drinking uses in dense residential areas like North Beach.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "condition": "The operator shall maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and shall daily monitor the sidewalk within a one-block radius to keep it free of litter associated with the business during business hours.",
+    "basis": "The 2019 CUA at 526 Columbus included this sidewalk maintenance condition in compliance with San Francisco Police Code Article 1, Section 34. It is standard for restaurants in the North Beach NCD.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "condition": "Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company.",
+    "basis": "The 2019 CUA at 526 Columbus required this, and it is standard for eating and drinking uses under San Francisco Department of Public Works guidelines.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   },
+   {
+    "condition": "The project sponsor shall appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide the Zoning Administrator and all registered neighborhood groups with the liaison's name, address, and telephone number.",
+    "basis": "The 2019 CUA at 526 Columbus required appointment of a community liaison prior to issuance of a building permit. This is a standard condition for uses requiring CUA in neighborhood commercial districts.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-013418CUA"
+    ]
+   }
+  ],
+  "filing_playbook": [
+   {
+    "step": 1,
+    "action": "Request a pre-application meeting and a written Letter of Determination from San Francisco Planning Department.",
+    "what_to_say": "State that you propose to expand an existing restaurant at 659 Columbus Ave from 1,486 sq ft to 2,820 sq ft, that the space has been continuously operated as a restaurant since 1995 and was last expanded in 2010 under CUA case 2009.0798C, and ask whether Planning Code §780.3(c)(1)(B) prohibits this expansion and whether any discretionary pathway exists. Request that the planner review the 2010 CUA file and the history of this rule in the North Beach Special Use District. Ask whether the 2010 approval exhausted the right to expand, or whether the rule has been interpreted to allow further enlargement under certain findings.",
+    "confidence": "needs_confirmation",
+    "citations": []
+   }
+  ],
+  "timeline_cost": {
+   "days_min": 0,
+   "days_max": 0,
+   "cost_min_usd": 0.0,
+   "cost_max_usd": 0.0,
+   "notes": "No timeline or cost is given because Planning Code §780.3(c)(1)(B) prohibits enlarging an existing restaurant space in the North Beach Special Use District, and the pathway analysis confirms the concept as described is not permitted at this address. The rule lines state that a new restaurant may be approved by Conditional Use only if the Zoning Administrator first finds the new restaurant will not enlarge the space, and the space is to be enlarged from 1,486 sq ft to 2,820 sq ft. The 2010 CUA (case 2009.0798C) approved expansion to over 2,000 sq ft, but no record in the candidate set since 2010 shows a restaurant square-footage expansion approved under this rule, and the current rule text does not provide an exception for existing restaurants. Until Planning confirms in writing whether any discretionary pathway exists, no application should be filed and no cost or timeline for approval can be estimated. If Planning confirms there is no approval path, the only options are to operate within the existing 1,486 sq ft footprint, seek a legislative amendment to the North Beach SUD, or choose a different location.",
+   "confidence": "needs_confirmation",
+   "citations": [
+    "overlay:static:sf:north_beach_sud",
+    "app:datasf_planning:2009.0798C"
+   ]
+  }
+ }
+}

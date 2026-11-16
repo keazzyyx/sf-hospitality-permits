@@ -1,0 +1,1381 @@
+{
+ "format_version": 2,
+ "address": "767 Bush St, San Francisco, CA 94108",
+ "lat": 37.789805944845014,
+ "lng": -122.4098397585151,
+ "parcel": "0284/018",
+ "concept_summary": "A restaurant with full commercial kitchen, five employees, and tenant improvements at 767 Bush St in San Francisco's RC-4 zoning district, converting from a prior dry cleaner use.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 3 approvals this concept needs: 1 further review (building permit and change of use), 1 insufficient information (zoning and use), 1 allowed (health permit).",
+  "next_step": "Confirm with Planning whether the business is part of a chain (formula retail) and provide the floor area in square feet; these two inputs are required to determine whether a Conditional Use Authorization hearing is needed or the restaurant is permitted by right.",
+  "citations": [
+   "zoning:RC-4"
+  ]
+ },
+ "pathway": {
+  "use": "restaurant",
+  "use_label": "Restaurant",
+  "district": "RC-4",
+  "permission": "principal",
+  "permission_label": "Permitted",
+  "existing_use": null,
+  "change_of_use": "yes",
+  "change_of_use_label": "Change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.cell",
+    "text": "Zoning district RC-4: the table has no row for a Restaurant; the row \"Retail Sales and Service Uses*\" governs, and on the first story it reads principally permitted (Planning Code § 209.3, in force since before 2022-01-01).",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   },
+   {
+    "rule_id": "T1.first_story",
+    "text": "No story is stated, so the first story was read.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.no_limit",
+    "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 767 Bush St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "Another use to Restaurant is a change of use, with the last use of the space as described.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   }
+  ],
+  "rules_date": "2023-07-18",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district RC-4: the table has no row for a Restaurant; the row \"Retail Sales and Service Uses*\" governs, and on the first story it reads principally permitted (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     },
+     {
+      "rule_id": "T1.first_story",
+      "text": "No story is stated, so the first story was read.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.none",
+      "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the business is part of a chain that shares its name, look or menu with other locations"
+    ],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district RC-4: formula retail is a conditional use (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, another use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "yes",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 767 Bush St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Another use to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_established",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "On 18 July 2023 a change of use to Restaurant in a Residential district needed neighbourhood notice, except a change to a principally permitted use in a limited commercial use or a limited corner commercial use (Planning Code §§ 186, 231). The rules cannot tell whether the space is one, so whether notice was needed is not established.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (b)(1)(C), (d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "change.notice",
+     "text": "On 18 July 2023 establishing a Formula Retail use in a Residential district needed neighbourhood notice, whether or not the use changed. The description does not say whether the business is part of a chain, so whether notice was needed is not established.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (b)(1)(C), (d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Use authorization (not decided: an input is missing)",
+   "agency": "San Francisco Planning",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district RC-4: the table has no row for a Restaurant; the row \"Retail Sales and Service Uses*\" governs, and on the first story it reads principally permitted (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "T1.first_story",
+     "text": "No story is stated, so the first story was read.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T5.row",
+     "text": "Zoning district RC-4: formula retail is a conditional use (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "T5.missing",
+     "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "T8.not_laundromat",
+     "text": "The space is, or was last, another use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+     "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 767 Bush St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Another use to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "zoning.status",
+     "text": "The rules could not decide: formula retail and use size. What is missing: whether the business is part of a chain that shares its name, look or menu with other locations; the floor area of the business, in square feet. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": [
+      "zoning:RC-4"
+     ]
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [
+    "whether the business is part of a chain that shares its name, look or menu with other locations",
+    "the floor area of the business, in square feet"
+   ],
+   "summary": "The rules could not decide whether a use authorization is needed because the description does not state whether the business is part of a chain (formula retail) or the floor area of the restaurant.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Restaurant use in RC-4 zoning is principally permitted on the ground floor as a Retail Sales and Service use under Planning Code Section 209.3, which has been in force since before 2022.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows restaurant_permission as unknown and does not state the permission status, use classification, floor restrictions, or when the code section has been in force.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Two new restaurants with alcohol licenses were approved in May 2022 (550 Powell and 560 Powell, 115 m away) in RC-4 zoning, both as agency referrals decided within 5 days citing PC Section 209.3.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2022-003970MIS",
+      "app:datasf_planning:2022-003972MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "RC-4 requires Conditional Use Authorization for formula retail establishments, but the description does not state whether this business is part of a chain.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record does not state the Conditional Use Authorization requirement for formula retail.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "RC-4 requires Conditional Use Authorization for uses of 6,000 square feet or more, but the description does not give the floor area.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record does not state the 6,000 square feet threshold requirement for Conditional Use Authorization.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The space was last used as a dry cleaner (other use), not a laundromat, so the laundromat conversion rule (PC Section 202.12) requiring CUA does not apply.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record identifies the RC-4 zoning district but does not state the prior use, mention laundromats, PC Section 202.12, or CUA requirements.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "Health permit to operate is allowed: it is issued after plan check and inspection without a discretionary hearing, and the application will be referred to Planning for zoning review.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Every food or drink business in San Francisco needs a health permit to operate, issued by the Department of Public Health after plan check and final inspection.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.health_permit"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "DPH health permit applications for restaurants and bars are sent to Planning for zoning review as an interagency referral.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record describes the health permit process but does not mention Planning Department involvement or any interagency referral for zoning review.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Seven RC-4 restaurant health permits within 200 m were approved as agency referrals in 2–19 days between 2018 and 2022, all citing PC Section 209.3 as principally permitted.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show approval times of 5–98 days, not 2–19 days. Only one record explicitly describes a health permit; others are ABC and DPH referrals.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit with change of use",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 767 Bush St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Another use to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "Building permit with change of use is further review: a change of use needs a building permit that must conform to the Planning Code, and the building permit application will be routed to Planning for zoning review.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "A change of use from another use to restaurant requires a building permit under San Francisco Building Code Section 106A.1, and the permit must conform to the Planning Code before it is issued per PC Section 175.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The zoning district record does not state building permit requirements under Building Code Section 106A.1 or conformance requirements under PC Section 175.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Building permit applications are sent to Planning for zoning review under Planning Code Section 175(a).",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The catalog entry does not mention Planning review or Planning Code Section 175(a).",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The proposed occupancy group is not established because the description does not state whether the space is for fewer than 50 people; the existing occupancy group is not in public records and can only be determined by plans or an inspection.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The zoning record contains no information about occupancy groups, the 50-person threshold, or how occupancy groups are determined.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Tenant improvements including a commercial kitchen hood and ADA upgrades need a building permit with stamped plans from an architect, plus separate electrical, plumbing, and mechanical permits pulled by licensed subcontractors.",
+     "confidence": "likely_applicable",
+     "citations": [
+      "catalog:sf.building_permit"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Whether the business is part of a chain that shares its name, look, or menu with other locations (formula retail status under PC Section 178.1), which would require Conditional Use Authorization in RC-4.",
+   "needs": "applicant_history",
+   "ask": "The operator or broker: the project description does not say."
+  },
+  {
+   "question": "The floor area of the restaurant in square feet, which determines whether Conditional Use Authorization is required (6,000+ sq ft needs CUA in RC-4 per PC Section 209.3).",
+   "needs": "applicant_history",
+   "ask": "The operator or broker: the project description does not say."
+  },
+  {
+   "question": "Whether neighborhood notification (Planning Code Section 311) is required for this change of use, which depends on whether the space qualifies as a limited commercial use or limited corner commercial use in RC-4.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department zoning counter."
+  },
+  {
+   "question": "Whether a Building Code change of occupancy is required, which depends on the existing occupancy group of the space (not in public records) and the proposed occupant load (not stated in the description).",
+   "needs": "plans",
+   "ask": "An architect or the building permit plans will establish both the existing and proposed occupancy groups."
+  },
+  {
+   "question": "The condition and remaining useful life of existing kitchen equipment, grease interceptor, ventilation, plumbing, electrical, and fire suppression systems at the dry cleaner space.",
+   "needs": "inspection",
+   "ask": "A site inspection by the operator's contractor or architect."
+  },
+  {
+   "question": "Whether the dry cleaner space is classified as a protected service use under PC Section 202.12 (like a laundromat) that would trigger a CUA requirement for conversion to restaurant, or as a general retail/service use that does not.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department zoning counter."
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "RC-4",
+  "name": "RC-4",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 209.3 (zoning control table for RC-4)",
+  "citation_id": "zoning:RC-4"
+ },
+ "overlays": [
+  {
+   "name": "Group Housing Special Use District",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.93",
+   "citation_id": "overlay:datasf_sud:group_housing_special_use_district"
+  },
+  {
+   "name": "Priority Equity Geographies SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.97",
+   "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  },
+  {
+   "name": "Within 1/4 Mile of the Fringe Financial Services RUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_the_fringe_financial_services_rud"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 33,
+  "bars": 5,
+  "abc_on_sale_licenses": 26,
+  "abc_licenses_1000ft": 91,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 2,
+  "approved_with_conditions": 0,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 2,
+  "window_years": 10,
+  "scope": "N = 2 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 94 permits and licences, 315 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 94,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 315,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2022-003970MIS",
+   "citation_id": "app:datasf_planning:2022-003970MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "550 POWELL ST 94108",
+   "distance_m": 114.9,
+   "filed_at": "2022-04-28",
+   "decided_at": "2022-05-03",
+   "days_to_decision": 5,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.903,
+   "why_comparable": "New restaurant (Bellini) with ABC Type 47 full-bar license at 550 Powell St, 115 m away, same RC-4 zoning district, approved May 2022. Agency referral for ABC license.",
+   "key_takeaway": "Planning approved a new restaurant with full liquor service on the same block in RC-4 zoning within 5 days, explicitly citing PC Section 209.3 (restaurant principally permitted at ground level). The record notes 'continuation of existing use,' meaning the space was already food/beverage, unlike this dry-cleaner conversion.",
+   "lat": 37.789995422617956,
+   "lng": -122.40855690470133,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-003970MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-003972MIS",
+   "citation_id": "app:datasf_planning:2022-003972MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "560 POWELL ST 94108",
+   "distance_m": 114.9,
+   "filed_at": "2022-04-28",
+   "decided_at": "2022-05-03",
+   "days_to_decision": 5,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.903,
+   "why_comparable": "New restaurant (Piranesi) with ABC Type 41 beer-and-wine license at 560 Powell St, 115 m away, same RC-4 zoning district, approved May 2022. Agency referral for ABC license.",
+   "key_takeaway": "Approved simultaneously with Bellini at 550 Powell (same filing and decision dates), demonstrating Planning's routine approval of restaurant uses with alcohol in RC-4 on this corridor. Both were agency referrals, not discretionary hearings, confirming restaurants are by-right.",
+   "lat": 37.789995422617956,
+   "lng": -122.40855690470133,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-003972MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-010775MIS",
+   "citation_id": "app:datasf_planning:2021-010775MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "850 BUSH ST 94108",
+   "distance_m": 138.9,
+   "filed_at": "2021-10-20",
+   "decided_at": "2021-11-01",
+   "days_to_decision": 12,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.89,
+   "why_comparable": "Restaurant (Key Club) with ABC Type 41 beer-and-wine license transfer at 850 Bush St, 139 m away, same RC-4 zoning district, approved November 2021. Agency referral.",
+   "key_takeaway": "Another RC-4 restaurant approval on Bush Street itself, directly comparable to the subject site. Approved in 12 days for an ABC referral. Record notes 'continuation of existing use,' so also a food-to-food succession.",
+   "lat": 37.790118516381355,
+   "lng": -122.41136678327874,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-010775MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-006653MIS",
+   "citation_id": "app:datasf_planning:2021-006653MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "878 BUSH ST 94108",
+   "distance_m": 172.1,
+   "filed_at": "2021-07-01",
+   "decided_at": "2021-07-20",
+   "days_to_decision": 19,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.877,
+   "why_comparable": "Limited restaurant at 878 Bush St, 172 m away, same RC-4 zoning district, approved July 2021. DPH health permit referral.",
+   "key_takeaway": "Approved in 19 days. Planning explicitly cited PC Section 209.3 and called it 'continuation of existing use,' showing routine health-permit zoning sign-offs for restaurant uses in RC-4. This was a change-of-ownership referral, not a change of use from a non-food space.",
+   "lat": 37.79001588801718,
+   "lng": -122.41177533503007,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006653MIS"
+  },
+  {
+   "application_id": "datasf_planning:2020-010398MIS",
+   "citation_id": "app:datasf_planning:2020-010398MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "891 BUSH ST 94108",
+   "distance_m": 170.6,
+   "filed_at": "2020-11-10",
+   "decided_at": "2020-11-23",
+   "days_to_decision": 13,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.868,
+   "why_comparable": "Limited restaurant (Acai R) at 891 Bush St, 171 m away, same RC-4 zoning district, approved November 2020. DPH health permit referral.",
+   "key_takeaway": "Approved in 13 days. Another RC-4 approval on Bush Street citing PC Section 209.3. Address has had three restaurant approvals in the records (2019, 2020, 2021), showing established food-use pattern on the corridor.",
+   "lat": 37.78954558617409,
+   "lng": -122.41174914958603,
+   "source_url": "https://sfplanninggis.org/pim?search=2020-010398MIS"
+  },
+  {
+   "application_id": "datasf_planning:2019-012891MIS",
+   "citation_id": "app:datasf_planning:2019-012891MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "891 BUSH ST 94108",
+   "distance_m": 170.6,
+   "filed_at": "2019-06-19",
+   "decided_at": "2019-09-25",
+   "days_to_decision": 98,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.85,
+   "why_comparable": "New ABC Type 41 license for restaurant (Estela's) at 891 Bush St, 171 m away, same RC-4 zoning district, approved September 2019. Agency referral.",
+   "key_takeaway": "Approved in 98 days (longer than typical ABC referrals), but still approved without conditions. Confirms RC-4 permits restaurant with beer and wine by right under PC Section 209.3. Same address later saw two more restaurant approvals, showing sustained food-use continuity.",
+   "lat": 37.78954558617409,
+   "lng": -122.41174914958603,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-012891MIS"
+  },
+  {
+   "application_id": "datasf_planning:2018-007481MIS",
+   "citation_id": "app:datasf_planning:2018-007481MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "650 BUSH ST 94108",
+   "distance_m": 169.0,
+   "filed_at": "2018-05-22",
+   "decided_at": "2018-05-29",
+   "days_to_decision": 7,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.831,
+   "why_comparable": "Restaurant health permit at 650 Bush St, 169 m away, same RC-4 zoning district, approved May 2018. DPH referral.",
+   "key_takeaway": "Approved in 7 days with no extracted conditions. Minimal description, but fast approval demonstrates straightforward DPH-to-Planning referrals for restaurant uses in RC-4 when the prior use was also food/beverage.",
+   "lat": 37.79046335323616,
+   "lng": -122.40810925762167,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-007481MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-008918MIS",
+   "citation_id": "app:datasf_planning:2022-008918MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "692 SUTTER ST 94108",
+   "distance_m": 184.7,
+   "filed_at": "2022-09-13",
+   "decided_at": "2022-09-15",
+   "days_to_decision": 2,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.891,
+   "why_comparable": "Restaurant (L'Ottavo) with ABC Type 41 at 692 Sutter St, 185 m away, different zoning (C-3-G Downtown General), approved September 2022. Agency referral.",
+   "key_takeaway": "Approved in 2 days. While C-3-G is a different district, it confirms Planning's consistent practice of routine ABC-referral approval for restaurants. Record notes 'continuation of existing use,' so another succession within the same use category.",
+   "lat": 37.789052703903934,
+   "lng": -122.41170917232607,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-008918MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 0284/018 or the address 767 Bush St",
+  "total": 0,
+  "by_kind": {},
+  "entries": [],
+  "note": "No records at this address or parcel in the data. That does not mean nothing was ever filed here."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 1,
+   "action": "Contact San Francisco Planning Department zoning counter to confirm formula retail status and floor area requirements.",
+   "what_to_say": "State that you are opening a restaurant at 767 Bush St in RC-4 zoning and need to confirm two things before filing: (1) whether your business qualifies as formula retail under PC Section 178.1 (provide your business name, concept, and any other locations or affiliations), and (2) the floor area threshold for Conditional Use Authorization (PC Section 209.3 states 6,000+ sq ft requires CUA). Ask whether the dry cleaner prior use is a protected service under PC Section 202.12 that would require CUA for conversion. Request written confirmation by email that restaurant use is principally permitted on the ground floor if you are not formula retail and under 6,000 sq ft.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "step": 3,
+   "action": "Register the business with San Francisco Treasurer & Tax Collector and file fictitious business name (DBA) with the County Clerk.",
+   "what_to_say": "Register within 30 days of starting business; the fee is tiered by gross receipts (plus $4 state fee). You will receive a Business Account Number (BAN) required by every other city department. If your public-facing name differs from the legal entity name, file a fictitious business name statement with the County Clerk in person or by mail ($60–$120), then publish once a week for four weeks in an approved newspaper and file proof of publication within 45 days.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 4,
+   "action": "Hire an architect to prepare building permit plans for tenant improvements, kitchen, and change of use.",
+   "what_to_say": "Engage a San Francisco restaurant architect to prepare stamped plans for the commercial kitchen hood, finishes, equipment layout, ADA upgrades, and any structural or MEP changes. Submit DPH health plan check and DBI building permit applications at the same time so both departments review in parallel. Budget 21–60 days for DPH plan review and 14–120 days for building permit review and inspections.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit",
+    "catalog:sf.health_plan_check"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 7,
+   "action": "Certify a food safety manager and enroll employees in food handler card.",
+   "what_to_say": "At least one owner or employee must pass an ANSI-accredited food safety certification exam (ServSafe, Prometric, NRFSP, or 360training) within 60 days of opening; the certificate ($100–$250, valid 5 years) is required at the DPH pre-opening inspection. Every employee who handles food must obtain a California Food Handler Card ($7–$15, 2-hour online course, valid 3 years) within 30 days of hire.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 14,
+  "days_max": 120,
+  "cost_min_usd": 470.0,
+  "cost_max_usd": 1000.0,
+  "notes": "The day range (14–120 days) and government cost range ($470–$1,000) cover the health permit to operate and building permit with change of use, the two approvals in the entitlement path, measured from application to approval when they are granted. The health permit alone is 14–45 days and $470–$1,000; the building permit is 14–120 days and $800–$15,000 depending on construction valuation. These figures assume the zoning status becomes 'allowed' after the two missing inputs (formula retail status and floor area) are confirmed. If either input triggers a Conditional Use Authorization hearing, add 120–300 days and $3,100–$15,000 for the CUA, and the overall timeline becomes 134–420 days. The cost range does not include construction, architect fees, equipment, or non-government expenses such as workers' compensation insurance premiums. The day count is the time to approval, not to denial or withdrawal; no figures are given for those outcomes because the concept is not proposed for denial.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Health permit to operate; Building permit with change of use",
+  "verification": "downgraded",
+  "verification_note": "The cost range $470-$1,000 contradicts the records: the building permit alone is $800-$15,000, and CUA figures are not in the cited catalog entries.",
+  "original_confidence": "likely_applicable"
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 23,
+  "supported": 4,
+  "trimmed": 5,
+  "downgraded": 10,
+  "dropped": 4
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2018-007481MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 650 BUSH ST 94108 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-007481MIS",
+   "excerpt": "Health - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2019-012891MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 891 BUSH ST 94108 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-012891MIS",
+   "excerpt": "ABC - Type 41; Recommend approval; Establish ABC license 41 for On Sale Beer and Wine - Eating Place (dba Estela's) permitted as Restaurant (as Bond Fide Eating Place) in the RC-4 Zoning District per Planning Code Section 209.3."
+  },
+  {
+   "id": "app:datasf_planning:2020-010398MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 891 BUSH ST 94108 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-010398MIS",
+   "excerpt": "Recommend approval of DPH referral for new Limited Restaurant dba Acai R; continuation of (e) Limited Restaurant, a non-Formula Retail Sales and Service Use principally permitted on the First/Ground Level per Planning Code Section 209.3."
+  },
+  {
+   "id": "app:datasf_planning:2021-006653MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 878 BUSH ST 94108 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006653MIS",
+   "excerpt": "DPH referral - Limited Restaurant; Recommend approval; Limited Restaurant is a Retail Sales and Service principally permitted at the ground floor in the RC-4 Zoning District per PC Section 209.3. Continuation of exiting use."
+  },
+  {
+   "id": "app:datasf_planning:2021-010775MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 850 BUSH ST 94108 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-010775MIS",
+   "excerpt": "Recommend approval of ABC Type 41 - On-Sale Beer & Wine - Eating Place transfer for new restaurant dba Key Club;  Restaurant is a Retail Sales and Service use principally permitted at the ground floor in the RC-4 Zoning District per Planning Code Section 209.3. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2022-003970MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 550 POWELL ST 94108 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-003970MIS",
+   "excerpt": "Recommend approval of Type 47 - On-Sale General - Eating Place for new Restaurant dba Bellini. Restaurant is a Retail Sales and Service principally permitted in the RC-4 Zoning District at the ground level per Planning Code Section 209.3. Must operate and maintain the licensed premises as a bona fid"
+  },
+  {
+   "id": "app:datasf_planning:2022-003972MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 560 POWELL ST 94108 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-003972MIS",
+   "excerpt": "Recommend approval of Type 41 - On-Sale Beer & Wine - Eating Place for new Restaurant dba Piranesi. Restaurant is a Retail Sales and Service principally permitted in the RC-4 Zoning District at the ground level per Planning Code Section 209.3. Must operate and maintain the licensed premises as a bon"
+  },
+  {
+   "id": "app:datasf_planning:2022-008099MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 779 BUSH ST 94108 · denied (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-008099MIS",
+   "excerpt": "ABC referral - Type 48; Recommend denial - Although Bar use at the ground floor is principally permitted in the RC-4 zoning district, PC Section 202.12 stipulates that a change of use or demolition of a Laundromat requires a Conditional Use Authorization."
+  },
+  {
+   "id": "app:datasf_planning:2022-008918MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 692 SUTTER ST 94108 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-008918MIS",
+   "excerpt": "Recommend approval of ABC Type 41 license for (e) restaurant dba L'Ottavo. Restaurant is a Retail Sales and Service principally permitted in the C-3-G - Downtown- General  Zoning District per Planning Code Section 210.2. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2022-010729CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 779 BUSH ST 94108 · pending (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-010729CUA",
+   "excerpt": null
+  },
+  {
+   "id": "catalog:ca.food_handler_card",
+   "kind": "catalog",
+   "label": "California Food Handler Card (all food employees) — ANSI-accredited provider (CalCode §113948); county programs in San Diego, Riverside, San Bernardino",
+   "source_url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/CDPH%20Document%20Library/FDB/FoodSafetyProgram/RetailFood/RetailFoodSafetyTraining.pdf",
+   "excerpt": "1–1 days; $7–$15; estimated"
+  },
+  {
+   "id": "catalog:ca.food_safety_manager_cert",
+   "kind": "catalog",
+   "label": "Certified Food Protection Manager (one per facility) — ANSI-accredited exam provider (ServSafe, Prometric, NRFSP, 360training) per CalCode §113947.1",
+   "source_url": "https://www.servsafe.com/ServSafe-Manager",
+   "excerpt": "1–14 days; $100–$250; estimated"
+  },
+  {
+   "id": "catalog:sf.building_permit",
+   "kind": "catalog",
+   "label": "Building permit (tenant improvements / change of occupancy) — SF Department of Building Inspection (DBI)",
+   "source_url": "https://www.sf.gov/departments--department-building-inspection",
+   "excerpt": "14–120 days; $800–$15,000; estimated"
+  },
+  {
+   "id": "catalog:sf.business_registration",
+   "kind": "catalog",
+   "label": "San Francisco Business Registration Certificate — SF Office of the Treasurer & Tax Collector",
+   "source_url": "https://sftreasurer.org/business/register-business",
+   "excerpt": "1–5 days; $55–$700; verified"
+  },
+  {
+   "id": "catalog:sf.fictitious_business_name",
+   "kind": "catalog",
+   "label": "Fictitious Business Name (DBA) statement — SF Office of the County Clerk",
+   "source_url": "https://www.sf.gov/step-by-step--file-fictitious-business-name-fbn",
+   "excerpt": "1–35 days; $60–$120; estimated"
+  },
+  {
+   "id": "catalog:sf.health_permit",
+   "kind": "catalog",
+   "label": "Health Permit to Operate a food facility — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/get-health-permit-open-restaurant-bar-or-other-retail-food-location",
+   "excerpt": "14–45 days; $470–$1,000; verified"
+  },
+  {
+   "id": "catalog:sf.health_plan_check",
+   "kind": "catalog",
+   "label": "Public Health plan check (new or remodeled food facility) — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/plan-check-guide-building-and-remodeling-food-facility",
+   "excerpt": "21–60 days; $828–$2,500; verified"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 767 Bush St, San Francisco, CA 94108 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=281125",
+   "excerpt": "parcel 0284/018"
+  },
+  {
+   "id": "license:abc:527572",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 566 SUTTER ST, SAN FRANCISCO, CA 94102 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=527572",
+   "excerpt": "HOTEL EMBLEM — Type 47 – On-Sale General - Eating Place (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "license:abc:539299",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 731 BUSH ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=539299",
+   "excerpt": "SUSHI TONI — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "license:abc:567493",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 809 BUSH ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=567493",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "license:abc:627749",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 790 BUSH ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=627749",
+   "excerpt": "ALIMENT — Type 47 – On-Sale General - Eating Place (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "license:abc:629786",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 801 BUSH ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=629786",
+   "excerpt": "SUMMER PLACE THE — Type 48 – On-Sale General - Public Premises (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "license:abc:633136",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 550 SUTTER ST, SAN FRANCISCO, CA 94102 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=633136",
+   "excerpt": "PACIFIC COCKTAIL HAVEN — Type 48 – On-Sale General - Public Premises (ACTIVE on 2023-07-18)"
+  },
+  {
+   "id": "overlay:datasf_sud:group_housing_special_use_district",
+   "kind": "overlay",
+   "label": "Group Housing Special Use District — Planning Code § 249.93",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66044",
+   "excerpt": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+   "kind": "overlay",
+   "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+   "excerpt": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_the_fringe_financial_services_rud",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of the Fringe Financial Services RUD — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 2 approved / 0 denied / 0 withdrawn; N = 2 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 94 permits and licences, 315 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 94 Entertainment Commission permits and ABC licences (lists of grants only), 315 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 33 food & drink businesses, 5 bars, 26 active on-sale ABC licenses within 500 ft; 91 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:RC-4",
+   "kind": "zoning",
+   "label": "Zoning RC-4 — Planning Code § 209.3 (zoning control table for RC-4)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+   "excerpt": "The controls as they stood on 2023-07-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "767 Bush St is in the RC-4 (Residential Commercial, High Density) zoning district where a restaurant is principally permitted on the ground floor as a Retail Sales and Service use. No prior permits or applications are on file at this address. The site sits in an extremely dense food and beverage corridor: 33 registered food or drink businesses and 26 active ABC on-sale licenses within 500 feet, signaling high undue-concentration risk if alcohol were added later. The immediate block has seen consistent approvals for restaurant uses over the past decade, including two new restaurants with alcohol approved in May 2022 at 550 and 560 Powell (115 m away), both in RC-4 zoning.",
+ "data_gaps": [
+  "No Planning Commission hearing transcripts or detailed conditions available for the two approved 2022 restaurant cases at 550/560 Powell",
+  "No explanation in the record for why the 779 Bush St CUA (14 m away) has been pending since November 2022",
+  "ABC license conditions are not exposed in the data for the 34 active licenses within 500 ft",
+  "The existing use at 767 Bush St is not definitively stated by the records (described only as 'other' prior use)",
+  "No undue-concentration determination or census tract crime data is included to assess future alcohol feasibility",
+  "Site history shows zero records, but this may reflect data completeness rather than confirming the space has never been permitted"
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T07:48:55+00:00",
+ "model_versions": {
+  "intake": "claude-sonnet-4-5",
+  "records": "claude-sonnet-4-5",
+  "precedent": "claude-sonnet-4-5",
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2023-07-18"
+}

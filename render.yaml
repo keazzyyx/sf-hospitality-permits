@@ -1,0 +1,71 @@
+# Render Blueprint: Dashboard → New → Blueprint → pick this repo.
+# Every env var is `sync: false`: Render asks for the values once when the Blueprint is created, and they
+# are then edited in the dashboard (never committed). Free plan: the instance sleeps after 15 min idle and
+# the first request after that takes ~1 min. The nightly SF ingest runs in GitHub Actions
+# (.github/workflows/ingest.yml), not on Render.
+services:
+  - type: web
+    name: permit-memo-api
+    runtime: docker
+    region: oregon # same region as the Supabase project (aws us-west-2)
+    plan: free
+    branch: main
+    dockerfilePath: ./apps/api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      # runtime
+      - key: ENV
+        sync: false
+      - key: WEB_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      # observability
+      - key: NEATLOGS_API_KEY
+        sync: false
+      # model layer
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL_MAIN
+        sync: false
+      - key: ANTHROPIC_MODEL_TRIAGE
+        sync: false
+      - key: ANTHROPIC_MAX_TOOL_TURNS
+        sync: false
+      - key: ANTHROPIC_FORCE_TOOL_CHOICE
+        sync: false
+      # Supabase (auth verification via JWKS; SUPABASE_JWT_SECRET only for HS256 projects)
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      # precedent store (Supabase session pooler, port 5432)
+      - key: PRECEDENT_DATABASE_URL
+        sync: false
+      # memo feedback links + hashed user ids in traces
+      - key: FEEDBACK_TOKEN_SECRET
+        sync: false
+      - key: USER_ID_HASH_SALT
+        sync: false
+      - key: ADMIN_EMAILS
+        sync: false
+      # billing + email (leave empty until Stripe / Resend are live)
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_PRICE_MEMO
+        sync: false
+      - key: STRIPE_PRICE_PRO
+        sync: false
+      - key: STRIPE_PRICE_PLAN
+        sync: false
+      - key: STRIPE_PRICE_SUBSCRIPTION
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+

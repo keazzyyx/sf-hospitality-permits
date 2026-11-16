@@ -1,0 +1,1392 @@
+{
+ "format_version": 3,
+ "address": "620 Jones St, San Francisco, CA 94102",
+ "lat": 37.787160290111785,
+ "lng": -122.4128896132626,
+ "parcel": "0305/036",
+ "description": "A business operates under an existing permission whose conditions limit the hours of entertainment in its outdoor activity area. It wants to extend those hours to 8 p.m. Sunday to Thursday and 10 p.m. Friday and Saturday. No construction.",
+ "headline_findings": [
+  {
+   "kind": "conditional",
+   "sentence": "The concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What asks for one: changing the conditions of an earlier approval. Not decided as well: use control of the zoning district and use size; the report names what is missing.",
+   "area": "zoning_use",
+   "status": "further_review",
+   "trigger": "T10",
+   "trigger_label": "changing the conditions of an earlier approval",
+   "definite": true,
+   "condition": null,
+   "missing_inputs": [],
+   "code_section": "Planning Code §§ 303(e); 174",
+   "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+   "citations": [],
+   "basis": [
+    {
+     "rule_id": "T10.amends",
+     "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+     "code_section": "Planning Code §§ 303(e); 174",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+     "citations": []
+    }
+   ]
+  },
+  {
+   "kind": "conditional_if",
+   "sentence": "If the floor area is from 6,000 to 120,000 square feet, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area of the business, in square feet.",
+   "area": "zoning_use",
+   "status": "further_review",
+   "trigger": "T7",
+   "trigger_label": "use size",
+   "definite": false,
+   "condition": "the floor area is from 6,000 to 120,000 square feet",
+   "missing_inputs": [
+    "the floor area of the business, in square feet"
+   ],
+   "code_section": "Planning Code § 209.3",
+   "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+   "citations": [
+    "zoning:RC-4"
+   ],
+   "basis": [
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "not_permitted_if",
+   "sentence": "If the floor area is 120,001 square feet or more, zoning does not permit the concept as described at this address. What would bar it: use size. Not known: the floor area of the business, in square feet.",
+   "area": "zoning_use",
+   "status": "further_review",
+   "trigger": "T7",
+   "trigger_label": "use size",
+   "definite": false,
+   "condition": "the floor area is 120,001 square feet or more",
+   "missing_inputs": [
+    "the floor area of the business, in square feet"
+   ],
+   "code_section": "Planning Code § 209.3",
+   "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+   "citations": [
+    "zoning:RC-4"
+   ],
+   "basis": [
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    }
+   ]
+  }
+ ],
+ "overall": {
+  "status": "further_review",
+  "line": "A Conditional Use Authorization is needed (changing the conditions of an earlier approval). A Conditional Use Authorization is needed if the floor area is from 6,000 to 120,000 square feet (use size). Zoning does not permit the concept if the floor area is 120,001 square feet or more (use size). Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "citations": [
+   "zoning:RC-4"
+  ]
+ },
+ "pathway": {
+  "use": "not_covered",
+  "use_label": "a use the rule table does not cover",
+  "district": "RC-4",
+  "permission": "not_covered",
+  "permission_label": "Not covered by the rule table",
+  "existing_use": null,
+  "change_of_use": "not_established",
+  "change_of_use_label": "Change of use not established",
+  "lines": [
+   {
+    "rule_id": "T1.no_use",
+    "text": "The description does not say what kind of business it is, so no use control was looked up.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.no_limit",
+    "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 620 Jones St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   }
+  ],
+  "rules_date": "2025-05-04",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [
+     {
+      "control": "conditional",
+      "condition": "the floor area is from 6,000 to 120,000 square feet",
+      "missing_inputs": [
+       "the floor area of the business, in square feet"
+      ]
+     },
+     {
+      "control": "not_permitted",
+      "condition": "the floor area is 120,001 square feet or more",
+      "missing_inputs": [
+       "the floor area of the business, in square feet"
+      ]
+     }
+    ],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.outside",
+      "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-05-04, so this trigger does not apply.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.amends",
+      "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   }
+  ],
+  "changes": {
+   "planning_use": "not_established",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 620 Jones St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 4 May 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T3.no_use",
+     "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T5.no_use",
+     "text": "The concept has no use that the formula retail rows on file cover.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "T10.amends",
+     "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+     "code_section": "Planning Code §§ 303(e); 174",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+     "citations": []
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 620 Jones St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "zoning.status",
+     "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: changing the conditions of an earlier approval. Not decided as well: use control of the zoning district and use size; the lines above name what is missing: further review.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "Intensified",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [
+      "wants to extend those hours"
+     ],
+     "citations": []
+    },
+    {
+     "fact": "amends_prior_approval",
+     "label": "Changes the conditions of an earlier approval",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [
+      "existing permission whose conditions limit the hours of entertainment",
+      "wants to extend those hours"
+     ],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "prior_approvals",
+     "label": "Earlier approved use decisions at this address",
+     "value": "Conditional Use Authorization (2014-11-06)",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": [
+      "app:datasf_planning:2013.0255C"
+     ]
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 620 Jones St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "facts": [
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "Intensified",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [
+      "wants to extend those hours"
+     ],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "facts": [
+  {
+   "fact": "food_service",
+   "label": "Kind of food or drink service (a business that serves no alcohol is not a Bar)",
+   "value": "None",
+   "origin": "description",
+   "origin_label": "Worked out by the rules from your description",
+   "derived": true,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "alcohol_served",
+   "label": "Alcohol served",
+   "value": "No alcohol",
+   "origin": "description",
+   "origin_label": "Your description does not mention alcohol",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "changes_existing_business",
+   "label": "Change to a business already there",
+   "value": "Intensified",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [
+    "wants to extend those hours"
+   ],
+   "citations": []
+  },
+  {
+   "fact": "amends_prior_approval",
+   "label": "Changes the conditions of an earlier approval",
+   "value": "Yes",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [
+    "existing permission whose conditions limit the hours of entertainment",
+    "wants to extend those hours"
+   ],
+   "citations": []
+  },
+  {
+   "fact": "planning_uses",
+   "label": "Kind of business (Planning Code use)",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "floor_area_sqft",
+   "label": "Floor area",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "floor_area_sqft"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space",
+   "intake_question": "existing_occupancy_group"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "RC-4",
+  "name": "RC-4",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 209.3 (zoning control table for RC-4)",
+  "citation_id": "zoning:RC-4"
+ },
+ "overlays": [
+  {
+   "name": "Fringe Financial Services RUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:fringe_financial_services_rud"
+  },
+  {
+   "name": "Group Housing Special Use District",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.93",
+   "citation_id": "overlay:datasf_sud:group_housing_special_use_district"
+  },
+  {
+   "name": "North of Market Residential 1",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.5",
+   "citation_id": "overlay:datasf_sud:north_of_market_residential_1"
+  },
+  {
+   "name": "Priority Equity Geographies SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.97",
+   "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "base_rate": {
+  "approved": 0,
+  "approved_with_conditions": 0,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 0,
+  "window_years": 10,
+  "scope": "N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 460 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 0,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 460,
+  "citation_id": "stat:base_rate",
+  "counted": []
+ },
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2025-001150MIS",
+   "citation_id": "app:datasf_planning:2025-001150MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "501 GEARY ST 94102",
+   "distance_m": 112.6,
+   "filed_at": "2025-02-10",
+   "decided_at": "2025-02-12",
+   "days_to_decision": 2,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.519,
+   "lat": 37.786616831538964,
+   "lng": -122.41181055122196,
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001150MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-009937CUA",
+   "citation_id": "app:datasf_planning:2021-009937CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "retail_alcohol"
+   ],
+   "address": "447 OFARRELL ST 94102",
+   "distance_m": 183.1,
+   "filed_at": "2021-09-29",
+   "decided_at": "2022-10-18",
+   "days_to_decision": 384,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Signage: All sign permits shall be reviewed by the Planning Department, and all signage and advertising shal l not occupy more than 33% of the square footage of windows and glazed doors. Signage shall be maintained and placed such that law enforcement personnel have a clear and unobstructed view of the interior, including the area in which the cash registers are maintained, from the exterior public sidewalk or entrance to the premises. Monitoring - After Entitlement",
+    "Good Neighbor Policies (A): Employees of the establishment shall walk a 100-foot radius from the premises some time between 30 minutes after closing time and 8:00 a.m. the following morning, and shall pick up and dispose of any discarded beverage containers and other trash left by patrons;",
+    "Good Neighbor Policies (B): The establishment shall provide outside lighting in a manner sufficient to illuminate street and sidewalk areas and adjacent parking, as appropriate to maintain security, without disturbing area residences;",
+    "Good Neighbor Policies (C): No alcoholic beverages shall be consumed on any outdoor property adjacent to the establishment and which is under the control of the establishment, excepting those areas of the property that are enclosed and not visible from the sidewalk, are intended for patron services, are supervised by the establishment, and are not located adjacent to any sidewalk areas;",
+    "Good Neighbor Policies (D): No more than 33% of the square footage of the windows and clear doors shall bear advertising or signage of any sort, and all advertising and signage shall be placed and maintained such that law enforcement personnel have a clear and unobstructed view of the interior of the premises, including the area in which the cash registers are maintained, from the exterior public sidewalk or entrance to the premises;",
+    "Good Neighbor Policies (E): No person under the age of 21 shall sell or package alcoholic beverages;",
+    "Good Neighbor Policies (F): Employees of the establishment shall regularly police the area under the control of the establishment in an effort to prevent loitering of persons about the premises; and",
+    "Good Neighbor Policies (G): The establishment shall promptly remove any graffiti from the exterior of the premises.",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued dilige ntly to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay . (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.516,
+   "lat": 37.78561704858929,
+   "lng": -122.41215498402279,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-009937CUA"
+  },
+  {
+   "application_id": "datasf_planning:2025-000411MIS",
+   "citation_id": "app:datasf_planning:2025-000411MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant",
+    "retail_alcohol"
+   ],
+   "address": "385 TAYLOR ST 94102",
+   "distance_m": 195.3,
+   "filed_at": "2025-01-15",
+   "decided_at": "2025-01-23",
+   "days_to_decision": 8,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.497,
+   "lat": 37.785769368805646,
+   "lng": -122.41153229108777,
+   "source_url": "https://sfplanninggis.org/pim?search=2025-000411MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-010804MIS",
+   "citation_id": "app:datasf_planning:2022-010804MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "552 JONES ST 94102",
+   "distance_m": 66.2,
+   "filed_at": "2022-11-03",
+   "decided_at": "2022-11-09",
+   "days_to_decision": 6,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.496,
+   "lat": 37.78656643486165,
+   "lng": -122.41295833277982,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-010804MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-002093MIS",
+   "citation_id": "app:datasf_planning:2023-002093MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "710 POST ST 94109",
+   "distance_m": 99.7,
+   "filed_at": "2023-03-08",
+   "decided_at": "2023-03-29",
+   "days_to_decision": 21,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.494,
+   "lat": 37.787815953666545,
+   "lng": -122.41366342126027,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002093MIS"
+  },
+  {
+   "application_id": "datasf_planning:2024-000997MIS",
+   "citation_id": "app:datasf_planning:2024-000997MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "468 GEARY ST 94102",
+   "distance_m": 166.7,
+   "filed_at": "2024-02-02",
+   "decided_at": "2024-02-07",
+   "days_to_decision": 5,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.49,
+   "lat": 37.78718549053102,
+   "lng": -122.41099720020927,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-000997MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-008542MIS",
+   "citation_id": "app:datasf_planning:2021-008542MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "550 GEARY ST 94102",
+   "distance_m": 31.8,
+   "filed_at": "2021-08-23",
+   "decided_at": "2021-09-14",
+   "days_to_decision": 22,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.488,
+   "lat": 37.78709779501446,
+   "lng": -122.4125377449803,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008542MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-007410MIS",
+   "citation_id": "app:datasf_planning:2021-007410MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar",
+    "hotel"
+   ],
+   "address": "550 GEARY ST 94102",
+   "distance_m": 31.8,
+   "filed_at": "2021-07-22",
+   "decided_at": "2021-08-10",
+   "days_to_decision": 19,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.486,
+   "lat": 37.78709779501446,
+   "lng": -122.4125377449803,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-007410MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-012603MIS",
+   "citation_id": "app:datasf_planning:2021-012603MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "643 POST ST 94102",
+   "distance_m": 62.0,
+   "filed_at": "2021-12-16",
+   "decided_at": "2021-12-27",
+   "days_to_decision": 11,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.484,
+   "lat": 37.78750483843258,
+   "lng": -122.41233505339352,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-012603MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-004173MIS",
+   "citation_id": "app:datasf_planning:2022-004173MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "710 POST ST 94109",
+   "distance_m": 99.7,
+   "filed_at": "2022-05-03",
+   "decided_at": "2022-05-12",
+   "days_to_decision": 9,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.48,
+   "lat": 37.787815953666545,
+   "lng": -122.41366342126027,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-004173MIS"
+  }
+ ],
+ "comparables_note": "Planning and Entertainment Commission records within 1,000 ft, ranked by a fixed score: the kind of business in common (40%), the distance (25%), how recent the record is (15%), late-night hours in common (10%) and whether the case was decided (10%); a Conditional Use case scores a little higher. The top 10 are listed, best first. Each row shows what the record says, with a link to it. No model picks them.",
+ "site_history": {
+  "matched_by": "Parcel 0305/036 or the address 620 Jones St",
+  "total": 3,
+  "by_kind": {
+   "use_decision": 1,
+   "other": 2
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2013.0255C",
+    "citation_id": "app:datasf_planning:2013.0255C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use to modify previous conditions of approval;",
+    "address": "620 JONES ST, SAN FRANCISCO, CA 94102",
+    "filed_at": "2013-03-07",
+    "decided_at": "2014-11-06",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2013.0255C",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MB1300085",
+    "citation_id": "app:datasf_planning:MB1300085",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "other",
+    "record_kind_label": "Other record",
+    "permit_type": "Miscellaneous Permit",
+    "description": "outdoor patio bar with lots of noise until all hours of the morning",
+    "address": "620 JONES ST, SAN FRANCISCO, CA 94102",
+    "filed_at": "2013-01-17",
+    "decided_at": "2013-01-18",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1300085",
+    "use_types": [
+     "bar",
+     "outdoor_seating"
+    ],
+    "hours_close": null,
+    "conditions": [
+     "outdoor patio bar with lots of noise  until all hours of the morning"
+    ]
+   },
+   {
+    "application_id": "datasf_planning:MB1000942",
+    "citation_id": "app:datasf_planning:MB1000942",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "other",
+    "record_kind_label": "Other record",
+    "permit_type": "Miscellaneous Permit",
+    "description": "outdoor patio bar with lots of noise until all hours of the morning",
+    "address": "620 JONES ST ?, SAN FRANCISCO, CA 94102",
+    "filed_at": "2010-08-27",
+    "decided_at": "2010-09-03",
+    "outcome": "denied",
+    "status": "Closed - Disapproved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1000942",
+    "use_types": [
+     "bar",
+     "outdoor_seating"
+    ],
+    "hours_close": null,
+    "conditions": [
+     "outdoor patio bar with lots of noise  until all hours of the morning"
+    ]
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  }
+ ],
+ "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2013.0255C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 620 JONES ST, SAN FRANCISCO, CA 94102 · approved (2014)",
+   "source_url": "https://sfplanninggis.org/pim?search=2013.0255C",
+   "excerpt": "Conditional Use to modify previous conditions of approval;"
+  },
+  {
+   "id": "app:datasf_planning:2021-007410MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 550 GEARY ST 94102 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-007410MIS",
+   "excerpt": "Recommend Approval; continuation of ABC license 47 permitted for full bar in RC-4 district per section 209.3 and license type 66 and 68 is permitted as an accessory use that is incidental to the principal use of hotel per section 204."
+  },
+  {
+   "id": "app:datasf_planning:2021-008542MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 550 GEARY ST 94102 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008542MIS",
+   "excerpt": "Recommend approval of DPH - Restaurant referral; Restaurant is a Retail Sales and Service principally permitted at the ground floor in the RC-4 Zoning District per PC Section 209.3.Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2021-009937CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 447 OFARRELL ST 94102 · approved with conditions (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-009937CUA",
+   "excerpt": "Conditional Use Authorization request for existing convenience mart. Relocation of an off-sale liquor license from 498 O’Farrell Street to 453 O’Farrell St."
+  },
+  {
+   "id": "app:datasf_planning:2021-012603MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 643 POST ST 94102 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-012603MIS",
+   "excerpt": "Recommend approval of ABC Type 41 - On-Sale Beer & Wine - Eating Place License; Restaurant is a Retail Sales and Service use principally permitted on the ground floor in the RC-4 per Planning Code Section 209.3. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2022-004173MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 710 POST ST 94109 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-004173MIS",
+   "excerpt": "Recommend approval of ABC Type 41 - On-Sale Beer & Wine - Eating Place; Permitted in conjunction with new Restaurant dba Chuy's Fiestas Taqueria II, a Retail Sales and Service principally permitted at in the RC-4 Zoning District at the ground floor per PC Section 209.3."
+  },
+  {
+   "id": "app:datasf_planning:2022-010804MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 552 JONES ST 94102 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-010804MIS",
+   "excerpt": "ABC referral - Type 41\n\nRecommend Approval for ABC - Type 41 license permitted in conjunction with existing full-service restaurant use in RC-4 Residential-Commercial, High Density Zoning District per PC Section 209.3. Subject to the location and operating conditions outlined in 202.2(a)(1). Must op"
+  },
+  {
+   "id": "app:datasf_planning:2023-002093MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 710 POST ST 94109 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002093MIS",
+   "excerpt": "ABC referral - Type 41; Recommend approval of Type 41 ABC License; Restaurant is a Retail Sales and Service Use principally permitted at the ground floor in the RC-4 - Residential- Commercial, High Density Zoning District per Planning Code Section 209.3. Continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2024-000997MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 468 GEARY ST 94102 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-000997MIS",
+   "excerpt": "Recommend approval of ABC Type 47 for existing restaurant dba David's Deli & Bistro. Principally permitted in the C-3-R Zoning District per PC Section 210.2"
+  },
+  {
+   "id": "app:datasf_planning:2025-000411MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 385 TAYLOR ST 94102 · approved (2025)",
+   "source_url": "https://sfplanninggis.org/pim?search=2025-000411MIS",
+   "excerpt": "ABC referral - Type 41, Recommend for approval as ABC License type 41 (On-Sale Beer and Wine - Eating Place) is permitted in RC-4 Residential Commercial, High Density Zoning District per section 209.3 and North of Market Residential Special Use District per 249.5 in conjunction with a restaurant use"
+  },
+  {
+   "id": "app:datasf_planning:2025-001150MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 501 GEARY ST 94102 · approved (2025)",
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001150MIS",
+   "excerpt": "DPH referral - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:MB1000942",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 620 JONES ST ?, SAN FRANCISCO, CA 94102 · denied (2010)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1000942",
+   "excerpt": "outdoor patio bar with lots of noise  until all hours of the morning"
+  },
+  {
+   "id": "app:datasf_planning:MB1300085",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 620 JONES ST, SAN FRANCISCO, CA 94102 · approved (2013)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1300085",
+   "excerpt": "outdoor patio bar with lots of noise  until all hours of the morning"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 620 Jones St, San Francisco, CA 94102 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=281436",
+   "excerpt": "parcel 0305/036"
+  },
+  {
+   "id": "overlay:datasf_sud:fringe_financial_services_rud",
+   "kind": "overlay",
+   "label": "Fringe Financial Services RUD — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:group_housing_special_use_district",
+   "kind": "overlay",
+   "label": "Group Housing Special Use District — Planning Code § 249.93",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66044",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:north_of_market_residential_1",
+   "kind": "overlay",
+   "label": "North of Market Residential 1 — Planning Code § 249.5",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20737",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+   "kind": "overlay",
+   "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 0 approved / 0 denied / 0 withdrawn; N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 460 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 0 Entertainment Commission permits and ABC licences (lists of grants only), 460 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "zoning:RC-4",
+   "kind": "zoning",
+   "label": "Zoning RC-4 — Planning Code § 209.3 (zoning control table for RC-4)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+   "excerpt": "The controls as they stood on 2025-05-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement with the issuing agency before relying on it.",
+  "Comparable cases and counts come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and are not a guarantee. Planning Commission and ABC decisions are discretionary.",
+  "No sentence in this report is written by an AI model. A model reads your description into facts; each fact shows the words it came from, and what your words do not state is listed as not known."
+ ],
+ "generated_at": "2026-11-16T12:22:58+00:00",
+ "model_versions": {
+  "intake": "claude-opus-5-5"
+ },
+ "data_as_of": "2025-05-04"
+}

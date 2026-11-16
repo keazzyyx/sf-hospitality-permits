@@ -1,0 +1,596 @@
+{
+ "records": {
+  "summary": "The records show 735 Jackson St is in the Chinatown Residential Neighborhood Commercial (CRNC) district where a restaurant with beer & wine is a conditional use requiring a Planning Commission hearing. The site history reveals a 2011 denial for a small self-service restaurant at this exact address, followed by two earlier approvals (2005 full-service restaurant referral, 1989 CUA for dim sum). The immediate block is extremely dense: 49 registered food or drink businesses and 22 active ABC on-sale licenses within 500 feet, with 4 bars in the count. Over the past 5 years within 1,000 feet, 8 of 10 dated use decisions were approved (80% approval rate, N=10), with 2 withdrawals and no outright denials in that window.",
+  "flags": [
+   {
+    "flag": "Inside the Chinatown Residential Neighborhood Commercial (CRNC) district where a restaurant is a conditional use requiring Planning Commission approval",
+    "citations": [
+     "zoning:CRNC",
+     "overlay:static:sf:nc_crnc"
+    ]
+   },
+   {
+    "flag": "A 2011 application for a small self-service restaurant at this exact address (735-737 Jackson St) was denied, with the planner noting conditional use authorization was required",
+    "citations": [
+     "app:datasf_planning:MB1100829"
+    ]
+   },
+   {
+    "flag": "Two earlier approvals at this address: a 2005 agency referral approving a full-service restaurant as permitted, and a 1989 CUA to add dim sum to an existing restaurant",
+    "citations": [
+     "app:datasf_planning:MB0500563",
+     "app:datasf_planning:1989.286C"
+    ]
+   },
+   {
+    "flag": "Extreme density: 49 registered food or drink businesses within 500 feet, including 4 bars",
+    "citations": [
+     "stat:density"
+    ]
+   },
+   {
+    "flag": "22 active ABC on-sale licenses within 500 feet; 87 within 1,000 feet, triggering the undue-concentration proxy flag",
+    "citations": [
+     "stat:density"
+    ]
+   },
+   {
+    "flag": "No active ABC license of Types 41/42/47/48 currently on file at 735 Jackson St, so the records do not confirm what the space is used as now",
+    "citations": [
+     "geo:address"
+    ]
+   },
+   {
+    "flag": "Over the last 5 years within 1,000 ft: 3 approved, 5 approved with conditions, 0 denied, 2 withdrawn (N=10 dated use decisions; 80% approval rate shown)",
+    "citations": [
+     "stat:base_rate"
+    ]
+   },
+   {
+    "flag": "Three recent CUAs for beer & wine restaurants in CRNC nearby were approved with 7am-10pm or similar daytime closing conditions",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "flag": "Inside the Group Housing Special Use District and Priority Equity Geographies SUD; neither restricts restaurant or alcohol use",
+    "citations": [
+     "overlay:datasf_sud:group_housing_special_use_district",
+     "overlay:datasf_sud:priority_equity_geographies_sud"
+    ]
+   }
+  ],
+  "noteworthy_application_ids": [
+   "datasf_planning:MB1100829",
+   "datasf_planning:1989.286C",
+   "datasf_planning:MB0500563",
+   "datasf_planning:2019-006948CUA",
+   "datasf_planning:2019-020999CUA",
+   "datasf_planning:2021-008505CUA",
+   "datasf_planning:2019-004664CUA",
+   "datasf_planning:2018-007366CUA"
+  ],
+  "data_gaps": [
+   "No hearing text or stated reason for the 2011 denial at this address",
+   "No conditions extracted from the 1989 CUA approval at this site",
+   "Census tract concentration data and ABC PCN determination are not exposed",
+   "Current occupancy and last permit of occupancy for 735 Jackson St are not shown",
+   "Two pending CUA cases nearby (2021-011235CUA, 2022-001553CUA) have no outcome or description yet"
+  ]
+ },
+ "precedent": {
+  "comparables": [
+   {
+    "application_id": "datasf_planning:2019-006948CUA",
+    "why_comparable": "Restaurant with Type 41 beer & wine CUA in CRNC at 650 Jackson St, 114 meters away on the same block, approved October 2019 with 7am–10pm daily hours.",
+    "key_takeaway": "This use decision approval for a beer & wine restaurant in CRNC within 120 meters established a 7am–10pm daily operating-hours condition, signaling that the Commission limits alcohol service hours for CRNC restaurants to daytime/early evening even when approving the use."
+   },
+   {
+    "application_id": "datasf_planning:2019-020999CUA",
+    "why_comparable": "Restaurant with beer & wine CUA in CRNC at 150 Waverly Pl, 122 meters away, approved May 2020 with 7am–10pm daily hours.",
+    "key_takeaway": "This use decision approval confirms the 7am–10pm hours pattern for CRNC beer & wine restaurants; the Commission imposed identical operating conditions within one block of the subject site, establishing a consistent approval standard."
+   },
+   {
+    "application_id": "datasf_planning:2021-008505CUA",
+    "why_comparable": "Restaurant CUA at 838 Grant Ave (CVR district, 153 meters away) approved March 2022 with 6am–midnight hours and bicycle parking, odor control, and standard eating/drinking conditions.",
+    "key_takeaway": "This use decision approval in the adjacent CVR district shows the Commission permits later hours (midnight closing) for restaurants outside CRNC, but the CVR district treats restaurants as conditional uses rather than requiring CUA for all restaurants, and this was a larger commercial building."
+   },
+   {
+    "application_id": "datasf_planning:2021-006497MIS",
+    "why_comparable": "Limited restaurant agency referral in CRNC at 1041 Stockton St, 116 meters away, approved September 2021 as a DPH referral within three months.",
+    "key_takeaway": "This agency referral approval shows that limited restaurants without alcohol can proceed through the health-department referral pathway in CRNC and be approved quickly, but this is not a CUA and does not establish conditional use entitlement for a beer & wine restaurant."
+   },
+   {
+    "application_id": "datasf_planning:2021-006242MIS",
+    "why_comparable": "Limited restaurant agency referral in CRNC at 626 Jackson St, 140 meters away on the same block, approved July 2021 as principally permitted within one month.",
+    "key_takeaway": "This agency referral approval demonstrates that limited restaurants are principally permitted in CRNC when no alcohol is involved, but the planner's note cites Section 811 which treats restaurants with alcohol as conditional uses requiring a CUA hearing."
+   },
+   {
+    "application_id": "datasf_planning:2018-007366CUA",
+    "why_comparable": "Withdrawn CUA at 838 Grant Ave (CVR, 153 meters away) for basement restaurant conversion, filed September 2018, withdrawn June 2019, then re-filed as 2021-008505CUA and approved.",
+    "key_takeaway": "This use decision withdrawal followed by re-application and eventual approval suggests the applicant needed to revise the proposal to address Planning concerns before winning approval; withdrawals in this area are not necessarily fatal but signal needed changes to the application."
+   },
+   {
+    "application_id": "datasf_planning:2016-008214MIS",
+    "why_comparable": "Restaurant agency referral at 801 Kearny St in CCB district, 184 meters away, denied in August 2019 after a three-year review from June 2016 filing.",
+    "key_takeaway": "This agency referral denial demonstrates that Planning does deny restaurant applications in Chinatown when zoning or other issues are unresolved; the three-year timeline suggests protracted issues with the application that were never cured."
+   }
+  ],
+  "patterns": [
+   {
+    "pattern": "Beer & wine restaurants in CRNC on this corridor were approved by the Planning Commission only with 7am–10pm daily operating hours; no approvals within 200 meters show midnight or later closing in CRNC.",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA"
+    ]
+   },
+   {
+    "pattern": "All three decided beer & wine restaurant CUAs within 200 meters in the past five years were approved with conditions, none denied; the 80% approval rate (N=10 dated use decisions within 1,000 ft, 8 approved) held across the study area.",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA",
+     "stat:base_rate"
+    ]
+   },
+   {
+    "pattern": "Standard eating and drinking conditions in the three nearby CUA approvals included sidewalk maintenance within a one-block radius, soundproofing to Noise Control Ordinance standards, odor control equipment, trash and recycling containment within the premises, and appointment of a community liaison officer.",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "pattern": "Agency referrals for limited restaurants without alcohol in CRNC were approved quickly (one to three months) as principally permitted or through health-department routing, but these are not CUAs and do not establish conditional use entitlement for a restaurant with beer & wine.",
+    "citations": [
+     "app:datasf_planning:2021-006497MIS",
+     "app:datasf_planning:2021-006242MIS",
+     "app:datasf_planning:2019-006724MIS"
+    ]
+   },
+   {
+    "pattern": "One restaurant application nearby (801 Kearny St, CCB) was denied after three years of review, and one CUA (838 Grant Ave) was withdrawn and re-filed before eventual approval, showing that not all applications succeed on first submission.",
+    "citations": [
+     "app:datasf_planning:2016-008214MIS",
+     "app:datasf_planning:2018-007366CUA"
+    ]
+   }
+  ],
+  "approval_signals": [
+   "Accepting 7am–10pm operating hours consistent with the two recent CRNC approvals within one block",
+   "Full-service restaurant with meals and alcohol incidental to food service (Type 41 beer & wine) rather than bar use",
+   "Commits to standard eating/drinking conditions: sidewalk maintenance within one-block radius, soundproofing, odor control, community liaison",
+   "Filed within five years: 8 of 10 dated use decisions within 1,000 ft were approved (80% approval rate)",
+   "Beer & wine only (Type 41) rather than full bar, aligning with recent CRNC restaurant approvals"
+  ],
+  "denial_signals": [
+   "Requesting operating hours beyond 10pm in CRNC, which no recent approval within 200 meters has permitted for beer & wine restaurants",
+   "Failing to address soundproofing, odor control or sidewalk maintenance in the CUA application",
+   "Attempting to proceed through an agency referral pathway instead of filing a full CUA"
+  ]
+ },
+ "risk": {
+  "concept_summary": "A restaurant with limited cooking and a new ABC Type 41 beer & wine license at 735 Jackson St in the Chinatown Residential Neighborhood Commercial (CRNC) district, with tenant improvements and exterior signage.",
+  "overall": {
+   "next_step": "File a Conditional Use Authorization application with San Francisco Planning, committing to 7am–10pm daily operating hours and standard eating/drinking conditions (sidewalk maintenance, soundproofing, odor control, community liaison) that recent CRNC approvals within one block required."
+  },
+  "approvals": [
+   {
+    "area": "zoning_use",
+    "summary": "A restaurant in CRNC is a conditional use requiring Planning Commission approval; the 2022-04-20 code required a CUA hearing, and formula retail, use size and hours remain not decided because the description did not provide that information.",
+    "findings": [
+     {
+      "text": "Under Planning Code § 812 in force on 2022-04-20, a restaurant on the first story in CRNC was a conditional use requiring a Conditional Use Authorization from the Planning Commission.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CRNC",
+       "overlay:static:sf:nc_crnc"
+      ]
+     },
+     {
+      "text": "Within 1,000 feet over the past 5 years, 8 of N=10 dated use decisions for this kind of business were approved (3 approved, 5 approved with conditions), 0 denied, and 2 withdrawn, for an 80% approval rate.",
+      "confidence": "verified",
+      "citations": [
+       "stat:base_rate"
+      ]
+     },
+     {
+      "text": "A 1989 CUA at this exact address (735-737 Jackson St) approved adding dim sum to an existing restaurant, and a 2005 agency referral approved a full-service restaurant as permitted; but in 2011 a small self-service restaurant application was denied with the planner noting conditional use authorization was required.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:1989.286C",
+       "app:datasf_planning:MB0500563",
+       "app:datasf_planning:MB1100829"
+      ]
+     },
+     {
+      "text": "Three recent beer & wine restaurant CUAs in CRNC within 122 meters were approved with conditions limiting hours to 7am–10pm daily: 650 Jackson St (approved October 2019) and 150 Waverly Pl (approved May 2020) both received identical 7am–10pm hour restrictions.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2019-006948CUA",
+       "app:datasf_planning:2019-020999CUA"
+      ]
+     },
+     {
+      "text": "All three nearby CUA approvals imposed standard eating and drinking conditions: sidewalk maintenance within a one-block radius, soundproofing to San Francisco Noise Control Ordinance levels, odor control equipment, trash containment within the premises, and appointment of a community liaison officer.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2019-006948CUA",
+       "app:datasf_planning:2019-020999CUA",
+       "app:datasf_planning:2021-008505CUA"
+      ]
+     },
+     {
+      "text": "The description does not state whether the business is part of a chain (formula retail in CRNC is not permitted for restaurants per § 812), the floor area in square feet (CRNC requires CUA for uses 2,501+ sq ft), or the closing time (principally permitted hours in CRNC end at 11pm; conditional use hours run 11pm–2am), so those triggers are not decided.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "alcohol",
+    "summary": "ABC investigates every Type 41 application and the applicant must post public notice for 30 days; the license is non-quota so ABC issues new ones directly, but the extreme density (22 active on-sale licenses within 500 feet) may trigger undue-concentration review.",
+    "findings": [
+     {
+      "text": "ABC Type 41 (on-sale beer and wine, eating place) is a non-quota license that ABC issues directly after investigation and 30-day public posting at the premises, as stated in the applicant's description of the transaction.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:ca.abc_type_41"
+      ]
+     },
+     {
+      "text": "The density count shows 22 active ABC on-sale licenses within 500 feet and 87 within 1,000 feet, triggering the undue-concentration proxy flag; ABC's formal undue-concentration test compares census tract license counts with county ratios, which may require a Public Convenience or Necessity finding from the city and add 1–3 months to the timeline.",
+      "confidence": "likely_applicable",
+      "citations": [
+       "stat:density",
+       "catalog:ca.abc_type_41"
+      ]
+     },
+     {
+      "text": "No active ABC license of Types 41, 42, 47, 48, 61 or 75 is currently on file at 735 Jackson St, so the records do not confirm an existing license at the address that could be transferred or continued.",
+      "confidence": "verified",
+      "citations": [
+       "geo:address"
+      ]
+     },
+     {
+      "text": "ABC sends every license application to the San Francisco Police Department (ABC Liaison Unit) and to the Planning Department for review under California Business and Professions Code § 23987; Planning's zoning sign-off is a prerequisite to ABC issuing the license.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2019-006948CUA"
+      ]
+     },
+     {
+      "text": "Within 500 feet, 16 active Type 41 licenses are on file at nearby restaurant addresses, demonstrating that ABC routinely issues Type 41 licenses in this immediate area.",
+      "confidence": "verified",
+      "citations": [
+       "license:abc:600751",
+       "license:abc:384554",
+       "license:abc:534500",
+       "license:abc:297920",
+       "license:abc:463505",
+       "license:abc:508066",
+       "license:abc:225906",
+       "license:abc:538808",
+       "license:abc:602884",
+       "license:abc:196439",
+       "license:abc:480353",
+       "license:abc:478207",
+       "license:abc:467413",
+       "license:abc:378643",
+       "license:abc:553908",
+       "license:abc:450680"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "health",
+    "summary": "A health permit to operate is issued by DPH after plan check and final inspection without a discretionary hearing; the permit is allowed as of right once the facility matches the approved plans and a certified food safety manager is on staff.",
+    "findings": [
+     {
+      "text": "Under California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8, a food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_permit"
+      ]
+     },
+     {
+      "text": "DPH sends the health permit application to the Planning Department for interagency review under the March 2022 Interagency Permit Referrals handout; Planning confirms zoning compliance before DPH issues the final permit.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_permit"
+      ]
+     },
+     {
+      "text": "The FY2026–27 fee schedule sets the Permit to Operate application fee at $470 (includes initial inspection) and the annual license fee for restaurants and bars at $0 for 2026–28; reinspections are $276 per hour.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_permit"
+      ]
+     },
+     {
+      "text": "The health plan check for a new or remodeled kitchen costs $828 to $2,207 flat fee depending on scope (3 to 8 hours of review time) with extra review at $276/hour, and the applicant must schedule a pre-final inspection at ~80% complete and a final inspection at least two weeks in advance.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.health_plan_check"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "building_change_of_use",
+    "summary": "A building permit with change of use is required for tenant improvements that alter the kitchen; the permit must conform to the Planning Code (meaning it cannot issue before the CUA is granted), and whether a change of occupancy is needed is not established because the description does not state th…",
+    "findings": [
+     {
+      "text": "Under San Francisco Building Code § 106A.1 and Planning Code § 175, a change of use needs a building permit, and the permit must conform to the Planning Code before it is issued, meaning DBI will not issue the permit until Planning approves the CUA.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "The Planning Code change of use is established as Limited Restaurant to Restaurant; the description states the last use was limited restaurant, which is a Planning Code change of use per § 102.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "text": "Under the California Building Code 2019 edition, a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group and whether a change of occupancy is required are not established.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so a Building Code change of occupancy cannot be confirmed from the records alone.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit"
+      ]
+     },
+     {
+      "text": "Building permit plan review is routed to the Planning Department under Planning Code § 175(a); tenant improvements affecting the kitchen also need DPH plan check approval with stamped architectural drawings showing finishes, equipment, and the menu.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.building_permit",
+       "catalog:sf.health_plan_check"
+      ]
+     }
+    ]
+   }
+  ],
+  "could_not_establish": [
+   {
+    "question": "Whether the business is part of a chain that shares its name, look or menu with other locations (formula retail).",
+    "needs": "applicant_history",
+    "ask": "The applicant's business plan and any franchise or brand licensing agreements."
+   },
+   {
+    "question": "The floor area of the restaurant space in square feet.",
+    "needs": "plans",
+    "ask": "Architectural drawings or the lease showing the net floor area of the business."
+   },
+   {
+    "question": "The proposed closing time and full operating hours.",
+    "needs": "applicant_history",
+    "ask": "The applicant's operating plan; note that recent CRNC approvals within one block were conditioned to close at 10pm."
+   },
+   {
+    "question": "The occupant load (number of persons the space is designed for), which determines the Building Code occupancy group and whether a change of occupancy from the existing use is required.",
+    "needs": "plans",
+    "ask": "Architectural plans with the occupant load calculation and exit analysis."
+   },
+   {
+    "question": "The existing occupancy group and last certificate of occupancy for 735 Jackson St.",
+    "needs": "inspection",
+    "ask": "DBI records or a site inspection; public Planning records do not show current occupancy classifications."
+   },
+   {
+    "question": "Whether the census tract is designated undue concentration by ABC, requiring a Public Convenience or Necessity finding before a Type 41 license can issue.",
+    "needs": "agency_answer",
+    "ask": "ABC's determination letter or pre-application inquiry; the 22 on-sale licenses within 500 feet trigger the proxy flag but only ABC decides the formal PCN requirement."
+   },
+   {
+    "question": "The scope and cost of tenant improvements (kitchen equipment, hood, finishes, ADA upgrades), which sets the building permit fee and plan review timeline.",
+    "needs": "plans",
+    "ask": "Construction drawings and a contractor's estimate of the project valuation."
+   },
+   {
+    "question": "Whether a grease interceptor is already installed and properly sized for the proposed cooking type, or must be added.",
+    "needs": "inspection",
+    "ask": "SFPUC FOG program inspection or the building's plumbing records."
+   }
+  ],
+  "expected_conditions": [
+   {
+    "condition": "Hours of operation limited to 7:00 AM to 10:00 PM daily.",
+    "basis": "Two recent CRNC beer & wine restaurant CUAs within 122 meters (650 Jackson St approved October 2019, 150 Waverly Pl approved May 2020) were both conditioned to operate 7am–10pm daily; no approval within 200 meters permitted later closing for a beer & wine restaurant in CRNC.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA"
+    ]
+   },
+   {
+    "condition": "Sidewalk maintenance: the operator shall maintain the main entrance and all abutting sidewalks in clean condition per DPW standards, and monitor the sidewalk within a one-block radius daily to keep it free of litter associated with the business during operating hours.",
+    "basis": "All three recent CUA approvals within 200 meters imposed this condition verbatim, citing San Francisco Police Code Article 1, Section 34.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "Soundproofing: the premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance.",
+    "basis": "Standard eating and drinking condition imposed in all three recent CUA approvals within 200 meters.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "Odor control: appropriate odor control equipment shall be installed per the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises; odor control ducting shall not be applied to the primary façade.",
+    "basis": "Standard eating and drinking condition imposed in all three recent CUA approvals within 200 meters.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company.",
+    "basis": "Standard eating and drinking condition imposed in all three recent CUA approvals within 200 meters.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "Community liaison: prior to issuance of a building permit, the project sponsor shall appoint a community liaison officer and provide written notice of the liaison's name, address, and telephone number to the Zoning Administrator and all registered neighborhood groups.",
+    "basis": "Standard condition imposed in all three recent CUA approvals within 200 meters.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "Three-year validity: the CUA is valid for three years from the effective date of the Motion; DBI must issue a building permit or site permit within that period, or the sponsor must seek renewal.",
+    "basis": "Standard validity condition in all three recent CUA approvals.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "app:datasf_planning:2021-008505CUA"
+    ]
+   },
+   {
+    "condition": "ABC Type 41 license restricted to beer and wine service incidental to meals at a bona fide eating place, with minors allowed; no stand-alone bar service.",
+    "basis": "Type 41 licenses are issued only for eating places under California Business and Professions Code; the three nearby approvals involved restaurants with alcohol incidental to food service.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:ca.abc_type_41",
+     "app:datasf_planning:2019-006948CUA"
+    ]
+   }
+  ],
+  "filing_playbook": [
+   {
+    "step": 1,
+    "action": "Form the legal entity (LLC or corporation) with the California Secretary of State and obtain a federal EIN from the IRS.",
+    "what_to_say": "File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online through the Secretary of State's bizfile portal, then apply for an EIN at irs.gov the same day. The EIN and entity name are needed for every subsequent registration, so complete this first. File the Statement of Information within 90 days ($20 for LLC, $25 for corporation).",
+    "confidence": "verified",
+    "citations": [
+     "catalog:ca.sos_entity_registration",
+     "catalog:us.ein"
+    ]
+   },
+   {
+    "step": 2,
+    "action": "Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN).",
+    "what_to_say": "Submit the business registration application online with the EIN and entity documents. The fee is tiered by projected gross receipts (e.g. $55 up to $100k, $95 up to $250k, plus $4 state fee). Every city department asks for the BAN, so obtain it immediately after forming the entity. The registration year runs April 1 to March 31 with renewal due by the last day of February.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:sf.business_registration"
+    ]
+   },
+   {
+    "step": 3,
+    "action": "File a Conditional Use Authorization application with San Francisco Planning under Planning Code §§ 303 and 812, committing to 7am–10pm daily operating hours.",
+    "what_to_say": "State that the restaurant will serve beer and wine incidental to full meals (Type 41 ABC license), operate 7:00 AM to 10:00 PM daily, and commit to all standard eating/drinking conditions: daily sidewalk maintenance within a one-block radius, soundproofing to Noise Control Ordinance standards, odor control equipment installed per approved plans, trash kept within the premises, and appointment of a community liaison officer. Attach a business plan, menu, floor plan showing seating and service areas, and signed lease or letter of intent. If the floor area is 2,500 square feet or less and the business is not formula retail, state that in the application to avoid additional conditional use triggers.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2019-006948CUA",
+     "app:datasf_planning:2019-020999CUA",
+     "zoning:CRNC"
+    ]
+   },
+   {
+    "step": 4,
+    "action": "While the CUA is pending, prepare architectural drawings and apply for DPH plan check and DBI building permit plan review (but do not expect approval before the CUA is granted).",
+    "what_to_say": "Hire an architect who has done San Francisco restaurant kitchens. Submit stamped drawings showing the kitchen layout, equipment, finishes, hand sinks, three-compartment sink, food prep areas, and the menu to DPH Environmental Health for plan check ($828 small remodel to $2,207 new restaurant flat fee). Route the building permit application to Planning, DPH, and the Fire Department if the occupant load is 50 or more. Make clear in the DBI application that a CUA is pending and the permit cannot issue until the CUA is granted (Planning Code § 175). Schedule the DPH pre-final inspection at ~80% construction complete.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:sf.health_plan_check",
+     "catalog:sf.building_permit"
+    ]
+   },
+   {
+    "step": 5,
+    "action": "After the Planning Commission grants the CUA (expect 4–10 months from filing to hearing), finalize the building permit and begin tenant improvement construction.",
+    "what_to_say": "Once the CUA Motion is effective (typically 30 days after the hearing if no appeal is filed), submit the final architectural addenda to DBI incorporating any CUA conditions. Obtain the building permit and coordinate mechanical, electrical, plumbing, and hood suppression permits through licensed subcontractors. Install the grease interceptor per SFPUC FOG program requirements and submit the Installation Verification Form for the sewer bill reduction. The CUA is valid for three years from the effective date; DBI must issue the building permit within that window.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:sf.building_permit",
+     "catalog:sf.fog_wastewater_permit",
+     "app:datasf_planning:2019-006948CUA"
+    ]
+   },
+   {
+    "step": 6,
+    "action": "Apply for the ABC Type 41 license in parallel with the CUA or immediately after CUA approval, providing the signed lease, the CUA approval (or proof of filing), a seller's permit, and posting public notice at the premises for 30 days.",
+    "what_to_say": "File the ABC application online with proof of the entity, EIN, seller's permit, signed lease, and Planning's zoning sign-off (either the CUA approval or a letter from Planning confirming the CUA is pending). Pay the $1,000–$1,600 application fee. Post the required ABC notice at the premises for 30 days and photograph it. If ABC determines the census tract is undue concentration, coordinate with the Planning Department and the Supervisor's office to obtain a Public Convenience or Necessity finding letter; that process can add 1–3 months. ABC sends the application to SFPD and Planning for review under Business and Professions Code § 23987. Expect 60–120 days for approval if unprotested.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:ca.abc_type_41",
+     "stat:density"
+    ]
+   },
+   {
+    "step": 7,
+    "action": "Schedule the DPH final inspection and apply for the Health Permit to Operate after construction is complete and a certified food safety manager is on staff.",
+    "what_to_say": "At least two weeks before the target opening date, contact the DPH plan reviewer to schedule the final inspection. Confirm that the facility matches the approved plans: all equipment installed, hand sinks supplied with hot water, sealed surfaces, proper lighting, and trash/recycling areas enclosed. Have the ServSafe or equivalent Food Safety Manager certificate and food handler cards for all employees on hand. Pay the $470 Permit to Operate application fee (includes initial inspection). The permit is issued after the inspection passes; you cannot serve the public before it is issued.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:sf.health_permit",
+     "catalog:ca.food_safety_manager_cert"
+    ]
+   },
+   {
+    "step": 8,
+    "action": "Complete all remaining state and local registrations: seller's permit (CDTFA), EDD employer registration, workers' compensation insurance, fictitious business name (if the DBA differs from the entity name), and sign permit for exterior signage.",
+    "what_to_say": "Register for a seller's permit (free, issued same day online by CDTFA) before the ABC application. Register as an employer with EDD within 15 days of the first payroll. Obtain workers' comp insurance from a licensed carrier or State Fund (required from the first employee). File the fictitious business name statement with the SF County Clerk if the public-facing name differs from the legal entity name, publish once a week for four weeks in a court-approved newspaper, and file proof of publication within 45 days. Apply for a sign permit if installing new exterior signage ($300–$1,500 depending on size and illumination). Arrange ASCAP and BMI music licenses if playing recorded music or hosting live entertainment.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:ca.sellers_permit",
+     "catalog:ca.edd_employer_registration",
+     "catalog:ca.workers_comp_insurance",
+     "catalog:sf.fictitious_business_name",
+     "catalog:sf.sign_permit",
+     "catalog:us.ascap_license",
+     "catalog:us.bmi_license"
+    ]
+   }
+  ],
+  "timeline_cost": {
+   "days_min": 155,
+   "days_max": 425,
+   "cost_min_usd": 5751.0,
+   "cost_max_usd": 23576.0,
+   "notes": "This timeline and cost range cover the four approvals in the entitlement path: Conditional Use Authorization (120–300 days estimated from comparable cases, not a catalog entry), ABC Type 41 license (60–120 days, $1,000–$1,600 per the ABC catalog), Health Permit to Operate (14–45 days, $470–$1,000 per the DPH catalog), and Building Permit with change of use (14–120 days, $800–$15,000 per the DBI catalog). The timeline is the time to obtain those approvals when they are granted, measured from the CUA filing to the building permit issuance and health permit issuance; it is not a time to a denial or a withdrawal. The day range assumes the CUA, ABC license, and building permit proceed in overlapping phases: file the CUA first, apply for ABC after CUA approval or in parallel, and pursue the building permit plan review while the CUA is pending, with final issuance after the CUA is granted. The cost range includes government fees only and excludes professional services (architect, expediter, attorney), construction costs, or business setup costs (entity formation, business registration, seller's permit, which total approximately $1,200–$2,000 additional). The building permit fee is a percentage of construction valuation, estimated here at $800–$15,000 for typical restaurant tenant improvements. If ABC determines the census tract is undue concentration and a Public Convenience or Necessity finding is required, add 30–90 days to the ABC timeline. The health plan check ($828–$2,207) is counted separately from the building permit.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:ca.abc_type_41",
+    "catalog:sf.health_permit",
+    "catalog:sf.building_permit",
+    "catalog:sf.health_plan_check",
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2019-020999CUA"
+   ]
+  }
+ }
+}

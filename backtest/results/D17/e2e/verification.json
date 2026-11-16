@@ -1,0 +1,479 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 30,
+  "supported": 2,
+  "trimmed": 12,
+  "downgraded": 9,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 48 (on-sale general, public premises) license was issued at 1326 Grant Ave on January 17, 2024, and the rules read the space as a bar from that license type.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 48 (on-sale general, public premises) license was issued at 1326 Grant Ave on January 17, 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 48 (on-sale general, public premises) license was issued at 1326 Grant Ave on January 17, 2024.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:654532"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning approved bar use continuations at this address in 2006, 2010, and 2023, and approved non-amplified live entertainment under a 1994 CUA (Motion 13769) that was still in effect in 2001.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved bar use continuations at this address in 2006 and 2010, and approved non-amplified live entertainment under a 1994 CUA (Motion 13769) that was still in effect in 2001.",
+   "cut_problem": "keeps 'approved bar use continuations at this address in 2023', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning approved bar use continuations at this address in 2006, 2010, and 2023, and approved non-amplified live entertainment under a 1994 CUA (Motion 13769) that was still in effect in 2001.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The 2023 record is an ABC license referral for existing bar use, not described as a bar use continuation approval."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Planning Code § 780.3(c)(1)(A) permits intensification of an existing bar in the North Beach Special Use District only if the space is not enlarged; the description states intensification without tenant improvements, which if confirmed would avoid the new-use prohibition but not the CUA requirement for intensifying a conditional use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 780.3(c)(1)(A) permits intensification of an existing bar in the North Beach Special Use District only if the space is not enlarged; the description states intensification without tenant improvements, which if confirmed would avoid the new-use prohibition but not the CUA requirement for intensifying a conditional use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references Planning Code § 722, not § 780.3(c)(1)(A), and contains no information about intensification rules or requirements."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A 2012 CUA at 1337–39 Grant Ave (44 meters away) approved amplified live entertainment and extended hours to 1:30 a.m., and a 1993 CUA at 1363–71 Grant Ave (64 meters) approved adding live entertainment to an existing bar, both in the same North Beach NCD zoning district.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A 2012 CUA at 1337–39 Grant Ave (44 meters away) approved amplified live entertainment and extended hours to 1:30 a.m., and a 1993 CUA at 1363–71 Grant Ave (64 meters) approved adding live entertainment to an existing bar, both in the same North Beach NCD zoning district.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2012.0547C",
+    "app:datasf_planning:1993.255C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A bar already operates at this address and the proposal is to intensify entertainment and hours without enlarging the space, which triggers the conditional use requirement under Planning Code § 178 and § 780.3(c)(1)(A); formula retail and entertainment kind are not decided due to missing inputs.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar already operates at this address, which triggers the conditional use requirement under Planning Code § 178 and § 780.3(c)(1)(A); formula retail and entertainment kind are not decided due to missing inputs.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A bar already operates at this address, which triggers the conditional use requirement under Planning Code § 178 and § 780.3(c)(1)(A); formula retail and entertainment kind are not decided due to missing inputs.",
+   "confidence": null,
+   "citations": [
+    "app:abc:654532",
+    "app:datasf_planning:MB0600599",
+    "app:datasf_planning:MB1001319",
+    "app:datasf_planning:2023-010808MIS",
+    "app:datasf_planning:MB0100437",
+    "overlay:static:sf:north_beach_sud",
+    "app:datasf_planning:2012.0547C",
+    "app:datasf_planning:1993.255C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "An active ABC Type 48 (on-sale general, public premises) license is on file at 1326 Grant Ave, issued January 17, 2024 to Legacy North Beach Bar.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "An active ABC Type 48 (on-sale general, public premises) license is on file at 1326 Grant Ave, issued January 17, 2024 to Legacy North Beach Bar.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:654532"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "The census tract shows 107 active on-sale ABC licenses within 1,000 feet, triggering an undue-concentration flag; if the concept seeks a new license or a transfer, ABC will likely require a Public Convenience or Necessity finding from Planning and the census tract count will be a factor.",
+   "verdict": "partially_supported",
+   "supported_text": "The census tract shows 107 active on-sale ABC licenses within 1,000 feet, triggering an undue-concentration flag.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "The census tract shows 107 active on-sale ABC licenses within 1,000 feet, triggering an undue-concentration flag; if the concept seeks a new license or a transfer, ABC will likely require a Public Convenience or Necessity finding from Planning and the census tract count will be a factor.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows 107 licenses within 1,000 feet and the undue concentration flag, but does not state what ABC will require or that the census tract count will be a factor."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description does not state what alcohol will be served (beer and wine or spirits) or whether the existing Type 48 license will be amended, transferred, or left as is, so the rules cannot determine which ABC procedures apply.",
+   "verdict": "partially_supported",
+   "supported_text": "The description does not state what alcohol will be served (beer and wine or spirits), so the rules cannot determine which ABC procedures apply.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The description does not state what alcohol will be served (beer and wine or spirits), so the rules cannot determine which ABC procedures apply.",
+   "confidence": null,
+   "citations": [
+    "app:abc:654532",
+    "stat:density"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "kind": "finding",
+   "original": "Police Code § 1060 et seq. requires a Place of Entertainment permit when entertainment is a primary use (live music venue, nightclub, DJs, dancing) or shows run until 2 a.m., and a Limited Live Performance permit when live performance is secondary, ending by 10 or 11 p.m. (depending on zoning) in a performance area of 200 sq ft or less.",
+   "verdict": "partially_supported",
+   "supported_text": "A Place of Entertainment permit is required when entertainment is a primary use (live music venue, nightclub, DJs, dancing) or shows run until 2 a.m.",
+   "cut_problem": "adds or moves 'required': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Police Code § 1060 et seq. requires a Place of Entertainment permit when entertainment is a primary use (live music venue, nightclub, DJs, dancing) or shows run until 2 a.m., and a Limited Live Performance permit when live performance is secondary, ending by 10 or 11 p.m. (depending on zoning) in a performance area of 200 sq ft or less.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions only the Place of Entertainment permit; it does not cite the Police Code section or mention a Limited Live Performance permit."
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "kind": "finding",
+   "original": "A 2012 CUA at 1337–39 Grant Ave approved amplified live entertainment until 1:30 a.m. in conjunction with a Place of Entertainment permit, and a 2001 agency referral at this address approved non-amplified entertainment under a 1994 CUA.",
+   "verdict": "partially_supported",
+   "supported_text": "A 2012 CUA at 1337–39 Grant Ave approved amplified live entertainment until 1:30 a.m., and a 2001 agency referral at this address approved non-amplified entertainment under a 1994 CUA.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A 2012 CUA at 1337–39 Grant Ave approved amplified live entertainment until 1:30 a.m., and a 2001 agency referral at this address approved non-amplified entertainment under a 1994 CUA.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2012.0547C",
+    "app:datasf_planning:MB0100437"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:entertainment:2",
+   "kind": "finding",
+   "original": "The Entertainment Commission application is sent to the Police Department, Planning, DBI, Public Health, and Fire for review, and a 30-day posted notice and public hearing follow.",
+   "verdict": "partially_supported",
+   "supported_text": "The Entertainment Commission application is sent to the Police Department and Planning for review, and a 30-day posted notice and public hearing follow.",
+   "cut_problem": "adds or moves 'Planning': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Entertainment Commission application is sent to the Police Department, Planning, DBI, Public Health, and Fire for review, and a 30-day posted notice and public hearing follow.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions Police and Planning review but does not state that DBI, Public Health, or Fire receive the application for review."
+  },
+  {
+   "item_id": "summary:entertainment",
+   "kind": "summary",
+   "original": "Live entertainment with amplified sound after midnight at a bar requires either a Place of Entertainment permit or a Limited Live Performance permit from the Entertainment Commission, depending on the scale and hours; the Commission holds a public hearing and refers the application to Police, Plann…",
+   "verdict": "partially_supported",
+   "supported_text": "Live entertainment with amplified sound after midnight at a bar requires either a Place of Entertainment permit or a Limited Live Performance permit from the Entertainment Commission; the Commission holds a public hearing and refers the application to Police, Plann…",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Live entertainment with amplified sound after midnight at a bar requires either a Place of Entertainment permit or a Limited Live Performance permit from the Entertainment Commission; the Commission holds a public hearing and refers the application to Police, Plann…",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.place_of_entertainment_permit",
+    "app:datasf_planning:2012.0547C",
+    "app:datasf_planning:MB0100437"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8 require a health permit to operate a food or drink business, issued after plan check and inspection.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8 require a health permit to operate a food or drink business, issued after plan check and inspection.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes a business registration certificate, not a health permit, and does not mention the California Retail Food Code or San Francisco Health Code Article 8."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is sent to the Planning Department for zoning review as an interagency referral.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is sent to the Planning Department for zoning review as an interagency referral.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is about business registration requirements, not health permit application procedures or interagency referrals."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A bar serving only beverages needs a health permit to operate, which is issued by the Department of Public Health after plan check and inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar needs a health permit to operate, which is issued by the Department of Public Health after plan check and inspection without a discretionary hearing.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.business_registration"
+   ],
+   "note": "The rule states this applies to 'food or drink business,' not specifically to bars 'serving only beverages.'"
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 48 license is on file at 1326 Grant Ave, and the rules read the space as a bar from that license; if it is in fact a bar, continuing as a bar is not a change of use under the Planning Code.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 48 license is on file at 1326 Grant Ave.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 48 license is on file at 1326 Grant Ave.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:654532"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The description states no tenant improvements, but the rules cannot determine whether a building permit or change of occupancy is needed because the occupant load (whether the space is for fewer than 50 people) and the existing occupancy group are not stated and cannot be established from records.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules cannot determine whether a building permit or change of occupancy is needed because the occupant load (whether the space is for fewer than 50 people) and the existing occupancy group are not stated and cannot be established from records.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The rules cannot determine whether a building permit or change of occupancy is needed because the occupant load (whether the space is for fewer than 50 people) and the existing occupancy group are not stated and cannot be established from records.",
+   "confidence": null,
+   "citations": [
+    "app:abc:654532"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to 6 a.m. to 2 a.m. daily, with entertainment ending by 1:30 a.m. or earlier. Basis: A 2012 CUA at 1337–39 Grant Ave (44 meters away) approved entertainment until 1:30 a.m. in the same North Beach NCD zoning district. The district's principally permitted hours run 6 a.m. to 2 a.m., but entertainment conditions typically impose earlier cutoffs.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to 6 a.m. to 2 a.m. daily, with entertainment ending by 1:30 a.m. or earlier. Basis: A 2012 CUA at 1337–39 Grant Ave (44 meters away) approved entertainment until 1:30 a.m. in the same North Beach NCD zoning district.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation limited to 6 a.m. to 2 a.m. daily, with entertainment ending by 1:30 a.m. or earlier. Basis: A 2012 CUA at 1337–39 Grant Ave (44 meters away) approved entertainment until 1:30 a.m. in the same North Beach NCD zoning district.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2012.0547C",
+    "zoning:NCD-NORTH BEACH"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Good-neighbor policy: operator shall provide a telephone number and email address for neighbors to report concerns, respond to complaints within 24 hours, and meet quarterly with the North Beach Neighborhood Association or nearby residents. Basis: Standard condition for bar and entertainment CUAs in dense residential neighborhoods; the 2012 CUA at 1337–39 Grant Ave and the 2009 CUA at 460 Columbus Ave both involved entertainment in North Beach, and good-neighbor policies are typical for such approvals citywide.",
+   "verdict": "partially_supported",
+   "supported_text": "Basis: The 2012 CUA at 1337–39 Grant Ave and the 2009 CUA at 460 Columbus Ave both involved entertainment in North Beach.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show the two CUAs involved entertainment in North Beach but do not list any conditions or state that good-neighbor policies are standard or typical."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Security plan: operator shall submit a security plan to the Police Department and the Entertainment Commission detailing staffing, ID checks, crowd control, and procedures to prevent loitering and noise outside the premises. Basis: The Entertainment Commission and Police Department review Place of Entertainment permits with an eye to public safety; security plans are routinely required for bars with entertainment in high-density areas like North Beach.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms Police and Entertainment Commission review but does not state that security plans are routinely required or specify such plan requirements."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: No physical expansion or enlargement of the bar use into adjacent spaces or floors without a new Conditional Use Authorization. Basis: Planning Code § 780.3(c)(1)(A) permits intensification of an existing bar in the North Beach Special Use District only if the space is not enlarged; the 2017 CUA application to expand a bar at 1345 Grant Ave (same block) was withdrawn, suggesting expansion is more scrutinized than intensification alone.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: No physical expansion or enlargement of the bar use into adjacent spaces or floors without a new Conditional Use Authorization. Basis: The 2017 CUA application to expand a bar at 1345 Grant Ave (same block) was withdrawn.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The overlay record cites § 722, not § 780.3(c)(1)(A), and contains no rule text about intensification or enlargement; the records do not state why the application was withdrawn."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Compliance with ABC Type 48 license conditions: the bar shall operate as a bona fide public premises with no minors allowed, and alcohol service shall end by 2 a.m. as required by state law. Basis: ABC Type 48 is an on-sale general, public premises license that prohibits minors and is subject to standard ABC operating conditions. The license at this address was issued January 2024 and is active.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Compliance with ABC Type 48 license conditions. Basis: ABC Type 48 is an on-sale general, public premises license. The license at this address was issued January 2024 and is active.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Compliance with ABC Type 48 license conditions. Basis: ABC Type 48 is an on-sale general, public premises license. The license at this address was issued January 2024 and is active.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:654532"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online at bizfile.sos.ca.gov, then apply for an EIN at irs.gov the same week. The entity name and EIN are needed for every permit, license, bank account, and lease signature that follows. If you are a sole proprietor, you may skip the entity formation and file a fictitious business name (DBA) statement with the San Francisco County Clerk instead, but an LLC or corporation is standard for a bar with a liquor license and limits personal liability.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online, then apply for an EIN. The entity name and EIN are needed for every permit, license, bank account, and lease signature that follows.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state the forms, fees, and that entity name and EIN are needed, but do not give the specific URLs, timing, DBA filing details, or liability statements."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Apply online at businessportal.sfgov.org within 30 days of starting business in San Francisco. The fee is tiered by gross receipts ($55 up to $100k, $95 up to $250k, $625 at $1–1.5M for 2026–27, each plus a $4 state fee). Every other city department asks for your BAN, so do this immediately after forming the entity and getting the EIN. The registration year runs April 1 to March 31 and renewal is due by the last day of February each year.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Apply within 30 days of starting business in San Francisco. The fee is tiered by gross receipts ($55 up to $100k, $95 up to $250k, $625 at $1–1.5M for 2026–27, each plus a $4 state fee). Every other city department asks for your BAN, so do this immediately after forming the entity and getting the EIN. The registration year runs April 1 to March 31 and renewal is due by the last day of February each year.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Apply within 30 days of starting business in San Francisco. The fee is tiered by gross receipts ($55 up to $100k, $95 up to $250k, $625 at $1–1.5M for 2026–27, each plus a $4 state fee). Every other city department asks for your BAN, so do this immediately after forming the entity and getting the EIN. The registration year runs April 1 to March 31 and renewal is due by the last day of February each year.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms a new CUA is required, file the Conditional Use Authorization application with San Francisco Planning, requesting approval to intensify entertainment by adding amplified sound and extending hours. What to say: Submit the CUA application online at sf.gov/departments/planning with the required fee (no-construction CUA starts at approximately $3,150 for 2026–27, CPI-adjusted annually; fees rise with construction cost). The application must include: a project description stating that this is intensification of an existing bar without physical expansion, the proposed entertainment format (Place of Entertainment or Limited Live Performance) with hours, occupant load, and floor plan, a good-neighbor plan detailing how you will address noise and security concerns, and a letter from the landlord or a copy of the lease. Planning will route the application for environmental review, schedule a pre-application community meeting (required for CUAs in neighborhood commercial districts), post a 300-foot mailed notice and a site notice for 30 days, and schedule a Planning Commission hearing. At the hearing, f…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If Planning confirms a new CUA is required, file the Conditional Use Authorization application with San Francisco Planning. What to say: Submit the CUA application with the required fee (no-construction CUA starts at approximately $3,150, CPI-adjusted annually; fees rise with construction cost). Planning will schedule a Planning Commission hearing with 300-foot mailed notice and a site notice.",
+   "cut_problem": "adds or moves 'with': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state the fee and hearing notice requirements but not the specific website, year 2026-27, application content requirements, environmental review, or pre-application meeting."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: After the CUA is approved and the 30-day appeal period expires (or if Planning confirms no CUA is needed), apply for the Place of Entertainment or Limited Live Performance permit from the San Francisco Entertainment Commission. What to say: Email the Entertainment Commission Deputy Director (contact via sfgov.org/entertainment) to confirm zoning eligibility before applying; attach the approved CUA (or Planning's letter stating no CUA is needed) and a copy of the lease or ABC license. If eligible, file the application online with the $2,708 application fee (2026–27). The application must include: the CUA approval or Letter of Determination, the proposed hours and entertainment format, a floor plan showing the performance area (if Limited Live Performance, it must be ≤200 sq ft), a sound and security plan, proof of workers' compensation insurance, and the ABC license or a pending ABC application number. The Commission will refer the application to the Police Department, Planning, DBI, Public Health, and Fire for review, and you must post a yellow notice at the site for 30 days and conduct neighborhood outreach. The Commissio…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: After the CUA is approved, apply for the Place of Entertainment or Limited Live Performance permit from the San Francisco Entertainment Commission. What to say: Email the Entertainment Commission Deputy Director to confirm zoning eligibility before applying; new businesses need a lease or temporary liquor license. The application fee is $2,708 (2026–27). The Commission will refer the application to the Police Department and Planning for review, and you must post a notice at the site for 30 days.",
+   "cut_problem": "adds or moves 'new': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records mention Deputy Director contact, $2,708 fee, lease/liquor license need, Police and Planning review, and 30-day posted notice, but not the specific application requirements, other reviewing agencies, or neighborhood outreach details."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Apply for or confirm the ABC license with the California Department of Alcoholic Beverage Control. What to say: An active ABC Type 48 (on-sale general, public premises) license is on file at 1326 Grant Ave, issued January 17, 2024. If the license will remain with the same owner and entity and no transfer or amendment is needed, no new ABC application is required; confirm the license status at abc.ca.gov and ensure the premises registration and seller's permit match the entity. If the license must be transferred to a new owner or entity, file a person-to-person transfer application with ABC, which takes 90–180 days including escrow, a 30-day public posting at the premises, and local zoning sign-off from Planning. If a new license is needed (unlikely, as a Type 48 is already active here), note that Type 48 is a quota license and new ones are released only through ABC's annual priority drawing or purchased on the open market for $100k–$450k in San Francisco. ABC will refer the application to the San…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for or confirm the ABC license with the California Department of Alcoholic Beverage Control. What to say: An active ABC Type 48 (on-sale general, public premises) license is on file at 1326 Grant Ave, issued January 17, 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for or confirm the ABC license with the California Department of Alcoholic Beverage Control. What to say: An active ABC Type 48 (on-sale general, public premises) license is on file at 1326 Grant Ave, issued January 17, 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [
+    "app:abc:654532",
+    "stat:density"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Obtain the health permit to operate from the San Francisco Department of Public Health. What to say: Apply online at sfdph.org/dph/EH at least one month before opening, with your BAN, Location ID (LIN), and federal tax ID. The permit is issued after plan check (if the space is new or remodeled) and a final inspection. For a bar with no food preparation, the 2026–27 fee is $470 for the Permit to Operate application (includes initial inspection) and $0 annual license fee for 2026–28. A certified food safety manager is not required if you serve only beverages, but if you serve any food (even prepackaged snacks), at least one owner or employee must have a Certified Food Protection Manager certificate (ServSafe or equivalent, $100–$250) before the pre-opening inspection. Schedule the final health inspection two weeks in advance; DPH will refer the permit application to Planning for zoning review, and Planning will confirm the CUA approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited record is about business registration certificate, not health permits; it does not describe the health permit process, fees, or requirements."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Obtain music licensing (ASCAP and BMI) and complete RBS training for all alcohol servers and managers. What to say: Federal copyright law requires a blanket public performance license to play music (background, DJs, live covers, TV with music). Apply online at ascap.com and bmi.com; annual fees are formula-based on occupancy and music use (typically $300–$2,500 per catalog). Most venues need both ASCAP and BMI because their catalogs do not overlap. California AB 1221 requires Responsible Beverage Service (RBS) certification for every alcohol server and their managers within 60 days of hire. Register on the ABC RBS Portal at abc.ca.gov/licensing/rbs ($3), complete an approved course (about $10–$25), and pass the exam. Keep the certification list on site for ABC inspections. These are fast (1–7 days each) but easy to forget, so schedule them in the final two weeks before opening.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain music licensing (ASCAP and BMI) and complete RBS training for all alcohol servers and managers. What to say: Federal copyright law requires a blanket public performance license to play music (background, DJs, live covers, TV with music). Annual fees are formula-based on occupancy and music use (typically $300–$2,500 per catalog). Most venues need both ASCAP and BMI because their catalogs do not overlap. California AB 1221 requires Responsible Beverage Service (RBS) certification for every alcohol server and their managers within 60 days of hire. Register on the ABC RBS Portal ($3), complete an approved course (about $10–$25), and pass the exam. Keep the certification list on site for ABC inspections. These are fast (1–7 days each).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain music licensing (ASCAP and BMI) and complete RBS training for all alcohol servers and managers. What to say: Federal copyright law requires a blanket public performance license to play music (background, DJs, live covers, TV with music). Annual fees are formula-based on occupancy and music use (typically $300–$2,500 per catalog). Most venues need both ASCAP and BMI because their catalogs do not overlap. California AB 1221 requires Responsible Beverage Service (RBS) certification for every alcohol server and their managers within 60 days of hire. Register on the ABC RBS Portal ($3), complete an approved course (about $10–$25), and pass the exam. Keep the certification list on site for ABC inspections. These are fast (1–7 days each).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license",
+    "catalog:ca.rbs_training"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,163 to $15,700. Notes: The timeline and cost range cover the Conditional Use Authorization (120–300 days, $3,100–$15,000), the Place of Entertainment or Limited Live Performance permit (45–120 days, $2,708), and the health permit to operate (14–45 days, $470), which are the approvals in the entitlement path. These are times to approval for cases that are granted; denied or withdrawn cases are not included in this range. The CUA is the critical path: pre-application meeting, environmental review, community meeting, 300-foot mailed notice, 30-day posted notice, and Planning Commission hearing, followed by a 30-day appeal period, typically take six to ten months when approved. The Entertainment Commission permit follows the CUA and adds two to four months (intake meeting, referrals to five departments, 30-day posted notice, and Commission hearing). The health permit is administrative and takes two to six weeks after the CUA is approved. The cost does not include the ABC license because the description does not state whether the existing Type 48 license will be transferred, amended, or remain unchanged, so no ABC cost is included. If a Type 48 transfer is needed, add 90–180 days and $17,000–$450,000 (license purchase price plus transfer fees). The cost also does not include business registration ($55–$700), entity formation ($70–$150), a fictitious business name ($60–$120), workers' compensation insurance (premiums are a percentage of payroll, not a government fee), music licensing ($600–$5,000 for ASCAP and BMI combined), or RBS training ($13–$150 for five employees), because these are not discretionary approvals and are required for any bar. The timeline assumes no discretionary review, no neighborhood appeal to the Board of Supervisors, and no revisions required by the Entertainment Commission; protests or appeals can add three to six months.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $3,163 to $15,700. Notes: The timeline and cost range cover the Conditional Use Authorization (120–300 days, $3,100–$15,000) and the Place of Entertainment or Limited Live Performance permit (45–120 days, $2,708), which are approvals in the entitlement path. The CUA is the critical path: pre-application meeting, environmental review, community meeting, 300-foot mailed notice, 30-day posted notice, and Planning Commission hearing, followed by a 30-day appeal period, typically take six to ten months when approved. The Entertainment Commission permit follows the CUA and adds two to four months (intake meeting, referrals to five departments, 30-day posted notice, and Commission hearing). The cost does not include the ABC license because the description does not state whether the existing Type 48 license will be transferred, amended, or remain unchanged, so no ABC cost is included. If a Type 48 transfer is needed, add 90–180 days and $17,000–$450,000 (license purchase price plus transfer fees). The cost also does not include business registration ($55–$700), entity formation ($70–$150), a fictitious business name ($60–$120), workers' compensation insurance (premiums are a percentage of payroll, not a government fee), music licensing ($600–$5,000 for ASCAP and BMI combined), or RBS training ($13–$150 for five employees), because these are not discretionary approvals and are required for any bar.",
+   "cut_problem": "adds or moves 'Place': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,163 to $15,700. Notes: The timeline and cost range cover the Conditional Use Authorization (120–300 days, $3,100–$15,000), the Place of Entertainment or Limited Live Performance permit (45–120 days, $2,708), and the health permit to operate (14–45 days, $470), which are the approvals in the entitlement path. These are times to approval for cases that are granted; denied or withdrawn cases are not included in this range. The CUA is the critical path: pre-application meeting, environmental review, community meeting, 300-foot mailed notice, 30-day posted notice, and Planning Commission hearing, followed by a 30-day appeal period, typically take six to ten months when approved. The Entertainment Commission permit follows the CUA and adds two to four months (intake meeting, referrals to five departments, 30-day posted notice, and Commission hearing). The health permit is administrative and takes two to six weeks after the CUA is approved. The cost does not include the ABC license because the description does not state whether the existing Type 48 license will be transferred, amended, or remain unchanged, so no ABC cost is included. If a Type 48 transfer is needed, add 90–180 days and $17,000–$450,000 (license purchase price plus transfer fees). The cost also does not include business registration ($55–$700), entity formation ($70–$150), a fictitious business name ($60–$120), workers' compensation insurance (premiums are a percentage of payroll, not a government fee), music licensing ($600–$5,000 for ASCAP and BMI combined), or RBS training ($13–$150 for five employees), because these are not discretionary approvals and are required for any bar. The timeline assumes no discretionary review, no neighborhood appeal to the Board of Supervisors, and no revisions required by the Entertainment Commission; protests or appeals can add three to six months.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited records do not include a health permit catalog entry; the health permit timing, cost, and procedural details are not in the cited records."
+  }
+ ]
+}

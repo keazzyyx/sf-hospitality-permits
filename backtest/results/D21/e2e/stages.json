@@ -1,0 +1,478 @@
+{
+ "records": {
+  "summary": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district, where a Bar use is a conditional use requiring Planning Commission approval. The address currently holds off-sale ABC licenses (Type 20 and Type 86) for \"Blue Stream Gallery and Gifts,\" a retail art gallery and liquor store approved by Planning in April 2023. The proposed transition from retail to an on-premises beer-and-wine bar (Type 42) is a change of use that will require a Conditional Use Authorization. Within 1,000 feet there is only one dated use decision in the last decade—not enough to establish a meaningful approval rate. Within 500 feet there are 3 active on-sale licenses and 13 registered food/drink businesses, suggesting moderate but not excessive concentration.",
+  "flags": [
+   {
+    "flag": "Bar use is a conditional use in the CCB district, requiring a Conditional Use Authorization and Planning Commission hearing (Planning Code § 810).",
+    "citations": [
+     "zoning:CCB",
+     "overlay:static:sf:nc_ccb",
+     "catalog:sf.conditional_use_authorization"
+    ]
+   },
+   {
+    "flag": "The business already holds ABC Type 20 (off-sale beer/wine) and Type 86 licenses at this address; Planning approved the Type 20 in April 2023 for a gallery and liquor store.",
+    "citations": [
+     "app:datasf_planning:2023-003336MIS"
+    ]
+   },
+   {
+    "flag": "Changing from retail to a bar (Type 42) is a change of use under the Planning Code pathway rules.",
+    "citations": [
+     "geo:address"
+    ]
+   },
+   {
+    "flag": "Only 1 dated food/drink use decision within 1,000 ft in the last 10 years (a withdrawn CUA at 717 California in 2021), so no local approval rate can be calculated.",
+    "citations": [
+     "stat:base_rate",
+     "app:datasf_planning:2019-021010CUA"
+    ]
+   },
+   {
+    "flag": "Within 500 feet: 3 active on-sale licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 13 registered food/drink businesses, including 2 bars.",
+    "citations": [
+     "stat:density",
+     "license:abc:557010",
+     "license:abc:362201",
+     "license:abc:534529"
+    ]
+   },
+   {
+    "flag": "The nearest comparable bar approval is 690 Sacramento (Type 48 CUA approved Nov 2023 with conditions), 219 m away in the same CCB district.",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "flag": "The address is inside the Priority Equity Geographies Special Use District (§ 249.97), which may offer fee waivers or expedited processing for certain projects.",
+    "citations": [
+     "overlay:datasf_sud:priority_equity_geographies_sud"
+    ]
+   },
+   {
+    "flag": "No alcohol-restrictive Special Use District (e.g. Mission Alcoholic Beverage SUD) applies at this address.",
+    "citations": [
+     "overlay:datasf_sud:priority_equity_geographies_sud",
+     "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+    ]
+   },
+   {
+    "flag": "64 active on-sale ABC licenses within 1,000 feet, reflecting the density of Chinatown's restaurant and bar scene but not triggering an undue-concentration flag in this count.",
+    "citations": [
+     "stat:density"
+    ]
+   }
+  ],
+  "noteworthy_application_ids": [
+   "datasf_planning:2023-005339CUA",
+   "datasf_planning:2023-003336MIS",
+   "datasf_planning:2023-005386MIS",
+   "datasf_planning:2023-010036MIS",
+   "datasf_planning:2022-004266MIS",
+   "datasf_planning:2016-003213MIS",
+   "datasf_planning:2019-021010CUA",
+   "datasf_planning:2016-010671CUA"
+  ],
+  "data_gaps": [
+   "No hearing transcripts or decision memoranda extracted for the 690 Sacramento CUA (2023-005339CUA), so the reasons for the approval conditions are not shown.",
+   "The ABC license database does not expose detailed conditions or operating restrictions for the nearby on-sale licenses.",
+   "No census tract undue-concentration determination is included; ABC will evaluate this separately during the Type 42 application.",
+   "The withdrawn CUA at 717 California (2019-021010CUA) gives no reason for the withdrawal in the record.",
+   "Registered business data (within 500 ft) does not distinguish currently operating establishments from closed ones; the count of 13 food/drink businesses may include inactive registrations.",
+   "No Planning Code history before 2022 is loaded, so earlier changes to CCB rules for bars are not shown."
+  ]
+ },
+ "precedent": {
+  "comparables": [
+   {
+    "application_id": "datasf_planning:2023-005339CUA",
+    "why_comparable": "Bar use (Type 48) in the CCB district at 690 Sacramento, 219 m away, filed June 2023 and approved November 2023. Same zoning district, same conditional-use pathway under Planning Code Section 810, recent decision establishes current Commission expectations.",
+    "key_takeaway": "Use decision: Bar CUA in CCB was approved with conditions in 5.5 months (171 days filing to decision). Standard conditions included noise control, community liaison officer, and patron notices at exits. No unusual restrictions on hours or operations, confirming the Commission approves bar uses in CCB when neighborhood impacts are managed."
+   },
+   {
+    "application_id": "datasf_planning:2023-005386MIS",
+    "why_comparable": "ABC Type 48 referral for the bar at 690 Sacramento (RM 212) approved in January 2024, following the November 2023 CUA. Shows the two-step process: CUA first, then ABC referral, and that Planning routinely approves the ABC application once the CUA is granted.",
+    "key_takeaway": "Agency referral: Planning approved the Type 48 ABC referral for 690 Sacramento after CUA 2023-005339CUA was granted, confirming the standard sequence: obtain CUA approval, then ABC applies the license. The referral approval took 204 days but was held pending the CUA decision; once the CUA was final the ABC referral was routine."
+   },
+   {
+    "application_id": "datasf_planning:2023-010036MIS",
+    "why_comparable": "Board of Supervisors Public Convenience or Necessity referral for the same 690 Sacramento bar (Type 48), approved January 2024. Demonstrates that even a PCN finding from the Board of Supervisors was granted for a bar in the CCB district, supporting the conclusion that the district is not hostile to bar uses.",
+    "key_takeaway": "Agency referral: The Board of Supervisors recommended approval of the PCN finding for a bar at 690 Sacramento in CCB, indicating no undue-concentration barrier or policy objection to bar licenses in this part of Chinatown, even for full-liquor (Type 48) applications."
+   },
+   {
+    "application_id": "datasf_planning:2022-004266MIS",
+    "why_comparable": "ABC Type 48 bar approval at 447 Bush Street, 230 m away in the C-3-R district, decided May 2022. Different zoning (C-3-R permits bars principally, CCB requires CU) but close proximity shows Planning's comfort with bar density in this downtown/Chinatown edge area.",
+    "key_takeaway": "Agency referral: Planning approved a Type 48 bar in the nearby C-3-R district in 7 days as principally permitted. While the C-3-R zoning differs from CCB, the proximity (230 m) and lack of concern about concentration or neighborhood character supports the viability of bars in this corridor."
+   },
+   {
+    "application_id": "datasf_planning:2025-001198MIS",
+    "why_comparable": "Recent ABC Type 48 referral at 627 Grant Ave (78 m away), approved February 2025 for an existing restaurant and full bar (Far East Café) in the CVR district. Shows Planning's willingness to approve on-sale licenses on the Grant Avenue corridor very close to the subject site.",
+    "key_takeaway": "Agency referral: Planning approved a Type 48 continuation (existing use since 1965) at 627 Grant, one block from 555 Grant, in February 2025. The proximity and recent date confirm that the Grant Avenue corridor continues to support on-sale alcohol uses and that concentration is not a barrier."
+   },
+   {
+    "application_id": "datasf_planning:2016-003213MIS",
+    "why_comparable": "ABC Type 48 bar referral at 447 Bush Street, 230 m away, decided May 2016 for entertainment and arts use in the C-3-R district. Earlier approval at the same address as 2022-004266MIS, showing a long-standing bar location near the subject site.",
+    "key_takeaway": "Agency referral: Planning approved a Type 48 bar at 447 Bush in 2016 in the C-3-R district as permitted under Sections 210.2 and 102. The location has held a bar license continuously, demonstrating stable bar operations close to the Chinatown boundary without neighborhood conflict."
+   }
+  ],
+  "patterns": [
+   {
+    "pattern": "Bar uses in the CCB district require a Conditional Use Authorization under Planning Code Section 810. Planning approved a bar CUA at 690 Sacramento (219 m away, same CCB district) in 5.5 months with standard conditions but no denial or unusual operating restrictions.",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA",
+     "app:datasf_planning:2023-005386MIS",
+     "app:datasf_planning:2023-010036MIS"
+    ]
+   },
+   {
+    "pattern": "ABC license referrals (agency_referral record kind) follow the CUA and are approved quickly (under two weeks when not held pending a CUA). The 690 Sacramento Type 48 referral and 447 Bush Type 48 referrals were all approved, showing routine ABC approval once zoning authorization is in place.",
+    "citations": [
+     "app:datasf_planning:2023-005386MIS",
+     "app:datasf_planning:2023-010036MIS",
+     "app:datasf_planning:2022-004266MIS",
+     "app:datasf_planning:2016-003213MIS"
+    ]
+   },
+   {
+    "pattern": "Standard bar CUA conditions in this area include noise control and soundproofing, sidewalk and litter maintenance within a one-block radius, garbage/recycling/compost management, a community liaison officer, and posted patron notices urging quiet departure. No conditions restricting hours or capacity were imposed at 690 Sacramento.",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "pattern": "Planning approved on-sale licenses (Type 48, Type 47) at multiple addresses within 250 m of 555 Grant in 2016–2025, including 690 Sacramento (CCB), 447 Bush (C-3-R), and 627 Grant (CVR), indicating no undue-concentration concern or neighborhood objection to bar density in this corridor.",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA",
+     "app:datasf_planning:2022-004266MIS",
+     "app:datasf_planning:2025-001198MIS",
+     "app:datasf_planning:2016-003213MIS"
+    ]
+   },
+   {
+    "pattern": "The Board of Supervisors granted a Public Convenience or Necessity finding for the bar at 690 Sacramento, confirming that the CCB district and this part of Chinatown are not designated as undue-concentration areas where new bar licenses face additional barriers.",
+    "citations": [
+     "app:datasf_planning:2023-010036MIS"
+    ]
+   }
+  ],
+  "approval_signals": [
+   "Bar use (Type 48 full bar) approved in the CCB district at 690 Sacramento, 219 m away, in November 2023",
+   "No denials of bar CUAs found in the CCB, CVR, or nearby C-3-R districts in the candidate set",
+   "Multiple on-sale ABC licenses approved within 250 m in 2016–2025, showing neighborhood acceptance of bar density",
+   "Board of Supervisors granted a Public Convenience or Necessity finding for a bar at 690 Sacramento, confirming no undue-concentration barrier",
+   "Standard conditions at 690 Sacramento were operational (noise, litter, liaison) with no hour restrictions or capacity caps"
+  ],
+  "denial_signals": [
+   "Type 42 on-premises bar is a change of use from retail, triggering full CUA with 300-foot notice, hearing, and appeal period rather than over-the-counter approval",
+   "Only one CCB use decision within 1,000 feet in the last decade, and it was withdrawn (not denied); insufficient history to measure approval rate or predict obstacles"
+  ]
+ },
+ "risk": {
+  "concept_summary": "Beer-and-wine bar (ABC Type 42) serving packaged goods for sale, with tenant improvements and exterior signage, at 555 Grant Ave in the Chinatown Community Business district.",
+  "overall": {
+   "next_step": "Confirm with Planning whether the business is part of a chain and obtain the floor area in square feet, then file the Conditional Use Authorization application with SF Planning, including a pre-application meeting and 300-foot neighborhood outreach."
+  },
+  "approvals": [
+   {
+    "area": "zoning_use",
+    "summary": "A Bar use at 555 Grant Ave in the CCB district requires a Conditional Use Authorization under Planning Code Section 810, and formula retail and use size over 2,500 sq ft would also trigger CU review, but the records do not show whether the business is part of a chain or its floor area.",
+    "findings": [
+     {
+      "text": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district, where a Bar use on the first story is a conditional use requiring Planning Commission approval.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB",
+       "overlay:static:sf:nc_ccb"
+      ]
+     },
+     {
+      "text": "Planning approved an ABC Type 20 (off-sale beer/wine) referral for a gallery and liquor store at 555 Grant Ave in April 2023, describing the use as Retail Sales and Services principally permitted in the CCB district.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2023-003336MIS"
+      ]
+     },
+     {
+      "text": "The proposed change from retail to a Bar is a change of use under Planning Code Section 102, as stated in the pathway determination.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "A bar CUA was approved at 690 Sacramento Street (219 m away, same CCB district) in November 2023 after 171 days (filed June 2023, decided November 2023) with conditions for noise control, community liaison, and patron notices but no hour restrictions.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2023-005339CUA"
+      ]
+     },
+     {
+      "text": "CCB zoning also requires CU authorization for formula retail and for uses over 2,500 square feet (Planning Code Section 810, in force since January 2025), but the description does not say whether this business is part of a chain or give the floor area.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "Within 1,000 feet there is only one dated use decision in the last 10 years (N = 1), a withdrawn CUA at 717 California Street, so no local approval rate can be shown.",
+      "confidence": "verified",
+      "citations": [
+       "stat:base_rate",
+       "app:datasf_planning:2019-021010CUA"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "alcohol",
+    "summary": "The description states the license type is ABC Type 42 but does not say how the license will be obtained (new application or transfer), and the census tract shows 89 active on-sale licenses against 6 authorized, which may require a Public Convenience or Necessity finding if applying new.",
+    "findings": [
+     {
+      "text": "Census tract 117.00 shows 89 active on-sale retail licenses on file as of March 2025, against 6 authorized under ABC's September 2026 tract authorizations, placing the tract over its authorized number.",
+      "confidence": "verified",
+      "citations": [
+       "stat:density"
+      ]
+     },
+     {
+      "text": "State law (Business and Professions Code Section 23958.4) tests a new license application and a premises-to-premises transfer for undue concentration when the tract is over quota; the description does not say whether the Type 42 will be a new application or a transfer.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "Planning approved a Public Convenience or Necessity referral to the Board of Supervisors for the Type 48 bar at 690 Sacramento Street (same CCB district) in January 2024, confirming that PCN findings are granted for bar licenses in this area.",
+      "confidence": "verified",
+      "citations": [
+       "app:datasf_planning:2023-010036MIS"
+      ]
+     },
+     {
+      "text": "Within 500 feet of 555 Grant Ave there are 3 active on-sale ABC licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 64 active on-sale licenses within 1,000 feet, reflecting the density of Chinatown's restaurant and bar corridor.",
+      "confidence": "verified",
+      "citations": [
+       "stat:density",
+       "license:abc:557010",
+       "license:abc:362201",
+       "license:abc:534529"
+      ]
+     },
+     {
+      "text": "ABC will route the license application to SF Planning and the Police Department for review (Business and Professions Code Section 23987); Planning's zoning referral approval follows the CUA approval and is routine for an approved use.",
+      "confidence": "likely_applicable",
+      "citations": [
+       "app:datasf_planning:2023-005386MIS",
+       "app:datasf_planning:2022-004266MIS"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "health",
+    "summary": "A bar serving beverages needs a health permit to operate, issued after plan review and inspection without a hearing; the health permit application is routed to Planning for zoning confirmation.",
+    "findings": [
+     {
+      "text": "A business serving beverages to the public needs a health permit to operate under the California Retail Food Code and San Francisco Health Code Article 8, issued by DPH Environmental Health after inspection.",
+      "confidence": "verified",
+      "citations": [
+       "catalog:sf.business_registration"
+      ]
+     },
+     {
+      "text": "The health permit application is sent to the Planning Department for zoning review under Planning's interagency referral guidelines, but this referral step is not a separate approval.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     }
+    ]
+   },
+   {
+    "area": "building_change_of_use",
+    "summary": "Tenant improvements and a change of use from retail to a bar require a building permit routed to Planning for zoning conformance; the description does not give the occupant load, so whether a Building Code change of occupancy is needed is not established.",
+    "findings": [
+     {
+      "text": "A change of use requires a building permit under San Francisco Building Code Section 106A.1, and the permit must conform to the Planning Code (Section 175) before it is issued.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a), which confirms that the use has been authorized by CUA before the permit is issued.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "Under the 2022 California Building Code a bar is Assembly Group A-2, but a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group and whether a change of occupancy is required are not established.",
+      "confidence": "verified",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "text": "The existing occupancy group of 555 Grant Ave is not in public records; only plans or an inspection show it, so a Building Code change of occupancy cannot be confirmed from the records in hand.",
+      "confidence": "professional_review_required",
+      "citations": []
+     }
+    ]
+   }
+  ],
+  "could_not_establish": [
+   {
+    "question": "The condition of the space: whether bar equipment, sinks, restrooms, ADA access, finishes and mechanical systems meet code for a bar use, and the existing Building Code occupancy group.",
+    "needs": "inspection",
+    "ask": "An architect or contractor with access to the space and the existing building permit records at DBI."
+   },
+   {
+    "question": "The operator's track record: whether the applicant or any principal has operated other licensed premises in San Francisco or California, and any ABC license history or enforcement actions.",
+    "needs": "applicant_history",
+    "ask": "The applicant: not stated in the project description."
+   },
+   {
+    "question": "Whether Planning will approve the CUA for this bar at this address, and what conditions the Commission will impose on hours, security, soundproofing, or patron management.",
+    "needs": "agency_answer",
+    "ask": "SF Planning Department: the Commission decides at the public hearing, and the records show only one bar CUA in the CCB district in the last decade."
+   },
+   {
+    "question": "Whether ABC will require a Public Convenience or Necessity finding for a new Type 42 application in census tract 117.00, and how long that process will add to the ABC timeline.",
+    "needs": "agency_answer",
+    "ask": "California Department of Alcoholic Beverage Control: confirm undue-concentration status and PCN requirements for the tract before filing."
+   }
+  ],
+  "expected_conditions": [
+   {
+    "condition": "Noise control and soundproofing: fixed-source equipment and incidental noise shall not be audible beyond the premises or exceed Noise Control Ordinance limits.",
+    "basis": "The bar CUA at 690 Sacramento Street (CCB district, 2023) was conditioned to require acoustical insulation and sound proofing, and that incidental noise not be audible beyond the premises. This is a standard eating-and-drinking-use condition in San Francisco CUAs.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "condition": "Sidewalk and litter maintenance: the operator shall maintain the entrance and all sidewalks abutting the property, and monitor the sidewalk within a one-block radius daily to remove litter associated with the business.",
+    "basis": "The 690 Sacramento CUA and standard eating-and-drinking conditions (Planning Code Section 202.2) require daily litter monitoring within a one-block radius and sidewalk maintenance in compliance with DPW standards.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "condition": "Community liaison officer: appoint a liaison to address concerns of nearby owners and occupants, with contact information provided to Planning and registered neighborhood groups.",
+    "basis": "The 690 Sacramento CUA required a community liaison officer before the building permit was issued. This is a standard condition for bars and entertainment venues in San Francisco to manage neighborhood relations.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "condition": "Patron notices at exits: post well-lit notices at all entrances and exits urging patrons to leave quietly, not litter, and not block driveways.",
+    "basis": "The 690 Sacramento CUA required prominent notices at exits urging patrons to leave in a quiet and orderly fashion. This is a standard condition for bars to reduce late-evening noise and neighborhood impact.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "condition": "Garbage, recycling and compost storage: provide enclosed, labeled space for collection and storage meeting SFPUC and DPW standards, with containers kept inside and placed out only for service.",
+    "basis": "Standard eating-and-drinking-use conditions (Planning Code Section 202.2) and the 690 Sacramento CUA require that garbage, recycling and compost containers be hidden from public view and placed outside only when serviced.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "condition": "Type 42 license restrictions: no minors allowed on the premises, and hours of alcohol service are limited by ABC to 6 a.m. to 2 a.m. daily under state law.",
+    "basis": "ABC Type 42 (on-sale beer and wine, public premises) prohibits minors and restricts alcohol service to 6 a.m.–2 a.m. (Business and Professions Code Section 25631). These are license-type conditions set by state law, not Planning.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:ca.abc_type_42"
+    ]
+   }
+  ],
+  "filing_playbook": [
+   {
+    "step": 1,
+    "action": "Confirm formula retail status and floor area with Planning before filing the CUA application.",
+    "what_to_say": "Contact SF Planning's information counter or submit a Preliminary Project Assessment (PPA) request stating the business name, whether it is part of a chain with other locations sharing the name or look, and the floor area of the bar space in square feet. Planning will confirm whether formula retail review (Planning Code Section 303(i)) or the 2,500 sq ft use-size trigger (Section 810) applies. If either applies, the CUA application must address those criteria; if not, the CUA is solely for the bar use. Budget 2–4 weeks for a PPA response or ask at the counter if the answers are straightforward.",
+    "confidence": "needs_confirmation",
+    "citations": []
+   },
+   {
+    "step": 2,
+    "action": "File the Conditional Use Authorization application with SF Planning (Planning Code Section 303).",
+    "what_to_say": "Submit the CUA application online through SF Planning's portal, including the project description, floor plans showing the bar area and occupant load, a operations plan describing hours (if closing before midnight state that clearly), patron management, and any soundproofing or odor control measures. Pay the CUA application fee (approximately $3,100 for a no-construction CUA as of 2026–27, higher if construction cost exceeds thresholds; confirm the current fee schedule). The application triggers a 300-foot mailed notice to property owners, a posted notice at the site for 30 days, and assignment to a planner for environmental review (likely a categorical exemption for an existing commercial space) and a hearing date. Schedule a pre-application meeting with the assigned planner to review the operations plan and any neighborhood concerns before the hearing. The hearing will be before the P…",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:sf.conditional_use_authorization",
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "step": 3,
+    "action": "Obtain Planning Commission approval of the CUA at the public hearing.",
+    "what_to_say": "At the Commission hearing, present the operations plan and respond to any public comment. Emphasize the business's fit with the neighborhood (Chinatown visitor and arts corridor), the existing retail use at the address, measures to manage noise and litter (community liaison, posted exit notices, daily sidewalk monitoring), and compliance with the conditions imposed at 690 Sacramento Street (same district, 2023). If the Commission approves the CUA, a 30-day appeal period follows (Planning Code Section 308.1); if no appeal is filed or an appeal is denied, the CUA becomes effective and you may proceed to the building permit and ABC application. If the Commission continues the hearing for revisions, address the requested changes and return for approval.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "app:datasf_planning:2023-005339CUA"
+    ]
+   },
+   {
+    "step": 4,
+    "action": "File the building permit application with DBI for tenant improvements and change of use, after the CUA is effective.",
+    "what_to_say": "Submit the building permit application with architectural plans stamped by a licensed architect, showing the bar layout, sinks, restrooms, ADA compliance, finishes, mechanical systems, and the occupant load calculation. The application will be routed to Planning for zoning conformance (Planning Code Section 175); Planning will confirm that CUA 2023-005339CUA (or your case number) has been approved and issue a zoning referral approval. DBI will also route the permit to other departments (Fire, DPH if any plumbing or food-contact surfaces are modified). Plan check typically takes 4–12 weeks; if the plans are incomplete or code issues arise, revisions will add time. Once the permit is issued, tenant improvement construction may begin; schedule inspections for rough, final, and certificate of occupancy.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:sf.building_permit",
+     "zoning:CCB"
+    ]
+   },
+   {
+    "step": 5,
+    "action": "Apply for the ABC Type 42 license with the California Department of Alcoholic Beverage Control, submitting the approved CUA and building permit as supporting documents.",
+    "what_to_say": "File the ABC Type 42 application online through ABC's licensing portal, including the signed lease, the approved CUA motion, the seller's permit (CDTFA), the business registration certificate (SF Treasurer), the entity registration (CA Secretary of State), and proof that the entity has applied for or received a building permit. Pay the ABC filing fee (approximately $1,000–$1,600 including first-year license fee). ABC will post a public notice at the premises for 30 days and send the application to SF Planning and SFPD for review. Planning will issue a zoning referral approval (routine once the CUA is granted); SFPD will review for location and any concerns. If the census tract is over quota (89 active licenses against 6 authorized), ABC or the Board of Supervisors may require a Public Convenience or Necessity finding; coordinate with the Board of Supervisors (via ABC's notification) to…",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:ca.abc_type_42",
+     "app:datasf_planning:2023-010036MIS",
+     "app:datasf_planning:2023-005386MIS"
+    ]
+   },
+   {
+    "step": 6,
+    "action": "Obtain the health permit to operate from SF Department of Public Health after the final building inspection.",
+    "what_to_say": "Apply online for the health permit through DPH's Environmental Health portal after the building permit final inspection is complete and the space is ready for a pre-opening inspection. The application requires the Business Account Number (SF Treasurer), the Location ID (LIN), and proof that at least one manager or owner has a Certified Food Protection Manager certificate (not required for a bar with no food, but RBS certification for alcohol servers is required under state law). DPH will schedule a pre-opening inspection to confirm that sinks, surfaces, lighting, and waste disposal meet code. The permit is issued after the inspection passes. Do not serve the public before the permit is in hand.",
+    "confidence": "verified",
+    "citations": [
+     "catalog:sf.business_registration"
+    ]
+   },
+   {
+    "step": 7,
+    "action": "File for the sign permit with SF Planning and DBI if installing or replacing exterior signage.",
+    "what_to_say": "Submit a sign permit application with drawings of the proposed exterior sign (dimensions, materials, illumination) to Planning for design review and to DBI for structural review. The CCB district may have design guidelines for signage; confirm with Planning whether the sign complies with size and illumination limits (Planning Code Section 602 et seq.). The permit is typically approved in 2–6 weeks if the sign is not in a historic district and does not exceed size limits. Schedule the sign installation after the permit is issued.",
+    "confidence": "likely_applicable",
+    "citations": [
+     "catalog:sf.sign_permit"
+    ]
+   }
+  ],
+  "timeline_cost": {
+   "days_min": 120,
+   "days_max": 300,
+   "cost_min_usd": 4155.0,
+   "cost_max_usd": 18250.0,
+   "notes": "The day range (120–300 days) and cost range ($4,155–$18,250 in government fees) are the time and cost to obtain the three approvals in the entitlement path when they are granted: Conditional Use Authorization (120–300 days, $3,100–$15,000 per the catalog, depending on construction cost and fee waiver eligibility), Health permit to operate (14–45 days to issue after application, $470 application fee in 2026–27, included in the building permit timeline), and Building permit with change of use (14–120 days for plan check and issuance, $800–$15,000 depending on construction valuation, per the catalog). The timeline assumes the CUA is approved at the first hearing and no appeal is filed (add 1–2 months if appealed), that building plans are complete and pass review without major revisions (incomplete plans can add 2–4 months), and that the ABC Type 42 application and PCN finding (if required) proceed in parallel with construction (60–150 days per the catalog, with $1,000–$1,600 in ABC fees not included in this range because the alcohol row status is insufficient information and the ABC license is not in the entitlement path). The cost range includes only the Planning CUA fee, the building permit fee, the health permit application fee, and the SF business registration fee ($55–$700); it does not include architect fees, construction costs, ABC license fees, state business registration ($70–$150), or ongoing costs such as insurance and payroll taxes. If the CUA is denied or the building permit uncovers a code issue that cannot be resolved, the timeline and cost figures do not apply. Confirm the current CUA and building permit fee schedules with Planning and DBI, as fees are adjusted annually for CPI and by construction valuation.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.conditional_use_authorization",
+    "catalog:sf.building_permit",
+    "catalog:sf.business_registration"
+   ]
+  }
+ }
+}

@@ -1,0 +1,1754 @@
+{
+ "format_version": 3,
+ "address": "1567 Sloat Blvd, San Francisco, CA 94132",
+ "lat": 37.73322908743407,
+ "lng": -122.49108193302543,
+ "parcel": "7255/002",
+ "description": "",
+ "headline_findings": [],
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "citations": []
+ },
+ "pathway": {
+  "use": "not_covered",
+  "use_label": "a use the rule table does not cover",
+  "district": "NC-S",
+  "permission": "not_covered",
+  "permission_label": "Not covered by the rule table",
+  "existing_use": null,
+  "change_of_use": "not_established",
+  "change_of_use_label": "Change of use not established",
+  "lines": [
+   {
+    "rule_id": "T1.no_use",
+    "text": "The description does not say what kind of business it is, so no use control was looked up.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "not_carried",
+    "text": "The dated rule table does not carry NC-S, so this was not decided.",
+    "code_section": null,
+    "source_url": null,
+    "citations": [
+     "zoning:NC-S"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1567 Sloat Blvd, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+    "citations": [
+     "overlay:static:sf:nc_bar_rule_general",
+     "zoning:NC-S"
+    ]
+   }
+  ],
+  "rules_date": "2023-09-07",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.none",
+      "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the rule table does not carry this zoning district"
+    ],
+    "lines": [
+     {
+      "rule_id": "not_carried",
+      "text": "The dated rule table does not carry NC-S, so this was not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NC-S"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the rule table does not carry this zoning district"
+    ],
+    "lines": [
+     {
+      "rule_id": "not_carried",
+      "text": "The dated rule table does not carry NC-S, so this was not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NC-S"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   }
+  ],
+  "changes": {
+   "planning_use": "not_established",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1567 Sloat Blvd, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "On 7 September 2023 establishing a Formula Retail use in an NC district needed neighbourhood notice, whether or not the use changed, and the business is stated to be part of a chain, so notice was required.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (b)(1)(C), (d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": [
+      "zoning:NC-S"
+     ]
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T5.no_use",
+     "text": "The concept has no use that the formula retail rows on file cover.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Formula retail, Hours of operation, Use control of a special use district.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "stories",
+     "label": "Stories the business is on",
+     "value": "First story",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "closing",
+     "label": "Closing time",
+     "value": "12 a.m.",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "formula_retail",
+     "label": "Part of a chain (formula retail)",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "floor_area_sqft",
+     "label": "Floor area",
+     "value": "2,053 sq ft",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail, vacant",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "prior_approvals",
+     "label": "Earlier approved use decisions at this address",
+     "value": "Conditional Use Authorization (2016-07-18)",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": [
+      "app:datasf_planning:2015-010423CUA"
+     ]
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1567 Sloat Blvd, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "facts": [
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail, vacant",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "floor_area_sqft",
+     "label": "Floor area",
+     "value": "2,053 sq ft",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "formula_retail",
+     "label": "Part of a chain (formula retail)",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "facts": [
+  {
+   "fact": "food_service",
+   "label": "Kind of food or drink service (a business that serves no alcohol is not a Bar)",
+   "value": "None",
+   "origin": "description",
+   "origin_label": "Worked out by the rules from your description",
+   "derived": true,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "alcohol_served",
+   "label": "Alcohol served",
+   "value": "No alcohol",
+   "origin": "description",
+   "origin_label": "Your description does not mention alcohol",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "formula_retail",
+   "label": "Part of a chain (formula retail)",
+   "value": "Yes",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "floor_area_sqft",
+   "label": "Floor area",
+   "value": "2,053 sq ft",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "existing_use_stated",
+   "label": "Last use of the space, as described",
+   "value": "Retail, vacant",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "stories",
+   "label": "Stories the business is on",
+   "value": "First story",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "closing",
+   "label": "Closing time",
+   "value": "12 a.m.",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "planning_uses",
+   "label": "Kind of business (Planning Code use)",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the rule table does not carry this zoning district. Needed for: zoning and use.",
+   "needs": "agency_answer",
+   "ask": "A written answer from San Francisco Planning, such as a Letter of Determination",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space",
+   "intake_question": "existing_occupancy_group"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NC-S",
+  "name": "Neighborhood Commercial base districts: bar and restaurant use",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752 (Zoning Control Tables); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:NC-S"
+ },
+ "overlays": [
+  {
+   "name": "Neighborhood Commercial base districts: bar and restaurant use",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752 (Zoning Control Tables); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_bar_rule_general"
+  },
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  },
+  {
+   "name": "Lakeshore Plaza NC",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 780.1",
+   "citation_id": "overlay:datasf_sud:lakeshore_plaza_nc"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "base_rate": {
+  "approved": 2,
+  "approved_with_conditions": 2,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 4,
+  "window_years": 10,
+  "scope": "N = 4 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 2 permits and licences, 28 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 2,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 28,
+  "citation_id": "stat:base_rate",
+  "counted": [
+   {
+    "application_id": "datasf_planning:2021-006587CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1507 SLOAT BLVD 94132",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2021-06-30",
+    "decided_at": "2022-03-10",
+    "source_url": "https://sfplanninggis.org/pim?search=2021-006587CUA"
+   },
+   {
+    "application_id": "datasf_planning:2019-004597CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1509 SLOAT BLVD 94132",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2019-04-02",
+    "decided_at": "2019-07-19",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-004597CUA"
+   },
+   {
+    "application_id": "datasf_planning:2018-009951CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1541 SLOAT BLVD 94132",
+    "outcome": "approved",
+    "filed_at": "2018-08-23",
+    "decided_at": "2018-11-19",
+    "source_url": "https://sfplanninggis.org/pim?search=2018-009951CUA"
+   },
+   {
+    "application_id": "datasf_planning:2017-000519CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1511 SLOAT BLVD 94132",
+    "outcome": "approved",
+    "filed_at": "2017-01-12",
+    "decided_at": "2017-07-21",
+    "source_url": "https://sfplanninggis.org/pim?search=2017-000519CUA"
+   }
+  ]
+ },
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2021-006587CUA",
+   "citation_id": "app:datasf_planning:2021-006587CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1507 SLOAT BLVD 94132",
+   "distance_m": 134.2,
+   "filed_at": "2021-06-30",
+   "decided_at": "2022-03-10",
+   "days_to_decision": 253,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effecti ve date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agenc y, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay . (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+    "Garbage, Composting, and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility, and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Signage: The Project Sponsor shall develop a signage program for the Project which shall be subject to review and approval by Planning Department staff before submitting any building permits for construction of the Project. All subsequent sign permits shall conform to the approved signage program. Once approved by the Department, the signage program/plan information shall be submitted and approved as part of the site permit for the Project. All exterior signage shall be designed to compl ement, not compete with, the existing architectural character and architectural features of the building. (standard)",
+    "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+    "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escapi n g the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans. Odor control ducting shall not be applied to the primary façade of the building. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for dai l y monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter ass ociated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulat ed for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel level s specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passer sby, appropriate odor control equipment shall be installed in conformance with the approved plans an d maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from publ i c view, and placed outside only when being serviced by the disposal company. Trash shall be conta ined and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Departmen t of Public Works. Works at 628.271.2000, www.sfpublicworks.org (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.944,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006587CUA"
+  },
+  {
+   "application_id": "datasf_planning:2018-009951CUA",
+   "citation_id": "app:datasf_planning:2018-009951CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1541 SLOAT BLVD 94132",
+   "distance_m": 134.2,
+   "filed_at": "2018-08-23",
+   "decided_at": "2018-11-19",
+   "days_to_decision": 88,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.894,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-009951CUA"
+  },
+  {
+   "application_id": "datasf_planning:2017-000519CUA",
+   "citation_id": "app:datasf_planning:2017-000519CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1511 SLOAT BLVD 94132",
+   "distance_m": 134.2,
+   "filed_at": "2017-01-12",
+   "decided_at": "2017-07-21",
+   "days_to_decision": 190,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.875,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2017-000519CUA"
+  },
+  {
+   "application_id": "datasf_planning:2020-005238MIS",
+   "citation_id": "app:datasf_planning:2020-005238MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1541 SLOAT BLVD 94132",
+   "distance_m": 134.2,
+   "filed_at": "2020-05-22",
+   "decided_at": "2020-05-29",
+   "days_to_decision": 7,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.867,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2020-005238MIS"
+  },
+  {
+   "application_id": "datasf_planning:2019-002880MIS",
+   "citation_id": "app:datasf_planning:2019-002880MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1501 A SLOAT BLVD 94132",
+   "distance_m": 129.1,
+   "filed_at": "2019-03-08",
+   "decided_at": "2019-03-11",
+   "days_to_decision": 3,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.85,
+   "lat": 37.733670780561646,
+   "lng": -122.48972722382548,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-002880MIS"
+  },
+  {
+   "application_id": "datasf_planning:2018-003991MIS",
+   "citation_id": "app:datasf_planning:2018-003991MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1507 SLOAT BLVD 94132",
+   "distance_m": 134.2,
+   "filed_at": "2018-03-21",
+   "decided_at": "2018-03-30",
+   "days_to_decision": 9,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.835,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2018-003991MIS"
+  },
+  {
+   "application_id": "datasf_planning:2009.0061C",
+   "citation_id": "app:datasf_planning:2009.0061C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+   "distance_m": 134.2,
+   "filed_at": "2009-01-23",
+   "decided_at": "2009-04-02",
+   "days_to_decision": 69,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.816,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2009.0061C"
+  },
+  {
+   "application_id": "datasf_planning:2010.0366C",
+   "citation_id": "app:datasf_planning:2010.0366C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+   "distance_m": 134.2,
+   "filed_at": "2010-05-13",
+   "decided_at": "2010-09-16",
+   "days_to_decision": 126,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.816,
+   "lat": 37.73300635423948,
+   "lng": -122.4895859298489,
+   "source_url": "https://sfplanninggis.org/pim?search=2010.0366C"
+  },
+  {
+   "application_id": "datasf_planning:MA9800742",
+   "citation_id": "app:datasf_planning:MA9800742",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1521 SLOAT BL STREET LEV, SAN FRANCISCO, CA 94132",
+   "distance_m": 44.2,
+   "filed_at": "1998-06-03",
+   "decided_at": "1998-06-09",
+   "days_to_decision": 6,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.789,
+   "lat": 37.73293973508774,
+   "lng": -122.49073762709251,
+   "source_url": "https://sfplanninggis.org/pim?search=MA9800742"
+  },
+  {
+   "application_id": "datasf_planning:MB0200421",
+   "citation_id": "app:datasf_planning:MB0200421",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1521 SLOAT BL 1ST & ST., SAN FRANCISCO, CA 94132",
+   "distance_m": 44.2,
+   "filed_at": "2002-04-19",
+   "decided_at": "2002-05-15",
+   "days_to_decision": 26,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.789,
+   "lat": 37.73293973508774,
+   "lng": -122.49073762709251,
+   "source_url": "https://sfplanninggis.org/pim?search=MB0200421"
+  }
+ ],
+ "comparables_note": "Planning and Entertainment Commission records within 1,000 ft, ranked by a fixed score: the kind of business in common (40%), the distance (25%), how recent the record is (15%), late-night hours in common (10%) and whether the case was decided (10%); a Conditional Use case scores a little higher. The top 10 are listed, best first. Each row shows what the record says, with a link to it. No model picks them.",
+ "site_history": {
+  "matched_by": "Parcel 7255/002 or the address 1567 Sloat Blvd",
+  "total": 19,
+  "by_kind": {
+   "use_decision": 11,
+   "agency_referral": 6,
+   "licence": 2
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2023-004140MIS",
+    "citation_id": "app:datasf_planning:2023-004140MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "DPH referral - Market/General/Specialty Grocery -Approved for the continuation of an existing limited restaurant use located within an existing grocery store per Conditional Use authorization under Case No.2012.1031C (Motion No. 18780) with the change in ownership.",
+    "address": "1515 SLOAT BLVD 94132",
+    "filed_at": "2023-05-05",
+    "decided_at": "2023-05-15",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2023-004140MIS",
+    "use_types": [
+     "restaurant",
+     "retail_alcohol"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "abc:643745",
+    "citation_id": "app:abc:643745",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 21 – Off-Sale General",
+    "description": "LUCKYS 755 — Type 21 – Off-Sale General (ACTIVE on 2023-09-07)",
+    "address": "1515 SLOAT BLVD, SAN FRANCISCO, CA 94132",
+    "filed_at": null,
+    "decided_at": "2023-05-05",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=643745",
+    "use_types": [
+     "retail_alcohol"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2021-006587CUA",
+    "citation_id": "app:datasf_planning:2021-006587CUA",
+    "source": "sf_planning_hearings",
+    "source_label": "Planning Commission motion",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional-Use authorization sought for intensification of a formula-retail use pursuant to San Francisco Planning Code Sections 178 (c)(3), 303 (o), 303.1, 713 and 780.1. Vacant site was previously occupied by The Noodle House, a formula-retail restaurant with 400 units. Authorization is sought f…",
+    "address": "1507 SLOAT BLVD 94132",
+    "filed_at": "2021-06-30",
+    "decided_at": "2022-03-10",
+    "outcome": "approved_with_conditions",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2021-006587CUA",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": [
+     "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effecti ve date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+     "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+     "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+     "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agenc y, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay . (standard)",
+     "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+     "Garbage, Composting, and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility, and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+     "Signage: The Project Sponsor shall develop a signage program for the Project which shall be subject to review and approval by Planning Department staff before submitting any building permits for construction of the Project. All subsequent sign permits shall conform to the approved signage program. Once approved by the Department, the signage program/plan information shall be submitted and approved as part of the site permit for the Project. All exterior signage shall be designed to compl ement, not compete with, the existing architectural character and architectural features of the building. (standard)",
+     "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+     "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escapi n g the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans. Odor control ducting shall not be applied to the primary façade of the building. (standard)",
+     "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+     "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+     "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for dai l y monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter ass ociated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+     "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulat ed for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel level s specified in the San Francisco Noise Control Ordinance. (standard)",
+     "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passer sby, appropriate odor control equipment shall be installed in conformance with the approved plans an d maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+     "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from publ i c view, and placed outside only when being serviced by the disposal company. Trash shall be conta ined and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Departmen t of Public Works. Works at 628.271.2000, www.sfpublicworks.org (standard)",
+     "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+     "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)"
+    ]
+   },
+   {
+    "application_id": "datasf_planning:2020-005238MIS",
+    "citation_id": "app:datasf_planning:2020-005238MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "DPH referral - Limited Restaurant. Recommend approval per Planning Commission Motion No. 20331 from case # 2018-009951CUA.",
+    "address": "1541 SLOAT BLVD 94132",
+    "filed_at": "2020-05-22",
+    "decided_at": "2020-05-29",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2020-005238MIS",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2019-004597CUA",
+    "citation_id": "app:datasf_planning:2019-004597CUA",
+    "source": "sf_planning_hearings",
+    "source_label": "Planning Commission motion",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use Authorization for existing Peet's Coffee located at 1509 Sloat Boulevard to expand into the adjacent formula retail restaurant space at 1511 Sloat Boulevard (currently occupied by Ahi Poke Bowl).",
+    "address": "1509 SLOAT BLVD 94132",
+    "filed_at": "2019-04-02",
+    "decided_at": "2019-07-19",
+    "outcome": "approved_with_conditions",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-004597CUA",
+    "use_types": [
+     "restaurant",
+     "cafe"
+    ],
+    "hours_close": null,
+    "conditions": [
+     "Signage: Any signs on the property shall be made to comply with the requirements of Article 6 of the Planning Code DESIGN — COMPLIANCE AT PLAN STAGE",
+     "Hours of Operation: The subject establishment is limited to the following hours of operation: M onday through Saturday 5:30 a.m. to 8:00 p.m. and Sunday 6:30 a.m. to 8:00 p.m. www.sf-planning,orQ SAN ffiANCISCO P LANNING DEPARTMENT 16",
+     "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. www.sf-planning.org (standard)",
+     "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+     "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. wzvw.s~plannin~.org (standard)",
+     "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the .project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or chaIlel~ge'has caused delay. wwzu.s~planning.orQ (standard)",
+     "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. For informatzor2 about compliance, contact Code Enforcement, Planning Department at 415-575-6863, zuww. sf-plan rain. orb P LANNING DEPARTMENT 13 Juty 11, 2019 (standard)",
+     "Garbage, composting and recycling storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+     "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. www.sf~lanni~.org (standard)",
+     "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. zuzvzv.s~planning.org OPERATION (standard)",
+     "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the P LANNING DEPARTMENT 14 operator shall be responsible for daily monitoring of the sidewalk within aone-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San… (standard)",
+     "Eating and Drinking Uses (B): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+     "Eating and Drinking Uses (C): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. (standard)",
+     "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all .sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+     "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+     "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. zuwzv.s,~ plannin~orQ (standard)"
+    ]
+   },
+   {
+    "application_id": "datasf_planning:2018-009951CUA",
+    "citation_id": "app:datasf_planning:2018-009951CUA",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "CHANGE OF USE, CHANGE OF OCCUPANCY FROM RETAIL TO LIMITED SERVICE RESTAURANT SERVING SOFT DRINKS (NO COOKING, NO HOOD) MAHER: N/A",
+    "address": "1541 SLOAT BLVD 94132",
+    "filed_at": "2018-08-23",
+    "decided_at": "2018-11-19",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2018-009951CUA",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2018-003991MIS",
+    "citation_id": "app:datasf_planning:2018-003991MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Recommend approval of restaurant use (d.b.a. Ahipoki Bowl) per Planning Code Section 713 and Motion No. 19955. Change of use to Formula Retail Limited Restaurant established with Motion No. 19955. Subject to Conditions listed in Motion No. 19955. Health - Restaurant",
+    "address": "1507 SLOAT BLVD 94132",
+    "filed_at": "2018-03-21",
+    "decided_at": "2018-03-30",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2018-003991MIS",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2017-000519CUA",
+    "citation_id": "app:datasf_planning:2017-000519CUA",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use Authorization to establish a limited restaurant dba Ahipoke Bowl.",
+    "address": "1511 SLOAT BLVD 94132",
+    "filed_at": "2017-01-12",
+    "decided_at": "2017-07-21",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2017-000519CUA",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2015-010423CUA",
+    "citation_id": "app:datasf_planning:2015-010423CUA",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use Authorization request to permit the change of use from a vacant Formula Retail electronics store (Radio Shack) to a Formula Retail wireless electronics retail store.",
+    "address": "1567 SLOAT BLVD 94132",
+    "filed_at": "2015-08-13",
+    "decided_at": "2016-07-18",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2015-010423CUA",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2012.0564C",
+    "citation_id": "app:datasf_planning:2012.0564C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Formula Retail, wireless provider retail store, 840 square feet",
+    "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+    "filed_at": "2012-04-26",
+    "decided_at": "2013-03-21",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2012.0564C",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2012.1031C",
+    "citation_id": "app:datasf_planning:2012.1031C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use Authorization request for Formula Retail accessory use within existing Lucky grocery store for Sushi Avenue",
+    "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+    "filed_at": "2012-08-08",
+    "decided_at": "2013-01-10",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2012.1031C",
+    "use_types": [
+     "retail_alcohol"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "abc:510043",
+    "citation_id": "app:abc:510043",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 41 – On-Sale Beer & Wine - Eating Place",
+    "description": "CHIPOTLE MEXICAN GRILL — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-09-07)",
+    "address": "1523 SLOAT BLVD, SAN FRANCISCO, CA 94132",
+    "filed_at": null,
+    "decided_at": "2011-10-25",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=510043",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MB1100951",
+    "citation_id": "app:datasf_planning:MB1100951",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Type 41 \"on-sale beer and wine\" license is allowed in conjunction with a Large, fast-food restaurant. -",
+    "address": "1523 SLOAT BL, SAN FRANCISCO, CA 94132",
+    "filed_at": "2011-04-21",
+    "decided_at": "2011-09-23",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1100951",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MB1101289",
+    "citation_id": "app:datasf_planning:MB1101289",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Conditional use for a new formula retail use (d.b.a. Chipotle) to operate as a large fast food restaurant and replace \"Pizza Hut\" approved under Case No. 2010.0366/Motion No. 18179. Use must comply with Conditions of Approval of Motion No. 18179. -",
+    "address": "1523 SLOAT BL ST., SAN FRANCISCO, CA 94132",
+    "filed_at": "2011-07-13",
+    "decided_at": "2011-09-23",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1101289",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2010.0366C",
+    "citation_id": "app:datasf_planning:2010.0366C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "replacement of (e) \"Pizza Hut\" large fast-food restaurant with \"Chipotle\" large fast-food restaurant. CU for formula retail use and pursuant to motion 11545.",
+    "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+    "filed_at": "2010-05-13",
+    "decided_at": "2010-09-16",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2010.0366C",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MB0900901",
+    "citation_id": "app:datasf_planning:MB0900901",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "New small, self-service restaurant and formula retail use (dba \"Nubi Yogurt\") is permitted by the CPC under Case No. 2009.0061C and Motion No. 17854 -",
+    "address": "1511 SLOAT BL ST., SAN FRANCISCO, CA 94132",
+    "filed_at": "2009-09-01",
+    "decided_at": "2009-09-10",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0900901",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2009.0061C",
+    "citation_id": "app:datasf_planning:2009.0061C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "New formula retail self-service restaurant (d.b.a. Nubi) in shopping center.",
+    "address": "1595 SLOAT BL, SAN FRANCISCO, CA 94132",
+    "filed_at": "2009-01-23",
+    "decided_at": "2009-04-02",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2009.0061C",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MA9600017",
+    "citation_id": "app:datasf_planning:MA9600017",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "SMALL SELF SERVICE RESTAURANT AT PIER 39. ZONED C-2 - COMMUNITY BUSINESS. NORTHERN WATERFRONT SUD. PERMITTED BY SECTION 218 OF THE PC. -",
+    "address": null,
+    "filed_at": "1996-01-31",
+    "decided_at": "1996-02-05",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MA9600017",
+    "use_types": [
+     "restaurant"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:CU66.026",
+    "citation_id": "app:datasf_planning:CU66.026",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Additional Parking",
+    "address": "11 LAKESHORE PL, SAN FRANCISCO, CA 94132",
+    "filed_at": "1966-06-02",
+    "decided_at": "1966-07-07",
+    "outcome": "denied",
+    "status": "Closed - Disapproved",
+    "source_url": "https://sfplanninggis.org/pim?search=CU66.026",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "citations": [
+  {
+   "id": "app:abc:510043",
+   "kind": "application",
+   "label": "Type 41 – On-Sale Beer & Wine - Eating Place · 1523 SLOAT BLVD, SAN FRANCISCO, CA 94132 · approved (2011)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=510043",
+   "excerpt": "CHIPOTLE MEXICAN GRILL — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-09-07)"
+  },
+  {
+   "id": "app:abc:643745",
+   "kind": "application",
+   "label": "Type 21 – Off-Sale General · 1515 SLOAT BLVD, SAN FRANCISCO, CA 94132 · approved (2023)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=643745",
+   "excerpt": "LUCKYS 755 — Type 21 – Off-Sale General (ACTIVE on 2023-09-07)"
+  },
+  {
+   "id": "app:datasf_planning:2009.0061C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1595 SLOAT BL, SAN FRANCISCO, CA 94132 · approved (2009)",
+   "source_url": "https://sfplanninggis.org/pim?search=2009.0061C",
+   "excerpt": "New formula retail self-service restaurant (d.b.a. Nubi) in shopping center."
+  },
+  {
+   "id": "app:datasf_planning:2010.0366C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1595 SLOAT BL, SAN FRANCISCO, CA 94132 · approved (2010)",
+   "source_url": "https://sfplanninggis.org/pim?search=2010.0366C",
+   "excerpt": "replacement of (e) \"Pizza Hut\" large fast-food restaurant with \"Chipotle\" large fast-food  restaurant.  CU for formula retail use and pursuant to motion 11545."
+  },
+  {
+   "id": "app:datasf_planning:2012.0564C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1595 SLOAT BL, SAN FRANCISCO, CA 94132 · approved (2013)",
+   "source_url": "https://sfplanninggis.org/pim?search=2012.0564C",
+   "excerpt": "Formula Retail, wireless provider retail store, 840 square feet"
+  },
+  {
+   "id": "app:datasf_planning:2012.1031C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1595 SLOAT BL, SAN FRANCISCO, CA 94132 · approved (2013)",
+   "source_url": "https://sfplanninggis.org/pim?search=2012.1031C",
+   "excerpt": "Conditional Use Authorization request for Formula Retail accessory use within existing Lucky grocery store for Sushi Avenue"
+  },
+  {
+   "id": "app:datasf_planning:2015-010423CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1567 SLOAT BLVD 94132 · approved (2016)",
+   "source_url": "https://sfplanninggis.org/pim?search=2015-010423CUA",
+   "excerpt": "Conditional Use Authorization request to permit the change of use from a vacant Formula Retail electronics store (Radio Shack) to a Formula Retail wireless electronics retail store."
+  },
+  {
+   "id": "app:datasf_planning:2017-000519CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1511 SLOAT BLVD 94132 · approved (2017)",
+   "source_url": "https://sfplanninggis.org/pim?search=2017-000519CUA",
+   "excerpt": "Conditional Use Authorization to establish a limited restaurant dba Ahipoke Bowl."
+  },
+  {
+   "id": "app:datasf_planning:2018-003991MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1507 SLOAT BLVD 94132 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-003991MIS",
+   "excerpt": "Recommend approval of restaurant use  (d.b.a. Ahipoki Bowl) per Planning Code Section 713 and Motion No. 19955. Change of use to Formula Retail Limited Restaurant established with Motion No. 19955. Subject to Conditions listed in Motion No. 19955. Health - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2018-009951CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1541 SLOAT BLVD 94132 · approved (2018)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-009951CUA",
+   "excerpt": "CHANGE OF USE, CHANGE OF OCCUPANCY FROM RETAIL TO LIMITED SERVICE RESTAURANT SERVING SOFT DRINKS (NO COOKING, NO HOOD) MAHER: N/A"
+  },
+  {
+   "id": "app:datasf_planning:2019-002880MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1501 A SLOAT BLVD 94132 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-002880MIS",
+   "excerpt": "Health - Limited Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2019-004597CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1509 SLOAT BLVD 94132 · approved with conditions (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-004597CUA",
+   "excerpt": "Conditional Use Authorization for existing Peet's Coffee located at 1509 Sloat Boulevard to expand into the adjacent formula retail restaurant space at 1511 Sloat Boulevard (currently occupied by Ahi Poke Bowl)."
+  },
+  {
+   "id": "app:datasf_planning:2020-005238MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1541 SLOAT BLVD 94132 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-005238MIS",
+   "excerpt": "DPH referral - Limited Restaurant. Recommend approval per Planning Commission Motion No. 20331 from case # 2018-009951CUA."
+  },
+  {
+   "id": "app:datasf_planning:2021-006587CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1507 SLOAT BLVD 94132 · approved with conditions (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-006587CUA",
+   "excerpt": "Conditional-Use authorization sought for intensification of a formula-retail use pursuant to San Francisco Planning Code Sections 178 (c)(3), 303 (o), 303.1, 713 and 780.1. Vacant site was previously occupied by The Noodle House, a formula-retail restaurant with 400 units. Authorization is sought fo"
+  },
+  {
+   "id": "app:datasf_planning:2023-004140MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1515 SLOAT BLVD 94132 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-004140MIS",
+   "excerpt": "DPH referral - Market/General/Specialty Grocery\n-Approved for the continuation of an existing limited restaurant use located within an existing grocery store per Conditional Use authorization under Case No.2012.1031C (Motion No. 18780) with the change in ownership."
+  },
+  {
+   "id": "app:datasf_planning:CU66.026",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 11 LAKESHORE PL, SAN FRANCISCO, CA 94132 · denied (1966)",
+   "source_url": "https://sfplanninggis.org/pim?search=CU66.026",
+   "excerpt": "Additional Parking"
+  },
+  {
+   "id": "app:datasf_planning:MA9600017",
+   "kind": "application",
+   "label": "Miscellaneous Permit · address n/a · approved (1996)",
+   "source_url": "https://sfplanninggis.org/pim?search=MA9600017",
+   "excerpt": "SMALL SELF SERVICE RESTAURANT AT PIER 39.  ZONED C-2 - COMMUNITY BUSINESS.  NORTHERN WATERFRONT SUD.  PERMITTED BY SECTION 218 OF THE PC. -"
+  },
+  {
+   "id": "app:datasf_planning:MA9800742",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1521 SLOAT BL STREET LEV, SAN FRANCISCO, CA 94132 · approved (1998)",
+   "source_url": "https://sfplanninggis.org/pim?search=MA9800742",
+   "excerpt": "CONTINUATION OF SELF-SERVICE/FAST FOOD (LARGE) RESTAURANT PERMITTED PER PLANNING CODE SECTION 179(A)(2). -"
+  },
+  {
+   "id": "app:datasf_planning:MB0200421",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1521 SLOAT BL 1ST & ST., SAN FRANCISCO, CA 94132 · approved (2002)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0200421",
+   "excerpt": "Continuation of self-service/fast food (large) restaurant permitted per Planning Code Section 179(a)(2). -"
+  },
+  {
+   "id": "app:datasf_planning:MB0900901",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1511 SLOAT BL ST., SAN FRANCISCO, CA 94132 · approved (2009)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0900901",
+   "excerpt": "New small, self-service restaurant and formula retail use (dba \"Nubi Yogurt\") is permitted by the CPC under Case No. 2009.0061C and Motion No. 17854 -"
+  },
+  {
+   "id": "app:datasf_planning:MB1100951",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1523 SLOAT BL, SAN FRANCISCO, CA 94132 · approved (2011)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1100951",
+   "excerpt": "Type 41 \"on-sale beer and wine\" license is allowed in conjunction with a Large, fast-food restaurant. -"
+  },
+  {
+   "id": "app:datasf_planning:MB1101289",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1523 SLOAT BL ST., SAN FRANCISCO, CA 94132 · approved (2011)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1101289",
+   "excerpt": "Conditional use for a new formula retail use (d.b.a. Chipotle) to operate as a large fast food restaurant and replace \"Pizza Hut\" approved under Case No. 2010.0366/Motion No. 18179.  Use must comply with Conditions of Approval of Motion No. 18179. -"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 1567 Sloat Blvd, San Francisco, CA 94132 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=454765",
+   "excerpt": "parcel 7255/002"
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:lakeshore_plaza_nc",
+   "kind": "overlay",
+   "label": "Lakeshore Plaza NC — Planning Code § 780.1",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25875",
+   "excerpt": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:nc_bar_rule_general",
+   "kind": "overlay",
+   "label": "Neighborhood Commercial base districts: bar and restaurant use — Planning Code §§ 710, 711, 712, 713, 750, 751, 752 (Zoning Control Tables); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+   "excerpt": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 4 approved / 0 denied / 0 withdrawn; N = 4 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 2 permits and licences, 28 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 2 Entertainment Commission permits and ABC licences (lists of grants only), 28 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "zoning:NC-S",
+   "kind": "zoning",
+   "label": "Zoning NC-S — Planning Code §§ 710, 711, 712, 713, 750, 751, 752 (Zoning Control Tables); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+   "excerpt": "The controls as they stood on 2023-09-07 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement with the issuing agency before relying on it.",
+  "Comparable cases and counts come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and are not a guarantee. Planning Commission and ABC decisions are discretionary.",
+  "No sentence in this report is written by an AI model. A model reads your description into facts; each fact shows the words it came from, and what your words do not state is listed as not known."
+ ],
+ "generated_at": "2026-11-16T12:19:56+00:00",
+ "model_versions": {},
+ "data_as_of": "2023-09-07"
+}

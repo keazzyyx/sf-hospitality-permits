@@ -1,0 +1,291 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 18,
+  "supported": 7,
+  "trimmed": 3,
+  "downgraded": 6,
+  "dropped": 2
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning Code § 732 states that formula retail is a conditional use in the Irving Street NCD but is not permitted for Limited Restaurant use in this district.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 732 states that formula retail is a conditional use in the Irving Street NCD but is not permitted for Limited Restaurant use in this district.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as unknown and does not state the rules about formula retail or Limited Restaurant use."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization for formula retail limited restaurant (The Mochi Donut Shop) at 2126 Irving St, 46 meters away, was filed November 2021 and cancelled December 2021 after 22 days; the records do not state why it was cancelled.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization for formula retail at 2126 Irving St, 46 meters away, was filed November 2021 and cancelled December 2021 after 22 days; the records do not state why it was cancelled.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A Conditional Use Authorization for formula retail at 2126 Irving St, 46 meters away, was filed November 2021 and cancelled December 2021 after 22 days; the records do not state why it was cancelled.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-011182CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A second formula retail CUA (Krispy Krunchy Chicken) at 2130 Irving St, 56 meters away, was filed March 2021 and cancelled January 2022 after 314 days; the records do not state why it was cancelled.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A second formula retail CUA (Krispy Krunchy Chicken) at 2130 Irving St, 56 meters away, was filed March 2021 and cancelled January 2022 after 314 days; the records do not state why it was cancelled.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-002788CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Planning approved The Mochi Donut Shop's health permit in December 2021 with the explicit condition that formula retail use is not permitted within the Irving Street NCD and that while standardized merchandise is allowed, additional standardized features (branding, decor) would not be permitted.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved The Mochi Donut Shop's DPH referral in December 2021 with the explicit condition that formula retail use is not permitted within the Irving Street NCD and that while standardized merchandise is allowed, additional standardized features (branding, decor) would not be permitted.",
+   "cut_problem": "keeps 'Planning approved The Mochi Donut Shop's health permit', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning approved The Mochi Donut Shop's health permit in December 2021 with the explicit condition that formula retail use is not permitted within the Irving Street NCD and that while standardized merchandise is allowed, additional standardized features (branding, decor) would not be permitted.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows Planning approved a DPH referral, not a health permit."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Independent (non-formula retail) limited restaurants on the Irving corridor are routinely approved as principally permitted uses via health department referrals with no hearing, including the prior tenant at 2127 Irving St (Sip Tea 1011 SF), approved January 2020.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Independent (non-formula retail) limited restaurants on the Irving corridor are routinely approved as principally permitted uses via health department referrals with no hearing, including the prior tenant at 2127 Irving St (Sip Tea 1011 SF), approved January 2020.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows only the single approval of Sip Tea 1011 SF in January 2020 via health department referral; it does not state routine approval, independent/non-formula status, principally permitted status, or absence of hearing."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Planning Code § 732 does not permit formula retail for Limited Restaurant use in the Irving Street NCD; two formula retail limited restaurant CUA applications on this block were cancelled in 2021–2022 without reaching a hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning Code § 732 does not permit formula retail for Limited Restaurant use in the Irving Street NCD; two formula retail CUA applications on this block were cancelled in 2021–2022.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning Code § 732 does not permit formula retail for Limited Restaurant use in the Irving Street NCD; two formula retail CUA applications on this block were cancelled in 2021–2022.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-IRVING",
+    "app:datasf_planning:2021-011182CUA",
+    "app:datasf_planning:2021-002788CUA",
+    "app:datasf_planning:2021-008816MIS",
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "San Francisco Department of Public Health issues a health permit to operate for food facilities after plan check and a final inspection confirming the facility matches approved plans and a certified food safety manager is on staff.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "San Francisco Department of Public Health issues a health permit to operate for food facilities after plan check and a final inspection confirming the facility matches approved plans and a certified food safety manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The FY 2026–27 health permit application fee is $470 (including initial inspection) with no annual license fee for restaurants and bars through 2028; reinspections are $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The FY 2026–27 health permit application fee is $470 (including initial inspection) with no annual license fee for restaurants and bars through 2028; reinspections are $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "The health permit application is referred to the Planning Department for zoning review before issuance.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is referred to the Planning Department for zoning review before issuance.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention referral to the Planning Department or zoning review."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is required and is issued after plan check and inspection without a hearing; the health permit application is sent to Planning for zoning review.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A health permit to operate is required and is issued after plan check and inspection without a hearing; the health permit application is sent to Planning for zoning review.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Under the Building Code, a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under the Building Code, a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited zoning district record contains no Building Code occupancy group classifications or information about occupant load."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "A limited restaurant (Sip Tea 1011 SF) was approved at 2127 Irving St in 2019 as a change of use that was exempt from neighborhood notice; the records do not show what building work was completed or what the current occupancy certificate states.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A limited restaurant (Sip Tea 1011 SF) was approved at 2127 Irving St in 2019 as a change of use that was exempt from neighborhood notice; the records do not show what building work was completed or what the current occupancy certificate states.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules cannot determine whether a building permit is needed because the occupancy group depends on whether the space is for fewer than 50 people, whether the business is enlarged, and the existing occupancy group, which only plans or an inspection can show.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules cannot determine whether a building permit is needed because the occupancy group depends on whether the space is for fewer than 50 people, whether the business is enlarged, and the existing occupancy group, which only plans or an inspection can show.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-IRVING",
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to 6:00 a.m. to 11:00 p.m., as conditioned in comparable limited restaurant approvals on the Irving corridor. Basis: One comparable limited restaurant at 2154 Irving St was approved with conditions stating 'Hours of operation shall be limited to 6:00 AM to 11:00 PM' in 2007 and 2010. The Irving NCD principally permits hours from 6:00 a.m. to 2:00 a.m., but earlier approvals have imposed earlier closing times.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to 6:00 a.m. to 11:00 p.m., as conditioned in comparable limited restaurant approvals on the Irving corridor. Basis: One comparable limited restaurant at 2154 Irving St was approved with conditions stating 'Hours of operation shall be limited to 6:00 AM to 11:00 PM' in 2010.",
+   "cut_problem": "keeps 'approved...in 2007', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The 2007 case was decided in 2009. The zoning record does not state the NCD's permitted hours or that earlier approvals imposed earlier closing times."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Compliance with Planning Code § 202.2(a) eating and drinking uses conditions, including service to the public and no expansion of use intensity without further review. Basis: Multiple Irving Street NCD limited restaurant approvals state that the use is 'subject to eating/drinking uses conditions outlined per Section 202.2(a),' which governs seating, service, and operational requirements.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Compliance with Planning Code § 202.2(a) eating and drinking uses conditions. Basis: Multiple Irving Street NCD limited restaurant approvals state that the use is 'subject to eating/drinking uses conditions outlined per Section 202.2(a).'",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Compliance with Planning Code § 202.2(a) eating and drinking uses conditions. Basis: Multiple Irving Street NCD limited restaurant approvals state that the use is 'subject to eating/drinking uses conditions outlined per Section 202.2(a).'",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2016-010564MIS",
+    "app:datasf_planning:2018-003319MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Formula retail branding, signage, and interior design features limited to standardized merchandise only; additional standardized features (facade treatments, uniforms, decor) require Conditional Use Authorization. Basis: Planning stated in the 2021 approval for The Mochi Donut Shop at 2126 Irving that 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT. The business is to use a standardized array of merchandise (50% or more of in-stock merchandise from a single distributor), additional standardized features would not be permitted.'",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record states additional standardized features 'would not be permitted,' not that they require Conditional Use Authorization."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Validity period of three years from effective date to commence construction or use, with diligent pursuit required once a permit is issued. Basis: The formula retail bank CUA approved at 2257 Irving St in 2022 included standard conditions stating 'The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion' and requiring diligent pursuit of construction to completion.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Validity period of three years from effective date to commence construction or use, with diligent pursuit required once a permit is issued. Basis: The formula retail bank CUA approved at 2257 Irving St in 2022 included standard conditions stating 'The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion' and requiring diligent pursuit of construction to completion.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2021-011365CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost range is given because zoning does not permit the concept as described at this address. Planning Code § 732 states that formula retail is not permitted for Limited Restaurant use in the Irving Street Neighborhood Commercial District. Two formula retail limited restaurant Conditional Use Authorization applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) were cancelled in 2021–2022 without reaching a Planning Commission hearing; the records do not state why they were cancelled. Planning staff stated in a 2021 health referral for The Mochi Donut Shop that formula retail use is not permitted in the Irving NCD and that while standardized merchandise is allowed, additional standardized features (branding, decor, facade treatments) would not be permitted without Conditional Use Authorization approval, which was never obtained. Obtain a written zoning determination from San Francisco Planning before filing any application or signing a lease.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: Two formula retail limited restaurant Conditional Use Authorization applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) were cancelled in 2021–2022; the records do not state why they were cancelled. Planning staff stated in a 2021 health referral for The Mochi Donut Shop that formula retail use is not permitted in the Irving NCD and that while standardized merchandise is allowed, additional standardized features would not be permitted.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost range is given because zoning does not permit the concept as described at this address. Planning Code § 732 states that formula retail is not permitted for Limited Restaurant use in the Irving Street Neighborhood Commercial District. Two formula retail limited restaurant Conditional Use Authorization applications on this block (The Mochi Donut Shop at 2126 Irving and Krispy Krunchy Chicken at 2130 Irving) were cancelled in 2021–2022 without reaching a Planning Commission hearing; the records do not state why they were cancelled. Planning staff stated in a 2021 health referral for The Mochi Donut Shop that formula retail use is not permitted in the Irving NCD and that while standardized merchandise is allowed, additional standardized features (branding, decor, facade treatments) would not be permitted without Conditional Use Authorization approval, which was never obtained. Obtain a written zoning determination from San Francisco Planning before filing any application or signing a lease.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning record cites § 732 but does not provide the rule text; records do not state whether applications reached a hearing or mention CUA approval as an exception."
+  }
+ ]
+}

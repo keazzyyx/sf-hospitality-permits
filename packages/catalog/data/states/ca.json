@@ -1,0 +1,396 @@
+{
+  "jurisdiction": {
+    "level": "state",
+    "name": "California",
+    "state": "CA",
+    "city_slug": null,
+    "supported": true
+  },
+  "permits": [
+    {
+      "id": "ca.sos_entity_registration",
+      "name": "Form your legal entity with the California Secretary of State (LLC / corporation)",
+      "category": "business_registration",
+      "issuing_agency": "California Secretary of State (bizfile Online)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 10
+      },
+      "fee_range_usd": {
+        "min": 70,
+        "max": 150
+      },
+      "prerequisites": [],
+      "applies_when": {
+        "always": true
+      },
+      "application_url": "https://bizfileonline.sos.ca.gov/",
+      "notes": "LLC Articles of Organization (LLC-1) $70; general stock corporation (ARTS-GS) $100. File the Statement of Information within 90 days of registering ($20 for an LLC, due every two years; $25 for a corporation, due yearly). Skip only if operating as a sole proprietor (then file a fictitious business name with the county instead). Do this first: the EIN, bank account, lease, and liquor license all need the entity name.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": [
+        "https://www.sos.ca.gov/business-programs/business-entities/forms/limited-liability-companies-california-domestic",
+        "https://www.sos.ca.gov/business-programs/business-entities/forms/corporations-california-domestic"
+      ]
+    },
+    {
+      "id": "ca.sellers_permit",
+      "name": "California Seller's Permit (sales tax)",
+      "category": "state_tax",
+      "issuing_agency": "California Department of Tax and Fee Administration (CDTFA)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 14
+      },
+      "fee_range_usd": {
+        "min": 0,
+        "max": 0
+      },
+      "prerequisites": [
+        "us.ein"
+      ],
+      "applies_when": {
+        "always": true
+      },
+      "application_url": "https://cdtfa.ca.gov/formspubs/pub107/applying-for-a-sellers-permit.htm",
+      "notes": "Free (CDTFA: there is no charge for a seller's permit) and often issued the same day when you register online. Required for anyone selling tangible goods in California, which includes prepared food and drinks. CDTFA may request a security deposit depending on business type and projected taxable sales. ABC will not issue an alcohol license until the seller's permit exists, so get it early.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified"
+    },
+    {
+      "id": "ca.edd_employer_registration",
+      "name": "Register as an employer with EDD (payroll taxes)",
+      "category": "labor",
+      "issuing_agency": "California Employment Development Department (EDD) – e-Services for Business",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 7
+      },
+      "fee_range_usd": {
+        "min": 0,
+        "max": 0
+      },
+      "prerequisites": [
+        "us.ein"
+      ],
+      "applies_when": {
+        "field": "employees",
+        "gte": 1
+      },
+      "application_url": "https://edd.ca.gov/en/payroll_taxes/step-1-register-as-an-employer/",
+      "notes": "Required within 15 days of paying more than $100 in wages in a quarter. Free, online. Your payroll provider usually needs the EDD account number before the first pay run.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified"
+    },
+    {
+      "id": "ca.workers_comp_insurance",
+      "name": "Workers' compensation insurance",
+      "category": "labor",
+      "issuing_agency": "Any licensed carrier or State Compensation Insurance Fund (regulated by CA Dept. of Industrial Relations)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 14
+      },
+      "fee_range_usd": {
+        "min": 0,
+        "max": 0
+      },
+      "prerequisites": [
+        "ca.sos_entity_registration"
+      ],
+      "applies_when": {
+        "field": "employees",
+        "gte": 1
+      },
+      "application_url": "https://www.dir.ca.gov/dwc/employer.htm",
+      "notes": "Mandatory from the first employee, even part-time (DIR: required by law even if you have only one employee). Premiums are a percentage of payroll (restaurant class codes typically 2–6%), not a government fee, so no fee is shown here. Several city permits (e.g. health, entertainment) ask for proof of coverage. Quote through a broker or State Fund.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "ca.food_handler_card",
+      "name": "California Food Handler Card (all food employees)",
+      "category": "food_safety_cert",
+      "issuing_agency": "ANSI-accredited provider (CalCode §113948); county programs in San Diego, Riverside, San Bernardino",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 1
+      },
+      "fee_range_usd": {
+        "min": 7,
+        "max": 15
+      },
+      "prerequisites": [],
+      "applies_when": {
+        "all": [
+          {
+            "field": "serves_food",
+            "eq": true
+          },
+          {
+            "not": {
+              "field": "city_slug",
+              "in": [
+                "san_diego"
+              ]
+            }
+          }
+        ]
+      },
+      "application_url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/CDPH%20Document%20Library/FDB/FoodSafetyProgram/RetailFood/RetailFoodSafetyTraining.pdf",
+      "notes": "Every employee who handles food must obtain a card within 30 days of hire (HSC §113948) from an ANSI-accredited course; the online course takes about two hours. Valid 3 years. San Diego, Riverside and San Bernardino counties run their own card programs in place of the state card, so operators there should use the county-specific entry instead. San Diego County businesses use the county card instead (see sd.county_food_handler_card).",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "ca.food_safety_manager_cert",
+      "name": "Certified Food Protection Manager (one per facility)",
+      "category": "food_safety_cert",
+      "issuing_agency": "ANSI-accredited exam provider (ServSafe, Prometric, NRFSP, 360training) per CalCode §113947.1",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 14
+      },
+      "fee_range_usd": {
+        "min": 100,
+        "max": 250
+      },
+      "prerequisites": [],
+      "applies_when": {
+        "field": "has_kitchen",
+        "eq": true
+      },
+      "application_url": "https://www.servsafe.com/ServSafe-Manager",
+      "notes": "Each food facility that prepares food must have at least one owner or employee who has passed an accredited food safety certification exam within 60 days of opening. Health inspectors ask for the certificate at the pre-opening inspection. Valid 5 years. ServSafe's page does not publish prices; course-plus-proctored-exam bundles typically run about $125–$200 across providers.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "ca.rbs_training",
+      "name": "Responsible Beverage Service (RBS) certification for alcohol servers and managers",
+      "category": "food_safety_cert",
+      "issuing_agency": "California Department of Alcoholic Beverage Control (ABC) – RBS Portal",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 7
+      },
+      "fee_range_usd": {
+        "min": 3,
+        "max": 30
+      },
+      "prerequisites": [],
+      "applies_when": {
+        "field": "serves_alcohol",
+        "eq": true
+      },
+      "application_url": "https://www.abc.ca.gov/education/rbs/",
+      "notes": "Required under AB 1221 for every alcohol server and their managers within 60 days of hire. Register on the ABC RBS Portal ($3), complete an approved course (about $10–$25), pass the exam. Keep the certification list on site for ABC inspections.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": [
+        "https://www.abc.ca.gov/january-2022"
+      ]
+    },
+    {
+      "id": "ca.abc_type_41",
+      "name": "ABC Type 41 – On-Sale Beer & Wine, Eating Place",
+      "category": "alcohol",
+      "issuing_agency": "California Department of Alcoholic Beverage Control (ABC)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 60,
+        "max": 120
+      },
+      "fee_range_usd": {
+        "min": 1000,
+        "max": 1600
+      },
+      "prerequisites": [
+        "ca.sos_entity_registration",
+        "ca.sellers_permit"
+      ],
+      "applies_when": {
+        "all": [
+          {
+            "field": "serves_alcohol",
+            "eq": true
+          },
+          {
+            "field": "alcohol_type",
+            "eq": "beer_wine"
+          },
+          {
+            "field": "business_type",
+            "in": [
+              "restaurant",
+              "cafe",
+              "hotel",
+              "catering"
+            ]
+          }
+        ]
+      },
+      "application_url": "https://www.abc.ca.gov/licensing/license-types/",
+      "notes": "For bona fide eating places serving beer and wine; minors allowed. Non-quota (no limit) so new licenses are issued directly by ABC. Requires a signed lease, zoning sign-off from the city, a 30-day public posting at the premises, and a seller's permit. Expect 55–65 days if unprotested; local protests or a 'high crime' / 'undue concentration' census tract trigger a Public Convenience or Necessity (PCN) finding from the city and add 1–3 months.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "stall_risk": "Undue-concentration tracts require a PCN letter from the city council / planning; start that paperwork the same week you apply to ABC."
+    },
+    {
+      "id": "ca.abc_type_42",
+      "name": "ABC Type 42 – On-Sale Beer & Wine, Public Premises (bar / wine bar / taproom)",
+      "category": "alcohol",
+      "issuing_agency": "California Department of Alcoholic Beverage Control (ABC)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 60,
+        "max": 150
+      },
+      "fee_range_usd": {
+        "min": 1000,
+        "max": 1600
+      },
+      "prerequisites": [
+        "ca.sos_entity_registration",
+        "ca.sellers_permit"
+      ],
+      "applies_when": {
+        "all": [
+          {
+            "field": "serves_alcohol",
+            "eq": true
+          },
+          {
+            "field": "alcohol_type",
+            "eq": "beer_wine"
+          },
+          {
+            "field": "business_type",
+            "eq": "bar"
+          }
+        ]
+      },
+      "application_url": "https://www.abc.ca.gov/licensing/license-types/",
+      "notes": "Beer-and-wine bar license: no food requirement, but no minors allowed on the premises. Non-quota, so ABC issues new ones, but nearly every city treats a Type 42 as a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue. Budget for the local hearing timeline, not just ABC's 60-ish days.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "stall_risk": "Local conditional-use hearing is the long pole: neighbors can protest both at the city and at ABC. Pre-meet the neighborhood association and police district before filing."
+    },
+    {
+      "id": "ca.abc_type_47",
+      "name": "ABC Type 47 – On-Sale General, Eating Place (full bar in a restaurant)",
+      "category": "alcohol",
+      "issuing_agency": "California Department of Alcoholic Beverage Control (ABC)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 90,
+        "max": 240
+      },
+      "fee_range_usd": {
+        "min": 17000,
+        "max": 450000
+      },
+      "prerequisites": [
+        "ca.sos_entity_registration",
+        "ca.sellers_permit"
+      ],
+      "applies_when": {
+        "all": [
+          {
+            "field": "serves_alcohol",
+            "eq": true
+          },
+          {
+            "field": "alcohol_type",
+            "eq": "full_liquor"
+          },
+          {
+            "field": "business_type",
+            "in": [
+              "restaurant",
+              "cafe",
+              "hotel",
+              "catering"
+            ]
+          }
+        ]
+      },
+      "application_url": "https://www.abc.ca.gov/licensing/license-types/",
+      "notes": "Quota license: new ones are only released through ABC's annual priority drawing (if the county has headroom); otherwise you buy an existing Type 47 on the open market and file a person-to-person + premises-to-premises transfer. Prices run roughly $100k–$450k in San Francisco and Los Angeles, far less in smaller counties. The transfer itself takes 90–180 days including escrow, posting, and local zoning sign-off.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "stall_risk": "Finding and escrowing a license is the single longest item in a full-bar restaurant opening; engage a license broker before signing the lease and make the lease contingent on transfer approval."
+    },
+    {
+      "id": "ca.abc_type_48",
+      "name": "ABC Type 48 – On-Sale General, Public Premises (full-liquor bar / nightclub)",
+      "category": "alcohol",
+      "issuing_agency": "California Department of Alcoholic Beverage Control (ABC)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 120,
+        "max": 300
+      },
+      "fee_range_usd": {
+        "min": 17000,
+        "max": 450000
+      },
+      "prerequisites": [
+        "ca.sos_entity_registration",
+        "ca.sellers_permit"
+      ],
+      "applies_when": {
+        "all": [
+          {
+            "field": "serves_alcohol",
+            "eq": true
+          },
+          {
+            "field": "alcohol_type",
+            "eq": "full_liquor"
+          },
+          {
+            "field": "business_type",
+            "eq": "bar"
+          }
+        ]
+      },
+      "application_url": "https://www.abc.ca.gov/licensing/license-types/",
+      "notes": "Quota license for bars with no food requirement; no minors. Almost always acquired by purchasing an existing license and transferring it, plus a conditional use permit from the city (bars are rarely a permitted use by right). Several neighborhoods (e.g. San Francisco's Mission Alcoholic Beverage Special Use District) restrict or prohibit new Type 48 premises outright.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "stall_risk": "Zoning may prohibit a new bar entirely; confirm with the planning department before paying a license deposit."
+    },
+    {
+      "id": "ca.calrecycle_organics_sb1383",
+      "name": "SB 1383 organics recycling service (commercial food generator)",
+      "category": "other",
+      "issuing_agency": "CalRecycle via your city / hauler",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": {
+        "min": 1,
+        "max": 14
+      },
+      "fee_range_usd": {
+        "min": 0,
+        "max": 0
+      },
+      "prerequisites": [],
+      "applies_when": {
+        "field": "has_kitchen",
+        "eq": true
+      },
+      "application_url": "https://calrecycle.ca.gov/organics/slcp/",
+      "notes": "Not a permit, but every California food business must subscribe to organics (green bin) collection and, above size thresholds, participate in edible food recovery. Cities enforce it through the business license or health inspection, so set up hauler service before opening.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    }
+  ]
+}

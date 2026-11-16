@@ -1,0 +1,1809 @@
+{
+ "format_version": 2,
+ "address": "4144 18th St, San Francisco, CA 94114",
+ "lat": 37.76102790343055,
+ "lng": -122.43590174198056,
+ "parcel": "2647/016",
+ "concept_summary": "Toad Hall is a bar with limited kitchen service at 4144 18th St in the Castro Street NCD, proposing to merge two existing storefronts (4146 18th St, an established bar with Type 48 license since 1981, and 4150 18th St, currently Pasta Panino restaurant) and enlarge the bar use.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 1 further review (zoning and use), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "next_step": "Confirm with SF Planning in writing whether merging the two storefronts and enlarging the existing nonconforming bar at 4146 18th St into 4150 18th St requires a Conditional Use Authorization, and whether the occupant count, floor area, formula-retail status, and alcohol type (beer/wine or full liq…",
+  "citations": [
+   "zoning:NCD-CASTRO"
+  ]
+ },
+ "pathway": {
+  "use": "bar",
+  "use_label": "Bar",
+  "district": "NCD-CASTRO",
+  "permission": "conditional",
+  "permission_label": "Conditional use",
+  "existing_use": null,
+  "change_of_use": "no",
+  "change_of_use_label": "No change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Bar (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.cell",
+    "text": "Zoning district NCD-CASTRO: a Bar on the first story is a conditional use (Planning Code § 715, in force from 2022-03-07 (Ord. 10-22, File No. 211093)).",
+    "code_section": "Planning Code § 715",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-CASTRO"
+    ]
+   },
+   {
+    "rule_id": "T11.missing",
+    "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 715, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+    "code_section": "Planning Code § 715",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-CASTRO"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 4144 18th St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The last use of the space, as described, is Bar and Laundromat. The proposed use is Bar, so this is not a change of use.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 715",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25562",
+    "citations": [
+     "overlay:static:sf:nc_ncd_castro",
+     "zoning:NCD-CASTRO"
+    ]
+   }
+  ],
+  "rules_date": "2024-11-20",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T1.continues",
+      "text": "A Bar already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NCD-CASTRO: a Bar on the first story is a conditional use (Planning Code § 715, in force from 2022-03-07 (Ord. 10-22, File No. 211093)).",
+      "code_section": "Planning Code § 715",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-CASTRO"
+      ]
+     },
+     {
+      "rule_id": "T3.conditional_use",
+      "text": "A Bar continues at this address and is to be enlarged. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": [
+       "zoning:NCD-CASTRO"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the business is part of a chain that shares its name, look or menu with other locations"
+    ],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-CASTRO: formula retail is a conditional use (Planning Code § 715, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 715",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-CASTRO"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district NCD-CASTRO: a use of 2,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 715, in force from 2023-12-10 (Ord. 225-23, File No. 220709)).",
+      "code_section": "Planning Code § 715",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-CASTRO"
+      ]
+     }
+    ],
+    "in_force_from": "2023-12-10",
+    "ordinance": "Ord. 225-23, File No. 220709",
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.conditional",
+      "text": "The space is, or was last, a laundromat. From 2021-12-20 to 2024-12-20 a change of use or demolition of a laundromat needed a Conditional Use (Planning Code § 202.12).",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 715, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 715",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-CASTRO"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "no",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 4144 18th St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Bar and Laundromat. The proposed use is Bar, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 20 November 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T3.cell",
+     "text": "Zoning district NCD-CASTRO: a Bar on the first story is a conditional use (Planning Code § 715, in force from 2022-03-07 (Ord. 10-22, File No. 211093)).",
+     "code_section": "Planning Code § 715",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-715.-castro-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-CASTRO"
+     ]
+    },
+    {
+     "rule_id": "T3.conditional_use",
+     "text": "A Bar continues at this address and is to be enlarged. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+     "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+     "citations": [
+      "zoning:NCD-CASTRO"
+     ]
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Enlarging or intensifying an existing use.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "summary": "Enlarging the existing bar at 4146 18th St into the adjacent 4150 18th St storefront requires a Conditional Use Authorization because a new bar would be a conditional use in the Castro NCD and Planning Code Section 178 prohibits significant enlargement of a conditional use without a new CUA.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The existing bar at 4146 18th St (Toad Hall) has operated continuously since 1981 with an active Type 48 full-liquor license, repeatedly approved as a legal nonconforming use in 2004, 2005, and 2008.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show a Type 48 license issued in 1981 that is still active and approvals in 2004, 2005, 2008, but do not state continuous operation.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Planning Code Section 178 states that a conditional use may not be significantly altered, enlarged, or intensified without a new Conditional Use Authorization, and the rules determined that enlarging this bar triggers that requirement.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record does not contain Planning Code Section 178 or any rules about conditional use alterations requiring new authorization.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The 2008 approval of the bar at this address (MB0800388) explicitly stated that dancing is not permitted and a CUA would be required to establish dancing, showing that any intensification beyond the existing use envelope requires discretionary review.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is on the same parcel but at a different address (4146-4150 18th St), and the conclusion about intensification is not stated in the record.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A CUA approved in June 2023 for the Castro Theatre at 429 Castro (152 m away) established a new bar use in the Castro NCD with extensive soundproofing, patron-management, and community-benefit conditions, but passed only 4-2, signaling mixed Commission sentiment about new bar uses even for a cultural landmark.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows the 4-2 vote but does not state what this signals about Commission sentiment.",
+     "original_confidence": "likely_applicable"
+    },
+    {
+     "text": "Two bar CUAs in this district were denied in the 1990s: extended hours in 1994 (decided after 73 days) and an outdoor drinking area in 1999 (decided after 70 days).",
+     "confidence": "likely_applicable",
+     "citations": [
+      "app:datasf_planning:1994.517C",
+      "app:datasf_planning:1999.228C"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The Commission approved a CUA in 2012 to add entertainment to an existing bar at 4141-4149 18th St (43 m away, same block) and in 1999 to permit dancing at Badlands (55 m away).",
+     "confidence": "likely_applicable",
+     "citations": [
+      "app:datasf_planning:2012.0205C",
+      "app:datasf_planning:1999.371C"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "alcohol.status",
+     "text": "The description does not give what alcohol will be served: beer and wine, or spirits too and how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2024-11-20: none within 1,000 ft or in the census tract.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what alcohol will be served: beer and wine, or spirits too",
+    "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+   ],
+   "summary": "The records cannot determine which ABC license applies because the description does not state what alcohol will be served (beer/wine or full liquor) or how the license will be obtained (new application, transfer from another owner, or transfer from another location).",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "An active Type 48 license (ABC #101617) is on file at 4146 18th St, issued March 1981 to Toad Hall and still active as of November 2024.",
+     "confidence": "verified",
+     "citations": [
+      "license:abc:101617"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "An active Type 41 beer-and-wine restaurant license is on file at the adjacent 4150 18th St (Pasta Panino), issued July 2024.",
+     "confidence": "verified",
+     "citations": [
+      "license:abc:649378",
+      "app:datasf_planning:2023-005556MIS"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Within 500 ft of the address there are 28 active on-sale ABC licenses, and the density statistics flag undue concentration.",
+     "confidence": "verified",
+     "citations": [
+      "stat:density"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "New beer-and-wine licenses (Type 41 or 42) are non-quota and issued directly by ABC, typically taking 60–120 days if unprotested, but undue-concentration census tracts require a PCN letter from the city and can add 1–3 months.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Full-liquor licenses (Type 47 restaurant or Type 48 bar) are quota licenses in San Francisco and must be purchased on the open market at prices ranging from $100,000 to $450,000, then transferred through ABC in a process that takes 90–240 days including escrow and local zoning sign-off.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "A health permit to operate is allowed: needs DPH plan check and a pre-opening inspection, issued without a hearing after confirming a certified food safety manager is on staff.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Every food or drink business in San Francisco needs a health permit to operate, issued by DPH after plan review and final inspection; the FY2026–27 permit application fee is $470 and no annual license fee is charged for restaurants and bars through 2028.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record describes when the permit applies but does not state that every food or drink business needs it.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "DPH plan check at a flat fee of $828 (small remodel, 3 hours) or higher if the scope is larger, and the applicant must schedule a pre-final inspection at ~80% complete and a final inspection at least two weeks in advance.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.health_plan_check"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The health permit application on file at 4150 18th St for Pasta Panino was approved in 2019 (filed Dec 2019, decided Dec 2019, an 18-day review), showing routine processing for restaurant permits at this address.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Record shows a Planning agency referral (not health permit application), review was 1 day (Dec 17-18, not 18 days), no business name given, and conclusion about routine processing not stated.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 4144 18th St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Bar and Laundromat. The proposed use is Bar, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without whether the space is for fewer than 50 people and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "whether the space is for fewer than 50 people",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "summary": "The records cannot establish whether a building permit is needed or what kind because the description does not state whether the occupant load is under or over 50 people and the existing occupancy group of the space is not in public records; only plans or an inspection show it.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Under the California Building Code a bar or restaurant is Assembly Group A-2, but a space for fewer than 50 people is Group B, so the occupant count determines the occupancy group and whether a change of occupancy is triggered.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record is a zoning district record that contains no information about California Building Code occupancy groups, A-2 or B classifications, or the 50-person threshold.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The Planning Code change-of-use analysis found no change of use because the last described use is Bar and Laundromat and the proposed use is Bar, but that does not settle the Building Code change-of-occupancy question.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is a zoning district designation and does not contain any change-of-use analysis or information about the uses mentioned.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Fees are a percentage of construction valuation (typically $800–$15,000 for tenant improvements) and separate plumbing, electrical, and mechanical permits are pulled by licensed subcontractors.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.building_permit"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Kitchen build-outs, hoods, restrooms, and ADA upgrades need DBI-stamped plans and a change of occupancy can add months to the permit timeline; incomplete plan sets routinely bounce between departments, so hiring an architect experienced with SF restaurant projects is critical.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record does not state that a change of occupancy adds months to the timeline.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: what alcohol will be served: beer and wine, or spirits too. Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space"
+  },
+  {
+   "question": "Whether the business is part of a chain that shares its name, look, or menu with other locations (formula retail status).",
+   "needs": "applicant_history",
+   "ask": "The applicant or project sponsor"
+  },
+  {
+   "question": "The floor area of the combined bar space in square feet after merging the two storefronts.",
+   "needs": "applicant_history",
+   "ask": "The applicant's architect or lease documents"
+  },
+  {
+   "question": "What alcohol will be served: beer and wine only, or spirits (full liquor).",
+   "needs": "applicant_history",
+   "ask": "The applicant or project sponsor"
+  },
+  {
+   "question": "How the liquor license will be obtained: new application to ABC, transfer from another owner, or transfer from another premises.",
+   "needs": "applicant_history",
+   "ask": "The applicant or liquor license broker"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NCD-CASTRO",
+  "name": "Castro Street Neighborhood Commercial District",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 715 (Zoning Control Table 715); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:NCD-CASTRO"
+ },
+ "overlays": [
+  {
+   "name": "Castro Street Neighborhood Commercial District",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 715 (Zoning Control Table 715); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_ncd_castro"
+  },
+  {
+   "name": "Central Neighborhoods Large Residence",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.92",
+   "citation_id": "overlay:datasf_sud:central_neighborhoods_large_residence"
+  },
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 39,
+  "bars": 13,
+  "abc_on_sale_licenses": 28,
+  "abc_licenses_1000ft": 50,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 0,
+  "approved_with_conditions": 1,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 1,
+  "window_years": 10,
+  "scope": "N = 1 dated decision within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 55 permits and licences, 282 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 55,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 282,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced.",
+   "basis": "Standard condition for eating and drinking uses.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-005675CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2022-005675CUA",
+   "citation_id": "app:datasf_planning:2022-005675CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar"
+   ],
+   "address": "429 CASTRO ST 94114",
+   "distance_m": 152.4,
+   "filed_at": "2022-06-27",
+   "decided_at": "2023-06-15",
+   "days_to_decision": 353,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Additional Project Authorization: The Project Sponsor must obtain a Certificate of Appropriateness under Article 10 of the Planning Code for physical alterations to historically significant interior and exterior spaces and features. Additionally, the Project requires adoption of Planning Code Text Amendments to conditionally allow nighttime entertainment on second stories of buildings in the Castro Street NCD Zoning District and to exempt Article 10 Landmark properties from the non-residential use size limits in the Castro Street NCD Zoning District.",
+    "Noise, Ambient: Interior occupiable spaces shall be insulated from ambient noise levels. Specifically, in areas identified by the Environmental Protection Element, Map 1, “Background Noise Levels,” of the General Plan that exceed the thresholds of Article 29 in the Police Code, new developments shall install and maintain glazing rated to a level that insulates interior occupiable areas from Background Noise and compl iesy with California Title 24 energy standards.",
+    "Use (A): No fewer than 75 days of each calendar year must include the presentation of either a feature-length film or a series of short films with total combined length that is comparable to a feature-length film.",
+    "Use (B): In order to ensure that the facility continues to contribute to the cultural richness of the neighborhood and the viability of surrounding small businesses, no fewer than 180 days of each calendar year must include events that are open to the general public or to private parties. No fewer than 90 of those days must include events that are open to the general public, including events for which tickets are available for purchase by the public. The required number of days in this Condition Number 16(B) includes the number of days listed in Condition Number 16(A) above.",
+    "Use (C): On an ongoing basis, the operator of the facility shall seek guidance on the overall programming of the facility from one or more San Francisco-based LGBTQIA+ nonprofit organizations or nonprofit film exhibition organizations in order to meet its commitment as stated in the online community benefits package as of June 15, 2023 to have 25% of the programming be related to LGBTQIA art, artists, culture, and activities.",
+    "Use (D): In order to meet its commitment as stated in the online community benefits package as of June 15, 2023, to have 25% of the programming be related to LGBTQIA art, artists, culture, and activities, each calendar year following the certificate of occupancy, the operator of the facility shall host one meeting and invited representatives of interested organizations, such as the Castrol LGBTQ Cultural District, the Castro Merchants Association, and others.",
+    "Use (E): The operator of the facility shall make ongoing good faith efforts to source a portion of its food or beverage concessions from local businesses located within the Castro LGBTQ Cultural District or up to a quarter mile outside the district’s boundaries, on a rotating basis and in collaboration with the Castro Merchants Association.",
+    "Use (F): No later than March 31 of each calendar year, the operator of the facility shall provide to the Director of Planning a written report that (1) lists each event at the facility during the previous calendar year, and (2) describes compliance with all provisi ons of this Condition Number 16 during the previous calendar year. The director shall forward this report to the Historic Preservation Commission.",
+    "Nighttime Entertainment: The Nighttime Entertainment shall be performed within the enclosed building only. The building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure.",
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date that of the Planning Code text amendment become effective. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since the date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) became effective. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+    "Final Materials: The Project Sponsor shall continue to work with the Planning Department on the building design. Final materials, glazing, color, texture, landscaping, and detailing shall be subject to Department staff review and approval. The architectural addenda shall be reviewed and approved by the Planning Department prior to issuance. (standard)",
+    "Garbage, Composting and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Rooftop Mechanical Equipment: Pursuant to Planning Code 141, t he Project Sponsor shall submit a roof plan to the Planning Department prio r to Planning approval of the building permit application . Rooftop mechanical equipment, if any is proposed as part of the Project, is required to be screened so as not to be visible from any point at or below the roof level of the subject building. (standard)",
+    "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. Parking and Traffic (standard)",
+    "Managing Traffic During Construction: The Project Sponsor and construction contractor(s) shall coordinate with the Traffic Engineering and Transit Divisions of the San Francisco Municipal Transportation Agency (SFMTA), the Police Department, the Fire Department, the Planning Department, and other construction contractor(s) for any concurrent nearby Projects to manage traffic congestion and pedestrian circulation effects during construction of the Project. Monitoring - After Entitlement (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning C ode Section 176 or Section 176.1 . The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Monitoring: The Project requires monitoring of the conditions of approval in this Motion. The Project Sponsor or the subsequent responsible parties for the Project shall pay fees as established under Planning Code Section 3501(e) (1) and work with the Planning Department (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In additio n, the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment nois e shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+    "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block driveways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment. (standard)",
+    "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.94,
+   "why_comparable": "CUA approved June 2023 for the Castro Theatre (429 Castro, 152 m away), establishing a new bar use and nighttime entertainment in a landmark building in the Castro NCD. The Commission imposed extensive noise insulation and community-benefit conditions.",
+   "key_takeaway": "The Commission approved a major new bar use in the heart of the Castro despite its extreme license density, but required soundproofing to contain bass and vibrations, posted patron-conduct notices, community liaison appointment, and annual reporting. A 4-2 vote signals mixed sentiment even for a cultural landmark.",
+   "lat": 37.762012942513735,
+   "lng": -122.43469620829235,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-005675CUA"
+  },
+  {
+   "application_id": "datasf_planning:2012.0205C",
+   "citation_id": "app:datasf_planning:2012.0205C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar",
+    "live_entertainment"
+   ],
+   "address": "4141 - 4149 18TH ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 42.8,
+   "filed_at": "2012-03-01",
+   "decided_at": "2012-06-14",
+   "days_to_decision": 105,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.639,
+   "why_comparable": "CUA approved June 2012 for 4141–4149 18th St (The Edge), 43 m away. Authorized a place of entertainment as an accessory use to an existing bar—live entertainment added to a nonconforming bar on this same block.",
+   "key_takeaway": "Planning approved entertainment uses accessory to an existing bar via CUA, showing that the Commission will layer additional uses onto a nonconforming bar in this district when properly conditioned. No extracted conditions available, but the approval itself is the signal.",
+   "lat": 37.76064231094545,
+   "lng": -122.43590711899185,
+   "source_url": "https://sfplanninggis.org/pim?search=2012.0205C"
+  },
+  {
+   "application_id": "datasf_planning:1999.371C",
+   "citation_id": "app:datasf_planning:1999.371C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "nightclub",
+    "bar"
+   ],
+   "address": "4117 - 4121 18TH ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 54.6,
+   "filed_at": "1999-06-03",
+   "decided_at": "1999-08-05",
+   "days_to_decision": 63,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.636,
+   "why_comparable": "CUA approved Aug 1999 for Badlands (4117–4121 18th St, 55 m away) to permit dancing on the premises of an existing bar in the Castro NCD.",
+   "key_takeaway": "A CUA was required to add dancing to an existing bar, reinforcing the pattern that any expansion of bar activities—especially dancing—needs Commission approval in the Castro NCD even when the bar is a legal nonconforming use.",
+   "lat": 37.760668329071336,
+   "lng": -122.43547886381494,
+   "source_url": "https://sfplanninggis.org/pim?search=1999.371C"
+  },
+  {
+   "application_id": "datasf_planning:1995.221C",
+   "citation_id": "app:datasf_planning:1995.221C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar",
+    "hotel"
+   ],
+   "address": "465 - 469 CASTRO ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 118.4,
+   "filed_at": "1995-04-26",
+   "decided_at": "1995-07-27",
+   "days_to_decision": 92,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.62,
+   "why_comparable": "CUA approved July 1995 at 465–469 Castro (118 m away, also Castro NCD) to expand an existing bar and convert upstairs space to a bed-and-breakfast use.",
+   "key_takeaway": "The Commission approved a bar expansion in the Castro NCD in 1995, showing that enlargements of nonconforming bar uses can be authorized via CUA. However, two later applications at the same address—extended hours in 1994 (denied) and an outdoor area in 1999 (denied)—show that expansions and intensifications face real scrutiny.",
+   "lat": 37.761498124005215,
+   "lng": -122.43469549673782,
+   "source_url": "https://sfplanninggis.org/pim?search=1995.221C"
+  },
+  {
+   "application_id": "datasf_planning:1994.517C",
+   "citation_id": "app:datasf_planning:1994.517C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar"
+   ],
+   "address": "465 - 469 CASTRO ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 118.4,
+   "filed_at": "1994-09-26",
+   "decided_at": "1994-12-08",
+   "days_to_decision": 73,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.82,
+   "why_comparable": "CUA denied Dec 1994 at 465–469 Castro (118 m away) for extended hours of operation for an existing bar in the Castro NCD. One of only two denials in the candidate set.",
+   "key_takeaway": "The Commission denied a request to extend hours at a Castro bar in 1994. Combined with the 1999 denial of an outdoor area at a nearby address, it shows the Commission will reject intensifications that push beyond the existing nonconforming use envelope, even in this entertainment-heavy corridor.",
+   "lat": 37.761498124005215,
+   "lng": -122.43469549673782,
+   "source_url": "https://sfplanninggis.org/pim?search=1994.517C"
+  },
+  {
+   "application_id": "datasf_planning:1999.228C",
+   "citation_id": "app:datasf_planning:1999.228C",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar",
+    "outdoor_seating"
+   ],
+   "address": "454 - 456 CASTRO ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 76.0,
+   "filed_at": "1999-04-08",
+   "decided_at": "1999-06-17",
+   "days_to_decision": 70,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.631,
+   "why_comparable": "CUA denied June 1999 at 454–456 Castro (76 m away) for an outdoor activity area behind an existing full bar in the Castro NCD. The second denial in the candidate set.",
+   "key_takeaway": "Outdoor drinking areas face a high bar in the Castro: this proposal was denied even though the bar itself was legal. The denial signals sensitivity to spillover effects and residential proximity, a concern that will apply to any expansion of the subject bar's footprint or outdoor service.",
+   "lat": 37.76160243904015,
+   "lng": -122.43543150941636,
+   "source_url": "https://sfplanninggis.org/pim?search=1999.228C"
+  },
+  {
+   "application_id": "datasf_planning:MB0400797",
+   "citation_id": "app:datasf_planning:MB0400797",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar"
+   ],
+   "address": "4146 18TH ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 0.0,
+   "filed_at": "2004-05-20",
+   "decided_at": "2004-05-28",
+   "days_to_decision": 8,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.8,
+   "why_comparable": "Continuation of existing bar permitted at the subject site (4146 18th St) in 2004 per Planning Code Section 186, a routine agency referral approving the nonconforming use for ownership change.",
+   "key_takeaway": "An agency referral showing that ownership changes and continuations of the existing bar at this exact address are routinely approved without a hearing when the use and footprint remain unchanged.",
+   "lat": 37.76102790443692,
+   "lng": -122.43590174073898,
+   "source_url": "https://sfplanninggis.org/pim?search=MB0400797"
+  },
+  {
+   "application_id": "datasf_planning:MB1100272",
+   "citation_id": "app:datasf_planning:MB1100272",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar"
+   ],
+   "address": "4149 - 4149 18TH ST ST., SAN FRANCISCO, CA 94114",
+   "distance_m": 42.8,
+   "filed_at": "2011-01-21",
+   "decided_at": "2011-10-18",
+   "days_to_decision": 270,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.789,
+   "why_comparable": "Agency referral approved Oct 2011 for an existing nonconforming bar at 4149 18th St (43 m away, same block), change of ownership only, per Planning Code Section 186.1.",
+   "key_takeaway": "Another routine approval of a nonconforming bar on this block for ownership change, reinforcing that maintenance of the status quo is permitted but changes to the use require a CUA.",
+   "lat": 37.76064231094545,
+   "lng": -122.43590711899185,
+   "source_url": "https://sfplanninggis.org/pim?search=MB1100272"
+  },
+  {
+   "application_id": "datasf_planning:MB0900062",
+   "citation_id": "app:datasf_planning:MB0900062",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar"
+   ],
+   "address": "456 - 456 CASTRO ST, SAN FRANCISCO, CA 94114",
+   "distance_m": 76.0,
+   "filed_at": "2009-01-12",
+   "decided_at": "2009-02-06",
+   "days_to_decision": 25,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.781,
+   "why_comparable": "Use decision approved Feb 2009 at 456 Castro (76 m away) for continuation of an existing bar use as nonconforming, with explicit 'no expansion' notation.",
+   "key_takeaway": "Planning repeatedly approves nonconforming bars in the Castro NCD but explicitly conditions them with 'no expansion' language, establishing that any increase in bar area or intensity requires a CUA.",
+   "lat": 37.76160243904015,
+   "lng": -122.43543150941636,
+   "source_url": "https://sfplanninggis.org/pim?search=MB0900062"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 2647/016 or the address 4144 18th St",
+  "total": 9,
+  "by_kind": {
+   "use_decision": 1,
+   "agency_referral": 6,
+   "licence": 2
+  },
+  "entries": [
+   {
+    "application_id": "abc:649378",
+    "citation_id": "app:abc:649378",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 41 – On-Sale Beer & Wine - Eating Place",
+    "description": "PASTA PANINO — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-20)",
+    "address": "4150 18TH ST, SAN FRANCISCO, CA 94114",
+    "filed_at": null,
+    "decided_at": "2024-07-24",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=649378"
+   },
+   {
+    "application_id": "datasf_planning:2023-005556MIS",
+    "citation_id": "app:datasf_planning:2023-005556MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Type 41 ABC License is permitted in conjunction with a restaurant which is permitted and limited to the restrictions of Planning Code Section 716 and shall operate as a Bona Fide Eating Place per Planning Code Section 202.2a.",
+    "address": "4150 18TH ST 94114",
+    "filed_at": "2023-06-20",
+    "decided_at": "2023-07-31",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2023-005556MIS"
+   },
+   {
+    "application_id": "datasf_planning:2019-023137MIS",
+    "citation_id": "app:datasf_planning:2019-023137MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "DPH - Restaurant",
+    "address": "4150 18TH ST 94114",
+    "filed_at": "2019-12-17",
+    "decided_at": "2019-12-18",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-023137MIS"
+   },
+   {
+    "application_id": "datasf_planning:MB0801288",
+    "citation_id": "app:datasf_planning:MB0801288",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Type 41 ABC License is permitted in conjunction with an existing non-conforming large fast food restaurant which is permitted and limited to the restrictions of Planning Code Section 186. -",
+    "address": "4150 - 4150 18TH ST, SAN FRANCISCO, CA 94114",
+    "filed_at": "2008-12-04",
+    "decided_at": "2009-01-27",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0801288"
+   },
+   {
+    "application_id": "datasf_planning:MB0801157",
+    "citation_id": "app:datasf_planning:MB0801157",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Continuation of an existing non-conforming large fast food restaurant is permitted and limited to the restrictions of Planning Code Section 186. Change of ownership only. - No enlargement or expansion of use.",
+    "address": "4150 - 4150 18TH ST STREET LEV, SAN FRANCISCO, CA 94114",
+    "filed_at": "2008-10-29",
+    "decided_at": "2008-11-03",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0801157"
+   },
+   {
+    "application_id": "datasf_planning:MB0800388",
+    "citation_id": "app:datasf_planning:MB0800388",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Approve as continuation of existing use bar which is a nonconforming use for this zoning district. - DANCING IS NOT PERMITTED. Conditional use authorization required to establish dancing at this location. Some ancillary use is approved for this site 3 video machines, billard table and recorded musi…",
+    "address": "4146 - 4150 18TH ST STREET LEV, SAN FRANCISCO, CA 94114",
+    "filed_at": "2008-04-14",
+    "decided_at": "2008-04-23",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0800388"
+   },
+   {
+    "application_id": "datasf_planning:MB0500058",
+    "citation_id": "app:datasf_planning:MB0500058",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Approve as continuation of existing use bar which is a nonconforming use for this zoning district. - Some ancillary use is approved for this site 3 video machines, billard table and recorded music, but dancing is not permitted. To establish dancing at this location it needs a conditional use author…",
+    "address": "4146 18TH ST, SAN FRANCISCO, CA 94114",
+    "filed_at": "2004-12-27",
+    "decided_at": "2005-01-21",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0500058"
+   },
+   {
+    "application_id": "datasf_planning:MB0400797",
+    "citation_id": "app:datasf_planning:MB0400797",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Continuation of existing bar permitted per Section 186. -",
+    "address": "4146 18TH ST, SAN FRANCISCO, CA 94114",
+    "filed_at": "2004-05-20",
+    "decided_at": "2004-05-28",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB0400797"
+   },
+   {
+    "application_id": "abc:101617",
+    "citation_id": "app:abc:101617",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 48 – On-Sale General - Public Premises",
+    "description": "TOAD HALL — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)",
+    "address": "4146 18TH ST, SAN FRANCISCO, CA 94114",
+    "filed_at": null,
+    "decided_at": "1981-03-16",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=101617"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 1,
+   "action": "Obtain a written zoning determination from SF Planning Department before filing any application.",
+   "what_to_say": "Submit a request to the Zoning Administrator asking: (1) whether merging storefronts 4146 and 4150 18th St and enlarging the existing bar at 4146 into 4150 constitutes an expansion of the existing nonconforming use that requires a CUA under Planning Code Section 178, or a new bar use; (2) whether the occupant count (under or over 50 people), floor area (under or over 2,000 sq ft), and formula-retail status affect the pathway; (3) whether the existing Type 48 license at 4146 can be extended to cover the merged space or a new license is required. Request confirmation in writing before paying any application or permit fees.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "step": 2,
+   "action": "Register the business entity with the California Secretary of State and obtain an Employer Identification Number from the IRS.",
+   "what_to_say": "File Articles of Organization (LLC, $70) or Articles of Incorporation (corporation, $100) online. Within 90 days file the Statement of Information ($20 LLC, $25 corporation). Apply for an EIN (free, issued immediately Mon–Fri). The EIN is needed for the bank account and ABC application.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 3,
+   "action": "Register for a San Francisco Business Registration Certificate and obtain a California Seller's Permit.",
+   "what_to_say": "Register online with the SF Treasurer & Tax Collector within 30 days of starting business; the fee is tiered by gross receipts ($55 up to $100k, $95 up to $250k, etc.). The registration year runs April 1 to March 31. Apply for a California Seller's Permit (free) at the CDTFA online portal; it is required before ABC will process a license application. Every other city department asks for your Business Account Number, so complete this step before filing with Planning or DPH.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:ca.sellers_permit"
+   ],
+   "verification": "supported",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "step": 4,
+   "action": "File a Fictitious Business Name statement with the SF County Clerk and publish it.",
+   "what_to_say": "If the business name differs from the legal entity name, file the FBN statement with the County Clerk in person (photo ID required) or by mail, then publish in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days. Banks and ABC require the filed statement. Total cost ~$60–$120.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.fictitious_business_name"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 8,
+   "action": "Complete remaining permits and registrations in the final four weeks before opening.",
+   "what_to_say": "Install and register a grease interceptor with SFPUC (FOG program; submit the Installation Verification Form for a 14.2% sewer-bill reduction). Apply for a sign permit if exterior signage is changed. Subscribe to commercial organics (green bin) hauler service (SB 1383 requirement for kitchens). Obtain workers' compensation insurance (required from the first employee; quote through a broker or State Fund). Register as an employer with EDD (free, online). Obtain RBS certification for all alcohol servers and managers (ABC RBS Portal, $3 registration + ~$10–$25 course, completed within 60 days of hire). Obtain food handler cards for all food employees (ANSI-accredited provider, ~$7–$15, completed within 30 days of hire). Obtain a certified food safety manager certificate (ServSafe or equivalent, ~$100–$250, at least one manager, valid 5 years). Subscribe to A…",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.fog_wastewater_permit",
+    "catalog:sf.sign_permit",
+    "catalog:ca.calrecycle_organics_sb1383",
+    "catalog:ca.workers_comp_insurance",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.rbs_training",
+    "catalog:ca.food_handler_card",
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 120,
+  "days_max": 300,
+  "cost_min_usd": 3100.0,
+  "cost_max_usd": 15000.0,
+  "notes": "The day and cost ranges are for the Conditional Use Authorization and Health permit to operate (the two approvals in the entitlement path) when they are granted. The CUA filing to hearing takes 120–300 days (catalog entry verified; comparables show 8–353 days for seven approved CUA cases, with the Castro Theatre CUA taking 353 days from filing to approval in June 2023). The health permit takes 14–45 days after plan check and final inspection. The CUA fee for a no-construction project is approximately $3,100 (CPI-adjusted from the 2023–24 schedule); larger projects or projects with construction pay higher fees up to $15,000. The health plan check is $828–$2,500 and the permit to operate application is $470 (FY2026–27 verified rates). ABC license costs are not included because the alcohol row status is insufficient information: a new Type 41 or 42 is $1,000–$1,600 and takes 60–150 days; a transferred Type 47 or 48 costs $100,000–$450,000 for the license itself plus $1,000–$1,600 in ABC fees and takes 90–240 days including escrow. Building permit fees ($800–$15,000) and time (14–120 days) are also excluded because that row's status is insufficient information pending occupancy-group confirmation. These figures assume approval; they are not times or costs to a denial or withdrawal.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "verification": "downgraded",
+  "verification_note": "Records show 4 CUA cases (not 7), with days ranging from 63 to 353 (not 8 to 353).",
+  "original_confidence": "likely_applicable"
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 36,
+  "supported": 5,
+  "trimmed": 11,
+  "downgraded": 10,
+  "dropped": 10
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:abc:101617",
+   "kind": "application",
+   "label": "Type 48 – On-Sale General - Public Premises · 4146 18TH ST, SAN FRANCISCO, CA 94114 · approved (1981)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=101617",
+   "excerpt": "TOAD HALL — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "app:abc:649378",
+   "kind": "application",
+   "label": "Type 41 – On-Sale Beer & Wine - Eating Place · 4150 18TH ST, SAN FRANCISCO, CA 94114 · approved (2024)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=649378",
+   "excerpt": "PASTA PANINO — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "app:datasf_planning:1994.517C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 465 - 469 CASTRO ST, SAN FRANCISCO, CA 94114 · denied (1994)",
+   "source_url": "https://sfplanninggis.org/pim?search=1994.517C",
+   "excerpt": "Extend hours of operation for an existing bar in the castro ncd per Sec.715.27.  Extend hours of operation for an existing BAR ."
+  },
+  {
+   "id": "app:datasf_planning:1995.221C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 465 - 469 CASTRO ST, SAN FRANCISCO, CA 94114 · approved (1995)",
+   "source_url": "https://sfplanninggis.org/pim?search=1995.221C",
+   "excerpt": "To expand an existing bar and convert an existing dwelling unit on the second floor to a bed and breakfast"
+  },
+  {
+   "id": "app:datasf_planning:1999.228C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 454 - 456 CASTRO ST, SAN FRANCISCO, CA 94114 · denied (1999)",
+   "source_url": "https://sfplanninggis.org/pim?search=1999.228C",
+   "excerpt": "Conditional use authorization request for an outdoor activity area in back of an existing full-bar, under Planning Code Section 715.24, within the Castro Street NCD."
+  },
+  {
+   "id": "app:datasf_planning:1999.371C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 4117 - 4121 18TH ST, SAN FRANCISCO, CA 94114 · approved (1999)",
+   "source_url": "https://sfplanninggis.org/pim?search=1999.371C",
+   "excerpt": "Conditional use authorization to permit dancing on premises of existing bar \nBadlands"
+  },
+  {
+   "id": "app:datasf_planning:2012.0205C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 4141 - 4149 18TH ST, SAN FRANCISCO, CA 94114 · approved (2012)",
+   "source_url": "https://sfplanninggis.org/pim?search=2012.0205C",
+   "excerpt": "Conditional Use Authorization to establish use as a place of entertainment (790.38) as an accessory use to an established bar."
+  },
+  {
+   "id": "app:datasf_planning:2019-023137MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4150 18TH ST 94114 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-023137MIS",
+   "excerpt": "DPH - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2021-005099CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 4126 18TH ST 94114 · approved with conditions (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-005099CUA",
+   "excerpt": "Conditional Use Authorization request  for \"Bottle Bacchanal\" to open a boutique bottle shop specializing in natural wines and artisanal beverages. No construction or alterations are necessary for this business to begin operating."
+  },
+  {
+   "id": "app:datasf_planning:2022-005675CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 429 CASTRO ST 94114 · approved with conditions (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-005675CUA",
+   "excerpt": "Planning Commission Motion No. 21334 (June 15, 2023) approved with conditions Conditional Use Authorization 2022-005675CUA at 429 CASTRO STREET by a 4-2 vote. Key operating conditions: Additional Project Authorization; Noise, Ambient; Noise; Use."
+  },
+  {
+   "id": "app:datasf_planning:2023-005556MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4150 18TH ST 94114 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-005556MIS",
+   "excerpt": "Type 41 ABC License is permitted in conjunction with a restaurant which is permitted and limited to the restrictions of Planning Code Section 716 and shall operate as a Bona Fide Eating Place per Planning Code Section 202.2a."
+  },
+  {
+   "id": "app:datasf_planning:MB0400797",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4146 18TH ST, SAN FRANCISCO, CA 94114 · approved (2004)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0400797",
+   "excerpt": "Continuation of existing bar permitted per Section 186. -"
+  },
+  {
+   "id": "app:datasf_planning:MB0500058",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4146 18TH ST, SAN FRANCISCO, CA 94114 · approved (2005)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0500058",
+   "excerpt": "Approve as continuation of existing use bar which is a nonconforming use for this zoning district. - Some ancillary use is approved for this site 3 video machines, billard table and recorded music, but dancing is not permitted.  To establish dancing at this location it needs a conditional use author"
+  },
+  {
+   "id": "app:datasf_planning:MB0600360",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 456 - 456 CASTRO ST BASEMENT &, SAN FRANCISCO, CA 94114 · approved (2006)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0600360",
+   "excerpt": "A FULL BAR IS PERMITTED AS A CONTINUATION OF AN EXISTING NONCONFORMING USE PER PLANNING CODE SECTION 179(A)(3) and 186.1. - NO EXPANSION"
+  },
+  {
+   "id": "app:datasf_planning:MB0800388",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4146 - 4150 18TH ST STREET LEV, SAN FRANCISCO, CA 94114 · approved (2008)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0800388",
+   "excerpt": "Approve as continuation of existing use bar which is a nonconforming use for this zoning district. - DANCING IS NOT PERMITTED.  Conditional use authorization required to establish dancing at this location.  Some ancillary use is approved for this site 3 video machines, billard table and recorded mus"
+  },
+  {
+   "id": "app:datasf_planning:MB0801157",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4150 - 4150 18TH ST STREET LEV, SAN FRANCISCO, CA 94114 · approved (2008)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0801157",
+   "excerpt": "Continuation of an existing non-conforming large fast food restaurant is permitted and limited to the restrictions of Planning Code Section 186.  Change of ownership only. - No enlargement or expansion of use."
+  },
+  {
+   "id": "app:datasf_planning:MB0801288",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4150 - 4150 18TH ST, SAN FRANCISCO, CA 94114 · approved (2009)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0801288",
+   "excerpt": "Type 41 ABC License is permitted in conjunction with an existing non-conforming large fast food restaurant which is permitted and limited to the restrictions of Planning Code Section 186.   -"
+  },
+  {
+   "id": "app:datasf_planning:MB0900062",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 456 - 456 CASTRO ST, SAN FRANCISCO, CA 94114 · approved (2009)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0900062",
+   "excerpt": "Continuation of an existing bar use (non-conforming) permitted per Planning code section 186.1.  No expansion. -"
+  },
+  {
+   "id": "app:datasf_planning:MB0900672",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 456 - 456 CASTRO ST ST., SAN FRANCISCO, CA 94114 · approved (2009)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB0900672",
+   "excerpt": "A FULL BAR IS PERMITTED AS A CONTINUATION OF AN EXISTING NONCONFORMING USE PER PLANNING CODE SECTION 179(A)(3) and 186.1.  Change of ownership only.  - NO EXPANSION"
+  },
+  {
+   "id": "app:datasf_planning:MB1100272",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 4149 - 4149 18TH ST ST., SAN FRANCISCO, CA 94114 · approved (2011)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1100272",
+   "excerpt": "Existing nonconforming bar is permitted per Section 186.1.  Change of ownership only.   -"
+  },
+  {
+   "id": "catalog:ca.calrecycle_organics_sb1383",
+   "kind": "catalog",
+   "label": "SB 1383 organics recycling service (commercial food generator) — CalRecycle via your city / hauler",
+   "source_url": "https://calrecycle.ca.gov/organics/slcp/",
+   "excerpt": "1–14 days; $0–$0; estimated"
+  },
+  {
+   "id": "catalog:ca.edd_employer_registration",
+   "kind": "catalog",
+   "label": "Register as an employer with EDD (payroll taxes) — California Employment Development Department (EDD) – e-Services for Business",
+   "source_url": "https://edd.ca.gov/en/payroll_taxes/step-1-register-as-an-employer/",
+   "excerpt": "1–7 days; $0–$0; verified"
+  },
+  {
+   "id": "catalog:ca.food_handler_card",
+   "kind": "catalog",
+   "label": "California Food Handler Card (all food employees) — ANSI-accredited provider (CalCode §113948); county programs in San Diego, Riverside, San Bernardino",
+   "source_url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/CDPH%20Document%20Library/FDB/FoodSafetyProgram/RetailFood/RetailFoodSafetyTraining.pdf",
+   "excerpt": "1–1 days; $7–$15; estimated"
+  },
+  {
+   "id": "catalog:ca.food_safety_manager_cert",
+   "kind": "catalog",
+   "label": "Certified Food Protection Manager (one per facility) — ANSI-accredited exam provider (ServSafe, Prometric, NRFSP, 360training) per CalCode §113947.1",
+   "source_url": "https://www.servsafe.com/ServSafe-Manager",
+   "excerpt": "1–14 days; $100–$250; estimated"
+  },
+  {
+   "id": "catalog:ca.rbs_training",
+   "kind": "catalog",
+   "label": "Responsible Beverage Service (RBS) certification for alcohol servers and managers — California Department of Alcoholic Beverage Control (ABC) – RBS Portal",
+   "source_url": "https://www.abc.ca.gov/education/rbs/",
+   "excerpt": "1–7 days; $3–$30; verified"
+  },
+  {
+   "id": "catalog:ca.sellers_permit",
+   "kind": "catalog",
+   "label": "California Seller's Permit (sales tax) — California Department of Tax and Fee Administration (CDTFA)",
+   "source_url": "https://cdtfa.ca.gov/formspubs/pub107/applying-for-a-sellers-permit.htm",
+   "excerpt": "1–14 days; $0–$0; verified"
+  },
+  {
+   "id": "catalog:ca.sos_entity_registration",
+   "kind": "catalog",
+   "label": "Form your legal entity with the California Secretary of State (LLC / corporation) — California Secretary of State (bizfile Online)",
+   "source_url": "https://bizfileonline.sos.ca.gov/",
+   "excerpt": "1–10 days; $70–$150; verified"
+  },
+  {
+   "id": "catalog:ca.workers_comp_insurance",
+   "kind": "catalog",
+   "label": "Workers' compensation insurance — Any licensed carrier or State Compensation Insurance Fund (regulated by CA Dept. of Industrial Relations)",
+   "source_url": "https://www.dir.ca.gov/dwc/employer.htm",
+   "excerpt": "1–14 days; $0–$0; estimated"
+  },
+  {
+   "id": "catalog:sf.building_permit",
+   "kind": "catalog",
+   "label": "Building permit (tenant improvements / change of occupancy) — SF Department of Building Inspection (DBI)",
+   "source_url": "https://www.sf.gov/departments--department-building-inspection",
+   "excerpt": "14–120 days; $800–$15,000; estimated"
+  },
+  {
+   "id": "catalog:sf.business_registration",
+   "kind": "catalog",
+   "label": "San Francisco Business Registration Certificate — SF Office of the Treasurer & Tax Collector",
+   "source_url": "https://sftreasurer.org/business/register-business",
+   "excerpt": "1–5 days; $55–$700; verified"
+  },
+  {
+   "id": "catalog:sf.fictitious_business_name",
+   "kind": "catalog",
+   "label": "Fictitious Business Name (DBA) statement — SF Office of the County Clerk",
+   "source_url": "https://www.sf.gov/step-by-step--file-fictitious-business-name-fbn",
+   "excerpt": "1–35 days; $60–$120; estimated"
+  },
+  {
+   "id": "catalog:sf.fog_wastewater_permit",
+   "kind": "catalog",
+   "label": "Fats, Oils & Grease (FOG) program registration / grease interceptor — SF Public Utilities Commission – Wastewater Enterprise",
+   "source_url": "https://www.sfpuc.gov/programs/pretreatment-program/fats-oils-grease-fog-control",
+   "excerpt": "14–45 days; $0–$500; estimated"
+  },
+  {
+   "id": "catalog:sf.health_plan_check",
+   "kind": "catalog",
+   "label": "Public Health plan check (new or remodeled food facility) — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/plan-check-guide-building-and-remodeling-food-facility",
+   "excerpt": "21–60 days; $828–$2,500; verified"
+  },
+  {
+   "id": "catalog:sf.sign_permit",
+   "kind": "catalog",
+   "label": "Sign permit (exterior business signage) — SF Planning Department + Department of Building Inspection",
+   "source_url": "https://sfplanning.org/resource/signs",
+   "excerpt": "7–45 days; $300–$1,500; estimated"
+  },
+  {
+   "id": "catalog:us.ascap_license",
+   "kind": "catalog",
+   "label": "ASCAP public performance license — American Society of Composers, Authors and Publishers (ASCAP)",
+   "source_url": "https://www.ascap.com/music-users/types/restaurant-bar-tavern-nightclub",
+   "excerpt": "1–7 days; $300–$2,500; estimated"
+  },
+  {
+   "id": "catalog:us.bmi_license",
+   "kind": "catalog",
+   "label": "BMI public performance license — Broadcast Music, Inc. (BMI)",
+   "source_url": "https://www.bmi.com/licensing",
+   "excerpt": "1–7 days; $300–$2,500; estimated"
+  },
+  {
+   "id": "catalog:us.ein",
+   "kind": "catalog",
+   "label": "Employer Identification Number (EIN) — Internal Revenue Service (IRS)",
+   "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+   "excerpt": "0–1 days; $0–$0; verified"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 4144 18th St, San Francisco, CA 94114 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=343203",
+   "excerpt": "parcel 2647/016"
+  },
+  {
+   "id": "license:abc:101617",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 4146 18TH ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=101617",
+   "excerpt": "TOAD HALL — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:305188",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 440 CASTRO ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=305188",
+   "excerpt": "DADDYS — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:507745",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 4149 18TH ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=507745",
+   "excerpt": "EDGE THE — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:513475",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 4067 18TH ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=513475",
+   "excerpt": "MIDNIGHT SUN — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:598283",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 456 CASTRO ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=598283",
+   "excerpt": "Q BAR — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:649378",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 4150 18TH ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=649378",
+   "excerpt": "PASTA PANINO — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "license:abc:653691",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 4121 18TH ST, SAN FRANCISCO, CA 94114 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=653691",
+   "excerpt": "BADLANDS SAN FRANCISCO — Type 48 – On-Sale General - Public Premises (ACTIVE on 2024-11-20)"
+  },
+  {
+   "id": "overlay:datasf_sud:central_neighborhoods_large_residence",
+   "kind": "overlay",
+   "label": "Central Neighborhoods Large Residence — Planning Code § 249.92",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-65648",
+   "excerpt": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:nc_ncd_castro",
+   "kind": "overlay",
+   "label": "Castro Street Neighborhood Commercial District — Planning Code § 715 (Zoning Control Table 715); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25562",
+   "excerpt": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 1 approved / 0 denied / 0 withdrawn; N = 1 dated decision within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 55 permits and licences, 282 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 55 Entertainment Commission permits and ABC licences (lists of grants only), 282 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 39 food & drink businesses, 13 bars, 28 active on-sale ABC licenses within 500 ft; 50 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:NCD-CASTRO",
+   "kind": "zoning",
+   "label": "Zoning NCD-CASTRO — Planning Code § 715 (Zoning Control Table 715); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25562",
+   "excerpt": "The controls as they stood on 2024-11-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "The records show 4144 18th St comprises two storefronts: 4146 18th St has operated as Toad Hall, a full bar with an active Type 48 license since 1981, continuously approved as a nonconforming use; 4150 18th St has operated as Pasta Panino restaurant with a Type 41 license since 2024. In the Castro Street NCD a new bar use is conditional, requiring a Conditional Use Authorization. This block sits in the heart of the Castro's entertainment corridor with extraordinary density: 39 food and drink businesses within 500 ft (13 of them bars), 28 active on-sale ABC licenses within 500 ft (50 within 1,000 ft), and undue-concentration flagged. Only one dated bar-use decision appears in the last 10 years within 1,000 ft—too few for a rate—but the site history and nearby records show the neighborhood has long accommodated bars as legal nonconforming uses, with multiple approvals for ownership changes, entertainment permits, and expansions.",
+ "data_gaps": [
+  "No hearing transcripts or detailed conditions extracted for the 2008 bar approval at this address (MB0800388)",
+  "No ABC complaint history or enforcement actions visible for the existing Type 48 license at 4146 18th St",
+  "Insufficient recent bar CUA decisions within 1,000 ft to compute a meaningful approval rate (N=1 in 10 years)",
+  "No extracted conditions text for the 2012 place-of-entertainment CUA at The Edge (43 m away)",
+  "Records do not reveal whether the two storefronts at 4144-4150 18th St share a parcel or could be legally merged",
+  "No visibility into whether the existing Toad Hall nonconforming status would transfer to a new operator or concept"
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T08:23:57+00:00",
+ "model_versions": {
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2024-11-20"
+}

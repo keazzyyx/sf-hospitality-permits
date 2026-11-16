@@ -1,0 +1,1135 @@
+# Backtest cases: San Francisco Conditional Use cases about food, drink and entertainment premises, filed 2022-2025.
+# 25 decided with conditions extracted from the Planning Commission motion (D01-D25) and 15 that did not reach
+# approval, withdrawn or cancelled (N01-N15). A withdrawn or cancelled case is not called a failure: `why_closed`
+# says what the file shows, and `regulatory_problem` is yes only where the file supports that.
+# There is no disapproved hospitality Conditional Use case filed since 2019 in the records (Step 2b), so none is listed.
+# The list is not fitted to the tool. `triggers` comes from the trigger inventory (backtest/triggers.json): two
+# independent readings of each decision record, settled where they differed, under the code in force at filing.
+# `concept_input` is the only text given to the report besides the address: what an operator would know before
+# applying (the business, hours, alcohol type, entertainment, outdoor seating, size, chain or not, what the space was
+# last used as), taken from the project description with the approval sought, code sections and outcome removed.
+# Nothing is added: where the description lacks a deciding fact, the report should say so. `concept_as_filed` is the
+# project description on the Planning record, unedited, kept for audit. Nothing has been run.
+cases:
+  - id: N01
+    group: did_not_reach_approval
+    record: "2022-003434CUA"
+    address: "430 Beach St, San Francisco, CA 94133"
+    zoning_district_on_record: "C-2"
+    filed: 2022-04-15
+    closed: 2024-07-10
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "A permanent mobile food facility."
+    concept_as_filed: "Proposal to legalize a permanent Mobile Food Facility within Waterfront Special Use District No. 2."
+    triggers:
+      - family: unscreened_open_air_use_waterfront_sud
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "240.2(d), second paragraph (former (e)), as amended by Ord. 311-18; 303; 210.1 Table (Mobile Food Facility P(2); Outdoor Activity Area P); 102 (Mobile Food Facility)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-003434CUA"
+    why_closed: "No stated reason. CUA withdrawn 2024-07-10 without a hearing, but the project was not abandoned: parent 2022-003434PRJ received a CEQA exemption (07/17/2024) and closed \"Closed - Approval Ltr Issued\", decision \"Approved\", on 2024-10-16, with building permit 202502271194. The only provision that required the CU was repealed effective 8/28/2023. Inference (not stated in the file): the CUA was withdrawn because the code change made it unnecessary. Not a failed project."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: N02
+    group: did_not_reach_approval
+    record: "2022-003520CUA"
+    address: "735 Jackson St, San Francisco, CA 94108"
+    zoning_district_on_record: "CRNC"
+    filed: 2022-04-21
+    closed: 2023-06-21
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "Convert a limited restaurant to a restaurant, with a new ABC Type 41 licence."
+    concept_as_filed: "Conditional Use Authorization application request for a change in use from Limited Restaurant to Restaurant per Planning Code section 812, in association with Applicant's application for a new Type 41 license with the Alcoholic Beverage Control."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "812 Table (Restaurant row, 1st story C(2); Note 2); 102 (Restaurant; Restaurant, Limited); 803.2(a); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-003520CUA"
+    why_closed: "Reason unknown. CUA \"Closed - Withdrawn\" 2023-06-21; parent PRJ \"Closed - Cancelled\" 2023-06-07; Type 41 referral 2022-002325MIS withdrawn. No hearing date in 14 months, no motion or staff note. Context only: Ord. 249-23 made a first-story Restaurant principally permitted from 1/14/2024, about seven months after the withdrawal."
+    why_class: reason_unknown
+    regulatory_problem: "unknown"
+    why_basis: ""
+  - id: N03
+    group: did_not_reach_approval
+    record: "2023-001438CUA"
+    address: "1237 Polk St, San Francisco, CA 94109"
+    zoning_district_on_record: "NCD-POLK"
+    filed: 2023-02-16
+    closed: 2023-07-11
+    outcome: withdrawn
+    status_on_record: "Closed - Cancelled"
+    concept_input: "Convert a bar/restaurant to nighttime entertainment."
+    concept_as_filed: "Conditional Use Authorization application request pursuant to Planning Code 102(e) requirement to permit change of use from bar/restaurant to nighttime entertainment."
+    triggers:
+      - family: nighttime_entertainment
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "723 Table (Entertainment, Nighttime); 102 (Entertainment, Nighttime); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-001438CUA"
+    why_closed: "Reason unknown. CUA and parent PRJ both \"Closed - Cancelled\" on 2023-07-11, about five months after filing; no hearing date, motion or staff note. No refiling found. Context only: the venue kept its Limited Live Performance permit, and from 5/27/2024 Nighttime Entertainment is principally permitted on the ground floor here."
+    why_class: reason_unknown
+    regulatory_problem: "unknown"
+    why_basis: ""
+  - id: N04
+    group: did_not_reach_approval
+    record: "2023-004973CUA"
+    address: "1701 Fillmore St, San Francisco, CA 94115"
+    zoning_district_on_record: "NCT-FILLMORE"
+    filed: 2023-06-01
+    closed: 2024-10-30
+    outcome: withdrawn
+    status_on_record: "Closed - Cancelled"
+    concept_input: "Super Duper Burgers, a restaurant that is part of a local Bay Area chain, wants to open in a ground-floor restaurant space of about 2,950 square feet last occupied by Burger King. Exterior and interior improvements to the ground-floor space; no expansion of the building envelope."
+    concept_as_filed: "(CB3P) Conditional Use Authorization pursuant to Planning Code Section 303.1 requirement to allow the conversion of a ground floor restaurant space with approximately 2,950 square feet of floor area (previously occupied by Burger King) to a Formula Retail Use (d.b.a. Super Duper Burgers, a local, Bay Area born and bred restaurant concept) within the Fillmore Street Neighborhood Commercial Transit District. The proposal will involve exterior and interior improvements to the ground floor space. There will be no expansion of the existing building envelope."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303.1(e)(1) (today (e)(5)); 303.1(b)-(c); 703.4(b); 760 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "178(c)(3)(E) (since deleted); 303.1(j); 178(a)(2); 178(d) (18-month abandonment)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-004973CUA"
+    why_closed: "Reason unknown. \"Closed - Cancelled\" 2024-10-30, about 17 months after filing, no hearing ever scheduled; parent PRJ cancelled the same day. A CEQA exemption (11/08/2023) and a pre-application meeting (2023-005288PRV) show it was being processed, not rejected. Context: the same project was refiled as 2025-009673 (case N15) and approved by letter 2026-01-12 without a hearing after Ord. 62-25 removed the rule that had forced one."
+    why_class: reason_unknown
+    regulatory_problem: "unknown"
+    why_basis: ""
+  - id: N05
+    group: did_not_reach_approval
+    record: "2023-005182CUA"
+    address: "1309 Grant Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2023-06-08
+    closed: null
+    outcome: withdrawn
+    status_on_record: "Withdrawn"
+    concept_input: "An existing restaurant, same business and same owner, used to hold an ABC Type 47 licence, recently switched to a Type 41, and wants a Type 47 again. The restaurant has not been vacant for over 18 months. No build-out and no enlargement of the space. It operates as a bona fide eating place."
+    concept_as_filed: "This business previously owned a Type 47 license, was recently switched to Type 41, and is seeking to the reinstatement of a Type 47 ABC license. It’s not a switch of business (the same restaurant and the same owner). The restaurant has not been vacant for over 18 months. There is no tenant improvement proposed and will not enlarge the space. The restaurant is currently occupied as a Bona-Fide Eating Place."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "722 Table Note (6) (Restaurant row C(5)(6)); 780.3(c)(2)(A); 303; 102 (Restaurant; Bona Fide Eating Place)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-005182CUA"
+    why_closed: "No stated reason. Parent PRJ \"Closed - Withdrawn\" 2023-07-11, about five weeks after filing. Fourteen days later (2023-07-25) the same planner opened and approved ABC referral 2023-006736MIS: \"ABC - Type 47. Approved for continuation of the Restaurant use and reinstate Type 47 License.\" Inference: the Department decided the reinstatement could be signed off administratively, so the CUA was unnecessary. Not a failed project."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: N06
+    group: did_not_reach_approval
+    record: "2023-007862CUA"
+    address: "659 Columbus Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2023-08-24
+    closed: 2024-07-15
+    outcome: withdrawn
+    status_on_record: "Closed - Cancelled"
+    concept_input: "An existing restaurant wants to expand with a horizontal addition, from 1,486 square feet to 2,820 square feet."
+    concept_as_filed: "The project is seeking Conditional Use Authorization pursuant to Planning Code Section 178 to expand an existing restaurant with a horizontal addition in the North Beach NCD. The use size would expand from 1486 sq. ft. to 2820 sq. ft. Use size per SFPC 780.3(c)(3) is conditionally permitted up to 3999 sq. ft."
+    triggers:
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "178(c)(1); 178(a)(1); 722 Table (Restaurant C(5)(6), Note 5); 780.3(c)(1); 303"
+        changed_since_filing: "no"
+      - family: use_size
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "121.2(a) (North Beach 2,000 sq ft); 121.2(b) (North Beach 4,000 sq ft cap); 722 Table (Use Size); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-007862CUA"
+    why_closed: "Reason unknown. CUA and parent PRJ opened 2023-08-24; a Historic Resource Review child record opened 2024-01-24; all three \"Closed - Cancelled\" on 2024-07-15. No hearing date, motion, staff note or withdrawal letter; no later record on Block 0101 Lot 045."
+    why_class: reason_unknown
+    regulatory_problem: "unknown"
+    why_basis: ""
+  - id: N07
+    group: did_not_reach_approval
+    record: "2023-010906CUA"
+    address: "2183 Mission St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2023-11-27
+    closed: null
+    outcome: withdrawn
+    status_on_record: "Withdrawn"
+    concept_input: "Convert the space to a full-service restaurant with an ABC Type 41 licence."
+    concept_as_filed: "Conditional Use Authorization for change of use to full service restaurant for ABC Type 41 License."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "754 Table (Restaurant C(7); Note 7); 102 (Restaurant; Restaurant, Limited); 303"
+        changed_since_filing: "yes"
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "249.60(f)(1); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "parameter_only"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-010906CUA"
+    why_closed: "Reason not stated. No hearing, no motion. Parent 2023-010906PRJ withdrawn, close date 2024-03-22. Seven weeks later 2024-004167PRL on the same parcel: \"To comply with NOV 202419591. Interior TI and change of use from limited restaurant to retail sales and service\". The restaurant plan was dropped and the space converted to retail under a Notice of Violation; the cause is not recorded."
+    why_class: dropped_after_notice_of_violation
+    regulatory_problem: "yes"
+    why_basis: "inferred"
+  - id: N08
+    group: did_not_reach_approval
+    record: "2023-006092CUA"
+    address: "675 Jackson St, San Francisco, CA 94108"
+    zoning_district_on_record: "CVR"
+    filed: 2024-01-22
+    closed: 2024-03-18
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "Convert a ground-level retail space to a restaurant."
+    concept_as_filed: "The project is seeking Conditional Use Authorization for a change of use from Retail to Restaurant at the ground level."
+    triggers:
+      - family: new_use_control
+        control_at_filing: principal
+        basis: stated_in_record
+        sections: "811 Table (Restaurant row; Note 1); 102 (Restaurant); 303 (only while the row read C)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-006092CUA"
+    why_closed: "Withdrawn because the Conditional Use stopped being required, not on the merits. Ord. 249-23 made a first-story Restaurant in CVR principally permitted. CUA closed withdrawn 2024-03-18 (parent PRJ 2024-03-13); the same day the planner opened 2024-002253PRL for the same building permit, described as principally permitted \"PER PC SECTION 811 AND NEW LEGISLATION EFFECTIVE 1/13/24\". The restaurant proceeded as of right."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "stated"
+  - id: N09
+    group: did_not_reach_approval
+    record: "2024-006425CUA"
+    address: "2127 Irving St, San Francisco, CA 94122"
+    zoning_district_on_record: "NCD-IRVING"
+    filed: 2024-07-31
+    closed: 2024-09-13
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "The existing store is a boba store. The operator wants to open a boba store that is part of a chain."
+    concept_as_filed: "The existing store is a boba store. We will like to apply for a formula retail boba store."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "303.1(e)(1) (today (e)(5)); 703.4(b); 732 Table (Formula Retail: C); 303.1(b)-(c)"
+        changed_since_filing: "text_only"
+      - family: formula_retail
+        control_at_filing: not_permitted
+        basis: inferred_from_code
+        sections: "732 Table (Restaurant and Restaurant, Limited rows P(3); Note 3); 102 (Restaurant, Limited); 703.4(b)-(c)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-006425CUA"
+    why_closed: "Reason not stated. \"Closed - Withdrawn\" 2024-09-13, 44 days after the CUA was opened; no hearing, motion or staff note. Likely reason (inferred): the proposal could not be approved because Table 732 Note (3) made a Formula Retail Limited Restaurant not permitted. Two other formula-retail food CUAs on the same block (2021-002788CUA, 2021-011182CUA) were also closed without a hearing."
+    why_class: use_not_permitted
+    regulatory_problem: "yes"
+    why_basis: "inferred"
+  - id: N10
+    group: did_not_reach_approval
+    record: "2024-010647CUA"
+    address: "4144 18th St, San Francisco, CA 94114"
+    zoning_district_on_record: "NCD-CASTRO"
+    filed: 2024-11-21
+    closed: null
+    outcome: withdrawn
+    status_on_record: "Withdrawn"
+    concept_input: "An existing bar wants to expand."
+    concept_as_filed: "Conditional Use Authorization under planning code section 303. Conditional Use Authorization is required according to code section 186.1 (a). Expansion of existing use bar which is a non-conforming use for this zoning district."
+    triggers:
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "186.1(a); 186.1(b)(1); 178(c)(1) (same rule if the bar is a permitted conditional use); 715 Table (Bar C / C / NP); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-010647CUA"
+    why_closed: "Reason unknown. CUA \"Withdrawn\"; parent PRJ \"Closed - Withdrawn\" 2025-02-24, about three months after filing. No hearing date, motion or conditions; no later Planning record on the lot; no building permit filed for the game-room work."
+    why_class: reason_unknown
+    regulatory_problem: "unknown"
+    why_basis: ""
+  - id: N11
+    group: did_not_reach_approval
+    record: "2025-000956CUA"
+    address: "1801 Haight St, San Francisco, CA 94117"
+    zoning_district_on_record: "NCD-HAIGHT"
+    filed: 2025-02-04
+    closed: 2025-12-12
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "An existing restaurant wants to build a new raised, uncovered outdoor dining area in its existing parking lot, and add restroom and exit signage."
+    concept_as_filed: "Project consists of information required to grant a place of assembly permit to an existing restaurant. The occupancy is to be changed from a-3 to a-2. Construction of a new, raised and uncovered outdoor dining area in the existing parking lot. Addition of new tactile restroom & egress signage."
+    triggers:
+      - family: outdoor_activity_area
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "719 Table (Outdoor Activity Area); 145.2(b); 202.2(a)(7); 303(c); 102"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-000956CUA"
+    why_closed: "Reason unknown. Continued without discussion on 9 Oct 2025; on 6 Nov 2025: \"WITHDRAWN ... SPEAKERS: None / ACTION: Withdrawn\", 7-0; record closed 12 Dec 2025. Not an objection on the record: the packet carried a draft motion to approve with conditions and four comments in support. DBI permit 202411195297 for the raised outdoor dining area is still at status 'filed', while a later permit (issued 2026-09-17) covers only the place-of-assembly change with no physical alterations, consistent with the sponsor dropping the patio (inference). A second possibility not excluded: as staff described it (table seating, 10 a.m. to 10 p.m., Restaurant) the patio may have met § 202.2(a)(7) and needed no CU."
+    why_class: withdrawn_at_hearing
+    regulatory_problem: "unknown"
+    why_basis: "stated that it was withdrawn; no reason given"
+  - id: N12
+    group: did_not_reach_approval
+    record: "2025-003212CUA"
+    address: "2989 24th St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-24TH-MISSION"
+    filed: 2025-04-16
+    closed: 2025-11-10
+    outcome: withdrawn
+    status_on_record: "Closed - Cancelled"
+    concept_input: "La Gallinita wants an ABC Type 41 licence."
+    concept_as_filed: "The project is seeking a Conditional Use Authorization for a Type 41 ABC License for La Gallinita."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "763 Table (Restaurant C(2)(3)); 102 (Restaurant; Restaurant, Limited); 303"
+        changed_since_filing: "no"
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "249.60(f)(1); 249.60(b)(1)(A); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-003212CUA"
+    why_closed: "The file shows an Incomplete Application Notice dated April 29, 2025 (13 days after filing) listing missing plan-set items and the unpaid Conditional Use fee of $2,869: \"This project will not be assigned to a planner until the items listed below are submitted\" and \"If the Department has not received the requested information within 90 days, the application may be canceled.\" The only plan on file is an undimensioned hand sketch; no later correspondence; status \"Closed - Cancelled\" 2025-11-10. Most likely cancelled by Planning for never being completed; nothing indicates a zoning objection or opposition."
+    why_class: application_never_completed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: N13
+    group: did_not_reach_approval
+    record: "2025-006523CUA"
+    address: "895 Ofarrell St, San Francisco, CA 94109"
+    zoning_district_on_record: "NCD-LOWER POLK STREET"
+    filed: 2025-07-17
+    closed: 2025-09-29
+    outcome: withdrawn
+    status_on_record: "Closed - Cancelled"
+    concept_input: "An existing business is acquiring a liquor licence."
+    concept_as_filed: "A Conditional Use authorization is sought pursuant to Planning Code Section 186.1(b) for the intensification of permitted Conditional Use connected to a liquor license acquisition."
+    triggers:
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional (applicant's theory); principal as Planning classified the project
+        basis: applicant_claim_only
+        sections: "186.1(b)(1); 178(c)(1); 178(a)(2); 744 Table (Adult Business C / C / NP; Bar P / P / NP; Entertainment, Nighttime P / P / NP); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-006523CUA"
+    why_closed: "No stated reason; the sequence shows the Conditional Use was found unnecessary. CUA \"Closed - Cancelled\" 2025-09-29. The next day parent 2025-006523PRJ closed \"Closed - Approval Ltr Issued\", decision \"Approved\", with a Planning Approval Letter describing \"a Nighttime Entertainment use with a Type 48 Alcoholic Beverage Control license\". Follow-on records: ABC referral for Type 48 (2025-009897MIS) and Board of Supervisors Res. 2-26 (Planning \"has verified that the area is properly zoned\"). Also on file: an Incomplete Application Notice (7/21/2025) asking for owner authorisation, plan corrections and the $2,085 fee. Not a failed project."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: N14
+    group: did_not_reach_approval
+    record: "2025-007101CUA"
+    address: "910 Clement St, San Francisco, CA 94118"
+    zoning_district_on_record: "NCD-INNER CLEMENT"
+    filed: 2025-08-04
+    closed: 2025-09-25
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "The operator wants to establish a restaurant with beer and wine sold and consumed on site (ABC Type 41)."
+    concept_as_filed: "A Conditional Use authorization is sought pursuant to Planning Code Sections 303 and 703.4 to establish a restaurant with on-site sale and consumption of beer and wine (ABC License Type 41) located within the Inner Clement Street Neighborhood Commercial District."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "703.4(b); 303.1(b); 303.1(e)(1) (today (e)(5)); 716 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-007101CUA"
+    why_closed: "Reason unknown. \"Closed - Withdrawn\" 2025-09-25, about 7 weeks after filing; no hearing, motion or staff note. Inference only: a CU was probably not needed (Restaurant P on the first story, Type 41 goes with a Restaurant, and nothing found suggests 11 or more other locations). No follow-on over-the-counter record for 910 Clement was found, so that route is not confirmed either."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "inferred, weak"
+  - id: N15
+    group: did_not_reach_approval
+    record: "2025-009673CUA"
+    address: "1701 Fillmore St, San Francisco, CA 94115"
+    zoning_district_on_record: "NCT-FILLMORE"
+    filed: 2025-11-25
+    closed: 2026-03-26
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "Super Duper Burgers, a restaurant that is part of a chain, wants to open in a 2,950-square-foot ground-floor restaurant space previously occupied by Burger King."
+    concept_as_filed: "Conditional Use Authorization request to convert a 2,950-square-foot ground-floor restaurant space—previously occupied by Burger King—into a Formula Retail Use (d.b.a. Super Duper Burgers, a locally founded Bay Area restaurant concept) within the Fillmore Street Neighborhood Commercial Transit District."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303.1(e)(1) as in force 6/1/2025 to 1/11/2026 (today (e)(5)); 303.1(b)-(c); 703.4(b); 760 Table (Formula Retail: C)"
+        changed_since_filing: "text_only"
+      - family: formula_retail
+        control_at_filing: principal (administrative approval)
+        basis: inferred_from_code
+        sections: "303.1(j); 178(c)(3)(A)-(D); 178(d)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-009673CUA"
+    why_closed: "Not a failed project. The Conditional Use turned out not to be needed: parent 2025-009673PRJ approved administratively (\"Closed - Approval Ltr Issued\", 2026-01-12; CEQA exemption 12/22/2025); Project Profile Lite 2026-000449 approved 1/16/2026 \"in existing formula retail space (burger king)\" with building permits; the CUA child record was then closed as withdrawn 2026-03-26. No written reason; the inference is that Planning applied § 303.1(j) / § 178(c)(3) as loosened by Ord. 62-25."
+    why_class: conditional_use_not_needed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: D01
+    group: decided
+    record: "2022-000030CUA"
+    address: "243 West Portal Ave, San Francisco, CA 94127"
+    zoning_district_on_record: "NCD-WEST PORTAL"
+    filed: 2022-01-17
+    closed: 2022-07-21
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Merge two storefronts at 243-255 West Portal Ave into one ground-floor restaurant of about 3,995 square feet."
+    concept_as_filed: "The project proposes to merge two storefronts at 243-255 West Portal Ave to create approximately 3995 square feet of ground floor restaurant space"
+    triggers:
+      - family: use_size
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "121.2(a) (West Portal Avenue 2,500 sq ft); 121.2(b) (West Portal 4,000 sq ft cap); 729 Table (Use Size); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "parameter_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-000030CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={9D4C0FD9-9CD2-4EDF-9BE9-11E727A4C4A0}&fileGUID={521EED66-B6D6-4B14-85D1-CF5DEA6E2BC3}&showopendialog=1"
+    conditions_extracted: 19
+    conditions_not_standard: 2
+  - id: D02
+    group: decided
+    record: "2022-002108CUA"
+    address: "414 Columbus Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2022-03-10
+    closed: 2022-12-05
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing restaurant (Mona Lisa Mare e Monti) that holds an ABC Type 41 licence wants to bring in a Type 47 licence by transfer. The site held a Type 47 licence until 2010."
+    concept_as_filed: "The Project includes authorization of the transfer of a Type 47 (On-Sale General – Eating Place) ABC License to an existing Restaurant (dba Mona Lisa Mare e Monti). The Project Site previously held a Type 47 ABC License, granted by Conditional Use Authorization 1986.553C in 1987, until 2010; it currently operates with a Type 41 (On-Sale Beer & Wine – Eating Place) ABC License."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "780.3(c)(2)(A) (the motion cites it as 780.3(c)(3)); 722 Table (Restaurant C(5)(6); Note 6); 303; 102"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-002108CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={77C88266-A347-4DE0-8CE1-DD1386B526C9}&fileGUID={15D6AC35-69DC-4361-9AF2-CAC17F58AB72}&showopendialog=1"
+    conditions_extracted: 14
+    conditions_not_standard: 1
+  - id: D03
+    group: decided
+    record: "2022-002437CUA"
+    address: "270 Columbus Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-BROADWAY"
+    filed: 2022-03-17
+    closed: 2022-11-29
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert a vacant ground-floor space of 1,100 square feet with a 1,200-square-foot basement, a full-service restaurant with a Type 47 ABC licence, into a full-service cocktail bar with food and nighttime entertainment and a Type 48 licence."
+    concept_as_filed: "Conditional Use Authorization, pursuant to Planning Code Section 303, Section 714, Section 102, and Section 202(a)(62) to convert a vacant 1,100 square feet ground floor space with a basement consisting of 1,200 square feet. full-service restaurant with a Type-47 ABC license to a Type-48 full-service cocktail bar with food and nighttime entertainment."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "714 Table (Bar); 102 (Bar); 303 (incl. 303(o) concentration finding)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-002437CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={0CE2F1BD-5471-4468-901A-7150363B8D90}&fileGUID={1646520B-3853-4909-962E-FB4F4F279FE4}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D04
+    group: decided
+    record: "2022-000313CUA"
+    address: "2027 Chestnut St, San Francisco, CA 94123"
+    zoning_district_on_record: "NC-2"
+    filed: 2022-04-18
+    closed: 2022-08-29
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Turn a space into restaurant space for under 50 occupants by combining it with the existing restaurant at 2027 Chestnut. A new storefront; the adjacent existing bathroom is joined with an accessible restroom and the dining room."
+    concept_as_filed: "Change of use space to restaurant under 50 occupants by combining chestnut into (e) restaurant space at 2027 chestnut. The appication includes a new storefront . Ti permit to join adjacent existing bathroom w. Ada restroom and dining room."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303.1(e)(1) (today (e)(5)); 303.1(b)-(d); 703.4(b); 711 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "178(c)(1); 178(a)(1)-(2); 303.1(i)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-000313CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={C3174E13-4123-40F7-9A5C-08783070D271}&fileGUID={87404CC7-B5E9-44DF-A4EE-DB05B5744891}&showopendialog=1"
+    conditions_extracted: 19
+    conditions_not_standard: 2
+  - id: D05
+    group: decided
+    record: "2022-005675CUA"
+    address: "429 Castro St, San Francisco, CA 94114"
+    zoning_district_on_record: "NCD-CASTRO"
+    filed: 2022-06-27
+    closed: 2023-06-15
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Add nighttime entertainment and a bar on the first and second stories of an existing historic movie theatre, alongside the movie theatre. Interior and exterior alterations: remove the auditorium seats, install a tiered floor, and build a one-story rear addition with a dressing room, a restroom and a storage platform."
+    concept_as_filed: "The Project includes the establishment of Nighttime Entertainment and a Bar Use on the first and second stories, alongside the existing Movie Theater Use within the existing historic theater building. Additionally, interior and exterior alterations are proposed, including the removal of the auditorium seats and installation of a tiered flooring system. Construction of a one-story rear addition to add a new dressing room, a restroom, and a storage platform is also proposed."
+    triggers:
+      - family: nighttime_entertainment
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "715 Table (Entertainment, Nighttime); 102; 303(c); 303(p)"
+        changed_since_filing: "yes"
+      - family: nighttime_entertainment
+        control_at_filing: not_permitted
+        basis: stated_in_record
+        sections: "715 Table (Entertainment, Nighttime, 2nd story)"
+        changed_since_filing: "yes"
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "715 Table (Bar); 102 (Bar); 202.2(a); 303(c); 303(o)"
+        changed_since_filing: "no"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "182(b)(2); 182(c); 715 Table (Use Size); 121.2"
+        changed_since_filing: "yes"
+      - family: use_size
+        control_at_filing: not_permitted
+        basis: stated_in_record
+        sections: "715 Table (Use Size; Note 1); 121.2(b) (Castro 4,000 sq ft cap, as then numbered); 181(a)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-005675CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={7B059A85-C5A8-46C9-84DD-D858C8AB6027}&fileGUID={3838E6C5-D6D4-4309-8AA9-5D3AEA2AB6C7}&showopendialog=1"
+    conditions_extracted: 30
+    conditions_not_standard: 9
+  - id: D06
+    group: decided
+    record: "2022-010729CUA"
+    address: "779 Bush St, San Francisco, CA 94108"
+    zoning_district_on_record: "RC-4"
+    filed: 2022-11-02
+    closed: 2023-07-20
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert an existing laundromat into a bar."
+    concept_as_filed: "Conditional Use Authorization application request for change of use from existing Laundromat to new bar use."
+    triggers:
+      - family: laundromat_removal
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "202.12 (added by Ord. 209-21); 102 (Laundromat, added by Ord. 209-21); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-010729CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={3C6F56BC-B2EC-4726-929D-E1C79059ADBD}&fileGUID={372FFA3D-F469-4D7D-A47B-7BF204342027}&showopendialog=1"
+    conditions_extracted: 18
+    conditions_not_standard: 0
+  - id: D07
+    group: decided
+    record: "2022-011855CUA"
+    address: "667 Commercial St, San Francisco, CA 94111"
+    zoning_district_on_record: "CCB"
+    filed: 2022-12-06
+    closed: 2023-03-17
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing restaurant wants to add an ABC Type 41 licence (on-sale beer and wine)."
+    concept_as_filed: "Proposing a type-41 on-sale beer and wine to an existing restaurant"
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "810 Table (Restaurant row, 1st story C(1)(3); Notes 1 and 3); 102 (Restaurant; Restaurant, Limited); 303(c); 303(o) (finding, not a trigger)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-011855CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={BC2071EF-D507-4FA0-A9D4-803D1AFEC61B}&fileGUID={AF06CA38-856D-4F5E-964E-91D97CA80CC5}&showopendialog=1"
+    conditions_extracted: 16
+    conditions_not_standard: 0
+  - id: D08
+    group: decided
+    record: "2022-012273CUA"
+    address: "921 Folsom St, San Francisco, CA 94107"
+    zoning_district_on_record: "MUR"
+    filed: 2023-01-12
+    closed: 2023-04-06
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Change a limited restaurant into a restaurant, with tenant improvements including a new 200-square-foot storage mezzanine."
+    concept_as_filed: "Change of use from Limited Restaurant to Restaurant with associated tenant improvement, including a new 200 gross square-foot accessory storage mezzanine within an MUG Zoning District and the SoMa Youth and Family SUD. The Project needs a Conditional Use Authorization pursuant to the controls of the Youth and Family SUD."
+    triggers:
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "249.40A(c)(1)(A)(v); 303; 841 (MUR table; Restaurant P in the base district)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-012273CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={F012058D-0315-4E2C-9DE6-5AC96B19E947}&fileGUID={A7BDA669-09BD-43C7-8B08-CBF58FDF7B4E}&showopendialog=1"
+    conditions_extracted: 17
+    conditions_not_standard: 1
+  - id: D09
+    group: decided
+    record: "2023-001895CUA"
+    address: "2214 Mission St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2023-03-02
+    closed: 2023-09-28
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert the existing parking lot into an outdoor dining patio."
+    concept_as_filed: "Application for Conditional Use to convert the existing parking lot to an outdoor dining patio pursuant to Planning Code Section 145.2 (Outdoor Activity Area)."
+    triggers:
+      - family: outdoor_activity_area
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754 Table (Outdoor Activity Area row); 145.2(a)-(b); 303; 754(c)(5) (extra district findings); 202.2(a)(7) (related as-of-right route; not applied by the motion)"
+        changed_since_filing: "no"
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "249.60(c)(3); 249.60(d) (Good Neighbor Policies); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-001895CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={FF9AB5A8-46CA-487F-AB04-F210F6F245E6}&fileGUID={6A4EAD5D-9148-4662-8E4E-AF7C40F6DE38}&showopendialog=1"
+    conditions_extracted: 24
+    conditions_not_standard: 4
+  - id: D10
+    group: decided
+    record: "2022-008254CUA"
+    address: "2351 Mission St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2023-03-30
+    closed: 2024-01-25
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A restaurant (Casements) wants a 1,777-square-foot outdoor area in part of the existing public parking lot next to it. The restaurant already serves alcohol, and its alcohol service would expand into the outdoor area. Ten of the lot's 81 parking spaces would be used; the rest stay a public parking lot."
+    concept_as_filed: "Conditional Use Authorization to establish an Outdoor Activity Area, measuring 1,777 square feet, in part of an existing public parking lot adjacent to the associated restaurant (d.b.a. “Casements”). The Project also proposes to expand the existing liquor establishment, as the Outdoor Activity Area would include serving of alcohol. Ten of the 81 parking spaces would be converted for the Outdoor Activity Area. The remaining spaces would be retained and continue to operate as the authorized public parking lot use."
+    triggers:
+      - family: outdoor_activity_area
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754 Table (Outdoor Activity Area row); 145.2(a)-(b); 202.2(a)(7); 303"
+        changed_since_filing: "no"
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "249.60(c)(3); 249.60(d); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-008254CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={EB715DEF-4261-47AB-A118-690B05B8E3C1}&fileGUID={F4EA27A0-12E1-4A17-B1F8-5DB2C4E891D4}&showopendialog=1"
+    conditions_extracted: 23
+    conditions_not_standard: 4
+  - id: D11
+    group: decided
+    record: "2023-005278CUA"
+    address: "3224 22nd St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2023-06-09
+    closed: 2023-09-14
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Change a limited restaurant into a full restaurant."
+    concept_as_filed: "Conditional Use Authorization for change of use from limited to full restaurant."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754 Table (Restaurant row C(7); Note 7); 303 (incl. 303(o) finding); 102 (Restaurant; Restaurant, Limited)"
+        changed_since_filing: "yes"
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "249.60(f)(1); 249.60(b)(1)(A) (alcohol allowed for a Bona Fide Eating Place; not a trigger); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "parameter_only"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-005278CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={145A5BBE-7B37-416E-B88E-422128475E0A}&fileGUID={728A6607-D1E7-410D-870A-99297BE269AF}&showopendialog=1"
+    conditions_extracted: 14
+    conditions_not_standard: 1
+  - id: D12
+    group: decided
+    record: "2023-005418CUA"
+    address: "1152 Taylor St, San Francisco, CA 94108"
+    zoning_district_on_record: "RM-3"
+    filed: 2023-06-27
+    closed: 2023-11-09
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing restaurant wants to expand into the vacant retail space next door."
+    concept_as_filed: "The Project is seeking Conditional Use authorization from Planning Code Sections 186.1, 202.12, and 303 for the expansion of an existing restaurant into vacant, adjacent retail space"
+    triggers:
+      - family: laundromat_removal
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "202.12; 102 (Laundromat); 303"
+        changed_since_filing: "yes"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional (as the Commission applied it; code-text basis unclear)
+        basis: stated_in_record
+        sections: "186; 186(h); 181(a); 182(b)(1); 186.1(b)(1) (cited in the application; by its terms an NC-district rule); 209.2; 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-005418CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={BF4D5082-9446-4487-8E57-E0DF94BBE39E}&fileGUID={1DB77675-26DD-4D6B-9DA8-2D028E39175E}&showopendialog=1"
+    conditions_extracted: 17
+    conditions_not_standard: 0
+  - id: D13
+    group: decided
+    record: "2023-006564CUA"
+    address: "767 Bush St, San Francisco, CA 94108"
+    zoning_district_on_record: "RC-4"
+    filed: 2023-07-19
+    closed: 2024-01-18
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert a dry cleaner into a restaurant."
+    concept_as_filed: "The project is seeking Conditional Use authorization pursuant to Planning Code Sections 202.12, 209.3, and 303 for a change of use from dry cleaning to restaurant."
+    triggers:
+      - family: laundromat_removal
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "202.12; 102 (Laundromat); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-006564CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={B740B2C6-EA10-4C2E-A8D0-AE8414B161DD}&fileGUID={9FE237B4-7029-4CFB-95AE-2C8EB4B86CF1}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D14
+    group: decided
+    record: "2023-007347CUA"
+    address: "500 Castro St, San Francisco, CA 94114"
+    zoning_district_on_record: "NCD-CASTRO"
+    filed: 2023-11-21
+    closed: 2024-02-01
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Combine the storefronts at 500 Castro Street and 504 Castro Street, change from a restaurant to nighttime entertainment, and operate from 11:00 am to 2:00 am."
+    concept_as_filed: "The project is seeking Conditional Use Authorization pursuant to Planning Code Sections 121.2 and 715 related to a storefront merger to combine the storefront spaces at 500 Castro Street and 504 Castro Street, a change of use from restaurant to nighttime entertainment, and a proposed change of operation hours from 11:00 am to 2:00 am."
+    triggers:
+      - family: nighttime_entertainment
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "715 Table (Entertainment, Nighttime, 1st story); 102 (Entertainment, Nighttime); 303"
+        changed_since_filing: "yes"
+      - family: nighttime_entertainment
+        control_at_filing: not_permitted
+        basis: stated_in_record
+        sections: "715 Table (Entertainment, Nighttime, 2nd story); 102"
+        changed_since_filing: "yes"
+      - family: use_size
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "121.2(a); 121.2(b) (Castro 4,000 sq ft cap, as then numbered); 715 Table (Use Size); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-007347CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={EA778002-C8EC-45FE-9B47-A4BB2FB47B2D}&fileGUID={C2AA5B5E-7487-4DE0-9AB7-8040DC5820F1}&showopendialog=1"
+    conditions_extracted: 28
+    conditions_not_standard: 6
+  - id: D15
+    group: decided
+    record: "2023-011251CUA"
+    address: "2650 Ocean Ave, San Francisco, CA 94132"
+    zoning_district_on_record: "NCD-LAKESIDE VILLAGE"
+    filed: 2024-02-13
+    closed: 2024-04-25
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A restaurant of about 4,500 square feet."
+    concept_as_filed: "The CB3P approved project is seeking Conditional Use Authorization pursuant to Planning Code Section 102 to establish a restaurant with approximately 4,500 sq. ft. of gross area."
+    triggers:
+      - family: use_size
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "727 Table (Use Size row, citing § 102); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "parameter_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-011251CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={6D70F3AE-6684-4986-ACD0-DE7784FFDD5B}&fileGUID={E75FD307-B382-4A66-8B90-C9DA0D78EC36}&showopendialog=1"
+    conditions_extracted: 19
+    conditions_not_standard: 2
+  - id: D16
+    group: decided
+    record: "2024-001579CUA"
+    address: "200 Capp St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2024-02-22
+    closed: 2024-09-19
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A bar in a space whose previous business was registered as a Legacy Business."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 754 to establish a Bar use in tenant space previously registered as a Legacy Business."
+    triggers:
+      - family: legacy_business_replacement
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754(c)(4); 754(c)(5) (three of four district purposes); 754(b); 303; Administrative Code 2A.242 (Legacy Business; not read)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-001579CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={87AC91C5-7A4A-4C86-AA00-152081213AFD}&fileGUID={FE15E4DA-7039-4E4A-9D67-E4FAA72BC906}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D17
+    group: decided
+    record: "2024-002223CUA"
+    address: "1326 Grant Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2024-03-13
+    closed: 2024-09-12
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing bar, described as a legacy bar, wants to change its existing entertainment hours and add amplified sound."
+    concept_as_filed: "Conditional Use Authorization to amend the existing entertainment hours and add amplified sound for Legacy North Beach Bar."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303(e); 174"
+        changed_since_filing: "no"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "178(c)(1); 780.3(c)(1); 722 Table (Bar C(5)(6), 1st story; Note 5)"
+        changed_since_filing: "yes"
+      - family: nighttime_entertainment
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "722 Table (Entertainment, Nighttime: C / NP / NP); 102 (Entertainment, Nighttime); 703(d)(6); 303(p)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "depends_on_historic_building_status"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-002223CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={0ACB7CD1-60D3-4864-B75F-49B6CBFB3C20}&fileGUID={B2501471-9451-439C-86CD-85F978C6C653}&showopendialog=1"
+    conditions_extracted: 6
+    conditions_not_standard: 0
+  - id: D18
+    group: decided
+    record: "2024-002929CUA"
+    address: "737 Irving St, San Francisco, CA 94122"
+    zoning_district_on_record: "NCD-INNER SUNSET"
+    filed: 2024-04-02
+    closed: 2024-08-01
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Super Duper Burgers, part of a chain, wants to open a restaurant. Interior tenant improvements and repairs to the front facade."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 303.1 to establish a Formula Retail, Restaurant use (dba Super Duper Burgers). Project includes interior tenant improvements, and repairs to front facade. New business signage under separate permit."
+    triggers:
+      - family: formula_retail
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303.1(e)(1) (renumbered (e)(5) on 3/16/2026); 303.1(b); 303.1(c); 703.4(b); 730 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-002929CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1500984A-7287-48CF-A795-26D052AF6953}&fileGUID={665EC0B8-456B-476D-9C34-B39FA7F4E76F}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D19
+    group: decided
+    record: "2024-010575CUA"
+    address: "1463 Haight St, San Francisco, CA 94117"
+    zoning_district_on_record: "NCD-HAIGHT"
+    filed: 2024-11-20
+    closed: 2025-02-27
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing limited restaurant wants to become a full-service restaurant selling alcohol for consumption on site, on the ground floor. No construction."
+    concept_as_filed: "The proposal is for a Conditional Use Authorization, pursuant to Planning Code Section 303, 719, and 781.9 for a change of use from an existing Limited-Restaurant in the Haight NCD to a Full Service Restaurant which will sell on-sale alcoholic beverages on the ground floor. No proposed work.” No construction is proposed, and the conditional use application is to memorialize the change of use only."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "781.9(c)(2); 781.9(c)(1)(B) (definition: types 40, 41, 42, 47, 48, 57); 719 Table (Restaurant P(3); Note 3); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-010575CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={0850163B-43CC-4D2D-8798-44894B4CD303}&fileGUID={D0F9A3F8-2143-4FEC-87D6-E74A06B9A202}&showopendialog=1"
+    conditions_extracted: 9
+    conditions_not_standard: 0
+  - id: D20
+    group: decided
+    record: "2024-011113CUA"
+    address: "401 Columbus Ave, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2024-12-11
+    closed: 2025-02-27
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Upgrade to a Type 47 liquor licence. The address was last occupied by a restaurant. No expansion, construction or alterations."
+    concept_as_filed: "Conditional Use Authorization Pursuant to P.C. Section 780.3 to permit upgrading to a Type 47 liquor license. The Project Address was last legally occupied by a Restaurant. No expansions/developments/new construction, no exterior/interior alterations proposed."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "780.3(c)(2)(A); 722 Table (Restaurant C(5)(6); Note 6); 303; 102 (Bona Fide Eating Place)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-011113CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={80C888ED-724D-467A-BDC5-FF946D00642E}&fileGUID={57EA1253-F3B6-45AA-A14D-47B2728BD764}&showopendialog=1"
+    conditions_extracted: 6
+    conditions_not_standard: 0
+  - id: D21
+    group: decided
+    record: "2025-000726CUA"
+    address: "555 Grant Ave, San Francisco, CA 94108"
+    zoning_district_on_record: "CCB"
+    filed: 2025-03-19
+    closed: 2025-05-15
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing wine shop and art gallery with an ABC Type 20 licence and a Type 86 tasting licence wants to add beer and wine sold and consumed on the premises (ABC Type 42). The Type 86 licence may be given up."
+    concept_as_filed: "The CB3P-approved project is seeking a Conditional Use Authorization for proposed beer/wine sales and consumption on the premises (ABC Type-42), added to the existing wine retail store/art gallery (ABC Type-20) and Type-86 special tasting license. The Type-86 license may be surrendered by the application upon approval of the Type-42 as the Type-86 may be unnecessary."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "810 Table (Bar: C / C / C); 102 (Bar; licence type 42); 803.2(d)(2); 303 (303(o) finding)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-000726CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={46AE49E1-87DD-4DC0-B6FB-04E35E721FEF}&fileGUID={4BA1971C-96A6-49B0-BEAE-C1A6A4EC5425}&showopendialog=1"
+    conditions_extracted: 14
+    conditions_not_standard: 0
+  - id: D22
+    group: decided
+    record: "2025-003139CUA"
+    address: "2573 Mission St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2025-04-15
+    closed: 2025-09-18
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Honey Cove Restaurant wants to open in two ground-floor commercial units merged into one of about 3,953 square feet: a unit of about 747 square feet and one of about 3,095 square feet with a mezzanine. Both units are vacant and have been since 2017."
+    concept_as_filed: "The Project proposes to merge two ground-floor commercial units in an existing mixed-use building and establish a Restaurant use d.b.a. Honey Cove Restaurant in the merged space. The Project will combine 2573 Mission Street, an approximately 747 square-foot commercial space, with 2575 Mission Street, an approximately 3,095 square-foot commercial space with a mezzanine, to create one unit approximately 3,953 square feet. Both commercial units are currently vacant, and have been since 2017."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754 Table (Restaurant C(7); Note 7); 303(c); 303(o); 754(c)(5); 102"
+        changed_since_filing: "no"
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "249.60(f)(1); 249.60(b)(1)(A) (not a trigger); 303"
+        changed_since_filing: "no"
+      - family: storefront_merger
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "754(c)(2); 754(c)(5); 303(c)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-003139CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={7ECF92AB-F811-460B-8A45-1843489FE2D3}&fileGUID={E8C764CF-7590-4A7A-93E9-2886673D69F5}&showopendialog=1"
+    conditions_extracted: 17
+    conditions_not_standard: 1
+  - id: D23
+    group: decided
+    record: "2025-003645CUA"
+    address: "5299 03rd St, San Francisco, CA 94124"
+    zoning_district_on_record: "NCD-BAYVIEW"
+    filed: 2025-04-29
+    closed: 2025-07-31
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Gratta Wines wants an ABC Type 42 licence."
+    concept_as_filed: "The CB3P-approved project is seeking a Conditional Use authorization pursuant to Planning Code Section 249.62 for Gratta Wines to establish an ABC Type 42 permit."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "249.62(a)(1); 249.62(a)(2)(E); 249.62(c) (On-sale Liquor Establishment: types 40, 42, 48, 57); 303"
+        changed_since_filing: "text_only"
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "737 Table (Bar row; Note 7); 102 (Bar); 202.2(a); 303"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-003645CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={C8410E84-561D-4107-88BE-CD7F00DA9E4A}&fileGUID={805DFEEE-6612-46CD-AF08-8B27B072A893}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D24
+    group: decided
+    record: "2025-005009CUA"
+    address: "1511 Haight St, San Francisco, CA 94117"
+    zoning_district_on_record: "NCD-HAIGHT"
+    filed: 2025-06-05
+    closed: 2025-09-18
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A nighttime entertainment venue wants to reopen in a long-vacant ground-floor space of 3,620 square feet that was the founding location of Club Deluxe and was a nighttime entertainment venue before. The venue's existing permission carries conditions. The operator wants them changed to add amplified live music and to extend the hours to 9am to 2am seven days a week. Interior renovations: accessible bathrooms and soundproofing. The renovations will not alter the physical features protected by a Legacy Business Registry listing."
+    concept_as_filed: "The project proposes to modify the existing Conditional Use Authorization approval of Motion No. 14221 to establish amplified live musical entertainment and to modify conditions of approval. thereby allowing hours of operation to be 9am-2am 7 days a week. These proposed modifications support a continuation of a pre-existing Nighttime Entertainment Use in a ground floor long vacant 3,620 square foot space that was previously utilized as the founding location of Club Deluxe. The modifications also extend hours of operation to align with the principally permitted hours of operation for Haight Street Neighborhood Commercial District per Planning Code Section 719. Interior renovations include redesigning bathrooms to meet Americans with Disabilities Act (ADA) compliance and installing soundproof baffling. Proposed renovations will not alter physical features and conditions safeguarded by Legacy Business Registry case 2022-008543LBR."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "303(e); 303(c)"
+        changed_since_filing: "no"
+      - family: nighttime_entertainment
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "719 Table (Entertainment, Nighttime: C / NP / NP); 102 (Entertainment, Nighttime); 303(p)"
+        changed_since_filing: "yes"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: conditional
+        basis: inferred_from_code
+        sections: "178(c)(1); 178(a)(1)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "depends_on_historic_building_status"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-005009CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={55BD61D7-CE40-4128-A160-84B7B1482AE7}&fileGUID={F5D3856A-5E9B-4FE6-BA62-CC8BA713F4F1}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: D25
+    group: decided
+    record: "2025-002411CUA"
+    address: "3034 24th St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-24TH-MISSION"
+    filed: 2025-07-03
+    closed: 2026-01-15
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert a retail space to a restaurant."
+    concept_as_filed: "The project is seeking a Conditional Use authorization pursuant to Planning Code Section 303 for a change of use from retail to restaurant."
+    triggers:
+      - family: new_use_control
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "763 Table (Restaurant C(2)(3) / NP / NP); 303; 102 (Restaurant)"
+        changed_since_filing: "no"
+      - family: new_use_control_special_district
+        control_at_filing: conditional
+        basis: stated_in_record
+        sections: "249.60(f)(1); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-002411CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={20FC2233-45E3-42BC-A716-9BAF43C8D596}&fileGUID={1A99A058-FFB4-4C7C-8E33-4998B73B3797}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+reserves:
+  - record: "2024-006641CUA"
+    note: "did not reach approval: new Type 21 off-sale licence, Mission Street NCT (off-sale, not a bar or restaurant)"
+    planning_record: "https://sfplanninggis.org/pim?search=2024-006641CUA"
+  - record: "2024-006665CUA"
+    note: "did not reach approval: Type 20 transfer to a grocery, Mission Alcohol SUD (off-sale)"
+    planning_record: "https://sfplanninggis.org/pim?search=2024-006665CUA"
+  - record: "2023-000022CUA"
+    note: "decided: legalising a Limited Restaurant, North Beach"
+    planning_record: "https://sfplanninggis.org/pim?search=2023-000022CUA"
+  - record: "2023-011780CUA"
+    note: "decided: Limited to Full Service Restaurant with Type 41, Mission Alcohol SUD"
+    planning_record: "https://sfplanninggis.org/pim?search=2023-011780CUA"
+  - record: "2024-002799CUA"
+    note: "decided: church to event space (General Entertainment), RM-2"
+    planning_record: "https://sfplanninggis.org/pim?search=2024-002799CUA"
+  - record: "2025-005018CUA"
+    note: "decided: entertainment, bar and outdoor area at a landmark house, RH-2"
+    planning_record: "https://sfplanninggis.org/pim?search=2025-005018CUA"
+  - record: "2011.0097CUA-02"
+    note: "decided: amend an hours condition to 2 a.m., Polk Street NCD"
+    planning_record: "https://sfplanninggis.org/pim?search=2011.0097CUA-02"

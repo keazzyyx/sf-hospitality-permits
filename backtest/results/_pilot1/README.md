@@ -1,0 +1,1 @@
+First pilot (2026-11-11 21:02-21:33, $2.60), run before the pilot review's fixes: these reports carry later-dated rule lines, today's zoning text and the supplied pathway's outcome note. Kept for audit only; not scored.

@@ -1,0 +1,683 @@
+{
+ "items": 39,
+ "exact_agreement": 25,
+ "pass_flag_agreement": 26,
+ "checker_passed_hand_flagged": [
+  {
+   "item_id": "row:zoning_use:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"from the Planning Commission\" - neither cited record names the body that grants the Conditional Use Authorization; the words \"Planning Commission\" appear in neither record"
+   ],
+   "reason": "Checked each part of the sentence against the two cited records only.\n\nStated by the records:\n- \"Planning Code \u00a7762\": zoning:NCT-VALENCIA has code_section \"Planning Code \u00a7 762 (Zoning Control Table 762); \u00a7 102 (Bar, Restaurant)\".\n- \"\u00a7249.60\": the overlay record has code_section \"Planning Code \u00a7 249.60 (\u00a7 781.8 cross-references it)\".\n- \"classify Bar as a conditional use in NCT-VALENCIA\": the zoning record (district \"NCT-VALENCIA\", applies_at_report_address true) says \"Bar C on the First Story only\" and bar_permission \"conditional\". The overlay record (applies_at_report_address true) says \"A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use\" and bar_permission \"conditional\".\n- \"require Conditional Use Authorization\": the zoning record's rule_text says \"Bar requires Conditional Use Authorization\".\n\nNot stated by the records:\n- \"from the Planning Commission\": neither record says who grants the authorization. The zoning record says only \"Bar requires Conditional Use Authorization\"; the overlay says only \"only as a Conditional Use\" and \"only with CU\". The granting body is a named fact in a finding, so it counts as a part, and being true in general does not put it in the records.\n\nThe two partially_supported readings are right, and their single flagged part is the only one missing. The \"supported\" reading passes a part no cited record states."
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"per Planning Code \u00a7762 and Police Code \u00a71060\" - the only cited record (catalog:sf.place_of_entertainment_permit) names no code section anywhere; neither \"762\" nor \"1060\" nor \"Planning Code\"/\"Police Code\" appears in it"
+   ],
+   "reason": "Ruling: partially_supported. The item is a finding, so every fact counts, including the legal attribution.\n\nParts the record states:\n- Permit required when entertainment is a primary use: the notes of catalog:sf.place_of_entertainment_permit say \"Required when entertainment is a primary use (live music venue, nightclub, DJs, dancing) or shows run until 2 am.\"\n- Live music and amplified sound running until 2 a.m.: the same note's \"or shows run until 2 am\", together with applies_when \"(live_entertainment = True AND closes_after_midnight = True) OR (amplified_sound = True AND closes_after_midnight = True)\". This is the record's trigger in other words, so I do not flag it.\n\nPart not in the record:\n- \"per Planning Code \u00a7762 and Police Code \u00a71060\". The record names the agency (\"SF Entertainment Commission\") and mentions \"Police and Planning review\", but that describes a review step, not a code citation. No code section appears in any field (name, notes, applies_when, prerequisites, stall_risk). The source attribution is a stated fact that the cited record does not contain.\n\nThe \"supported\" reading passes a part that no record states. The two \"partially_supported\" readings are correct, and their single flagged part is the only one missing."
+  },
+  {
+   "item_id": "row:health:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"DPH approved\": the record is a Planning case (source \"Planning case list (DataSF)\", record_kind \"agency_referral\") whose text is \"DPH referral - Restaurant\" and \"Recommend approval for 995 Valencia Street ...\". It records a Planning recommendation/approval on a DPH referral; it does not state that DPH approved anything.",
+    "\"health permit\": the record says only \"DPH referral - Restaurant\" (permit_type \"Miscellaneous Permit\"); it does not name a health permit as the subject of the referral."
+   ],
+   "reason": "The only cited record, app:datasf_planning:2020-012158MIS, has at_report_address true, address \"995 VALENCIA ST 94110\", status \"Closed - Approved\", decided_at \"2021-01-20\", and description \"DPH referral - Restaurant / Recommend approval for 995 Valencia Street as a continuation of restaurant use per Section 102 and 762 and Conditional Use authorization Motion No. 18363\".\n\nParts the record states: the address, the date 2021-01-20, an approved outcome on a restaurant referral, \"continuation of restaurant use\", and Sections 102 and 762.\n\nParts it does not state:\n- The actor. The source is the \"Planning case list (DataSF)\", the record_kind is \"agency_referral\", and the wording is \"Recommend approval\". That is a Planning case closing a referral tied to DPH, not DPH approving something. The sentence names a different approving agency than the record does, which the standard treats as not in the records.\n- \"Health permit\". The record never names the permit; its permit_type is \"Miscellaneous Permit\" and the description says only \"DPH referral - Restaurant\". Reading that as a health permit relies on outside knowledge of what DPH referrals are for. This is the lesser of the two gaps.\n\nMost of the sentence is stated, so it is not unsupported; with the actor misattributed it is not fully supported either. The two partially_supported readings are right, and the \"supported\" reading passes an actor the record does not state."
+  },
+  {
+   "item_id": "row:health:2",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"continuous restaurant use ... since at least 1999\": the five records are separate approvals at points in time (1999, 2001, 2002, 2010, 2020-21) and none states the use was uninterrupted; the only continuity wording is in the 2020 record, \"a continuation of restaurant use\", which does not say continuous since 1999. An at-address application record supports only what was filed or approved.",
+    "\"DPH and ABC approvals\": all five are Planning case-list records (source \"Planning case list (DataSF)\", record_kind \"agency_referral\", permit_type \"Miscellaneous Permit\"). No record names ABC; the 2010 record says only \"Type 41 accessory to full service restaurant\". Only the 2020 record names DPH (\"DPH referral - Restaurant ... Recommend approval\"), and that is a Planning recommendation on a DPH referral, not a DPH approval. The 1999, 2001 and 2002 records name no agency.",
+    "Approval \"in 2020\": record 2020-012158MIS has filed_at \"2020-12-30\" and decided_at \"2021-01-20\", so it was filed in 2020 but approved in 2021.",
+    "\"full-service restaurant operations\" for the 2020 item: that record says only \"Restaurant\" / \"continuation of restaurant use\", not full-service."
+   ],
+   "reason": "Ruling: partially_supported. The two partially_supported readings are right; the \"supported\" reading passes parts no record states.\n\nParts the records do state (all five have at_report_address true, parcel 3609/026, status \"Closed - Approved\"):\n- MA9901527 (filed 1999-08-18, decided 1999-08-25): \"Large full service restaurant approved per Planning Code Sections 726.42 and 790.92 (waiter service and seating).\"\n- MB0100446 (decided 2001-06-11): \"Large full service restaurant permitted per Planning Code Section 726.42 and 730.92.\"\n- MB0201343 (decided 2002-12-10): \"Large full service restaurant permitted per Planning codeSection 726.42 & 790.92.\"\n- MB1000854 (decided 2010-08-11): \"Type 41 accessory to full service restaurant.\"\n- 2020-012158MIS (filed 2020-12-30): \"DPH referral - Restaurant. Recommend approval for 995 Valencia Street as a continuation of restaurant use per Section 102 and 762 and Conditional Use authorization Motion No. 18363\".\nSo restaurant-related approvals on file at the address in 1999, 2001, 2002 and 2010, full-service in each of those four, and a restaurant referral filed in 2020, are supported. \"Since at least 1999\" matches the earliest record.\n\nParts not in the records:\n1. \"Continuous\" use is a conclusion drawn from five dated approvals; no record states it, and approval records do not establish that the use was ongoing between them.\n2. \"DPH and ABC approvals\" mischaracterises the kind of record: these are Planning agency-referral sign-offs. ABC appears nowhere in the record text (reading \"Type 41\" as an ABC licence would need outside knowledge), and DPH appears only in the 2020 record as the referring agency.\n3. The 2020 item was decided 2021-01-20, a different date from the sentence's \"in 2020\".\n4. The 2020 record does not say full-service.\n\nEach claimed gap in the earlier readings checks out against the record text, including the fourth one that only one reading listed."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"neighborhood notification per Planning Code \u00a7312 where required\" - the cited record never mentions neighborhood notification, Planning Code \u00a7312, or any notice requirement",
+    "\"for zoning review\" - the record names Planning as one of the departments in plan-review routing but does not say what Planning reviews; the purpose is supplied from outside the record"
+   ],
+   "reason": "The only cited record is catalog:sf.building_permit, \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\". Parts the record states: (1) a change of use needs a building permit - applies_when \"(tenant_improvements = True OR change_of_use = True OR new_construction = True)\" and notes \"any change of occupancy need a DBI permit with plans stamped by an architect\"; (2) that permit is routed to Planning - notes \"full plan review with Planning, Fire, Public Health and PUC routing takes 2\u20134 months\". The parenthetical \"restaurant \u2192 bar\" is the report's own scenario for the change_of_use trigger, not a claim about the record, so I did not count it as a missing part. Parts the record does not state: it gives no purpose for the Planning routing, so \"for zoning review\" is an added characterisation, not a rewording of anything in the text; and nothing in the record mentions neighborhood notification, Planning Code \u00a7312, or a \"where required\" condition. This is a finding, so every fact and conclusion must be in the record; since the routing-to-Planning core is stated but the zoning-review purpose and the \u00a7312 notification are not, the sentence is partially supported. The two \"partially_supported\" readings are correct on both flagged parts; the \"supported\" reading passes parts no record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"a change of use from restaurant to bar will trigger Planning Code \u00a7312 neighborhood notification\" - neither cited catalog entry mentions \u00a7312, neighborhood notification, or any notification consequence of a restaurant-to-bar change of use; the building permit entry says only that \"any change of occupancy need a DBI permit\""
+   ],
+   "reason": "Ruling: partially_supported. The first clause is stated by the records; the second clause is in neither.\n\nFirst clause, stated:\n- Building permit for kitchen, build-out and ADA work: catalog:sf.building_permit is named \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\", and its notes say \"Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy need a DBI permit with plans stamped by an architect\". The bar build-out is covered as tenant improvements (applies_when \"tenant_improvements = True OR change_of_use = True ...\").\n- DBI, DPH and Planning routing: the same entry says \"full plan review with Planning, Fire, Public Health and PUC routing\", and catalog:sf.health_plan_check says \"make sure 'health' is a routing station on the DBI application\".\n\nSecond clause, not stated:\n- I searched both cited records for \u00a7312, \"312\", \"notification\" and \"neighborhood\"; none appears. The only change-of-use text is that a change of occupancy needs a DBI permit and that change_of_use is an applies_when trigger. Neither says a restaurant-to-bar change triggers Planning Code \u00a7312 neighborhood notification. Under the standard, a summary's conclusions count as parts, so this one is not in the records.\n\nThe \"supported\" reading cannot stand because it passes the \u00a7312 clause, which no cited record states. The two \"partially_supported\" readings identify the correct single missing part, and the parts they passed check out against the record text."
+  },
+  {
+   "item_id": "condition:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"the 50-person Place of Assembly threshold\" (and the conclusion that the concept is \"likely below\" it): the only cited record, MB1400584, says nothing about a Fire Department Place of Assembly permit, an occupant load, or a 50-person figure"
+   ],
+   "reason": "The forecast itself (the expected condition) is not counted; only the basis is checked, against the single cited record app:datasf_planning:MB1400584.\n\nBasis sentence 1 is in the record. \"The 2014 POE approval at 998 Valencia limited entertainment to 1/3 of floor area per Police Code s.1060(r)\" matches: address \"998 - 998 VALENCIA ST\", filed_at \"2014-04-15\", decided_at \"2014-05-19\", status \"Closed - Approved\", and description \"Recommend approval of Place of Entertainment Permitas accessory to (e) retail use per P.C. Sec. 703.2(b)(1)(C)(viii) - in conformance with Police Code Section 1060(r) and may not exceed 1/3 of the gross flooor area of the (e) retail use.\" Nuance, not flagged: the record is a Planning agency referral (record_kind \"agency_referral\") recommending approval of the POE permit, with outcome \"approved\"; I read \"2014 POE approval\" as a fair restatement of that.\n\nBasis sentence 2 is not in the record. \"At 40 seats this concept is likely below the 50-person Place of Assembly threshold\" relies on a rule (a Place of Assembly requirement triggered at 50 persons) that the cited record never states; the record contains no occupancy, seat-count or Fire Department content at all. So the \"supported\" reading passes a rule no record states. The 40-seat figure is likewise absent from the record, but it is the report's own description of the proposed concept rather than a claim about a public record, so I do not list it as a separate missing part (this is the only point on which the two partially_supported readings differ, and it does not change the verdict).\n\nOne basis part stated by the record, one not: partially_supported."
+  },
+  {
+   "item_id": "step:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"under Planning Code \u00a7312\": the cited catalog entry names no code section for a pre-application meeting. Its only mention is \"pre-application community meeting\" in the stall_risk text, with no section number and no statement that the meeting is requested from SF Planning under \u00a7312.",
+    "\"per \u00a7249.60\": the cited catalog entry states the Mission Alcohol SUD transfer rule but gives no section number for it."
+   ],
+   "reason": "Ruling: partially_supported. The only cited record is catalog:sf.conditional_use_authorization. Kind is playbook, so the instructions (file for a meeting, what to ask) and the concept description (40-seat beer-and-wine bar, limited kitchen, live music until midnight) are not claims.\n\nRule facts the step relies on that the record does state:\n- A bar needs a CUA decided by the Commission: \"Bars (ABC Types 42/48) and nightclubs are conditional uses in most Neighborhood Commercial districts and require a Planning Commission hearing\".\n- The Mission Alcohol SUD licence-transfer requirement, including transfer from within the district: \"In the Mission Alcoholic Beverage Special Use District new bar uses are generally prohibited unless an existing license is transferred within the district\".\n- Type 42 as a bar licence type: \"Bars (ABC Types 42/48)\".\n- A pre-application step exists in the CUA path: \"6\u201310 months including pre-application community meeting, environmental review, and hearing scheduling\".\n\nRule facts the record does not state: the two code citations. I searched the full record text (name, agency, applies_when, notes, stall_risk) and neither \"312\" nor \"249.60\" appears; the record cites no Planning Code section at all. A section number is a stated rule fact, not advice, so each counts as a part not in the records. The \"supported\" reading therefore passes two parts that no cited record states; the two \"partially_supported\" readings are correct on both flagged parts and on the passed parts.\n\nNoted but not counted: \"whether the current restaurant use simplifies the hearing\" presupposes the premises is currently a restaurant, which the cited record does not say. I treated it as part of the suggested question (site context, like the concept description) rather than a rule, fee, time, filing order or agency requirement. It does not change the verdict either way."
+  },
+  {
+   "item_id": "step:4",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"notify neighbors within 300 ft\": a numeric notification rule the step relies on; the cited POE catalog entry states only \"a 30-day posted notice\" and gives no neighbour-notification requirement or radius",
+    "\"yellow\" notice: the record says \"a 30-day posted notice\" and does not state the notice's colour (minor descriptive detail)"
+   ],
+   "reason": "The right verdict is partially_supported: the 300-ft neighbour notification is a rule the step relies on, and the single cited record (catalog:sf.place_of_entertainment_permit) does not state it. The \"supported\" reading passes a number no record gives.\n\nParts the record does state:\n- Filing order (CUA first): prerequisites list \"sf.conditional_use_authorization\".\n- Agency: \"SF Entertainment Commission\".\n- Fee, notice, referrals and hearing: \"$2,708 application fee (2026\u201327) plus other departments' inspection fees, Police and Planning review, a 30-day posted notice and a Commission hearing\".\n- Lease: \"new businesses need a lease or temporary liquor license\".\n- Acoustic study: stall_risk says \"commission an acoustic report and soundproofing plan before the hearing\".\n\nParts not counted, as playbook instructions on what to file and how: submitting online, proof of the approved CUA, the security plan, the good-neighbor policy, and coordinating with SFPD and Planning. The record does not mention online filing, a security plan or a good-neighbor policy, but under the standard these are advice, not claims.\n\nParts not in the record:\n- \"notify neighbors within 300 ft\" is a specific agency requirement with a number. The record gives only the 30-day posted notice, with no neighbour notification and no radius.\n- \"yellow\" is a factual detail about the notice that the record does not give. It is minor, and the verdict does not depend on it.\n\nBoth partially_supported readings identified the same two missing parts, and I confirm each against the record text."
+  },
+  {
+   "item_id": "step:5",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"Post the 30-day public notice at the premises\": the step relies on an ABC rule with a stated time (a 30-day posting requirement). Neither cited record mentions any posting or notice requirement or a 30-day period; the only times in catalog:ca.abc_type_42 are \"days\": [60, 150] and \"ABC's 60-ish days\".",
+    "\"the Planning Commission's PCN finding letter\": the step names the Planning Commission as the body that issues the PCN finding. stat:density says only \"a Public Convenience or Necessity (PCN) finding from the City\"; no cited record names the Planning Commission."
+   ],
+   "reason": "Kind is playbook, so the instructions themselves (apply, submit, include, post, comply) are not claims; I checked only the rules, times, filing order and agency requirements the step relies on.\n\nStated in the records:\n- Filing order, CUA before ABC: catalog:ca.abc_type_42 notes say \"nearly every city treats a Type 42 as a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue\".\n- Type 42 licence from ABC: name \"ABC Type 42 \u2013 On-Sale Beer & Wine, Public Premises\", agency \"California Department of Alcoholic Beverage Control (ABC)\".\n- Seller's permit and entity registration: \"prerequisites\": [\"ca.sos_entity_registration\", \"ca.sellers_permit\"].\n- PCN finding tied to undue concentration and high licence density: stat:density says \"ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district\" and \"At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City\", with \"undue_concentration_flag\": true.\n\nNot stated:\n- The 30-day public-notice posting. This is a rule with a specific time that the step relies on, which is exactly what the playbook standard says to check, and no cited record states it.\n- The Planning Commission as the source of the PCN finding. The record says only \"from the City\"; naming the issuing body is a fact beyond the record.\n\nNot counted against the item:\n- The lease and workers' comp insurance are not in the records, but they sit in a \"what to submit\" list, which the standard treats as filing advice.\n- \"comply with ABC's transfer and investigation timeline\" is an instruction with no number or rule. The records do not mention a transfer or an investigation (the catalog says \"Non-quota, so ABC issues new ones\"), so the wording is loose.\n\nThe \"supported\" reading fails because the 30-day notice rule and the Planning Commission attribution are factual parts no cited record states. Because the filing order, prerequisites and PCN/density basis are stated, the item is partially supported rather than unsupported."
+  },
+  {
+   "item_id": "step:6",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"Indicate that the CUA and POE permit are approved and attach copies\" - relies on a filing order (CUA and POE permit approved before the building permit is filed) that neither cited record states; both entries list only prerequisites [\"sf.business_registration\"], and neither mentions a CUA or a POE permit at all",
+    "\"Fire for hood and suppression review\" (minor) - catalog:sf.building_permit names Fire only as a routing station (\"full plan review with Planning, Fire, Public Health and PUC routing\"); it does not say what Fire reviews, and suppression appears in neither record",
+    "\"Planning for zoning sign-off\" (minor) - the record names Planning as a routing station but does not state what Planning signs off on"
+   ],
+   "reason": "Ruling: partially_supported. The \"supported\" reading does not hold, because the step relies on a filing order that the cited records do not give.\n\nParts the records state:\n- Filing with DBI for tenant improvements: catalog:sf.building_permit is \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\".\n- Stamped plans covering kitchen, ADA and restrooms: \"Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy need a DBI permit with plans stamped by an architect\".\n- Routing to DPH, Fire and Planning: \"full plan review with Planning, Fire, Public Health and PUC routing\", and in catalog:sf.health_plan_check \"make sure 'health' is a routing station on the DBI application\".\n- Inspections: \"After approval, schedule a pre-final inspection at ~80% complete and a final inspection\".\n\nParts not in the records:\n- CUA and POE approved first. Telling the applicant to indicate approval and attach copies is advice, but it only works if both approvals come before the building permit filing. A required order of filings is a checkable fact for a playbook step. Both cited entries give only prerequisites [\"sf.business_registration\"], and neither mentions a CUA or POE permit. The only sequencing the building permit entry gives is \"submit the DPH plan check at the same time\".\n- Review scope for Fire and Planning (minor). The record lists them as routing stations without saying what each reviews. \"Hoods\" appears only as work needing a DBI permit, and suppression appears nowhere.\n\nNot counted as claims: bar layout, soundproofing and HVAC are advice on what the plans should show, and \"before opening\" is scheduling advice for the final inspection the record does state."
+  },
+  {
+   "item_id": "step:7",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "Order of filings: \"After the final DBI and DPH inspections, apply for the Health Permit to Operate\" - catalog:sf.health_permit gives a different order: \"Apply online at least one month before opening ...; the permit is issued after the final inspection\" (application comes before the final inspection, not after it)",
+    "Timing of the Health Permit application \"in the final two weeks before opening\" (as the sentence reads) - the record says \"at least one month before opening\"; the two-week timing is stated only for ASCAP",
+    "\"proof that the building permit final was issued\" as something the Health Permit application takes - the record lists only \"your BAN, Location ID (LIN) and federal tax ID\" plus a certified food safety manager; no cited record mentions a building permit final",
+    "A final DBI inspection as a step preceding the health application - no cited record mentions DBI or a building inspection"
+   ],
+   "reason": "Kind is playbook, so the advice itself (apply, enrol, schedule) is not checked; only the rules, times, required order and agency requirements the step relies on are checked.\n\nParts the records state:\n- Online filing with the Business Account Number: catalog:sf.health_permit \"Apply online ... with your BAN\".\n- Certified food manager certificate: same record, prerequisite \"ca.food_safety_manager_cert\" and \"a certified food safety manager is on staff\".\n- A DPH final inspection exists and precedes issuance: \"the permit is issued after the final inspection confirms the facility matches the approved plans\".\n- RBS training for staff through ABC: catalog:ca.rbs_training agency \"California Department of Alcoholic Beverage Control (ABC) \u2013 RBS Portal\", \"Required under AB 1221 for every alcohol server and their managers\".\n- ASCAP and BMI licences before music is played, in the final two weeks: catalog:us.ascap_license \"federal copyright law requires a blanket license to play music publicly\" and \"takes under a week, so schedule it in the final two weeks\"; catalog:us.bmi_license \"venues playing a general mix of music need both\".\n\nParts the records do not state, or state differently:\n- The required order. The step says to apply for the Health Permit after the final DBI and DPH inspections. The record says the opposite sequence: \"Apply online at least one month before opening ...; the permit is issued after the final inspection\". The step is also internally at odds with itself, since it then says to schedule the DPH final inspection after submitting the application.\n- The timing of the health application in the final two weeks conflicts with \"at least one month before opening\".\n- Proof of the building permit final as an application item, and a DBI final inspection, appear in no cited record.\n\nA required order of filings and what an agency requires are exactly the facts a playbook step is checked on, so these are real misses rather than unchecked advice. Since much of the step is stated by the records and several parts are not, the \"supported\" reading is wrong and the verdict is partially_supported."
+  }
+ ],
+ "checker_flagged_hand_passed": [
+  {
+   "item_id": "row:alcohol:1",
+   "checker": "partially_supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": true,
+   "hand_not_in_records": [],
+   "reason": "The one cited record, catalog:ca.abc_type_42, states every part of the sentence. Its name is \"ABC Type 42 \u2013 On-Sale Beer & Wine, Public Premises (bar / wine bar / taproom)\" and its notes read: \"Beer-and-wine bar license: no food requirement, but no minors allowed on the premises. Non-quota, so ABC issues new ones, but nearly every city treats a Type 42 as a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue.\"\n\nPart by part:\n- Type 42 is a beer-and-wine bar licence: \"Beer-and-wine bar license\".\n- Non-quota, so new licences are issued by ABC: \"Non-quota, so ABC issues new ones\". The causal \"so\" is the record's own.\n- \"nearly every city treats a Type 42 as a bar use\": the record makes this generalisation in the same words.\n- \"requiring conditional use or police/planning review\": \"needs a conditional use permit or police/planning review\".\n- \"before ABC will issue\": verbatim.\n\nThe only wording differences are \"issued directly by ABC\" for \"ABC issues new ones\" and \"conditional use\" for \"conditional use permit\". Both are the same statement in other words; neither adds a fact, number or conclusion the record lacks. The partially_supported reading named no missing part, and I found none. The \"Verified\" label is not part of the sentence, so the record's \"confidence\": \"estimated\" was not weighed against it."
+  }
+ ],
+ "severity_differs": [
+  {
+   "item_id": "row:alcohol:3",
+   "checker": "unsupported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"adds 1\u20133 months to the timeline\": neither cited record gives any added duration for undue-concentration review. The only durations are the Type 42 entry's \"days\": [60, 150] and \"not just ABC's 60-ish days\", neither tied to undue concentration or a PCN.",
+    "\"from the Planning Commission or Board of Supervisors\": stat:density says only \"a Public Convenience or Necessity (PCN) finding from the City\". No cited record names the issuing body.",
+    "\"start that process in parallel with the CUA filing\": no cited record states that the PCN process can or should run in parallel with the conditional use filing. The Type 42 entry mentions a conditional use permit but gives no sequencing relative to a PCN."
+   ],
+   "reason": "Ruling: partially_supported. The two partial readings are right; \"unsupported\" is wrong because the records state the sentence's core.\n\nStated by the records: stat:density has \"undue_concentration_flag\": true and the note \"ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district ... At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City.\" That covers ABC's undue-concentration review at high licence density and a PCN requirement from the City. I treat \"letter\" versus \"finding\" as the same thing in other words and do not flag it. That a CUA exists for this use is also stated: the Type 42 entry says a Type 42 is \"a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue.\"\n\nNot stated: the 1\u20133 month figure appears in neither record. The Planning Commission and Board of Supervisors are not named anywhere; the record says only \"from the City\". The parallel-with-CUA sequencing is in neither record, and because this item is a finding rather than a playbook step, the advice exemption does not apply to it.\n\nSince the records state part of the sentence and at least one part is absent, the verdict is partially_supported."
+  }
+ ],
+ "readers_agreed_pass_flag": 37,
+ "final": [
+  {
+   "item_id": "overall",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"the only modern bar CUA on this block\" - no cited record says 2010.0680C is the only such case, or that 970-974 Valencia is on the same block (the record gives only distance_m 66)",
+    "\"hearing\" - the cited zoning and overlay records say a Bar needs Conditional Use but none of the four cited records mentions a hearing"
+   ],
+   "reason": "Stated: zoning record \"Bar requires Conditional Use Authorization\" and overlay \"A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD\" (both applies_at_report_address true). The CUA 2010.0680C has outcome \"withdrawn\". Density: stat:density has \"undue_concentration_flag\": true and \"At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City\", which I accept as the undue-concentration claim in other words. Not stated: that the withdrawn CUA is the only one, that it is on this block, and the word hearing."
+  },
+  {
+   "item_id": "row:zoning_use:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"from the Planning Commission\" - neither cited record names the body that grants the Conditional Use Authorization; the words \"Planning Commission\" appear in neither record"
+   ],
+   "reason": "Checked each part of the sentence against the two cited records only.\n\nStated by the records:\n- \"Planning Code \u00a7762\": zoning:NCT-VALENCIA has code_section \"Planning Code \u00a7 762 (Zoning Control Table 762); \u00a7 102 (Bar, Restaurant)\".\n- \"\u00a7249.60\": the overlay record has code_section \"Planning Code \u00a7 249.60 (\u00a7 781.8 cross-references it)\".\n- \"classify Bar as a conditional use in NCT-VALENCIA\": the zoning record (district \"NCT-VALENCIA\", applies_at_report_address true) says \"Bar C on the First Story only\" and bar_permission \"conditional\". The overlay record (applies_at_report_address true) says \"A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use\" and bar_permission \"conditional\".\n- \"require Conditional Use Authorization\": the zoning record's rule_text says \"Bar requires Conditional Use Authorization\".\n\nNot stated by the records:\n- \"from the Planning Commission\": neither record says who grants the authorization. The zoning record says only \"Bar requires Conditional Use Authorization\"; the overlay says only \"only as a Conditional Use\" and \"only with CU\". The granting body is a named fact in a finding, so it counts as a part, and being true in general does not put it in the records.\n\nThe two partially_supported readings are right, and their single flagged part is the only one missing. The \"supported\" reading passes a part no cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "The overlay record (Planning Code \u00a7 249.60, applies_at_report_address true) states: \"A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD.\" Every part of the sentence is stated there."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "checker": "partially_supported",
+   "readerA": "supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"establishing restaurant use, not bar use\" - neither record states that the licence establishes the use of the premises, and neither mentions bar use at all; they state only that an eating-place (restaurant-tagged) licence was issued and is active"
+   ],
+   "reason": "Ruling: partially_supported. The licence facts are all stated; the closing conclusion is not.\n\nParts the records state:\n- Licence type and status: license:abc:651564 has permit_type \"Type 41 \u2013 On-Sale Beer & Wine - Eating Place\", license_type \"41\", status \"ACTIVE\".\n- Licensee: description \"SARITA'S GRILL & BEER \u2014 Type 41 \u2013 On-Sale Beer & Wine - Eating Place (ACTIVE)\".\n- Address: \"995 VALENCIA ST, SAN FRANCISCO, CA 94110\", distance_m 0; app:abc:651564 has at_report_address true (\"The record's parcel (3609/026) is the parcel of the report's address\").\n- Date: issued \"2023-11-03\"; app record decided_at \"2023-11-03\", outcome \"approved\".\n\nPart not in the records: \"establishing restaurant use, not bar use\". This is a conclusion, so a cited record must itself state it. What the records state is narrower: the licence is tagged use_types [\"restaurant\"], is an \"Eating Place\" class, and carries the condition \"Full and complete meals must be offered and made available at all times the premises is exercising the privileges of its alcoholic beverage license\". That supports \"a restaurant-class licence was issued\". It does not support the two further steps the sentence takes:\n1. That the issuance establishes the use of the premises. Under rule 3 a licence record on file at the address supports only what was filed, approved or issued, not the resulting state of the premises. No field says the licence establishes a use.\n2. \"Not bar use\". Neither record mentions bars or excludes bar use. Reading that from the Type 41 class or the meals condition needs outside knowledge of ABC licence classes, which the standard bars.\n\nOn the earlier \"supported\" reading: it is right that the restaurant classification of the licence is in the record in other words, and I do not flag that. But it treats \"the licence is restaurant-class\" as equivalent to \"restaurant use, not bar use, is established\", which is the report's inference rather than record text. Since most of the sentence is stated and one conclusion is not, the verdict is partially_supported, not unsupported."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"it is the only modern bar-use CUA filed on this block of Valencia\" - the single cited record does not say it is the only one, nor that it is on the same block"
+   ],
+   "reason": "The record states every filing fact: permit_type \"Conditional Use Authorization\", description \"Bar within Full Service Restaurant\", address \"970 - 974 VALENCIA ST\", distance_m 66, zoning_district \"NCT-VALENCIA\", filed_at \"2010-08-12\", decided_at \"2011-01-14\", outcome \"withdrawn\". The uniqueness and same-block generalisation is not in the record."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"distinguishing restaurant from bar under the Planning Code\" - a conclusion the record does not state",
+    "\"approved ABC license continuations on Valencia Street\" (plural/general) - the single cited record shows one continuation, at 1007 1/2 Valencia Street, and does not name ABC"
+   ],
+   "reason": "The record (filed 2008-01-04, decided 2008-01-29, status \"Closed - Approved\") says \"recommend approval- continuation of existing type 41 license at 1007 1/2 Valencia Street. - Approval does not establish a new bar use at subject location.\" That supports one approved Type 41 continuation on Valencia and the 2008 statement that approval does not establish a new bar use. It does not state the generalisation to multiple continuations, nor the conclusion that this distinguishes restaurant from bar under the Planning Code. The record also says only \"type 41 license\", without the words \"eating-place\" (use_types lists bar and restaurant)."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"Type 42 or 48\" licence: the overlay and zoning records say only \"a liquor license transferred from another Bar within the SUD\" and name no licence type",
+    "\"no record shows such a license is available\": no cited record states anything about licence availability; the only licence cited is the Type 41 at the address",
+    "\"the only bar CUA on this block\": no record states that 2010.0680C is the only one, and the record does not state it is on the same block (it gives 970-974 Valencia, distance_m 66)"
+   ],
+   "reason": "Supported: zoning record \"Bar requires Conditional Use Authorization\" in NCT-VALENCIA; overlay \"must use a liquor license transferred from another Bar within the SUD\"; 2010.0680C is a Conditional Use Authorization for \"Bar within Full Service Restaurant\" with outcome \"withdrawn\", decided 2011-01-14. Not stated: the Type 42/48 specification, the absence claim about an available licence, and the generalisation \"the only bar CUA on this block\"."
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "That the 51 within 1,000 ft are active on-sale licences. The sentence's ellipsis (\"9 active on-sale ABC licenses within 500 ft and 51 within 1,000 ft\") carries \"active on-sale ABC licenses\" over to the 51, but the record gives that figure only as \"abc_licenses_1000ft\": 51, with licence type and status unspecified. The record keeps it separate from \"abc_on_sale_licenses\": 9, the only count its note calls \"active on-sale licenses within 500 ft\"."
+   ],
+   "reason": "Ruling: partially_supported. One part of the sentence is not in stat:density; every other part is.\n\nParts the record states:\n- 9 active on-sale ABC licences within 500 ft: \"abc_on_sale_licenses\": 9, \"radius_m\": 152, and the note \"this count of active on-sale licenses within 500 ft is a proxy\".\n- A count of 51 within 1,000 ft: \"abc_licenses_1000ft\": 51.\n- The flag: \"undue_concentration_flag\": true.\n- The PCN conclusion: \"At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City.\" \"Will likely require\" is the same forecast in other words, so it is stated by the record, not inferred.\n\nThe part not in the record is the characterisation of the 51. Read naturally, \"9 active on-sale ABC licenses within 500 ft and 51 within 1,000 ft\" says there are 51 active on-sale ABC licences within 1,000 ft. The record does not say that. It describes itself as \"Counts of registered businesses and ABC licences near the address\" and uses a different field name for the 51 (abc_licenses_1000ft) than for the on-sale count (abc_on_sale_licenses). The note's \"active on-sale\" wording is attached only to the 500 ft count. Under the standard, a different kind of count is a part not in the records.\n\nThe \"supported\" reading reached its verdict by reading the ellipsis as \"51 ABC licences\" while itself noting the record does not label the 51 as active on-sale. That resolves the gap in the sentence's favour instead of checking the sentence as written, so I did not follow it."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "checker": "partially_supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": true,
+   "hand_not_in_records": [],
+   "reason": "The one cited record, catalog:ca.abc_type_42, states every part of the sentence. Its name is \"ABC Type 42 \u2013 On-Sale Beer & Wine, Public Premises (bar / wine bar / taproom)\" and its notes read: \"Beer-and-wine bar license: no food requirement, but no minors allowed on the premises. Non-quota, so ABC issues new ones, but nearly every city treats a Type 42 as a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue.\"\n\nPart by part:\n- Type 42 is a beer-and-wine bar licence: \"Beer-and-wine bar license\".\n- Non-quota, so new licences are issued by ABC: \"Non-quota, so ABC issues new ones\". The causal \"so\" is the record's own.\n- \"nearly every city treats a Type 42 as a bar use\": the record makes this generalisation in the same words.\n- \"requiring conditional use or police/planning review\": \"needs a conditional use permit or police/planning review\".\n- \"before ABC will issue\": verbatim.\n\nThe only wording differences are \"issued directly by ABC\" for \"ABC issues new ones\" and \"conditional use\" for \"conditional use permit\". Both are the same statement in other words; neither adds a fact, number or conclusion the record lacks. The partially_supported reading named no missing part, and I found none. The \"Verified\" label is not part of the sentence, so the record's \"confidence\": \"estimated\" was not weighed against it."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"transferring it to a Type 42 bar license\" - no Type 42 licence appears in the record",
+    "\"will require surrender of the Type 41\" - not stated",
+    "\"and Planning approval of the change of use to bar\" - not stated in the cited record"
+   ],
+   "reason": "First half supported: the record is \"SARITA'S GRILL & BEER \u2014 Type 41 \u2013 On-Sale Beer & Wine - Eating Place (ACTIVE)\", address \"995 VALENCIA ST\", status \"ACTIVE\", decided_at \"2023-11-03\", at_report_address true. The second half (Type 42 transfer, surrender of the Type 41, Planning approval of a change of use) is a prediction about requirements that the only cited record, an ABC licence record, says nothing about."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "checker": "unsupported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"adds 1\u20133 months to the timeline\": neither cited record gives any added duration for undue-concentration review. The only durations are the Type 42 entry's \"days\": [60, 150] and \"not just ABC's 60-ish days\", neither tied to undue concentration or a PCN.",
+    "\"from the Planning Commission or Board of Supervisors\": stat:density says only \"a Public Convenience or Necessity (PCN) finding from the City\". No cited record names the issuing body.",
+    "\"start that process in parallel with the CUA filing\": no cited record states that the PCN process can or should run in parallel with the conditional use filing. The Type 42 entry mentions a conditional use permit but gives no sequencing relative to a PCN."
+   ],
+   "reason": "Ruling: partially_supported. The two partial readings are right; \"unsupported\" is wrong because the records state the sentence's core.\n\nStated by the records: stat:density has \"undue_concentration_flag\": true and the note \"ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district ... At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City.\" That covers ABC's undue-concentration review at high licence density and a PCN requirement from the City. I treat \"letter\" versus \"finding\" as the same thing in other words and do not flag it. That a CUA exists for this use is also stated: the Type 42 entry says a Type 42 is \"a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue.\"\n\nNot stated: the 1\u20133 month figure appears in neither record. The Planning Commission and Board of Supervisors are not named anywhere; the record says only \"from the City\". The parallel-with-CUA sequencing is in neither record, and because this item is a finding rather than a playbook step, the advice exemption does not apply to it.\n\nSince the records state part of the sentence and at least one part is absent, the verdict is partially_supported."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "That the 9 licences within 500 ft 'trigger' undue-concentration review: the record says the actual test \"compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count ... within 500 ft is a proxy\".",
+    "That ABC 'will require' the PCN finding as a certainty: the record says \"expect ABC to require\".",
+    "That the PCN finding is required 'before issuance': no cited record states the timing of the PCN relative to issuance."
+   ],
+   "reason": "Stated: catalog:ca.abc_type_42 \"Non-quota, so ABC issues new ones\"; stat:density \"abc_on_sale_licenses\": 9, \"active on-sale licenses within 500 ft\", \"undue_concentration_flag\": true, \"At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City\". Not stated: the 500-ft count is described as a proxy, not the trigger of the review; the PCN is an expectation, not a definite requirement; 'before issuance' is not in the records. app:abc:651564 (Type 41 licence) adds nothing to these parts."
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"per Planning Code \u00a7762 and Police Code \u00a71060\" - the only cited record (catalog:sf.place_of_entertainment_permit) names no code section anywhere; neither \"762\" nor \"1060\" nor \"Planning Code\"/\"Police Code\" appears in it"
+   ],
+   "reason": "Ruling: partially_supported. The item is a finding, so every fact counts, including the legal attribution.\n\nParts the record states:\n- Permit required when entertainment is a primary use: the notes of catalog:sf.place_of_entertainment_permit say \"Required when entertainment is a primary use (live music venue, nightclub, DJs, dancing) or shows run until 2 am.\"\n- Live music and amplified sound running until 2 a.m.: the same note's \"or shows run until 2 am\", together with applies_when \"(live_entertainment = True AND closes_after_midnight = True) OR (amplified_sound = True AND closes_after_midnight = True)\". This is the record's trigger in other words, so I do not flag it.\n\nPart not in the record:\n- \"per Planning Code \u00a7762 and Police Code \u00a71060\". The record names the agency (\"SF Entertainment Commission\") and mentions \"Police and Planning review\", but that describes a review step, not a code citation. No code section appears in any field (name, notes, applies_when, prerequisites, stall_risk). The source attribution is a stated fact that the cited record does not contain.\n\nThe \"supported\" reading passes a part that no record states. The two \"partially_supported\" readings are correct, and their single flagged part is the only one missing."
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"showing POE permits are approved on this block\" - a generalisation from one permit; the record does not say it, nor that 998 Valencia is on the same block"
+   ],
+   "reason": "Supported parts: record app:datasf_entertainment:1243 has permit_type \"Place of Entertainment\", status \"Active\", outcome \"approved\", address \"998 VALENCIA ST\", distance_m 31, description \"Amados: Place of Entertainment\". The number 1243 appears only as the record's id, which I accept as the permit identifier. The conclusion that this shows POE permits are approved on this block is not stated by the record."
+  },
+  {
+   "item_id": "row:entertainment:2",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"showing the Commission grants POE permits with area caps\": a conclusion no record states; the record is a Planning referral recommendation, not an Entertainment Commission grant",
+    "\"Entertainment Commission\" as the referring body: the record does not name it (it says \"Place of Entertainment Permit\" and \"Police Code Section 1060(r)\")"
+   ],
+   "reason": "MB1400584 (998 Valencia, agency_referral, Closed - Approved, decided 2014-05-19) states: \"Recommend approval of Place of Entertainment Permitas accessory to (e) retail use ... in conformance with Police Code Section 1060(r) and may not exceed 1/3 of the gross flooor area of the (e) retail use.\" That supports the 2014 referral approval at 998 Valencia, accessory to retail, and the one-third cap. The closing generalisation about what the Commission grants is not in the record."
+  },
+  {
+   "item_id": "row:entertainment:3",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "That a POE permit was approved: the record is a Planning agency referral (record_kind \"agency_referral\", permit_type \"Miscellaneous Permit\") reading \"EC - Place of Entertainment permit - Recommend approval to establish Restaurant and Nighttime Entertainment uses\"; it records Planning's recommendation on the referral, not the Entertainment Commission's approval of a POE permit.",
+    "The generalisation 'indicating the Commission approves POE permits for food-and-drink concepts with entertainment in Mission NCT districts': no record states it."
+   ],
+   "reason": "Stated: address \"2512 MISSION ST\", \"distance_m\": 152, zoning \"NCT-MISSION\", status \"Closed - Approved\", decided \"2020-11-05\", \"Restaurant and Nighttime Entertainment uses(dba. Arcana)\". But the record is a different kind of record than the sentence says: a Planning referral that says \"Recommend approval\" for an EC Place of Entertainment permit, not an approved POE permit. The conclusion about what the Commission approves in Mission NCT districts is drawn from one case and is not stated by the record."
+  },
+  {
+   "item_id": "summary:entertainment",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"shows approval is feasible\" - a conclusion no cited record states; the records show only that other premises hold or were recommended for POE permits",
+    "\"nearest POE\" - record 1243 gives distance_m 31 but no record says it is the nearest",
+    "\"may impose sound-level and hours conditions\" - the catalog says only that POE permits are \"conditioned or denied\" over sound complaints; it does not name sound-level or hours conditions, and the cited permits list no conditions (\"conditions\": [])"
+   ],
+   "reason": "Stated: POE applies_when \"(live_entertainment = True AND closes_after_midnight = True) OR (amplified_sound = True AND closes_after_midnight = True)\". Record 1243: \"Amados: Place of Entertainment\", address 998 VALENCIA ST, distance_m 31, outcome \"approved\". Catalog notes: \"a 30-day posted notice and a Commission hearing\". Not stated: the feasibility conclusion, the \"nearest\" comparison, and the specific kinds of conditions."
+  },
+  {
+   "item_id": "row:health:0",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "catalog:sf.health_permit notes state: \"FY2026\u201327 schedule: $470 Permit to Operate application (includes initial inspection) and $0 annual license fee for restaurants and bars for 2026\u201328\". Every part of the sentence is in that text."
+  },
+  {
+   "item_id": "row:health:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"DPH approved\": the record is a Planning case (source \"Planning case list (DataSF)\", record_kind \"agency_referral\") whose text is \"DPH referral - Restaurant\" and \"Recommend approval for 995 Valencia Street ...\". It records a Planning recommendation/approval on a DPH referral; it does not state that DPH approved anything.",
+    "\"health permit\": the record says only \"DPH referral - Restaurant\" (permit_type \"Miscellaneous Permit\"); it does not name a health permit as the subject of the referral."
+   ],
+   "reason": "The only cited record, app:datasf_planning:2020-012158MIS, has at_report_address true, address \"995 VALENCIA ST 94110\", status \"Closed - Approved\", decided_at \"2021-01-20\", and description \"DPH referral - Restaurant / Recommend approval for 995 Valencia Street as a continuation of restaurant use per Section 102 and 762 and Conditional Use authorization Motion No. 18363\".\n\nParts the record states: the address, the date 2021-01-20, an approved outcome on a restaurant referral, \"continuation of restaurant use\", and Sections 102 and 762.\n\nParts it does not state:\n- The actor. The source is the \"Planning case list (DataSF)\", the record_kind is \"agency_referral\", and the wording is \"Recommend approval\". That is a Planning case closing a referral tied to DPH, not DPH approving something. The sentence names a different approving agency than the record does, which the standard treats as not in the records.\n- \"Health permit\". The record never names the permit; its permit_type is \"Miscellaneous Permit\" and the description says only \"DPH referral - Restaurant\". Reading that as a health permit relies on outside knowledge of what DPH referrals are for. This is the lesser of the two gaps.\n\nMost of the sentence is stated, so it is not unsupported; with the actor misattributed it is not fully supported either. The two partially_supported readings are right, and the \"supported\" reading passes an actor the record does not state."
+  },
+  {
+   "item_id": "row:health:2",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"continuous restaurant use ... since at least 1999\": the five records are separate approvals at points in time (1999, 2001, 2002, 2010, 2020-21) and none states the use was uninterrupted; the only continuity wording is in the 2020 record, \"a continuation of restaurant use\", which does not say continuous since 1999. An at-address application record supports only what was filed or approved.",
+    "\"DPH and ABC approvals\": all five are Planning case-list records (source \"Planning case list (DataSF)\", record_kind \"agency_referral\", permit_type \"Miscellaneous Permit\"). No record names ABC; the 2010 record says only \"Type 41 accessory to full service restaurant\". Only the 2020 record names DPH (\"DPH referral - Restaurant ... Recommend approval\"), and that is a Planning recommendation on a DPH referral, not a DPH approval. The 1999, 2001 and 2002 records name no agency.",
+    "Approval \"in 2020\": record 2020-012158MIS has filed_at \"2020-12-30\" and decided_at \"2021-01-20\", so it was filed in 2020 but approved in 2021.",
+    "\"full-service restaurant operations\" for the 2020 item: that record says only \"Restaurant\" / \"continuation of restaurant use\", not full-service."
+   ],
+   "reason": "Ruling: partially_supported. The two partially_supported readings are right; the \"supported\" reading passes parts no record states.\n\nParts the records do state (all five have at_report_address true, parcel 3609/026, status \"Closed - Approved\"):\n- MA9901527 (filed 1999-08-18, decided 1999-08-25): \"Large full service restaurant approved per Planning Code Sections 726.42 and 790.92 (waiter service and seating).\"\n- MB0100446 (decided 2001-06-11): \"Large full service restaurant permitted per Planning Code Section 726.42 and 730.92.\"\n- MB0201343 (decided 2002-12-10): \"Large full service restaurant permitted per Planning codeSection 726.42 & 790.92.\"\n- MB1000854 (decided 2010-08-11): \"Type 41 accessory to full service restaurant.\"\n- 2020-012158MIS (filed 2020-12-30): \"DPH referral - Restaurant. Recommend approval for 995 Valencia Street as a continuation of restaurant use per Section 102 and 762 and Conditional Use authorization Motion No. 18363\".\nSo restaurant-related approvals on file at the address in 1999, 2001, 2002 and 2010, full-service in each of those four, and a restaurant referral filed in 2020, are supported. \"Since at least 1999\" matches the earliest record.\n\nParts not in the records:\n1. \"Continuous\" use is a conclusion drawn from five dated approvals; no record states it, and approval records do not establish that the use was ongoing between them.\n2. \"DPH and ABC approvals\" mischaracterises the kind of record: these are Planning agency-referral sign-offs. ABC appears nowhere in the record text (reading \"Type 41\" as an ABC licence would need outside knowledge), and DPH appears only in the 2020 record as the referring agency.\n3. The 2020 item was decided 2021-01-20, a different date from the sentence's \"in 2020\".\n4. The 2020 record does not say full-service.\n\nEach claimed gap in the earlier readings checks out against the record text, including the fourth one that only one reading listed."
+  },
+  {
+   "item_id": "summary:health",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"is principally permitted\" - none of the cited records (health permit catalog entry and the parcel's planning referrals) states that a limited-cooking food facility is principally permitted; the zoning record is not cited for this item, and the 2020 referral ties the restaurant use to \"Conditional Use authorization Motion No. 18363\"",
+    "\"continuous restaurant use since 1999\" - the records are separate approvals filed 1999, 2001, 2002, 2010 and 2020; they support what was filed and approved, not that the use was continuous over the whole period"
+   ],
+   "reason": "Stated: health permit prerequisites \"sf.health_plan_check\" and \"ca.food_safety_manager_cert\", and notes \"the permit is issued after the final inspection confirms the facility matches the approved plans and a certified food safety manager is on staff... you cannot serve the public before it is issued\". Restaurant approvals are on file at the parcel (at_report_address true) from 1999-08-18 (\"Large full service restaurant approved\") through 2020-12-30 (\"continuation of restaurant use\"). Not stated: principal permission and continuity since 1999."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"neighborhood notification per Planning Code \u00a7312 where required\" - the cited record never mentions neighborhood notification, Planning Code \u00a7312, or any notice requirement",
+    "\"for zoning review\" - the record names Planning as one of the departments in plan-review routing but does not say what Planning reviews; the purpose is supplied from outside the record"
+   ],
+   "reason": "The only cited record is catalog:sf.building_permit, \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\". Parts the record states: (1) a change of use needs a building permit - applies_when \"(tenant_improvements = True OR change_of_use = True OR new_construction = True)\" and notes \"any change of occupancy need a DBI permit with plans stamped by an architect\"; (2) that permit is routed to Planning - notes \"full plan review with Planning, Fire, Public Health and PUC routing takes 2\u20134 months\". The parenthetical \"restaurant \u2192 bar\" is the report's own scenario for the change_of_use trigger, not a claim about the record, so I did not count it as a missing part. Parts the record does not state: it gives no purpose for the Planning routing, so \"for zoning review\" is an added characterisation, not a rewording of anything in the text; and nothing in the record mentions neighborhood notification, Planning Code \u00a7312, or a \"where required\" condition. This is a finding, so every fact and conclusion must be in the record; since the routing-to-Planning core is stated but the zoning-review purpose and the \u00a7312 notification are not, the sentence is partially supported. The two \"partially_supported\" readings are correct on both flagged parts; the \"supported\" reading passes parts no record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "catalog:sf.building_permit notes: \"Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy need a DBI permit with plans stamped by an architect. ... full plan review with Planning, Fire, Public Health and PUC routing takes 2\u20134 months.\" The sentence restates this."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "catalog:sf.health_plan_check, name \"Public Health plan check (new or remodeled food facility)\", notes: \"Any new food facility or remodel affecting the kitchen needs DPH approval of plans, finishes, equipment and menu\" and \"FY2026\u201327 flat fees: $828 (small remodel, 3 hrs), $1,241 (bar/prepackaged, 4.5 hrs), $2,207 (new restaurant, 8 hrs)\". The $828\u2013$2,207 range and 'depending on scope' follow directly from those flat fees by project type."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"a change of use from restaurant to bar will trigger Planning Code \u00a7312 neighborhood notification\" - neither cited catalog entry mentions \u00a7312, neighborhood notification, or any notification consequence of a restaurant-to-bar change of use; the building permit entry says only that \"any change of occupancy need a DBI permit\""
+   ],
+   "reason": "Ruling: partially_supported. The first clause is stated by the records; the second clause is in neither.\n\nFirst clause, stated:\n- Building permit for kitchen, build-out and ADA work: catalog:sf.building_permit is named \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\", and its notes say \"Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy need a DBI permit with plans stamped by an architect\". The bar build-out is covered as tenant improvements (applies_when \"tenant_improvements = True OR change_of_use = True ...\").\n- DBI, DPH and Planning routing: the same entry says \"full plan review with Planning, Fire, Public Health and PUC routing\", and catalog:sf.health_plan_check says \"make sure 'health' is a routing station on the DBI application\".\n\nSecond clause, not stated:\n- I searched both cited records for \u00a7312, \"312\", \"notification\" and \"neighborhood\"; none appears. The only change-of-use text is that a change of occupancy needs a DBI permit and that change_of_use is an applies_when trigger. Neither says a restaurant-to-bar change triggers Planning Code \u00a7312 neighborhood notification. Under the standard, a summary's conclusions count as parts, so this one is not in the records.\n\nThe \"supported\" reading cannot stand because it passes the \u00a7312 clause, which no cited record states. The two \"partially_supported\" readings identify the correct single missing part, and the parts they passed check out against the record text."
+  },
+  {
+   "item_id": "condition:0",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"State law prohibits alcohol sales after 2 a.m.\" (and the matching \"state law maximum for on-sale alcohol\") - no state-law rule is in the cited record"
+   ],
+   "reason": "The Planning Code part of the basis is supported: overlay:static:sf:nc_nct_valencia (code_section \"Planning Code \u00a7 762 (Zoning Control Table 762)\", applies_at_report_address true) has late_night_rule \"Hours of operation (Table 762): P 6 a.m.\u20132 a.m.; C 2 a.m.\u20136 a.m.\". The second rule the basis cites, that state law prohibits alcohol sales after 2 a.m., is not in the record. The forecast itself was not counted; note the record gives 2 a.m.\u20136 a.m. as \"C\" (conditional) and does not mention an Extended Hours Premises permit."
+  },
+  {
+   "item_id": "condition:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"the 50-person Place of Assembly threshold\" (and the conclusion that the concept is \"likely below\" it): the only cited record, MB1400584, says nothing about a Fire Department Place of Assembly permit, an occupant load, or a 50-person figure"
+   ],
+   "reason": "The forecast itself (the expected condition) is not counted; only the basis is checked, against the single cited record app:datasf_planning:MB1400584.\n\nBasis sentence 1 is in the record. \"The 2014 POE approval at 998 Valencia limited entertainment to 1/3 of floor area per Police Code s.1060(r)\" matches: address \"998 - 998 VALENCIA ST\", filed_at \"2014-04-15\", decided_at \"2014-05-19\", status \"Closed - Approved\", and description \"Recommend approval of Place of Entertainment Permitas accessory to (e) retail use per P.C. Sec. 703.2(b)(1)(C)(viii) - in conformance with Police Code Section 1060(r) and may not exceed 1/3 of the gross flooor area of the (e) retail use.\" Nuance, not flagged: the record is a Planning agency referral (record_kind \"agency_referral\") recommending approval of the POE permit, with outcome \"approved\"; I read \"2014 POE approval\" as a fair restatement of that.\n\nBasis sentence 2 is not in the record. \"At 40 seats this concept is likely below the 50-person Place of Assembly threshold\" relies on a rule (a Place of Assembly requirement triggered at 50 persons) that the cited record never states; the record contains no occupancy, seat-count or Fire Department content at all. So the \"supported\" reading passes a rule no record states. The 40-seat figure is likewise absent from the record, but it is the report's own description of the proposed concept rather than a claim about a public record, so I do not list it as a separate missing part (this is the only point on which the two partially_supported readings differ, and it does not change the verdict).\n\nOne basis part stated by the record, one not: partially_supported."
+  },
+  {
+   "item_id": "condition:2",
+   "checker": "partially_supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "POE permits for entertainment venues commonly include sound-level conditions (the record gives sound complaints as the main reason permits are 'conditioned or denied'; it does not say how often permits carry conditions, nor that the conditions are sound-level limits)"
+   ],
+   "reason": "The forecast (property-line and upstairs sound limits, noise monitoring, written good-neighbor policy) is not graded for a condition item; only the basis is.\n\nBasis part 1 is stated. The overlay record (applies_at_report_address true, Mission Alcoholic Beverage Special Use District) says: \"Good-neighbor operating conditions (\u00a7 202.2 plus lighting and window-signage limits) apply.\" That matches \"The Mission Alcohol SUD imposes good-neighbor operating conditions per \u00a7202.2 plus lighting and window-signage limits.\"\n\nBasis part 2 is not stated. The only relevant text in catalog:sf.place_of_entertainment_permit is the stall_risk: \"Sound complaints from upstairs residents are the main reason POE permits are conditioned or denied; commission an acoustic report and soundproofing plan before the hearing.\" That gives the leading cause when a permit is conditioned or denied. The sentence makes a different claim, a generalisation about frequency and content: that POE permits \"commonly include sound-level conditions\".\n\n- Frequency: \"main reason\" ranks causes among permits that are conditioned or denied. It does not say conditioning is common across POE permits.\n- Content: the record never says what the conditions are. A condition prompted by sound complaints is not necessarily a sound-level limit, and the record's own advice points to an acoustic report and soundproofing plan.\n- Outcome: the record lumps \"conditioned or denied\" together, so it does not isolate conditions at all.\n\nThe two \"supported\" readings both concede the record does not say \"commonly\" or \"sound-level limits\" and pass it as a fair paraphrase. Under the standard, a generalisation is in the records only if a record itself states it, and being a reasonable inference does not put it there. The record supports that sound is the main driver of POE conditioning, which is related substance, so the item is not unsupported. One of the two basis parts is stated and the other is an inference, so the verdict is partially_supported.\n\nFile read: <scratch>/handcheck4/chunk3.json"
+  },
+  {
+   "item_id": "condition:3",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "The forecast itself is not counted. The basis is in the records: ca.abc_type_42 notes \"Beer-and-wine bar license: no food requirement, but no minors allowed on the premises\"; ca.rbs_training notes \"Required under AB 1221 for every alcohol server and their managers within 60 days of hire.\""
+  },
+  {
+   "item_id": "condition:4",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"reflecting the Mission Alcohol SUD policy\" - the record does not name the Mission Alcohol SUD or attribute the prohibition to it"
+   ],
+   "reason": "The case cited in the basis is in the record: filed 2006-06-16, decided 2006-07-03, status \"Closed - Approved\", record_kind agency_referral, description \"Recommend Approval as the continuation of the existing license use at 1101 Valencia Street. Please note conditions. Not to expand the original square footage of the existing bar on the premis. - Prohibition of Expansion of Existing Establishments Selling Alcoholic Beverages. No establishment selling alcoholic beverages may substantially change the mode or character of operation of the establishment, nor may it expand thesquare footage devoted e\". That supports the 2006 approval at 1101 Valencia, the no-expansion condition, the no-change-in-character rule, and that a general no-expansion rule exists. The record does not say that rule is the Mission Alcohol SUD's policy; the SUD is not mentioned in the cited record. The forecast (including \"without a new Conditional Use Authorization\") was not counted."
+  },
+  {
+   "item_id": "condition:5",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"indicating this is a standard condition for POE permits\": a generalisation the record does not state; it concerns one Nighttime Entertainment use at 2500 Mission"
+   ],
+   "reason": "The forecast is not counted. 2026-006164PRL (Project Profile Lite, 2500 Mission St, filed 2026-07-10, use_types nightclub) states: \"Use is subject to the Entertainment Commission's Good Neighbor Policy.\" That supports the cited case. The inference that this is a standard condition for POE permits is not stated in the record."
+  },
+  {
+   "item_id": "step:1",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"under Planning Code \u00a7312\": the cited catalog entry names no code section for a pre-application meeting. Its only mention is \"pre-application community meeting\" in the stall_risk text, with no section number and no statement that the meeting is requested from SF Planning under \u00a7312.",
+    "\"per \u00a7249.60\": the cited catalog entry states the Mission Alcohol SUD transfer rule but gives no section number for it."
+   ],
+   "reason": "Ruling: partially_supported. The only cited record is catalog:sf.conditional_use_authorization. Kind is playbook, so the instructions (file for a meeting, what to ask) and the concept description (40-seat beer-and-wine bar, limited kitchen, live music until midnight) are not claims.\n\nRule facts the step relies on that the record does state:\n- A bar needs a CUA decided by the Commission: \"Bars (ABC Types 42/48) and nightclubs are conditional uses in most Neighborhood Commercial districts and require a Planning Commission hearing\".\n- The Mission Alcohol SUD licence-transfer requirement, including transfer from within the district: \"In the Mission Alcoholic Beverage Special Use District new bar uses are generally prohibited unless an existing license is transferred within the district\".\n- Type 42 as a bar licence type: \"Bars (ABC Types 42/48)\".\n- A pre-application step exists in the CUA path: \"6\u201310 months including pre-application community meeting, environmental review, and hearing scheduling\".\n\nRule facts the record does not state: the two code citations. I searched the full record text (name, agency, applies_when, notes, stall_risk) and neither \"312\" nor \"249.60\" appears; the record cites no Planning Code section at all. A section number is a stated rule fact, not advice, so each counts as a part not in the records. The \"supported\" reading therefore passes two parts that no cited record states; the two \"partially_supported\" readings are correct on both flagged parts and on the passed parts.\n\nNoted but not counted: \"whether the current restaurant use simplifies the hearing\" presupposes the premises is currently a restaurant, which the cited record does not say. I treated it as part of the suggested question (site context, like the concept description) rather than a rule, fee, time, filing order or agency requirement. It does not change the verdict either way."
+  },
+  {
+   "item_id": "step:2",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "Advice and concept framing are not claims. The facts relied on are stated: CUA catalog \"Bars (ABC Types 42/48) and nightclubs are conditional uses in most Neighborhood Commercial districts and require a Planning Commission hearing with 300-foot mailed notice and a posted notice\"; stall_risk \"pre-application community meeting, environmental review, and hearing scheduling\"; overlay code_section \"Planning Code \u00a7 249.60\" with \"must use a liquor license transferred from another Bar within the SUD\" (applies_at_report_address true)."
+  },
+  {
+   "item_id": "step:3",
+   "checker": "supported",
+   "readerA": "supported",
+   "readerB": "supported",
+   "hand": "supported",
+   "adjudicated": false,
+   "hand_not_in_records": [],
+   "reason": "Playbook step; only stated or relied-on facts checked. catalog:sf.place_of_entertainment_permit: agency \"SF Entertainment Commission\"; notes \"Email the Deputy Director to confirm zoning eligibility before applying\"; prerequisites include \"sf.conditional_use_authorization\", which matches the step's reliance on the POE application being complete only once the CUA is approved; stall_risk says \"commission an acoustic report and soundproofing plan before the hearing\". The rest (requesting an intake meeting, describing music as 1\u20132 nights a week ending by midnight in no more than a third of the floor area, committing to the Good Neighbor Policy, monitoring and an annual report, attaching the security plan) is advice on what to file and how to describe the concept, not a stated rule, fee or time. Those advice details are not in the record but are not claims under the playbook standard."
+  },
+  {
+   "item_id": "step:4",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"notify neighbors within 300 ft\": a numeric notification rule the step relies on; the cited POE catalog entry states only \"a 30-day posted notice\" and gives no neighbour-notification requirement or radius",
+    "\"yellow\" notice: the record says \"a 30-day posted notice\" and does not state the notice's colour (minor descriptive detail)"
+   ],
+   "reason": "The right verdict is partially_supported: the 300-ft neighbour notification is a rule the step relies on, and the single cited record (catalog:sf.place_of_entertainment_permit) does not state it. The \"supported\" reading passes a number no record gives.\n\nParts the record does state:\n- Filing order (CUA first): prerequisites list \"sf.conditional_use_authorization\".\n- Agency: \"SF Entertainment Commission\".\n- Fee, notice, referrals and hearing: \"$2,708 application fee (2026\u201327) plus other departments' inspection fees, Police and Planning review, a 30-day posted notice and a Commission hearing\".\n- Lease: \"new businesses need a lease or temporary liquor license\".\n- Acoustic study: stall_risk says \"commission an acoustic report and soundproofing plan before the hearing\".\n\nParts not counted, as playbook instructions on what to file and how: submitting online, proof of the approved CUA, the security plan, the good-neighbor policy, and coordinating with SFPD and Planning. The record does not mention online filing, a security plan or a good-neighbor policy, but under the standard these are advice, not claims.\n\nParts not in the record:\n- \"notify neighbors within 300 ft\" is a specific agency requirement with a number. The record gives only the 30-day posted notice, with no neighbour notification and no radius.\n- \"yellow\" is a factual detail about the notice that the record does not give. It is minor, and the verdict does not depend on it.\n\nBoth partially_supported readings identified the same two missing parts, and I confirm each against the record text."
+  },
+  {
+   "item_id": "step:5",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"Post the 30-day public notice at the premises\": the step relies on an ABC rule with a stated time (a 30-day posting requirement). Neither cited record mentions any posting or notice requirement or a 30-day period; the only times in catalog:ca.abc_type_42 are \"days\": [60, 150] and \"ABC's 60-ish days\".",
+    "\"the Planning Commission's PCN finding letter\": the step names the Planning Commission as the body that issues the PCN finding. stat:density says only \"a Public Convenience or Necessity (PCN) finding from the City\"; no cited record names the Planning Commission."
+   ],
+   "reason": "Kind is playbook, so the instructions themselves (apply, submit, include, post, comply) are not claims; I checked only the rules, times, filing order and agency requirements the step relies on.\n\nStated in the records:\n- Filing order, CUA before ABC: catalog:ca.abc_type_42 notes say \"nearly every city treats a Type 42 as a 'bar' use that needs a conditional use permit or police/planning review before ABC will issue\".\n- Type 42 licence from ABC: name \"ABC Type 42 \u2013 On-Sale Beer & Wine, Public Premises\", agency \"California Department of Alcoholic Beverage Control (ABC)\".\n- Seller's permit and entity registration: \"prerequisites\": [\"ca.sos_entity_registration\", \"ca.sellers_permit\"].\n- PCN finding tied to undue concentration and high licence density: stat:density says \"ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district\" and \"At this density expect ABC to require a Public Convenience or Necessity (PCN) finding from the City\", with \"undue_concentration_flag\": true.\n\nNot stated:\n- The 30-day public-notice posting. This is a rule with a specific time that the step relies on, which is exactly what the playbook standard says to check, and no cited record states it.\n- The Planning Commission as the source of the PCN finding. The record says only \"from the City\"; naming the issuing body is a fact beyond the record.\n\nNot counted against the item:\n- The lease and workers' comp insurance are not in the records, but they sit in a \"what to submit\" list, which the standard treats as filing advice.\n- \"comply with ABC's transfer and investigation timeline\" is an instruction with no number or rule. The records do not mention a transfer or an investigation (the catalog says \"Non-quota, so ABC issues new ones\"), so the wording is loose.\n\nThe \"supported\" reading fails because the 30-day notice rule and the Planning Commission attribution are factual parts no cited record states. Because the filing order, prerequisites and PCN/density basis are stated, the item is partially supported rather than unsupported."
+  },
+  {
+   "item_id": "step:6",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "\"Indicate that the CUA and POE permit are approved and attach copies\" - relies on a filing order (CUA and POE permit approved before the building permit is filed) that neither cited record states; both entries list only prerequisites [\"sf.business_registration\"], and neither mentions a CUA or a POE permit at all",
+    "\"Fire for hood and suppression review\" (minor) - catalog:sf.building_permit names Fire only as a routing station (\"full plan review with Planning, Fire, Public Health and PUC routing\"); it does not say what Fire reviews, and suppression appears in neither record",
+    "\"Planning for zoning sign-off\" (minor) - the record names Planning as a routing station but does not state what Planning signs off on"
+   ],
+   "reason": "Ruling: partially_supported. The \"supported\" reading does not hold, because the step relies on a filing order that the cited records do not give.\n\nParts the records state:\n- Filing with DBI for tenant improvements: catalog:sf.building_permit is \"Building permit (tenant improvements / change of occupancy)\", agency \"SF Department of Building Inspection (DBI)\".\n- Stamped plans covering kitchen, ADA and restrooms: \"Kitchen build-outs, hoods, restrooms, ADA upgrades and any change of occupancy need a DBI permit with plans stamped by an architect\".\n- Routing to DPH, Fire and Planning: \"full plan review with Planning, Fire, Public Health and PUC routing\", and in catalog:sf.health_plan_check \"make sure 'health' is a routing station on the DBI application\".\n- Inspections: \"After approval, schedule a pre-final inspection at ~80% complete and a final inspection\".\n\nParts not in the records:\n- CUA and POE approved first. Telling the applicant to indicate approval and attach copies is advice, but it only works if both approvals come before the building permit filing. A required order of filings is a checkable fact for a playbook step. Both cited entries give only prerequisites [\"sf.business_registration\"], and neither mentions a CUA or POE permit. The only sequencing the building permit entry gives is \"submit the DPH plan check at the same time\".\n- Review scope for Fire and Planning (minor). The record lists them as routing stations without saying what each reviews. \"Hoods\" appears only as work needing a DBI permit, and suppression appears nowhere.\n\nNot counted as claims: bar layout, soundproofing and HVAC are advice on what the plans should show, and \"before opening\" is scheduling advice for the final inspection the record does state."
+  },
+  {
+   "item_id": "step:7",
+   "checker": "supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": true,
+   "hand_not_in_records": [
+    "Order of filings: \"After the final DBI and DPH inspections, apply for the Health Permit to Operate\" - catalog:sf.health_permit gives a different order: \"Apply online at least one month before opening ...; the permit is issued after the final inspection\" (application comes before the final inspection, not after it)",
+    "Timing of the Health Permit application \"in the final two weeks before opening\" (as the sentence reads) - the record says \"at least one month before opening\"; the two-week timing is stated only for ASCAP",
+    "\"proof that the building permit final was issued\" as something the Health Permit application takes - the record lists only \"your BAN, Location ID (LIN) and federal tax ID\" plus a certified food safety manager; no cited record mentions a building permit final",
+    "A final DBI inspection as a step preceding the health application - no cited record mentions DBI or a building inspection"
+   ],
+   "reason": "Kind is playbook, so the advice itself (apply, enrol, schedule) is not checked; only the rules, times, required order and agency requirements the step relies on are checked.\n\nParts the records state:\n- Online filing with the Business Account Number: catalog:sf.health_permit \"Apply online ... with your BAN\".\n- Certified food manager certificate: same record, prerequisite \"ca.food_safety_manager_cert\" and \"a certified food safety manager is on staff\".\n- A DPH final inspection exists and precedes issuance: \"the permit is issued after the final inspection confirms the facility matches the approved plans\".\n- RBS training for staff through ABC: catalog:ca.rbs_training agency \"California Department of Alcoholic Beverage Control (ABC) \u2013 RBS Portal\", \"Required under AB 1221 for every alcohol server and their managers\".\n- ASCAP and BMI licences before music is played, in the final two weeks: catalog:us.ascap_license \"federal copyright law requires a blanket license to play music publicly\" and \"takes under a week, so schedule it in the final two weeks\"; catalog:us.bmi_license \"venues playing a general mix of music need both\".\n\nParts the records do not state, or state differently:\n- The required order. The step says to apply for the Health Permit after the final DBI and DPH inspections. The record says the opposite sequence: \"Apply online at least one month before opening ...; the permit is issued after the final inspection\". The step is also internally at odds with itself, since it then says to schedule the DPH final inspection after submitting the application.\n- The timing of the health application in the final two weeks conflicts with \"at least one month before opening\".\n- Proof of the building permit final as an application item, and a DBI final inspection, appear in no cited record.\n\nA required order of filings and what an agency requires are exactly the facts a playbook step is checked on, so these are real misses rather than unchecked advice. Since much of the step is stated by the records and several parts are not, the \"supported\" reading is wrong and the verdict is partially_supported."
+  },
+  {
+   "item_id": "timeline",
+   "checker": "partially_supported",
+   "readerA": "partially_supported",
+   "readerB": "partially_supported",
+   "hand": "partially_supported",
+   "adjudicated": false,
+   "hand_not_in_records": [
+    "\"240 to 480 days\" / \"8\u201316 months\": does not follow from the cited days \u2014 CUA [120,300] + POE [45,120] in sequence gives 165\u2013420; CUA + ABC [60,150] gives 180\u2013450; no single combination yields both 240 and 480",
+    "\"undue-concentration review will add 1\u20133 months\": no cited record gives this duration",
+    "PCN finding \"from Planning\": stat:density says \"from the City\"",
+    "\"state/federal registrations ~$300\": not in any cited catalog entry",
+    "High end of cost \"$26,000\" does not follow from fee_usd maxima (sum 38,900); it uses the CUA at ~$3,100 only and POE at $2,708 only",
+    "\"the only bar CUA filed on this block was withdrawn\": no cited record for this item is a CUA case",
+    "\"the records show no new bar approvals in the modern SUD era\": no cited record states this",
+    "\"if none exists, the concept ... must be re-framed as a restaurant with accessory entertainment\": conclusion not stated by a record",
+    "\"Plan for 10\u201312 months and $12,000\u2013$18,000\" and \"16+ months\": not derivable from the cited days or fees"
+   ],
+   "reason": "Supported from the catalog: CUA days [120,300] and fee low 3100 (\"about $3,150 now\"); POE days [45,120], \"$2,708 application fee\", CUA listed as a prerequisite; ABC Type 42 days [60,150], fee [1000,1600]; building permit days [14,120], fee [800,15000], \"Fees are a percentage of construction valuation\"; health plan check \"$828 ... $2,207\"; health permit \"$470 Permit to Operate application\"; stat:density \"expect ABC to require a Public Convenience or Necessity (PCN) finding from the City\"; overlay \"must use a liquor license transferred from another Bar within the SUD\" and CUA notes \"Bars (ABC Types 42/48)\". The low cost figure roughly matches the sum of fee minimums (8,906, plus the uncited ~$300). The overall day range, the 1\u20133 month addition, the planning figures, the $300 registrations and the block/SUD-era generalisations are not in the cited records."
+  }
+ ]
+}

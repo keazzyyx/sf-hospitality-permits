@@ -1,0 +1,1494 @@
+{
+ "format_version": 3,
+ "address": "1301 Van Ness Ave, San Francisco, CA 94109",
+ "lat": 37.78776608796421,
+ "lng": -122.4220448983361,
+ "parcel": "0671/002",
+ "description": "",
+ "headline_findings": [],
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 1 further review (zoning and use), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "citations": []
+ },
+ "pathway": {
+  "use": "not_covered",
+  "use_label": "a use the rule table does not cover",
+  "district": "RC-4",
+  "permission": "not_covered",
+  "permission_label": "Not covered by the rule table",
+  "existing_use": null,
+  "change_of_use": "not_established",
+  "change_of_use_label": "Change of use not established",
+  "lines": [
+   {
+    "rule_id": "T1.no_use",
+    "text": "The description does not say what kind of business it is, so no use control was looked up.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.no_limit",
+    "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+    "citations": [
+     "zoning:RC-4"
+    ]
+   }
+  ],
+  "rules_date": "2025-07-27",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [
+     {
+      "control": "conditional",
+      "condition": "the floor area is from 6,000 to 120,000 square feet",
+      "missing_inputs": [
+       "the floor area of the business, in square feet"
+      ]
+     },
+     {
+      "control": "not_permitted",
+      "condition": "the floor area is 120,001 square feet or more",
+      "missing_inputs": [
+       "the floor area of the business, in square feet"
+      ]
+     }
+    ],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.outside",
+      "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-07-27, so this trigger does not apply.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.amends",
+      "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   }
+  ],
+  "changes": {
+   "planning_use": "not_established",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 27 July 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T10.amends",
+     "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+     "code_section": "Planning Code §§ 303(e); 174",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Changing the conditions of an earlier approval.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "formula_retail",
+     "label": "Part of a chain (formula retail)",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "Intensified",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "amends_prior_approval",
+     "label": "Changes the conditions of an earlier approval",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "alcohol_transaction",
+     "label": "How the liquor licence is obtained",
+     "value": "A licence the business already holds",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "prior_approvals",
+     "label": "Earlier approved use decisions at this address",
+     "value": "Conditional Use Authorization (2014-01-16); Conditional Use Authorization (1993-08-12)",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": [
+      "app:datasf_planning:2013.1329C",
+      "app:datasf_planning:1993.214C"
+     ]
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "alcohol.transaction",
+     "text": "The business already holds the licence, as the applicant states.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.status",
+     "text": "The description does not give the licence type, so the rules cannot say which licence rules apply: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2025-07-27: 1 ABC licence within 1,000 ft and 0 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [
+    "the licence type"
+   ],
+   "facts": [
+    {
+     "fact": "licences_held",
+     "label": "Licences already held",
+     "value": "Type 21, Type 42 (on-sale beer and wine, public premises), Type 86",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "alcohol_transaction",
+     "label": "How the liquor licence is obtained",
+     "value": "A licence the business already holds",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "Intensified",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "active_licences",
+     "label": "Active ABC licences at this address",
+     "value": "Type 21",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": [
+      "app:abc:538942"
+     ]
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "facts": [
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "Intensified",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "formula_retail",
+     "label": "Part of a chain (formula retail)",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "facts": [
+  {
+   "fact": "food_service",
+   "label": "Kind of food or drink service (a business that serves no alcohol is not a Bar)",
+   "value": "None",
+   "origin": "description",
+   "origin_label": "Worked out by the rules from your description",
+   "derived": true,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "licences_held",
+   "label": "Licences already held",
+   "value": "Type 21, Type 42 (on-sale beer and wine, public premises), Type 86",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "alcohol_transaction",
+   "label": "How the liquor licence is obtained",
+   "value": "A licence the business already holds",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "formula_retail",
+   "label": "Part of a chain (formula retail)",
+   "value": "Yes",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "existing_use_stated",
+   "label": "Last use of the space, as described",
+   "value": "Retail",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "changes_existing_business",
+   "label": "Change to a business already there",
+   "value": "Intensified",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "amends_prior_approval",
+   "label": "Changes the conditions of an earlier approval",
+   "value": "Yes",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "planning_uses",
+   "label": "Kind of business (Planning Code use)",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "licence_type",
+   "label": "Liquor licence type",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "floor_area_sqft",
+   "label": "Floor area",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "floor_area_sqft"
+  },
+  {
+   "question": "Not known: the licence type. Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space",
+   "intake_question": "existing_occupancy_group"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "RC-4",
+  "name": "RC-4",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 209.3 (zoning control table for RC-4)",
+  "citation_id": "zoning:RC-4"
+ },
+ "overlays": [
+  {
+   "name": "Van Ness",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 243",
+   "citation_id": "overlay:datasf_sud:van_ness"
+  },
+  {
+   "name": "Van Ness Automotive",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 237",
+   "citation_id": "overlay:datasf_sud:van_ness_automotive"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  },
+  {
+   "name": "Within 1/4 Mile of the Fringe Financial Services RUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_the_fringe_financial_services_rud"
+  }
+ ],
+ "base_rate": {
+  "approved": 6,
+  "approved_with_conditions": 1,
+  "denied": 0,
+  "withdrawn": 1,
+  "total": 8,
+  "window_years": 10,
+  "scope": "N = 8 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 58 permits and licences, 350 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 58,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 350,
+  "citation_id": "stat:base_rate",
+  "counted": [
+   {
+    "application_id": "datasf_planning:2023-001438CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1237 POLK ST 94109",
+    "outcome": "cancelled",
+    "filed_at": "2023-02-16",
+    "decided_at": "2023-07-11",
+    "source_url": "https://sfplanninggis.org/pim?search=2023-001438CUA"
+   },
+   {
+    "application_id": "datasf_planning:2019-017608CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1141 POLK ST 94109",
+    "outcome": "approved",
+    "filed_at": "2019-10-01",
+    "decided_at": "2021-09-30",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-017608CUA"
+   },
+   {
+    "application_id": "datasf_planning:2019-020049CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1131 POLK ST 94109",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2019-10-25",
+    "decided_at": "2021-04-15",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-020049CUA"
+   },
+   {
+    "application_id": "datasf_planning:2017-016488MIS",
+    "permit_type": "Miscellaneous Permit",
+    "address": "1405 FRANKLIN ST 94109",
+    "outcome": "approved",
+    "filed_at": "2017-12-27",
+    "decided_at": "2018-05-30",
+    "source_url": "https://sfplanninggis.org/pim?search=2017-016488MIS"
+   },
+   {
+    "application_id": "datasf_planning:2016-014513CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1765 CALIFORNIA ST 94109",
+    "outcome": "approved",
+    "filed_at": "2016-11-08",
+    "decided_at": "2017-12-05",
+    "source_url": "https://sfplanninggis.org/pim?search=2016-014513CUA"
+   },
+   {
+    "application_id": "datasf_planning:2016-007216CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1116 Polk ST, SAN FRANCISCO, CA",
+    "outcome": "approved",
+    "filed_at": "2016-06-01",
+    "decided_at": "2016-11-21",
+    "source_url": "https://sfplanninggis.org/pim?search=2016-007216CUA"
+   },
+   {
+    "application_id": "datasf_planning:2016-005143CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1331 POLK ST 94109",
+    "outcome": "approved",
+    "filed_at": "2016-04-20",
+    "decided_at": "2016-10-05",
+    "source_url": "https://sfplanninggis.org/pim?search=2016-005143CUA"
+   },
+   {
+    "application_id": "datasf_planning:2014-000285CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1515 PINE ST 94109",
+    "outcome": "approved",
+    "filed_at": "2014-11-19",
+    "decided_at": "2015-12-04",
+    "source_url": "https://sfplanninggis.org/pim?search=2014-000285CUA"
+   }
+  ]
+ },
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2025-001997MIS",
+   "citation_id": "app:datasf_planning:2025-001997MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1247 POLK ST 94109",
+   "distance_m": 154.2,
+   "filed_at": "2025-03-10",
+   "decided_at": "2025-03-11",
+   "days_to_decision": 1,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.906,
+   "lat": 37.78844124703165,
+   "lng": -122.42051536706909,
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001997MIS"
+  },
+  {
+   "application_id": "datasf_planning:2019-017608CUA",
+   "citation_id": "app:datasf_planning:2019-017608CUA",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1141 POLK ST 94109",
+   "distance_m": 157.4,
+   "filed_at": "2019-10-01",
+   "decided_at": "2021-09-30",
+   "days_to_decision": 730,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.903,
+   "lat": 37.78746580945333,
+   "lng": -122.42029838980024,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-017608CUA"
+  },
+  {
+   "application_id": "datasf_planning:2024-005133MIS",
+   "citation_id": "app:datasf_planning:2024-005133MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1247 POLK ST 94109",
+   "distance_m": 154.2,
+   "filed_at": "2024-06-05",
+   "decided_at": "2024-06-11",
+   "days_to_decision": 6,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.895,
+   "lat": 37.78844124703165,
+   "lng": -122.42051536706909,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-005133MIS"
+  },
+  {
+   "application_id": "datasf_planning:2024-000583MIS",
+   "citation_id": "app:datasf_planning:2024-000583MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1145 POLK ST 94109",
+   "distance_m": 157.4,
+   "filed_at": "2024-01-19",
+   "decided_at": "2024-01-29",
+   "days_to_decision": 10,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.888,
+   "lat": 37.78746580945333,
+   "lng": -122.42029838980024,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-000583MIS"
+  },
+  {
+   "application_id": "datasf_planning:2014-001408MIS",
+   "citation_id": "app:datasf_planning:2014-001408MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1300 VAN NESS AVE 94109",
+   "distance_m": 58.9,
+   "filed_at": "2014-11-13",
+   "decided_at": "2022-03-01",
+   "days_to_decision": 2665,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.884,
+   "lat": 37.78785782996074,
+   "lng": -122.42138633237789,
+   "source_url": "https://sfplanninggis.org/pim?search=2014-001408MIS"
+  },
+  {
+   "application_id": "datasf_planning:2024-003181MIS",
+   "citation_id": "app:datasf_planning:2024-003181MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1288 POLK ST 94109",
+   "distance_m": 197.2,
+   "filed_at": "2024-04-10",
+   "decided_at": "2024-04-12",
+   "days_to_decision": 2,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.881,
+   "lat": 37.78846836093081,
+   "lng": -122.41998808899275,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-003181MIS"
+  },
+  {
+   "application_id": "datasf_planning:2024-006004MIS",
+   "citation_id": "app:datasf_planning:2024-006004MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1517 PINE ST 94109",
+   "distance_m": 213.4,
+   "filed_at": "2024-07-01",
+   "decided_at": "2024-07-09",
+   "days_to_decision": 8,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.881,
+   "lat": 37.78939462037462,
+   "lng": -122.42075658271287,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-006004MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-007624MIS",
+   "citation_id": "app:datasf_planning:2021-007624MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1290 SUTTER ST 94109",
+   "distance_m": 58.9,
+   "filed_at": "2021-07-28",
+   "decided_at": "2021-08-27",
+   "days_to_decision": 30,
+   "outcome": "denied",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.877,
+   "lat": 37.78785782996074,
+   "lng": -122.42138633237789,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-007624MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-004186MIS",
+   "citation_id": "app:datasf_planning:2023-004186MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1535 FRANKLIN ST 94109",
+   "distance_m": 206.4,
+   "filed_at": "2023-05-08",
+   "decided_at": "2023-09-07",
+   "days_to_decision": 122,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.87,
+   "lat": 37.78879712414047,
+   "lng": -122.42399458885681,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-004186MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-001178MIS",
+   "citation_id": "app:datasf_planning:2021-001178MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1270 SUTTER ST 94109",
+   "distance_m": 58.9,
+   "filed_at": "2021-02-02",
+   "decided_at": "2021-02-25",
+   "days_to_decision": 23,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.869,
+   "lat": 37.78785782996074,
+   "lng": -122.42138633237789,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-001178MIS"
+  }
+ ],
+ "comparables_note": "Planning and Entertainment Commission records within 1,000 ft, ranked by a fixed score: the kind of business in common (40%), the distance (25%), how recent the record is (15%), late-night hours in common (10%) and whether the case was decided (10%); a Conditional Use case scores a little higher. The top 10 are listed, best first. Each row shows what the record says, with a link to it. No model picks them.",
+ "site_history": {
+  "matched_by": "Parcel 0671/002 or the address 1301 Van Ness Ave",
+  "total": 4,
+  "by_kind": {
+   "use_decision": 2,
+   "agency_referral": 1,
+   "licence": 1
+  },
+  "entries": [
+   {
+    "application_id": "abc:538942",
+    "citation_id": "app:abc:538942",
+    "source": "abc",
+    "source_label": "ABC licence export",
+    "record_kind": "licence",
+    "record_kind_label": "ABC licence",
+    "permit_type": "Type 21 – Off-Sale General",
+    "description": "BEVERAGES & MORE — Type 21 – Off-Sale General (ACTIVE on 2025-07-27)",
+    "address": "1301 VAN NESS AVE, SAN FRANCISCO, CA 94109",
+    "filed_at": null,
+    "decided_at": "2014-05-22",
+    "outcome": "approved",
+    "status": "ACTIVE",
+    "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=538942",
+    "use_types": [
+     "retail_alcohol",
+     "bar"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2013.1329C",
+    "citation_id": "app:datasf_planning:2013.1329C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Change of use for Formula Retail",
+    "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+    "filed_at": "2013-09-17",
+    "decided_at": "2014-01-16",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2013.1329C",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:MB1301703",
+    "citation_id": "app:datasf_planning:MB1301703",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "- ABC lisence type 21,42, 86 permitted in RC-4 district liquor store per Planning Code Section 209.8 Conditional use Authorized for formula retail (BevMo!) (8/8/2013)",
+    "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+    "filed_at": "2013-10-31",
+    "decided_at": "2013-11-21",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=MB1301703",
+    "use_types": [
+     "retail_alcohol"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:1993.214C",
+    "citation_id": "app:datasf_planning:1993.214C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "To allow expansion of non-conforming use in the van ness ave. sud. per Sec. 182., and Off-street parking Expand 24-Hour Nautilus on second floor into former auto storare area.",
+    "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+    "filed_at": "1993-04-14",
+    "decided_at": "1993-08-12",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=1993.214C",
+    "use_types": [],
+    "hours_close": null,
+    "conditions": []
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "citations": [
+  {
+   "id": "app:abc:538942",
+   "kind": "application",
+   "label": "Type 21 – Off-Sale General · 1301 VAN NESS AVE, SAN FRANCISCO, CA 94109 · approved (2014)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=538942",
+   "excerpt": "BEVERAGES & MORE — Type 21 – Off-Sale General (ACTIVE on 2025-07-27)"
+  },
+  {
+   "id": "app:datasf_planning:1993.214C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1301 VAN NESS AV, SAN FRANCISCO, CA 94109 · approved (1993)",
+   "source_url": "https://sfplanninggis.org/pim?search=1993.214C",
+   "excerpt": "To allow expansion of non-conforming use in the van ness ave. sud. per Sec. 182., and Off-street parking  Expand 24-Hour Nautilus on second floor into former auto storare area."
+  },
+  {
+   "id": "app:datasf_planning:2013.1329C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1301 VAN NESS AV, SAN FRANCISCO, CA 94109 · approved (2014)",
+   "source_url": "https://sfplanninggis.org/pim?search=2013.1329C",
+   "excerpt": "Change of use for Formula Retail"
+  },
+  {
+   "id": "app:datasf_planning:2014-001408MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1300 VAN NESS AVE 94109 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2014-001408MIS",
+   "excerpt": "Restaurant (The Regency Center)"
+  },
+  {
+   "id": "app:datasf_planning:2019-017608CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1141 POLK ST 94109 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-017608CUA",
+   "excerpt": "Conditional Use authorization to establish a Change of Use from Restaurant to Full-Service Restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2021-001178MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1270 SUTTER ST 94109 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-001178MIS",
+   "excerpt": "ABC referral - Type 47, 58, 68 - long-standing entertainment venue with permit to operate restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2021-007624MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1290 SUTTER ST 94109 · denied (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-007624MIS",
+   "excerpt": "DPH referral - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2023-004186MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1535 FRANKLIN ST 94109 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-004186MIS",
+   "excerpt": "Recommend approval; Continuation of ABC License Type 41 for On-Sale Beer & Wine - Eating Place (dba Pistachio) principally permitted with existing non-Formula Retail Restaurant use in the NC-3 Zoning District per Planning Code Section 712. Continuation of existing use. Must operate as a Bona Fide Ea"
+  },
+  {
+   "id": "app:datasf_planning:2024-000583MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1145 POLK ST 94109 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-000583MIS",
+   "excerpt": "Recommend approval of ABC Type 41 license for new Restaurant dba SF Event Space, LLC. Restaurant use is a Retail Sales and Service use principally permitted in the Polk Street NCD per Planning Code Section 723. Must operate and maintain the licensed premises as a bona fide eating place."
+  },
+  {
+   "id": "app:datasf_planning:2024-003181MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1288 POLK ST 94109 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-003181MIS",
+   "excerpt": "ABC referral - Recommend Approval. Type 41 licenses permitted in conjunction with the continuation of restaurant use (dba Uni Pizzeria Grill) per motion #13812, case #94.604C. Restaurant is Permitted use in Polk St. NCD. Also see Conditional Use Authorization (CUA) 1994.604. Honora Montano, SF Plann"
+  },
+  {
+   "id": "app:datasf_planning:2024-005133MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1247 POLK ST 94109 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-005133MIS",
+   "excerpt": "DPH referral - Full-service restaurant permitted as continuation of existing use. Honora.montano@sfgov.org"
+  },
+  {
+   "id": "app:datasf_planning:2024-006004MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1517 PINE ST 94109 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-006004MIS",
+   "excerpt": "ABC referral - Type 41. Recommend approval of Type 41 (on-sale beer and wine) ABC license permitted in conjunction with existing restaurant use (dba Wabi Sabi). Full service restaurant is permitted in the Polk Street NC district per Sections 723 of the Planning Code. Honora Montano, SF Planning, hon"
+  },
+  {
+   "id": "app:datasf_planning:2025-001997MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1247 POLK ST 94109 · approved (2025)",
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001997MIS",
+   "excerpt": "ABC referral - Recommend Approval - Type 41 license is permitted with a conjunction of existing restaurant use at 1247 Polk Street."
+  },
+  {
+   "id": "app:datasf_planning:MB1301703",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1301 VAN NESS AV, SAN FRANCISCO, CA 94109 · approved (2013)",
+   "source_url": "https://sfplanninggis.org/pim?search=MB1301703",
+   "excerpt": "- ABC lisence type 21,42, 86 permitted in RC-4 district liquor store per Planning Code Section 209.8 Conditional use Authorized for formula retail (BevMo!) (8/8/2013)"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 1301 Van Ness Ave, San Francisco, CA 94109 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=287474",
+   "excerpt": "parcel 0671/002"
+  },
+  {
+   "id": "overlay:datasf_sud:van_ness",
+   "kind": "overlay",
+   "label": "Van Ness — Planning Code § 243",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20577",
+   "excerpt": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:van_ness_automotive",
+   "kind": "overlay",
+   "label": "Van Ness Automotive — Planning Code § 237",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20417",
+   "excerpt": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_the_fringe_financial_services_rud",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of the Fringe Financial Services RUD — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 7 approved / 0 denied / 1 withdrawn; N = 8 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 58 permits and licences, 350 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 58 Entertainment Commission permits and ABC licences (lists of grants only), 350 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "zoning:RC-4",
+   "kind": "zoning",
+   "label": "Zoning RC-4 — Planning Code § 209.3 (zoning control table for RC-4)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+   "excerpt": "The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement with the issuing agency before relying on it.",
+  "Comparable cases and counts come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and are not a guarantee. Planning Commission and ABC decisions are discretionary.",
+  "No sentence in this report is written by an AI model. A model reads your description into facts; each fact shows the words it came from, and what your words do not state is listed as not known."
+ ],
+ "generated_at": "2026-11-16T12:12:30+00:00",
+ "model_versions": {},
+ "data_as_of": "2025-07-27"
+}

@@ -1,0 +1,464 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 29,
+  "supported": 3,
+  "trimmed": 11,
+  "downgraded": 8,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 47 license (on-sale general, eating place) is on file at 1309 Grant Avenue, issued March 5, 2001 to Ristorante Ideale. That license type is held by restaurants under Planning Code § 102, so the space is read as an existing restaurant.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 47 license (on-sale general, eating place) is on file at 1309 Grant Avenue, issued March 5, 2001 to Ristorante Ideale.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 47 license (on-sale general, eating place) is on file at 1309 Grant Avenue, issued March 5, 2001 to Ristorante Ideale.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:372058"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The 1988 Conditional Use Authorization (Case No. 1987.801C) approved exchanging ABC License 41 to 47 and expanding an existing full-service restaurant at 1309–1311 Grant Avenue, filed December 8, 1987, approved January 28, 1988.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 1988 Conditional Use Authorization (Case No. 1987.801C) approved exchanging ABC License 41 to 47 and expanding an existing full-service restaurant at 1309–1311 Grant Avenue, filed December 8, 1987, approved January 28, 1988.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:1987.801C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Planning Code § 780.3(c)(2)(A) requires a Conditional Use finding that the restaurant is and will remain a bona fide eating place serving at least 51% of gross receipts from food prepared and sold on the premises, on request submitting records of the preceding year's sales.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 780.3(c)(2)(A) requires a Conditional Use finding that the restaurant is and will remain a bona fide eating place serving at least 51% of gross receipts from food prepared and sold on the premises, on request submitting records of the preceding year's sales.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited records reference Planning Code § 722, not § 780.3, and contain no text about the 51% gross receipts requirement or other stated requirements."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Nine of ten dated use decisions within 1,000 ft in the last five years were approved (three outright, six with conditions); one was withdrawn; zero were denied. The 90% approval rate (N=10) includes mostly continuations of existing restaurant uses with license transfers.",
+   "verdict": "partially_supported",
+   "supported_text": "Nine of ten dated use decisions within 1,000 ft in the last five years were approved (three outright, six with conditions); one was withdrawn; zero were denied. The 90% approval rate (N=10).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Nine of ten dated use decisions within 1,000 ft in the last five years were approved (three outright, six with conditions); one was withdrawn; zero were denied. The 90% approval rate (N=10).",
+   "confidence": "verified",
+   "citations": [
+    "stat:base_rate"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The nearest comparable Type 47 transfer to an existing restaurant (414 Columbus Avenue, 51 meters away) was approved by CUA in December 2022 after nine months, with standard conditions on signage, odor control, sidewalk maintenance, community liaison, and three-year validity; no conditions limited hours, occupancy, or food-sales percentage.",
+   "verdict": "partially_supported",
+   "supported_text": "The nearest comparable Type 47 transfer to an existing restaurant (414 Columbus Avenue, 51 meters away) was approved by CUA in December 2022, with standard conditions on signage, odor control, sidewalk maintenance, community liaison, and three-year validity; no conditions limited hours, occupancy, or food-sales percentage.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The nearest comparable Type 47 transfer to an existing restaurant (414 Columbus Avenue, 51 meters away) was approved by CUA in December 2022, with standard conditions on signage, odor control, sidewalk maintenance, community liaison, and three-year validity; no conditions limited hours, occupancy, or food-sales percentage.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-002108CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Intensifying an existing restaurant in North Beach requires Conditional Use Authorization because Planning Code § 780.3(c)(1)(B) treats even same-use intensification as conditional, and § 178 prohibits significant alteration of a conditional use without a new CUA.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Intensifying an existing restaurant in North Beach requires Conditional Use Authorization because Planning Code § 780.3(c)(1)(B) treats even same-use intensification as conditional, and § 178 prohibits significant alteration of a conditional use without a new CUA.",
+   "confidence": null,
+   "citations": [
+    "app:abc:372058",
+    "app:datasf_planning:1987.801C",
+    "zoning:NCD-NORTH BEACH",
+    "overlay:static:sf:north_beach_sud",
+    "stat:base_rate",
+    "app:datasf_planning:2022-002108CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "Census tract 106.00 has 59 active on-sale retail licenses against 12 authorized under ABC's September 2026 census tract allocations, so the tract is over-concentrated. State law tests new licenses and premises-to-premises transfers for undue concentration under Business and Professions Code § 23958.4.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Census tract 106.00 has 59 active on-sale retail licenses against 12 authorized under ABC's September 2026 census tract allocations, so the tract is over-concentrated. State law tests new licenses and premises-to-premises transfers for undue concentration under Business and Professions Code § 23958.4.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Record shows 45 on-sale licenses within 500 ft as a proxy, not 59 in census tract 106.00; does not mention 12 authorized, September 2026 allocations, or the statute cited."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Type 47 is a quota license: state law limits on-sale general licenses to one per 2,000 county inhabitants, so in counties over that ratio ABC issues no additional licenses and the applicant must purchase and transfer an existing license unless an exception applies.",
+   "verdict": "partially_supported",
+   "supported_text": "Type 47 is a quota license, and the applicant must purchase and transfer an existing license unless an exception applies.",
+   "cut_problem": "drops 'no' and keeps the words after it",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Type 47 is a quota license: state law limits on-sale general licenses to one per 2,000 county inhabitants, so in counties over that ratio ABC issues no additional licenses and the applicant must purchase and transfer an existing license unless an exception applies.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record states Type 47 is a quota license but does not give the specific 1:2,000 inhabitant ratio or explain the county headroom threshold."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "ABC processes a premises-to-premises transfer of a Type 47 in 90–240 days including escrow, posting, local zoning sign-off, and any public-convenience-or-necessity review. Market prices for Type 47 licenses in San Francisco typically run $100,000–$450,000.",
+   "verdict": "partially_supported",
+   "supported_text": "ABC processes a premises-to-premises transfer of a Type 47 in 90–240 days including escrow, posting, and local zoning sign-off. Market prices for Type 47 licenses in San Francisco typically run $100,000–$450,000.",
+   "cut_problem": "adds or moves 'local': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "ABC processes a premises-to-premises transfer of a Type 47 in 90–240 days including escrow, posting, local zoning sign-off, and any public-convenience-or-necessity review. Market prices for Type 47 licenses in San Francisco typically run $100,000–$450,000.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions escrow, posting, and local zoning sign-off but does not mention public-convenience-or-necessity review."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "ABC's daily status reports do not show the status on June 7, 2023 for 15 licenses within 1,000 ft and 13 in the census tract (their status changed two or more times since); they are left out of the tract concentration count, so the true on-file count may be higher.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "ABC's daily status reports do not show the status on June 7, 2023 for 15 licenses within 1,000 ft and 13 in the census tract (their status changed two or more times since); they are left out of the tract concentration count, so the true on-file count may be higher.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record provides only statistical counts of licenses; it does not mention missing status data, excluded licenses, or changing statuses."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description does not state how the Type 47 license will be obtained—by transfer from another owner, transfer from another premises, or original application—so the rules cannot determine which ABC process and public-convenience-or-necessity requirements apply.",
+   "verdict": "partially_supported",
+   "supported_text": "The description does not state how the Type 47 license will be obtained—by transfer from another owner, transfer from another premises, or original application—so the rules cannot determine which ABC process applies.",
+   "cut_problem": "adds or moves 'applies': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "stat:density",
+    "catalog:ca.abc_type_47"
+   ],
+   "note": "The records state the description does not give how the license will be obtained and rules cannot say which license rules apply, but do not mention 'public-convenience-or-necessity requirements.'"
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Under California Retail Food Code §§ 114380–114381 and San Francisco Health Code Article 8, any food or drink business needs a health permit to operate, issued by the Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff.",
+   "verdict": "partially_supported",
+   "supported_text": "Any food or drink business needs a health permit to operate, issued by the Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Any food or drink business needs a health permit to operate, issued by the Department of Public Health after plan check and final inspection confirm the facility matches approved plans and a certified food safety manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The FY2026–27 fee schedule sets the Permit to Operate application at $470 (includes initial inspection) with a $0 annual license fee for restaurants and bars for 2026–28; reinspections are $276/hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The FY2026–27 fee schedule sets the Permit to Operate application at $470 (includes initial inspection) with a $0 annual license fee for restaurants and bars for 2026–28; reinspections are $276/hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and inspection without a hearing, and is allowed as of right for a restaurant with a full kitchen.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is issued after plan check and inspection without a hearing, and is allowed for a restaurant.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is issued after plan check and inspection without a hearing, and is allowed for a restaurant.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Whether a building permit and change of occupancy are required cannot be established because the description does not state whether the space seats fewer than 50 people, and the existing occupancy group is not in public records.",
+   "verdict": "partially_supported",
+   "supported_text": "Whether a building permit and change of occupancy are required cannot be established because the description does not state whether the space is for fewer than 50 people, and the existing occupancy group is not in public records.",
+   "cut_problem": "longer than the sentence",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The rule lines above did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [],
+   "note": "Record states 'is for fewer than 50 people', not 'seats fewer than 50 people'."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: The restaurant must operate and maintain the premises as a bona fide eating place, with at least 51% of gross receipts from food prepared and sold to guests on the premises, and submit records of the preceding year's sales to Planning on request. Basis: Planning Code § 780.3(c)(2)(A) requires this finding for any restaurant serving alcohol in the North Beach Special Use District. All eight comparable agency referrals for Type 41 and Type 47 licenses in North Beach in 2019–2023 included or referenced the bona fide eating place requirement.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The restaurant must operate and maintain the premises as a bona fide eating place. Basis: Comparable agency referrals for licenses in North Beach included or referenced the bona fide eating place requirement.",
+   "cut_problem": "keeps 'All eight comparable agency referrals for Type 41 and Type 47 licenses in North Beach in 2019–2023', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show bona fide eating place requirement in 2 referrals but don't state the 51% threshold, sales record submission, the specific code section, or that all eight referrals had this requirement."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Standard CUA conditions: signage must comply with Planning Code Article 6 and complement the building's architectural character; odor control equipment must be installed and not applied to the primary façade; the operator must maintain the entrance and sidewalks per DPW standards. Basis: The 2022 Type 47 CUA for 414 Columbus Avenue (51 meters away) imposed these conditions, which match the standard conditions extracted from other North Beach restaurant CUAs in the dataset.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Standard CUA conditions: signage must comply with Planning Code Article 6 and complement the building's architectural character; odor control equipment must be installed and not applied to the primary façade; the operator must maintain the entrance and sidewalks per DPW standards. Basis: The 2022 Type 47 CUA for 414 Columbus Avenue (51 meters away) imposed these conditions.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Standard CUA conditions: signage must comply with Planning Code Article 6 and complement the building's architectural character; odor control equipment must be installed and not applied to the primary façade; the operator must maintain the entrance and sidewalks per DPW standards. Basis: The 2022 Type 47 CUA for 414 Columbus Avenue (51 meters away) imposed these conditions.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-002108CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: The operator must appoint a community liaison to address concerns from nearby owners and occupants, and provide written notice of the liaison's name, address, and telephone number to the Zoning Administrator and registered neighborhood groups. Basis: Required by the 2022 CUA at 414 Columbus Avenue and is a standard condition for eating-and-drinking uses in neighborhood commercial districts under Planning Code § 202.2.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The operator must appoint a community liaison to address concerns from nearby owners and occupants, and provide written notice of the liaison's name, address, and telephone number to the Zoning Administrator and registered neighborhood groups. Basis: Required by the 2022 CUA at 414 Columbus Avenue.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The operator must appoint a community liaison to address concerns from nearby owners and occupants, and provide written notice of the liaison's name, address, and telephone number to the Zoning Administrator and registered neighborhood groups. Basis: Required by the 2022 CUA at 414 Columbus Avenue.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-002108CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: The authorization is valid for three years from the effective date; DBI must issue a building or site permit within that period, and construction must commence and be diligently pursued to completion. Basis: Standard validity and diligent-pursuit conditions appear in all recent North Beach CUAs, including the 2022 Type 47 CUA at 414 Columbus Avenue.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The authorization is valid for three years from the effective date; DBI must issue a building or site permit within that period, and construction must commence and be diligently pursued to completion. Basis: Standard validity and diligent-pursuit conditions appear in the 2022 Type 47 CUA at 414 Columbus Avenue.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows these conditions in one CUA, not 'all recent North Beach CUAs'."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: If the project results in unresolved complaints found to violate the Planning Code or specific conditions of approval, the Zoning Administrator may refer the matter to the Commission for a public hearing to consider revocation. Basis: Standard enforcement and revocation condition in the 2022 CUA at 414 Columbus Avenue and other North Beach approvals.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If the project results in unresolved complaints found to violate the Planning Code or specific conditions of approval, the Zoning Administrator may refer the matter to the Commission for a public hearing to consider revocation. Basis: Standard enforcement and revocation condition in the 2022 CUA at 414 Columbus Avenue.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows this condition at 414 Columbus Avenue only, not at other North Beach approvals."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Confirm the zoning pathway and formula-retail status in writing with San Francisco Planning. What to say: Request a pre-application meeting or a Letter of Determination from Planning stating: (1) whether the existing Type 47 license (ABC #372058, issued 2001) is still valid for this space or whether a new Conditional Use Authorization is required; (2) whether intensifying the restaurant without enlarging the space triggers a new CUA under § 780.3(c)(1)(B); (3) whether the business is formula retail under Planning Code § 303.1; and (4) what records the Department needs to confirm the space has not been abandoned for more than 18 months. Explain that the concept is to upgrade from Type 41 to Type 47 at an existing restaurant with no construction, no seating increase, and no hours change. Ask for written confirmation of the pathway before filing or paying any application fees.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Confirm the zoning pathway and formula-retail status in writing with San Francisco Planning. What to say: Request a pre-application meeting or a Letter of Determination from Planning stating: (1) whether the existing Type 47 license (ABC #372058, issued 2001) is still valid for this space or whether a new Conditional Use Authorization is required; (2) whether the business is formula retail; and (3) what records the Department needs to confirm the space has not been abandoned. Explain that the concept is to upgrade from Type 41 to Type 47 at an existing restaurant. Ask for written confirmation of the pathway before filing or paying any application fees.",
+   "cut_problem": "adds or moves '3': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show the Type 47 license and historical Type 41 to 47 exchange, but do not contain the specific Planning Code sections, abandonment timeframe, or current concept details referenced."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Engage a liquor license broker to locate and escrow a Type 47 license for transfer to 1309 Grant Avenue, or confirm the status of the existing on-file Type 47. What to say: Type 47 licenses in San Francisco are quota licenses acquired by transfer, typically priced at $100,000–$450,000. Instruct the broker to confirm whether ABC #372058 (issued 2001) is still active and tied to this address, and whether it can be reactivated or whether a new license must be purchased. The broker will coordinate with ABC to determine whether the census tract's over-concentration (59 active licenses against 12 authorized) triggers a public-convenience-or-necessity finding from Planning or the Police Department. Make the purchase or transfer contingent on Planning's zoning sign-off and ABC's final approval.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Engage a liquor license broker to locate and escrow a Type 47 license for transfer to 1309 Grant Avenue, or confirm the status of the existing on-file Type 47. What to say: Type 47 licenses in San Francisco are quota licenses acquired by transfer, typically priced at $100,000–$450,000. Instruct the broker to confirm whether ABC #372058 (issued 2001) is still active and tied to this address, and whether it can be reactivated or whether a new license must be purchased. The broker will coordinate with ABC to determine whether the census tract's over-concentration triggers a public-convenience-or-necessity finding from Planning or the Police Department. Make the purchase or transfer contingent on Planning's zoning sign-off and ABC's final approval.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records show over-concentration but do not state the specific numbers 59 active licenses and 12 authorized."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File a Conditional Use Authorization application with San Francisco Planning if Step 1 confirms one is required. What to say: Submit the CUA application (Planning Code § 303) with: a project description framing the concept as intensifying an existing restaurant that has held a Type 47 since 2001, with no space expansion, no seating increase, and no hours change; proof that the restaurant operates as a bona fide eating place (sample menus, a statement that at least 51% of gross receipts come from food sales, and a commitment to submit annual sales records on request per § 780.3(c)(2)(A)); photos of the existing space and floor plan; the existing ABC Type 47 license record or the purchase agreement for a transferred license; a statement that the business is not formula retail (or disclose chain affiliations if it is); and a good-neighbor policy. Request fee waivers if eligible under the First Year Free program. Schedule the required pre-application community meeting and 300-foot neighbor notification, and budget…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show a CUA approval for restaurant with Type 47 transfer but do not state the cited code sections, application requirements, fee waiver programs, or procedural steps mentioned in the instruction."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File the ABC license application or transfer with the California Department of Alcoholic Beverage Control after Planning signs off. What to say: Submit the Type 47 application or transfer paperwork with: the signed lease, the entity formation documents (CA SOS registration), the seller's permit (CDTFA), the signed purchase agreement if transferring a license, Planning's CUA approval or written zoning sign-off, a 30-day public posting at the premises (ABC provides the form), and $2 million liability insurance. State that the restaurant is a bona fide eating place serving meals prepared on the premises, and that at least 51% of gross receipts will come from food sales. If the census tract is flagged for undue concentration, submit a public-convenience-or-necessity letter from Planning or the Police Department explaining that the transfer serves the public interest. ABC will route the application to SFPD and Planning for review; respond promptly to any requests for additional information. Expect 90–240 days including escrow and loc…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the ABC license application or transfer with the California Department of Alcoholic Beverage Control. What to say: Submit the Type 47 application or transfer paperwork with the entity formation documents (CA SOS registration) and the seller's permit (CDTFA). If the census tract is flagged for undue concentration. Expect 90–240 days including escrow.",
+   "cut_problem": "keeps 'submit public-convenience-or-necessity letter if flagged for undue concentration', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The catalog confirms Type 47, 90-240 days, CA SOS registration and seller's permit; it does not list the other required documents, the 51% food sales requirement, or ABC's routing procedures."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Register the business and obtain core state and city permits. What to say: Complete in this order: (1) EIN from IRS (same day, free); (2) LLC or corporation formation with CA Secretary of State (1–10 days, $70–$150); (3) seller's permit from CDTFA (1–14 days, free); (4) San Francisco business registration certificate from the Treasurer & Tax Collector (1–5 days, $55–$700 tiered by gross receipts); (5) fictitious business name statement with the County Clerk if the DBA differs from the entity name (1–35 days including newspaper publication, $60–$120); (6) workers' compensation insurance from a licensed carrier or State Fund (required from the first employee); (7) EDD employer registration if hiring staff (1–7 days, free). Keep the Business Account Number (BAN) from Step 4 on hand for all other permit applications.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business and obtain core state and city permits. What to say: (1) EIN from IRS (same day, free); (2) LLC or corporation formation with CA Secretary of State (1–10 days, $70–$150); (3) seller's permit from CDTFA (1–14 days, free); (4) San Francisco business registration certificate from the Treasurer & Tax Collector (1–5 days, $55–$700 tiered by gross receipts); (5) fictitious business name statement with the County Clerk if the DBA differs from the entity name (1–35 days including newspaper publication, $60–$120); (6) workers' compensation insurance from a licensed carrier or State Fund (required from the first employee); (7) EDD employer registration if hiring staff (1–7 days, free). Keep the Business Account Number (BAN) from Step 4 on hand.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business and obtain core state and city permits. What to say: (1) EIN from IRS (same day, free); (2) LLC or corporation formation with CA Secretary of State (1–10 days, $70–$150); (3) seller's permit from CDTFA (1–14 days, free); (4) San Francisco business registration certificate from the Treasurer & Tax Collector (1–5 days, $55–$700 tiered by gross receipts); (5) fictitious business name statement with the County Clerk if the DBA differs from the entity name (1–35 days including newspaper publication, $60–$120); (6) workers' compensation insurance from a licensed carrier or State Fund (required from the first employee); (7) EDD employer registration if hiring staff (1–7 days, free). Keep the Business Account Number (BAN) from Step 4 on hand.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:us.ein",
+    "catalog:ca.sos_entity_registration",
+    "catalog:ca.sellers_permit",
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name",
+    "catalog:ca.workers_comp_insurance",
+    "catalog:ca.edd_employer_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Complete the Department of Public Health plan check and obtain the health permit to operate. What to say: If any kitchen equipment, layout, or menu changes are proposed, submit a plan check application to DPH Environmental Health with: sealed drawings of the kitchen layout showing all equipment, handwashing and three-compartment sinks, floor/wall finishes, and the grease interceptor; the menu; proof of a certified food safety manager on staff (ServSafe or equivalent, $100–$250, valid five years); and the $828–$2,207 plan check fee (tiered by project scope; a continuation of an existing restaurant with no remodel is often exempt). After plan approval, schedule a pre-final inspection at ~80% completion and a final inspection at least two weeks in advance. The health permit ($470 application, $0 annual fee for 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff. DPH will route the application to Planning for zonin…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Complete the Department of Public Health plan check and obtain the health permit to operate. What to say: The health permit ($470 application, $0 annual fee for 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Complete the Department of Public Health plan check and obtain the health permit to operate. What to say: The health permit ($470 application, $0 annual fee for 2026–28) is issued after the final inspection confirms the facility matches the approved plans and the certified manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: If seating 50 or more, obtain the Fire Department Place of Assembly permit. What to say: Submit the Place of Assembly application to SFFD Bureau of Fire Prevention (49 South Van Ness, Suite 560) with the approved building plans, occupancy load calculation, and $446 fee. SFFD will inspect the exits, fire extinguishers, emergency lighting, and any commercial cooking hood suppression system. Schedule the final fire inspection before the DPH pre-opening inspection; the Entertainment Commission also requires this permit for venues of 50+.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If seating 50 or more, obtain the Fire Department Place of Assembly permit. What to say: Submit the Place of Assembly application to SFFD Bureau of Fire Prevention (49 South Van Ness, Suite 560) with the $446 fee. Schedule the final fire inspection before the DPH pre-opening inspection; the Entertainment Commission also requires this permit for venues of 50+.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: If seating 50 or more, obtain the Fire Department Place of Assembly permit. What to say: Submit the Place of Assembly application to SFFD Bureau of Fire Prevention (49 South Van Ness, Suite 560) with the $446 fee. Schedule the final fire inspection before the DPH pre-opening inspection; the Entertainment Commission also requires this permit for venues of 50+.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.fire_place_of_assembly"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Obtain ASCAP and BMI public performance licenses and train all alcohol servers in Responsible Beverage Service. What to say: Sign up online for ASCAP and BMI blanket licenses (each ~$300–$2,500/year based on occupancy and music use; both catalogs are needed to play a general mix of music; licenses are effective immediately). Within 60 days of hire, every alcohol server and manager must complete ABC's Responsible Beverage Service training ($3 registration + $10–$25 course, 1–7 days) and keep the certification list on site for ABC inspections. All food handlers must obtain California Food Handler Cards within 30 days of hire ($7–$15, valid three years).",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain ASCAP and BMI public performance licenses and train all alcohol servers in Responsible Beverage Service. What to say: Sign up online for ASCAP and BMI blanket licenses (each ~$300–$2,500/year based on occupancy and music use; both catalogs are needed to play a general mix of music). Within 60 days of hire, every alcohol server and manager must complete ABC's Responsible Beverage Service training ($3 registration + $10–$25 course, 1–7 days) and keep the certification list on site for ABC inspections. All food handlers must obtain California Food Handler Cards within 30 days of hire ($7–$15, valid three years).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain ASCAP and BMI public performance licenses and train all alcohol servers in Responsible Beverage Service. What to say: Sign up online for ASCAP and BMI blanket licenses (each ~$300–$2,500/year based on occupancy and music use; both catalogs are needed to play a general mix of music). Within 60 days of hire, every alcohol server and manager must complete ABC's Responsible Beverage Service training ($3 registration + $10–$25 course, 1–7 days) and keep the certification list on site for ABC inspections. All food handlers must obtain California Food Handler Cards within 30 days of hire ($7–$15, valid three years).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license",
+    "catalog:ca.rbs_training",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,800 to $18,000. Notes: The timeline is 120–300 days and the government cost is $3,800–$18,000, both to approval of the Conditional Use Authorization and the health permit (the entitlement path given by the rules). These figures do not include the ABC Type 47 license process, which is listed as insufficient information. If a CUA is required, expect 6–10 months (180–300 days) from filing to Commission approval including pre-application community meeting, environmental review, 300-foot neighbor notification, hearing scheduling, and a 30-day post-decision appeal period; the nearest comparable Type 47 CUA (414 Columbus Avenue) took 270 days from filing to approval. The CUA application fee was approximately $2,747 in 2023–24, CPI-adjusted to roughly $3,150 in 2026–27, and can rise with construction cost; restaurants may qualify for First Year Free fee waivers. The health permit application is $470 (includes initial inspection) with a $0 annual license fee for 2026–28. Other city fees: business registration $55–$700 (tiered by gross receipts), fictitious business name $60–$120, sign permit (if new exterior signage) $300–$1,500, and fire Place of Assembly permit (if seating 50+) $446. State fees: entity formation $70–$150, certified food safety manager exam $100–$250, RBS training per employee $13–$33, food handler cards $7–$15 each, ASCAP+BMI licenses $600–$5,000/year. The Type 47 license itself, if obtained by transfer, costs $100,000–$450,000 market price plus ABC's transfer fees; that cost and its 90–240-day timeline are not included here because how the license will be obtained is not established. If Planning determines the project is a continuation of the existing Type 47 and no CUA is required, the timeline and cost drop to the health permit and ABC referral (roughly 30–60 days and $500–$1,500 in city fees). The day range is the time to obtain the approvals when they are granted; it is not a time to a denial or a withdrawal.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 90 to 240 days. Estimated government cost: $55 to $700. Notes: The health permit application is $470 (includes initial inspection) with a $0 annual license fee for 2026–28. Business registration $55–$700 (tiered by gross receipts). The Type 47 license itself, if obtained by transfer, costs $100,000–$450,000 market price. The nearest comparable Type 47 CUA (414 Columbus Avenue) took 270 days from filing to approval.",
+   "cut_problem": "changes the day or cost ranges",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,800 to $18,000. Notes: The timeline is 120–300 days and the government cost is $3,800–$18,000, both to approval of the Conditional Use Authorization and the health permit (the entitlement path given by the rules). These figures do not include the ABC Type 47 license process, which is listed as insufficient information. If a CUA is required, expect 6–10 months (180–300 days) from filing to Commission approval including pre-application community meeting, environmental review, 300-foot neighbor notification, hearing scheduling, and a 30-day post-decision appeal period; the nearest comparable Type 47 CUA (414 Columbus Avenue) took 270 days from filing to approval. The CUA application fee was approximately $2,747 in 2023–24, CPI-adjusted to roughly $3,150 in 2026–27, and can rise with construction cost; restaurants may qualify for First Year Free fee waivers. The health permit application is $470 (includes initial inspection) with a $0 annual license fee for 2026–28. Other city fees: business registration $55–$700 (tiered by gross receipts), fictitious business name $60–$120, sign permit (if new exterior signage) $300–$1,500, and fire Place of Assembly permit (if seating 50+) $446. State fees: entity formation $70–$150, certified food safety manager exam $100–$250, RBS training per employee $13–$33, food handler cards $7–$15 each, ASCAP+BMI licenses $600–$5,000/year. The Type 47 license itself, if obtained by transfer, costs $100,000–$450,000 market price plus ABC's transfer fees; that cost and its 90–240-day timeline are not included here because how the license will be obtained is not established. If Planning determines the project is a continuation of the existing Type 47 and no CUA is required, the timeline and cost drop to the health permit and ABC referral (roughly 30–60 days and $500–$1,500 in city fees). The day range is the time to obtain the approvals when they are granted; it is not a time to a denial or a withdrawal.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Most fees, timelines, and calculations are not in the cited records; ABC timeline is 90-180 days in the record, not 90-240; CUA fees and many other costs not stated in cited records."
+  }
+ ]
+}

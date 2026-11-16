@@ -1,0 +1,420 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 26,
+  "supported": 3,
+  "trimmed": 9,
+  "downgraded": 7,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The space at 1701 Fillmore St was approved on 2016-11-15 for continuation of a self-service/fast food restaurant use.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The space at 1701 Fillmore St was approved on 2016-11-15 for continuation of a self-service/fast food restaurant use.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2016-012908MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning Code § 760 makes formula retail a conditional use in the NCT-FILLMORE district, in force on 2023-05-31.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 760 makes formula retail a conditional use in the NCT-FILLMORE district, in force on 2023-05-31.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state that formula retail is a conditional use in this district."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Super Duper Burgers operates 11+ locations (as stated in the concept profile) and is a formula retail establishment under Planning Code § 178.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Super Duper Burgers operates 11+ locations (as stated in the concept profile) and is a formula retail establishment under Planning Code § 178.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The address record contains only location data; it says nothing about Super Duper Burgers, number of locations, or formula retail classification."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A 2022 ABC referral at 1700 Fillmore St (52 m away) explicitly noted the restaurant was 'non-formula retail use,' suggesting Planning tracks formula retail status even in routine tenant-change referrals.",
+   "verdict": "partially_supported",
+   "supported_text": "A 2022 ABC referral at 1700 Fillmore St (52 m away) explicitly noted the restaurant was 'non-formula retail use.'",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A 2022 ABC referral at 1700 Fillmore St (52 m away) explicitly noted the restaurant was 'non-formula retail use.'",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-009513MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Two formula retail Conditional Use Authorizations within 1,000 ft were approved: Pinot's Palette (wine-service art studio) in 2015 and Orangetheory Fitness (gym) in 2019, both in NCT-FILLMORE.",
+   "verdict": "partially_supported",
+   "supported_text": "Two formula retail Conditional Use Authorizations within 1,000 ft were approved: Pinot's Palette (wine-service art studio) in 2015 and Orangetheory Fitness in 2019, both in NCT-FILLMORE.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Two formula retail Conditional Use Authorizations within 1,000 ft were approved: Pinot's Palette (wine-service art studio) in 2015 and Orangetheory Fitness in 2019, both in NCT-FILLMORE.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2015-007413CUA",
+    "app:datasf_planning:2018-009861CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Formula retail is a conditional use in NCT-FILLMORE under Planning Code § 760; the rules require a Conditional Use Authorization but do not decide whether a new use is established when a restaurant tenant replaces another restaurant tenant.",
+   "verdict": "partially_supported",
+   "supported_text": "Formula retail is a conditional use in NCT-FILLMORE under Planning Code § 760; the rules require a Conditional Use Authorization.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Formula retail is a conditional use in NCT-FILLMORE under Planning Code § 760; the rules require a Conditional Use Authorization.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2016-012908MIS",
+    "zoning:NCT-FILLMORE",
+    "geo:address",
+    "app:datasf_planning:2022-009513MIS",
+    "app:datasf_planning:2015-007413CUA",
+    "app:datasf_planning:2018-009861CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "San Francisco Department of Public Health issues a permit to operate after plan review, inspection, and confirmation that a certified food safety manager is on staff, per California Retail Food Code §§ 114380–114381.",
+   "verdict": "partially_supported",
+   "supported_text": "San Francisco Department of Public Health issues a permit to operate after plan review, inspection, and confirmation that a certified food safety manager is on staff.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "San Francisco Department of Public Health issues a permit to operate after plan review, inspection, and confirmation that a certified food safety manager is on staff.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The FY2026–27 application fee is $470 and the annual license fee for restaurants is $0 for 2026–28; reinspections are $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The FY2026–27 application fee is $470 and the annual license fee for restaurants is $0 for 2026–28; reinspections are $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "Eight restaurant agency referrals (health and ABC) in NCT-FILLMORE and adjacent districts from 2016 to 2023 were all approved, with decision times of 7 to 40 days.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Eight restaurant agency referrals (health and ABC) in NCT-FILLMORE and adjacent districts from 2016 to 2023 were all approved, with decision times of 7 to 40 days.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show 7 agency referrals (3 health/DPH and 4 ABC), not 8."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is required and issued after plan check and inspection without a hearing; the permit is allowed for a limited-cooking restaurant.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is required and issued after plan check and inspection without a hearing; the permit is allowed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is required and issued after plan check and inspection without a hearing; the permit is allowed.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2016-012908MIS",
+    "app:datasf_planning:2022-009513MIS",
+    "app:datasf_planning:2023-002730MIS",
+    "app:datasf_planning:2021-004699MIS",
+    "app:datasf_planning:2020-006734MIS",
+    "app:datasf_planning:2023-001991MIS",
+    "app:datasf_planning:2023-000262MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The California Building Code assigns restaurants and bars to Assembly Group A-2, but a space for fewer than 50 people is Group B.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The California Building Code assigns restaurants and bars to Assembly Group A-2, but a space for fewer than 50 people is Group B.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The catalog entry describes permit procedures but does not state building code occupancy classifications or the 50-person threshold."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The project description states 2,950 sq ft and tenant improvements but does not give the occupant load, so the proposed occupancy group is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The project description states 2,950 sq ft and tenant improvements but does not give the occupant load, so the proposed occupancy group is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The address record contains only location data and does not mention project descriptions, square footage, tenant improvements, occupant load, or occupancy groups."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Tenant improvements in a restaurant kitchen typically require a building permit with DPH plan check, grease interceptor installation per the FOG ordinance, and DBI/DPH/Fire final inspections.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements in a restaurant kitchen require a building permit with DPH plan check and grease interceptor installation per the FOG ordinance.",
+   "cut_problem": "adds or moves 'grease': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Tenant improvements in a restaurant kitchen typically require a building permit with DPH plan check, grease interceptor installation per the FOG ordinance, and DBI/DPH/Fire final inspections.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records mention DPH final inspection but do not state DBI or Fire final inspections as requirements."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The building permit requirement is insufficient information because the records do not establish whether this is a change of occupancy; the rules need the occupant load (whether fewer than 50 people), whether the business is enlarged, and the existing occupancy group.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The building permit requirement is insufficient information because the records do not establish whether this is a change of occupancy; the rules need the occupant load (whether fewer than 50 people), whether the business is enlarged, and the existing occupancy group.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit",
+    "geo:address",
+    "catalog:sf.health_plan_check",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Operate as a bona fide eating place: food service must be the primary use, with meals prepared on-site and available during all hours of operation. Basis: All ABC referrals for restaurants in NCT-FILLMORE and adjacent districts cite Planning Code § 202.2(a)(1) and require operation as a 'Bona Fide Eating Place.' Super Duper Burgers serves no alcohol, so this condition comes from health-permit practice rather than ABC, but the same food-service standard applies.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Operate as a bona fide eating place. Basis: ABC referrals for restaurants cite Planning Code § 202.2(a)(1) and require operation as a 'Bona Fide Eating Place.'",
+   "cut_problem": "keeps 'All ABC referrals for restaurants in NCT-FILLMORE and adjacent districts', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records require 'Bona Fide Eating Place' operation but don't define the specific requirements or mention Super Duper Burgers or health-permit practice."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: If a Conditional Use Authorization is required for formula retail, expect conditions limiting hours of operation, requiring a community liaison, prohibiting further formula retail conversions at the address, and requiring neighborhood notification of any future change of operator. Basis: The two approved formula retail CUAs within 1,000 ft (Pinot's Palette and AMC Theaters) included conditions on hours, garbage/recycling storage, soundproofing, and validity periods. Planning Code § 178(c)(3) governs when a change of operator of formula retail requires a new CUA.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If a Conditional Use Authorization is required for formula retail, expect conditions limiting hours of operation, requiring a community liaison. Basis: The two approved formula retail CUAs within 1,000 ft (Pinot's Palette and AMC Theaters) included conditions on hours, garbage/recycling storage, soundproofing, and validity periods.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show AMC had community liaison and hours conditions, but no conditions prohibiting further formula retail conversions or requiring notification of operator changes; Planning Code § 178(c)(3) not cited in records."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Kitchen exhaust and grease interceptor must comply with the Fats, Oils & Grease Control Ordinance; SFPUC will assign a Discharger Category and require Installation Verification before final DBI sign-off. Basis: San Francisco Public Utilities Commission FOG program requires all food service establishments that cook to install grease-capturing equipment. The catalog entry states an undersized or missing interceptor is a common reason DBI withholds final sign-off.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Grease interceptor must comply with the Fats, Oils & Grease Control Ordinance; SFPUC will assign a Discharger Category and require Installation Verification before final DBI sign-off. Basis: San Francisco Public Utilities Commission FOG program requires all food service establishments that cook to install grease-capturing equipment. The catalog entry states an undersized or missing interceptor is a common reason DBI withholds final sign-off.",
+   "cut_problem": "keeps 'Kitchen exhaust must comply with the Fats, Oils & Grease Control Ordinance', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record discusses grease interceptors but does not mention kitchen exhaust compliance with FOG ordinance."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: All food employees must obtain California Food Handler Cards within 30 days of hire, and at least one owner or employee must hold a Certified Food Protection Manager certificate before the pre-opening health inspection. Basis: California Health and Safety Code § 113948 requires food handler cards for all employees, and § 113947.1 requires a certified manager for each facility that prepares food. DPH inspectors verify at the pre-opening inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: All food employees must obtain California Food Handler Cards within 30 days of hire, and at least one owner or employee must hold a Certified Food Protection Manager certificate before the pre-opening health inspection. Basis: California Health and Safety Code § 113948 requires food handler cards for all employees, and § 113947.1 requires a certified manager for each facility that prepares food.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: All food employees must obtain California Food Handler Cards within 30 days of hire, and at least one owner or employee must hold a Certified Food Protection Manager certificate before the pre-opening health inspection. Basis: California Health and Safety Code § 113948 requires food handler cards for all employees, and § 113947.1 requires a certified manager for each facility that prepares food.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_handler_card",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms no CUA is required, proceed directly to Step 3. If Planning confirms a CUA is required, file a Conditional Use Authorization application with San Francisco Planning Commission. What to say: State that Super Duper Burgers is a formula retail fast-casual restaurant proposing to occupy an existing restaurant space with no change of use, no alcohol, limited cooking, and tenant improvements only. Commit to operating as a bona fide eating place during all hours, maintaining community liaison contact, and complying with all neighborhood notification requirements for any future change of operator. Provide a good-neighbor operations plan, employee training protocols, and a commitment to source locally where feasible.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record only identifies the zoning district; it does not state CUA filing procedures or requirements."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity with the California Secretary of State and obtain a federal EIN. What to say: File LLC Articles of Organization (Form LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online via bizfile. File the Statement of Information within 90 days. Apply for the EIN online at IRS.gov the same day; it is issued immediately.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity with the California Secretary of State and obtain a federal EIN. What to say: File LLC Articles of Organization (Form LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online via bizfile. File the Statement of Information within 90 days. Apply for the EIN online; it is issued immediately.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Form the legal entity with the California Secretary of State and obtain a federal EIN. What to say: File LLC Articles of Organization (Form LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online via bizfile. File the Statement of Information within 90 days. Apply for the EIN online; it is issued immediately.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Register for a San Francisco Business Registration Certificate and a California Seller's Permit. What to say: Apply online with the SF Treasurer & Tax Collector using the entity name and EIN; the fee is tiered by gross receipts ($55–$625+ plus $4 state fee). Apply for the seller's permit with CDTFA online; it is free and often issued the same day. CDTFA may request a security deposit based on projected sales.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register for a San Francisco Business Registration Certificate and a California Seller's Permit. What to say: Apply online with the SF Treasurer & Tax Collector using the entity name and EIN; the fee is tiered by gross receipts ($55–$625+ plus $4 state fee). Apply for the seller's permit with CDTFA online; it is free and often issued the same day. CDTFA may request a security deposit.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register for a San Francisco Business Registration Certificate and a California Seller's Permit. What to say: Apply online with the SF Treasurer & Tax Collector using the entity name and EIN; the fee is tiered by gross receipts ($55–$625+ plus $4 state fee). Apply for the seller's permit with CDTFA online; it is free and often issued the same day. CDTFA may request a security deposit.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:ca.sellers_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Submit DPH plan check application with scaled drawings, equipment list, menu, and construction timeline. What to say: State that Super Duper Burgers is a limited-cooking restaurant (grills, fryers, no Type I hood) with hand sinks, three-compartment sink, and sealed finishes per the DPH Food Safety Standards. Commit to installing a grease interceptor per SFPUC FOG program requirements and maintaining it per the assigned Discharger Category. Request a pre-final inspection at 80% completion.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit DPH plan check application with equipment list and menu. What to say: State that Super Duper Burgers is a limited-cooking restaurant (grills, fryers, no Type I hood) with hand sinks, three-compartment sink, and sealed finishes. Commit to installing a grease interceptor per SFPUC FOG program requirements. Request a pre-final inspection at 80% completion.",
+   "cut_problem": "adds or moves 'menu': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records mention plans, equipment and menu for DPH, and pre-final at 80%, but do not specify scaled drawings, construction timeline, DPH Food Safety Standards, or maintenance per Discharger Category."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: File building permit application with DBI, routing to Planning, DPH, and Fire. What to say: Describe tenant improvements: kitchen build-out, limited cooking equipment, ADA upgrades, and finishes. State that the use remains a restaurant (no change of use) and the space is [under/over] 50 occupants [to be confirmed by architect]. Request routing to Planning for Section 311 neighborhood notification (formula retail in NCT requires it per Planning Code § 311(b)(1)(A)), DPH for plan check sign-off, and Fire for hood suppression review if applicable.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File building permit application with DBI, routing to DPH. What to say: Describe tenant improvements: kitchen build-out, limited cooking equipment, ADA upgrades, and finishes. State that the use remains a restaurant (no change of use) and the space is [under/over] 50 occupants [to be confirmed by architect]. Request routing to DPH for plan check sign-off.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records support DBI filing and DPH routing but do not mention Planning routing, Section 311, formula retail requirements, or Fire department routing."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Enroll at least one manager in a Certified Food Protection Manager course and all employees in California Food Handler Card courses. What to say: Complete an ANSI-accredited food safety certification exam (ServSafe, Prometric, etc.) for the manager within 60 days of opening; the course takes 1–2 days and costs $100–$250. Enroll all food-handling employees in a Food Handler Card course ($7–$15 online, valid 3 years) within 30 days of hire. Provide certificates to DPH at the pre-opening inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Enroll at least one manager in a Certified Food Protection Manager course and all employees in California Food Handler Card courses. What to say: Complete an ANSI-accredited food safety certification exam (ServSafe, Prometric, etc.) for the manager within 60 days of opening; the course costs $100–$250. Enroll all food-handling employees in a Food Handler Card course ($7–$15 online, valid 3 years) within 30 days of hire. Provide certificates to DPH at the pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows the manager certification takes 1-14 days, not 1-2 days."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: After DBI/DPH/Fire final inspections pass, apply for the Health Permit to Operate and sign permit. What to say: Submit the application online with the Business Account Number, Location ID, EIN, and proof of the certified food safety manager. Schedule the final DPH inspection at least two weeks in advance. The $470 permit-to-operate fee includes the initial inspection; the annual license fee for restaurants is $0 for 2026–28.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the Health Permit to Operate and sign permit. What to say: Submit the application online with the Business Account Number, Location ID, EIN, and proof of the certified food safety manager. The $470 permit-to-operate fee includes the initial inspection; the annual license fee for restaurants is $0 for 2026–28.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for the Health Permit to Operate and sign permit. What to say: Submit the application online with the Business Account Number, Location ID, EIN, and proof of the certified food safety manager. The $470 permit-to-operate fee includes the initial inspection; the annual license fee for restaurants is $0 for 2026–28.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: If a Conditional Use Authorization is required, the timeline is 120–300 days from CUA filing to approval: pre-application meeting, environmental review, Section 311 neighborhood notification (300-foot radius, 30-day comment period), Planning Commission hearing, and 30-day appeal period. CUA fees in NCT-FILLMORE for formula retail were approximately $3,150 in 2023 (CPI-adjusted from $2,747) and rise with construction cost; expect $3,100–$6,000 depending on tenant improvement value, per comparable CUA records. If no CUA is required and the project proceeds as a restaurant continuation via agency referral, the timeline is 14–60 days for health plan check and 14–120 days for the building permit, depending on plan complexity and whether a change of occupancy is triggered; government fees would be approximately $2,000–$4,000 (business registration, health plan check $828–$2,207, health permit $470, building permit $800–$15,000 depending on construction valuation, sign permit $300–$1,500). The ranges above assume a CUA is required and include only the CUA application fee and building/health fees; they do not include state registration, insurance, or tenant improvement construction costs. These are times to approval when granted; if the CUA is denied, no timeline to approval applies.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: If a Conditional Use Authorization is required, the timeline is 120–300 days from CUA filing to approval: pre-application meeting, environmental review, Section 311 neighborhood notification (300-foot radius, 30-day comment period), Planning Commission hearing, and 30-day appeal period. CUA fees in NCT-FILLMORE for formula retail were approximately $3,150 in 2023 (CPI-adjusted from $2,747) and rise with construction cost; expect $3,100–$6,000 depending on tenant improvement value, per comparable CUA records. If no CUA is required and the project proceeds as a restaurant continuation via agency referral, the timeline is 14–60 days for health plan check and 14–120 days for the building permit, depending on plan complexity and whether a change of occupancy is triggered; government fees would be approximately $2,000–$4,000 (business registration, health plan check $828–$2,207, health permit $470, building permit $800–$15,000 depending on construction valuation, sign permit $300–$1,500). The ranges above assume a CUA is required and include only the CUA application fee and building/health fees; they do not include state registration, insurance, or tenant improvement construction costs. These are times to approval when granted; if the CUA is denied, no timeline to approval applies.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The CUA records show timelines of 167 and 1,295 days, not 120-300 days; no CUA fee information appears in any cited record; health plan check record shows $828-$2,500, not $828-$2,207; no sign permit catalog entry was cited."
+  }
+ ]
+}

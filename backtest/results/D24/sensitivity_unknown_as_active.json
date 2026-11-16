@@ -1,0 +1,2203 @@
+{
+ "assumption": "every licence whose status on the cut-off day is not in ABC's archive counted as active",
+ "e2e": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCD-HAIGHT",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4.no_alcohol",
+     "text": "The concept is not described as serving alcohol, so the liquor licence rules of Haight Street Alcohol Restricted Use Subdistrict were not applied.",
+     "code_section": null,
+     "source_url": null,
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T11.principal",
+     "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-06-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+     "citations": [
+      "overlay:static:sf:nc_ncd_haight",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "rules_date": "2025-06-04",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.no_alcohol",
+       "text": "The concept is not described as serving alcohol, so the liquor licence rules of Haight Street Alcohol Restricted Use Subdistrict were not applied.",
+       "code_section": null,
+       "source_url": null,
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "not_decided",
+     "missing_inputs": [
+      "whether there is entertainment, and what kind"
+     ],
+     "lines": [
+      {
+       "rule_id": "T6.cell",
+       "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T6.kind_missing",
+       "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area before the project",
+      "whether storefronts are to be merged"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.conditional",
+       "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 3,620 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The space is, or was last, Nighttime Entertainment. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+       "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-06-04, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.amends",
+       "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303(e); 174",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.principal",
+       "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 4 June 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T4.no_alcohol",
+      "text": "The concept is not described as serving alcohol, so the liquor licence rules of Haight Street Alcohol Restricted Use Subdistrict were not applied.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+      ]
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T6.cell",
+      "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T6.kind_missing",
+      "text": "Entertainment is described, but not whether it is a Limited Live Performance or a Place of Entertainment. Nighttime Entertainment is not principally permitted here on every story read, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.conditional",
+      "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 3,620 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The space is, or was last, Nighttime Entertainment. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+      "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T10.amends",
+      "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.principal",
+      "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: changing the conditions of an earlier approval. Not decided as well: use control of the zoning district, nighttime entertainment and use size; the lines above name what is missing: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "entertainment",
+    "approval": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit",
+    "agency": "San Francisco Entertainment Commission",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "entertainment.status",
+      "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+      "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+      "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+      "code_section": "Police Code § 1060.2(b)(2)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)). It has applied in this form since 14 January 2024 (Ord. 250-23, File No. 230861).",
+      "code_section": "Police Code § 1060.2(b)(3)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+      "code_section": "Police Code § 1060.2(b)(4)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+      "code_section": "Police Code § 1060.2(b)(5)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Limited Live Performance Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.1(b)).",
+      "code_section": "Police Code § 1060.2.1(b)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Limited Live Performance Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2.1(b)).",
+      "code_section": "Police Code § 1060.2.1(b)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.2(b)).",
+      "code_section": "Police Code § 1060.2.2(b)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2.2(b)).",
+      "code_section": "Police Code § 1060.2.2(b)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Fixed Place Outdoor Amplified Sound Permit application: until 13 January 2024 this application was also sent to the Department of Public Health (Police Code § 1060.2.2(b); ended by Ord. 250-23, File No. 230861). That step has ended. The permit is still required.",
+      "code_section": "Police Code § 1060.2.2(b)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 4 approvals this concept needs: 2 further review (zoning and use, entertainment permit), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit; Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: whether there is entertainment, and what kind. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the floor area before the project. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: whether storefronts are to be merged. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ },
+ "conditional": {
+  "pathway": {
+   "use": "bar",
+   "use_label": "Bar",
+   "district": "NCD-HAIGHT",
+   "permission": "conditional",
+   "permission_label": "Conditional use",
+   "existing_use": null,
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as these uses: Bar and Nighttime Entertainment (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "T1.entertainment",
+     "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 90, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T4:haight.licence_types_excluded_from_on_sale",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: ABC licence Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not 'on-sale liquor establishments', so the Conditional Use rule for new on-sale establishments does not reach them. Types 64 and 90 were added to the list. The concept needs ABC Type 90, which this rule names (Planning Code § 781.9(c)(1)(B), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(1)(B)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T11.principal",
+     "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-06-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+      "overlay:static:sf:nc_ncd_haight",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "rules_date": "2025-06-04",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Bar already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      },
+      {
+       "rule_id": "T1.entertainment",
+       "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.conditional_use",
+       "text": "A Bar continues at this address and is to be intensified. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.conditional_use",
+       "text": "Nighttime Entertainment continues at this address and is to be intensified. A new Nighttime Entertainment would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:haight.new_on_sale_establishment",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 90, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(2)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      },
+      {
+       "rule_id": "T4:haight.licence_types_excluded_from_on_sale",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: ABC licence Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not 'on-sale liquor establishments', so the Conditional Use rule for new on-sale establishments does not reach them. Types 64 and 90 were added to the list. The concept needs ABC Type 90, which this rule names (Planning Code § 781.9(c)(1)(B), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(1)(B)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      }
+     ],
+     "in_force_from": "2024-01-14",
+     "ordinance": "Ord. 249-23, File No. 230701",
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "not_decided",
+     "missing_inputs": [
+      "whether the business is part of a chain that shares its name, look or menu with other locations"
+     ],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCD-HAIGHT: formula retail is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T5.missing",
+       "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.continues",
+       "text": "Nighttime Entertainment already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.not_new",
+       "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-06-04, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.amends",
+       "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303(e); 174",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.principal",
+       "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 4 June 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.conditional_use",
+      "text": "A Bar continues at this address and is to be intensified. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.conditional_use",
+      "text": "Nighttime Entertainment continues at this address and is to be intensified. A new Nighttime Entertainment would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T6.continues",
+      "text": "Nighttime Entertainment already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T10.amends",
+      "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Changing the conditions of an earlier approval, Nighttime entertainment, Enlarging or intensifying an existing use.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 90",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 90, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-06-04: none within 1,000 ft or in the census tract.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+    ]
+   },
+   {
+    "area": "entertainment",
+    "approval": "Place of Entertainment permit",
+    "agency": "San Francisco Entertainment Commission",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "entertainment.permit",
+      "text": "The description gives the kind of entertainment, so the permit looked up is the Place of Entertainment permit.",
+      "code_section": "Police Code § 1060.1(a); § 1060.5(a); § 1060 (definition of Place of Entertainment)",
+      "source_url": "https://web.archive.org/web/20230520014052/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_police/0-0-0-3313",
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.status",
+      "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+      "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+      "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+      "code_section": "Police Code § 1060.2(b)(2)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)). It has applied in this form since 14 January 2024 (Ord. 250-23, File No. 230861).",
+      "code_section": "Police Code § 1060.2(b)(3)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+      "code_section": "Police Code § 1060.2(b)(4)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+      "code_section": "Police Code § 1060.2(b)(5)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without whether the space is for fewer than 50 people and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "whether the space is for fewer than 50 people",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 5 approvals this concept needs: 2 further review (zoning and use, entertainment permit), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment permit; Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ },
+ "rules_conditional_unsupplied": {
+  "pathway": {
+   "use": "bar",
+   "use_label": "Bar",
+   "district": "NCD-HAIGHT",
+   "permission": "conditional",
+   "permission_label": "Conditional use",
+   "existing_use": null,
+   "change_of_use": "no",
+   "change_of_use_label": "No change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as these uses: Bar and Nighttime Entertainment (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "T1.entertainment",
+     "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 90, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T4:haight.licence_types_excluded_from_on_sale",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: ABC licence Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not 'on-sale liquor establishments', so the Conditional Use rule for new on-sale establishments does not reach them. Types 64 and 90 were added to the list. The concept needs ABC Type 90, which this rule names (Planning Code § 781.9(c)(1)(B), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(1)(B)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T11.principal",
+     "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-06-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+      "overlay:static:sf:nc_ncd_haight",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "rules_date": "2025-06-04",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.continues",
+       "text": "A Bar already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      },
+      {
+       "rule_id": "T1.entertainment",
+       "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.conditional_use",
+       "text": "A Bar continues at this address and is to be intensified. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.cell",
+       "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T3.conditional_use",
+       "text": "Nighttime Entertainment continues at this address and is to be intensified. A new Nighttime Entertainment would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:haight.new_on_sale_establishment",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 90, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(2)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      },
+      {
+       "rule_id": "T4:haight.licence_types_excluded_from_on_sale",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: ABC licence Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not 'on-sale liquor establishments', so the Conditional Use rule for new on-sale establishments does not reach them. Types 64 and 90 were added to the list. The concept needs ABC Type 90, which this rule names (Planning Code § 781.9(c)(1)(B), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(1)(B)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      }
+     ],
+     "in_force_from": "2024-01-14",
+     "ordinance": "Ord. 249-23, File No. 230701",
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "not_decided",
+     "missing_inputs": [
+      "whether the business is part of a chain that shares its name, look or menu with other locations"
+     ],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district NCD-HAIGHT: formula retail is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T5.missing",
+       "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.continues",
+       "text": "Nighttime Entertainment already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T7.not_new",
+       "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-06-04, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.amends",
+       "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 303(e); 174",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.principal",
+       "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "no",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 4 June 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as these uses: Bar and Nighttime Entertainment (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.continues",
+      "text": "A Bar already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.entertainment",
+      "text": "Nighttime Entertainment is read under the nighttime entertainment trigger.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NCD-HAIGHT: a Bar on the first story is a conditional use (Planning Code § 719, in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.conditional_use",
+      "text": "A Bar continues at this address and is to be intensified. A new Bar would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.cell",
+      "text": "Zoning district NCD-HAIGHT: Nighttime Entertainment on the first story is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T3.conditional_use",
+      "text": "Nighttime Entertainment continues at this address and is to be intensified. A new Nighttime Entertainment would be a conditional use here, and a conditional use may not be significantly altered, enlarged or intensified without a new Conditional Use (Planning Code § 178; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 178(a), (b), (c)(1), (d); 186.1(a), (b), (d); 181(a), (f), (i); 182(a), (c)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-1.7-compliance/sec.-178.-conditional-uses",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T4:haight.new_on_sale_establishment",
+      "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 90, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 781.9(c)(2)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+      "citations": [
+       "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+      ]
+     },
+     {
+      "rule_id": "T4:haight.licence_types_excluded_from_on_sale",
+      "text": "Haight Street Alcohol Restricted Use Subdistrict: ABC licence Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not 'on-sale liquor establishments', so the Conditional Use rule for new on-sale establishments does not reach them. Types 64 and 90 were added to the list. The concept needs ABC Type 90, which this rule names (Planning Code § 781.9(c)(1)(B), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 781.9(c)(1)(B)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+      "citations": [
+       "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+      ]
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCD-HAIGHT: formula retail is a conditional use (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T6.continues",
+      "text": "Nighttime Entertainment already exists at this address and continues, so the control for a new use was not applied. See enlarging or intensifying an existing use.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.not_new",
+      "text": "The use is not new, merged or enlarged, so the use size control was not applied.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T10.amends",
+      "text": "The description says the conditions of an earlier approval are to be changed. Changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use (Planning Code § 303(e); this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.principal",
+      "text": "Hours: a closing time of 2 a.m. falls inside the principally permitted hours (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: enlarging or intensifying an existing use and changing the conditions of an earlier approval. Not decided as well: formula retail; the lines above name what is missing: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 90",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 90, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-06-04: none within 1,000 ft or in the census tract.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+    ]
+   },
+   {
+    "area": "entertainment",
+    "approval": "Place of Entertainment permit",
+    "agency": "San Francisco Entertainment Commission",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "entertainment.permit",
+      "text": "The description gives the kind of entertainment, so the permit looked up is the Place of Entertainment permit.",
+      "code_section": "Police Code § 1060.1(a); § 1060.5(a); § 1060 (definition of Place of Entertainment)",
+      "source_url": "https://web.archive.org/web/20230520014052/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_police/0-0-0-3313",
+      "citations": []
+     },
+     {
+      "rule_id": "entertainment.status",
+      "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+      "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+      "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+      "code_section": "Police Code § 1060.2(b)(2)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)). It has applied in this form since 14 January 2024 (Ord. 250-23, File No. 230861).",
+      "code_section": "Police Code § 1060.2(b)(3)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+      "code_section": "Police Code § 1060.2(b)(4)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+      "code_section": "Police Code § 1060.2(b)(5)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1511 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The last use of the space, as described, is Bar and Nighttime Entertainment. The proposed use is Bar and Nighttime Entertainment, so this is not a change of use.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without whether the space is for fewer than 50 people and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "whether the space is for fewer than 50 people",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 5 approvals this concept needs: 2 further review (zoning and use, entertainment permit), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment permit; Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space"
+   }
+  ]
+ }
+}

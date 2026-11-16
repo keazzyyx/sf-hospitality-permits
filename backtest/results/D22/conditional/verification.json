@@ -1,0 +1,560 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 35,
+  "supported": 6,
+  "trimmed": 10,
+  "downgraded": 12,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Zoning district NCT-MISSION: a Restaurant on the first story is a conditional use under Planning Code Section 754, in force from January 14, 2024 (Ordinance 249-23).",
+   "verdict": "partially_supported",
+   "supported_text": "Zoning district NCT-MISSION: Planning Code Section 754.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Zoning district NCT-MISSION: Planning Code Section 754.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCT-MISSION"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Mission Alcoholic Beverage Special Use District: any proposed Restaurant in the sub-area east of the western NCT boundary and north of Cesar Chavez requires Conditional Use under Planning Code Section 249.60(f)(1), regardless of alcohol service.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Mission Alcoholic Beverage Special Use District: any proposed Restaurant in the sub-area east of the western NCT boundary and north of Cesar Chavez requires Conditional Use under Planning Code Section 249.60(f)(1), regardless of alcohol service.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows the district name and code section but does not state the Conditional Use requirement for restaurants, the sub-area definition, or subsection (f)(1)."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "NCT-MISSION caps eating and drinking uses (Restaurants, Limited Restaurants, Bars) at 179 total (Planning Code Section 754 Table Note 7, in force from January 14, 2024); a new Restaurant is not permitted if it would exceed that cap, but the records do not show how many there are now.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "NCT-MISSION caps eating and drinking uses (Restaurants, Limited Restaurants, Bars) at 179 total (Planning Code Section 754 Table Note 7, in force from January 14, 2024); a new Restaurant is not permitted if it would exceed that cap, but the records do not show how many there are now.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not contain the 179 cap, Table Note 7, the January 14, 2024 date, or the rule about exceeding the cap."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "As of September 2024, a nearby limited restaurant at 3218 21st St (164 m away) was approved as a permitted use because the district's total eating and drinking uses numbered 167, below the 179 cap.",
+   "verdict": "partially_supported",
+   "supported_text": "As of September 2024, a nearby limited restaurant at 3218 21st St (164 m away) was approved as a permitted use because the district's total eating and drinking uses did not exceed 167.",
+   "cut_problem": "adds or moves 'did': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "As of September 2024, a nearby limited restaurant at 3218 21st St (164 m away) was approved as a permitted use because the district's total eating and drinking uses numbered 167, below the 179 cap.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record states uses 'do not exceed 167', not that they 'numbered 167', and does not mention a 179 cap."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Two prior Conditional Use Authorization applications at the adjacent 2575 Mission St for full-service restaurants with Type 47 licenses and mezzanine dining were withdrawn (2021-005782CUA, filed June 2021, withdrawn August 2024) and cancelled (2018-016814CUA, filed December 2018, cancelled June 2021), both after multi-year delays.",
+   "verdict": "partially_supported",
+   "supported_text": "Two prior Conditional Use Authorization applications at the adjacent 2575 Mission St for restaurants with Type 47 licenses were withdrawn (2021-005782CUA, filed June 2021, withdrawn August 2024) and cancelled (2018-016814CUA, filed December 2018, cancelled June 2021).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Two prior Conditional Use Authorization applications at the adjacent 2575 Mission St for full-service restaurants with Type 47 licenses and mezzanine dining were withdrawn (2021-005782CUA, filed June 2021, withdrawn August 2024) and cancelled (2018-016814CUA, filed December 2018, cancelled June 2021), both after multi-year delays.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records don't specify 'full-service' or 'mezzanine dining' for both applications, and don't characterize the time spans as 'delays.'"
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "One nearby restaurant CUA at 3224 22nd St (108 m) for a change of use from limited to full restaurant with a Type 41 license was approved with conditions in September 2023 after three months (filed June, decided September).",
+   "verdict": "partially_supported",
+   "supported_text": "One nearby restaurant CUA at 3224 22nd St (108 m) for a change of use from limited to full restaurant was approved with conditions in September 2023 after three months (filed June, decided September).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "One nearby restaurant CUA at 3224 22nd St (108 m) for a change of use from limited to full restaurant was approved with conditions in September 2023 after three months (filed June, decided September).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required because a Restaurant in the Mission Alcohol SUD sub-area needs conditional use under Section 249.60(f)(1), but the district also caps total eating and drinking uses at 179 and the records do not show the current count.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization is required because a Restaurant in the Mission Alcohol SUD sub-area needs conditional use, but the district also caps total eating and drinking uses at 179 and the records do not show the current count.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2020-008213MIS",
+    "app:datasf_planning:2021-005782CUA",
+    "app:datasf_planning:2018-016814CUA",
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "The records cite § 754 and special use district controls as requiring conditional use, but do not cite Section 249.60(f)(1)."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Mission Alcoholic Beverage Special Use District: a Restaurant operating as a Bona Fide Eating Place may serve alcohol, and the district adds no Conditional Use for the licence itself (Planning Code Section 249.60(b)(1)(A)).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Mission Alcoholic Beverage Special Use District: a Restaurant operating as a Bona Fide Eating Place may serve alcohol, and the district adds no Conditional Use for the licence itself (Planning Code Section 249.60(b)(1)(A)).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown' and does not state the specific permissions or conditional use requirements claimed."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "The district requires every liquor establishment to comply with Planning Code Section 202.2 operating conditions, and new or relocated establishments must provide outside lighting, keep window signage to 33% of the facade, and maintain 50% clear glazing on street-facing facades (Planning Code Section 249.60(d)).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The district requires every liquor establishment to comply with Planning Code Section 202.2 operating conditions, and new or relocated establishments must provide outside lighting, keep window signage to 33% of the facade, and maintain 50% clear glazing on street-facing facades (Planning Code Section 249.60(d)).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district and code section but does not state any of the specific requirements listed in the sentence."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "Within 500 feet there are 12 active on-sale ABC licenses, including 3 Type 47 full-liquor restaurant licenses, 4 Type 41 beer-and-wine restaurant licenses, and 2 Type 48 full-liquor bar licenses, triggering an undue-concentration flag.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Within 500 feet there are 12 active on-sale ABC licenses, including 3 Type 47 full-liquor restaurant licenses, 4 Type 41 beer-and-wine restaurant licenses, and 2 Type 48 full-liquor bar licenses, triggering an undue-concentration flag.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show only 2 active Type 41 licenses (621463, 647286), not 4; license 633857 is REV PENDING, not active."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The rules could not determine the ABC licence status because the concept description does not specify what alcohol will be served (beer and wine, or full liquor) or how a licence would be obtained (new application or transfer).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules could not determine the ABC licence status because the concept description does not specify what alcohol will be served (beer and wine, or full liquor) or how a licence would be obtained (new application or transfer).",
+   "confidence": null,
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "stat:density",
+    "license:abc:629927",
+    "license:abc:478662",
+    "license:abc:520880",
+    "license:abc:633857",
+    "license:abc:647286",
+    "license:abc:621463",
+    "license:abc:591927",
+    "license:abc:310407"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "The space was last used as a bar: agency referrals approved continuation of an existing bar use in 2005 (MB0500602, filed April 2005, approved May 2005) and 1997 (MA9700408, filed May 1997, approved May 1997), but no active ABC license is on file and the records indicate the space has been vacant since approximately 2017.",
+   "verdict": "partially_supported",
+   "supported_text": "Agency referrals approved continuation of an existing bar use in 2005 (MB0500602, filed April 2005, approved May 2005) and 1997 (MA9700408, filed May 1997, approved May 1997).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Agency referrals approved continuation of an existing bar use in 2005 (MB0500602, filed April 2005, approved May 2005) and 1997 (MA9700408, filed May 1997, approved May 1997).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MB0500602",
+    "app:datasf_planning:MA9700408"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The FY2026–27 health permit application fee is $470 (includes initial inspection), with an annual license fee of $0 for restaurants for 2026–28; plan check fees run $828 (small remodel, 3 hours) to $2,207 (new restaurant, 8 hours), with extra review at $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The FY2026–27 health permit application fee is $470 (includes initial inspection), with an annual license fee of $0 for restaurants for 2026–28; plan check fees run $828 (small remodel, 3 hours) to $2,207 (new restaurant, 8 hours), with extra review at $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:sf.health_plan_check"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "Limited cooking (versus a full commercial kitchen with multiple hoods, fryers, and char-broilers) reduces the DPH plan-check timeline and cost, typically qualifying for the $828 small-remodel fee tier rather than the $2,207 new-restaurant tier.",
+   "verdict": "partially_supported",
+   "supported_text": "The $828 small-remodel fee tier and the $2,207 new-restaurant tier.",
+   "cut_problem": "keeps 'typically qualifying for the $828 small-remodel fee tier rather than the $2,207 new-restaurant tier', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Limited cooking (versus a full commercial kitchen with multiple hoods, fryers, and char-broilers) reduces the DPH plan-check timeline and cost, typically qualifying for the $828 small-remodel fee tier rather than the $2,207 new-restaurant tier.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record lists the fee tiers but does not state that limited cooking qualifies for one tier versus another or that it reduces timeline and cost."
+  },
+  {
+   "item_id": "row:health:3",
+   "kind": "finding",
+   "original": "A certified food safety manager must be on staff within 60 days of opening, with the certificate submitted at the pre-opening inspection; the 5-year ServSafe or equivalent course costs $100–$250.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A certified food safety manager must be on staff within 60 days of opening, with the certificate submitted at the pre-opening inspection; the 5-year ServSafe or equivalent course costs $100–$250.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A Health Permit to Operate is required and is issued after plan check and pre-opening inspection without a hearing; the concept's limited cooking (versus full commercial kitchen) simplifies the plan review, but a grease interceptor and FOG program registration are still required.",
+   "verdict": "partially_supported",
+   "supported_text": "A Health Permit to Operate is required and is issued after plan check and pre-opening inspection without a hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A Health Permit to Operate is required and is issued after plan check and pre-opening inspection without a hearing.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:MB0500602",
+    "app:datasf_planning:MA9700408",
+    "catalog:sf.health_permit",
+    "catalog:sf.health_plan_check",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The concept merges two storefronts (2573 and 2575 Mission St); storefront merger or expansion projects on the Mission corridor have faced extended timelines (8+ years) and frequent withdrawals or cancellations, even for established operators.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The concept merges two storefronts (2573 and 2575 Mission St); storefront merger or expansion projects on the Mission corridor have faced extended timelines (8+ years) and frequent withdrawals or cancellations, even for established operators.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show two specific projects (one expansion, one restaurant) with different timelines, but don't state the generalizations about typical patterns."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "Tenant improvements for a restaurant with limited cooking (kitchen hood, ADA upgrades, restrooms, finishes) typically require 14–120 days for plan review and permit issuance at DBI, with fees ranging from $800 to $15,000 based on construction valuation.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Tenant improvements for a restaurant with limited cooking (kitchen hood, ADA upgrades, restrooms, finishes) typically require 14–120 days for plan review and permit issuance at DBI, with fees ranging from $800 to $15,000 based on construction valuation.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a); incomplete plan sets that bounce between departments add 2–3 weeks per iteration.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a); incomplete plan sets that bounce between departments add 2–3 weeks per iteration.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Record mentions plan sets bounce between departments but does not state routing to Planning, Section 175(a), or the 2-3 week timeframe."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit is required for tenant improvements, but the records do not establish whether a Planning Code change of use or a Building Code change of occupancy applies, so the permit type and scope cannot be determined without the prior use and occupancy group.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A building permit is required for tenant improvements, but the records do not establish whether a Planning Code change of use or a Building Code change of occupancy applies, so the permit type and scope cannot be determined without the prior use and occupancy group.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2016-002572CUA",
+    "app:datasf_planning:2021-005782CUA",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Sidewalk maintenance: maintain the main entrance and all sidewalks within a one-block radius in a clean and sanitary condition, free of litter associated with the business during business hours. Basis: Standard condition imposed on the nearby approved restaurant CUA at 3224 22nd St (2023-005278CUA) and prescribed by Planning Code Section 202.2 for eating and drinking uses; required by Article 1, Section 34 of the San Francisco Police Code.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sidewalk maintenance: maintain the main entrance and all sidewalks within a one-block radius in a clean and sanitary condition, free of litter associated with the business during business hours. Basis: Standard condition imposed on the nearby approved restaurant CUA at 3224 22nd St (2023-005278CUA); required by Article 1, Section 34 of the San Francisco Police Code.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not state that Planning Code Section 202.2 prescribes this condition for eating and drinking uses."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing: when located within an enclosed space, the premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise does not exceed the decibel levels in the San Francisco… Basis: Standard condition for eating and drinking uses in the Mission corridor, imposed on the nearby approved CUA at 3224 22nd St and prescribed by Planning Code Section 202.2.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Soundproofing: when located within an enclosed space, the premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise does not exceed the decibel levels in the San Francisco… Basis: Imposed on the nearby approved CUA at 3224 22nd St.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Soundproofing: when located within an enclosed space, the premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise does not exceed the decibel levels in the San Francisco… Basis: Imposed on the nearby approved CUA at 3224 22nd St.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Odor control: appropriate odor control equipment shall be installed in conformance with approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St and prescribed by Planning Code Section 202.2; limited cooking reduces the equipment requirement versus a full kitchen.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Odor control: appropriate odor control equipment shall be installed in conformance with approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Odor control: appropriate odor control equipment shall be installed in conformance with approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Trash management: garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company, pursuant to DPW guidelines. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St and prescribed by Planning Code Section 202.2.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Trash management: garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company, pursuant to DPW guidelines. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Trash management: garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company, pursuant to DPW guidelines. Basis: Standard condition for eating and drinking uses, imposed on the nearby approved CUA at 3224 22nd St.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Community liaison: prior to issuance of a building permit or ABC license (if applicable), appoint a community liaison officer to deal with issues of concern to nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with written notice of the li… Basis: Standard condition imposed on the nearby approved CUA at 3224 22nd St and on other Mission corridor restaurant approvals; required by Planning Code Section 202.2 for conditional-use eating and drinking establishments.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Community liaison: appoint a community liaison officer to deal with issues of concern to nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with written notice of the li… Basis: Standard condition imposed on the nearby approved CUA at 3224 22nd St.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Community liaison: appoint a community liaison officer to deal with issues of concern to nearby property owners and occupants, and provide the Zoning Administrator and registered neighborhood groups with written notice of the li… Basis: Standard condition imposed on the nearby approved CUA at 3224 22nd St.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Mission Alcoholic Beverage SUD good-neighbor requirements (if alcohol is served): provide outside lighting, keep window signage to 33% of the street-facing facade, and maintain 50% clear glazing on street-facing facades. Basis: Required by Planning Code Section 249.60(d) for all new, relocated, or expanded liquor establishments in the Mission Alcohol SUD; applies even to restaurants that serve alcohol incidental to meals.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms the district exists but does not state the specific requirements or their applicability."
+  },
+  {
+   "item_id": "condition:6",
+   "kind": "condition",
+   "original": "Expected condition: Validity: the authorization is valid for three years from the effective date of the Motion; DBI must issue a building or site permit to commence the approved use within that period, or the applicant must seek a renewal. Basis: Standard condition imposed on all Conditional Use Authorizations in San Francisco, stated in the nearby approved CUA at 3224 22nd St (2023-005278CUA).",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Validity: the authorization is valid for three years from the effective date of the Motion; DBI must issue a building or site permit to commence the approved use within that period, or the applicant must seek a renewal. Basis: Standard condition stated in the nearby approved CUA at 3224 22nd St (2023-005278CUA).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Validity: the authorization is valid for three years from the effective date of the Motion; DBI must issue a building or site permit to commence the approved use within that period, or the applicant must seek a renewal. Basis: Standard condition stated in the nearby approved CUA at 3224 22nd St (2023-005278CUA).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-005278CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms the district count is below 179 and the mezzanine does not trigger the second-story prohibition, file a Conditional Use Authorization application with San Francisco Planning for a Restaurant use under Planning Code Section 303. What to say: State that the project is a new Restaurant use in the Mission Alcoholic Beverage Special Use District sub-area, which requires Conditional Use Authorization under Planning Code Section 249.60(f)(1), regardless of alcohol service. Describe the concept as a neighborhood-serving restaurant with limited cooking, open until 2 am (but not after), occupying 3,953 sq ft on the first story and mezzanine, with tenant improvements including kitchen hood, finishes, and ADA upgrades. If alcohol will be served, describe it as incidental to meals and commit to the Mission Alcohol SUD good-neighbor requirements (outside lighting, 33% window signage, 50% clear glazing). Include a community outreach plan (pre-filing meetings with neighbors, appointment of a liaison officer) and commit to standard operating conditions: sidewalk and trash maintenance within one block, soundproofing, odor control, and compl…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File a Conditional Use Authorization application with San Francisco Planning for a Restaurant use. What to say: State that the project is a new Restaurant use in the Mission Alcoholic Beverage Special Use District sub-area.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm the address is in the Mission Alcohol SUD and reference § 249.60, but do not state the specific CU requirements, procedures, or good-neighbor conditions described."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File a Public Health plan check application with San Francisco Department of Public Health for a new or remodeled food facility, concurrent with or immediately after the CUA filing. What to say: Submit two sets of scaled drawings, interior and exterior photos, a menu describing food preparation, and the Business Account Number (BAN) and Location ID (LIN) from the SF Business Registration. Describe the cooking type as limited (no char-broilers or multiple hoods), which qualifies for the $828 small-remodel plan-check fee tier rather than the $2,207 new-restaurant tier. Request a pre-final inspection at 80% construction completion and a final inspection before opening, booking each with the plan reviewer at least two weeks in advance.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File a Public Health plan check application with San Francisco Department of Public Health for a new or remodeled food facility. What to say: The $828 small-remodel plan-check fee tier rather than the $2,207 new-restaurant tier. Request a pre-final inspection at 80% construction completion and a final inspection before opening, booking each with the plan reviewer at least two weeks in advance.",
+   "cut_problem": "keeps 'Describe the cooking type as limited (no char-broilers or multiple hoods), which qualifies for the $828 small-remodel plan-check fee tier', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not specify CUA timing, submission requirements (drawings, photos, BAN/LIN), or how to describe cooking type to qualify for lower fee tier."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Once the CUA is approved by the Planning Commission, file a building permit application with San Francisco Department of Building Inspection for tenant improvements, with plans stamped by an architect and routed to Planning, DPH, and the Fire Department. What to say: Submit a complete plan set showing the kitchen layout, hood and suppression system, restrooms, ADA path of travel, finishes, and any structural work for the mezzanine or storefront merger. Route the application to Planning for zoning review (referral under Planning Code Section 175(a)), to DPH for health plan-check sign-off, and to the Fire Department for hood suppression review. Confirm that the DPH plan check is already approved or will be approved before DBI sign-off. Ensure that licensed subcontractors pull separate electrical, plumbing, and mechanical permits. Budget 14–120 days for plan review and permit issuance, with fees of $800–$15,000 based on construction valuation.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File a building permit application with San Francisco Department of Building Inspection for tenant improvements, with plans stamped by an architect. What to say: Submit a complete plan set showing the kitchen layout, hood and suppression system, restrooms, ADA path of travel, and finishes. Ensure that licensed subcontractors pull separate electrical, plumbing, and mechanical permits. Budget 14–120 days for plan review and permit issuance, with fees of $800–$15,000 based on construction valuation.",
+   "cut_problem": "adds or moves 'finishes': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not state CUA prerequisite, routing to Planning/DPH/Fire Department, Planning Code Section 175(a), DPH plan check timing, or mezzanine/storefront merger work."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: During construction, register for the Fats, Oils & Grease (FOG) program with SF Public Utilities Commission and install the required grease interceptor before DBI final sign-off. What to say: Submit the grease interceptor installation plan to SFPUC; inspectors will assign a Discharger Category (1–3) based on the limited cooking type, which dictates the device size. After installation, submit the Installation Verification Form to earn a 14.2% reduction on the sewer portion of the utility bill. An undersized or missing interceptor will cause DBI to withhold final sign-off.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: During construction, register for the Fats, Oils & Grease (FOG) program with SF Public Utilities Commission and install the required grease interceptor before DBI final sign-off. What to say: Inspectors will assign a Discharger Category (1–3). After installation, submit the Installation Verification Form to earn a 14.2% reduction on the sewer portion of the utility bill. An undersized or missing interceptor will cause DBI to withhold final sign-off.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record mentions Installation Verification Form but not an installation plan; says category dictates device type, not size; doesn't say assignment is based on cooking type."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: After the building permit final inspection and DPH plan-check approval, schedule a DPH pre-opening inspection at least one month before the target opening date. What to say: Confirm that the facility matches the approved plans, that a certified food safety manager is on staff (submit the ServSafe or equivalent certificate), and that all hand sinks, surfaces, hot water, and equipment are operational. Walk the space against the DPH checklist a week before the inspection to avoid common failures (missing hand sinks, unsealed surfaces, no hot water). If the inspection passes, DPH will issue the Health Permit to Operate (FY2026–27: $470 application fee, $0 annual license fee for 2026–28).",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: After DPH plan-check approval, schedule a DPH pre-opening inspection at least one month before the target opening date. What to say: Confirm that the facility matches the approved plans, that a certified food safety manager is on staff, and that all hand sinks, surfaces, hot water, and equipment are operational. Walk the space against the DPH checklist a week before the inspection to avoid common failures (missing hand sinks, unsealed surfaces, no hot water). If the inspection passes, DPH will issue the Health Permit to Operate (FY2026–27: $470 application fee, $0 annual license fee for 2026–28).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record doesn't mention building permit final inspection as a prerequisite or ServSafe certificates specifically."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: File for a sign permit with San Francisco Planning and DBI for exterior business signage, after the CUA is approved. What to say: Submit a sign design showing the exterior sign, awning, or illuminated signage; Planning reviews for size and illumination rules under the zoning district, and DBI issues the permit. Historic districts and Article 10/11 buildings take longer. Budget 7–45 days and $300–$1,500 in fees.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File for a sign permit with San Francisco Planning and DBI for exterior business signage. What to say: Submit a sign design showing the exterior sign, awning, or illuminated signage; Planning reviews for size and illumination rules under the zoning district, and DBI issues the permit. Historic districts and Article 10/11 buildings take longer. Budget 7–45 days and $300–$1,500 in fees.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File for a sign permit with San Francisco Planning and DBI for exterior business signage. What to say: Submit a sign design showing the exterior sign, awning, or illuminated signage; Planning reviews for size and illumination rules under the zoning district, and DBI issues the permit. Historic districts and Article 10/11 buildings take longer. Budget 7–45 days and $300–$1,500 in fees.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.sign_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: In the final two weeks before opening, subscribe to ASCAP and BMI public performance licenses to play recorded music in the restaurant. What to say: Register online with ASCAP and BMI (about $300–$2,500 per year per catalog, formula-based on occupancy and music use); federal copyright law requires a blanket license to play music publicly (background music, live covers, TV with music). The licenses are effective immediately upon sign-up, so schedule this step for the final two weeks to avoid paying for months before opening.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: In the final two weeks before opening, subscribe to ASCAP and BMI public performance licenses to play recorded music in the restaurant. What to say: Register online with ASCAP and BMI (about $300–$2,500 per year per catalog, formula-based on occupancy and music use); federal copyright law requires a blanket license to play music publicly (background music, live covers, TV with music). The licenses are effective immediately upon sign-up, so schedule this step for the final two weeks to avoid paying for months before opening.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day range (120–300 days) and cost range ($3,100–$15,000) are for the Conditional Use Authorization and the Health Permit to Operate, the two approvals in the entitlement path when they are granted. The CUA timeline is based on the comparable case at 3224 22nd St, which took three months (about 97 days) from filing to approval in 2023, and on typical San Francisco CUA timelines of 4–10 months including pre-application meetings, environmental review, hearing scheduling, and the 30-day appeal period. The Health Permit takes 14–45 days after plan check (21–60 days) and construction. Government costs include the CUA application fee (about $3,100 for a no-construction case, CPI-adjusted annually), the DPH plan-check fee ($828–$2,207), the Health Permit application fee ($470), and the Business Registration Certificate ($55–$700). Building permit fees ($800–$15,000) are included because tenant improvements are required, though the building row status is insufficient information. Sign permit fees ($300–$1,500) are included because exterior signage is described. The timeline is to approval; two prior CUA applications at this address were withdrawn or cancelled after 2–3 years, so execution risk is high if the mezzanine triggers the second-story restaurant prohibition or if the district cap has been reached.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day range (120–300 days) and cost range ($3,100–$15,000) are for the Conditional Use Authorization and the Health Permit to Operate, the two approvals in the entitlement path when they are granted. The CUA timeline is based on the comparable case at 3224 22nd St, which took three months (about 97 days) from filing to approval in 2023, and on typical San Francisco CUA timelines of 4–10 months including pre-application meetings, environmental review, hearing scheduling, and the 30-day appeal period. The Health Permit takes 14–45 days after plan check (21–60 days) and construction. Government costs include the CUA application fee (about $3,100 for a no-construction case, CPI-adjusted annually), the DPH plan-check fee ($828–$2,207), the Health Permit application fee ($470), and the Business Registration Certificate ($55–$700). Building permit fees ($800–$15,000) are included because tenant improvements are required, though the building row status is insufficient information. Sign permit fees ($300–$1,500) are included because exterior signage is described. The timeline is to approval; two prior CUA applications at this address were withdrawn or cancelled after 2–3 years, so execution risk is high if the mezzanine triggers the second-story restaurant prohibition or if the district cap has been reached.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited catalog entries do not include a CUA permit entry; the stated time and cost ranges explicitly include CUA fees and timeline not in the catalogs."
+  }
+ ]
+}

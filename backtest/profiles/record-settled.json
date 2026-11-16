@@ -1,0 +1,2602 @@
+{
+ "cases": {
+  "D01": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Elena's Restaurant",
+    "floor_area_sqft": 3995,
+    "floor_area_before_sqft": null,
+    "seats": 98,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "Two vacant ground-floor tenant spaces in a one-storey commercial building (243: former Restaurant, \"Orexi\", left 2021; 255: former Retail, \"SF Gold Buyer\", left 2020). Motion: \"Both tenant spaces currently sit vacant.\"",
+    "changes_existing_business": null,
+    "merges_storefronts": true,
+    "story": "first",
+    "closing_hour": "00:00",
+    "opening_hour": "10:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": true,
+    "historic_building": false,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "vacant",
+     "second": [
+      "vacant",
+      "restaurant",
+      "retail"
+     ],
+     "answer": [
+      "restaurant",
+      "retail",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21132 finding 3 (243: \"Orexi\", a Restaurant Use until 2021; 255: \"SF Gold Buyer\", a Retail Use, until 2020; \"Both tenant spaces currently sit vacant\"); triggers.json existing_use",
+     "why": "The record states both last uses and that both spaces are vacant; all three are listed."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21132 findings 2-3; triggers.json existing_use",
+     "why": "Both spaces are vacant and a new Restaurant is established: no existing business stays, so the record says nothing this field can hold."
+    },
+    {
+     "field": "new_construction",
+     "first": true,
+     "second": false,
+     "answer": true,
+     "took": "first",
+     "source": "Motion 21132 finding 2 (\"will also construct a new detached storage shed within the rear yard\"), finding 6.C (shed 8 ft high, about 164 sq ft) and finding 8.C (\"The subject building will only be minimally expanded beyond its existing envelope\")",
+     "why": "The record says in words that a new structure is built and the building is expanded; \"false\" would need the record to say nothing new is built. The restaurant itself is in the existing 1941 building."
+    }
+   ]
+  },
+  "D02": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": [
+     "41"
+    ],
+    "alcohol_transaction": "premises_transfer",
+    "formula_retail": null,
+    "operator_name": "Mona Lisa Mare e Monti",
+    "floor_area_sqft": 2008,
+    "floor_area_before_sqft": 2008,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant (2,008 sq ft ground-floor unit; Mona Lisa Mare e Monti since February 2022) with ABC Type 41. A Type 47 was authorised here by CU 1986.553C (Motion 10924) and left in 2010.",
+    "changes_existing_business": "none",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": false,
+    "prior_approval_limits": "Conditional Use 1986.553C (Motion No. 10924, 1987) authorised a Type 47 licence for the restaurant then at this address; that licence was auctioned off and left the neighbourhood in 2010. The record quotes no limits from it and cites it as history only.",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "changes_existing_business",
+     "first": "none",
+     "second": "intensify",
+     "answer": "none",
+     "took": "first",
+     "source": "Motion 21166 finding 7.A (\"The size of the continued use remains the same\"), 7.B(4) (\"does not require any additional tenant improvements\"); triggers.json facts_needed (\"existing Restaurant, no change of use or enlargement\") and considered_not_triggers (§ 178 not relied on)",
+     "why": "Same restaurant, same size, no works; the record never calls the Type 41 to Type 47 change an intensification. Same reading as the stated convention for N05 (a licence change with no enlargement gives \"none\")."
+    }
+   ],
+   "form_only": [
+    {
+     "field": "existing_use_stated",
+     "first": "restaurant",
+     "second": [
+      "restaurant"
+     ],
+     "answer": [
+      "restaurant"
+     ],
+     "why": "Same content, different form (order, or a single value against a one-item list); not counted as a difference."
+    }
+   ]
+  },
+  "D03": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "bar",
+     "nighttime_entertainment"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "48",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 5478,
+    "floor_area_before_sqft": 5478,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant commercial space; last use a full-service Restaurant (E Tutto Qua, closed 2020; Type 47).",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "floor_area_before_sqft",
+     "first": 5478,
+     "second": null,
+     "answer": 5478,
+     "took": "first",
+     "source": "Motion 21182 Project Description (\"approximately 5,478 square-foot vacant commercial space ... The immediate prior use of this space was a full-service restaurant ... No interior or exterior alterations are proposed\")",
+     "why": "The motion gives one figure for \"this space\", says the prior restaurant used this space and that nothing is altered, so the same figure stands before the project. The record description gives 1,100 + 1,200 sq ft instead.",
+     "note": "triggers.json project_description_on_record gives 1,100 sq ft ground floor plus 1,200 sq ft basement (2,300 sq ft); the motion uses 5,478 sq ft (basement, ground floor, mezzanine). The motion makes no use-size finding."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "vacant",
+     "second": [
+      "vacant",
+      "restaurant"
+     ],
+     "answer": [
+      "restaurant",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21182 Project Description (\"vacant commercial space\"; \"immediate prior use of this space was a full-service restaurant ... closed in 2020\"); triggers.json existing_use",
+     "why": "The record states the space is vacant and names its last use; both are listed."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21182 Project Description: \"No interior or exterior alterations are proposed\"",
+     "why": "A storefront merger is an alteration; the record rules out any. Same sentence on which both readers gave false in D19."
+    },
+    {
+     "field": "entertainment_kind",
+     "first": null,
+     "second": "place_of_entertainment",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21182 Project Description (\"would also establish a Nighttime Entertainment use\"); triggers.json proposed_uses",
+     "why": "The record names the use but not the permit, and nothing in the D03 entry or the motion says which permit is needed. Same treatment as D10, where both readers left it null on the same wording."
+    }
+   ],
+   "form_only": [
+    {
+     "field": "story",
+     "first": [
+      "first",
+      "basement"
+     ],
+     "second": [
+      "basement",
+      "first"
+     ],
+     "answer": [
+      "first",
+      "basement"
+     ],
+     "why": "Same content, different form (order, or a single value against a one-item list); not counted as a difference."
+    }
+   ],
+   "note": "floor_area_before_sqft: triggers.json project_description_on_record gives 1,100 sq ft ground floor plus 1,200 sq ft basement (2,300 sq ft); the motion uses 5,478 sq ft (basement, ground floor, mezzanine). The motion makes no use-size finding."
+  },
+  "D04": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Pacific Catch",
+    "floor_area_sqft": 1378,
+    "floor_area_before_sqft": 689,
+    "seats": null,
+    "occupants": "under 50",
+    "existing_use_stated": [
+     "restaurant",
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "2027 Chestnut: existing Formula Retail Restaurant (Pacific Catch), 689 sq ft. 2025 Chestnut (absorbed): vacant ground-floor retail space, about 689 sq ft. Result: one Restaurant of 1,378 sq ft.",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": true,
+    "story": "first",
+    "closing_hour": "23:00",
+    "opening_hour": "10:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": false,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "occupants",
+     "first": null,
+     "second": "under 50",
+     "answer": "under 50",
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"restaurant under 50 occupants\"); Motion 21149 finding 7.A (\"seating for under 50 patrons\")",
+     "why": "The record states the ceiling in words, and \"under 50\" is the one text value the field takes; no count is given."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "restaurant",
+     "second": [
+      "restaurant",
+      "vacant",
+      "retail"
+     ],
+     "answer": [
+      "restaurant",
+      "retail",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21149 title and finding 2 (existing Restaurant at 2027 Chestnut expands \"into an adjacent, vacant ground floor retail space\"); triggers.json existing_use",
+     "why": "The premises after the project are the continuing Restaurant plus a storefront the record calls vacant retail; all three are stated (same treatment as D12, where both readers listed the absorbed storefront's last use)."
+    }
+   ]
+  },
+  "D05": {
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": [
+     "nighttime_entertainment",
+     "bar"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Another Planet Entertainment",
+    "floor_area_sqft": 24138,
+    "floor_area_before_sqft": 23488,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other"
+    ],
+    "existing_use_text": "Movie Theater (Castro Theatre, about 23,500 to 24,500 gross sq ft per the motion; principally permitted use but nonconforming as to the 4,000 sq ft use-size limit).",
+    "changes_existing_business": "enlarge_and_intensify",
+    "merges_storefronts": null,
+    "story": [
+     "first",
+     "second"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": true,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "floor_area_sqft",
+     "first": 24813,
+     "second": 24138,
+     "answer": 24138,
+     "took": "second",
+     "source": "Motion 21334 finding 6.B (\"With a floor area of 24,138 gross square feet\"); Exhibit B gross square footage table (proposed total 24,138)",
+     "why": "24,138 is the only after-project figure the motion states; 24,813 is a sum (24,488 + 325) the record never gives.",
+     "note": "Finding 6.C gives \"current floor area of 24,488 gross square feet\" plus a 325 sq ft addition (24,813 by addition, not stated). Every version is far over the 4,000 sq ft limit."
+    },
+    {
+     "field": "floor_area_before_sqft",
+     "first": 24488,
+     "second": 23488,
+     "answer": 23488,
+     "took": "second",
+     "source": "Motion 21334 finding 3 (\"totaling 23,488 square feet\"); Exhibit B gross square footage table (existing total 23,488)",
+     "why": "Two findings disagree (3: 23,488; 6.C: 24,488). 23,488 pairs with the 24,138 of finding 6.B and with the plan table; 24,488 matches nothing else in the record. The other figure is in the note.",
+     "note": "Finding 6.C (the use-size finding) says \"current floor area of 24,488 gross square feet\". The plan table shows +325 sq ft at both basement and orchestra levels (23,488 to 24,138)."
+    },
+    {
+     "field": "amplified_sound",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "Motion 21334 finding 8(1)(C) (\"The Project does not propose electronic amplification between midnight and six a.m.\"); finding 6.A (Place of Entertainment authorization required); Exhibit B plans (\"SOUND/ LIGHTING MIX\" position); condition 6 (live music and comedy acts)",
+     "why": "The record limits amplification only between midnight and 6 a.m. and shows a sound mixing position for a live-music venue; it never says \"amplified sound\" in so many words, so this rests on those statements."
+    }
+   ],
+   "form_only": [
+    {
+     "field": "existing_use_stated",
+     "first": "other",
+     "second": [
+      "other"
+     ],
+     "answer": [
+      "other"
+     ],
+     "why": "Same content, different form (order, or a single value against a one-item list); not counted as a difference."
+    }
+   ],
+   "note": "floor_area_sqft: Finding 6.C gives \"current floor area of 24,488 gross square feet\" plus a 325 sq ft addition (24,813 by addition, not stated). Every version is far over the 4,000 sq ft limit. | floor_area_before_sqft: Finding 6.C (the use-size finding) says \"current floor area of 24,488 gross square feet\". The plan table shows +325 sq ft at both basement and orchestra levels (23,488 to 24,138)."
+  },
+  "D06": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 3580,
+    "floor_area_before_sqft": 3580,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "laundromat",
+     "vacant"
+    ],
+    "existing_use_text": "Laundromat (The Washhouse Laundromat, about 3,580 sq ft on ground floor and basement; closed May 30, 2023, vacant at hearing; two apartments above).",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "laundromat",
+     "second": [
+      "laundromat",
+      "vacant"
+     ],
+     "answer": [
+      "laundromat",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21367 finding 2 (\"the commercial tenant space is currently vacant, the laundromat closed on May 30th, 2023\"); finding 3 (\"a single vacant commercial space\"); triggers.json existing_use",
+     "why": "The record states the last use (Laundromat) and that the space is vacant."
+    }
+   ]
+  },
+  "D07": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Sisterita",
+    "floor_area_sqft": 1900,
+    "floor_area_before_sqft": 1900,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Limited Restaurant, about 1,900 sq ft at ground level, most recently d.b.a. Schilling & Co. (motion p. 1). The record description calls it 'an existing restaurant', which is not the Planning Code use.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "formula_retail",
+     "first": null,
+     "second": false,
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21259 (no mention of formula retail or of a chain); triggers.json facts_needed lists \"not Formula Retail\" only as a fact the rule needs",
+     "why": "The record does not say either way; \"existing small business\" and CB3P processing do not state it (N04 is a CB3P Formula Retail case)."
+    }
+   ],
+   "form_only": [
+    {
+     "field": "existing_use_stated",
+     "first": "limited_restaurant",
+     "second": [
+      "limited_restaurant"
+     ],
+     "answer": [
+      "limited_restaurant"
+     ],
+     "why": "Same content, different form (order, or a single value against a one-item list); not counted as a difference."
+    }
+   ]
+  },
+  "D08": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 1800,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": 26,
+    "existing_use_stated": [
+     "limited_restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Limited Restaurant (vacant ground-floor space at the hearing); about 1,800 sq ft including a new 200 sq ft accessory storage mezzanine.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "floor_area_before_sqft",
+     "first": 1600,
+     "second": null,
+     "answer": null,
+     "took": "second",
+     "source": "Motion 21286 Project Description (\"approximately 200 square-foot storage mezzanine, for a total of approximately 1,800 square-feet\"); Exhibit B cover sheet (\"Non Residential SF: 1458\")",
+     "why": "The record states no before figure: 1,600 is a subtraction, and the plan sheet gives a different number (1,458 sq ft).",
+     "note": "Candidates not stated as a before figure: 1,800 less the new 200 sq ft mezzanine = 1,600; Exhibit B \"Non Residential SF: 1458\"."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "limited_restaurant",
+     "second": [
+      "limited_restaurant",
+      "vacant"
+     ],
+     "answer": [
+      "limited_restaurant",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21286 Project Description (change of use from Limited Restaurant) and basis for approval (\"would activate 50 feet of currently vacant ground floor street frontage\"); triggers.json existing_use",
+     "why": "The record states the last use and that the frontage is vacant."
+    },
+    {
+     "field": "new_construction",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21286 Project Description (\"change of use ... with associated tenant improvements, including the development of an approximately 200 square-foot storage mezzanine\"); Exhibit B plan set (tenant improvement)",
+     "why": "The whole scope is described as tenant improvements inside the existing ground-floor space; an interior mezzanine is not an addition. Same basis on which both readers gave false in D14, D18 and D25."
+    }
+   ],
+   "note": "floor_area_before_sqft: Candidates not stated as a before figure: 1,800 less the new 200 sq ft mezzanine = 1,600; Exhibit B \"Non Residential SF: 1458\"."
+  },
+  "D09": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": [
+     "41"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "Prubechu",
+    "floor_area_sqft": 3227,
+    "floor_area_before_sqft": 1464,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "other"
+    ],
+    "existing_use_text": "Private parking lot (about 3,330 sq ft, nine stalls) serving the adjacent full-service Restaurant Prubechu at 2224 Mission St, which holds an ABC Type 41 licence. Six stalls become the 1,763 sq ft outdoor dining area at the rear of the lot.",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": "22:00",
+    "opening_hour": "09:00",
+    "entertainment_kind": null,
+    "amplified_sound": false,
+    "live_entertainment": null,
+    "outdoor_area": "parking_lot",
+    "outdoor_alcohol_service": true,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": false,
+    "legacy_business": false
+   },
+   "settled": [
+    {
+     "field": "floor_area_sqft",
+     "first": 3227,
+     "second": null,
+     "answer": 3227,
+     "took": "first",
+     "source": "Motion 21401 Exhibit B plan sheet, planning use calculation: \"(E) Restaurant Prubechu (2224 Mission St.): (E) 1,464 gross s.f.\"; \"proposed Outdoor Activity Area (2214 Mission St.): 1,763 s.f.\"; \"Total planning use area: 3,227 gross s.f. < 5,999 s.f.\"",
+     "why": "The record gives a total for the single use after the project in the approved plans; the motion findings state only the 1,763 sq ft outdoor area.",
+     "note": "1,763 sq ft of the 3,227 is the open-air Outdoor Activity Area in the parking lot; the motion makes no use-size finding."
+    },
+    {
+     "field": "floor_area_before_sqft",
+     "first": 1464,
+     "second": null,
+     "answer": 1464,
+     "took": "first",
+     "source": "Motion 21401 Exhibit B plan sheet, planning use calculation: \"(E) Restaurant Prubechu (2224 Mission St.): (E) 1,464 gross s.f.\"",
+     "why": "The record states the existing restaurant's area on the approved plans."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "other",
+     "second": [
+      "other",
+      "restaurant"
+     ],
+     "answer": [
+      "restaurant",
+      "other"
+     ],
+     "took": "second",
+     "source": "Motion 21401 findings 2-3 (existing parking lot \"adjacent to the associated full-service restaurant\"); triggers.json existing_use",
+     "why": "The premises after the project are the continuing Restaurant plus part of a parking lot (\"other\"); both are stated. Both readers already treat the Restaurant as the business enlarged."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21401 finding 8.A: \"The proposed Project does not modify any existing storefront\"",
+     "why": "Said in words."
+    },
+    {
+     "field": "story",
+     "first": null,
+     "second": "first",
+     "answer": "first",
+     "took": "second",
+     "source": "Motion 21401 finding 7.D: \"the intended use is located at the ground floor\"",
+     "why": "Said in words."
+    },
+    {
+     "field": "new_construction",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21401 finding 7.B(1): \"The proposed work will not affect the building envelope\"",
+     "why": "Said in words; the same sentence on which both readers gave false in D02 and D04."
+    },
+    {
+     "field": "legacy_business",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21401 finding 8.B: \"The proposed Project does not affect any existing Legacy businesses in the District\"",
+     "why": "The project is about this restaurant and replaces no business, so the sentence excludes a Legacy Business here. The record does not separately say whether Prubechu is on the Registry."
+    }
+   ],
+   "note": "floor_area_sqft: 1,763 sq ft of the 3,227 is the open-air Outdoor Activity Area in the parking lot; the motion makes no use-size finding."
+  },
+  "D10": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": [
+     "restaurant",
+     "nighttime_entertainment"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": [
+     "47"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "Casements",
+    "floor_area_sqft": 1952,
+    "floor_area_before_sqft": 1952,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Existing full-service Restaurant (Casements, ABC Type 47, 1,952 sq ft ground-floor unit in the El Capitan building, an Article 10 landmark). The patio site is ten spaces of an 81-space legal nonconforming public parking lot behind the building; it had run as the restaurant's patio since December 2020 under a temporary Shared Spaces permit.",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "02:00",
+    "opening_hour": "14:00",
+    "entertainment_kind": null,
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": "parking_lot",
+    "outdoor_alcohol_service": true,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": false
+   },
+   "settled": [
+    {
+     "field": "licence_type",
+     "first": "47",
+     "second": null,
+     "answer": "47",
+     "took": "first",
+     "source": "Motion 21497 finding 2 (\"the restaurant has a Type 47 liquor license\") and finding 10.A (\"holds a valid ABC-Type 47 license\"); triggers.json existing_use",
+     "why": "The record names the licence the project runs on (held, premises extended to the patio). Same treatment as D09, where both readers recorded the held Type 41."
+    },
+    {
+     "field": "opening_hour",
+     "first": "14:00",
+     "second": null,
+     "answer": "14:00",
+     "took": "first",
+     "source": "Motion 21497 finding 6.B (\"from 4 p.m. to 2 a.m. Monday through Thursday, from 3 p.m. to 2 a.m. on Friday, and from 2 p.m. to 2 a.m. on Saturdays and Sundays\")",
+     "why": "Hours are stated and vary by day; the earliest opening is recorded, as both readers did in D04."
+    },
+    {
+     "field": "amplified_sound",
+     "first": true,
+     "second": null,
+     "answer": true,
+     "took": "first",
+     "source": "Motion 21497 finding 7.B(3) (\"entertainment activities such as live and amplified music would be subject to permitting by the Entertainment Commission\"); finding 5 (opposition about \"amplified sound in the patio space\")",
+     "why": "The record adds a Nighttime Entertainment use and names amplified music as what it brings, subject to permit; it does not name the permit."
+    },
+    {
+     "field": "live_entertainment",
+     "first": true,
+     "second": null,
+     "answer": true,
+     "took": "first",
+     "source": "Motion 21497 finding 6.A (\"evening-oriented activities such as live music, if permitted by the Entertainment Commission\"); finding 7.B(3) (\"live and amplified music\")",
+     "why": "The record adds a Nighttime Entertainment use and names live music as what it brings, subject to permit."
+    },
+    {
+     "field": "legacy_business",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21497 finding 8.B: \"The Project would not affect any existing Legacy Businesses in the District\"",
+     "why": "The project is about this restaurant and replaces no business, so the sentence excludes a Legacy Business here. The record does not separately say whether Casements is on the Registry."
+    }
+   ]
+  },
+  "D11": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Al Carajo",
+    "floor_area_sqft": 404,
+    "floor_area_before_sqft": 404,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Limited Restaurant (Al Carajo), about 404 sq ft on the ground floor; principally permitted, operating since August 19, 2022. No alteration.",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "alcohol_transaction",
+     "first": null,
+     "second": "new_licence",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21387 Project Description (\"allow the owner to pursue a permit for on-sale beer and wine (ABC Type 41 license)\"); condition 11 (\"Prior to issuance of the Alcoholic Beverage License type 41\")",
+     "why": "The record does not say new licence or transfer. Same treatment as D07 and D19, where both readers left it null on \"pending approval of ABC license\"."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21387 Project Description (\"The existing business ... is to remain with no alteration to the site or building\"); checklist (\"not proposing any interior tenant improvements. Land Use change only.\")",
+     "why": "A merger is an alteration; the record rules out any."
+    }
+   ]
+  },
+  "D12": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Nob Hill Cafe",
+    "floor_area_sqft": 2290,
+    "floor_area_before_sqft": 1718,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "laundromat",
+     "vacant"
+    ],
+    "existing_use_text": "Restaurant (Nob Hill Cafe, about 34 years at the site), a legally nonconforming Limited Commercial Use under § 186 in RM-3, 1,718 sq ft. The adjacent storefront it expands into (572 sq ft, to 2,290 sq ft in all) was vacant since at least August 2021 and was last a dry cleaner (Nob Spring Cleaners), a Laundromat use under § 102; that space is also a legal nonconforming retail use.",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": true,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": false,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": [
+      "restaurant",
+      "laundromat"
+     ],
+     "second": [
+      "restaurant",
+      "laundromat",
+      "vacant"
+     ],
+     "answer": [
+      "restaurant",
+      "laundromat",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21440 finding 2 (\"The expansion storefront has been vacant ...\"), finding 6.B (\"Though vacant since at least August 2021, the space ... was last occupied by a Laundromat use\"); triggers.json existing_use",
+     "why": "The record states the continuing Restaurant, the absorbed storefront's last use and that it is vacant."
+    }
+   ]
+  },
+  "D13": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": 2174,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "laundromat",
+     "vacant"
+    ],
+    "existing_use_text": "Laundromat as defined in § 102 (which includes dry cleaning): former City Service Cleaners, closed 2016 and vacant since. The adopted motion gives about 2,174 sq ft; the packet gives 4,136 GSF for the whole building.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "laundromat",
+     "second": [
+      "laundromat",
+      "vacant"
+     ],
+     "answer": [
+      "laundromat",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21492 Project Description (\"It closed in 2016 and the building has been vacant since then\"); triggers.json existing_use",
+     "why": "The record states the last use (Laundromat) and that the building is vacant."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21492 Project Description (remove a closed Laundromat use and establish a new Restaurant use)",
+     "why": "No existing business stays, so the record says nothing this field can hold."
+    }
+   ]
+  },
+  "D14": {
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": [
+     "nighttime_entertainment",
+     "restaurant"
+    ],
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Pink Swallow",
+    "floor_area_sqft": 3172,
+    "floor_area_before_sqft": 2239,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "bar",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant since 22 Jan 2023; previous tenant Harvey's, 'a restaurant and bar use' (motion finding 3). Two storefronts (500 and 504 Castro) merged; 2,239 sq ft growing to 3,172 sq ft.",
+    "changes_existing_business": null,
+    "merges_storefronts": true,
+    "story": [
+     "first",
+     "second"
+    ],
+    "closing_hour": "02:00",
+    "opening_hour": "11:00",
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "business_type",
+     "first": "other",
+     "second": null,
+     "answer": "other",
+     "took": "first",
+     "source": "Motion 21503 Exhibit A (authorises \"a nighttime entertainment (d.b.a. Pink Swallow)\"); caption; triggers.json proposed_uses",
+     "why": "The record says what the business is, a nighttime entertainment venue, which is none of the named types. Same value both readers gave for the D05 venue."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "restaurant",
+     "second": [
+      "restaurant",
+      "bar",
+      "vacant"
+     ],
+     "answer": [
+      "restaurant",
+      "bar",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21503 finding 3 (\"The previous tenant was Harvey's, a restaurant and bar use; the site was vacated on\" 22 January 2023); triggers.json existing_use",
+     "why": "The record's words for the last use are \"a restaurant and bar use\", and it says the site is vacant; everything stated is listed. The application description says only \"restaurant\"."
+    }
+   ]
+  },
+  "D15": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 4440,
+    "floor_area_before_sqft": 4440,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant one-story commercial building, most recently a bank (a Financial Service).",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "23:00",
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "floor_area_before_sqft",
+     "first": null,
+     "second": 4440,
+     "answer": 4440,
+     "took": "second",
+     "source": "Motion 21546 Project Description (\"4,440 square foot ... Restaurant in an existing, vacant one-story commercial building\"); Exhibit B plan sheet (\"(E) GROSS BUILDING AREA: 4,440 SQF\"; no exterior work)",
+     "why": "The plans state the existing building's area and the Restaurant takes the whole building unaltered outside. Same treatment as D06, D18 and D25, where both readers gave the existing space's area.",
+     "note": "This is the existing building's gross area, not a stated area of the former bank use. The application says \"approximately 4,500 sq. ft.\""
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "other",
+     "second": [
+      "vacant",
+      "other"
+     ],
+     "answer": [
+      "other",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21546 Project Description and basis for approval (vacant building most recently occupied by a bank); triggers.json existing_use",
+     "why": "The record states the last use (a bank: \"other\") and that the building is vacant."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21546 Project Description (new Restaurant in a vacant building)",
+     "why": "No existing business stays, so the record says nothing this field can hold."
+    }
+   ],
+   "note": "floor_area_before_sqft: This is the existing building's gross area, not a stated area of the former bank use. The application says \"approximately 4,500 sq. ft.\""
+  },
+  "D16": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": false,
+    "operator_name": "Kiitos",
+    "floor_area_sqft": 1300,
+    "floor_area_before_sqft": 1300,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar",
+     "vacant"
+    ],
+    "existing_use_text": "Bar (Uptown, a registered Legacy Business since April 2019; about 1,300 sq ft on the ground floor, vacant since January 2024). The motion treats the Bar as an existing legal nonconforming use under §§ 180 and 249.60, so the project is a change of tenant, not a change of use.",
+    "changes_existing_business": "none",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": "none",
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": true
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "bar",
+     "second": [
+      "bar",
+      "vacant"
+     ],
+     "answer": [
+      "bar",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21618 finding 3 (\"vacant since January of 2024\"); finding 2 (prior and proposed business are a Bar use); triggers.json existing_use",
+     "why": "The record states the last use (Bar) and that the space is vacant; the business itself changes (Uptown to Kiitos)."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21618 finding 6.A (\"a change of commercial tenant only ... No expansion is proposed as part of the project\"); finding 6.C (\"No modifications are proposed to the commercial storefront\")",
+     "why": "A merger would be an expansion; the record rules it out in words."
+    }
+   ]
+  },
+  "D17": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "bar",
+     "nighttime_entertainment"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Legacy North Beach Bar",
+    "floor_area_sqft": 985,
+    "floor_area_before_sqft": 985,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar"
+    ],
+    "existing_use_text": "Bar, 985 sq ft, ground story (Legacy North Beach Bar), authorised by Motion No. 14933 (Case 1999.485C, 2 Dec 1999) as 'a bar with live entertainment (non-amplified acoustic music)'; its Condition 3 limited entertainment to non-amplified music on set days and hours.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": "01:30",
+    "opening_hour": "12:00",
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Planning Commission Motion No. 14933 (Case No. 1999.485C, 2 Dec 1999) authorised 'a bar with live entertainment (non-amplified acoustic music)'. Condition 3: 'Non-amplified Live Musical Entertainment, excluding the use of speakers, amplifiers or microphones shall be permitted on Sunday from 6:00 pm. to 9:00 p.m.' (the other set days and hours are not quoted in the inventory or the motion).",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "planning_use",
+     "first": [
+      "bar",
+      "nighttime_entertainment"
+     ],
+     "second": "bar",
+     "answer": [
+      "bar",
+      "nighttime_entertainment"
+     ],
+     "took": "first",
+     "source": "Motion 21603 Project Description (existing Bar use; \"add amplified live entertainment\"); triggers.json proposed_uses and trigger 3 (related record 2024-001837MIS: Place of Entertainment permit)",
+     "why": "Stated convention 4: a bar that adds nighttime entertainment is both. The motion itself names only the Bar use; Nighttime Entertainment is the inventory's reading of the amplified entertainment."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "Motion 21603 Project Description: \"No physical work is being proposed\"",
+     "why": "A merger is physical work; the record rules out any. Same sentence on which both readers gave false in D20 and D21."
+    },
+    {
+     "field": "closing_hour",
+     "first": "01:30",
+     "second": null,
+     "answer": "01:30",
+     "took": "first",
+     "source": "Motion 21603 Project Description (\"extend the permitted hours of entertainment between noon and 1:30 am daily\")",
+     "why": "These are the hours of the entertainment the application is about, recorded as both readers recorded the outdoor area's hours in D09. The bar's own closing hour is not in the record.",
+     "note": "Hours of entertainment, not of the bar. The bar's own business hours are nowhere in the record."
+    },
+    {
+     "field": "opening_hour",
+     "first": "12:00",
+     "second": null,
+     "answer": "12:00",
+     "took": "first",
+     "source": "Motion 21603 Project Description (\"extend the permitted hours of entertainment between noon and 1:30 am daily\")",
+     "why": "Hours of the entertainment the application is about (see closing_hour). The bar's own opening hour is not in the record."
+    }
+   ],
+   "note": "closing_hour: Hours of entertainment, not of the bar. The bar's own business hours are nowhere in the record."
+  },
+  "D18": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Super Duper Burgers",
+    "floor_area_sqft": 2231,
+    "floor_area_before_sqft": 2231,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant ground-floor commercial space of about 2,231 sq ft, last a full-service Restaurant (Fresca), which moved out in September 2023.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "restaurant",
+     "second": [
+      "vacant",
+      "restaurant"
+     ],
+     "answer": [
+      "restaurant",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21598 Project Description (\"approximately 2,231 square-foot vacant commercial space\"; \"immediate prior use of the space was a full-service restaurant, d.b.a. Fresca, which moved locations in September 2023\")",
+     "why": "The record states the last use and that the space is vacant."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21598 Project Description (a new Formula Retail Restaurant in a vacant space)",
+     "why": "No existing business stays, so the record says nothing this field can hold."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21598 Project Description (one existing 2,231 sq ft space; interior tenant improvements and in-kind facade repairs)",
+     "why": "One storefront, with works proposed and nothing said about another: null under stated convention 1, not false."
+    }
+   ]
+  },
+  "D19": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Bizza",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Limited Restaurant on the ground floor (Bizza); no alterations proposed.",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [],
+   "form_only": [
+    {
+     "field": "licences_already_held",
+     "first": null,
+     "second": [],
+     "answer": null,
+     "why": "Null against an empty list. For a list fact both mean \"not stated\" to the rule engine (apps/api/app/memo/facts.py reads a null list fact as empty), so this is not counted. Kept null: the motion is silent on licences held; \"no on-sale licence\" appears only in the inventory's facts_needed and does not exclude an off-sale licence."
+    }
+   ]
+  },
+  "D20": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": null,
+    "alcohol_transaction": "premises_transfer",
+    "formula_retail": null,
+    "operator_name": "Steps of Rome",
+    "floor_area_sqft": 2570,
+    "floor_area_before_sqft": 2570,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant (Steps of Rome; the previous Restaurant, Cassava, held a Type 41 licence). No change of use, enlargement or physical work; about 2,570 sq ft ground floor per the plans.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "licences_already_held",
+     "first": null,
+     "second": [
+      "41"
+     ],
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21689 Project Description (\"The previous Restaurant (dba Cassava) onsite operated with a Type 41 ... ABC License\")",
+     "why": "The record attributes the Type 41 to the previous restaurant; what Steps of Rome itself holds is not stated (\"upgrading\" does not name a type)."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": "none",
+     "second": "intensify",
+     "answer": "intensify",
+     "took": "second",
+     "source": "Motion 21689 Exhibit B plan sheet, project description (\"seeks Conditional Use Authorization to intensify its current existing use by upgrading to a Type 47 liquor license ... No expansions\"); basis for approval cites Section 178; triggers.json considered_not_triggers quotes the same sentence",
+     "why": "The record uses the word: the existing restaurant is intensified by the licence upgrade, with no enlargement. The inventory records that § 178 is not a separate ground for the hearing; that is about the trigger, not this fact."
+    },
+    {
+     "field": "historic_building",
+     "first": true,
+     "second": null,
+     "answer": true,
+     "took": "first",
+     "source": "Motion 21689 Exhibit B plan sheet, property information: \"HISTORIC STATUS: A - HISTORIC RES. PRESENT\"",
+     "why": "The record states Category A (historic resource present), the same category on which both readers gave true in D02. The motion makes no finding and does not say \"Historic Building\" under § 102."
+    }
+   ]
+  },
+  "D21": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": "42",
+    "licences_already_held": [
+     "20",
+     "86"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Blue Stream Gallery",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Wine retail store and art gallery (Blue Stream Gallery), about five years at the address, holding ABC Type 20 (off-sale beer and wine) and Type 86 (tasting) licences. No physical work.",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "business_type",
+     "first": "bar",
+     "second": "other",
+     "answer": "bar",
+     "took": "first",
+     "source": "Motion 21736 checklist § 303(o) row (\"The project will provide an additional Bar to the neighborhood\"); triggers.json proposed_uses (Bar) and project description (beer/wine sales and consumption on the premises, Type 42)",
+     "why": "The concept the record puts forward is on-site beer and wine drinking under a Type 42, which the motion calls a Bar; the existing wine shop and gallery stay and are carried in the existing-use fields."
+    }
+   ]
+  },
+  "D22": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Honey Cove Restaurant",
+    "floor_area_sqft": 3953,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "vacant"
+    ],
+    "existing_use_text": "Two vacant ground-floor commercial units (2573 Mission, about 747 sq ft; 2575 Mission, about 3,095 sq ft with mezzanine), both vacant since about 2017. The prior tenant of 2575 Mission was a Legacy Business that relocated around 2017 (finding 9(b)). The record does not say what use either unit last held.",
+    "changes_existing_business": null,
+    "merges_storefronts": true,
+    "story": "first",
+    "closing_hour": "02:00",
+    "opening_hour": "11:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": true
+   },
+   "settled": [
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21815 findings 2-3 (new Restaurant in two units vacant since about 2017)",
+     "why": "No existing business stays, so the record says nothing this field can hold."
+    },
+    {
+     "field": "new_construction",
+     "first": false,
+     "second": null,
+     "answer": false,
+     "took": "first",
+     "source": "Motion 21815 finding 2 (\"in an existing mixed-use building ... interior tenant improvements for the Restaurant use, expansion of the existing mezzanine, and storefront alterations\")",
+     "why": "The whole scope is inside the existing building; an interior mezzanine is not an addition. Same basis on which both readers gave false in D14, D18 and D25."
+    },
+    {
+     "field": "legacy_business",
+     "first": true,
+     "second": null,
+     "answer": true,
+     "took": "first",
+     "source": "Motion 21815 finding 9(b): \"The prior tenant of the 2575 Mission Street space, a Legacy Business, relocated to another property within the District circa 2017\"; triggers.json existing_use and considered_not_triggers",
+     "why": "The record says in words that the last tenant of the space was a Legacy Business, the same sense in which both readers gave true in D16. The same finding says the project \"would not affect any existing Legacy Businesses\" (vacant over three years).",
+     "note": "It is the former tenant (relocated about 2017) that is the Legacy Business, not the new restaurant; the space was vacant more than three years, so § 754(c)(4) was not invoked."
+    }
+   ],
+   "note": "legacy_business: It is the former tenant (relocated about 2017) that is the Legacy Business, not the new restaurant; the space was vacant more than three years, so § 754(c)(4) was not invoked."
+  },
+  "D23": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": "42",
+    "licences_already_held": [
+     "02"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Gratta Wines",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Specialty Grocery Store with a small accessory winery (Gratta Wines, ABC Type 02) in the ground-floor unit; the Bar use is added to it, no construction. A 2024 pre-application note on the parcel: 'Only type 2 ABC license permitted in 3rd Street RUD.'",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "business_type",
+     "first": "bar",
+     "second": "other",
+     "answer": "bar",
+     "took": "first",
+     "source": "Motion 21796 Required Commission Action (\"to establish a new Bar use with an ABC License Type 42\"); triggers.json proposed_uses (Bar)",
+     "why": "The concept the record puts forward is a new Bar; the existing specialty grocery and small winery stay and are carried in the existing-use fields."
+    },
+    {
+     "field": "alcohol_transaction",
+     "first": null,
+     "second": "new_licence",
+     "answer": null,
+     "took": "first",
+     "source": "triggers.json project_description_on_record (\"to establish an ABC Type 42 permit\"); Motion 21796 Project Description (\"add a Bar use with an ABC License Type 42\")",
+     "why": "\"Establish\" does not say new licence or transfer; the record never states how the Type 42 is obtained."
+    }
+   ]
+  },
+  "D24": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "nighttime_entertainment",
+     "bar"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "90",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Club Deluxe",
+    "floor_area_sqft": 3620,
+    "floor_area_before_sqft": 3620,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar",
+     "nighttime_entertainment",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant 3,620 sq ft ground-floor space, last Club Deluxe (a bar with live music), vacated May 1, 2023. A 1996 Conditional Use (Motion No. 14221) authorised non-amplified live musical entertainment within the bar, with hours limited by Condition 2. The motion treats the use as pre-existing and continuing, not abandoned.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": "02:00",
+    "opening_hour": "09:00",
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Motion No. 14221 (24 October 1996): non-amplified live musical entertainment within the bar; Condition 2 set hours of 9:30pm-12:00am on weekdays and 9:30pm-1:00am on Friday, Saturday and Sunday. Known only as the 2025 motion summarises it.",
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": true
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": [
+      "bar",
+      "nighttime_entertainment"
+     ],
+     "second": [
+      "vacant",
+      "nighttime_entertainment",
+      "bar"
+     ],
+     "answer": [
+      "bar",
+      "nighttime_entertainment",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21811 Project Description (\"a ground floor long vacant 3,620 square-foot space\"); § 719 findings (\"will occupy a vacant Nighttime Entertainment space\"); triggers.json existing_use",
+     "why": "The record states the last use (a bar with live music, treated as Nighttime Entertainment) and that the space is vacant."
+    }
+   ]
+  },
+  "D25": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 1540,
+    "floor_area_before_sqft": 1540,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant ground-floor tenant space of about 1,540 sq ft, vacant since 2009. The application calls the last use 'retail'. A 2009 Conditional Use for an eating and drinking use (Motion No. 17928) lapsed, so no lawful Restaurant exists at the address.",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": false,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "retail",
+     "second": [
+      "vacant",
+      "retail"
+     ],
+     "answer": [
+      "retail",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "Motion 21876 Project Description (\"The tenant space has been vacant since 2009\"); triggers.json project_description_on_record (\"change of use from retail to restaurant\")",
+     "why": "The record states the last use the application gives (retail) and that the space is vacant."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": null,
+     "took": "first",
+     "source": "Motion 21876 Project Description (new Restaurant in a space vacant since 2009)",
+     "why": "No existing business stays, so the record says nothing this field can hold."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "triggers.json considered_not_triggers: \"the (d)(2) CU triggers (merger over 799 sq ft, Legacy Business replacement, first-story Health Service) do not arise\"; Motion 21876 Project Description (one tenant space of about 1,540 sq ft)",
+     "why": "The case entry says in words that no merger arises. The motion itself only describes one tenant space, so this rests on the inventory's sentence."
+    }
+   ]
+  },
+  "N01": {
+   "record_facts": {
+    "business_type": "food_truck",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 5000,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other"
+    ],
+    "existing_use_text": "Open commercial parking lot (132 spaces) at Beach and Jones with food trucks already operating without authorization; parent PRJ: about 5,000 sq ft, five fenced food-truck stalls with pergola, seating and bathrooms",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": "parking_lot",
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": []
+  },
+  "N02": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": "new_licence",
+    "formula_retail": null,
+    "operator_name": "House of Dim Sum",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Limited Restaurant (House of Dim Sum, ground floor; a 1989 CU, 1989.286C, allowed a small fast-food restaurant)",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": "1989 Conditional Use 1989.286C allowed a small fast-food restaurant; no conditions given",
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": []
+  },
+  "N03": {
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "nighttime_entertainment",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "McTeague's Saloon",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar",
+     "restaurant"
+    ],
+    "existing_use_text": "Bar / Restaurant (McTeague's Saloon). Bar authorised by CU 2007.1281C (Motion 17569); Limited Live Performance permit on file.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": null,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": "Bar authorised by Conditional Use 2007.1281C (Motion 17569); no conditions given",
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "business_type",
+     "first": "other",
+     "second": "bar",
+     "answer": "other",
+     "took": "first",
+     "source": "triggers.json project_description_on_record (\"change of use from bar/restaurant to nighttime entertainment\"); proposed_uses (Nighttime Entertainment)",
+     "why": "The business the record puts forward is a nighttime entertainment venue, a change of use away from bar/restaurant; none of the named types. Same value as D14 and D05."
+    },
+    {
+     "field": "serves_alcohol",
+     "first": null,
+     "second": true,
+     "answer": null,
+     "took": "first",
+     "source": "triggers.json project_description_on_record and existing_use (existing Bar authorised by CU 2007.1281C)",
+     "why": "The existing Bar serves alcohol, but the record describes a change of use from bar/restaurant and does not say alcohol service continues under the proposed use. Same treatment as D14."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "bar",
+     "second": [
+      "bar",
+      "restaurant"
+     ],
+     "answer": [
+      "bar",
+      "restaurant"
+     ],
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"change of use from bar/restaurant\"); existing_use (\"Bar / Restaurant (McTeague's Saloon)\")",
+     "why": "The record's words for the existing use are \"bar/restaurant\"; both are listed."
+    },
+    {
+     "field": "live_entertainment",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json existing_use (\"Limited Live Performance permit on file\"); proposed_uses (Nighttime Entertainment)",
+     "why": "The record says the venue holds a permit for live performance and seeks Nighttime Entertainment; the programme itself is not described."
+    }
+   ]
+  },
+  "N04": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Super Duper Burgers",
+    "floor_area_sqft": 2950,
+    "floor_area_before_sqft": 2950,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant, ground floor, about 2,950 sq ft, operated by Burger King (itself Formula Retail; no CU for it on record for parcel 0683/034)",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": null,
+     "took": "first",
+     "source": "triggers.json project_description_on_record (one \"ground floor restaurant space with approximately 2,950 square feet\"; \"no expansion of the existing building envelope\"); trigger evidence (parent PRJ \"2950 existing / 2950 proposed\")",
+     "why": "One storefront with works proposed and nothing said about another: null under stated convention 1. An unchanged envelope does not rule out an interior merger, and \"false\" was derived from the floor area, not stated."
+    }
+   ]
+  },
+  "N05": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": [
+     "41"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Ristorante Ideale",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant (Ristorante Ideale, same owner, operating; Type 41 at filing after earlier holding Type 47). A 1988 CU (1987.801C) had approved a 41-to-47 exchange at this address.",
+    "changes_existing_business": "none",
+    "merges_storefronts": false,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": "1988 Conditional Use 1987.801C approved a 41-to-47 licence exchange at this address; Type 47 previously held by this restaurant; no conditions given",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": "none",
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"It's not a switch of business (the same restaurant and the same owner) ... There is no tenant improvement proposed and will not enlarge the space\")",
+     "why": "The stated convention's own example: this sentence gives \"none\"."
+    },
+    {
+     "field": "merges_storefronts",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"There is no tenant improvement proposed and will not enlarge the space\")",
+     "why": "A merger would enlarge the space and need works; the record rules out both."
+    }
+   ]
+  },
+  "N06": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Piazza Pellegrini",
+    "floor_area_sqft": 2820,
+    "floor_area_before_sqft": 1486,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant (Piazza Pellegrini), 1,486 sq ft, single-story 1903 building with an outdoor seating area on the lot. Previously authorised conditional use: Motion 13945 (1995.322C), Motion 16696 (2003.0924C, full bar), 2009.0798C (expansion, apparently not built).",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": true,
+    "amends_prior_approval": null,
+    "prior_approval_limits": "Motion 13945 (1995.322C); Motion 16696 (2003.0924C, full bar); 2009.0798C (expansion, apparently not built); no conditions given",
+    "tenant_improvements": null,
+    "new_construction": true,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "serves_alcohol",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json existing_use (\"Motion 16696 (2003.0924C, full bar)\"); considered_not_triggers (\"new exterior bar in the lot seating area, PRJ description only\")",
+     "why": "The record says the restaurant has a Commission-approved full bar and proposes an exterior bar; no licence type is named."
+    },
+    {
+     "field": "outdoor_alcohol_service",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json considered_not_triggers (\"Outdoor Activity Area (new exterior bar in the lot seating area, PRJ description only)\"); existing_use (\"an outdoor seating area on the lot\")",
+     "why": "The record says a new bar is to go in the outdoor seating area. It rests on the parent project description only; the Conditional Use record does not claim it."
+    }
+   ]
+  },
+  "N07": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": false,
+    "operator_name": "Hodai Restaurant",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Limited Restaurant (Hodai Restaurant), ground floor. 2023-008033PRL (2023-08-29): \"Interior T.I. to an existing limited restaurant use ... Full restaurant use is not permitted under this permit. No formula retail.\"",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": []
+  },
+  "N08": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": 3905,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Retail (General Retail Sales and Service) at ground level; parent PRJ lists 3,905 sq ft existing retail/commercial; kitchen proposed at basement level.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "floor_area_before_sqft",
+     "first": null,
+     "second": 3905,
+     "answer": 3905,
+     "took": "second",
+     "source": "triggers.json existing_use (\"parent PRJ lists 3,905 sq ft existing retail/commercial\")",
+     "why": "The record gives a figure for the existing use. Same treatment as N04, where both readers took the parent project's existing figure.",
+     "note": "The record does not say whether 3,905 sq ft covers the ground level only or also the basement where the kitchen is proposed."
+    }
+   ],
+   "note": "floor_area_before_sqft: The record does not say whether 3,905 sq ft covers the ground level only or also the basement where the kitchen is proposed."
+  },
+  "N09": {
+   "record_facts": {
+    "business_type": "cafe",
+    "planning_use": "limited_restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Restaurant, Limited (independent boba tea shop; 2019-016319PRL \"Change of use to Limited Restaurant\").",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": []
+  },
+  "N10": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Toad Hall",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar",
+     "laundromat",
+     "vacant"
+    ],
+    "existing_use_text": "Existing Bar Toad Hall at 4146 18th St, repeatedly recorded by Planning as a nonconforming use. Next door on the same lot (2647/016), 4144 18th St is a vacant 470 sq ft ground-floor retail space (former dry cleaner); the project connects that space to the bar as a game room.",
+    "changes_existing_business": "enlarge",
+    "merges_storefronts": true,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "serves_alcohol",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json existing_use and proposed_uses (existing Bar \"Toad Hall\", enlarged)",
+     "why": "The use is a Bar, which is on-site alcohol sales by definition. Same reading both readers gave for the Bar in D06, where no licence is named either."
+    },
+    {
+     "field": "existing_use_stated",
+     "first": "bar",
+     "second": [
+      "bar",
+      "vacant"
+     ],
+     "answer": [
+      "bar",
+      "laundromat",
+      "vacant"
+     ],
+     "took": "other",
+     "source": "triggers.json existing_use (\"4144 18th St is a vacant 470 sq ft ground-floor retail space (former dry cleaner). Next door ... is the existing Bar Toad Hall\")",
+     "why": "Neither reading lists the added storefront's last use, which the record states: a dry cleaner, coded \"laundromat\" by both readers in D12 and D13. The continuing Bar, that last use and \"vacant\" are all stated.",
+     "note": "The record calls the added space a \"retail space (former dry cleaner)\" and never classes it as a Laundromat use or raises § 202.12, although the filing date (2024-11-21) is inside that rule's period. Not pinned down: whether the dry cleaner was the immediately prior use."
+    },
+    {
+     "field": "new_construction",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "triggers.json trigger evidence (parent PRJ: \"alteration to an existing 470 sf vacant retail space into a 'game room' - connecting it to the existing adjacent bar\")",
+     "why": "The whole scope is described as an alteration of an existing space. Same basis on which both readers gave false in D14, D18 and D25."
+    }
+   ],
+   "note": "existing_use_stated: The record calls the added space a \"retail space (former dry cleaner)\" and never classes it as a Laundromat use or raises § 202.12, although the filing date (2024-11-21) is inside that rule's period. Not pinned down: whether the dry cleaner was the immediately prior use."
+  },
+  "N11": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": [
+     "47"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "Cha Cha Cha",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant (Cha Cha Cha), one-story building at Haight and Shrader; ABC Type 47; Limited Live Performance permit. The outdoor area would replace a rear parking / trash area.",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": "limited_live_performance",
+    "amplified_sound": null,
+    "live_entertainment": true,
+    "outdoor_area": "rear_or_side",
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "licence_type",
+     "first": "47",
+     "second": null,
+     "answer": "47",
+     "took": "first",
+     "source": "triggers.json existing_use (\"ABC Type 47\"); considered_not_triggers (\"licence treated as continuing\")",
+     "why": "The record names the licence the restaurant runs on; both readers already record it as held and the transaction as \"licence_already_held\". Same treatment as D09."
+    },
+    {
+     "field": "live_entertainment",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json existing_use (\"Limited Live Performance permit\")",
+     "why": "The record says the restaurant holds a permit for live performance, and both readers record entertainment_kind \"limited_live_performance\". The project itself proposes no entertainment."
+    },
+    {
+     "field": "tenant_improvements",
+     "first": null,
+     "second": true,
+     "answer": true,
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"Construction of a new, raised and uncovered outdoor dining area in the existing parking lot. Addition of new tactile restroom & egress signage\")",
+     "why": "The record states physical works for the restaurant. Same value both readers gave for the patio works in D09 and D10."
+    },
+    {
+     "field": "new_construction",
+     "first": true,
+     "second": false,
+     "answer": null,
+     "took": "other",
+     "source": "triggers.json project_description_on_record (\"Construction of a new, raised and uncovered outdoor dining area in the existing parking lot\")",
+     "why": "Neither reading holds: the record says a new raised platform is built, which is not an addition to the building (true in D05, N06), and it has no sentence that the building or its envelope is unchanged (false in D09, D10)."
+    }
+   ]
+  },
+  "N12": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": [
+     "21"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "La Gallinita",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Belmar Meat Market \"La Gallinita\": butcher / grocery with a prepared-food counter and about six tables; active Type 21 off-sale licence (issued 1981). The file does not state the legal use on Planning's books; no floor area given.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "alcohol_transaction",
+     "first": null,
+     "second": "new_licence",
+     "answer": null,
+     "took": "first",
+     "source": "triggers.json trigger evidence (application p. 2: \"We are applying for an ABC License type 41\")",
+     "why": "\"Applying for\" does not say new licence or transfer. Same treatment as D07 and D19."
+    },
+    {
+     "field": "story",
+     "first": null,
+     "second": "first",
+     "answer": null,
+     "took": "first",
+     "source": "triggers.json existing_use and notes (no document states the story)",
+     "why": "\"First story\" appears only in the inventory's reading of the code and \"ground floor\" only in an assessor-data remark; no document on the file states it."
+    }
+   ]
+  },
+  "N13": {
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "nighttime_entertainment",
+     "bar"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "48",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 14139,
+    "floor_area_before_sqft": 14139,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other",
+     "vacant"
+    ],
+    "existing_use_text": "Former adult entertainment venue (Adult Business), 14,139 sq ft, existing and proposed; no exterior work. The CUA supplemental calls the site otherwise a vacant structure. Planning's approval letter describes the 2025 project as a Nighttime Entertainment use, not an Adult Business.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "other",
+     "second": [
+      "other",
+      "vacant"
+     ],
+     "answer": [
+      "other",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "triggers.json existing_use (\"Former adult entertainment venue (Adult Business) ... The CUA supplemental calls the site otherwise a vacant structure\")",
+     "why": "The record states the last use (Adult Business: \"other\") and that the application calls the structure vacant."
+    }
+   ]
+  },
+  "N14": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Ramen Kameko",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": "Not stated. Planning records for the parcel: a bakery approved as a Limited Restaurant (2020-008667MIS) and a non-formula-retail grocery (2021-009612MIS). Probably a Limited Restaurant seeking Restaurant status for beer and wine; unconfirmed.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": []
+  },
+  "N15": {
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Super Duper Burgers",
+    "floor_area_sqft": 2950,
+    "floor_area_before_sqft": 2950,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant 2,950 sq ft ground-floor restaurant space last occupied by Burger King (Formula Retail; never had its own Formula Retail CU).",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "settled": [
+    {
+     "field": "existing_use_stated",
+     "first": "restaurant",
+     "second": [
+      "restaurant",
+      "vacant"
+     ],
+     "answer": [
+      "restaurant",
+      "vacant"
+     ],
+     "took": "second",
+     "source": "triggers.json existing_use (\"Vacant 2,950 sq ft ground-floor restaurant space last occupied by Burger King\")",
+     "why": "The record states the last use and that the space is vacant."
+    },
+    {
+     "field": "changes_existing_business",
+     "first": null,
+     "second": "none",
+     "answer": "none",
+     "took": "second",
+     "source": "triggers.json trigger 2 (same use category, no bigger use size, no more locations, no new kitchen: \"None applied on the record\"; PRL 2026-000449 \"in existing formula retail space (burger king)\")",
+     "why": "The record treats this as the existing formula-retail Restaurant use carrying on under a new operator with no enlargement or intensification, as in D16 where both readers gave \"none\" for a change of tenant."
+    },
+    {
+     "field": "new_construction",
+     "first": null,
+     "second": false,
+     "answer": false,
+     "took": "second",
+     "source": "triggers.json project_description_on_record (\"convert a 2,950-square-foot ground-floor restaurant space\"); trigger 2 evidence (PRL: \"in existing formula retail space\")",
+     "why": "The project converts an existing space of the same size; N04, the same project, says \"no expansion of the existing building envelope\" and both readers gave false there."
+    }
+   ]
+  }
+ },
+ "counts": {
+  "differences": 85,
+  "took_first": 36,
+  "took_second": 47,
+  "other": 2,
+  "form_only_not_counted": 5
+ },
+ "how_settled": {
+  "compared": "record_facts of A-1..A-5 (first) against R2-1..R2-5 (second), field by field, ignoring existing_use_text, prior_approval_limits, operator_name and record_sources: 40 cases x 27 fields = 1,080.",
+  "count_note": "90 fields are not byte-identical. 5 are not differences of content and are listed per case under \"form_only\": D03 story (order); D02, D05, D07 existing_use_stated (one value against a one-item list); D19 licences_already_held (null against an empty list, which the engine reads alike). 85 differ in content and are settled.",
+  "form": "existing_use_stated is written as a list in every case (convention 2); a single value in the first reading is wrapped, nothing added. All other agreed fields are the first reading unchanged. record_facts carries exactly the 30 fact keys; figures set aside under convention 3 are in each case's \"note\" and in the settled item, not inside record_facts.",
+  "rules_applied": [
+   "merges_storefronts: false where the record rules out alterations, physical work, expansion or enlargement, or says no storefront is modified or no merger arises; null where it only shows one storefront.",
+   "changes_existing_business: null where no existing business or use carries on (new use in a vacant space); \"none\" where the business or use carries on and the record says it is not enlarged or intensified; a licence upgrade alone is not recorded as \"intensify\" unless the record uses the word (N05 convention; D20 uses it, D02 does not).",
+   "existing_use_stated: the premises after the project; each part's last use, plus \"vacant\" where the record says so.",
+   "new_construction: true where the record says a structure or addition is built (D01, as D05 and N06); false where it says the envelope is untouched or describes the whole scope as work inside an existing space; null otherwise.",
+   "alcohol_transaction: null unless the record says \"new\", \"transfer\" or already held.",
+   "floor_area_before_sqft: the existing space's stated area where the record gives it; never a figure obtained by subtraction."
+  ]
+ }
+}

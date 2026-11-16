@@ -1,0 +1,1554 @@
+{
+ "profile": {
+  "business_type": "other",
+  "business_name": null,
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": 10976,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": true,
+  "alcohol_type": "unknown",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": true,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": "21",
+  "licences_held": [],
+  "alcohol_transaction": "new_licence",
+  "formula_retail": null,
+  "no_alcohol_answer_over_description": false,
+  "no_alcohol_stated": false,
+  "outdoor_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "retail",
+   "vacant"
+  ],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [
+   "first"
+  ],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "existing_occupancy_group": null,
+  "target_open_date": null,
+  "intake_cleared": {},
+  "intake_answered": [],
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCT-MISSION",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T2.no_rule",
+     "text": "Mission Alcoholic Beverage Special Use District: no use rule on file reaches this concept on 2024-07-22.",
+     "code_section": null,
+     "source_url": null,
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict"
+     ]
+    },
+    {
+     "rule_id": "T4:mission.good_neighbor_policies",
+     "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+     "code_section": "Planning Code § 249.60(d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict"
+     ]
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district NCT-MISSION has no hours of operation control on file (Planning Code § 754, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 754",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-MISSION"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-07-22 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 754",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57068",
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict",
+      "overlay:static:sf:nc_nct_mission",
+      "zoning:NCT-MISSION"
+     ]
+    }
+   ],
+   "rules_date": "2024-07-22",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.no_rule",
+       "text": "Mission Alcoholic Beverage Special Use District: no use rule on file reaches this concept on 2024-07-22.",
+       "code_section": null,
+       "source_url": null,
+       "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:mission.good_neighbor_policies",
+       "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+       "code_section": "Planning Code § 249.60(d)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+       "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area before the project",
+      "whether storefronts are to be merged"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.conditional",
+       "text": "Zoning district NCT-MISSION: a use of 6,000 square feet or more needs a Conditional Use, and 10,976 square feet is at or over it (Planning Code § 754, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 754",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+       "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [
+      {
+       "control": "conditional",
+       "condition": "the floor area grows or storefronts are merged",
+       "missing_inputs": [
+        "the floor area before the project",
+        "whether storefronts are to be merged"
+       ]
+      }
+     ],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district NCT-MISSION has no hours of operation control on file (Planning Code § 754, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 754",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 22 July 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Not permitted at this address",
+    "agency": "San Francisco Planning",
+    "status": "not_permitted",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): the use is not permitted at this address. What requires it: Liquor licence rule of a restricted district.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 21",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "further_review",
+    "status_note": "public convenience or necessity finding likely required",
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 21, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.transaction",
+      "text": "The licence is to be obtained as a new licence, as the applicant states.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "Census tract 209.00: 8 active off-sale retail licences in ABC's licences as they stood on 22 July 2024, against 3 authorised in ABC's census tract authorisations of September 2026.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The tract is over its authorised number, and state law tests a new licence for undue concentration. The licence may still issue if public convenience or necessity would be served: public convenience or necessity finding likely required.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The rules cannot tell which limb of § 23958.4(b) reaches ABC Type 21: whether the applicant shows public convenience or necessity to ABC, or the local governing body determines it.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "ABC investigates every licence application, and the applicant must post public notice, before a licence is issued: further review.",
+      "code_section": "California Business and Professions Code §§ 23958 (investigation) and 23985 (public notice)",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2024-07-22: 2 ABC licences within 1,000 ft and 3 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "not_permitted",
+  "overall_line": "Of the 4 approvals this concept needs: 1 not permitted (zoning and use), 1 further review (alcohol licence), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "No approval path: zoning does not permit the concept as described at this address.",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the floor area before the project. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "floor_area_before_sqft"
+   },
+   {
+    "question": "Not known: whether storefronts are to be merged. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "merges_storefronts"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": []
+ },
+ "rules_determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCT-MISSION",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T2.no_rule",
+     "text": "Mission Alcoholic Beverage Special Use District: no use rule on file reaches this concept on 2024-07-22.",
+     "code_section": null,
+     "source_url": null,
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict"
+     ]
+    },
+    {
+     "rule_id": "T4:mission.good_neighbor_policies",
+     "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+     "code_section": "Planning Code § 249.60(d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict"
+     ]
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district NCT-MISSION has no hours of operation control on file (Planning Code § 754, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 754",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-MISSION"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-07-22 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 754",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57068",
+     "citations": [
+      "overlay:datasf_sud:mission_alcohol_restrict",
+      "overlay:static:sf:nc_nct_mission",
+      "zoning:NCT-MISSION"
+     ]
+    }
+   ],
+   "rules_date": "2024-07-22",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.no_rule",
+       "text": "Mission Alcoholic Beverage Special Use District: no use rule on file reaches this concept on 2024-07-22.",
+       "code_section": null,
+       "source_url": null,
+       "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:mission.good_neighbor_policies",
+       "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+       "code_section": "Planning Code § 249.60(d)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+       "citations": [
+        "overlay:datasf_sud:mission_alcohol_restrict"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area before the project",
+      "whether storefronts are to be merged"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.conditional",
+       "text": "Zoning district NCT-MISSION: a use of 6,000 square feet or more needs a Conditional Use, and 10,976 square feet is at or over it (Planning Code § 754, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 754",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+       "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [
+      {
+       "control": "conditional",
+       "condition": "the floor area grows or storefronts are merged",
+       "missing_inputs": [
+        "the floor area before the project",
+        "whether storefronts are to be merged"
+       ]
+      }
+     ],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district NCT-MISSION has no hours of operation control on file (Planning Code § 754, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 754",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+       "citations": [
+        "zoning:NCT-MISSION"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 22 July 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Use authorization (not covered by the rule table)",
+    "agency": "San Francisco Planning",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T2.no_rule",
+      "text": "Mission Alcoholic Beverage Special Use District: no use rule on file reaches this concept on 2024-07-22.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+     },
+     {
+      "rule_id": "T4:mission.good_neighbor_policies",
+      "text": "Mission Alcoholic Beverage Special Use District: The § 202.2 operating conditions apply to every liquor establishment in the district; new, relocated or expanded ones, and any with a licence referred to Planning by ABC, must also provide outside lighting, keep window signage to 33% and keep 50% clear glazing on street-facing facades. This is a requirement, not a control (Planning Code § 249.60(d), in force since before 2022-01-01).",
+      "code_section": "Planning Code § 249.60(d)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-249.60.-mission-alcoholic-beverage-special-use-district",
+      "citations": [
+       "overlay:datasf_sud:mission_alcohol_restrict"
+      ]
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.conditional",
+      "text": "Zoning district NCT-MISSION: a use of 6,000 square feet or more needs a Conditional Use, and 10,976 square feet is at or over it (Planning Code § 754, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 754",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-MISSION"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+      "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+      "citations": [
+       "zoning:NCT-MISSION"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district NCT-MISSION has no hours of operation control on file (Planning Code § 754, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 754",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-MISSION"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The rules could not decide: use control of the zoning district and use size. What is missing: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue); the floor area before the project; whether storefronts are to be merged. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NCT-MISSION"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the floor area before the project",
+     "whether storefronts are to be merged"
+    ]
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 21",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "further_review",
+    "status_note": "public convenience or necessity finding likely required",
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 21, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.transaction",
+      "text": "The licence is to be obtained as a new licence, as the applicant states.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "Census tract 209.00: 8 active off-sale retail licences in ABC's licences as they stood on 22 July 2024, against 3 authorised in ABC's census tract authorisations of September 2026.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The tract is over its authorised number, and state law tests a new licence for undue concentration. The licence may still issue if public convenience or necessity would be served: public convenience or necessity finding likely required.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The rules cannot tell which limb of § 23958.4(b) reaches ABC Type 21: whether the applicant shows public convenience or necessity to ABC, or the local governing body determines it.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "ABC investigates every licence application, and the applicant must post public notice, before a licence is issued: further review.",
+      "code_section": "California Business and Professions Code §§ 23958 (investigation) and 23985 (public notice)",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2024-07-22: 2 ABC licences within 1,000 ft and 3 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 3400 Cesar Chavez St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "A Conditional Use Authorization is needed if the floor area grows or storefronts are merged (use size). Of the 4 approvals this concept needs: 1 further review (alcohol licence), 2 insufficient information (zoning and use, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "ABC licence, Type 21; Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the floor area before the project. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "floor_area_before_sqft"
+   },
+   {
+    "question": "Not known: whether storefronts are to be merged. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "merges_storefronts"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": [
+   {
+    "kind": "conditional_if",
+    "sentence": "If the floor area grows or storefronts are merged, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area before the project; whether storefronts are to be merged.",
+    "area": "zoning_use",
+    "status": "insufficient_information",
+    "trigger": "T7",
+    "trigger_label": "use size",
+    "definite": false,
+    "condition": "the floor area grows or storefronts are merged",
+    "missing_inputs": [
+     "the floor area before the project",
+     "whether storefronts are to be merged"
+    ],
+    "code_section": "Planning Code § 754",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+    "citations": [
+     "zoning:NCT-MISSION"
+    ],
+    "basis": [
+     {
+      "rule_id": "T7.conditional",
+      "text": "Zoning district NCT-MISSION: a use of 6,000 square feet or more needs a Conditional Use, and 10,976 square feet is at or over it (Planning Code § 754, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 754",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-754.-mission-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-MISSION"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "records": {
+  "zoning": "NCT-MISSION",
+  "overlays": [
+   "Mission Alcoholic Beverage Special Use District",
+   "Mission Street Neighborhood Commercial Transit District",
+   "Fringe Financial Services RUD",
+   "Priority Equity Geographies SUD",
+   "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "NCT-MISSION"
+  ],
+  "tract": "209.00",
+  "site_history": {
+   "matched_by": "Parcel 6569/121 or the address 3400 Cesar Chavez St",
+   "total": 0,
+   "by_kind": {},
+   "entries": [],
+   "note": "No records at this address or parcel in the data. That does not mean nothing was ever filed here."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 12,
+   "bars": 2,
+   "abc_on_sale_licenses": 7,
+   "abc_licenses_1000ft": 27,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 1,
+   "approved_with_conditions": 0,
+   "denied": 0,
+   "withdrawn": 1,
+   "total": 2,
+   "window_years": 10,
+   "scope": "N = 2 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 28 permits and licences, 163 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 28,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 163,
+   "counted": [
+    {
+     "source": "datasf_planning",
+     "source_id": "2016-000892CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2016-000892CUA",
+     "fetched_at": "2024-07-22T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194658390274Z-y673-d69b-p0005.json",
+     "id": "datasf_planning:2016-000892CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant",
+      "hotel"
+     ],
+     "description": "The proposal is a request for Conditional Use Authorization, pursuant to Planning Code Sections 182, 186, 209.1, and 303, to re-activate a Limited Commercial Use on the first floor, which would include an Entertainment Use, a Retail Sales and Service Use, a Limited Restaurant Use, an Institutional Use, and a Hotel Use for one hotel room on the second floor. The proposal is to legalize an existing event and performance art venue (d.b.a. San Francisco Institute of Possibilities and d.b.a. Chez Poulet) within an existing two-story building. The project does not include any expansion of existing facilities.",
+     "address": "3359 CESAR CHAVEZ ST 94110",
+     "lat": 37.74787828054134,
+     "lng": -122.41727689036675,
+     "parcel": "5501/057A",
+     "zoning_district": "RH-2",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2016-01-21",
+     "decided_at": "2017-11-30",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "RH-2",
+      "planner": "Jonathan DiSalvo",
+      "premises": true,
+      "parent_id": "2016-000892PRJ",
+      "use_class": "nighttime_entertainment",
+      "close_date": "2017-11-30T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "RESIDENTIAL- HOUSE, TWO FAMILY",
+      "hearing_date": null,
+      "neighborhood": "Bernal Heights",
+      "project_name": "3359 CESAR CHAVEZ ST",
+      "applicant_org": "Quickdraw Permit Consulting"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2017-011840CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2017-011840CUA",
+     "fetched_at": "2024-07-22T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194650972626Z-y673-d69b-p0004.json",
+     "id": "datasf_planning:2017-011840CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "CONDITIONAL USE AUTHORIZATION TO PERMIT THE CHANGE OF USE FROM RETAIL TO (N) RESTAURANT.",
+     "address": "2949 MISSION ST 94110",
+     "lat": 37.74989367053263,
+     "lng": -122.4178735431894,
+     "parcel": "6528/026",
+     "zoning_district": "NCT-MISSION",
+     "status": "Closed - Withdrawn",
+     "outcome": "withdrawn",
+     "filed_at": "2018-03-27",
+     "decided_at": "2020-11-09",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCT-MISSION",
+      "planner": "Esmeralda Jardines",
+      "premises": true,
+      "parent_id": "2017-011840PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2020-11-09T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "MISSION STREET NEIGHBORHOOD COMMERCIAL TRANSIT",
+      "hearing_date": null,
+      "neighborhood": "Mission",
+      "project_name": "2949 MISSION ST"
+     }
+    }
+   ]
+  },
+  "applications_within_1000ft": 176,
+  "licences_within_500ft": 9,
+  "licences_within_1000ft": 28,
+  "businesses_within_500ft": 13
+ }
+}

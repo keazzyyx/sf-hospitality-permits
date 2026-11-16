@@ -1,0 +1,1420 @@
+{
+ "format_version": 2,
+ "address": "555 Grant Ave, San Francisco, CA 94108",
+ "lat": 37.79223116231841,
+ "lng": -122.40598767188139,
+ "parcel": "0257/001",
+ "concept_summary": "Beer-and-wine bar (ABC Type 42) serving packaged goods for sale, with tenant improvements and exterior signage, at 555 Grant Ave in the Chinatown Community Business district.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 2 further review (zoning and use, building permit and change of use), 1 insufficient information (alcohol licence), 1 allowed (health permit).",
+  "next_step": "Confirm with Planning whether the business is part of a chain and obtain the floor area in square feet, then file the Conditional Use Authorization application with SF Planning, including a pre-application meeting and 300-foot neighborhood outreach.",
+  "citations": [
+   "zoning:CCB"
+  ]
+ },
+ "pathway": {
+  "use": "bar",
+  "use_label": "Bar",
+  "district": "CCB",
+  "permission": "conditional",
+  "permission_label": "Conditional use",
+  "existing_use": null,
+  "change_of_use": "yes",
+  "change_of_use_label": "Change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Bar (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.cell",
+    "text": "Zoning district CCB: a Bar on the first story is a conditional use (Planning Code § 810, in force since before 2022-01-01).",
+    "code_section": "Planning Code § 810",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+    "citations": [
+     "zoning:CCB"
+    ]
+   },
+   {
+    "rule_id": "T1.first_story",
+    "text": "No story is stated, so the first story was read.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.no_limit",
+    "text": "Zoning district CCB has no hours of operation control on file (Planning Code § 810, in force since before 2022-01-01), so this trigger does not apply.",
+    "code_section": "Planning Code § 810",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+    "citations": [
+     "zoning:CCB"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 555 Grant Ave, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "Retail to Bar is a change of use, with the last use of the space as described.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 810",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26704",
+    "citations": [
+     "overlay:static:sf:nc_ccb",
+     "zoning:CCB"
+    ]
+   }
+  ],
+  "rules_date": "2025-03-18",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district CCB: a Bar on the first story is a conditional use (Planning Code § 810, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 810",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "rule_id": "T1.first_story",
+      "text": "No story is stated, so the first story was read.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the business is part of a chain that shares its name, look or menu with other locations"
+    ],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district CCB: formula retail is a conditional use (Planning Code § 810, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 810",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+      "citations": [
+       "zoning:CCB"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "lines": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district CCB: a use of 2,501 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 810, in force from 2025-01-19 (Ord. 297-24, File No. 241055)).",
+      "code_section": "Planning Code § 810",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+      "citations": [
+       "zoning:CCB"
+      ]
+     }
+    ],
+    "in_force_from": "2025-01-19",
+    "ordinance": "Ord. 297-24, File No. 241055",
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.outside",
+      "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-03-18, so this trigger does not apply.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district CCB has no hours of operation control on file (Planning Code § 810, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 810",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+      "citations": [
+       "zoning:CCB"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "yes",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 555 Grant Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Retail to Bar is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 18 March 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Bar (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district CCB: a Bar on the first story is a conditional use (Planning Code § 810, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 810",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+     "citations": [
+      "zoning:CCB"
+     ]
+    },
+    {
+     "rule_id": "T1.first_story",
+     "text": "No story is stated, so the first story was read.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T3.no_use",
+     "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T5.row",
+     "text": "Zoning district CCB: formula retail is a conditional use (Planning Code § 810, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 810",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+     "citations": [
+      "zoning:CCB"
+     ]
+    },
+    {
+     "rule_id": "T5.missing",
+     "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T7.missing",
+     "text": "Zoning district CCB: a use of 2,501 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 810, in force from 2025-01-19 (Ord. 297-24, File No. 241055)).",
+     "code_section": "Planning Code § 810",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+     "citations": [
+      "zoning:CCB"
+     ]
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district CCB has no hours of operation control on file (Planning Code § 810, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 810",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-810.-chinatown-community-business-district",
+     "citations": [
+      "zoning:CCB"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 555 Grant Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Retail to Bar is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "zoning.status",
+     "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: use control of the zoning district. Not decided as well: formula retail and use size; the lines above name what is missing: further review.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": [
+      "zoning:CCB"
+     ]
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "summary": "A Bar use at 555 Grant Ave in the CCB district requires a Conditional Use Authorization under Planning Code Section 810, and formula retail and use size over 2,500 sq ft would also trigger CU review, but the records do not show whether the business is part of a chain or its floor area.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district.",
+     "confidence": "verified",
+     "citations": [
+      "zoning:CCB",
+      "overlay:static:sf:nc_ccb"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Planning approved an ABC Type 20 referral for a gallery and liquor store at 555 Grant Ave in April 2023, describing the use as Retail Sales and Services principally permitted in the CCB district.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2023-003336MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The proposed change from retail to a Bar is a change of use under Planning Code Section 102, as stated in the pathway determination.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record mentions Section 102 but does not state what constitutes a change of use under it or contain a pathway determination.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A bar CUA was approved at 690 Sacramento Street (219 m away, same CCB district) in November 2023 (filed June 2023, decided November 2023) with conditions for noise control, community liaison, and patron notices but no hour restrictions.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2023-005339CUA"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "CCB zoning also requires CU authorization for formula retail and for uses over 2,500 square feet (Planning Code Section 810, in force since January 2025), but the description does not say whether this business is part of a chain or give the floor area.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record cites Section 810 but does not state what it requires; the actual CU authorization requirements, size thresholds, and effective date are not in the record.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Within 1,000 feet there is only one dated use decision in the last 10 years (N = 1), a withdrawn CUA at 717 California Street, so no local approval rate can be shown.",
+     "confidence": "verified",
+     "citations": [
+      "stat:base_rate",
+      "app:datasf_planning:2019-021010CUA"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence, Type 42 (on-sale beer and wine, public premises)",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "alcohol.licence",
+     "text": "The licence looked up is ABC Type 42 (on-sale beer and wine, public premises), as stated in the description.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.tract_concentration",
+     "text": "Census tract 117.00: 89 active on-sale retail licences in ABC's licences as they stood on 18 March 2025, against 6 authorised in ABC's census tract authorisations of September 2026.",
+     "code_section": "California Business and Professions Code § 23958.4",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.tract_concentration",
+     "text": "The tract is over its authorised number. State law tests a new licence and a transfer from other premises for undue concentration, and the applicant does not say how the liquor licence will be obtained.",
+     "code_section": "California Business and Professions Code § 23958.4",
+     "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+     "citations": []
+    },
+    {
+     "rule_id": "alcohol.status",
+     "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2025-03-18: 5 ABC licences within 1,000 ft (1 at this address) and 6 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+   ],
+   "summary": "The description states the license type is ABC Type 42 but does not say how the license will be obtained (new application or transfer), and the census tract shows 89 active on-sale licenses against 6 authorized.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "Census tract 117.00 shows 89 active on-sale retail licenses on file as of March 2025, against 6 authorized under ABC's September 2026 tract authorizations, placing the tract over its authorized number.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record shows only nearby license counts within specific radii, not census tract totals or authorization limits.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "State law (Business and Professions Code Section 23958.4) tests a new license application and a premises-to-premises transfer for undue concentration when the tract is over quota; the description does not say whether the Type 42 will be a new application or a transfer.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record is a zoning district record and does not mention Business and Professions Code Section 23958.4, undue concentration, or license applications.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Planning approved a Public Convenience or Necessity referral to the Board of Supervisors for the Type 48 bar at 690 Sacramento Street (same CCB district) in January 2024.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2023-010036MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Within 500 feet of 555 Grant Ave there are 3 active on-sale ABC licenses (Type 41 at 614 Pine, Type 47 at 631 Grant and 600 Stockton) and 64 active on-sale licenses within 1,000 feet.",
+     "confidence": "verified",
+     "citations": [
+      "stat:density",
+      "license:abc:557010",
+      "license:abc:362201",
+      "license:abc:534529"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "ABC will route the license application to SF Planning and the Police Department for review (Business and Professions Code Section 23987); Planning's zoning referral approval follows the CUA approval and is routine for an approved use.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records show Planning referral approvals for ABC licenses but do not state ABC's routing process, the legal code section, or that referrals are routine.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "The cited records did not support this summary. See the findings below.",
+   "summary_verification": "downgraded",
+   "summary_note": "The records state the application is sent to Planning for review, but do not specify 'for zoning confirmation.'",
+   "findings": [
+    {
+     "text": "A business serving beverages to the public needs a health permit to operate under the California Retail Food Code and San Francisco Health Code Article 8, issued by DPH Environmental Health after inspection.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The cited record is about business registration certificates from the Treasurer & Tax Collector, not health permits for food/beverage service.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The health permit application is sent to the Planning Department for zoning review under Planning's interagency referral guidelines, but this referral step is not a separate approval.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The zoning district record does not mention health permit applications, interagency referrals, or Planning Department review procedures.",
+     "original_confidence": "verified"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit with change of use",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 555 Grant Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Retail to Bar is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "Tenant improvements and a change of use from retail to a bar require a building permit routed to Planning for zoning conformance; the description does not give the occupant load, so whether a Building Code change of occupancy is needed is not established.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "A change of use requires a building permit under San Francisco Building Code Section 106A.1, and the permit must conform to the Planning Code (Section 175) before it is issued.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The zoning district record does not mention Building Code Section 106A.1 or Planning Code Section 175, or state permit requirements for change of use.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The building permit application is routed to Planning for zoning review under Planning Code Section 175(a), which confirms that the use has been authorized by CUA before the permit is issued.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is a zoning district record with no information about permit routing, Section 175(a), or CUA requirements.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Under the 2022 California Building Code a bar is Assembly Group A-2, but a space for fewer than 50 people is Group B; the description does not give the occupant load, so the proposed occupancy group and whether a change of occupancy is required are not established.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record is a zoning district record and does not address Building Code occupancy classifications or groups.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The existing occupancy group of 555 Grant Ave is not in public records; only plans or an inspection show it, so a Building Code change of occupancy cannot be confirmed from the records in hand.",
+     "confidence": "professional_review_required",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "The condition of the space: whether bar equipment, sinks, restrooms, ADA access, finishes and mechanical systems meet code for a bar use, and the existing Building Code occupancy group.",
+   "needs": "inspection",
+   "ask": "An architect or contractor with access to the space and the existing building permit records at DBI."
+  },
+  {
+   "question": "The operator's track record: whether the applicant or any principal has operated other licensed premises in San Francisco or California, and any ABC license history or enforcement actions.",
+   "needs": "applicant_history",
+   "ask": "The applicant: not stated in the project description."
+  },
+  {
+   "question": "Whether Planning will approve the CUA for this bar at this address, and what conditions the Commission will impose on hours, security, soundproofing, or patron management.",
+   "needs": "agency_answer",
+   "ask": "SF Planning Department: the Commission decides at the public hearing, and the records show only one bar CUA in the CCB district in the last decade."
+  },
+  {
+   "question": "Whether ABC will require a Public Convenience or Necessity finding for a new Type 42 application in census tract 117.00, and how long that process will add to the ABC timeline.",
+   "needs": "agency_answer",
+   "ask": "California Department of Alcoholic Beverage Control: confirm undue-concentration status and PCN requirements for the tract before filing."
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "CCB",
+  "name": "Chinatown Community Business District",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 810 (Zoning Control Table 810); § 102 (Bar, Restaurant)",
+  "citation_id": "zoning:CCB"
+ },
+ "overlays": [
+  {
+   "name": "Chinatown Community Business District",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 810 (Zoning Control Table 810); § 102 (Bar, Restaurant)",
+   "citation_id": "overlay:static:sf:nc_ccb"
+  },
+  {
+   "name": "Priority Equity Geographies SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.97",
+   "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 13,
+  "bars": 2,
+  "abc_on_sale_licenses": 3,
+  "abc_licenses_1000ft": 64,
+  "undue_concentration_flag": false,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 0,
+  "approved_with_conditions": 1,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 1,
+  "window_years": 10,
+  "scope": "N = 1 dated decision within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 67 permits and licences, 406 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 67,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 406,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "Noise control and soundproofing: fixed-source equipment and incidental noise shall not be audible beyond the premises or exceed Noise Control Ordinance limits.",
+   "basis": "The bar CUA at 690 Sacramento Street (CCB district, 2023) was conditioned to require acoustical insulation and sound proofing, and that incidental noise not be audible beyond the premises.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Sidewalk and litter maintenance: the operator shall maintain the entrance and all sidewalks abutting the property, and monitor the sidewalk within a one-block radius daily to remove litter associated with the business.",
+   "basis": "The 690 Sacramento CUA and standard eating-and-drinking conditions require daily litter monitoring within a one-block radius and sidewalk maintenance in compliance with DPW standards.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Community liaison officer: appoint a liaison to address concerns of nearby owners and occupants, with contact information provided to Planning and registered neighborhood groups.",
+   "basis": "The 690 Sacramento CUA required a community liaison officer before the building permit was issued.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "condition": "Type 42 license restrictions: no minors allowed on the premises.",
+   "basis": "ABC Type 42 (on-sale beer and wine, public premises) prohibits minors.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.abc_type_42"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2023-005339CUA",
+   "citation_id": "app:datasf_planning:2023-005339CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "bar"
+   ],
+   "address": "690 SACRAMENTO ST 94111",
+   "distance_m": 218.9,
+   "filed_at": "2023-06-12",
+   "decided_at": "2023-11-30",
+   "days_to_decision": 171,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+    "Garbage, Composting and Recycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Noise: P lans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)",
+    "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block driveways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.926,
+   "why_comparable": "Bar use (Type 48) in the CCB district at 690 Sacramento, 219 m away, filed June 2023 and approved November 2023. Same zoning district, same conditional-use pathway under Planning Code Section 810, recent decision establishes current Commission expectations.",
+   "key_takeaway": "Use decision: Bar CUA in CCB was approved with conditions in 5.5 months (171 days filing to decision). Standard conditions included noise control, community liaison officer, and patron notices at exits. No unusual restrictions on hours or operations, confirming the Commission approves bar uses in CCB when neighborhood impacts are managed.",
+   "lat": 37.79373213207838,
+   "lng": -122.40437616211798,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-005339CUA"
+  },
+  {
+   "application_id": "datasf_planning:2023-005386MIS",
+   "citation_id": "app:datasf_planning:2023-005386MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar",
+    "restaurant"
+   ],
+   "address": "690 SACRAMENTO ST 94111",
+   "distance_m": 218.9,
+   "filed_at": "2023-06-13",
+   "decided_at": "2024-01-03",
+   "days_to_decision": 204,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.677,
+   "why_comparable": "ABC Type 48 referral for the bar at 690 Sacramento (RM 212) approved in January 2024, following the November 2023 CUA. Shows the two-step process: CUA first, then ABC referral, and that Planning routinely approves the ABC application once the CUA is granted.",
+   "key_takeaway": "Agency referral: Planning approved the Type 48 ABC referral for 690 Sacramento after CUA 2023-005339CUA was granted, confirming the standard sequence: obtain CUA approval, then ABC applies the license. The referral approval took 204 days but was held pending the CUA decision; once the CUA was final the ABC referral was routine.",
+   "lat": 37.79373213207838,
+   "lng": -122.40437616211798,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-005386MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-010036MIS",
+   "citation_id": "app:datasf_planning:2023-010036MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar",
+    "restaurant"
+   ],
+   "address": "690 SACRAMENTO ST 94111",
+   "distance_m": 218.9,
+   "filed_at": "2023-10-25",
+   "decided_at": "2024-01-03",
+   "days_to_decision": 70,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.677,
+   "why_comparable": "Board of Supervisors Public Convenience or Necessity referral for the same 690 Sacramento bar (Type 48), approved January 2024. Demonstrates that even a PCN finding from the Board of Supervisors was granted for a bar in the CCB district, supporting the conclusion that the district is not hostile to bar uses.",
+   "key_takeaway": "No takeaway recorded.",
+   "lat": 37.79373213207838,
+   "lng": -122.40437616211798,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-010036MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-004266MIS",
+   "citation_id": "app:datasf_planning:2022-004266MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar"
+   ],
+   "address": "447 BUSH ST 94108",
+   "distance_m": 229.9,
+   "filed_at": "2022-05-05",
+   "decided_at": "2022-05-12",
+   "days_to_decision": 7,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.85,
+   "why_comparable": "ABC Type 48 bar approval at 447 Bush Street, 230 m away in the C-3-R district, decided May 2022. Different zoning (C-3-R permits bars principally, CCB requires CU) but close proximity shows Planning's comfort with bar density in this downtown/Chinatown edge area.",
+   "key_takeaway": "Agency referral: Planning approved a Type 48 bar in the nearby C-3-R district in 7 days as principally permitted. While the C-3-R zoning differs from CCB, the proximity (230 m) and lack of concern about concentration or neighborhood character supports the viability of bars in this corridor.",
+   "lat": 37.790336910153925,
+   "lng": -122.4049305813297,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-004266MIS"
+  },
+  {
+   "application_id": "datasf_planning:2025-001198MIS",
+   "citation_id": "app:datasf_planning:2025-001198MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar",
+    "restaurant",
+    "cafe"
+   ],
+   "address": "627 GRANT AVE 94108",
+   "distance_m": 77.6,
+   "filed_at": "2025-02-12",
+   "decided_at": "2025-02-12",
+   "days_to_decision": 0,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.663,
+   "why_comparable": "Recent ABC Type 48 referral at 627 Grant Ave (78 m away), approved February 2025 for an existing restaurant and full bar (Far East Café) in the CVR district. Shows Planning's willingness to approve on-sale licenses on the Grant Avenue corridor very close to the subject site.",
+   "key_takeaway": "Agency referral: Planning approved a Type 48 continuation (existing use since 1965) at 627 Grant, one block from 555 Grant, in February 2025. The proximity and recent date confirm that the Grant Avenue corridor continues to support on-sale alcohol uses and that concentration is not a barrier.",
+   "lat": 37.792870569662995,
+   "lng": -122.40634283582492,
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001198MIS"
+  },
+  {
+   "application_id": "datasf_planning:2016-003213MIS",
+   "citation_id": "app:datasf_planning:2016-003213MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "bar"
+   ],
+   "address": "447 BUSH ST 94108",
+   "distance_m": 229.9,
+   "filed_at": "2016-03-10",
+   "decided_at": "2016-05-10",
+   "days_to_decision": 61,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.76,
+   "why_comparable": "ABC Type 48 bar referral at 447 Bush Street, 230 m away, decided May 2016 for entertainment and arts use in the C-3-R district. Earlier approval at the same address as 2022-004266MIS, showing a long-standing bar location near the subject site.",
+   "key_takeaway": "Agency referral: Planning approved a Type 48 bar at 447 Bush in 2016 in the C-3-R district as permitted under Sections 210.2 and 102. The location has held a bar license continuously, demonstrating stable bar operations close to the Chinatown boundary without neighborhood conflict.",
+   "lat": 37.790336910153925,
+   "lng": -122.4049305813297,
+   "source_url": "https://sfplanninggis.org/pim?search=2016-003213MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 0257/001 or the address 555 Grant Ave",
+  "total": 2,
+  "by_kind": {
+   "use_decision": 1,
+   "agency_referral": 1
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2023-003336MIS",
+    "citation_id": "app:datasf_planning:2023-003336MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "ABC referral - Type 20; Recommend approval of Type 20 license in conjunction with a new art gallery and liquor store (d.b.a. Blue Stream Gallery and Gifts), both are Retail Sales and Services uses principally permitted in the Chinatown Community Business zoning district per PC Sec. 810.",
+    "address": "555 GRANT AVE 94108",
+    "filed_at": "2023-04-13",
+    "decided_at": "2023-04-19",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2023-003336MIS"
+   },
+   {
+    "application_id": "datasf_planning:2019-021010CUA",
+    "citation_id": "app:datasf_planning:2019-021010CUA",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Conditional Use Authorization request for change of use from Restaurant to Professional Services per Planning Code Sections 810 and 121.4.",
+    "address": "717 CALIFORNIA ST 94108",
+    "filed_at": "2019-11-07",
+    "decided_at": "2021-01-19",
+    "outcome": "withdrawn",
+    "status": "Closed - Withdrawn",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-021010CUA"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 1,
+   "action": "Confirm formula retail status and floor area with Planning before filing the CUA application.",
+   "what_to_say": "Contact SF Planning's information counter or submit a Preliminary Project Assessment (PPA) request stating the business name, whether it is part of a chain with other locations sharing the name or look, and the floor area of the bar space in square feet. Planning will confirm whether formula retail review (Planning Code Section 303(i)) or the 2,500 sq ft use-size trigger (Section 810) applies. If either applies, the CUA application must address those criteria; if not, the CUA is solely for the bar use. Budget 2–4 weeks for a PPA response or ask at the counter if the answers are straightforward.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "step": 3,
+   "action": "Obtain Planning Commission approval of the CUA at the public hearing.",
+   "what_to_say": "At the Commission hearing, present the operations plan and respond to any public comment. Emphasize the business's fit with the neighborhood (Chinatown visitor and arts corridor), measures to manage noise and litter (community liaison, posted exit notices, daily sidewalk monitoring), and compliance with the conditions imposed at 690 Sacramento Street (2023). If the Commission approves the CUA. If the Commission continues the hearing for revisions, address the requested changes and return for approval.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-005339CUA"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 120,
+  "days_max": 300,
+  "cost_min_usd": 4155.0,
+  "cost_max_usd": 18250.0,
+  "notes": "The day range (120–300 days) and cost range ($4,155–$18,250 in government fees) are the time and cost to obtain the three approvals in the entitlement path when they are granted: Conditional Use Authorization (120–300 days, $3,100–$15,000 per the catalog, depending on construction cost and fee waiver eligibility), Health permit to operate (14–45 days to issue after application, $470 application fee in 2026–27, included in the building permit timeline), and Building permit with change of use (14–120 days for plan check and issuance, $800–$15,000 depending on construction valuation, per the catalog). The timeline assumes the CUA is approved at the first hearing and no appeal is filed (add 1–2 months if appealed), that building plans are complete and pass review without major revisions (incomplete plans can add 2–4 months), and that the ABC Type 42 application and PCN finding (if required) proceed in parallel with construction (60–150 days per the catalog, with $1,000–$1,600 in ABC fees not included in this range because the alcohol row status is insufficient information and the ABC license is not in the entitlement path). The cost range includes only the Planning CUA fee, the building permit fee, the health permit application fee, and the SF business registration fee ($55–$700); it does not include architect fees, construction costs, ABC license fees, state business registration ($70–$150), or ongoing costs such as insurance and payroll taxes. If the CUA is denied or the building permit uncovers a code issue that cannot be resolved, the timeline and cost figures do not apply. Confirm the current CUA and building permit fee schedules with Planning and DBI, as fees are adjusted annually for CPI and by construction valuation.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate; Building permit with change of use",
+  "verification": "downgraded",
+  "verification_note": "The cited catalog entries show CUA (120-300 days, $3,100-$15,000), building permit (14-120 days, $800-$15,000), and business registration (1-5 days, $55-$700), but no health permit or ABC entries are cited to support the health permit times/fees or ABC times/fees mentioned, and the stated cost range is not clearly der…",
+  "original_confidence": "likely_applicable"
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 33,
+  "supported": 3,
+  "trimmed": 11,
+  "downgraded": 12,
+  "dropped": 7
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2016-003213MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 447 BUSH ST 94108 · approved (2016)",
+   "source_url": "https://sfplanninggis.org/pim?search=2016-003213MIS",
+   "excerpt": "ABC License Type 48 is permitted in conjunction with entertainment, arts and recreation use per PC Sections 210.2 and 102."
+  },
+  {
+   "id": "app:datasf_planning:2019-021010CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 717 CALIFORNIA ST 94108 · withdrawn (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-021010CUA",
+   "excerpt": "Conditional Use Authorization request for change of use from Restaurant to Professional Services per Planning Code Sections 810 and 121.4."
+  },
+  {
+   "id": "app:datasf_planning:2022-004266MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 447 BUSH ST 94108 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-004266MIS",
+   "excerpt": "Recommend approval of ABC Type 48 - On-Sale General - Public Premises and Type 77 - Event Permit licenses; Permitted in conjunction with new Bar dba Harlan Records, a Retail Sales and Service principally permitted in the C-3-R Zoning District at the ground floor per PC Section 210.2."
+  },
+  {
+   "id": "app:datasf_planning:2023-003336MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 555 GRANT AVE 94108 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-003336MIS",
+   "excerpt": "ABC referral - Type 20; Recommend approval of Type 20 license in conjunction with a new art gallery and liquor store (d.b.a. Blue Stream Gallery and Gifts), both are Retail Sales and Services uses principally permitted in the Chinatown Community Business zoning district per PC Sec. 810."
+  },
+  {
+   "id": "app:datasf_planning:2023-005339CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 690 SACRAMENTO ST 94111 · approved with conditions (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-005339CUA",
+   "excerpt": "Planning Commission Motion No. 21450 (November 30, 2023) approved with conditions Conditional Use Authorization 2023-005339CUA at 690 Sacramento Street by a 6-0 vote. Key operating conditions: Noise; Community Liaison; Notices Posted at Bars and Entertainment Venues."
+  },
+  {
+   "id": "app:datasf_planning:2023-005386MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 690 SACRAMENTO ST 94111 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-005386MIS",
+   "excerpt": "Recommend approval of ABC Type 48 (On-Sale General - Public Premises) License for a new bar dba RM 212 at 690 Sacramento Street.  Previously a Restaurant dba RM 212, Bar use is a Retail Sales and Service use conditionally permitted in the Chinatown Community Business Zoning District per Planning Cod"
+  },
+  {
+   "id": "app:datasf_planning:2023-010036MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 690 SACRAMENTO ST 94111 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-010036MIS",
+   "excerpt": "BOS referral - Liquor License Public Convenience or Necessity Referral; Planning is recommending approval of the attached ABC Type 48 (On-Sale General - Public Premises) License for a new bar dba RM 212 at 690 Sacramento Street.  Previously a Restaurant dba RM 212, Bar use is a Retail Sales and Serv"
+  },
+  {
+   "id": "app:datasf_planning:2025-001198MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 627 GRANT AVE 94108 · approved (2025)",
+   "source_url": "https://sfplanninggis.org/pim?search=2025-001198MIS",
+   "excerpt": "ABC referral - Type 48. Recommend approval of Type 48 ABC License at 631 Grant Ave. in conjunction with existing full service Restaurant & Full Bar (dba Far East Café), permitted in the CVR Chinatown Visitor's Retail District per Section 180 of the Planning Code. ABC has confirmed that the existing "
+  },
+  {
+   "id": "catalog:ca.abc_type_42",
+   "kind": "catalog",
+   "label": "ABC Type 42 – On-Sale Beer & Wine, Public Premises (bar / wine bar / taproom) — California Department of Alcoholic Beverage Control (ABC)",
+   "source_url": "https://www.abc.ca.gov/licensing/license-types/",
+   "excerpt": "60–150 days; $1,000–$1,600; estimated"
+  },
+  {
+   "id": "catalog:sf.conditional_use_authorization",
+   "kind": "catalog",
+   "label": "Conditional Use Authorization (bar / nightlife use) — SF Planning Commission",
+   "source_url": "https://sfplanning.org/process-cua-small-businesses",
+   "excerpt": "120–300 days; $3,100–$15,000; estimated"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 555 Grant Ave, San Francisco, CA 94108 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=498688",
+   "excerpt": "parcel 0257/001"
+  },
+  {
+   "id": "license:abc:362201",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 631 GRANT AVE, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=362201",
+   "excerpt": "FAR EAST CAFE — Type 47 – On-Sale General - Eating Place (ACTIVE on 2025-03-18)"
+  },
+  {
+   "id": "license:abc:534529",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 600 STOCKTON ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=534529",
+   "excerpt": "RITZ CARLTON — Type 47 – On-Sale General - Eating Place (ACTIVE on 2025-03-18)"
+  },
+  {
+   "id": "license:abc:557010",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 614 PINE ST, SAN FRANCISCO, CA 94108 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=557010",
+   "excerpt": "ROCK JAPANESE CUISINE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2025-03-18)"
+  },
+  {
+   "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+   "kind": "overlay",
+   "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+   "excerpt": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:nc_ccb",
+   "kind": "overlay",
+   "label": "Chinatown Community Business District — Planning Code § 810 (Zoning Control Table 810); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26704",
+   "excerpt": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 1 approved / 0 denied / 0 withdrawn; N = 1 dated decision within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 67 permits and licences, 406 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 67 Entertainment Commission permits and ABC licences (lists of grants only), 406 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 13 food & drink businesses, 2 bars, 3 active on-sale ABC licenses within 500 ft; 64 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:CCB",
+   "kind": "zoning",
+   "label": "Zoning CCB — Planning Code § 810 (Zoning Control Table 810); § 102 (Bar, Restaurant)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26704",
+   "excerpt": "The controls as they stood on 2025-03-18 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "555 Grant Ave is in the Chinatown Community Business (CCB) zoning district, where a Bar use is a conditional use requiring Planning Commission approval. The address currently holds off-sale ABC licenses (Type 20 and Type 86) for \"Blue Stream Gallery and Gifts,\" a retail art gallery and liquor store approved by Planning in April 2023. The proposed transition from retail to an on-premises beer-and-wine bar (Type 42) is a change of use that will require a Conditional Use Authorization. Within 1,000 feet there is only one dated use decision in the last decade—not enough to establish a meaningful approval rate. Within 500 feet there are 3 active on-sale licenses and 13 registered food/drink businesses, suggesting moderate but not excessive concentration.",
+ "data_gaps": [
+  "No hearing transcripts or decision memoranda extracted for the 690 Sacramento CUA (2023-005339CUA), so the reasons for the approval conditions are not shown.",
+  "The ABC license database does not expose detailed conditions or operating restrictions for the nearby on-sale licenses.",
+  "No census tract undue-concentration determination is included; ABC will evaluate this separately during the Type 42 application.",
+  "The withdrawn CUA at 717 California (2019-021010CUA) gives no reason for the withdrawal in the record.",
+  "Registered business data (within 500 ft) does not distinguish currently operating establishments from closed ones; the count of 13 food/drink businesses may include inactive registrations.",
+  "No Planning Code history before 2022 is loaded, so earlier changes to CCB rules for bars are not shown."
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T07:52:03+00:00",
+ "model_versions": {
+  "intake": "claude-sonnet-4-5",
+  "records": "claude-sonnet-4-5",
+  "precedent": "claude-sonnet-4-5",
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2025-03-18"
+}

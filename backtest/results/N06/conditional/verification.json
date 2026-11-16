@@ -1,0 +1,549 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 34,
+  "supported": 7,
+  "trimmed": 11,
+  "downgraded": 10,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 47 full-bar license has been on file at 659 Columbus Ave since May 2021, showing the space operates as a restaurant with full alcohol service.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 47 license has been on file at 659 Columbus Ave since May 2021.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 47 license has been on file at 659 Columbus Ave since May 2021.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:624380"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Three prior Conditional Use Authorizations approved restaurant uses at this address: the original 1,000 sq ft restaurant in 1995, addition of a full bar in 2003, and expansion to over 2,000 sq ft in 2009.",
+   "verdict": "partially_supported",
+   "supported_text": "Three prior Conditional Use Authorizations approved restaurant uses at this address: the original 1,000 sq ft restaurant in 1995, addition of a full bar in 2003, and expansion to over 2,000 sq ft.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Three prior Conditional Use Authorizations approved restaurant uses at this address: the original 1,000 sq ft restaurant in 1995, addition of a full bar in 2003, and expansion to over 2,000 sq ft.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:1995.322C",
+    "app:datasf_planning:2003.0924C",
+    "app:datasf_planning:2009.0798C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Planning Code §780.3(c)(1)(B) states a new Restaurant may be approved by Conditional Use only if it will not enlarge the space; the proposal increases floor area from 1,486 sq ft to 2,820 sq ft, so the rule's no-enlargement condition is not met.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code §780.3(c)(1)(B) states a new Restaurant may be approved by Conditional Use only if it will not enlarge the space; the proposal increases floor area from 1,486 sq ft to 2,820 sq ft, so the rule's no-enlargement condition is not met.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record references Planning Code § 722, not §780.3(c)(1)(B), and contains no text about enlargement restrictions or the floor area numbers stated."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "In the North Beach NCD, a restaurant over 2,000 sq ft and enlarging a nonconforming use both require Conditional Use Authorization under Planning Code §§186.1 and 722.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "In the North Beach NCD, a restaurant over 2,000 sq ft and enlarging a nonconforming use both require Conditional Use Authorization under Planning Code §§186.1 and 722.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record states restaurant_permission is unknown and does not provide the specific thresholds, requirements, or code section 186.1 mentioned in the sentence."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The 2009 CUA approved expansion of this restaurant to over 2,000 sq ft; no hearing record shows whether that approval addressed or exhausted the ability to enlarge further under the North Beach SUD rules.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 2009 CUA approved expansion of this restaurant to over 2,000 sq ft; no hearing record shows whether that approval addressed or exhausted the ability to enlarge further under the North Beach SUD rules.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2009.0798C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "Only two restaurant use decisions requiring Commission hearings appear in the North Beach NCD within 1,000 ft since 2015; both approved intensification (adding a full kitchen in 2020 after 11 months, upgrading a liquor license in 2016 after 4.5 months), but neither involved physical expansion of square footage.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Only two restaurant use decisions requiring Commission hearings appear in the North Beach NCD within 1,000 ft since 2015; both approved intensification (adding a full kitchen in 2020 after 11 months, upgrading a liquor license in 2016 after 4.5 months), but neither involved physical expansion of square footage.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The stat record shows 7 dated decisions in the district, not two; the records don't use the term 'intensification' or state there was no physical expansion."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required to enlarge the existing restaurant and to exceed 2,000 sq ft, but the North Beach Special Use District rule prohibits enlarging restaurant space, making this a further review with a critical zoning conflict to resolve.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization is required to enlarge the existing restaurant and to exceed 2,000 sq ft.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:abc:624380",
+    "app:datasf_planning:1995.322C",
+    "app:datasf_planning:2003.0924C",
+    "app:datasf_planning:2009.0798C",
+    "overlay:static:sf:north_beach_sud",
+    "zoning:NCD-NORTH BEACH",
+    "app:datasf_planning:2019-013418CUA",
+    "app:datasf_planning:2015-014178CUA",
+    "stat:base_rate"
+   ],
+   "note": "Records show a CUA is required but do not state that the North Beach Special Use District rule prohibits enlarging or that there is a critical zoning conflict."
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "A Type 47 on-sale general eating place license is already active at 659 Columbus Ave for Piazza Pellegrini, issued May 2021.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Type 47 on-sale general eating place license is already active at 659 Columbus Ave for Piazza Pellegrini, issued May 2021.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:624380"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "The North Beach SUD requires Conditional Use for a Restaurant to sell beer, wine or liquor on-premises (ABC Types 02, 23, 41, 47, 49, 59 or 75), with a Planning Commission finding that it is and will remain a bona fide eating place.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The North Beach SUD requires Conditional Use for a Restaurant to sell beer, wine or liquor on-premises (ABC Types 02, 23, 41, 47, 49, 59 or 75), with a Planning Commission finding that it is and will remain a bona fide eating place.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows restaurant_permission as 'unknown' and does not state the Conditional Use requirement, ABC license types, or Planning Commission finding requirement."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "Eleven active on-sale ABC licenses are on file within 500 ft and 42 within 1,000 ft, triggering an undue concentration flag that may require a Public Convenience or Necessity finding from the city for a new or transferred license.",
+   "verdict": "partially_supported",
+   "supported_text": "Eleven active on-sale ABC licenses are on file within 500 ft and 42 within 1,000 ft, triggering an undue concentration flag.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Eleven active on-sale ABC licenses are on file within 500 ft and 42 within 1,000 ft, triggering an undue concentration flag.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "stat:density"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "All ABC license applications for restaurants in the North Beach NCD within 500 ft since 2019 were approved as continuation of existing use, including Type 41 and Type 47 licenses, but none involved new issuance in an undue-concentration tract.",
+   "verdict": "partially_supported",
+   "supported_text": "ABC license applications for restaurants in the North Beach NCD within 500 ft since 2019 were approved as continuation of existing use, including Type 41 and Type 47 licenses.",
+   "cut_problem": "keeps 'All ABC license applications (completeness claim)', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "All ABC license applications for restaurants in the North Beach NCD within 500 ft since 2019 were approved as continuation of existing use, including Type 41 and Type 47 licenses, but none involved new issuance in an undue-concentration tract.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show three approved applications but don't state this is all such applications; records don't mention undue-concentration tracts."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "Insufficient information: the description does not state what alcohol will be served (beer and wine, or spirits) or how a license will be obtained, so the applicable ABC license type and pathway cannot be determined.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Insufficient information: the description does not state what alcohol will be served (beer and wine, or spirits) or how a license will be obtained, so the applicable ABC license type and pathway cannot be determined.",
+   "confidence": null,
+   "citations": [
+    "app:abc:624380",
+    "overlay:static:sf:north_beach_sud",
+    "stat:density",
+    "app:datasf_planning:2023-002096MIS",
+    "app:datasf_planning:2022-009279MIS",
+    "app:datasf_planning:2021-001215MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A Limited Live Performance permit approved in February 2023 shows the restaurant has been operating with indoor and outdoor entertainment and amplified sound in a private lot.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A Limited Live Performance permit approved in February 2023 shows the restaurant has been operating with indoor and outdoor entertainment and amplified sound in a private lot.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows what was approved in the permit, not evidence that the restaurant has been operating with these features."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "FY2026–27 DPH fees for a new restaurant plan check are $2,207 for 8 hours of review, with the $470 permit to operate application fee due after approval, and reinspections at $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "FY2026–27 DPH fees for a new restaurant plan check are $2,207 for 8 hours of review, with the $470 permit to operate application fee due after approval, and reinspections at $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check",
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "The existing space has limited cooking; tenant improvements and new construction will require DPH review of kitchen layout, finishes, equipment and menu as part of the building permit routing.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements and new construction will require DPH review of kitchen layout, finishes, equipment and menu as part of the building permit routing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Tenant improvements and new construction will require DPH review of kitchen layout, finishes, equipment and menu as part of the building permit routing.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.health_plan_check"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is allowed: food businesses need a permit issued after plan check and final inspection without a discretionary hearing, and the existing restaurant has operated under health permits continuously since 1995.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is allowed: food businesses need a permit issued after plan check and final inspection without a discretionary hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is allowed: food businesses need a permit issued after plan check and final inspection without a discretionary hearing.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2023-001062MIS",
+    "catalog:sf.health_plan_check",
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The 2009 CUA described expansion of the restaurant to over 2,000 sq ft, but the building permit and occupancy group assigned at that time are not shown in the records provided.",
+   "verdict": "partially_supported",
+   "supported_text": "The 2009 CUA described expansion of the restaurant to over 2,000 sq ft.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 2009 CUA described expansion of the restaurant to over 2,000 sq ft.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2009.0798C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "California Building Code classifies a restaurant as Assembly Group A-2, but a space for fewer than 50 people is Group B; the proposed occupant load determines the occupancy classification.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Building Code classifies a restaurant as Assembly Group A-2, but a space for fewer than 50 people is Group B; the proposed occupant load determines the occupancy classification.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record discusses zoning district controls, not California Building Code occupancy classifications."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Tenant improvements and new construction enlarging a restaurant from 1,486 to 2,820 sq ft will require a building permit with plans stamped by an architect, routed to Planning, DPH, Fire and other departments.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements and new construction will require a building permit with plans stamped by an architect.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Tenant improvements and new construction enlarging a restaurant from 1,486 to 2,820 sq ft will require a building permit with plans stamped by an architect, routed to Planning, DPH, Fire and other departments.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records do not state the specific square footages or the complete list of routing departments (only DPH/health routing is mentioned)."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "DBI building permit fees are a percentage of construction valuation; a kitchen build-out, structural work and ADA upgrades typically range from $800 to $15,000 in permit fees alone, excluding plan preparation costs.",
+   "verdict": "partially_supported",
+   "supported_text": "DBI building permit fees are a percentage of construction valuation; a kitchen build-out and ADA upgrades range from $800 to $15,000 in permit fees alone.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "DBI building permit fees are a percentage of construction valuation; a kitchen build-out and ADA upgrades range from $800 to $15,000 in permit fees alone.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Insufficient information: the description does not state whether the space is for fewer than 50 people, and the existing occupancy group is not in public records, so whether this is a change of occupancy and which building permit applies cannot be established.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Insufficient information: the description does not state whether the space is for fewer than 50 people, and the existing occupancy group is not in public records, so whether this is a change of occupancy and which building permit applies cannot be established.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2009.0798C",
+    "zoning:NCD-NORTH BEACH",
+    "catalog:sf.building_permit",
+    "catalog:sf.health_plan_check"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Odor control equipment installed and maintained to prevent noxious or offensive odors from escaping the premises, with ducting not applied to the primary façade. Basis: The 2019 CUA for a restaurant adding a full kitchen at 526 Columbus Ave in the North Beach NCD imposed odor control equipment requirements. This is a standard condition for restaurants with cooking in San Francisco.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Odor control equipment installed and maintained to prevent noxious or offensive odors from escaping the premises, with ducting not applied to the primary façade. Basis: The 2019 CUA for a restaurant adding a full kitchen at 526 Columbus Ave in the North Beach NCD imposed odor control equipment requirements. This is a standard condition for restaurants with cooking in San Francisco.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: The premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises, and fixed-source equipment noise shall not exceed decibel levels in the Noise Control Ordinance. Basis: The 2019 CUA for 526 Columbus imposed noise insulation conditions. Restaurants in mixed-use North Beach buildings are routinely conditioned to prevent noise transmission to residential units above.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises, and fixed-source equipment noise shall not exceed decibel levels in the Noise Control Ordinance. Basis: The 2019 CUA for 526 Columbus imposed noise insulation conditions.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The premises shall be adequately soundproofed or insulated so that incidental noise is not audible beyond the premises, and fixed-source equipment noise shall not exceed decibel levels in the Noise Control Ordinance. Basis: The 2019 CUA for 526 Columbus imposed noise insulation conditions.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor sidewalks within a one-block radius daily during business hours to remove litter associated with the business. Basis: The 2019 CUA for 526 Columbus required sidewalk maintenance within a one-block radius. This is a standard good-neighbor condition for restaurants in high-pedestrian-traffic areas like Columbus Avenue.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor sidewalks within a one-block radius daily during business hours to remove litter associated with the business. Basis: The 2019 CUA for 526 Columbus required sidewalk maintenance within a one-block radius.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Maintain the main entrance and all abutting sidewalks in a clean and sanitary condition, and monitor sidewalks within a one-block radius daily during business hours to remove litter associated with the business. Basis: The 2019 CUA for 526 Columbus required sidewalk maintenance within a one-block radius.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling and compost containers shall be kept within the premises, hidden from public view, and placed outside only when being serviced by the disposal company. Basis: The 2019 CUA for 526 Columbus imposed waste storage conditions. All San Francisco food businesses must comply with DPW waste management standards and the mandatory organics program under SB 1383.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, recycling and compost containers shall be kept within the premises, hidden from public view, and placed outside only when being serviced by the disposal company. Basis: The 2019 CUA for 526 Columbus imposed waste storage conditions. All San Francisco food businesses must comply with the mandatory organics program under SB 1383.",
+   "cut_problem": "keeps 'All San Francisco food businesses must comply with DPW waste management standards', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records do not state that all San Francisco food businesses must comply with DPW waste management standards."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Appoint a community liaison officer to address concerns of nearby owners and occupants, and provide written notice of the liaison's name, address and phone number to the Zoning Administrator and registered neighborhood groups. Basis: The 2019 CUA for 526 Columbus required a community liaison. This condition is typically imposed on restaurants in residential neighborhoods to manage ongoing operational issues.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Appoint a community liaison officer to address concerns of nearby owners and occupants, and provide written notice of the liaison's name, address and phone number to the Zoning Administrator and registered neighborhood groups. Basis: The 2019 CUA for 526 Columbus required a community liaison.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Appoint a community liaison officer to address concerns of nearby owners and occupants, and provide written notice of the liaison's name, address and phone number to the Zoning Administrator and registered neighborhood groups. Basis: The 2019 CUA for 526 Columbus required a community liaison.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: If a Type 47 full-bar license is continued or upgraded, the restaurant must operate and maintain the premises as a bona fide eating place with meal service as the primary use and alcohol incidental. Basis: The North Beach SUD Planning Code §780.3(c)(2)(A) requires a Commission finding that a restaurant with an on-sale liquor license is and will remain a bona fide eating place. All recent ABC referrals in the district included this language.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The overlay record cites §722, not §780.3(c)(2)(A). The two ABC referral records show empty conditions arrays with no bona fide eating place language."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Request a written zoning determination from San Francisco Planning Department regarding whether Planning Code §780.3(c)(1)(B) prohibits enlarging the restaurant from 1,486 to 2,820 sq ft. What to say: State that 659 Columbus Ave is an existing restaurant approved by CUA in 1995, expanded by CUA in 2009, and now proposes to enlarge from 1,486 to 2,820 sq ft. Ask whether the North Beach Special Use District rule that a new restaurant 'will not enlarge the space' applies to this further expansion of an already-approved restaurant, and if so, whether any exception, variance or legislative relief is available. Request citations to any Planning Commission decisions interpreting this rule for existing restaurants. Do not file a CUA application or pay fees until the zoning answer is confirmed in writing.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Request a written zoning determination from San Francisco Planning Department. What to say: State that 659 Columbus Ave is an existing restaurant expanded by CUA in 2009.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Request a written zoning determination from San Francisco Planning Department. What to say: State that 659 Columbus Ave is an existing restaurant expanded by CUA in 2009.",
+   "confidence": "needs_confirmation",
+   "citations": [
+    "overlay:static:sf:north_beach_sud",
+    "app:datasf_planning:2009.0798C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms the enlargement is allowed (or legislation is enacted), file a Conditional Use Authorization application with San Francisco Planning for enlarging a nonconforming restaurant use and exceeding 2,000 sq ft, per Planning Code §§186.1, 303 and 722. What to say: State that the application seeks to enlarge an existing restaurant from 1,486 to 2,820 sq ft on the first story at 659 Columbus Ave. Emphasize that the restaurant has operated continuously since 1995 under CUAs granted in 1995, 2003 and 2009, maintains a good operating record with no code violations, serves a bona fide eating place menu, and will continue all prior conditions. Attach the zoning determination, prior CUA motions, the current ABC Type 47 license, and a letter of support from the community liaison if one has been appointed. Commit to odor control, noise insulation, sidewalk maintenance, waste management and a community liaison as standard operating conditions.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show only a 2009 CUA approval at 659 Columbus. The historical claims (1995 operations, 1995/2003 CUAs), square footages, ABC license, and operating record are not in the cited records."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File for SF Business Registration Certificate with the Office of the Treasurer & Tax Collector immediately after forming the legal entity, if a new entity is taking over the business. What to say: Register the business name, entity type, and federal EIN. Request the Business Account Number (BAN), which is required for all other city permits. If the restaurant continues under the same ownership and entity, confirm the existing BAN is current and the registration is renewed annually by the last day of February.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: File for SF Business Registration Certificate with the Office of the Treasurer & Tax Collector immediately after forming the legal entity, if a new entity is taking over the business. What to say: Register the business name, entity type, and federal EIN. Request the Business Account Number (BAN), which is required for all other city permits. If the restaurant continues under the same ownership and entity, confirm the existing BAN is current and the registration is renewed annually by the last day of February.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Submit architectural plans to DBI for a building permit application with tenant improvements and new construction, routed to Planning for CUA compliance, DPH for plan check, Fire for hood and assembly review, and PUC for grease interceptor. What to say: State that the project enlarges an existing restaurant from 1,486 to 2,820 sq ft at 659 Columbus Ave, implementing a Conditional Use Authorization to be approved [or, if CUA not yet granted: contingent on CUA approval]. Include scaled floor plans showing kitchen layout, seating areas, restrooms, mechanical equipment, exits and occupant load calculation. Specify the proposed occupancy group (A-2 or B) and show compliance with accessibility, ventilation, fire suppression and plumbing fixture requirements. Attach the DPH plan check approval, the CUA motion, and proof of workers' compensation insurance.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm DBI filing for tenant improvements/new construction and DPH routing, but not Planning, Fire or PUC routing, specific square footages, CUA requirement, occupancy groups, or attachment requirements."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Submit DPH plan check application for the new or remodeled kitchen, finishes, equipment and menu, and schedule pre-final and final inspections with the assigned plan reviewer. What to say: State that the project remodels and enlarges the kitchen at 659 Columbus Ave from 1,486 to 2,820 sq ft, with limited cooking (specify equipment: ovens, ranges, fryers, etc.). Attach two sets of scaled drawings showing all food prep, cooking, storage, handwashing and warewashing areas; interior photos; the proposed menu; and proof that a certified food safety manager is on staff. Request the plan check fee invoice (estimated $2,207 for 8 hours of new restaurant review) and book the pre-final inspection when construction is 80% complete.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit DPH plan check application for the new or remodeled kitchen, finishes, equipment and menu, and schedule pre-final and final inspections with the assigned plan reviewer. What to say: State that the project remodels and enlarges the kitchen at 659 Columbus Ave (specify equipment: ovens, ranges, fryers, etc.). Attach scaled drawings showing all food prep, cooking, storage, handwashing and warewashing areas and the proposed menu. Request the plan check fee invoice (estimated $2,207 for 8 hours of new restaurant review) and book the pre-final inspection when construction is 80% complete.",
+   "cut_problem": "adds or moves 'proposed': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not specify square footage, limited cooking designation, two sets of drawings, interior photos, or certified food safety manager proof for plan check."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: After DBI issues the building permit and DPH completes the final inspection, apply for the Health Permit to Operate online with the BAN, Location ID (LIN) and proof of a certified food safety manager. What to say: State that construction is complete, the final DPH inspection passed, and the restaurant is ready to open. Attach the approved DPH plans, the final inspection report, the food safety manager certificate, and proof of workers' compensation insurance. Pay the $470 permit to operate application fee. The permit is issued after DPH confirms the facility matches the approved plans.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the Health Permit to Operate online with the BAN, Location ID (LIN) and proof of a certified food safety manager. Pay the $470 permit to operate application fee. The permit is issued after DPH confirms the facility matches the approved plans.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not specify the prerequisite timing, required attachments, or what to state in the application."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost is given because the zoning determination concludes that enlarging the restaurant space is not permitted under Planning Code §780.3(c)(1)(B) in the North Beach Special Use District. The rule states a new restaurant may be approved by Conditional Use only if it will not enlarge the space; the proposal increases floor area from 1,486 to 2,820 sq ft, so the no-enlargement condition is not met. The pathway analysis confirms the status is 'not permitted' due to this rule. Before any timeline or cost can be estimated, the operator must obtain written confirmation from San Francisco Planning Department on whether this rule applies to further expansion of a restaurant already approved and expanded by prior CUAs, and if so, whether any exception, variance or legislative relief is available. If Planning confirms the enlargement is allowed, the entitlement path would be: (1) Conditional Use Authorization, estimated 120–300 days and $3,100–$15,000 in filing fees depending on construction cost, though the comparables show 4.5 to 11 months for restaurant CUAs in this district; (2) Building permit with plan check and inspections, 14–120 days and $800–$15,000 depending on construction valuation; (3) DPH plan check, 21–60 days and $828–$2,500 ($2,207 for a new restaurant); (4) Health permit to operate, 14–45 days and $470–$1,000 ($470 application fee). State and local business registration and certifications add 1–35 days and about $300–$1,200 in total fees. The critical path is the CUA hearing, which can take 6–10 months if the zoning conflict is resolved in the applicant's favor.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost is given because the zoning determination concludes that enlarging the restaurant space is not permitted under Planning Code §780.3(c)(1)(B) in the North Beach Special Use District. The rule states a new restaurant may be approved by Conditional Use only if it will not enlarge the space; the proposal increases floor area from 1,486 to 2,820 sq ft, so the no-enlargement condition is not met. The pathway analysis confirms the status is 'not permitted' due to this rule. Before any timeline or cost can be estimated, the operator must obtain written confirmation from San Francisco Planning Department on whether this rule applies to further expansion of a restaurant already approved and expanded by prior CUAs, and if so, whether any exception, variance or legislative relief is available. If Planning confirms the enlargement is allowed, the entitlement path would be: (1) Conditional Use Authorization, estimated 120–300 days and $3,100–$15,000 in filing fees depending on construction cost, though the comparables show 4.5 to 11 months for restaurant CUAs in this district; (2) Building permit with plan check and inspections, 14–120 days and $800–$15,000 depending on construction valuation; (3) DPH plan check, 21–60 days and $828–$2,500 ($2,207 for a new restaurant); (4) Health permit to operate, 14–45 days and $470–$1,000 ($470 application fee). State and local business registration and certifications add 1–35 days and about $300–$1,200 in total fees. The critical path is the CUA hearing, which can take 6–10 months if the zoning conflict is resolved in the applicant's favor.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records provide no rule text, no information about §780.3, no floor area numbers, and no timeline or cost data; they only note that restaurant permission is 'unknown'."
+  }
+ ]
+}

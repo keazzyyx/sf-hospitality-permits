@@ -1,0 +1,2194 @@
+{
+ "profile": {
+  "business_type": "other",
+  "business_name": "Amal's Market",
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": 2814,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": true,
+  "alcohol_type": "unknown",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": false,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": "21",
+  "licences_held": [
+   "20"
+  ],
+  "alcohol_transaction": null,
+  "formula_retail": null,
+  "no_alcohol_answer_over_description": false,
+  "no_alcohol_stated": false,
+  "outdoor_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "retail"
+  ],
+  "changes_existing_business": "intensify",
+  "merges_storefronts": null,
+  "stories": [],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "existing_occupancy_group": null,
+  "target_open_date": null,
+  "intake_cleared": {},
+  "intake_answered": [],
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCD-HAIGHT",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 21, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-09-23 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+      "overlay:static:sf:nc_ncd_haight",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "rules_date": "2025-09-23",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.no_use",
+       "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:haight.new_on_sale_establishment",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 21, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(2)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      }
+     ],
+     "in_force_from": "2024-01-14",
+     "ordinance": "Ord. 249-23, File No. 230701",
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area before the project",
+      "whether storefronts are to be merged"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.conditional",
+       "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 2,814 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+       "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [
+      {
+       "control": "conditional",
+       "condition": "the floor area grows or storefronts are merged",
+       "missing_inputs": [
+        "the floor area before the project",
+        "whether storefronts are to be merged"
+       ]
+      }
+     ],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-09-23, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 23 September 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "backtest.supplied_pathway",
+      "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Liquor licence rule of a restricted district.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 21",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 21, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "Census tract 166.01: 5 active off-sale retail licences in ABC's licences as they stood on 23 September 2025, against 2 authorised in ABC's census tract authorisations of September 2026.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The tract is over its authorised number. State law tests a new licence and a transfer from other premises for undue concentration, and the applicant does not say how the liquor licence will be obtained.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-09-23: none within 1,000 ft or in the census tract.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+    ]
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 4 approvals this concept needs: 1 further review (zoning and use), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the floor area before the project. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "floor_area_before_sqft"
+   },
+   {
+    "question": "Not known: whether storefronts are to be merged. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "merges_storefronts"
+   },
+   {
+    "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "liquor_licence"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": []
+ },
+ "rules_determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "NCD-HAIGHT",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T4:haight.new_on_sale_establishment",
+     "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 21, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+     "code_section": "Planning Code § 781.9(c)(2)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+     ]
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+     "citations": [
+      "zoning:NCD-HAIGHT"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-09-23 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 719",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+     "citations": [
+      "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+      "overlay:static:sf:nc_ncd_haight",
+      "zoning:NCD-HAIGHT"
+     ]
+    }
+   ],
+   "rules_date": "2025-09-23",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.no_use",
+       "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4:haight.new_on_sale_establishment",
+       "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 21, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+       "code_section": "Planning Code § 781.9(c)(2)",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+       "citations": [
+        "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+       ]
+      }
+     ],
+     "in_force_from": "2024-01-14",
+     "ordinance": "Ord. 249-23, File No. 230701",
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area before the project",
+      "whether storefronts are to be merged"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.conditional",
+       "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 2,814 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+       "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+       "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      },
+      {
+       "rule_id": "T7.existing_space",
+       "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [
+      {
+       "control": "conditional",
+       "condition": "the floor area grows or storefronts are merged",
+       "missing_inputs": [
+        "the floor area before the project",
+        "whether storefronts are to be merged"
+       ]
+      }
+     ],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-09-23, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+       "code_section": "Planning Code § 719",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+       "citations": [
+        "zoning:NCD-HAIGHT"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 23 September 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Use authorization (not covered by the rule table)",
+    "agency": "San Francisco Planning",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T4:haight.new_on_sale_establishment",
+      "text": "Haight Street Alcohol Restricted Use Subdistrict: A new on-sale liquor establishment (ABC Types 40, 41, 42, 47, 48, 57: bars and restaurants serving alcohol) needs Conditional Use. The concept needs ABC Type 21, which is not one of the licence types this rule reaches (Types 40, 41, 42, 47, 48 and 57), so it was not applied (Planning Code § 781.9(c)(2), in force from 2024-01-14 (Ord. 249-23, File No. 230701)).",
+      "code_section": "Planning Code § 781.9(c)(2)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-781.-neighborhood-commercial-restricted-use-subdistricts/sec.-781.9.-haight-street-alcohol-restricted-use-subdistrict",
+      "citations": [
+       "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+      ]
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.conditional",
+      "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 2,814 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The space is, or was last, a retail use. The use size limit does not say whether taking over an existing space is a new use of that size, and Zoning Administrator Interpretation 121.2 lets a use over the threshold change to a different use in the same floor area without a Conditional Use where the floor area does not grow significantly (Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5), in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 121.2(a), (b), (c); 178(e)(5), (6); 186.1(c)(4), (5)",
+      "source_url": "https://web.archive.org/web/20220127184403/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-58264",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "T7.existing_space",
+      "text": "The description does not give the floor area before the project and whether storefronts are to be merged, so whether the use size control applies is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; C 02:00-06:00; Planning Code § 719, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The rules could not decide: use control of the zoning district and use size. What is missing: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue); the floor area before the project; whether storefronts are to be merged. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the floor area before the project",
+     "whether storefronts are to be merged"
+    ]
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 21",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 21, as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "Census tract 166.01: 5 active off-sale retail licences in ABC's licences as they stood on 23 September 2025, against 2 authorised in ABC's census tract authorisations of September 2026.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.tract_concentration",
+      "text": "The tract is over its authorised number. State law tests a new licence and a transfer from other premises for undue concentration, and the applicant does not say how the liquor licence will be obtained.",
+      "code_section": "California Business and Professions Code § 23958.4",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=23958.4.",
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "The description does not give how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-09-23: none within 1,000 ft or in the census tract.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+    ]
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1416 Haight St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "insufficient_information",
+  "overall_line": "A Conditional Use Authorization is needed if the floor area grows or storefronts are merged (use size). Of the 4 approvals this concept needs: 3 insufficient information (zoning and use, alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the floor area before the project. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "floor_area_before_sqft"
+   },
+   {
+    "question": "Not known: whether storefronts are to be merged. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "merges_storefronts"
+   },
+   {
+    "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "liquor_licence"
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": [
+   {
+    "kind": "conditional_if",
+    "sentence": "If the floor area grows or storefronts are merged, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area before the project; whether storefronts are to be merged.",
+    "area": "zoning_use",
+    "status": "insufficient_information",
+    "trigger": "T7",
+    "trigger_label": "use size",
+    "definite": false,
+    "condition": "the floor area grows or storefronts are merged",
+    "missing_inputs": [
+     "the floor area before the project",
+     "whether storefronts are to be merged"
+    ],
+    "code_section": "Planning Code § 719",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-HAIGHT"
+    ],
+    "basis": [
+     {
+      "rule_id": "T7.conditional",
+      "text": "Zoning district NCD-HAIGHT: a use of 2,500 square feet or more needs a Conditional Use, and 2,814 square feet is at or over it (Planning Code § 719, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 719",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-719.-haight-street-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-HAIGHT"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "records": {
+  "zoning": "NCD-HAIGHT",
+  "overlays": [
+   "Haight Street Alcohol Restricted Use Subdistrict",
+   "Haight Street Neighborhood Commercial District",
+   "Family and Senior Housing Opportunity SUD",
+   "Fringe Financial Services RUD",
+   "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "NCD-HAIGHT"
+  ],
+  "tract": "166.01",
+  "site_history": {
+   "matched_by": "Parcel 1232/004 or the address 1416 Haight St",
+   "total": 7,
+   "by_kind": {
+    "agency_referral": 4,
+    "other": 1,
+    "licence": 2
+   },
+   "entries": [
+    {
+     "application_id": "abc:546274",
+     "citation_id": "app:abc:546274",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 20 – Off-Sale Beer & Wine",
+     "description": "AMAL'S DELI — Type 20 – Off-Sale Beer & Wine (ACTIVE on 2025-09-23)",
+     "address": "1416 HAIGHT ST, SAN FRANCISCO, CA 94117",
+     "filed_at": null,
+     "decided_at": "2016-03-22",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=546274",
+     "use_types": [
+      "retail_alcohol"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:2015-011031MIS",
+     "citation_id": "app:datasf_planning:2015-011031MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Best of Thai Noodle Restaurant - Restaurant is permitted in the Haight Street NCD as continuation of a legal nonconforming use per Planning Code Section 180. Operations must comply with all restrictions on nonconforming uses.",
+     "address": "1418 HAIGHT ST 94117",
+     "filed_at": "2015-08-27",
+     "decided_at": "2015-09-18",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2015-011031MIS",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "abc:559171",
+     "citation_id": "app:abc:559171",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 41 – On-Sale Beer & Wine - Eating Place",
+     "description": "JASF THAI INC. — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2025-09-23)",
+     "address": "1418 HAIGHT ST, SAN FRANCISCO, CA 94117",
+     "filed_at": null,
+     "decided_at": "2015-09-16",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=559171",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:2015-008795MIS",
+     "citation_id": "app:datasf_planning:2015-008795MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "JASF THAI INC - Restaurant with ABC Type 41 license is permitted in the Haight Street NCD as continuation of a legal nonconforming use.",
+     "address": "1418 HAIGHT ST 94117",
+     "filed_at": "2015-07-13",
+     "decided_at": "2015-07-15",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2015-008795MIS",
+     "use_types": [
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:MB1401128",
+     "citation_id": "app:datasf_planning:MB1401128",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- ABC License Type 20 continuation of exisitng license held since 1995, prior to Haight St Alcohol Moratorium. Permitted in conjunction with grocery use.",
+     "address": "1416 HAIGHT ST, SAN FRANCISCO, CA 94117",
+     "filed_at": "2014-06-20",
+     "decided_at": "2014-07-03",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1401128",
+     "use_types": [
+      "retail_alcohol"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:2004.0047C",
+     "citation_id": "app:datasf_planning:2004.0047C",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "other",
+     "record_kind_label": "Other record",
+     "permit_type": "Conditional Use Authorization",
+     "description": "Install a wireless telecommunications site consisting of 6 panel antennas and related equipment in the Haight Street NCD. Application turned away at intake as incomplete. Case closed without review or action. NO DOCKET CREATED / NO FILE.",
+     "address": "1408 HAIGHT ST, SAN FRANCISCO, CA 94117",
+     "filed_at": "2004-01-13",
+     "decided_at": "2004-08-13",
+     "outcome": "cancelled",
+     "status": "Closed - Cancelled",
+     "source_url": "https://sfplanninggis.org/pim?search=2004.0047C",
+     "use_types": [],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:MB0200875",
+     "citation_id": "app:datasf_planning:MB0200875",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "AN EXISTING FULL SERVICE RESTAURANT IS PERMITTED TO HAVE AN ABC LICENSE TYPE 48 \"ON SALE BEER AND WINE FOR A BONA FIDE EATING PLACE\" IN THE HAIGHT STREET NEIGHBORHOOD COMMERCIAL DISTRICT AS A CONTINUING EXISTING USE PER PLANNING CODE SECTION 179. -",
+     "address": "1418 HAIGHT ST, SAN FRANCISCO, CA 94117",
+     "filed_at": "2002-08-03",
+     "decided_at": "2002-08-20",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0200875",
+     "use_types": [
+      "bar",
+      "restaurant"
+     ],
+     "hours_close": null,
+     "conditions": []
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 17,
+   "bars": 3,
+   "abc_on_sale_licenses": 6,
+   "abc_licenses_1000ft": 15,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 0,
+   "approved_with_conditions": 3,
+   "denied": 0,
+   "withdrawn": 0,
+   "total": 3,
+   "window_years": 10,
+   "scope": "N = 3 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 15 permits and licences, 102 records that are not use decisions for this kind of business, 1 undated",
+   "excluded_grant_only": 15,
+   "excluded_undated": 1,
+   "excluded_not_use_decision": 102,
+   "counted": [
+    {
+     "source": "datasf_planning",
+     "source_id": "2019-017867CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-017867CUA",
+     "fetched_at": "2025-09-23T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194634672744Z-y673-d69b-p0001.json",
+     "id": "datasf_planning:2019-017867CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "bar",
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization per Planning Code Sections 303 and 719 to permit Commercial Use over 2,500 of a non-conforming full-service bar and restaurant. The project involves legalizing the merger of a vacant retail commercial space into an existing bar and restaurant..Legalize facade and interior tenant improvements. Modify conditions of approval of prior conditional use authorizations and add an entertainment use (if desired by current and future tenants at a future date).",
+     "address": "1566 HAIGHT ST 94117",
+     "lat": 37.770142150139954,
+     "lng": -122.44812935871634,
+     "parcel": "1231/017",
+     "zoning_district": "NCD-HAIGHT",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2019-10-04",
+     "decided_at": "2020-12-01",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Previous Conditions of Approval Removed: This authorization removes Conditions of Approval (Condition No. 2) per previous Motion No. 11663 under Case No. 89.135C pertaining to use size restricting use size to 3,270 square feet and Conditions of Approval (Conditions No. 1, 2, 3, 4) per previous Motion No. 11899 under Case No. 89.135CC restricting seating capacity to up to 66 persons, restricting entertainment use, limiting the hours of operation of both the restaurant and bar from 8 a.m. to 10 p.m., and requiring valet parking.",
+      "Signage: Any signs on the property shall be made to comply with the requirements of Article 6 of the Planning Code for signage and Formula Retail guidelines for signage. planning.org Operation",
+      "Hours of Operation: The subject establishment is limited to the following hours of operation: 8 a.m. to 10 p.m. for the restaurant and 8 a.m. to 2 a.m. for the bar; limiting amplified music to 10 p.m. weeknights and to 2 a.m. weekends (Friday and Saturday nights). These hours of operation will amend the previous Conditions of Approval (Condition #3) of previous Motion No. 11899 under Case No. 89.135CC which limited the hours of operation of both the restaurant and bar from 8 a.m. to 10 p.m. Monitoring - After Entitlement",
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a publ ic hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) become effective. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a publ ic hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since t he date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) became effective. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+      "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for d aily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+      "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+      "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+      "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. Works at 415-554-.5810, http://sfdpw.org. (standard)",
+      "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block driveways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment. For information about compliance, contact the Entertainment Commission, at 415 554 -6678, www.sfgov.org/entertainment (standard)",
+      "Other Entertainment: The Other Entertainment shall be performed within the enclosed building only. The building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure. The Project Sponsor shall obtain all necessary approvals from the Entertainment Commission prior to operation. (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Monitoring: The Project requires monitoring of the conditions of approval in this Motion. The Project Sponsor or the subsequent responsible parties for the Project shall pay fees as established under Planning Cod e Section 351(e) (1) and work with the Planning Department (standard)",
+      "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby propert ies. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-HAIGHT",
+      "planner": "Sharon Young",
+      "premises": true,
+      "parent_id": "2019-017867PRJ",
+      "use_class": "bar",
+      "close_date": "2020-12-01T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1D4EDFC5-DD71-487D-AE42-A31CCA672736}&fileGUID={7A6A65DB-97F2-45EE-B8FA-79C3FD758BEE}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "HAIGHT STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Haight Ashbury",
+      "project_name": "1566 - 1568 HAIGHT ST",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Previous Conditions of Approval Removed: This authorization removes Conditions of Approval (Condition No. 2) per previous Motion No. 11663 under Case No. 89.135C pertaining to use size restricting use size to 3,270 square feet and Conditions of Approval (Conditions No. 1, 2, 3, 4) per previous Motion No. 11899 under Case No. 89.135CC restricting seating capacity to up to 66 persons, restricting entertainment use, limiting the hours of operation of both the restaurant and bar from 8 a.m. to 10 p.m., and requiring valet parking.",
+        "title": "Previous Conditions of Approval Removed",
+        "number": "1",
+        "standard": false,
+        "categories": [
+         "hours",
+         "entertainment"
+        ]
+       },
+       {
+        "text": "Signage: Any signs on the property shall be made to comply with the requirements of Article 6 of the Planning Code for signage and Formula Retail guidelines for signage. planning.org Operation",
+        "title": "Signage",
+        "number": "12",
+        "standard": false,
+        "categories": [
+         "signage"
+        ]
+       },
+       {
+        "text": "Hours of Operation: The subject establishment is limited to the following hours of operation: 8 a.m. to 10 p.m. for the restaurant and 8 a.m. to 2 a.m. for the bar; limiting amplified music to 10 p.m. weeknights and to 2 a.m. weekends (Friday and Saturday nights). These hours of operation will amend the previous Conditions of Approval (Condition #3) of previous Motion No. 11899 under Case No. 89.135CC which limited the hours of operation of both the restaurant and bar from 8 a.m. to 10 p.m. Monitoring - After Entitlement",
+        "title": "Hours of Operation",
+        "number": "18",
+        "standard": false,
+        "categories": [
+         "hours",
+         "entertainment"
+        ]
+       },
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.",
+        "title": "Validity",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a publ ic hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval.",
+        "title": "Conformity with Current Law",
+        "number": "6",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) become effective. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.",
+        "title": "Validity",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a publ ic hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since t he date that the Planning Code text amendment(s) and/or Zoning Map amendment(s) became effective.",
+        "title": "Diligent Pursuit",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "10",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval.",
+        "title": "Conformity with Current Law",
+        "number": "11",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for d aily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code.",
+        "title": "Eating and Drinking Uses (A)",
+        "number": "13A",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance.",
+        "title": "Eating and Drinking Uses (B)",
+        "number": "13B",
+        "standard": true,
+        "categories": [
+         "noise"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises.",
+        "title": "Eating and Drinking Uses (C)",
+        "number": "13C",
+        "standard": true,
+        "categories": [
+         "odor"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. Works at 415-554-.5810, http://sfdpw.org.",
+        "title": "Eating and Drinking Uses (D)",
+        "number": "13D",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block driveways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment. For information about compliance, contact the Entertainment Commission, at 415 554 -6678, www.sfgov.org/entertainment",
+        "title": "Notices Posted at Bars and Entertainment Venues",
+        "number": "14",
+        "standard": true,
+        "categories": [
+         "entertainment",
+         "good_neighbor",
+         "garbage"
+        ]
+       },
+       {
+        "text": "Other Entertainment: The Other Entertainment shall be performed within the enclosed building only. The building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure. The Project Sponsor shall obtain all necessary approvals from the Entertainment Commission prior to operation.",
+        "title": "Other Entertainment",
+        "number": "15",
+        "standard": true,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "16",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only and designed and managed so as not to be a nuisance to adjacent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property.",
+        "title": "Lighting",
+        "number": "17",
+        "standard": true,
+        "categories": [
+         "lighting"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "19",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Monitoring: The Project requires monitoring of the conditions of approval in this Motion. The Project Sponsor or the subsequent responsible parties for the Project shall pay fees as established under Planning Cod e Section 351(e) (1) and work with the Planning Department",
+        "title": "Monitoring",
+        "number": "20",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization.",
+        "title": "Revocation due to Violation of Conditions",
+        "number": "21",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby propert ies. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "22",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2024-004781CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2024-004781CUA",
+     "fetched_at": "2025-09-23T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194646526050Z-y673-d69b-p0003.json",
+     "id": "datasf_planning:2024-004781CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization pursuant to Planning Code Section 719 and Bos Ordinance 249-23 for a change of use from an existing Limited-Restaurant in the Haight NCD to a Full Service Restaurant. No proposed work.",
+     "address": "1457 HAIGHT ST 94117",
+     "lat": 37.769802203018116,
+     "lng": -122.44629040936209,
+     "parcel": "1244/027",
+     "zoning_district": "NCD-HAIGHT",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2024-05-29",
+     "decided_at": "2024-09-12",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Monitoring - After Entitlement (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)"
+     ],
+     "opposition_noted": false,
+     "decision_summary": "Planning Commission Motion No. 21606 (September 12, 2024) approved with conditions Conditional Use Authorization 2024-004781CUA at 1457 Haight Street by a 7-0 vote. Key operating conditions: Community Liaison.",
+     "extraction_confidence": "high",
+     "license_type": null,
+     "extra": {
+      "ayes": [
+       "Campbell",
+       "McGarry",
+       "So",
+       "Williams",
+       "Braun",
+       "Imperial",
+       "Moore"
+      ],
+      "nays": [],
+      "vote": "7-0",
+      "zoning": "NCD-HAIGHT",
+      "planner": "Ashley Lindsay",
+      "doc_name": "M-21606.pdf",
+      "premises": true,
+      "parent_id": "2024-004781PRJ",
+      "pdf_pages": 6,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2024-09-27T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={447BE2B4-03E3-459A-AF7D-F7A6DA607745}&fileGUID={4F0503F6-9C02-4ADC-B58B-2003334C6BCB}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "HAIGHT STREET NEIGHBORHOOD COMMERCIAL",
+      "zoning_text": "Haight Street Neighborhood Commercial",
+      "hearing_date": "2024-09-12",
+      "neighborhood": "Haight Ashbury",
+      "project_name": "1457 HAIGHT ST",
+      "applicant_org": "Colla & Ray LLP",
+      "motion_number": "21606",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period.",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Monitoring - After Entitlement",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "6",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation",
+        "title": "Revocation due to Violation of Conditions",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)",
+      "condition_categories": [
+       "community_liaison"
+      ]
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2024-010575CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2024-010575CUA",
+     "fetched_at": "2025-09-23T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2024-010575CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "The proposal is for a Conditional Use Authorization, pursuant to Planning Code Section 303, 719, and 781.9 for a change of use from an existing Limited-Restaurant in the Haight NCD to a Full Service Restaurant which will sell on-sale alcoholic beverages on the ground floor. No proposed work.” No construction is proposed, and the conditional use application is to memorialize the change of use only.",
+     "address": "1463 HAIGHT ST 94117",
+     "lat": 37.76983676754395,
+     "lng": -122.44642837145702,
+     "parcel": "1244/025",
+     "zoning_district": "NCD-HAIGHT",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2024-11-20",
+     "decided_at": "2025-02-27",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. Fo r information about compliance, contact Code Enforcement, Planning Department at 628.652.7463, (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. Fo r information about compliance, contact Code Enforcement, Planning Department at 628.652.7463, (standard)",
+      "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. For information about compliance, contact Bureau of Street Use and Mapping, Department of Public Works at 628.271.2000, www.sfpublicworks.org. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)"
+     ],
+     "opposition_noted": false,
+     "decision_summary": "Planning Commission Motion No. 21688 (February 27, 2025) acted on Conditional Use Authorization 2024-010575CUA at 1463 Haight Street. Key operating conditions: Community Liaison.",
+     "extraction_confidence": "low",
+     "license_type": null,
+     "extra": {
+      "ayes": [],
+      "item": "7",
+      "nays": [],
+      "vote": null,
+      "zoning": "NCD-HAIGHT",
+      "planner": "Dakota Spycher",
+      "doc_name": "M-21688.pdf",
+      "premises": true,
+      "parent_id": "2024-010575PRJ",
+      "pdf_pages": 6,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2025-03-19T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={0850163B-43CC-4D2D-8798-44894B4CD303}&fileGUID={D0F9A3F8-2143-4FEC-87D6-E74A06B9A202}&showopendialog=1",
+      "minutes_url": "https://citypln-m-extnl.sfgov.org/Commissions/Agenda_or_Minutes/20250227_cpc_min.pdf",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "HAIGHT STREET NEIGHBORHOOD COMMERCIAL",
+      "zoning_text": "Haight Street NCD (Neighborhood Commercial District)",
+      "hearing_date": "2025-02-27",
+      "neighborhood": "Haight Ashbury",
+      "project_name": "1463 HAIGHT ST",
+      "applicant_org": "Dough Boyz Inc",
+      "motion_number": "21688",
+      "motion_outcome": "approved_with_conditions",
+      "speakers_oppose": 0,
+      "speakers_support": 0,
+      "conditions_detail": [
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. Fo r information about compliance, contact Code Enforcement, Planning Department at 628.652.7463,",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval.",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under P lanning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. Fo r information about compliance, contact Code Enforcement, Planning Department at 628.652.7463,",
+        "title": "Enforcement",
+        "number": "6",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization.",
+        "title": "Revocation due to Viola tion of Conditions",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. For information about compliance, contact Bureau of Street Use and Mapping, Department of Public Works at 628.271.2000, www.sfpublicworks.org.",
+        "title": "Sidewalk Maintenance",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)",
+      "condition_categories": [
+       "community_liaison"
+      ]
+     }
+    }
+   ]
+  },
+  "applications_within_1000ft": 126,
+  "licences_within_500ft": 9,
+  "licences_within_1000ft": 15,
+  "businesses_within_500ft": 17
+ }
+}

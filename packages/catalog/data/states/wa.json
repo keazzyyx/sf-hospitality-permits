@@ -1,0 +1,243 @@
+{
+  "jurisdiction": {
+    "level": "state", "name": "Washington", "state": "WA", "city_slug": null, "supported": true,
+    "notes": "Washington runs most state registrations through one Department of Revenue Business License Application (Business Licensing Service): it issues the UBI number and state business license, opens the excise tax account (B&O and retail sales tax; there is no state income tax), notifies L&I and ESD when you hire, and adds endorsements for partner cities. Seattle is NOT a BLS partner city; its license is issued separately through FileLocal. Liquor licenses are applied for through the same BLS portal. Mobile food unit plan review is done by the county health jurisdiction (e.g. Public Health – Seattle & King County), not by WA DOH, so it lives in the city files."
+  },
+  "permits": [
+    {
+      "id": "wa.sos_entity_formation",
+      "name": "Form your legal entity with the Washington Secretary of State (LLC / corporation)",
+      "category": "business_registration",
+      "issuing_agency": "Washington Secretary of State – Corporations & Charities Division (CCFS)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 1, "max": 10 },
+      "fee_range_usd": { "min": 180, "max": 290 },
+      "prerequisites": [],
+      "applies_when": { "always": true },
+      "application_url": "https://www.sos.wa.gov/corporations-charities",
+      "notes": "File online in the Corporations & Charities Filing System (ccfs.sos.wa.gov). An LLC Certificate of Formation or profit-corporation Articles is $180; the Initial Report is $10. Expedited service is +$100 (about 3 working days) or +$150 same-day. Do this first: the UBI, EIN, lease and liquor application all need the exact entity name. Sole proprietors skip this step and register a trade name on the Business License Application instead.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://www.sos.wa.gov/corporations-charities/frequently-asked-questions-faqs/fee-schedules-priority-services"]
+    },
+    {
+      "id": "wa.business_license_application",
+      "name": "Washington Business License Application (UBI, state license, excise tax / B&O account)",
+      "category": "business_registration",
+      "issuing_agency": "Washington Department of Revenue – Business Licensing Service (BLS)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 10, "max": 35 },
+      "fee_range_usd": { "min": 50, "max": 150 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "always": true },
+      "application_url": "https://dor.wa.gov/open-business/apply-business-license",
+      "notes": "One application through My DOR assigns your UBI number, issues the state business license, registers you for B&O tax and retail sales tax (restaurants collect sales tax on prepared food and drinks), and, if you check that you will hire, triggers your L&I workers' comp and ESD unemployment accounts. The new-business handling fee is $50 (WAC 458-02-200) plus a fee per state or city endorsement and any trade name. DOR quotes about 10 business days online, 2–3 more weeks when endorsements are attached, and up to 6 weeks by mail. Seattle is not a BLS partner city, so apply for the Seattle license separately on FileLocal; the liquor license is applied for in this same portal.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://dor.wa.gov/open-business/apply-business-license", "https://dor.wa.gov/manage-business/city-endorsements", "https://dor.wa.gov/taxes-rates/business-occupation-tax"]
+    },
+    {
+      "id": "wa.lni_workers_comp",
+      "name": "L&I workers' compensation account (state fund industrial insurance)",
+      "category": "labor",
+      "issuing_agency": "Washington Department of Labor & Industries (L&I)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 7, "max": 21 },
+      "fee_range_usd": { "min": 0, "max": 0 },
+      "prerequisites": ["wa.business_license_application"],
+      "applies_when": { "field": "employees", "gte": 1 },
+      "application_url": "https://www.lni.wa.gov/insurance/insurance-requirements/how-to-get-a-workers-compensation-account",
+      "notes": "Washington is a monopolistic state-fund state: unless you qualify to self-insure, you must buy workers' comp from L&I, not a private carrier (buy separate employer's liability 'stop-gap' coverage from your general-liability insurer). Indicate on the DOR Business License Application that you are hiring; L&I assigns an account manager in about a week, sets your risk classes, and mails your certificate of coverage and required workplace posters. Premiums are cents per hour worked, reported and paid quarterly, and part is deducted from employee wages.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "sources": ["https://www.lni.wa.gov/insurance/", "https://www.lni.wa.gov/agency/_docs/DWWworkerscompensationoverview.pdf"]
+    },
+    {
+      "id": "wa.esd_unemployment_insurance",
+      "name": "Employment Security Department unemployment insurance tax account",
+      "category": "labor",
+      "issuing_agency": "Washington Employment Security Department (ESD)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 7, "max": 21 },
+      "fee_range_usd": { "min": 0, "max": 0 },
+      "prerequisites": ["wa.business_license_application"],
+      "applies_when": { "field": "employees", "gte": 1 },
+      "application_url": "https://esd.wa.gov/employer-requirements/unemployment-taxes/employers-guide-paying-taxes",
+      "notes": "Opened automatically when your DOR Business License Application says you will hire (or when you update an existing license). Free to register; ESD mails your account number and new-employer tax rate, then you file a quarterly tax and wage report through eServices even in quarters with no payroll. Give the ESD number to your payroll provider before the first pay run; Paid Family & Medical Leave premiums are reported to ESD separately.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "wa.lcb_spirits_beer_wine_restaurant",
+      "name": "WSLCB Spirits/Beer/Wine Restaurant license (full bar; service bar or lounge)",
+      "category": "alcohol",
+      "issuing_agency": "Washington State Liquor and Cannabis Board (WSLCB)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 60, "max": 120 },
+      "fee_range_usd": { "min": 1400, "max": 2700 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "all": [
+        { "field": "serves_alcohol", "eq": true },
+        { "field": "alcohol_type", "eq": "full_liquor" },
+        { "any": [
+          { "field": "business_type", "in": ["restaurant", "cafe"] },
+          { "all": [
+            { "field": "business_type", "eq": "bar" },
+            { "not": { "field": "live_entertainment", "eq": true } },
+            { "not": { "field": "dancing", "eq": true } }
+          ] }
+        ] }
+      ] },
+      "application_url": "https://lcb.wa.gov/licensing/apply-liquor-license",
+      "notes": "Washington has no license quota, so new full-liquor licenses are issued directly. The annual fee depends on layout: $1,400 for service bar only (drinks poured out of public view for diners), $2,200 if 50% or more of the customer area is dedicated dining, and $2,700 under 50% (a lounge or bar-forward room; under 15% dining means no minors anywhere on the premises). You must serve at least four complete meals with a cook on duty during meal hours and offer minimum food service whenever alcohol is served. There is no 'extended hours' license: you may stay open 24/7, but no alcohol may be sold, served or consumed from 2 a.m. to 6 a.m. LCB says to apply about 90 days before opening; processing usually takes 60–90 days and includes a 20-day objection window for the city and for any public school within 500 feet.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://lcb.wa.gov/licensing/retail_liquor_and_endorsement_description_and_fees_info", "https://lcb.wa.gov/licensing/applicant-faqs", "https://app.leg.wa.gov/WAC/default.aspx?cite=314-02-035", "https://app.leg.wa.gov/WAC/default.aspx?cite=314-11-070", "https://app.leg.wa.gov/RCW/default.aspx?cite=66.24.010"],
+      "stall_risk": "City or school objections inside the 20-day notice window (60 days in an Alcohol Impact Area) push the file to a hearing. Missing floor plans or lease documents also stall the licensing investigator; upload them with the application."
+    },
+    {
+      "id": "wa.lcb_beer_wine_restaurant",
+      "name": "WSLCB Beer and/or Wine Restaurant license",
+      "category": "alcohol",
+      "issuing_agency": "Washington State Liquor and Cannabis Board (WSLCB)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 60, "max": 90 },
+      "fee_range_usd": { "min": 300, "max": 600 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "all": [
+        { "field": "serves_alcohol", "eq": true },
+        { "field": "alcohol_type", "eq": "beer_wine" },
+        { "field": "business_type", "in": ["restaurant", "cafe"] }
+      ] },
+      "application_url": "https://lcb.wa.gov/licensing/apply-liquor-license",
+      "notes": "Beer and/or wine by the glass or opened bottle with food. Annual fee is $300 for beer, $300 for wine, or $600 for both. Only 'minimum food service' is required (sandwiches, soup, pizza, burgers and similar), so it suits cafes and counter-service spots. Apply through the DOR BLS portal about 90 days before opening; the city and nearby public schools get a 20-day objection window.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://lcb.wa.gov/licensing/retail_liquor_and_endorsement_description_and_fees_info", "https://lcb.wa.gov/licensing/applicant-faqs"]
+    },
+    {
+      "id": "wa.lcb_tavern",
+      "name": "WSLCB Tavern license (beer and/or wine bar, 21+)",
+      "category": "alcohol",
+      "issuing_agency": "Washington State Liquor and Cannabis Board (WSLCB)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 60, "max": 90 },
+      "fee_range_usd": { "min": 300, "max": 600 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "all": [
+        { "field": "serves_alcohol", "eq": true },
+        { "field": "alcohol_type", "eq": "beer_wine" },
+        { "field": "business_type", "eq": "bar" }
+      ] },
+      "application_url": "https://lcb.wa.gov/licensing/apply-liquor-license",
+      "notes": "For beer and wine bars, taprooms run by non-brewers, and wine bars. Annual fee is $300 beer, $300 wine, or $600 both. Nobody under 21 may be on the premises at any time, so if you want families in for food, apply for the Beer/Wine Restaurant license instead. Same 60–90 day processing and 20-day local objection window as other retail licenses.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://lcb.wa.gov/licensing/retail_liquor_and_endorsement_description_and_fees_info", "https://lcb.wa.gov/licensing/applicant-faqs"]
+    },
+    {
+      "id": "wa.lcb_nightclub",
+      "name": "WSLCB Nightclub license (spirits/beer/wine, entertainment-led)",
+      "category": "alcohol",
+      "issuing_agency": "Washington State Liquor and Cannabis Board (WSLCB)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 60, "max": 120 },
+      "fee_range_usd": { "min": 2500, "max": 2500 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "all": [
+        { "field": "serves_alcohol", "eq": true },
+        { "field": "alcohol_type", "eq": "full_liquor" },
+        { "field": "business_type", "eq": "bar" },
+        { "any": [ { "field": "live_entertainment", "eq": true }, { "field": "dancing", "eq": true } ] }
+      ] },
+      "application_url": "https://lcb.wa.gov/licensing/apply-liquor-license",
+      "notes": "$2,500 per year. For venues whose main revenue is alcohol and/or cover charges, that provide entertainment, and whose primary hours are 9 p.m. to 2 a.m.; no complete-meal requirement. Local governments can petition LCB for extra restrictions, so expect the city review to be more searching than for a restaurant. A full bar that is not entertainment-led usually takes the Spirits/Beer/Wine Restaurant license (under-50% dining tier) instead.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://lcb.wa.gov/licensing/retail_liquor_and_endorsement_description_and_fees_info", "https://lcb.wa.gov/licensing/applicant-faqs"],
+      "stall_risk": "City objections are most likely for nightclubs (police history, nearby residences). Prepare a security and noise plan before the 20-day local review starts."
+    },
+    {
+      "id": "wa.lcb_hotel_license",
+      "name": "WSLCB Hotel license (spirits/beer/wine, 20+ rooms)",
+      "category": "alcohol",
+      "issuing_agency": "Washington State Liquor and Cannabis Board (WSLCB)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 60, "max": 120 },
+      "fee_range_usd": { "min": 2500, "max": 2500 },
+      "prerequisites": ["wa.sos_entity_formation", "us.ein"],
+      "applies_when": { "all": [
+        { "field": "serves_alcohol", "eq": true },
+        { "field": "business_type", "eq": "hotel" },
+        { "field": "hotel_rooms", "gte": 20 }
+      ] },
+      "application_url": "https://lcb.wa.gov/licensing/apply-liquor-license",
+      "notes": "$2,500 per year for hotels with at least 20 rooms. One license covers room service, by-the-glass sales to overnight guests, original-container sales at retail outlets inside the hotel, a complimentary bottle at check-in, and catering. Smaller inns use a restaurant license for their dining room instead.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://lcb.wa.gov/licensing/retail_liquor_and_endorsement_description_and_fees_info", "https://lcb.wa.gov/licensing/applicant-faqs"]
+    },
+    {
+      "id": "wa.mast_permit",
+      "name": "MAST (Mandatory Alcohol Server Training) permit – Class 12 / Class 13",
+      "category": "food_safety_cert",
+      "issuing_agency": "WSLCB-certified MAST training providers",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 1, "max": 7 },
+      "fee_range_usd": { "min": 15, "max": 75 },
+      "prerequisites": [],
+      "applies_when": { "field": "serves_alcohol", "eq": true },
+      "application_url": "https://lcb.wa.gov/mastrvp/mandatory_alcohol_server_training",
+      "notes": "Everyone who serves, mixes, sells or supervises alcohol for on-premises consumption needs a MAST permit within 60 days of hire; there is no temporary permit. Class 12 (21+) can mix drinks and pour from taps, and every licensed premises must have a Class 12 holder on duty; Class 13 (18–20) may serve and pour at tables but not mix drinks or draw from a tap. Permits last 5 years and cannot be renewed, so staff retake the course. LCB does not set course prices; most providers charge roughly $15–$75.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "sources": ["https://lcb.wa.gov/mastrvp/mast_faqs"]
+    },
+    {
+      "id": "wa.food_worker_card",
+      "name": "Washington Food Worker Card (all food workers)",
+      "category": "food_safety_cert",
+      "issuing_agency": "Washington State Department of Health via local health jurisdictions (foodworkercard.wa.gov)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 1, "max": 14 },
+      "fee_range_usd": { "min": 10, "max": 10 },
+      "prerequisites": [],
+      "applies_when": { "any": [ { "field": "serves_food", "eq": true }, { "field": "has_kitchen", "eq": true } ] },
+      "application_url": "https://doh.wa.gov/community-and-environment/food/food-worker-and-industry/food-worker-card",
+      "notes": "Required (WAC 246-217) for anyone who handles unpackaged food, food equipment or food-contact surfaces, including bartenders cutting garnishes. $10; take the course online at foodworkercard.wa.gov (the only authorized online program) or through the county health department. New hires may work up to 14 days before getting the card if you provide food-safety training. First card is valid 2 years, renewals 3 years (5 with extra training); inspectors check cards on site.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified"
+    },
+    {
+      "id": "wa.food_protection_manager_cert",
+      "name": "Certified Food Protection Manager (recommended; not state-mandated)",
+      "category": "food_safety_cert",
+      "issuing_agency": "ANSI-accredited exam provider (ServSafe, NRFSP, Prometric, 360training)",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 1, "max": 14 },
+      "fee_range_usd": { "min": 100, "max": 250 },
+      "prerequisites": [],
+      "applies_when": { "field": "has_kitchen", "eq": true },
+      "application_url": "https://www.servsafe.com/ServSafe-Manager",
+      "notes": "Unlike California, Washington does not require a certified food protection manager; the WA Food Code requires a 'person in charge' on every shift who can show food-safety knowledge to the inspector. An accredited manager certificate is the easiest way to prove that, and many restaurant groups and insurers expect it. Optional: skip it if your person in charge is confident with the inspection questions.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "wa.lodging_tax_registration",
+      "name": "Lodging taxes on the DOR excise return (special hotel/motel + King County convention & trade center tax)",
+      "category": "hotel",
+      "issuing_agency": "Washington Department of Revenue",
+      "jurisdiction_level": "state",
+      "typical_timeline_days": { "min": 0, "max": 14 },
+      "fee_range_usd": { "min": 0, "max": 0 },
+      "prerequisites": ["wa.business_license_application"],
+      "applies_when": { "field": "business_type", "eq": "hotel" },
+      "application_url": "https://dor.wa.gov/taxes-rates/other-taxes/convention-and-trade-center-tax",
+      "notes": "Lodging stays under 30 days are subject to retail sales tax plus location-specific special hotel/motel tax, and in King County the convention and trade center tax, which since 2019 applies to every lodging business regardless of room count. There is no separate permit: once your excise tax account is open, report these on the Lodging section of the Combined Excise Tax Return using the location code from DOR's quarterly Lodging Rates flyer. Get the location code right before the first return; mis-coded lodging tax is a common audit finding.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "sources": ["https://dor.wa.gov/taxes-rates/other-taxes/special-hotelmotel-tax"]
+    }
+  ]
+}

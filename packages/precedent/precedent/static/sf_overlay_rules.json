@@ -1,0 +1,1684 @@
+{
+  "_doc": "Rule-only overlay rows (no geometry) for San Francisco plus the zoning-district control lookup used by the datasf_zoning source. nc_rule rows attach to a point through district_codes (exact DataSF zoning codes). alcohol_sud / special_use_district rows are copied onto the matching DataSF SUD polygons by name via sud_name_aliases.",
+  "_verified": "Controls transcribed 2026-10-21 from the SF Planning Code zoning control tables (2026-08 edition, text as of 2026-09-23) via the gocodebook.com mirror; codelibrary.amlegal.com refused automated access (HTTP 403). source_url values point at amlegal (anchors taken from the DataSF zoning/SUD datasets; §§ 249.60 and 249.62 node ids from the amlegal dev mirror). First-story controls; P = principal, C = conditional, NP = prohibited. Corrected 2026-11-10 against the same edition (each change backed by a quote, see apps/api/tests/fixtures/pathway_cases.json): RH DTR controls and hours (Table 827; § 825(c)(1)(A)); NCT-MISSION story wording (Table 754); RH hours (Table 209.1; § 231(g)); Haight Street Alcohol RUSD licence types (§ 781.9(c)(1)(B)); North Beach Note 5 provisos (Table 722); Restaurant story wording for Tables 715, 723, 726, 730 and 762; Calle 24 SUD row (§ 249.59(d)); Mission Alcoholic Beverage SUD Restaurant control set to unknown (§ 249.60(f)(1)); Third Street Alcohol RUD Restaurant control set to unknown (§ 249.62(c)).",
+  "zoning_controls": {
+    "NC-1": {
+      "section": "710",
+      "name": "NC-1 Neighborhood Commercial Cluster District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar is C in the Outer Sunset area described in Table 710 Note 6; Bar NP above the First Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25492"
+    },
+    "NC-2": {
+      "section": "711",
+      "name": "NC-2 Small-Scale Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar is C in the Outer Sunset area described in Table 711 Note 9; Bar NP above the First Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25507"
+    },
+    "NC-3": {
+      "section": "712",
+      "name": "NC-3 Moderate-Scale Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First and Second Story; Formula Retail Eating and Drinking uses NP in the Geary Boulevard subdistrict (§ 781.4); off-sale liquor NP in the Third Street SUD portion.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25522"
+    },
+    "NC-S": {
+      "section": "713",
+      "name": "NC-S Neighborhood Commercial Shopping Center District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25536"
+    },
+    "NCD-BROADWAY": {
+      "section": "714",
+      "name": "Broadway Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25549"
+    },
+    "NCD-CASTRO": {
+      "section": "715",
+      "name": "Castro Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25562"
+    },
+    "NCD-INNER CLEMENT": {
+      "section": "716",
+      "name": "Inner Clement Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the ground level only as a wine and beer bar holding an ABC Type 42 license (Table 716 Note 3).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25576"
+    },
+    "NCD-OUTER CLEMENT": {
+      "section": "717",
+      "name": "Outer Clement Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25588"
+    },
+    "NCD-UPPER FILLMORE": {
+      "section": "718",
+      "name": "Upper Fillmore Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "A new Bar is allowed by Conditional Use only in conjunction with a Restaurant (Table 718 Note 3); Formula Retail Restaurants and Limited Restaurants NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25598"
+    },
+    "NCD-HAIGHT": {
+      "section": "719",
+      "name": "Haight Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story; new on-sale or off-sale liquor establishments (including Restaurants serving alcohol) require Conditional Use under the Haight Street Alcohol Restricted Use Subdistrict (§ 781.9).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610"
+    },
+    "NCD-EXCELSIOR": {
+      "section": "720",
+      "name": "Excelsior Outer Mission Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First and Second Story; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25623"
+    },
+    "NCD-JAPANTOWN": {
+      "section": "721",
+      "name": "Japantown Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story, C above; noise/music limits per Table 721 Note 2; Japantown SUD (§ 249.31) CU thresholds for large uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57663"
+    },
+    "NCD-NORTH BEACH": {
+      "section": "722",
+      "name": "North Beach Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "hours": "P 6 a.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "note": "Restaurants and Bars may be permitted as a Conditional Use on the First Story only in a space currently or last legally occupied by a Bar (for a Bar) or by a Limited Restaurant, Restaurant or Bar (for a Restaurant), as determined by the Zoning Administrator (Table 722 Note 5). The last use must not have been discontinued or abandoned (§§ 186.1(d), 178(d)) and the new use must not enlarge the space; no Conditional Use is required if the use remains the same as the prior authorized use with no enlargement or intensification. Limited Restaurant P.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66848"
+    },
+    "NCD-POLK": {
+      "section": "723",
+      "name": "Polk Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25662"
+    },
+    "NCD-SACRAMENTO": {
+      "section": "724",
+      "name": "Sacramento Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–12 a.m.; C 12 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25675"
+    },
+    "NCD-UNION": {
+      "section": "725",
+      "name": "Union Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25687"
+    },
+    "NCD-PACIFIC": {
+      "section": "726",
+      "name": "Pacific Avenue Neighborhood Commercial District",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–10 p.m.; C 10 p.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "note": "Bar NP at all stories; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699"
+    },
+    "NCD-LAKESIDE VILLAGE": {
+      "section": "727",
+      "name": "Lakeside Village Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25711"
+    },
+    "NCD-24TH-NOE-VALLEY": {
+      "section": "728",
+      "name": "24th Street – Noe Valley Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25723"
+    },
+    "NCD-WEST PORTAL": {
+      "section": "729",
+      "name": "West Portal Avenue Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only; Restaurant falls under Retail Sales and Service (P on First and Second Story); non-residential uses above 2,500 sq ft require CU.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25735"
+    },
+    "NCD-INNER SUNSET": {
+      "section": "730",
+      "name": "Inner Sunset Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25749"
+    },
+    "NCD-NORIEGA": {
+      "section": "731",
+      "name": "Noriega Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25761"
+    },
+    "NCD-IRVING": {
+      "section": "732",
+      "name": "Irving Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25777"
+    },
+    "NCD-TARAVAL": {
+      "section": "733",
+      "name": "Taraval Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25787"
+    },
+    "NCD-JUDAH": {
+      "section": "734",
+      "name": "Judah Street Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25819"
+    },
+    "NCD-INNER BALBOA STREET": {
+      "section": "735",
+      "name": "Inner Balboa Street Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62651"
+    },
+    "NCD-OUTER BALBOA STREET": {
+      "section": "736",
+      "name": "Outer Balboa Street Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62664"
+    },
+    "NCD-BAYVIEW": {
+      "section": "737",
+      "name": "Bayview Neighborhood Commercial District",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar NP under the Third Street Alcohol Restricted Use District (§ 249.62) except: C for Bars with an ABC Type 42 license; re-establishment of a pre-existing Bar P; relocation within the RUD P for Bars (Table 737 Note 7).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62678"
+    },
+    "NCD-CORTLAND AVENUE": {
+      "section": "738",
+      "name": "Cortland Avenue Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62691"
+    },
+    "NCD-GEARY BOULEVARD": {
+      "section": "739",
+      "name": "Geary Boulevard Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First and Second Story; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62706"
+    },
+    "NCD-MISSION BERNAL": {
+      "section": "740",
+      "name": "Mission Bernal Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First Story; Mission Alcoholic Beverage SUD (§ 249.60) applies to much of the district.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62721"
+    },
+    "NCD-SAN BRUNO AVENUE": {
+      "section": "741",
+      "name": "San Bruno Avenue Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62736"
+    },
+    "NCD-COLE VALLEY": {
+      "section": "742",
+      "name": "Cole Valley Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62751"
+    },
+    "NCD-LOWER HAIGHT STREET": {
+      "section": "743",
+      "name": "Lower Haight Street Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story; new Liquor Stores NP within the Lower Haight Street Alcohol RUD (§ 784).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62764"
+    },
+    "NCD-LOWER POLK STREET": {
+      "section": "744",
+      "name": "Lower Polk Street Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First and Second Story; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62779"
+    },
+    "NCD-INNER TARAVAL STREET": {
+      "section": "745",
+      "name": "Inner Taraval Street Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story; Formula Retail Restaurants NP in the Taraval Street Restaurant Subdistrict (§ 781.1).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62795"
+    },
+    "NCD-LELAND": {
+      "section": "746",
+      "name": "Leland Avenue Neighborhood Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-62810"
+    },
+    "NCT-1": {
+      "section": "750",
+      "name": "NCT-1 Neighborhood Commercial Transit Cluster District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar is not listed separately and falls under Retail Sales and Service Uses: P on the First Story if more than 1/4 mile from any NC District or Restricted Use Subdistrict with more restrictive controls, otherwise the more restrictive control applies (Table 750 Note 4).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57016"
+    },
+    "NCT-2": {
+      "section": "751",
+      "name": "NCT-2 Small-Scale Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57028"
+    },
+    "NCT-3": {
+      "section": "752",
+      "name": "NCT-3 Moderate-Scale Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57664"
+    },
+    "NCT-SOMA": {
+      "section": "753",
+      "name": "SoMa Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57665"
+    },
+    "NCT-MISSION": {
+      "section": "754",
+      "name": "Mission Street Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "hours": "No limit on hours of operation",
+      "note": "Bar C on the First and Second Story; Restaurant C on the First Story only; Limited Restaurant P on the First Story; total Eating and Drinking uses (Restaurants, Limited Restaurants, Bars) capped at 179 (Table 754 Note 7); Restaurants require CU in the Mission Alcoholic Beverage SUD subarea (§ 249.60(f)).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57068"
+    },
+    "NCT-OCEAN": {
+      "section": "755",
+      "name": "Ocean Avenue Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57081"
+    },
+    "NCT-GLEN PARK": {
+      "section": "756",
+      "name": "Glen Park Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57666"
+    },
+    "NCT-FOLSOM": {
+      "section": "757",
+      "name": "Folsom Street Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57112"
+    },
+    "RCD": {
+      "section": "758",
+      "name": "Regional Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57126"
+    },
+    "NCT-DIVISADERO": {
+      "section": "759",
+      "name": "Divisadero Street Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57141"
+    },
+    "NCT-FILLMORE": {
+      "section": "760",
+      "name": "Fillmore Street Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar P on the First and Second Story; Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154"
+    },
+    "NCT-HAYES": {
+      "section": "761",
+      "name": "Hayes-Gough Neighborhood Commercial Transit District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar P on the First Story only.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57167"
+    },
+    "NCT-VALENCIA": {
+      "section": "762",
+      "name": "Valencia Street Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178"
+    },
+    "NCT-24TH-MISSION": {
+      "section": "763",
+      "name": "24th Street – Mission Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar and Restaurant C on the First Story only; in the Calle 24 SUD a new Restaurant, Limited Restaurant or Bar is prohibited where those uses exceed, or would exceed, 35% of the commercial frontage within 300 feet (§ 249.59(d)(1)); additional limits in the Mission Alcoholic Beverage SUD (§ 249.60); Liquor Store NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57188"
+    },
+    "NCT-UPPER MARKET": {
+      "section": "764",
+      "name": "Upper Market Street Neighborhood Commercial Transit District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar C on the First and Second Story.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57199"
+    },
+    "RH-1(D)": {
+      "section": "209.1",
+      "name": "RH-1(D) Residential, House, One Family – Detached",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.; NP 10 p.m.–6 a.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077"
+    },
+    "RH-1": {
+      "section": "209.1",
+      "name": "RH-1 Residential, House, One Family",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.; NP 10 p.m.–6 a.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077"
+    },
+    "RH-1(S)": {
+      "section": "209.1",
+      "name": "RH-1(S) Residential, House, One Family with Minor Second Unit",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.; NP 10 p.m.–6 a.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077"
+    },
+    "RH-2": {
+      "section": "209.1",
+      "name": "RH-2 Residential, House, Two Family",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.; NP 10 p.m.–6 a.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077"
+    },
+    "RH-3": {
+      "section": "209.1",
+      "name": "RH-3 Residential, House, Three Family",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.; NP 10 p.m.–6 a.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077"
+    },
+    "RM-1": {
+      "section": "209.2",
+      "name": "RM-1 Residential, Mixed, Low Density",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-56337"
+    },
+    "RM-2": {
+      "section": "209.2",
+      "name": "RM-2 Residential, Mixed, Moderate Density",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-56337"
+    },
+    "RM-3": {
+      "section": "209.2",
+      "name": "RM-3 Residential, Mixed, Medium Density",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-56337"
+    },
+    "RM-4": {
+      "section": "209.2",
+      "name": "RM-4 Residential, Mixed, High Density",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "Limited Corner Commercial / § 186 uses: P 6 a.m.–10 p.m.",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-56337"
+    },
+    "RC-3": {
+      "section": "209.3",
+      "name": "RC-3 Residential-Commercial, Medium Density",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083"
+    },
+    "RC-4": {
+      "section": "209.3",
+      "name": "RC-4 Residential-Commercial, High Density",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083"
+    },
+    "RTO-1": {
+      "section": "209.4",
+      "name": "RTO-1 Residential Transit Oriented District",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20086"
+    },
+    "RTO-M": {
+      "section": "209.4",
+      "name": "RTO-M Residential Transit Oriented – Mission",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP, except Limited Corner Commercial Uses (§ 231) and nonconforming § 186 uses.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20086"
+    },
+    "RTO-C": {
+      "section": "209.4",
+      "name": "RTO-C Residential Transit Oriented – Commercial",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-20086"
+    },
+    "C-2": {
+      "section": "210.1",
+      "name": "C-2 Community Business District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20117"
+    },
+    "C-3-O": {
+      "section": "210.2",
+      "name": "C-3-O Downtown Office District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20120"
+    },
+    "C-3-O(SD)": {
+      "section": "210.2",
+      "name": "C-3-O(SD) Downtown Office Special Development District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20120"
+    },
+    "C-3-R": {
+      "section": "210.2",
+      "name": "C-3-R Downtown Retail District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20120"
+    },
+    "C-3-G": {
+      "section": "210.2",
+      "name": "C-3-G Downtown General Commercial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20120"
+    },
+    "C-3-S": {
+      "section": "210.2",
+      "name": "C-3-S Downtown Support District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P, subject to § 202.2(a) operating conditions.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20120"
+    },
+    "PDR-1-B": {
+      "section": "210.3",
+      "name": "PDR-1-B Light Industrial Buffer District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses P subject to the use-size limits of Table 210.3A.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20123"
+    },
+    "PDR-1-D": {
+      "section": "210.3",
+      "name": "PDR-1-D Production, Distribution and Repair – Design District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses P, limited to a cumulative 5,000 gross sq ft per lot (Table 210.3 Note 10).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20123"
+    },
+    "PDR-1-G": {
+      "section": "210.3",
+      "name": "PDR-1-G Production, Distribution and Repair – General District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses P, limited to a cumulative 2,500 gross sq ft per lot (Table 210.3 Note 9).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20123"
+    },
+    "PDR-2": {
+      "section": "210.3",
+      "name": "PDR-2 Core Production, Distribution and Repair District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses P subject to the use-size limits of Table 210.3A.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20123"
+    },
+    "M-1": {
+      "section": "210.4",
+      "name": "M-1 Light Industrial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20132"
+    },
+    "M-2": {
+      "section": "210.4",
+      "name": "M-2 Heavy Industrial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": null,
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) P.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20132"
+    },
+    "CCB": {
+      "section": "810",
+      "name": "Chinatown Community Business District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar C at all permitted stories; Restaurant P on the First Story, C above; Formula Retail Restaurants and Limited Restaurants NP in all Chinatown Mixed Use Districts.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26704"
+    },
+    "CVR": {
+      "section": "811",
+      "name": "Chinatown Visitor Retail District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar C on the First and Second Story; Restaurant P on the First Story, C on the Second; Formula Retail Restaurants NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26717"
+    },
+    "CRNC": {
+      "section": "812",
+      "name": "Chinatown Residential Neighborhood Commercial District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "note": "Bar C on the First Story only; Formula Retail Restaurants and Limited Restaurants NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729"
+    },
+    "CMUO": {
+      "section": "830",
+      "name": "CMUO Central SoMa Mixed Use-Office District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No restrictions on hours of operation",
+      "note": "Bar and Restaurant P up to 25,000 gross sq ft of retail per lot (above that only at a 3:1 ratio of other uses to retail); Formula Retail NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67565"
+    },
+    "MUG": {
+      "section": "831",
+      "name": "MUG Mixed Use-General District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar C; Restaurant falls under Retail Sales and Service (P up to 25,000 gross sq ft per lot).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67718"
+    },
+    "MUO": {
+      "section": "832",
+      "name": "MUO Mixed Use-Office District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses (P; size limits west of 7th Street per Table 832 Note 4).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67732"
+    },
+    "MUR": {
+      "section": "833",
+      "name": "MUR Mixed Use-Residential District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses (P).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67745"
+    },
+    "RED": {
+      "section": "834",
+      "name": "RED Residential Enclave District",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "hours": "No limit on hours of operation",
+      "note": "Retail Sales and Service Uses (incl. Bar, Restaurant) NP.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67758"
+    },
+    "RED-MX": {
+      "section": "835",
+      "name": "RED-MX Residential Enclave-Mixed District",
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar NP; Restaurant under Retail Sales and Service: P up to 1,250 gross sq ft per lot, C above, NP above 1 FAR.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67772"
+    },
+    "SALI": {
+      "section": "836",
+      "name": "SALI Service/Arts/Light Industrial District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses: P up to 10,000 gross sq ft per lot, C up to 25,000, NP above.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67785"
+    },
+    "SPD": {
+      "section": "837",
+      "name": "SPD South Park District",
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar C; Retail Sales and Service up to 5,000 sq ft per lot, NP above.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67797"
+    },
+    "UMU": {
+      "section": "838",
+      "name": "UMU Urban Mixed Use District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses: P up to 3,999 gross sq ft per use, C at 4,000+ sq ft; 25,000 gross sq ft per lot cap (3:1 ratio above).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67810"
+    },
+    "WMUG": {
+      "section": "839",
+      "name": "WMUG WSoMa Mixed Use-General District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses: P up to 10,000 gross sq ft per lot, NP above.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-70715"
+    },
+    "WMUO": {
+      "section": "840",
+      "name": "WMUO WSoMa Mixed Use-Office District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "No limit on hours of operation",
+      "note": "Bar and Restaurant fall under Retail Sales and Service Uses: P up to 10,000 gross sq ft per lot, C up to 25,000, NP above.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67836"
+    },
+    "RH DTR": {
+      "section": "827",
+      "name": "Rincon Hill Downtown Residential Mixed Use District",
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "hours": "P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "note": "All non-residential uses are permitted unless Table 827 lists them as C or NP, and it does not list Bar, Restaurant or Limited Restaurant (Table 827 row .26; § 825(c)(1)(A)). The hours row (.44) lists only C 2 a.m.–6 a.m.; other hours are not limited. Non-residential use size P up to 25,000 sq ft, C above (row .21); Nighttime Entertainment C (row .33).",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26847"
+    },
+    "TB DTR": {
+      "section": "828",
+      "name": "Transbay Downtown Residential District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26921"
+    },
+    "SB-DTR": {
+      "section": "829",
+      "name": "South Beach Downtown Residential Mixed Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26925"
+    },
+    "P": {
+      "section": "211",
+      "name": "P Public District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-50175"
+    },
+    "PM-CF": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "PM-MU1": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "PM-MU2": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "PM-OS": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "PM-R": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "PM-S": {
+      "section": "249.64",
+      "name": "Parkmerced Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-34612"
+    },
+    "TI-MU": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "TI-OS": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "TI-PCI": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "TI-R": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "YBI-MU": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "YBI-OS": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "YBI-PCI": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "YBI-R": {
+      "section": "249.52",
+      "name": "Treasure Island/Yerba Buena Island Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21366"
+    },
+    "P70-MU": {
+      "section": "249.79",
+      "name": "Pier 70 Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-57782"
+    },
+    "MR-MU": {
+      "section": "249.80",
+      "name": "Mission Rock Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-58323"
+    },
+    "PPS-MU": {
+      "section": "249.87",
+      "name": "Potrero Power Station Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-62911"
+    },
+    "BR-MU": {
+      "section": "249.90",
+      "name": "Balboa Reservoir Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-64188"
+    },
+    "S-MU": {
+      "section": "249.9",
+      "name": "Stonestown Special Use District",
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "hours": null,
+      "note": "Bar/restaurant controls for this district were not verified; consult the district's control table.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-70209"
+    }
+  },
+  "sud_name_aliases": {
+    "Mission Alcohol Restrict": "static:sf:mission_alcoholic_beverage_sud",
+    "3rd St Alcohol Restrict": "static:sf:third_street_alcohol_rud",
+    "Haight Street Alcohol Restricted Use": "static:sf:haight_street_alcohol_rusd",
+    "Lower Haight Alcohol Restrict": "static:sf:lower_haight_alcohol_rud",
+    "Taraval Street Restaurant Subdistrict": "static:sf:taraval_restaurant_subdistrict",
+    "Geary Blvd Formula Retail Pet Supply Store and Formula Retail Eating and Drinking Subdistrict": "static:sf:geary_formula_eating_drinking_subdistrict",
+    "Calle 24 SUD": "static:sf:calle_24_sud"
+  },
+  "overlays": [
+    {
+      "id": "static:sf:mission_alcoholic_beverage_sud",
+      "kind": "alcohol_sud",
+      "name": "Mission Alcoholic Beverage Special Use District",
+      "rules": "No new Liquor Stores. A Restaurant operating as a Bona Fide Eating Place may serve alcohol (licenses may be transferred in from inside or outside the SUD), as may non-profit theaters, bowling alleys/mini-golf with an integrated Restaurant, single-screen movie theaters (beer and wine) and ABC Type 90 music venues. A new or relocated Bar is considered under the underlying zoning but only as a Conditional Use, and must use a liquor license transferred from another Bar within the SUD. Existing liquor establishments may relocate or expand only with CU. East of the western boundary of the Mission Street NCT and north of Cesar Chavez Street, any new Restaurant requires CU and new ABC Type 75 (brewpub) licenses are prohibited. Good-neighbor operating conditions (§ 202.2 plus lighting and window-signage limits) apply.",
+      "code_section": "Planning Code § 249.60 (§ 781.8 cross-references it)",
+      "district_codes": [],
+      "bar_permission": "conditional",
+      "restaurant_permission": "unknown",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-34810",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:third_street_alcohol_rud",
+      "kind": "alcohol_sud",
+      "name": "Third Street Alcohol Restricted Use District",
+      "rules": "No new on-sale (ABC Types 40, 42, 48, 57 — i.e. bars) or off-sale (Liquor Store) liquor establishments, except: ABC Type 2 and Type 23 sales, applications on file with ABC before May 19, 2003, temporary uses, and an ABC Type 42 on-sale establishment in the Bayview NCD with Conditional Use. Restaurants with ABC Types 41/47 are not 'on-sale liquor establishments' under this section. Pre-existing establishments may continue, re-establish within 10 years, and relocate within the RUD (CU, except P for a Bar).",
+      "code_section": "Planning Code § 249.62 (§ 782 cross-references it)",
+      "district_codes": [],
+      "bar_permission": "prohibited",
+      "restaurant_permission": "unknown",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-34820",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:haight_street_alcohol_rusd",
+      "kind": "alcohol_sud",
+      "name": "Haight Street Alcohol Restricted Use Subdistrict",
+      "rules": "Coterminous with the Haight Street NCD. New on-sale (ABC Types 40, 41, 42, 47, 48, 57 — bars and restaurants serving alcohol) or off-sale liquor establishments are permitted only as a Conditional Use. ABC Types 51, 52, 59, 60, 61, 64, 67, 70, 75 and 90 are not on-sale liquor establishments under this section. Existing establishments may continue; relocation within the subdistrict requires CU.",
+      "code_section": "Planning Code § 781.9",
+      "district_codes": [],
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25960",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:lower_haight_alcohol_rud",
+      "kind": "alcohol_sud",
+      "name": "Lower Haight Street Alcohol Restricted Use District",
+      "rules": "No new Liquor Stores (off-sale) in the NC-1 clusters at Haight/Scott and Haight/Pierce and the Lower Haight Street NCD between Steiner and Webster; Liquor Stores lawfully existing before March 25, 2007 may continue. The RUD does not itself restrict Bars or Restaurants — the underlying zoning controls apply.",
+      "code_section": "Planning Code § 784",
+      "district_codes": [],
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-34984",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:north_beach_sud",
+      "kind": "nc_rule",
+      "name": "North Beach Neighborhood Commercial District: bar and restaurant controls",
+      "rules": "There is no separate North Beach alcohol SUD in the current Planning Code; North Beach bar and restaurant controls are in the North Beach NCD control table. Restaurants and Bars are Conditional Uses on the First Story only, and only in a space currently or last legally occupied by a Bar (for a new Bar) or by a Limited Restaurant, Restaurant or Bar (for a new Restaurant), as determined by the Zoning Administrator; no other use may convert to a Restaurant or Bar. The last use must not have been discontinued or abandoned (§§ 186.1(d), 178(d)) and the new use must not enlarge the space; no Conditional Use is required if the use remains the same as the prior authorized use with no enlargement or intensification. Limited Restaurants are P. Liquor Store C.",
+      "code_section": "Planning Code § 722 (Zoning Control Table 722, Note 5)",
+      "district_codes": [
+        "NCD-NORTH BEACH"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "late_night_rule": "Hours of operation (Table 722): P 6 a.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66848",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:taraval_restaurant_subdistrict",
+      "kind": "special_use_district",
+      "name": "Taraval Street Restaurant Subdistrict",
+      "rules": "Applies to the NC-1 portions of Taraval Street between 40th–41st and 45th–47th Avenues and the Inner Taraval Street NCD between 12th and 19th Avenues. Restaurants and Limited Restaurants are P on the First Story and below; Formula Retail Restaurants and Limited Restaurants are not permitted.",
+      "code_section": "Planning Code § 781.1",
+      "district_codes": [],
+      "bar_permission": "unknown",
+      "restaurant_permission": "principal",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25909",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:geary_formula_eating_drinking_subdistrict",
+      "kind": "special_use_district",
+      "name": "Geary Boulevard Formula Retail Pet Supply Store and Formula Retail Eating and Drinking Subdistrict",
+      "rules": "Applies to the NC-3 portion of Geary Boulevard between 14th and 28th Avenues. Eating and Drinking uses that are also Formula Retail are not permitted; non-formula bars and restaurants follow the underlying NC-3 controls.",
+      "code_section": "Planning Code § 781.4",
+      "district_codes": [],
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25924",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:calle_24_sud",
+      "kind": "special_use_district",
+      "name": "Calle 24 Special Use District",
+      "rules": "A new Restaurant, Limited Restaurant or Bar, or the physical expansion of one, is prohibited where those uses exceed, or would exceed with the proposed use, 35% of the total commercial frontage within 300 feet of the site inside the SUD; a change from an existing Limited Restaurant to a Restaurant is exempt (§ 249.59(d)(1)). Conditional Use is required for a first-story commercial merger above 799 gross square feet and for a new non-residential use that replaces a Legacy Business (§ 249.59(d)(2)). For any commercial use that needs a Conditional Use, the Planning Commission must also find that the work conforms with the Calle 24 Design Guidelines and that the use supports at least four of the purposes of the SUD (§ 249.59(d)(3)).",
+      "code_section": "Planning Code § 249.59",
+      "district_codes": [],
+      "bar_permission": "unknown",
+      "restaurant_permission": "unknown",
+      "late_night_rule": null,
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-55114",
+      "fetched_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_bar_rule_general",
+      "kind": "nc_rule",
+      "name": "Neighborhood Commercial base districts: bar and restaurant use",
+      "rules": "In the base NC and NCT districts (NC-1, NC-2, NC-3, NC-S, NCT-1, NCT-2, NCT-3) a Bar and a Restaurant are principally permitted on the First Story. Exceptions: Bar is C in NC-1 and NC-2 within the Outer Sunset area (Table 710 Note 6 / Table 711 Note 9); in NCT-1 Bar takes the more restrictive control of any NC district or restricted use subdistrict within 1/4 mile (Table 750 Note 4). Named NCDs/NCTs have their own tables (see their rule rows); overlapping SUDs/RUDs (e.g. § 249.60, § 781.9, § 249.62) can add Conditional Use requirements.",
+      "code_section": "Planning Code §§ 710, 711, 712, 713, 750, 751, 752 (Zoning Control Tables); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NC-1",
+        "NC-2",
+        "NC-3",
+        "NC-S",
+        "NCT-1",
+        "NCT-2",
+        "NCT-3"
+      ],
+      "bar_permission": "principal",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation: NC-1 and NCT-1 P 6 a.m.–11 p.m., C 11 p.m.–2 a.m.; NC-2, NC-S, NCT-2 P 6 a.m.–2 a.m., C 2 a.m.–6 a.m.; NC-3 and NCT-3 no limit.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_broadway",
+      "kind": "nc_rule",
+      "name": "Broadway Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First and Second Story.",
+      "code_section": "Planning Code § 714 (Zoning Control Table 714); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-BROADWAY"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 714): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25549",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_castro",
+      "kind": "nc_rule",
+      "name": "Castro Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First and Second Story.",
+      "code_section": "Planning Code § 715 (Zoning Control Table 715); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-CASTRO"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 715): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25562",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_inner_clement",
+      "kind": "nc_rule",
+      "name": "Inner Clement Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the ground level only as a wine and beer bar holding an ABC Type 42 license (Table 716 Note 3).",
+      "code_section": "Planning Code § 716 (Zoning Control Table 716); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-INNER CLEMENT"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 716): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25576",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_outer_clement",
+      "kind": "nc_rule",
+      "name": "Outer Clement Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 717 (Zoning Control Table 717); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-OUTER CLEMENT"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 717): P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25588",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_upper_fillmore",
+      "kind": "nc_rule",
+      "name": "Upper Fillmore Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). A new Bar is allowed by Conditional Use only in conjunction with a Restaurant (Table 718 Note 3); Formula Retail Restaurants and Limited Restaurants NP.",
+      "code_section": "Planning Code § 718 (Zoning Control Table 718); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-UPPER FILLMORE"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 718): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25598",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_haight",
+      "kind": "nc_rule",
+      "name": "Haight Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story; new on-sale or off-sale liquor establishments (including Restaurants serving alcohol) require Conditional Use under the Haight Street Alcohol Restricted Use Subdistrict (§ 781.9).",
+      "code_section": "Planning Code § 719 (Zoning Control Table 719); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-HAIGHT"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 719): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25610",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_polk",
+      "kind": "nc_rule",
+      "name": "Polk Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 723 (Zoning Control Table 723); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-POLK"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 723): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25662",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_sacramento",
+      "kind": "nc_rule",
+      "name": "Sacramento Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 724 (Zoning Control Table 724); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-SACRAMENTO"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 724): P 6 a.m.–12 a.m.; C 12 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25675",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_union",
+      "kind": "nc_rule",
+      "name": "Union Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 725 (Zoning Control Table 725); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-UNION"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 725): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25687",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_pacific",
+      "kind": "nc_rule",
+      "name": "Pacific Avenue Neighborhood Commercial District",
+      "rules": "Bar not permitted; Restaurant principally permitted (First and Second Story). Bar NP at all stories; Liquor Store NP.",
+      "code_section": "Planning Code § 726 (Zoning Control Table 726); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-PACIFIC"
+      ],
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 726): P 6 a.m.–10 p.m.; C 10 p.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25699",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_24th_noe_valley",
+      "kind": "nc_rule",
+      "name": "24th Street – Noe Valley Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 728 (Zoning Control Table 728); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-24TH-NOE-VALLEY"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 728): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25723",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_west_portal",
+      "kind": "nc_rule",
+      "name": "West Portal Avenue Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Restaurant falls under Retail Sales and Service (P on First and Second Story); non-residential uses above 2,500 sq ft require CU.",
+      "code_section": "Planning Code § 729 (Zoning Control Table 729); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-WEST PORTAL"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 729): P 6 a.m.–2 a.m.; NP 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25735",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_inner_sunset",
+      "kind": "nc_rule",
+      "name": "Inner Sunset Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First Story only; Liquor Store NP.",
+      "code_section": "Planning Code § 730 (Zoning Control Table 730); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-INNER SUNSET"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 730): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25749",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_noriega",
+      "kind": "nc_rule",
+      "name": "Noriega Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 731 (Zoning Control Table 731); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-NORIEGA"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 731): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25761",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_irving",
+      "kind": "nc_rule",
+      "name": "Irving Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 732 (Zoning Control Table 732); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-IRVING"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 732): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25777",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_taraval",
+      "kind": "nc_rule",
+      "name": "Taraval Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 733 (Zoning Control Table 733); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-TARAVAL"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 733): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25787",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_judah",
+      "kind": "nc_rule",
+      "name": "Judah Street Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 734 (Zoning Control Table 734); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-JUDAH"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 734): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-25819",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ncd_bayview",
+      "kind": "nc_rule",
+      "name": "Bayview Neighborhood Commercial District",
+      "rules": "Bar not permitted; Restaurant principally permitted (First Story). Bar NP under the Third Street Alcohol Restricted Use District (§ 249.62) except: C for Bars with an ABC Type 42 license; re-establishment of a pre-existing Bar P; relocation within the RUD P for Bars (Table 737 Note 7).",
+      "code_section": "Planning Code § 737 (Zoning Control Table 737); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCD-BAYVIEW"
+      ],
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 737): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-62678",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_soma",
+      "kind": "nc_rule",
+      "name": "SoMa Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 753 (Zoning Control Table 753); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-SOMA"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 753): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57665",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_mission",
+      "kind": "nc_rule",
+      "name": "Mission Street Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant requires Conditional Use Authorization (First Story). Bar C on the First and Second Story; Restaurant C on the First Story only; Limited Restaurant P on the First Story; total Eating and Drinking uses (Restaurants, Limited Restaurants, Bars) capped at 179 (Table 754 Note 7); Restaurants require CU in the Mission Alcoholic Beverage SUD subarea (§ 249.60(f)).",
+      "code_section": "Planning Code § 754 (Zoning Control Table 754); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-MISSION"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "late_night_rule": "Hours of operation (Table 754): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57068",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_glen_park",
+      "kind": "nc_rule",
+      "name": "Glen Park Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only.",
+      "code_section": "Planning Code § 756 (Zoning Control Table 756); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-GLEN PARK"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 756): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57666",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_valencia",
+      "kind": "nc_rule",
+      "name": "Valencia Street Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First and Second Story). Bar C on the First Story only; Liquor Store NP; within the Mission Alcoholic Beverage SUD (§ 249.60), a new Bar must use a license transferred from another Bar in the SUD.",
+      "code_section": "Planning Code § 762 (Zoning Control Table 762); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-VALENCIA"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 762): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57178",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_24th_mission",
+      "kind": "nc_rule",
+      "name": "24th Street – Mission Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant requires Conditional Use Authorization (First Story). Bar and Restaurant C on the First Story only; in the Calle 24 SUD a new Restaurant, Limited Restaurant or Bar is prohibited where those uses exceed, or would exceed, 35% of the commercial frontage within 300 feet (§ 249.59(d)(1)); additional limits in the Mission Alcoholic Beverage SUD (§ 249.60); Liquor Store NP.",
+      "code_section": "Planning Code § 763 (Zoning Control Table 763); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-24TH-MISSION"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "conditional",
+      "late_night_rule": "Hours of operation (Table 763): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57188",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_nct_upper_market",
+      "kind": "nc_rule",
+      "name": "Upper Market Street Neighborhood Commercial Transit District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First and Second Story.",
+      "code_section": "Planning Code § 764 (Zoning Control Table 764); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "NCT-UPPER MARKET"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 764): P 6 a.m.–2 a.m.; C 2 a.m.–6 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57199",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_ccb",
+      "kind": "nc_rule",
+      "name": "Chinatown Community Business District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C at all permitted stories; Restaurant P on the First Story, C above; Formula Retail Restaurants and Limited Restaurants NP in all Chinatown Mixed Use Districts.",
+      "code_section": "Planning Code § 810 (Zoning Control Table 810); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "CCB"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 810): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26704",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_cvr",
+      "kind": "nc_rule",
+      "name": "Chinatown Visitor Retail District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First and Second Story; Restaurant P on the First Story, C on the Second; Formula Retail Restaurants NP.",
+      "code_section": "Planning Code § 811 (Zoning Control Table 811); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "CVR"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 811): P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26717",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_crnc",
+      "kind": "nc_rule",
+      "name": "Chinatown Residential Neighborhood Commercial District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C on the First Story only; Formula Retail Restaurants and Limited Restaurants NP.",
+      "code_section": "Planning Code § 812 (Zoning Control Table 812); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "CRNC"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 812): P 6 a.m.–11 p.m.; C 11 p.m.–2 a.m.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_mug",
+      "kind": "nc_rule",
+      "name": "MUG Mixed Use-General District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C; Restaurant falls under Retail Sales and Service (P up to 25,000 gross sq ft per lot).",
+      "code_section": "Planning Code § 831 (Zoning Control Table 831); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "MUG"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 831): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67718",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_red",
+      "kind": "nc_rule",
+      "name": "RED Residential Enclave District",
+      "rules": "Bar not permitted; Restaurant not permitted (First Story). Retail Sales and Service Uses (incl. Bar, Restaurant) NP.",
+      "code_section": "Planning Code § 834 (Zoning Control Table 834); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "RED"
+      ],
+      "bar_permission": "prohibited",
+      "restaurant_permission": "prohibited",
+      "late_night_rule": "Hours of operation (Table 834): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67758",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_red_mx",
+      "kind": "nc_rule",
+      "name": "RED-MX Residential Enclave-Mixed District",
+      "rules": "Bar not permitted; Restaurant principally permitted (First Story). Bar NP; Restaurant under Retail Sales and Service: P up to 1,250 gross sq ft per lot, C above, NP above 1 FAR.",
+      "code_section": "Planning Code § 835 (Zoning Control Table 835); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "RED-MX"
+      ],
+      "bar_permission": "prohibited",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 835): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67772",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "static:sf:nc_spd",
+      "kind": "nc_rule",
+      "name": "SPD South Park District",
+      "rules": "Bar requires Conditional Use Authorization; Restaurant principally permitted (First Story). Bar C; Retail Sales and Service up to 5,000 sq ft per lot, NP above.",
+      "code_section": "Planning Code § 837 (Zoning Control Table 837); § 102 (Bar, Restaurant)",
+      "district_codes": [
+        "SPD"
+      ],
+      "bar_permission": "conditional",
+      "restaurant_permission": "principal",
+      "late_night_rule": "Hours of operation (Table 837): No limit on hours of operation.",
+      "source": "static",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-67797",
+      "fetched_at": "2026-10-21T00:00:00+00:00"
+    }
+  ]
+}

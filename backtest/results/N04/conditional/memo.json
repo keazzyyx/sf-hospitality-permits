@@ -1,0 +1,1356 @@
+{
+ "format_version": 2,
+ "address": "1701 Fillmore St, San Francisco, CA 94115",
+ "lat": 37.78543901914017,
+ "lng": -122.43342305745155,
+ "parcel": "0683/034",
+ "concept_summary": "Super Duper Burgers, a formula retail fast-casual burger restaurant (11+ locations), proposes to occupy 2,950 sq ft at 1701 Fillmore St with limited cooking, no alcohol, five employees, and tenant improvements.",
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 3 approvals this concept needs: 1 further review (zoning and use), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "next_step": "Confirm in writing with San Francisco Planning whether Planning Code § 303.1 formula retail controls require a Conditional Use Authorization for a restaurant-to-restaurant tenant change at this size and zoning district, before signing the lease or filing any applications.",
+  "citations": [
+   "zoning:NCT-FILLMORE"
+  ]
+ },
+ "pathway": {
+  "use": "restaurant",
+  "use_label": "Restaurant",
+  "district": "NCT-FILLMORE",
+  "permission": "not_covered",
+  "permission_label": "Not decided by the rules",
+  "existing_use": null,
+  "change_of_use": "no",
+  "change_of_use_label": "No change of use",
+  "lines": [
+   {
+    "rule_id": "zoning.use",
+    "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T1.maybe_continues",
+    "text": "The space is, or was last, a Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T11.no_limit",
+    "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+    "code_section": "Planning Code § 760",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+    "citations": [
+     "zoning:NCT-FILLMORE"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+    "code_section": "Planning Code § 102",
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 760",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+    "citations": [
+     "zoning:NCT-FILLMORE"
+    ]
+   }
+  ],
+  "rules_date": "2023-05-31",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether an existing business is to be enlarged or intensified"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.maybe_continues",
+      "text": "The space is, or was last, a Restaurant, the use proposed, and the description does not say whether that business stays. The control for a new use applies only if it does not, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.none",
+      "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "conditional",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     },
+     {
+      "rule_id": "T5.operator",
+      "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+      "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+      "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district NCT-FILLMORE: a use below 6,000 square feet is principally permitted, and 2,950 square feet is below it (Planning Code § 760, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district NCT-FILLMORE has no hours of operation control on file (Planning Code § 760, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 760",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+      "citations": [
+       "zoning:NCT-FILLMORE"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false
+   }
+  ],
+  "changes": {
+   "planning_use": "no",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "On 31 May 2023 establishing a Formula Retail use in an NCT district needed neighbourhood notice, whether or not the use changed, and the business is stated to be part of a chain, so notice was required.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+     "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T5.row",
+     "text": "Zoning district NCT-FILLMORE: formula retail is a conditional use (Planning Code § 760, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 760",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-760.-fillmore-street-neighborhood-commercial-transit-district",
+     "citations": [
+      "zoning:NCT-FILLMORE"
+     ]
+    },
+    {
+     "rule_id": "T5.operator",
+     "text": "Note, not evaluated by the rules: a change of owner or operator of an existing formula retail business needs a new Conditional Use in the cases Planning Code § 178(c)(3) lists (limbs A, B, C, D and E; this text in force since before 2022-01-01).",
+     "code_section": "Planning Code §§ 303.1(b), (c), (e)(1), (j); 703.4(b); 178(c)(3)(A)-(E)",
+     "source_url": "https://web.archive.org/web/20220121031253/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-48475",
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Formula retail, Formula retail: change of operator.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "summary": "Formula retail is a conditional use in NCT-FILLMORE under Planning Code § 760; the rules require a Conditional Use Authorization.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The space at 1701 Fillmore St was approved on 2016-11-15 for continuation of a self-service/fast food restaurant use.",
+     "confidence": "verified",
+     "citations": [
+      "app:datasf_planning:2016-012908MIS"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Planning Code § 760 makes formula retail a conditional use in the NCT-FILLMORE district, in force on 2023-05-31.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The record does not state that formula retail is a conditional use in this district.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "Super Duper Burgers operates 11+ locations (as stated in the concept profile) and is a formula retail establishment under Planning Code § 178.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The address record contains only location data; it says nothing about Super Duper Burgers, number of locations, or formula retail classification.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "A 2022 ABC referral at 1700 Fillmore St (52 m away) explicitly noted the restaurant was 'non-formula retail use.'",
+     "confidence": "likely_applicable",
+     "citations": [
+      "app:datasf_planning:2022-009513MIS"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "Two formula retail Conditional Use Authorizations within 1,000 ft were approved: Pinot's Palette (wine-service art studio) in 2015 and Orangetheory Fitness in 2019, both in NCT-FILLMORE.",
+     "confidence": "likely_applicable",
+     "citations": [
+      "app:datasf_planning:2015-007413CUA",
+      "app:datasf_planning:2018-009861CUA"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The records do not show whether Planning Code § 303.1 formula retail controls apply when one restaurant tenant replaces another at the same address without enlarging the use, and the project description does not state whether the existing business continues or closes.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "summary": "A health permit to operate is required and issued after plan check and inspection without a hearing; the permit is allowed.",
+   "summary_verification": "trimmed",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "San Francisco Department of Public Health issues a permit to operate after plan review, inspection, and confirmation that a certified food safety manager is on staff.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.health_permit"
+     ],
+     "verification": "trimmed",
+     "verification_note": "Cut down to the part the cited record states.",
+     "original_confidence": null
+    },
+    {
+     "text": "The FY2026–27 application fee is $470 and the annual license fee for restaurants is $0 for 2026–28; reinspections are $276 per hour.",
+     "confidence": "verified",
+     "citations": [
+      "catalog:sf.health_permit"
+     ],
+     "verification": "supported",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Eight restaurant agency referrals (health and ABC) in NCT-FILLMORE and adjacent districts from 2016 to 2023 were all approved, with decision times of 7 to 40 days.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The records show 7 agency referrals (3 health/DPH and 4 ABC), not 8.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1701 Fillmore St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The last use of the space, as described, is Restaurant. The proposed use is Restaurant, so this is not a change of use.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The same use continues, but the description does not say whether the business is to be enlarged or otherwise changed, and the existing occupancy group of the space is not in public records. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without whether the space is for fewer than 50 people, whether an existing business is to be enlarged or intensified and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "whether the space is for fewer than 50 people",
+    "whether an existing business is to be enlarged or intensified",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "summary": "The building permit requirement is insufficient information because the records do not establish whether this is a change of occupancy; the rules need the occupant load (whether fewer than 50 people), whether the business is enlarged, and the existing occupancy group.",
+   "summary_verification": "supported",
+   "summary_note": null,
+   "findings": [
+    {
+     "text": "The California Building Code assigns restaurants and bars to Assembly Group A-2, but a space for fewer than 50 people is Group B.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The catalog entry describes permit procedures but does not state building code occupancy classifications or the 50-person threshold.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "The project description states 2,950 sq ft and tenant improvements but does not give the occupant load, so the proposed occupancy group is not established.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "The address record contains only location data and does not mention project descriptions, square footage, tenant improvements, occupant load, or occupancy groups.",
+     "original_confidence": "verified"
+    },
+    {
+     "text": "No public record shows the existing occupancy group of 1701 Fillmore St; only an architect's plans or a DBI inspection can establish it.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "not_checked",
+     "verification_note": null,
+     "original_confidence": null
+    },
+    {
+     "text": "Tenant improvements in a restaurant kitchen typically require a building permit with DPH plan check, grease interceptor installation per the FOG ordinance, and DBI/DPH/Fire final inspections.",
+     "confidence": "needs_confirmation",
+     "citations": [],
+     "verification": "downgraded",
+     "verification_note": "Records mention DPH final inspection but do not state DBI or Fire final inspections as requirements.",
+     "original_confidence": "likely_applicable"
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: whether an existing business is to be enlarged or intensified. Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: whether the space is for fewer than 50 people. Needed for: building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space"
+  },
+  {
+   "question": "Whether Planning Code § 303.1 formula retail conditional-use controls apply when a formula retail restaurant tenant replaces a non-formula restaurant tenant at the same address without enlarging the space or changing the restaurant use.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department (by email or pre-application meeting)"
+  },
+  {
+   "question": "Whether the project constitutes a new use or a continuation/change of operator of an existing use under Planning Code § 178(c)(3), which governs when a change of operator of an existing formula retail business requires a new Conditional Use Authorization.",
+   "needs": "agency_answer",
+   "ask": "San Francisco Planning Department"
+  },
+  {
+   "question": "The occupant load (whether fewer than 50 people) and the proposed occupancy group (A-2 or B) for the 2,950 sq ft space with the proposed seating layout.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the proposed layout by an architect"
+  },
+  {
+   "question": "The existing occupancy group of 1701 Fillmore St and whether the existing space is currently Assembly A-2 or Business B.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space, or a DBI records search"
+  },
+  {
+   "question": "Whether the prior tenant (the self-service/fast food restaurant approved in 2016) is still operating or has closed, and whether Super Duper Burgers is a new tenant or a change of ownership/operator.",
+   "needs": "applicant_history",
+   "ask": "The applicant or the landlord"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NCT-FILLMORE",
+  "name": "NCT-FILLMORE",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 760 (zoning control table for NCT-FILLMORE)",
+  "citation_id": "zoning:NCT-FILLMORE"
+ },
+ "overlays": [
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  },
+  {
+   "name": "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.35",
+   "citation_id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service"
+  }
+ ],
+ "density": {
+  "radius_m": 152,
+  "food_or_drink_businesses": 14,
+  "bars": 4,
+  "abc_on_sale_licenses": 11,
+  "abc_licenses_1000ft": 53,
+  "undue_concentration_flag": true,
+  "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows.",
+  "citation_id": "stat:density"
+ },
+ "base_rate": {
+  "approved": 5,
+  "approved_with_conditions": 1,
+  "denied": 1,
+  "withdrawn": 0,
+  "total": 7,
+  "window_years": 10,
+  "scope": "N = 7 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 55 permits and licences, 271 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 55,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 271,
+  "citation_id": "stat:base_rate"
+ },
+ "expected_conditions": [
+  {
+   "condition": "All food employees must obtain California Food Handler Cards within 30 days of hire, and at least one owner or employee must hold a Certified Food Protection Manager certificate before the pre-opening health inspection.",
+   "basis": "California Health and Safety Code § 113948 requires food handler cards for all employees, and § 113947.1 requires a certified manager for each facility that prepares food.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_handler_card",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2016-012908MIS",
+   "citation_id": "app:datasf_planning:2016-012908MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1701 FILLMORE ST 94115",
+   "distance_m": 0.0,
+   "filed_at": "2016-10-06",
+   "decided_at": "2016-11-15",
+   "days_to_decision": 40,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.852,
+   "why_comparable": "Same address (1701 Fillmore St), same zoning (NCT-Fillmore), same use (self-service/fast food restaurant continuation). This is the most recent Planning approval for the subject property itself.",
+   "key_takeaway": "Planning approved continuation of the existing self-service/fast food restaurant use at this address in 2016 via agency referral. The space is already established as a restaurant, so Super Duper Burgers would be a restaurant-to-restaurant tenant change without a change of use requiring Planning Commission review.",
+   "lat": 37.78543901991402,
+   "lng": -122.43342305659367,
+   "source_url": "https://sfplanninggis.org/pim?search=2016-012908MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-009513MIS",
+   "citation_id": "app:datasf_planning:2022-009513MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1700 FILLMORE ST 94115",
+   "distance_m": 51.9,
+   "filed_at": "2022-09-29",
+   "decided_at": "2022-10-06",
+   "days_to_decision": 7,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.927,
+   "why_comparable": "Directly across the street at 1700 Fillmore St, NCT-Fillmore zoning, restaurant use. ABC Type 47 referral approved in 2022 for non-formula retail restaurant.",
+   "key_takeaway": "Agency referral explicitly notes the restaurant is 'non-formula retail use' and was approved. This suggests Planning tracks formula retail status even in routine referrals and may apply different scrutiny; the parenthetical suggests formula retail restaurants might require additional process.",
+   "lat": 37.7853598282257,
+   "lng": -122.43284204833829,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-009513MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-010433MIS",
+   "citation_id": "app:datasf_planning:2022-010433MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1923 FILLMORE ST 94115",
+   "distance_m": 251.8,
+   "filed_at": "2022-10-25",
+   "decided_at": "2022-11-09",
+   "days_to_decision": 15,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.879,
+   "why_comparable": "Roam Artisan Burgers at 1923 Fillmore St (252m away), another burger restaurant in the Upper Fillmore NCD, ABC Type 41 approved in 2022. Very similar concept to Super Duper Burgers.",
+   "key_takeaway": "ABC referral for Roam Artisan Burgers, a fast-casual burger chain, was approved without mention of formula retail status. Roam has multiple Bay Area locations but was treated as non-formula retail, suggesting not all multi-location burger concepts trigger Sec. 303.1.",
+   "lat": 37.78768189241416,
+   "lng": -122.43385591056901,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-010433MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-002730MIS",
+   "citation_id": "app:datasf_planning:2023-002730MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1515 FILLMORE ST COMML 94115",
+   "distance_m": 217.6,
+   "filed_at": "2023-03-27",
+   "decided_at": "2023-04-04",
+   "days_to_decision": 8,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.893,
+   "why_comparable": "I'a Poke at 1515 Fillmore St (218m south on same corridor), NCT-Fillmore zoning, fast-casual restaurant, ABC Type 41 approved April 2023, most recent comparable on Fillmore St.",
+   "key_takeaway": "Recent agency referral approved for a fast-casual restaurant on Fillmore St without formula retail issues mentioned. Demonstrates routine approval for restaurant continuations in NCT-Fillmore when formula retail controls do not apply.",
+   "lat": 37.78348073309072,
+   "lng": -122.43331591957156,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002730MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-004699MIS",
+   "citation_id": "app:datasf_planning:2021-004699MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1560 FILLMORE ST 94115",
+   "distance_m": 170.3,
+   "filed_at": "2021-05-07",
+   "decided_at": "2021-06-07",
+   "days_to_decision": 31,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.878,
+   "why_comparable": "Restaurant at 1560 Fillmore St (170m away), NCT-Fillmore zoning, DPH referral approved June 2021. Same district and use type.",
+   "key_takeaway": "Another agency referral for restaurant continuation in NCT-Fillmore approved routinely in 2021. Reinforces pattern that restaurant-to-restaurant changes in this district are processed as referrals without discretionary review when no formula retail or other special controls apply.",
+   "lat": 37.784063116591874,
+   "lng": -122.43256637993773,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004699MIS"
+  },
+  {
+   "application_id": "datasf_planning:2020-006734MIS",
+   "citation_id": "app:datasf_planning:2020-006734MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1740 OFARRELL ST COMML 1F 94115",
+   "distance_m": 217.6,
+   "filed_at": "2020-07-17",
+   "decided_at": "2020-08-04",
+   "days_to_decision": 18,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.853,
+   "why_comparable": "Restaurant at 1740 O'Farrell St (218m away), NCT-Fillmore zoning, DPH referral for existing restaurant use approved August 2020.",
+   "key_takeaway": "Agency referral explicitly states 'existing restaurant use within the Fillmore Street Commercial Transit District per Planning Code Section 760' was approved. Confirms restaurant use is principally permitted in NCT-Fillmore without discretionary review.",
+   "lat": 37.78348073309072,
+   "lng": -122.43331591957156,
+   "source_url": "https://sfplanninggis.org/pim?search=2020-006734MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-001991MIS",
+   "citation_id": "app:datasf_planning:2023-001991MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1581 WEBSTER ST 94115",
+   "distance_m": 147.8,
+   "filed_at": "2023-03-06",
+   "decided_at": "2023-04-04",
+   "days_to_decision": 29,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.911,
+   "why_comparable": "Restaurant at 1581 Webster St (148m away), Japantown NCD adjacent to subject, ABC Type 41 approved April 2023 for full-service restaurant.",
+   "key_takeaway": "Recent agency referral in adjacent commercial district approved for restaurant with ABC license. Decision notes restaurant use is permitted per PC Section 721 and must operate as Bona Fide Eating Place per Section 202.2(a)(1). Shows consistency of restaurant approvals in adjacent districts.",
+   "lat": 37.78497190363379,
+   "lng": -122.43185235884823,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-001991MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-000262MIS",
+   "citation_id": "app:datasf_planning:2023-000262MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "2232 BUSH ST 94115",
+   "distance_m": 205.8,
+   "filed_at": "2023-01-10",
+   "decided_at": "2023-01-26",
+   "days_to_decision": 16,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.893,
+   "why_comparable": "Restaurant at 2232 Bush St (206m away), Upper Fillmore NCD, ABC Type 41 approved January 2023 for full-service restaurant use.",
+   "key_takeaway": "Agency referral notes restaurant use is principally permitted in Upper Fillmore Street NCD per PC Section 718. Recent approval in adjacent commercial district reinforces that restaurant use is permitted by right across the Fillmore corridor neighborhoods.",
+   "lat": 37.7872079587341,
+   "lng": -122.43412186263926,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-000262MIS"
+  }
+ ],
+ "site_history": {
+  "matched_by": "Parcel 0683/034 or the address 1701 Fillmore St",
+  "total": 1,
+  "by_kind": {
+   "agency_referral": 1
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2016-012908MIS",
+    "citation_id": "app:datasf_planning:2016-012908MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Health - Restaurant - Recommend approval for the continuation of a self-service/fast food restaurant.",
+    "address": "1701 FILLMORE ST 94115",
+    "filed_at": "2016-10-06",
+    "decided_at": "2016-11-15",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2016-012908MIS"
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "filing_playbook": [
+  {
+   "step": 1,
+   "action": "Confirm formula retail pathway with San Francisco Planning Department before signing the lease or filing any applications.",
+   "what_to_say": "Request a pre-application meeting or written answer: 'Super Duper Burgers (11+ locations) proposes to occupy 2,950 sq ft at 1701 Fillmore St, zoned NCT-FILLMORE, currently operating as a self-service restaurant. Does Planning Code § 303.1 require a Conditional Use Authorization for a restaurant-to-restaurant tenant change, or is this a continuation of use processed as an agency referral?' Attach the 2016 site-history record and the concept description.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "verification": "not_checked",
+   "verification_note": null,
+   "original_confidence": null
+  },
+  {
+   "step": 3,
+   "action": "Form the legal entity with the California Secretary of State and obtain a federal EIN.",
+   "what_to_say": "File LLC Articles of Organization (Form LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online via bizfile. File the Statement of Information within 90 days. Apply for the EIN online; it is issued immediately.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 4,
+   "action": "Register for a San Francisco Business Registration Certificate and a California Seller's Permit.",
+   "what_to_say": "Apply online with the SF Treasurer & Tax Collector using the entity name and EIN; the fee is tiered by gross receipts ($55–$625+ plus $4 state fee). Apply for the seller's permit with CDTFA online; it is free and often issued the same day. CDTFA may request a security deposit.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:ca.sellers_permit"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  },
+  {
+   "step": 8,
+   "action": "Apply for the Health Permit to Operate and sign permit.",
+   "what_to_say": "Submit the application online with the Business Account Number, Location ID, EIN, and proof of the certified food safety manager. The $470 permit-to-operate fee includes the initial inspection; the annual license fee for restaurants is $0 for 2026–28.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "verification": "trimmed",
+   "verification_note": "Cut down to the part the cited record states.",
+   "original_confidence": null
+  }
+ ],
+ "timeline_cost": {
+  "days_min": 120,
+  "days_max": 300,
+  "cost_min_usd": 3100.0,
+  "cost_max_usd": 15000.0,
+  "notes": "If a Conditional Use Authorization is required, the timeline is 120–300 days from CUA filing to approval: pre-application meeting, environmental review, Section 311 neighborhood notification (300-foot radius, 30-day comment period), Planning Commission hearing, and 30-day appeal period. CUA fees in NCT-FILLMORE for formula retail were approximately $3,150 in 2023 (CPI-adjusted from $2,747) and rise with construction cost; expect $3,100–$6,000 depending on tenant improvement value, per comparable CUA records. If no CUA is required and the project proceeds as a restaurant continuation via agency referral, the timeline is 14–60 days for health plan check and 14–120 days for the building permit, depending on plan complexity and whether a change of occupancy is triggered; government fees would be approximately $2,000–$4,000 (business registration, health plan check $828–$2,207, health permit $470, building permit $800–$15,000 depending on construction valuation, sign permit $300–$1,500). The ranges above assume a CUA is required and include only the CUA application fee and building/health fees; they do not include state registration, insurance, or tenant improvement construction costs. These are times to approval when granted; if the CUA is denied, no timeline to approval applies.",
+  "confidence": "needs_confirmation",
+  "citations": [],
+  "path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+  "verification": "downgraded",
+  "verification_note": "The CUA records show timelines of 167 and 1,295 days, not 120-300 days; no CUA fee information appears in any cited record; health plan check record shows $828-$2,500, not $828-$2,207; no sign permit catalog entry was cited.",
+  "original_confidence": null
+ },
+ "verification": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 26,
+  "supported": 3,
+  "trimmed": 9,
+  "downgraded": 7,
+  "dropped": 7
+ },
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "confidence_definitions": {
+  "verified": "Verified: stated directly by a cited record or code section that applies to this exact address, parcel or zoning district.",
+  "likely_applicable": "Likely applicable: inferred from cited records of comparable cases or from a general rule; not stated for this address.",
+  "needs_confirmation": "Needs confirmation: plausible but not supported by a record in hand; confirm with the agency or document named.",
+  "professional_review_required": "Professional review required: depends on plans, an inspection, or legal or design judgment that public records cannot supply."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2012.0822C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1881 POST ST, SAN FRANCISCO, CA 94115 · denied (2013)",
+   "source_url": "https://sfplanninggis.org/pim?search=2012.0822C",
+   "excerpt": "Change of use to add \"Entertainment\" to existing restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2015-007413CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1981 SUTTER ST 94115 · approved (2015)",
+   "source_url": "https://sfplanninggis.org/pim?search=2015-007413CUA",
+   "excerpt": "Conditional Use authorization to establish a Formula Retail use (an instructional art studio with wine service dba \"Pinot's Palette\") in the Fillmore Street NCT."
+  },
+  {
+   "id": "app:datasf_planning:2016-012908MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1701 FILLMORE ST 94115 · approved (2016)",
+   "source_url": "https://sfplanninggis.org/pim?search=2016-012908MIS",
+   "excerpt": "Health - Restaurant - Recommend approval for the continuation of a self-service/fast food restaurant."
+  },
+  {
+   "id": "app:datasf_planning:2018-009861CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1633 FILLMORE ST 94115 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-009861CUA",
+   "excerpt": "Conditional Use Authorization to establish a Formula Retail Use (d.b.a. Orangetheory Fitness) in a vacant commercial retail space."
+  },
+  {
+   "id": "app:datasf_planning:2019-017055CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1881 POST ST 94115 · approved with conditions (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-017055CUA",
+   "excerpt": "Conditional Use Authorization (pursuant to Planning Code Section 303.1) to permit the following: AMC Theaters is proposing to operate a Formula Retail Movie Theatre at 1881 Post Street, formerly operated as Sundance Kabuki 8 Theater.  Exterior physical changes are limited to the re-branding of three"
+  },
+  {
+   "id": "app:datasf_planning:2020-006734MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1740 OFARRELL ST COMML 1F 94115 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-006734MIS",
+   "excerpt": "DPH referral - Existing restaurant use within the Fillmore Street Commercial Transit District per Planning Code Section 760."
+  },
+  {
+   "id": "app:datasf_planning:2021-004699MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1560 FILLMORE ST 94115 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004699MIS",
+   "excerpt": "DPH referral -  Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2022-009513MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1700 FILLMORE ST 94115 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-009513MIS",
+   "excerpt": "ABC referral - Type 47\n-ABC License Type 47 is permitted in conjunction with an existing restaurant use (non-formula retail use) located on the ground floor within the Fillmore Street Neighborhood Commercial TransitZoning District and the Japantown Special Use Distrct per Planning Code Sections 760 "
+  },
+  {
+   "id": "app:datasf_planning:2022-010433MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1923 FILLMORE ST 94115 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-010433MIS",
+   "excerpt": "ABC referral - Type 41\n\nRecommend Approval for ABC - Type 41 license permitted in conjunction with existing full-service restaurant (d.b.a. Roam Artisan Burgers) in Upper Fillmore Street NCD per PC Section 718. Subject to the location and operating conditions outlined in 202.2(a)(1). Must operate as"
+  },
+  {
+   "id": "app:datasf_planning:2023-000262MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 2232 BUSH ST 94115 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-000262MIS",
+   "excerpt": "ABC referral - Type 41\n\nRecommend Approval for ABC Type 41 license permitted in conjunction with full-service restaurant use principally permitted in Upper Fillmore Street NCD per PC Section 718. Subject to the location and operating conditions outlined in 202.2(a)(1). Must operate as a Bona Fide Ea"
+  },
+  {
+   "id": "app:datasf_planning:2023-001991MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1581 WEBSTER ST 94115 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-001991MIS",
+   "excerpt": "ABC referral - Type 41\n\nRecommend Approval for ABC - Type 41 license permitted in conjunction with full-service restaurant use in Japantown NCD and the Japantown Special Use District per PC Section 721 and 249.31. Subject to the location and operating conditions outlined in 202.2(a)(1). Must operate"
+  },
+  {
+   "id": "app:datasf_planning:2023-002730MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1515 FILLMORE ST COMML 94115 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002730MIS",
+   "excerpt": "ABC referral - Type 41\n\nRecommend Approval for ABC - Type 41 license permitted in conjunction with existing full-service restaurant (d.b.a. I'A Poke) in the Fillmore Street Neighborhood Commercial Transit (NCT) and RM-3 Zoning Districts per PC Section 209.2 and 760. Subject to the location and opera"
+  },
+  {
+   "id": "catalog:ca.food_handler_card",
+   "kind": "catalog",
+   "label": "California Food Handler Card (all food employees) — ANSI-accredited provider (CalCode §113948); county programs in San Diego, Riverside, San Bernardino",
+   "source_url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/CDPH%20Document%20Library/FDB/FoodSafetyProgram/RetailFood/RetailFoodSafetyTraining.pdf",
+   "excerpt": "1–1 days; $7–$15; estimated"
+  },
+  {
+   "id": "catalog:ca.food_safety_manager_cert",
+   "kind": "catalog",
+   "label": "Certified Food Protection Manager (one per facility) — ANSI-accredited exam provider (ServSafe, Prometric, NRFSP, 360training) per CalCode §113947.1",
+   "source_url": "https://www.servsafe.com/ServSafe-Manager",
+   "excerpt": "1–14 days; $100–$250; estimated"
+  },
+  {
+   "id": "catalog:ca.sellers_permit",
+   "kind": "catalog",
+   "label": "California Seller's Permit (sales tax) — California Department of Tax and Fee Administration (CDTFA)",
+   "source_url": "https://cdtfa.ca.gov/formspubs/pub107/applying-for-a-sellers-permit.htm",
+   "excerpt": "1–14 days; $0–$0; verified"
+  },
+  {
+   "id": "catalog:ca.sos_entity_registration",
+   "kind": "catalog",
+   "label": "Form your legal entity with the California Secretary of State (LLC / corporation) — California Secretary of State (bizfile Online)",
+   "source_url": "https://bizfileonline.sos.ca.gov/",
+   "excerpt": "1–10 days; $70–$150; verified"
+  },
+  {
+   "id": "catalog:sf.business_registration",
+   "kind": "catalog",
+   "label": "San Francisco Business Registration Certificate — SF Office of the Treasurer & Tax Collector",
+   "source_url": "https://sftreasurer.org/business/register-business",
+   "excerpt": "1–5 days; $55–$700; verified"
+  },
+  {
+   "id": "catalog:sf.health_permit",
+   "kind": "catalog",
+   "label": "Health Permit to Operate a food facility — SF Department of Public Health – Environmental Health Branch",
+   "source_url": "https://www.sf.gov/get-health-permit-open-restaurant-bar-or-other-retail-food-location",
+   "excerpt": "14–45 days; $470–$1,000; verified"
+  },
+  {
+   "id": "catalog:us.ein",
+   "kind": "catalog",
+   "label": "Employer Identification Number (EIN) — Internal Revenue Service (IRS)",
+   "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+   "excerpt": "0–1 days; $0–$0; verified"
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 1701 Fillmore St, San Francisco, CA 94115 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=454505",
+   "excerpt": "parcel 0683/034"
+  },
+  {
+   "id": "license:abc:292875",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1800 FILLMORE ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=292875",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:386841",
+   "kind": "license",
+   "label": "ABC Type 21 – Off-Sale General · 1758 FILLMORE ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=386841",
+   "excerpt": "ABC licensee — Type 21 – Off-Sale General (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:502627",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 2101 SUTTER ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=502627",
+   "excerpt": "SWEET MAPLE COFFEE SHOP — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:530450",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1825 POST ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=530450",
+   "excerpt": "TENROKU KAITEN SUSHI — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:556030",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 1865 POST ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=556030",
+   "excerpt": "PA'INA RESTAURANT AND LOUNGE — Type 47 – On-Sale General - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:564744",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1963 SUTTER ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=564744",
+   "excerpt": "ABC licensee — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:572678",
+   "kind": "license",
+   "label": "ABC Type 41 – On-Sale Beer & Wine - Eating Place · 1740 FILLMORE ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=572678",
+   "excerpt": "ROYAL INDIAN CUISINE — Type 41 – On-Sale Beer & Wine - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:609219",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 1881 POST ST., SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=609219",
+   "excerpt": "AMC KABUKI 8 — Type 47 – On-Sale General - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:623399",
+   "kind": "license",
+   "label": "ABC Type 42 – On-Sale Beer & Wine - Public Premises · 1870 FILLMORE ST, SAN FRANCISCO, CA · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=623399",
+   "excerpt": "ABC licensee — Type 42 – On-Sale Beer & Wine - Public Premises (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:634981",
+   "kind": "license",
+   "label": "ABC Type 48 – On-Sale General - Public Premises · 1601 FILLMORE ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=634981",
+   "excerpt": "BOOM BOOM ROOM  INC — Type 48 – On-Sale General - Public Premises (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "license:abc:641703",
+   "kind": "license",
+   "label": "ABC Type 47 – On-Sale General - Eating Place · 1700 FILLMORE ST, SAN FRANCISCO, CA 94115 · ACTIVE",
+   "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=641703",
+   "excerpt": "COPRA — Type 47 – On-Sale General - Eating Place (ACTIVE on 2023-05-31)"
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_sud:within_1_4_mile_of_an_existing_fringe_financial_service",
+   "kind": "overlay",
+   "label": "Within 1/4 Mile of an Existing Fringe Financial Service — Planning Code § 249.35",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-21132",
+   "excerpt": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:datasf_zoning:NCT-FILLMORE",
+   "kind": "overlay",
+   "label": "NCT-FILLMORE — Planning Code § 760 (zoning control table for NCT-FILLMORE)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+   "excerpt": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 6 approved / 1 denied / 0 withdrawn; N = 7 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 55 permits and licences, 271 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 55 Entertainment Commission permits and ABC licences (lists of grants only), 271 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "stat:density",
+   "kind": "statistic",
+   "label": "Density: 14 food & drink businesses, 4 bars, 11 active on-sale ABC licenses within 500 ft; 53 licenses within 1,000 ft",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  {
+   "id": "zoning:NCT-FILLMORE",
+   "kind": "zoning",
+   "label": "Zoning NCT-FILLMORE — Planning Code § 760 (zoning control table for NCT-FILLMORE)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-25360#rid-0-0-0-57154",
+   "excerpt": "The controls as they stood on 2023-05-31 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "records_summary": "1701 Fillmore St is zoned NCT-FILLMORE (Fillmore Street Neighborhood Commercial Transit), where restaurant use is principally permitted. The site currently operates as a self-service/fast food restaurant (approved 2016-11-15 for continuation). The address sits within two Special Use Districts—Family and Senior Housing Opportunity SUD and within 1/4 mile of an Existing Fringe Financial Service—neither of which restricts restaurant uses. The immediate area is highly active: 14 food/drink businesses within 500 ft, including 4 bars, and 11 active on-sale ABC licenses within the same radius (53 within 1,000 ft). Within 1,000 ft over the last 10 years, only 7 dated use decisions are on file: 5 approved, 1 approved with conditions, and 1 denied; too few for a meaningful approval rate.",
+ "data_gaps": [
+  "Formula retail threshold analysis: the records do not show whether a 2,950 sq ft restaurant in NCT-FILLMORE triggers Planning Code §303.1 formula retail controls when the use does not change.",
+  "The pathway rules state new use permission is 'not decided' because the existing use is restaurant and the description does not say whether that business stays; no definitive zoning answer is provided for a continuation versus a new tenant.",
+  "No extracted hearing transcripts or decision rationales for the two noteworthy CUAs (Pinot's Palette, Orangetheory) or the denied entertainment CUA.",
+  "ABC concentration metrics: the records flag undue concentration but do not show the census tract ratio or whether 1701 Fillmore falls in a high-crime or over-concentrated tract (not applicable here, as no alcohol is proposed).",
+  "No details on conditions attached to the 2023 AMC Theaters CUA approval beyond the four listed."
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement, fee and timeline with the issuing agency before relying on it.",
+  "Items marked 'Estimated' were not verified against the agency page at the time of generation.",
+  "Timelines assume complete applications; agency backlogs, protests and corrections can extend them.",
+  "Comparable cases and statistics come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and evidence labels are judgments; neither is a guarantee. Planning Commission and ABC decisions are discretionary."
+ ],
+ "generated_at": "2026-11-12T08:23:58+00:00",
+ "model_versions": {
+  "risk": "claude-sonnet-4-5",
+  "verify": "claude-sonnet-4-5"
+ },
+ "data_as_of": "2023-05-31"
+}

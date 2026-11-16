@@ -1,0 +1,4909 @@
+{
+ "H01": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "floor_area_before_sqft",
+      "input": null,
+      "model": 4647
+     }
+    ],
+    "misread": [],
+    "cleared": {
+     "alcohol_type": "beer_wine",
+     "changes_existing_business": "intensify"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H02": {
+  "full_e2e": {
+   "pathway": "missed",
+   "zoning_status": "further_review",
+   "expected": "not_permitted",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "not_permitted",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows not_permitted",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [
+    {
+     "trigger": "T7",
+     "label": "Use size",
+     "control": "conditional"
+    }
+   ],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "retail",
+       "vacant"
+      ],
+      "model": [
+       "vacant"
+      ]
+     }
+    ],
+    "cleared": {
+     "alcohol_type": "full_liquor"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "not_permitted",
+   "expected": "not_permitted",
+   "statuses": {
+    "zoning_use": "not_permitted",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [
+    "zoning_use"
+   ],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "not_permitted",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows not_permitted",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "not_permitted",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "not_permitted",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows not_permitted",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area before the project",
+     "fact": "floor_area_before_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether storefronts are to be merged",
+     "fact": "merges_storefronts",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "not_permitted",
+   "expected": "not_permitted",
+   "statuses": {
+    "zoning_use": "not_permitted",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [
+    "zoning_use"
+   ],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "not_permitted",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows not_permitted",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H03": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "changes_existing_business",
+      "input": "none",
+      "model": null
+     }
+    ],
+    "cleared": {
+     "changes_existing_business": "none"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the conditions of an earlier approval are to be changed",
+     "fact": "amends_prior_approval",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H04": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H05": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "entertainment": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information",
+    "outdoor": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Nighttime entertainment",
+     "trigger": "T6",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "whether there is entertainment, and what kind",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Outdoor activity area",
+     "trigger": "T9",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "where the outdoor area is",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "whether the use falls under one of these rows of the table: Limited Corner Commercial Uses (\u00a7 231) and Limited Commercial Uses (\u00a7 186)",
+     "fact": "table_rows",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether there is entertainment, and what kind",
+     "fact": "entertainment_kind",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area of the business, in square feet",
+     "fact": "floor_area_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "where the outdoor area is",
+     "fact": "outdoor_area",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the closing time",
+     "fact": "closing",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "what alcohol will be served: beer and wine, or spirits too",
+     "fact": "alcohol_served",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "entertainment",
+     "missing": "whether there is entertainment, and what kind",
+     "fact": "entertainment_kind",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    },
+    {
+     "row": "outdoor",
+     "missing": "where the outdoor area is",
+     "fact": "outdoor_area",
+     "result": "wrong"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "alcohol_type",
+      "input": "unknown",
+      "model": "none"
+     }
+    ],
+    "misread": [
+     {
+      "field": "business_type",
+      "input": "other",
+      "model": "bar"
+     },
+     {
+      "field": "serves_alcohol",
+      "input": true,
+      "model": false
+     },
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "other"
+      ],
+      "model": []
+     },
+     {
+      "field": "outdoor_area",
+      "input": "rear_or_side",
+      "model": null
+     }
+    ],
+    "cleared": {
+     "serves_alcohol": true,
+     "changes_existing_business": "intensify",
+     "closes_after_midnight": true,
+     "live_entertainment": true,
+     "outdoor_area": "rear_or_side",
+     "change_of_use": true,
+     "alcohol_type": "unknown"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "not_permitted",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information",
+    "outdoor": "not_permitted"
+   },
+   "false_blockers": [
+    "alcohol",
+    "outdoor"
+   ],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district",
+     "Nighttime entertainment",
+     "Outdoor activity area"
+    ],
+    "false_blockers": [
+     "alcohol",
+     "outdoor"
+    ]
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Nighttime entertainment",
+     "trigger": "T6",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Outdoor activity area",
+     "trigger": "T9",
+     "want": "conditional",
+     "got": "not_permitted",
+     "result": "different_control",
+     "why": "the rules returned not_permitted where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "missed",
+   "zoning_status": "not_permitted",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "not_permitted",
+    "alcohol": "not_permitted",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information",
+    "outdoor": "not_permitted"
+   },
+   "false_blockers": [
+    "zoning_use",
+    "alcohol",
+    "outdoor"
+   ],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district",
+     "Nighttime entertainment",
+     "Outdoor activity area"
+    ],
+    "false_blockers": [
+     "zoning_use",
+     "alcohol",
+     "outdoor"
+    ]
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Nighttime entertainment",
+     "trigger": "T6",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Outdoor activity area",
+     "trigger": "T9",
+     "want": "conditional",
+     "got": "not_permitted",
+     "result": "different_control",
+     "why": "the rules returned not_permitted where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "not_permitted",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information",
+    "outdoor": "not_permitted"
+   },
+   "false_blockers": [
+    "alcohol",
+    "outdoor"
+   ],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district",
+     "Nighttime entertainment",
+     "Outdoor activity area"
+    ],
+    "false_blockers": [
+     "alcohol",
+     "outdoor"
+    ]
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Nighttime entertainment",
+     "trigger": "T6",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Outdoor activity area",
+     "trigger": "T9",
+     "want": "conditional",
+     "got": "not_permitted",
+     "result": "different_control",
+     "why": "the rules returned not_permitted where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H06": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information",
+    "outdoor": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    },
+    {
+     "row": "outdoor",
+     "missing": "where the outdoor area is",
+     "fact": "outdoor_area",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "outdoor_seating",
+      "input": false,
+      "model": true
+     }
+    ],
+    "misread": [],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H07": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area of the business, in square feet",
+     "fact": "floor_area_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the closing time",
+     "fact": "closing",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "other"
+      ],
+      "model": []
+     }
+    ],
+    "cleared": {
+     "existing_use_stated": [
+      "other"
+     ],
+     "change_of_use": true
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area of the business, in square feet",
+     "fact": "floor_area_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the closing time",
+     "fact": "closing",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H08": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "what alcohol will be served: beer and wine, or spirits too",
+     "fact": "alcohol_served",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "what alcohol will be served: beer and wine, or spirits too",
+     "fact": "alcohol_served",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H09": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "legacy_business_replacement"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "legacy_business_replacement",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "which stories the business occupies",
+     "fact": "stories",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "limited_restaurant"
+      ],
+      "model": []
+     }
+    ],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "allowed"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "legacy_business_replacement"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "legacy_business_replacement",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "which licences the business already holds",
+     "fact": "licences_held",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "missed",
+   "zoning_status": "not_permitted",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "not_permitted",
+    "health": "not_permitted",
+    "building_change_of_use": "not_permitted"
+   },
+   "false_blockers": [
+    "zoning_use",
+    "health",
+    "building_change_of_use"
+   ],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "legacy_business_replacement"
+    ],
+    "false_blockers": [
+     "zoning_use",
+     "health",
+     "building_change_of_use"
+    ]
+   },
+   "triggers": [
+    {
+     "item": "legacy_business_replacement",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [
+    {
+     "trigger": "T1",
+     "label": "Use control of the zoning district",
+     "control": "not_permitted"
+    }
+   ],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "allowed"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "legacy_business_replacement"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "legacy_business_replacement",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "which licences the business already holds",
+     "fact": "licences_held",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H10": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H11": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "amends_prior_approval",
+      "input": null,
+      "model": true
+     },
+     {
+      "field": "closing_hour",
+      "input": null,
+      "model": "02:00"
+     },
+     {
+      "field": "closes_after_midnight",
+      "input": false,
+      "model": true
+     }
+    ],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "retail"
+      ],
+      "model": []
+     }
+    ],
+    "cleared": {
+     "closes_after_2am": true
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Changing the conditions of an earlier approval"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area of the business, in square feet",
+     "fact": "floor_area_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H12": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "which stories the business occupies",
+     "fact": "stories",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {
+     "change_of_use": true
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the number of eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district against the cap of 167",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which stories the business occupies",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "which stories the business occupies",
+     "fact": "stories",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the number of eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district against the cap of 167",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H13": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "which stories the business occupies",
+     "fact": "stories",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {
+     "changes_existing_business": "intensify"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which licences the business already holds",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "which licences the business already holds",
+     "fact": "licences_held",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "which stories the business occupies",
+     "fact": "stories",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "which licences the business already holds",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "which licences the business already holds",
+     "fact": "licences_held",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H14": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "whether an existing business is to be enlarged or intensified",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "what alcohol will be served: beer and wine, or spirits too",
+     "fact": "alcohol_served",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {
+     "alcohol_type": "full_liquor",
+     "changes_existing_business": "intensify"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "allowed"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Use control of the zoning district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "whether an existing business is to be enlarged or intensified",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether the business is part of a chain that shares its name, look or menu with other locations",
+     "fact": "formula_retail",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "what alcohol will be served: beer and wine, or spirits too",
+     "fact": "alcohol_served",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "allowed"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Use control of the zoning district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H15": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the licence type",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [
+    {
+     "trigger": "T7",
+     "label": "Use size",
+     "control": "conditional"
+    }
+   ],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "alcohol_type",
+      "input": "unknown",
+      "model": "full_liquor"
+     }
+    ],
+    "misread": [],
+    "cleared": {}
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the licence type",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [
+    {
+     "trigger": "T7",
+     "label": "Use size",
+     "control": "conditional"
+    }
+   ],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Liquor licence rule of a restricted district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Liquor licence rule of a restricted district",
+     "trigger": "T4",
+     "want": "conditional",
+     "got": "principal",
+     "result": "missed",
+     "why": "not returned: the rules returned principal where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H16": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {
+     "change_of_use": true
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H17": {
+  "full_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "other"
+      ],
+      "model": []
+     }
+    ],
+    "cleared": {
+     "seats": 250
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "right",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Enlarging or intensifying an existing use"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Changing the conditions of an earlier approval",
+     "trigger": "T10",
+     "want": "conditional",
+     "got": "conditional",
+     "result": "found",
+     "why": "",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Enlarging or intensifying an existing use",
+     "trigger": "T3",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H18": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area before the project",
+     "fact": "floor_area_before_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether storefronts are to be merged",
+     "fact": "merges_storefronts",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [
+     {
+      "field": "business_type",
+      "input": "restaurant",
+      "model": "other"
+     }
+    ],
+    "cleared": {
+     "changes_existing_business": "intensify"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Use control of the zoning district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": false,
+    "issues": [],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "whether an existing business is to be enlarged or intensified",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the floor area before the project",
+     "fact": "floor_area_before_sqft",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether storefronts are to be merged",
+     "fact": "merges_storefronts",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether an existing business is to be enlarged or intensified",
+     "fact": "changes_existing_business",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Use control of the zoning district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Use control of the zoning district",
+     "trigger": "T1",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "whether the space is for fewer than 50 people",
+     "fact": "occupants_under_50",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H19": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "entertainment": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "whether there is entertainment, and what kind",
+     "fact": "entertainment_kind",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "wrong"
+    },
+    {
+     "row": "entertainment",
+     "missing": "whether there is entertainment, and what kind",
+     "fact": "entertainment_kind",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [
+     {
+      "field": "change_of_use",
+      "input": false,
+      "model": true
+     }
+    ],
+    "misread": [
+     {
+      "field": "existing_use_stated",
+      "input": [
+       "other",
+       "vacant"
+      ],
+      "model": []
+     }
+    ],
+    "cleared": {
+     "existing_use_stated": [
+      "other"
+     ],
+     "entertainment_kind": "place_of_entertainment"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "alcohol": "insufficient_information",
+    "entertainment": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "further_review"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "landmark_use_in_residential_district"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "landmark_use_in_residential_district",
+     "trigger": null,
+     "want": "conditional",
+     "got": null,
+     "result": "missed",
+     "why": "no rule: no rule for this trigger",
+     "basis": "stated_in_record"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "alcohol",
+     "missing": "the licence type",
+     "fact": "licence_type",
+     "result": "correct"
+    },
+    {
+     "row": "alcohol",
+     "missing": "how the liquor licence will be obtained (new, or a transfer from another owner or another location)",
+     "fact": "alcohol_transaction",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ },
+ "H20": {
+  "full_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Formula retail"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Hours of operation",
+     "trigger": "T11",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the closing time; the rule table does not carry this zoning district",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "unclear",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows unclear",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the closing time",
+     "fact": "closing",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": {
+    "assumptions": [],
+    "assumed": [],
+    "misread": [],
+    "cleared": {
+     "business_type": "cafe"
+    }
+   }
+  },
+  "full_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Formula retail"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Hours of operation",
+     "trigger": "T11",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the rule table does not carry this zoning district",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "unclear",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows unclear",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_e2e": {
+   "pathway": "unknown",
+   "zoning_status": "insufficient_information",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "insufficient_information",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Formula retail"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Hours of operation",
+     "trigger": "T11",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the closing time; the rule table does not carry this zoning district",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "unclear",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows unclear",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "zoning_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the rule table does not carry this zoning district",
+     "fact": null,
+     "result": "unmapped"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "what the space was last used as",
+     "fact": "existing_use_stated",
+     "result": "correct"
+    },
+    {
+     "row": "zoning_use",
+     "missing": "the closing time",
+     "fact": "closing",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "correct"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  },
+  "rules_conditional": {
+   "pathway": "supplied",
+   "zoning_status": "further_review",
+   "expected": "further_review",
+   "statuses": {
+    "zoning_use": "further_review",
+    "health": "allowed",
+    "building_change_of_use": "insufficient_information"
+   },
+   "false_blockers": [],
+   "blockers_unscored": [],
+   "unsafe": {
+    "unsafe": true,
+    "issues": [
+     "Formula retail"
+    ],
+    "false_blockers": []
+   },
+   "triggers": [
+    {
+     "item": "Formula retail",
+     "trigger": "T5",
+     "want": "conditional",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows conditional",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Hours of operation",
+     "trigger": "T11",
+     "want": "conditional",
+     "got": "not_decided",
+     "result": "unknown",
+     "why": "the rule table does not carry this zoning district",
+     "basis": "stated_in_record"
+    },
+    {
+     "item": "Use control of a special use district",
+     "trigger": "T2",
+     "want": "unclear",
+     "got": "does_not_apply",
+     "result": "missed",
+     "why": "not returned: the rules returned does_not_apply where the record shows unclear",
+     "basis": "inferred_from_code"
+    }
+   ],
+   "raised_outside": [],
+   "insufficient": [
+    {
+     "row": "building_change_of_use",
+     "missing": "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "fact": "planning_uses",
+     "result": "wrong"
+    },
+    {
+     "row": "building_change_of_use",
+     "missing": "the existing occupancy group of the space, which only plans or an inspection show",
+     "fact": "occupancy_group",
+     "result": "correct"
+    }
+   ],
+   "verification": null,
+   "intake": null
+  }
+ }
+}

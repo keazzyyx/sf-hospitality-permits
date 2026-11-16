@@ -1,0 +1,173 @@
+{
+ "label": "d10-rerun",
+ "cases": [
+  {
+   "case": "D10",
+   "as_of": "2023-03-29",
+   "rules_only": "done",
+   "e2e": "done in 20.9 min"
+  }
+ ],
+ "minutes": 21.0,
+ "cost_usd": 0.7327,
+ "replayed_from_journal": 0,
+ "stopped": null,
+ "batches": [
+  {
+   "id": "msgbatch_removed_23",
+   "requests": 1,
+   "stages": [
+    "e2e/intake"
+   ],
+   "estimate_usd": 0.0507,
+   "cost_usd": 0.0131,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_24",
+   "requests": 1,
+   "stages": [
+    "e2e/records"
+   ],
+   "estimate_usd": 0.0939,
+   "cost_usd": 0.0664,
+   "errors": {},
+   "minutes": 3.1
+  },
+  {
+   "id": "msgbatch_removed_25",
+   "requests": 1,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.0631,
+   "cost_usd": 0.026,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_26",
+   "requests": 1,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.0682,
+   "cost_usd": 0.0295,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_27",
+   "requests": 1,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.0696,
+   "cost_usd": 0.0479,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_28",
+   "requests": 1,
+   "stages": [
+    "e2e/risk"
+   ],
+   "estimate_usd": 0.1649,
+   "cost_usd": 0.1385,
+   "errors": {},
+   "minutes": 2.1
+  },
+  {
+   "id": "msgbatch_removed_29",
+   "requests": 1,
+   "stages": [
+    "e2e/risk"
+   ],
+   "estimate_usd": 0.1726,
+   "cost_usd": 0.1423,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_30",
+   "requests": 27,
+   "stages": [
+    "e2e/verify"
+   ],
+   "estimate_usd": 0.481,
+   "cost_usd": 0.1913,
+   "errors": {},
+   "minutes": 2.1
+  },
+  {
+   "id": "msgbatch_removed_31",
+   "requests": 12,
+   "stages": [
+    "e2e/verify"
+   ],
+   "estimate_usd": 0.2167,
+   "cost_usd": 0.0776,
+   "errors": {},
+   "minutes": 2.1
+  }
+ ],
+ "by_case_run_stage": [
+  {
+   "case": "D10",
+   "run": "e2e",
+   "stage": "intake",
+   "calls": 1.0,
+   "cost_usd": 0.0130761,
+   "input_tokens": 1565.0,
+   "output_tokens": 1202.0,
+   "cache_read_input_tokens": 11424.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D10",
+   "run": "e2e",
+   "stage": "precedent",
+   "calls": 3.0,
+   "cost_usd": 0.10344405,
+   "input_tokens": 51959.0,
+   "output_tokens": 2907.0,
+   "cache_read_input_tokens": 24687.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D10",
+   "run": "e2e",
+   "stage": "records",
+   "calls": 1.0,
+   "cost_usd": 0.06639435,
+   "input_tokens": 36166.0,
+   "output_tokens": 1400.0,
+   "cache_read_input_tokens": 10969.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D10",
+   "run": "e2e",
+   "stage": "risk",
+   "calls": 2.0,
+   "cost_usd": 0.2808096,
+   "input_tokens": 137711.0,
+   "output_tokens": 9532.0,
+   "cache_read_input_tokens": 18354.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D10",
+   "run": "e2e",
+   "stage": "verify",
+   "calls": 39.0,
+   "cost_usd": 0.26894295000000007,
+   "input_tokens": 55866.0,
+   "output_tokens": 22512.0,
+   "cache_read_input_tokens": 108693.0,
+   "cache_creation_input_tokens": 0.0
+  }
+ ]
+}

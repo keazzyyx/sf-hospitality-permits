@@ -1,0 +1,67 @@
+{
+  "jurisdiction": { "level": "federal", "name": "United States (federal)", "state": null, "city_slug": null, "supported": true },
+  "permits": [
+    {
+      "id": "us.ein",
+      "name": "Employer Identification Number (EIN)",
+      "category": "federal_tax",
+      "issuing_agency": "Internal Revenue Service (IRS)",
+      "jurisdiction_level": "federal",
+      "typical_timeline_days": { "min": 0, "max": 1 },
+      "fee_range_usd": { "min": 0, "max": 0 },
+      "prerequisites": [],
+      "applies_when": { "always": true },
+      "application_url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+      "notes": "Free and issued immediately online (Mon–Fri). Needed before opening a business bank account, registering for payroll taxes, applying for most state/local licenses, and the ABC/liquor application. Form your legal entity first so the EIN is issued to the right name.",
+      "last_verified": "2026-10-21",
+      "confidence": "verified",
+      "sources": ["https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number"]
+    },
+    {
+      "id": "us.ascap_license",
+      "name": "ASCAP public performance license",
+      "category": "music_licensing",
+      "issuing_agency": "American Society of Composers, Authors and Publishers (ASCAP)",
+      "jurisdiction_level": "federal",
+      "typical_timeline_days": { "min": 1, "max": 7 },
+      "fee_range_usd": { "min": 300, "max": 2500 },
+      "prerequisites": [],
+      "applies_when": { "any": [ { "field": "plays_recorded_music", "eq": true }, { "field": "live_entertainment", "eq": true } ] },
+      "application_url": "https://www.ascap.com/music-users/types/restaurant-bar-tavern-nightclub",
+      "notes": "Not a government permit, but federal copyright law requires a blanket license to play music publicly (background music, DJs, live covers, TV with music). Annual fee is formula-based (occupancy, live vs recorded, days per week). Most venues also need BMI; SESAC and GMR cover smaller catalogs. Alternatively subscribe to a licensed commercial music service that includes performance rights.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated",
+      "stall_risk": "Operators forget this entirely and receive demand letters after opening; it is cheap to set up and takes under a week, so schedule it in the final two weeks."
+    },
+    {
+      "id": "us.bmi_license",
+      "name": "BMI public performance license",
+      "category": "music_licensing",
+      "issuing_agency": "Broadcast Music, Inc. (BMI)",
+      "jurisdiction_level": "federal",
+      "typical_timeline_days": { "min": 1, "max": 7 },
+      "fee_range_usd": { "min": 300, "max": 2500 },
+      "prerequisites": [],
+      "applies_when": { "any": [ { "field": "plays_recorded_music", "eq": true }, { "field": "live_entertainment", "eq": true } ] },
+      "application_url": "https://www.bmi.com/licensing",
+      "notes": "Companion to the ASCAP license; the two catalogs do not overlap, so venues playing a general mix of music need both. Fee is formula-based on occupancy and music use. Sign up online; the license is effective immediately.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    },
+    {
+      "id": "us.fda_food_code_awareness",
+      "name": "FDA Food Code / allergen labeling compliance (no federal permit)",
+      "category": "other",
+      "issuing_agency": "U.S. Food and Drug Administration (FDA)",
+      "jurisdiction_level": "federal",
+      "typical_timeline_days": { "min": 0, "max": 0 },
+      "fee_range_usd": { "min": 0, "max": 0 },
+      "prerequisites": [],
+      "applies_when": { "field": "sells_packaged_goods", "eq": true },
+      "application_url": "https://www.fda.gov/food/retail-food-protection/fda-food-code",
+      "notes": "Restaurants are exempt from FDA food facility registration, but if you package and sell food for off-premises consumption (jars, sauces, baked goods to retailers) you fall under FDA labeling rules and may need to register the facility. Confirm with your county health department whether a separate food processing permit applies.",
+      "last_verified": "2026-10-21",
+      "confidence": "estimated"
+    }
+  ]
+}

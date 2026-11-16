@@ -1,0 +1,326 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 20,
+  "supported": 4,
+  "trimmed": 5,
+  "downgraded": 5,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning Code Section 732 in the Irving Street Neighborhood Commercial District permits limited restaurants principally on the first floor but states that formula retail is not permitted for limited restaurant use as of the rules date July 30, 2024.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning Code Section 732 in the Irving Street Neighborhood Commercial District permits restaurants principally on the first floor.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning Code Section 732 in the Irving Street Neighborhood Commercial District permits restaurants principally on the first floor.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization for a formula retail mochi donut shop with drinks and snacks was filed at 2126 Irving St (46 m away) in November 2021 and cancelled in December 2021, 22 days after filing.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Conditional Use Authorization for a formula retail mochi donut shop with drinks and snacks was filed at 2126 Irving St (46 m away) in November 2021 and cancelled in December 2021, 22 days after filing.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-011182CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization for formula retail Krispy Krunchy Chicken was filed at 2130 Irving St (56 m away) in March 2021 and cancelled in January 2022, 314 days after filing.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Conditional Use Authorization for formula retail Krispy Krunchy Chicken was filed at 2130 Irving St (56 m away) in March 2021 and cancelled in January 2022, 314 days after filing.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-002788CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "In December 2021 Planning approved a health permit for The Mochi Donut Shop at 2126 Irving St and stated in the approval: 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT. The business is to use a standardized array of merchandise (50% or more of in-stock merchandise from a single distributor), additional standardized features would not be permitted.'",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "In December 2021 Planning approved a health permit for The Mochi Donut Shop at 2126 Irving St and stated in the approval: 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT. The business is to use a standardized array of merchandise (50% or more of in-stock merchandise from a single distributor), additional standardized features would not be permitted.'",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-008816MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "A formula retail bank branch received Conditional Use Authorization approval at 2257 Irving St (132 m away) in October 2022 under Planning Code Sections 178(3)(c), 303, and 303.1, showing formula retail CUAs have been granted on this corridor for other use types.",
+   "verdict": "partially_supported",
+   "supported_text": "A formula retail bank branch received Conditional Use Authorization approval at 2257 Irving St (132 m away) in October 2022 under Planning Code Sections 178(3)(c), 303, and 303.1.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A formula retail bank branch received Conditional Use Authorization approval at 2257 Irving St (132 m away) in October 2022 under Planning Code Sections 178(3)(c), 303, and 303.1.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-011365CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Planning Code Section 732 states that formula retail is not permitted for Limited Restaurant use in NCD-IRVING; two recent formula retail cafe CUAs on this block were cancelled in 2021–2022, and a 2021 health referral stated formula retail use is not permitted in this district.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning Code Section 732 states that formula retail is not permitted for Limited Restaurant use in NCD-IRVING; two recent formula retail CUAs on this block were cancelled in 2021–2022, and a 2021 health referral stated formula retail use is not permitted in this district.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning Code Section 732 states that formula retail is not permitted for Limited Restaurant use in NCD-IRVING; two recent formula retail CUAs on this block were cancelled in 2021–2022, and a 2021 health referral stated formula retail use is not permitted in this district.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving",
+    "app:datasf_planning:2021-011182CUA",
+    "app:datasf_planning:2021-002788CUA",
+    "app:datasf_planning:2021-008816MIS",
+    "app:datasf_planning:2021-011365CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "In January 2020 the Department of Public Health approved a limited restaurant health referral for Sip Tea 1011 SF at 2127 Irving St, stating the use is permitted in the Irving Street Neighborhood Commercial District per Planning Code Section 732 and was exempt from neighborhood notice per Ordinance 199-18.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "In January 2020 the Department of Public Health approved a limited restaurant health referral for Sip Tea 1011 SF at 2127 Irving St, stating the use is permitted in the Irving Street Neighborhood Commercial District per Planning Code Section 732 and was exempt from neighborhood notice per Ordinance 199-18.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-019552MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Limited restaurant health permits are routinely approved on this corridor as continuations of existing use, with dozens of agency referrals approved at addresses within 200 m in the last 10 years.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Limited restaurant health permits are routinely approved on this corridor as continuations of existing use, with dozens of agency referrals approved at addresses within 200 m in the last 10 years.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show only 4 approved agency referrals (not dozens), filed between 2018-2021."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A limited restaurant health permit to operate is issued after plan check and inspection without a hearing and is principally permitted; the most recent health approval at this address was for a boba shop in 2020.",
+   "verdict": "partially_supported",
+   "supported_text": "A limited restaurant health permit to operate is issued after plan check and inspection without a hearing; the most recent health approval at this address was for a boba shop in 2020.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2019-019552MIS",
+    "app:datasf_planning:2018-003715MIS",
+    "app:datasf_planning:2018-014502MIS",
+    "app:datasf_planning:2021-003673MIS",
+    "app:datasf_planning:2021-008028MIS"
+   ],
+   "note": "The records show the pathway as 'Not decided by the rules' for whether a new use is permitted, not 'principally permitted.'"
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Tenant improvements for equipment updates and chain branding will trigger a building permit application routed to Planning, Public Health, Public Works, Fire, and PUC for review; the permit catalog estimates 14–120 days and $800–$15,000 in fees depending on construction valuation.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements for equipment updates and chain branding will trigger a building permit application; the permit catalog estimates 14–120 days and $800–$15,000 in fees depending on construction valuation.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Tenant improvements for equipment updates and chain branding will trigger a building permit application routed to Planning, Public Health, Public Works, Fire, and PUC for review; the permit catalog estimates 14–120 days and $800–$15,000 in fees depending on construction valuation.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions routing to Planning, Fire, Public Health and PUC, but does not mention Public Works."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Whether a building permit requires a change of occupancy depends on the occupant load worked out from plans and the existing occupancy group of the space, which public records do not show; tenant improvements for chain branding and equipment will require a building permit with plan review.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "The rule record concludes there is insufficient information to determine which building permit applies, contradicting the definite statement."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to 6:00 a.m. to 2:00 a.m., as hours of operation from 2:00 a.m. to 6:00 a.m. require conditional use in NCD-IRVING. Basis: Planning Code Section 732 for the Irving Street Neighborhood Commercial District states that hours of operation are principally permitted from 6:00 a.m. to 2:00 a.m. and conditional from 2:00 a.m. to 6:00 a.m. This rule appears in the zoning record and overlay for NCD-IRVING and was cited in the pathway determination.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to 6:00 a.m. to 2:00 a.m., as hours of operation from 2:00 a.m. to 6:00 a.m. require conditional use in NCD-IRVING. Basis: Planning Code Section 732 for the Irving Street Neighborhood Commercial District states that hours of operation are principally permitted from 6:00 a.m. to 2:00 a.m. and conditional from 2:00 a.m. to 6:00 a.m. This rule appears in the zoning record and overlay for NCD-IRVING.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation limited to 6:00 a.m. to 2:00 a.m., as hours of operation from 2:00 a.m. to 6:00 a.m. require conditional use in NCD-IRVING. Basis: Planning Code Section 732 for the Irving Street Neighborhood Commercial District states that hours of operation are principally permitted from 6:00 a.m. to 2:00 a.m. and conditional from 2:00 a.m. to 6:00 a.m. This rule appears in the zoning record and overlay for NCD-IRVING.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCD-IRVING",
+    "overlay:static:sf:nc_ncd_irving"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: The business must operate as a bona fide limited restaurant open to the public, not as a private club, caterer, or members-only facility. Basis: Multiple health referrals on this corridor (2019-019552MIS, 2021-003673MIS, 2021-008028MIS, 2020-004606MIS) include the condition that the use must be a limited restaurant as defined in Planning Code Section 102, open to the public, with no catering allowed. This is standard for limited restaurant approvals in NCD-IRVING.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The business must operate as a limited restaurant open to the public. Basis: Health referrals on this corridor (2020-004606MIS, 2021-008028MIS) state that the use must be a limited restaurant as defined in Planning Code Section 102, open to the public, with no catering allowed.",
+   "cut_problem": "adds or moves '2021': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Only 2 of 4 cited records state the conditions mentioned. Records don't mention 'bona fide', 'private club', or 'members-only facility', and don't state this is standard practice."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: If a Conditional Use Authorization is required, a signage program subject to Planning Department review and approval before building permits, showing all proposed exterior and interior signage with dimensions, materials, colors, and illumination. Basis: The formula retail bank CUA approved at 2257 Irving St in October 2022 included Condition 14: 'The Project Sponsor shall develop a signage program for the Project which shall be subject to review and approval by Planning Department staff before submitting any building permits.' This is a standard CUA condition for formula retail in San Francisco.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If a Conditional Use Authorization is required, a signage program subject to Planning Department review and approval before building permits. Basis: The formula retail bank CUA approved at 2257 Irving St in October 2022 included a condition: 'The Project Sponsor shall develop a signage program for the Project which shall be subject to review and approval by Planning Department staff before submitting any building permits.'",
+   "cut_problem": "adds or moves 'The': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not specify the signage details (dimensions, materials, colors, illumination), does not number conditions, and does not state this is standard for formula retail."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: If a Conditional Use Authorization is required, appointment of a community liaison officer with name, business address, and telephone number provided to the Zoning Administrator and registered neighborhood groups before issuance of a building permit. Basis: The formula retail bank CUA at 2257 Irving St included Condition 19: 'Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties.' This is a standard CUA condition.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Appointment of a community liaison officer with name, business address, and telephone number provided to the Zoning Administrator and registered neighborhood groups before issuance of a building permit. Basis: The formula retail bank CUA at 2257 Irving St included Condition 19: 'Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties.' This is a standard CUA condition.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record supports the condition content and that it is standard, but does not state the conditional 'If a CUA is required'."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: All exterior lighting directed onto the project site and immediate sidewalk area only, designed and managed so as not to be a nuisance to adjacent residents, with nighttime lighting the minimum necessary to ensure safety. Basis: The formula retail bank CUA at 2257 Irving St included Condition 20 on lighting. This condition appears in many San Francisco CUAs for food and beverage uses in residential-adjacent Neighborhood Commercial districts and is standard practice.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: All exterior lighting directed onto the project site and immediate sidewalk area only, designed and managed so as not to be a nuisance to adjacent residents, with nighttime lighting the minimum necessary to ensure safety. Basis: The formula retail bank CUA at 2257 Irving St included Condition 20 on lighting.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows the lighting condition at 2257 Irving St but does not state it appears in many other CUAs or is standard practice."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: If a Conditional Use Authorization is required, the authorization is valid for three years from the effective date of the motion; the Department of Building Inspection must have issued a building or site permit within that period, and construction must commence within the DBI timeframe and be conti… Basis: Standard CUA validity, expiration, and diligent pursuit conditions appear in the 2021-011365CUA approval at 2257 Irving St (Conditions 2, 3, and 4) and are required by Planning Code Section 176.1 for all conditional use authorizations in San Francisco.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If a Conditional Use Authorization is required, the authorization is valid for three years from the effective date of the motion; the Department of Building Inspection must have issued a building or site permit within that period, and construction must commence within the DBI timeframe and be conti… Basis: Standard CUA validity, expiration, and diligent pursuit conditions appear in the 2021-011365CUA approval at 2257 Irving St (Conditions 2, 3, and 4).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: If a Conditional Use Authorization is required, the authorization is valid for three years from the effective date of the motion; the Department of Building Inspection must have issued a building or site permit within that period, and construction must commence within the DBI timeframe and be conti… Basis: Standard CUA validity, expiration, and diligent pursuit conditions appear in the 2021-011365CUA approval at 2257 Irving St (Conditions 2, 3, and 4).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2021-011365CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Submit a pre-application inquiry to San Francisco Planning Department Current Planning, describing the 11-location chain concept and asking in writing whether Planning Code Section 732 categorically prohibits formula retail limited restaurants in NCD-IRVING or whether a Conditional Use Authorizatio… What to say: State that the concept is a cafe (boba shop) that is part of an 11-location chain, so it meets the formula retail definition under Planning Code Section 303.1 (standardized features in 11 or more establishments). Ask whether Section 732's statement that formula retail is 'not permitted' for limited restaurant use means no approval path exists, or whether the Planning Commission may grant a CUA. Reference the two cancelled formula retail cafe CUAs at 2126 and 2130 Irving St in 2021–2022 and the health referral 2021-008816MIS that stated 'Formula retail use not permitted' but allowed a business with standardized merchandise sourcing only. Request a written determination before proceeding.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit a pre-application inquiry to San Francisco Planning Department Current Planning, describing the 11-location chain concept and asking in writing whether Planning Code Section 732 categorically prohibits formula retail limited restaurants in NCD-IRVING or whether a Conditional Use Authorization… What to say: State that the concept is a cafe (boba shop) that is part of an 11-location chain. Reference the two cancelled formula retail cafe CUAs at 2126 and 2130 Irving St in 2021–2022 and the health referral 2021-008816MIS that stated 'Formula retail use not permitted' but allowed a business with standardized merchandise sourcing only. Request a written determination before proceeding.",
+   "cut_problem": "action is longer than it was",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not contain Planning Code Section 303.1 text or Section 732 statement about formula retail for limited restaurants."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms in writing that a CUA path exists despite the code table, file a Conditional Use Authorization application under Planning Code Sections 178(c)(3), 303, and 303.1 for a formula retail limited restaurant at 2127 Irving St, with a pre-application meeting, community outreach, and a… What to say: Frame the application as a neighborhood-serving cafe use that is principally permitted in NCD-IRVING and has operated at this address since at least 2020 (Sip Tea 1011 SF). Emphasize that limited restaurants and cafes have been approved on this block for decades (cite 1985.432C at 2123 Irving, 1994.632C at 1914 Irving, and the 2019 Sip Tea approval at this address). Commit to operating as a bona fide eating place open to the public with hours of 6 a.m. to 2 a.m. (no late-night operations), no alcohol, limited cooking with no full kitchen, and compliance with all health and building codes. Provide a signage program, a community liaison plan, exterior lighting details showing no nuisance to residents, and a description of how the concept fits the neighborhood character. Acknowledge the formula retail status and argue that the cafe use has been accepted on this corridor and that the chain'…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If Planning confirms in writing that a CUA path exists despite the code table, file a Conditional Use Authorization application under Planning Code Sections 178(c)(3), 303, and 303.1 for a formula retail limited restaurant at 2127 Irving St, with a pre-application meeting, community outreach, and a… What to say: Frame the application as a neighborhood-serving cafe use that is principally permitted in NCD-IRVING. Emphasize that limited restaurants and cafes have been approved on this block for decades (cite 1985.432C at 2123 Irving, 1994.632C at 1914 Irving, and the 2019 Sip Tea approval at this address). Commit to operating as a bona fide eating place open to the public, no alcohol, limited cooking with no full kitchen, and compliance with all health and building codes. Provide a signage program, a community liaison plan, exterior lighting details showing no nuisance to residents, and a description of how the concept fits the neighborhood character. Acknowledge the formula retail status and argue that the cafe use has been accepted on this corridor and that the chain'…",
+   "cut_problem": "drops 'no' and keeps the words after it",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show the Planning Code sections and historical approvals but don't state the specific operating hours or continuous operation since 2020."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost range is given because Planning Code Section 732 states that formula retail is not permitted for limited restaurant use in the Irving Street Neighborhood Commercial District, and the zoning row status is 'not permitted.' The pathway determination cites Planning Code Section 732 as barring the concept. Two recent formula retail cafe CUA applications on this block were cancelled in 2021–2022 without approval, and a 2021 health referral stated 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT.' The recommended next step is to confirm in writing with San Francisco Planning whether a CUA path exists before filing any application or paying any fee. If Planning confirms that no path exists, no approvals can be obtained and no time or cost applies. If Planning confirms that a CUA path exists despite the code table, then expect a Conditional Use Authorization timeline of approximately 120–300 days from pre-application to Commission hearing to effective date (including community outreach, environmental review, noticing, hearing scheduling, and the 30-day appeal period), with application fees starting around $3,100 for a CUA with no construction, plus costs for an architect, a signage program, community liaison services, and consultant fees, which are not government fees and are not estimated here.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost range is given because Planning Code Section 732 states that formula retail is not permitted for limited restaurant use in the Irving Street Neighborhood Commercial District, and the zoning row status is 'not permitted.' The pathway determination cites Planning Code Section 732 as barring the concept. Two recent formula retail cafe CUA applications on this block were cancelled in 2021–2022 without approval, and a 2021 health referral stated 'Formula retail use not permitted within IRVING STREET NEIGHBORHOOD COMMERCIAL DISTRICT.' The recommended next step is to confirm in writing with San Francisco Planning whether a CUA path exists before filing any application or paying any fee. If Planning confirms that no path exists, no approvals can be obtained and no time or cost applies. If Planning confirms that a CUA path exists despite the code table, then expect a Conditional Use Authorization timeline of approximately 120–300 days from pre-application to Commission hearing to effective date (including community outreach, environmental review, noticing, hearing scheduling, and the 30-day appeal period), with application fees starting around $3,100 for a CUA with no construction, plus costs for an architect, a signage program, community liaison services, and consultant fees, which are not government fees and are not estimated here.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning record does not state the formula retail prohibition for limited restaurant use; the CUA timeline and fee figures are not in the cited records."
+  }
+ ]
+}

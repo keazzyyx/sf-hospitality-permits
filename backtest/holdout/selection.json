@@ -1,0 +1,358 @@
+{
+ "_doc": "How the 20 holdout cases were picked (README.md). Order key: sha256(record + salt), hex, ascending. Each eligible group is ordered by the key; all eligible cases that did not reach approval are taken (up to 8, which would match the 40's mix), and the rest of the 20 come from the decided group in key order.",
+ "salt": "holdout-2026-11-12",
+ "eligible_decided": [
+  {
+   "record": "2024-001899CUA",
+   "key": "1352155e6907c0d7fd9d839dd54c07c5ecb398936d7992a337bd3441c8f6ca16"
+  },
+  {
+   "record": "2022-004869CUA",
+   "key": "150e6871301fd354a44e7d8922ccaeeacc5b3817dc93786da933a7368ef6c0ba"
+  },
+  {
+   "record": "2025-005018CUA",
+   "key": "1d03a6205e964cf6c9579d6f023ebd62de915daaaee59fdedfee10582c62794d"
+  },
+  {
+   "record": "2025-003933CUA",
+   "key": "271d942e746411c41217967745ceede882cb6ee9d0aeba80505fe833a59b34fe"
+  },
+  {
+   "record": "2023-011096CUA",
+   "key": "2a643bd7d26e2bed8345d6c21a1316bbc0ab4da2b28c767f48df7bf931f70766"
+  },
+  {
+   "record": "2011.0097CUA-02",
+   "key": "39c98ec8e8f6d137e71d2d90b3dc678c251c016daf68a2bae7b040bb6f5e20b1"
+  },
+  {
+   "record": "2023-000022CUA",
+   "key": "3e1f9afaab7d9af6be951cc35d28fc755a02206e8472b80e7561c253a60067ff"
+  },
+  {
+   "record": "2023-002340CUA",
+   "key": "5ee9e7c67dc975ad3219c36b24a827d890f44d84b953516d54cededdf1abd28e"
+  },
+  {
+   "record": "2013.0530CUA-02",
+   "key": "60c2d6440eb2e39f8dd9da26cc13b3fe63dfbca7873d4fd71a8f3011be40a5c9"
+  },
+  {
+   "record": "2023-011780CUA",
+   "key": "774ad1ccbde65d50e1fce570f41c10236c358595027e63ca31a967a9fdf23770"
+  },
+  {
+   "record": "2024-004781CUA",
+   "key": "86776e5be688ea99970d5b1026128c017016564d9addbc9a5b96ec400dcc5b1d"
+  },
+  {
+   "record": "2022-001116CUA",
+   "key": "94ebdc24d50f2f76353a78eb87ebb1a82455b56afee5bc6c2f34a85cc1e1a839"
+  },
+  {
+   "record": "2025-007559CUA",
+   "key": "a6d8f219b6f6bd798457d4d9ea0606301ab35e7f22c6e755167294a9661142c3"
+  },
+  {
+   "record": "2024-009436CUA",
+   "key": "aedfc65341b4eb16687e8599672749dd7f60e5b4b2bacd5e36d97bd39bbf351a"
+  },
+  {
+   "record": "2022-009099CUA",
+   "key": "afaf4842a3e997a014b5e0aa349b417c8006803c67c5984bfd7df56ac959d4cc"
+  },
+  {
+   "record": "2025-000941CUA",
+   "key": "bae1b7aaa6ed3d0b03aa3315aaf147c77a736fdac18ebd5bcd055b2e1a542e6d"
+  },
+  {
+   "record": "2024-002799CUA",
+   "key": "bbdcd3ac5858a72c8f08c12bd25d1fc4e83333d01dbf6a8a2ca7e31ed7b4bf09"
+  },
+  {
+   "record": "2023-008363CUA",
+   "key": "c13e45c95497680f449f09d64289c1ca3b548305fb57159193714b2463fbb28e"
+  },
+  {
+   "record": "2024-007818CUA",
+   "key": "d19ca7c20b9abe0ea2fa5799a05f07f878e0a0d8fbc76460324f0289af33e218"
+  },
+  {
+   "record": "2024-003662CUA",
+   "key": "e5628f018b6ea49057b089d930f52c185faafb2615c2e22cda117180f25503d5"
+  },
+  {
+   "record": "2015-002658CUA-02",
+   "key": "e6a9338b794f1b64ddc89ffa97837a254db9b23453ec1ce32be69de10cd3634d"
+  },
+  {
+   "record": "2023-005339CUA",
+   "key": "e85ed6cdc287a698fce60588f2964d494723f6dbd335536cb875e4738622f9ef"
+  },
+  {
+   "record": "2025-010554CUA",
+   "key": "f11e54bf591b189acda02af214a73391448bf9d110b5fd5fc1a92ef618d47740"
+  }
+ ],
+ "eligible_did_not_reach_approval": [
+  {
+   "record": "2024-006665CUA",
+   "key": "39dc2dafa46fa3cd4b48126a3f9866dc7645b7fbd400a27cf4ed226ee26323a2"
+  },
+  {
+   "record": "2024-006641CUA",
+   "key": "d483a00c968b2d484f33d5ebbf5f5c587467fa7a38e70bc3df5a795a295c4e70"
+  }
+ ],
+ "selected": [
+  {
+   "id": "H01",
+   "record": "2024-006665CUA",
+   "group": "did_not_reach_approval",
+   "key": "39dc2dafa46fa3cd4b48126a3f9866dc7645b7fbd400a27cf4ed226ee26323a2"
+  },
+  {
+   "id": "H02",
+   "record": "2024-006641CUA",
+   "group": "did_not_reach_approval",
+   "key": "d483a00c968b2d484f33d5ebbf5f5c587467fa7a38e70bc3df5a795a295c4e70"
+  },
+  {
+   "id": "H03",
+   "record": "2024-001899CUA",
+   "group": "decided",
+   "key": "1352155e6907c0d7fd9d839dd54c07c5ecb398936d7992a337bd3441c8f6ca16"
+  },
+  {
+   "id": "H04",
+   "record": "2022-004869CUA",
+   "group": "decided",
+   "key": "150e6871301fd354a44e7d8922ccaeeacc5b3817dc93786da933a7368ef6c0ba"
+  },
+  {
+   "id": "H05",
+   "record": "2025-005018CUA",
+   "group": "decided",
+   "key": "1d03a6205e964cf6c9579d6f023ebd62de915daaaee59fdedfee10582c62794d"
+  },
+  {
+   "id": "H06",
+   "record": "2025-003933CUA",
+   "group": "decided",
+   "key": "271d942e746411c41217967745ceede882cb6ee9d0aeba80505fe833a59b34fe"
+  },
+  {
+   "id": "H07",
+   "record": "2023-011096CUA",
+   "group": "decided",
+   "key": "2a643bd7d26e2bed8345d6c21a1316bbc0ab4da2b28c767f48df7bf931f70766"
+  },
+  {
+   "id": "H08",
+   "record": "2011.0097CUA-02",
+   "group": "decided",
+   "key": "39c98ec8e8f6d137e71d2d90b3dc678c251c016daf68a2bae7b040bb6f5e20b1"
+  },
+  {
+   "id": "H09",
+   "record": "2023-000022CUA",
+   "group": "decided",
+   "key": "3e1f9afaab7d9af6be951cc35d28fc755a02206e8472b80e7561c253a60067ff"
+  },
+  {
+   "id": "H10",
+   "record": "2023-002340CUA",
+   "group": "decided",
+   "key": "5ee9e7c67dc975ad3219c36b24a827d890f44d84b953516d54cededdf1abd28e"
+  },
+  {
+   "id": "H11",
+   "record": "2013.0530CUA-02",
+   "group": "decided",
+   "key": "60c2d6440eb2e39f8dd9da26cc13b3fe63dfbca7873d4fd71a8f3011be40a5c9"
+  },
+  {
+   "id": "H12",
+   "record": "2023-011780CUA",
+   "group": "decided",
+   "key": "774ad1ccbde65d50e1fce570f41c10236c358595027e63ca31a967a9fdf23770"
+  },
+  {
+   "id": "H13",
+   "record": "2024-004781CUA",
+   "group": "decided",
+   "key": "86776e5be688ea99970d5b1026128c017016564d9addbc9a5b96ec400dcc5b1d"
+  },
+  {
+   "id": "H14",
+   "record": "2022-001116CUA",
+   "group": "decided",
+   "key": "94ebdc24d50f2f76353a78eb87ebb1a82455b56afee5bc6c2f34a85cc1e1a839"
+  },
+  {
+   "id": "H15",
+   "record": "2025-007559CUA",
+   "group": "decided",
+   "key": "a6d8f219b6f6bd798457d4d9ea0606301ab35e7f22c6e755167294a9661142c3"
+  },
+  {
+   "id": "H16",
+   "record": "2024-009436CUA",
+   "group": "decided",
+   "key": "aedfc65341b4eb16687e8599672749dd7f60e5b4b2bacd5e36d97bd39bbf351a"
+  },
+  {
+   "id": "H17",
+   "record": "2022-009099CUA",
+   "group": "decided",
+   "key": "afaf4842a3e997a014b5e0aa349b417c8006803c67c5984bfd7df56ac959d4cc"
+  },
+  {
+   "id": "H18",
+   "record": "2025-000941CUA",
+   "group": "decided",
+   "key": "bae1b7aaa6ed3d0b03aa3315aaf147c77a736fdac18ebd5bcd055b2e1a542e6d"
+  },
+  {
+   "id": "H19",
+   "record": "2024-002799CUA",
+   "group": "decided",
+   "key": "bbdcd3ac5858a72c8f08c12bd25d1fc4e83333d01dbf6a8a2ca7e31ed7b4bf09"
+  },
+  {
+   "id": "H20",
+   "record": "2023-008363CUA",
+   "group": "decided",
+   "key": "c13e45c95497680f449f09d64289c1ca3b548305fb57159193714b2463fbb28e"
+  }
+ ],
+ "spares_in_order": [
+  {
+   "record": "2024-007818CUA",
+   "key": "d19ca7c20b9abe0ea2fa5799a05f07f878e0a0d8fbc76460324f0289af33e218"
+  },
+  {
+   "record": "2024-003662CUA",
+   "key": "e5628f018b6ea49057b089d930f52c185faafb2615c2e22cda117180f25503d5"
+  },
+  {
+   "record": "2015-002658CUA-02",
+   "key": "e6a9338b794f1b64ddc89ffa97837a254db9b23453ec1ce32be69de10cd3634d"
+  },
+  {
+   "record": "2023-005339CUA",
+   "key": "e85ed6cdc287a698fce60588f2964d494723f6dbd335536cb875e4738622f9ef"
+  },
+  {
+   "record": "2025-010554CUA",
+   "key": "f11e54bf591b189acda02af214a73391448bf9d110b5fd5fc1a92ef618d47740"
+  }
+ ],
+ "starting_pool": "83 records: applications joined to record_labels where the record number contains CUA, premises is true and the filing date is 2022-01-01..2025-12-31 (all record kinds). 40 are the backtest cases; 43 are not.",
+ "added_from_outside_the_labels": [
+  {
+   "record": "2023-011096CUA",
+   "why": "labelled not premises; a change of use from a house to General Entertainment (Gregangelo), decided by Motion 21636. Eligible."
+  }
+ ],
+ "excluded": [
+  {
+   "record": "2021-012886CUA",
+   "why": "cannabis shop"
+  },
+  {
+   "record": "2022-003199CUA",
+   "why": "pending (On Hold)"
+  },
+  {
+   "record": "2022-004128CUA",
+   "why": "massage"
+  },
+  {
+   "record": "2022-006364CUA",
+   "why": "eyewear store (Warby Parker)"
+  },
+  {
+   "record": "2022-007253CUA",
+   "why": "pending (Submitted)"
+  },
+  {
+   "record": "2022-007603CUA",
+   "why": "massage"
+  },
+  {
+   "record": "2022-008002CUA",
+   "why": "health spa"
+  },
+  {
+   "record": "2022-008162CUA",
+   "why": "grocery store expansion (H Mart); alcohol not part of the request"
+  },
+  {
+   "record": "2022-008360CUA",
+   "why": "grocery store (Luke's Local) in a former bank; alcohol is among its goods but not part of the request"
+  },
+  {
+   "record": "2022-012037CUA",
+   "why": "jewellery store (Mejuri)"
+  },
+  {
+   "record": "2023-002411CUA",
+   "why": "restaurant/banquet hall to be converted to a grocery store: the new use is not food or drink service"
+  },
+  {
+   "record": "2023-002804CUA",
+   "why": "massage"
+  },
+  {
+   "record": "2023-003652CUA",
+   "why": "pending (On Hold)"
+  },
+  {
+   "record": "2024-000669CUA",
+   "why": "beauty salon"
+  },
+  {
+   "record": "2024-005019CUA",
+   "why": "pending (Accepted)"
+  },
+  {
+   "record": "2024-006280CUA",
+   "why": "massage"
+  },
+  {
+   "record": "2024-007477CUA",
+   "why": "bank (Chase taking over First Republic); labelled restaurant by mistake"
+  },
+  {
+   "record": "2024-009645CUA",
+   "why": "auto parts store (AutoZone, Motion 21694)"
+  },
+  {
+   "record": "2025-010376CUA",
+   "why": "phone store (Total Wireless)"
+  },
+  {
+   "record": "2018-001788CUA",
+   "why": "found outside the labels (cancelled; 554 Fillmore St, former Sacred Heart Church). First counted eligible from its description (nave used for entertainment, arts and recreation). The file then showed the CUA is one part of a whole-building conversion with seven dwelling units and offices (plan check letters 2023-05-10 and 2024-01-08), so excluded under rule 3 before any ground truth was written."
+  },
+  {
+   "record": "2022-001407CUA",
+   "why": "found outside the labels; a whole-building cultural centre (pool, library, museum, offices, classrooms, gym) with a pub and a restaurant/bar inside"
+  },
+  {
+   "record": "2025-003445CUA",
+   "why": "found outside the labels; a supermarket (T&T) with a 1,804 sq ft bakery/cafe inside"
+  },
+  {
+   "record": "2025-003391CUA",
+   "why": "found outside the labels; a food/beverage space converted to a music studio: the new use is not food or drink"
+  },
+  {
+   "record": "2025-007879CUA",
+   "why": "found outside the labels; nonprofit culinary job training (institutional use)"
+  }
+ ],
+ "outside_the_labels_also_checked": "All 2022-2025 CUA records not labelled premises whose description names restaurant, bar, liquor, alcohol, entertainment, ABC, a licence type, brew, cafe, coffee, wine, beer, tavern, food, eating, drinking, nightclub, venue, tasting, bakery, catering, kitchen, dining or outdoor activity: the rest are housing, hotels, schools, offices, shops, cannabis or whole-site projects, where the word is a home kitchen, a former use or a ground-floor shop. Also every withdrawn or cancelled 2022-2025 CUA not labelled premises (145): none names a food, drink or entertainment use. Four name only a use size or 'formula retail' with no use (2023-007950CUA, 2023-008718CUA, 2023-009589CUA, 2025-002632CUA) and no other record at the address names one; not eligible on the record text."
+}

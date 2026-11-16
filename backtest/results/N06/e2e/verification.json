@@ -1,0 +1,337 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 21,
+  "supported": 2,
+  "trimmed": 9,
+  "downgraded": 10,
+  "dropped": 0
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active Type 47 on-sale general eating-place license has been on file at 659 Columbus Ave since May 2021, indicating the space operates as a restaurant.",
+   "verdict": "partially_supported",
+   "supported_text": "An active Type 47 on-sale general eating-place license has been on file at 659 Columbus Ave since May 2021.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active Type 47 on-sale general eating-place license has been on file at 659 Columbus Ave since May 2021.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:624380"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning Code §780.3(c)(1)(B) provides that a new restaurant in the North Beach Special Use District may be approved by Conditional Use on the first story only if the Zoning Administrator first finds the space is currently or was last legally occupied by a restaurant or bar, that use was not discontinued or abandoned, and the new restaurant will not enlarge the space.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code §780.3(c)(1)(B) provides that a new restaurant in the North Beach Special Use District may be approved by Conditional Use on the first story only if the Zoning Administrator first finds the space is currently or was last legally occupied by a restaurant or bar, that use was not discontinued or abandoned, and the new restaurant will not enlarge the space.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record references Planning Code § 722, not §780.3(c)(1)(B), and does not contain the specific requirements stated in the sentence."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "The concept proposes to increase the floor area from 1,486 sq ft to 2,820 sq ft, which is an enlargement, so the condition that the new restaurant will not enlarge the space is not met.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The concept proposes to increase the floor area from 1,486 sq ft to 2,820 sq ft, which is an enlargement, so the condition that the new restaurant will not enlarge the space is not met.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record contains no rule text, floor area numbers, or conditions about enlargement; it only states the controls are in rule lines not shown."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Three prior Conditional Use Authorizations are on file at this address: the original 1,000 sq ft restaurant approved in August 1995, expansion to over 2,000 sq ft approved in February 2010, and addition of a full bar approved in December 2003.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Three prior Conditional Use Authorizations are on file at this address: the original 1,000 sq ft restaurant approved in August 1995, expansion to over 2,000 sq ft approved in February 2010, and addition of a full bar approved in December 2003.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:1995.322C",
+    "app:datasf_planning:2009.0798C",
+    "app:datasf_planning:2003.0924C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The 2010 Conditional Use Authorization (case 2009.0798C) approved expansion of the full-service restaurant for use size over 2,000 sq ft, demonstrating that a prior enlargement was authorized under the North Beach rules as they stood in 2010.",
+   "verdict": "partially_supported",
+   "supported_text": "The 2010 Conditional Use Authorization (case 2009.0798C) approved expansion of the full-service restaurant for use size over 2,000 sq ft.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 2010 Conditional Use Authorization (case 2009.0798C) approved expansion of the full-service restaurant for use size over 2,000 sq ft.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2009.0798C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is needed because the restaurant is over 2,000 sq ft and is enlarging a nonconforming use, but the North Beach Special Use District rule at §780.3(c)(1)(B) prohibits enlarging an existing restaurant space, so the status is further review.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization is needed because the restaurant is enlarging a nonconforming use, but the North Beach Special Use District rule at §780.3(c)(1)(B) prohibits enlarging an existing restaurant space, so the status is further review.",
+   "cut_problem": "keeps 'the restaurant is over 2,000 sq ft', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:abc:624380",
+    "overlay:static:sf:north_beach_sud",
+    "app:datasf_planning:1995.322C",
+    "app:datasf_planning:2009.0798C",
+    "app:datasf_planning:2003.0924C"
+   ],
+   "note": "The cited records do not state the square footage of the current restaurant."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "California Retail Food Code §§114380–114381 and San Francisco Health Code Article 8 require a health permit to operate for any food or drink business, issued after plan check and inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate for any food or drink business is required, issued after plan check and inspection.",
+   "cut_problem": "adds or moves 'is': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Retail Food Code §§114380–114381 and San Francisco Health Code Article 8 require a health permit to operate for any food or drink business, issued after plan check and inspection.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the permit and process but does not cite the specific code sections mentioned."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is sent to the Planning Department for a zoning review referral, which is a review step inside the health permit approval, not a separate approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The health permit application is sent to the Planning Department for a zoning review referral, which is a review step inside the health permit approval, not a separate approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention a Planning Department zoning review referral."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is allowed for a food facility with limited cooking; it is issued after plan check and inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is allowed for a food facility; it is issued after plan check and inspection without a discretionary hearing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is allowed for a food facility; it is issued after plan check and inspection without a discretionary hearing.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The California Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B, so the proposed occupancy group depends on the number of occupants.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The California Building Code classifies a restaurant or bar as Assembly Group A-2, and a space for fewer than 50 people as Group B, so the proposed occupancy group depends on the number of occupants.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The catalog entry does not state any California Building Code occupancy classifications or the 50-person threshold."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "The description does not state whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description does not state whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is a permit catalog entry and does not address what the description states about occupancy or the 50-person threshold."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so a change of occupancy is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so a change of occupancy is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes building permit requirements but does not state what records show existing occupancy or whether a change can be established."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "San Francisco Building Code §106A.1 requires a building permit for tenant improvements, alterations, and any change of occupancy, with fees based on a percentage of construction valuation.",
+   "verdict": "partially_supported",
+   "supported_text": "A building permit is required for tenant improvements and any change of occupancy, with fees based on a percentage of construction valuation.",
+   "cut_problem": "adds or moves 'is': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "San Francisco Building Code §106A.1 requires a building permit for tenant improvements, alterations, and any change of occupancy, with fees based on a percentage of construction valuation.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not cite the specific code section §106A.1 and does not mention alterations as requiring a permit."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit is needed for tenant improvements, but whether a change of occupancy is required is insufficient information because the number of occupants and the existing occupancy group are not known.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A building permit is needed for tenant improvements, but whether a change of occupancy is required is insufficient information because the number of occupants and the existing occupancy group are not known.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: The authorization is valid for three years; a building permit must be issued and construction commenced within that period or the authorization lapses. Basis: This is a standard condition in every San Francisco Planning Commission CUA. The 2019 CUA at 526 Columbus (case 2019-013418CUA) included validity, expiration, and diligent pursuit conditions requiring a building permit within three years and continuous construction to completion.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The authorization is valid for three years; a building permit must be issued and construction commenced within that period or the authorization lapses. Basis: The 2019 CUA at 526 Columbus (case 2019-013418CUA) included validity, expiration, and diligent pursuit conditions requiring a building permit within three years and continuous construction to completion.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The authorization is valid for three years; a building permit must be issued and construction commenced within that period or the authorization lapses. Basis: The 2019 CUA at 526 Columbus (case 2019-013418CUA) included validity, expiration, and diligent pursuit conditions requiring a building permit within three years and continuous construction to completion.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Odor control equipment must be installed, maintained, and shown on building permit plans to prevent noxious or offensive odors from escaping the premises; odor control ducting shall not be applied to the primary façade. Basis: The 2019 CUA at 526 Columbus required odor control equipment details and manufacturer specifications on the building permit plans, and prohibited ducting on the primary façade. This is standard for restaurant CUAs with cooking.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Odor control equipment must be installed, maintained, and shown on building permit plans to prevent noxious or offensive odors from escaping the premises; odor control ducting shall not be applied to the primary façade. Basis: The 2019 CUA at 526 Columbus required odor control equipment details and manufacturer specifications on the building permit plans, and prohibited ducting on the primary façade.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Odor control equipment must be installed, maintained, and shown on building permit plans to prevent noxious or offensive odors from escaping the premises; odor control ducting shall not be applied to the primary façade. Basis: The 2019 CUA at 526 Columbus required odor control equipment details and manufacturer specifications on the building permit plans, and prohibited ducting on the primary façade.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: The premises shall be soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels in the San Francisco Noise Control Ordinance. Basis: The 2019 CUA at 526 Columbus imposed this noise condition. It is standard for eating and drinking uses in dense residential areas like North Beach.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The premises shall be soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels in the San Francisco Noise Control Ordinance. Basis: The 2019 CUA at 526 Columbus imposed this noise condition.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The premises shall be soundproofed or insulated so that incidental noise is not audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels in the San Francisco Noise Control Ordinance. Basis: The 2019 CUA at 526 Columbus imposed this noise condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: The operator shall maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and shall daily monitor the sidewalk within a one-block radius to keep it free of litter associated with the business during business hours. Basis: The 2019 CUA at 526 Columbus included this sidewalk maintenance condition in compliance with San Francisco Police Code Article 1, Section 34. It is standard for restaurants in the North Beach NCD.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The operator shall maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and shall daily monitor the sidewalk within a one-block radius to keep it free of litter associated with the business during business hours. Basis: The 2019 CUA at 526 Columbus included this sidewalk maintenance condition in compliance with San Francisco Police Code Article 1, Section 34.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The operator shall maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and shall daily monitor the sidewalk within a one-block radius to keep it free of litter associated with the business during business hours. Basis: The 2019 CUA at 526 Columbus included this sidewalk maintenance condition in compliance with San Francisco Police Code Article 1, Section 34.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Basis: The 2019 CUA at 526 Columbus required this, and it is standard for eating and drinking uses under San Francisco Department of Public Works guidelines.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Basis: The 2019 CUA at 526 Columbus required this.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view, and placed outside only when being serviced by the disposal company. Basis: The 2019 CUA at 526 Columbus required this.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: The project sponsor shall appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide the Zoning Administrator and all registered neighborhood groups with the liaison's name, address, and telephone number. Basis: The 2019 CUA at 526 Columbus required appointment of a community liaison prior to issuance of a building permit. This is a standard condition for uses requiring CUA in neighborhood commercial districts.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The project sponsor shall appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide the Zoning Administrator and all registered neighborhood groups with the liaison's name, address, and telephone number. Basis: The 2019 CUA at 526 Columbus required appointment of a community liaison prior to issuance of a building permit.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The project sponsor shall appoint a community liaison officer to deal with issues of concern to owners and occupants of nearby properties, and provide the Zoning Administrator and all registered neighborhood groups with the liaison's name, address, and telephone number. Basis: The 2019 CUA at 526 Columbus required appointment of a community liaison prior to issuance of a building permit.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-013418CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost is given because Planning Code §780.3(c)(1)(B) prohibits enlarging an existing restaurant space in the North Beach Special Use District, and the pathway analysis confirms the concept as described is not permitted at this address. The rule lines state that a new restaurant may be approved by Conditional Use only if the Zoning Administrator first finds the new restaurant will not enlarge the space, and the space is to be enlarged from 1,486 sq ft to 2,820 sq ft. The 2010 CUA (case 2009.0798C) approved expansion to over 2,000 sq ft, but no record in the candidate set since 2010 shows a restaurant square-footage expansion approved under this rule, and the current rule text does not provide an exception for existing restaurants. Until Planning confirms in writing whether any discretionary pathway exists, no application should be filed and no cost or timeline for approval can be estimated. If Planning confirms there is no approval path, the only options are to operate within the existing 1,486 sq ft footprint, seek a legislative amendment to the North Beach SUD, or choose a different location.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 0 to 0 days. Estimated government cost: $0 to $0. Notes: No timeline or cost is given because Planning Code §780.3(c)(1)(B) prohibits enlarging an existing restaurant space in the North Beach Special Use District, and the pathway analysis confirms the concept as described is not permitted at this address. The rule lines state that a new restaurant may be approved by Conditional Use only if the Zoning Administrator first finds the new restaurant will not enlarge the space, and the space is to be enlarged from 1,486 sq ft to 2,820 sq ft. The 2010 CUA (case 2009.0798C) approved expansion to over 2,000 sq ft, but no record in the candidate set since 2010 shows a restaurant square-footage expansion approved under this rule, and the current rule text does not provide an exception for existing restaurants. Until Planning confirms in writing whether any discretionary pathway exists, no application should be filed and no cost or timeline for approval can be estimated. If Planning confirms there is no approval path, the only options are to operate within the existing 1,486 sq ft footprint, seek a legislative amendment to the North Beach SUD, or choose a different location.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records do not provide the Planning Code section cited, the specific square footages, the rule text quoted, or state most of the factual claims and conclusions in the notes."
+  }
+ ]
+}

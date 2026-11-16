@@ -1,0 +1,547 @@
+# Holdout cases (H01-H20): 20 San Francisco Conditional Use cases about food, drink and entertainment premises,
+# filed 2022-2025, not among the 40 in ../cases.yaml. Picked and frozen on 2026-11-12, before any rule change, to
+# score rule fixes on cases the fixes were not tuned on. Who was eligible and how the 20 were picked: README.md and
+# selection.json. 2 did not reach approval (H01-H02, withdrawn) and 18 were decided with a Planning Commission
+# motion (H03-H20). Same fields and same rules as ../cases.yaml: `concept_input` is the only text the report gets
+# besides the address, taken from the project description with the approval sought, code sections, prior motion
+# numbers and the outcome removed, nothing added; where the description lacks a deciding fact, it is left out.
+# `concept_as_filed` is the project description on the Planning record, unedited. A withdrawn case is not called a
+# failure. `triggers` come from the trigger inventory (triggers.json): two independent readings of each decision
+# record (reading-A.json, reading-B.json), settled where they differed. Input facts, record facts and intake answers
+# are in inputs.json. `concept_input_edit` records each change made to a neutral text after the audits. No rule,
+# report or model had been run on these cases when they were read, settled and frozen.
+cases:
+  - id: H01
+    group: did_not_reach_approval
+    record: "2024-006665CUA"
+    address: "2999 Mission St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2024-07-23
+    closed: 2026-04-13
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "An existing grocery and produce store of 4,647 square feet wants to bring in an ABC Type 20 licence by transfer."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section(s) 249.60 (b)(2) to permit transfer of Type 20 license to an existing grocery /produce store of 4,647 sf."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "249.60(b)(2)(A); 249.60(d) (Good Neighbor Policies); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-006665CUA"
+      parent_project_documents: "https://sfplanninggis.org/PlanningDocsMFiles/?search=2024-006665PRJ&isPRJ=true&kids="
+    why_closed: "The file shows three Incomplete Application Notices on the parent 2024-006665PRJ, dated 30 Aug 2024, 27 Sep 2024 and 18 Dec 2024. They ask for missing plan items and, in the first two, the unpaid Conditional Use fee ($1,998, then $2,869). Each says the project \"will not be assigned to a planner until the items listed in the attached checklist are submitted\" and that after 90 days \"the application may be canceled.\" No hearing, motion, staff report or later correspondence. Status \"Closed - Withdrawn\" 2026-04-13. Most likely closed for never being completed; nothing in the file shows a zoning objection or opposition."
+    why_class: application_never_completed
+    regulatory_problem: "no"
+    why_basis: "inferred"
+  - id: H02
+    group: did_not_reach_approval
+    record: "2024-006641CUA"
+    address: "3400 Cesar Chavez St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2024-07-23
+    closed: 2025-01-15
+    outcome: withdrawn
+    status_on_record: "Closed - Withdrawn"
+    concept_input: "A new ABC Type 21 licence for an existing store space that is vacant."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 754 to permit new ABC Type 21 license for an existing vacant store."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: "not_permitted"
+        basis: inferred_from_code
+        sections: "249.60(a); 249.60(b)(2)(A)-(B); 754 Table (Liquor Store: NP); 102 (Liquor Store; General and Specialty Grocery)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-006641CUA"
+      parent_project_documents: "https://sfplanninggis.org/PlanningDocsMFiles/?search=2024-006641PRJ&isPRJ=true&kids="
+    why_closed: "Reason not stated. The parent 2024-006641PRJ holds only the application, the Conditional Use supplement, plans and an intake checklist (last changed 2024-12-09). No hearing, motion, staff report or letter. Status \"Closed - Withdrawn\" 2025-01-15, about six months after filing. Likely reason (inferred from the code, as N09): the request as filed, a new ABC Type 21 at a store in the Mission Alcoholic Beverage SUD, had no path, because the SUD allows no new Liquor Store and lets a grocery take only a licence transferred from inside the SUD (§ 249.60(a), (b)(2)). Context only, from the local copy of the ABC licence data: a Type 20 off-sale beer and wine licence (Casa Guadalupe Supermarket 2) was issued at this address on 2025-07-16 by transfer from licence 20-394431. That fits the transfer route, but the file never says why the Conditional Use was withdrawn."
+    why_class: "use_not_permitted"
+    regulatory_problem: "yes"
+    why_basis: "inferred"
+  - id: H03
+    group: decided
+    record: "2024-001899CUA"
+    address: "1657 Powell St, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2024-03-05
+    closed: 2024-09-12
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing liquor store wants to keep operating at this address."
+    concept_as_filed: "The project is seeking a Conditional Use Authorization pursuant to Planning Code Section 722 to continue operating as a liquor store at 1657 Powell Street."
+    triggers:
+      - family: new_use_control
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "722 Table (Liquor Store: C; note on fire relocation); 780.3 (SUD findings); 303(c); 303(z) (Liquor Store findings)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-001899CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={9C2A551B-177B-4827-A4DB-5E078A5E130D}&fileGUID={215E3E8A-28EA-4695-9E4F-3977A67CBF75}&showopendialog=1"
+    conditions_extracted: 12
+    conditions_not_standard: 3
+  - id: H04
+    group: decided
+    record: "2022-004869CUA"
+    address: "3352 Steiner St, San Francisco, CA 94123"
+    zoning_district_on_record: "NC-2"
+    filed: 2022-06-01
+    closed: 2023-03-16
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Bluestone Lane, a restaurant that is part of a chain, wants to take over an existing restaurant space last used by another restaurant that is part of a chain."
+    concept_as_filed: "Convert existing Formula Retail restaurant space to new Formula Retail restaurant user known as \"Bluestone Lane\""
+    triggers:
+      - family: formula_retail
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303.1(e)(1) (today (e)(5)); 303.1(b)-(c); 703.4(b); 711 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+      - family: formula_retail
+        control_at_filing: "conditional"
+        basis: inferred_from_code
+        sections: "178(c)(3)(A)-(E); 303.1(j); 178(d)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-004869CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1F0E3E2A-3539-4F3C-862C-99686FAE2F52}&fileGUID={8100D7EB-6DCA-4D90-B92C-9AC1F30F78FE}&showopendialog=1"
+    conditions_extracted: 8
+    conditions_not_standard: 0
+  - id: H05
+    group: decided
+    record: "2025-005018CUA"
+    address: "2007 Franklin St, San Francisco, CA 94109"
+    zoning_district_on_record: "RH-2"
+    filed: 2025-06-05
+    closed: 2025-09-25
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "SF Heritage wants to formalize general entertainment, nighttime entertainment and bar uses at a landmark building, and an outdoor activity area in its front and rear gardens. The building's existing uses stay: a residence, a museum, an office and an events space. The new uses would bring in revenue needed to maintain the landmark building. No alteration or construction."
+    concept_input_audit: "Flag considered and not acted on: Audit B flagged 'The new uses would bring in revenue needed to maintain the landmark building' as echoing the § 186.3 finding. Kept: it is the applicant's own stated reason in the description, not the approval sought, a code section or the outcome, and the 40's rules remove only those."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section(s) 186.3 209.1, 303, and 710 to permit SF Heritage to formalize General Entertainment, Nighttime Entertainment, and Bar uses and Outdoor Activity Area in the front and rear gardens of the Property (the “Project”). The Project maintains the existing uses of the Property, including as a residence, museum, office, and events space. The Project seeks Conditional Use authorization pursuant to Planning Code Sections 186.3, 209.1, 303, and 710 for General Entertainment, Nighttime Entertainment, and Bar uses and Outdoor Activity Area. The Project seeks to formalize the Outdoor Activity Area in the front and rear gardens of the Property pursuant to Planning Code Sections 145.2, 186.3, 209.1, 303, and 710. The Project will generate increased revenue needed to maintain this landmark building. Allowing these uses will enhance the feasibility of preserving the landmark building for another 130 years. No alteration or construction is proposed by the Project."
+    triggers:
+      - family: landmark_use_in_residential_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "186.3; 209.1 (RH-2 table); 710 (NC-1 table, by reference); 303"
+        changed_since_filing: "yes"
+      - family: nighttime_entertainment
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "710 Table (Entertainment, Nighttime: C on the first story); 186.3"
+        changed_since_filing: "no"
+      - family: outdoor_activity_area
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "145.2(a)-(b); 710 Table (Outdoor Activity Area); 186.3"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-005018CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={7A3A5D07-417B-438E-9114-35BC1BA0B800}&fileGUID={1AE1498A-F705-4959-B627-F0322714EFF7}&showopendialog=1"
+    conditions_extracted: 12
+    conditions_not_standard: 1
+  - id: H06
+    group: decided
+    record: "2025-003933CUA"
+    address: "620 Jones St, San Francisco, CA 94102"
+    zoning_district_on_record: "RC-4"
+    filed: 2025-05-05
+    closed: 2025-10-02
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A business operates under an existing permission whose conditions limit the hours of entertainment in its outdoor activity area. It wants to extend those hours to 8 p.m. Sunday to Thursday and 10 p.m. Friday and Saturday. No construction."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 209.3. RC to amend a condition of approval from Planning Commission Motion No. 19270 to extend the hours of operation for entertainment in the outdoor activity area to 8pm Sunday - Thurs and 10:00pm Friday and Saturday. No proposed construction."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303 (303(e)); 178"
+        changed_since_filing: "no"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: "conditional"
+        basis: inferred_from_code
+        sections: "178(c)(1)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-003933CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1EB31BAC-35F7-44BF-8F1D-6DC1947BE9D0}&fileGUID={01D4E963-0A5C-4C6D-BCC9-347949FD6D67}&showopendialog=1"
+    conditions_extracted: 4
+    conditions_not_standard: 2
+  - id: H07
+    group: decided
+    record: "2023-011096CUA"
+    address: "225 San Leandro Way, San Francisco, CA 94127"
+    zoning_district_on_record: "RH-1(D)"
+    filed: 2023-12-04
+    closed: 2024-10-24
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approval Ltr Issued"
+    concept_input: "Change the use of a single-family house from residential to general entertainment."
+    concept_as_filed: "The project is seeking a Conditional Use Authorization pursuant to Planning Code Sections 303 and 186.3 related to a change of use from a single-family dwelling/residential use to a General Entertainment Use."
+    triggers:
+      - family: landmark_use_in_residential_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "186.3; 209.1 (RH-1(D) table); 710 (NC-1 table, by reference); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-011096CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={584C8B5C-BC5D-440A-B134-08F235F942AB}&fileGUID={7DA87970-C74F-4892-B4E1-E077EF9E4C6A}&showopendialog=1"
+    conditions_extracted: 11
+    conditions_not_standard: 0
+  - id: H08
+    group: decided
+    record: "2011.0097CUA-02"
+    address: "1423 Polk St, San Francisco, CA 94109"
+    zoning_district_on_record: "NCD-POLK"
+    filed: 2024-06-26
+    closed: 2024-11-14
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A business operates under an existing permission with a condition that limits its hours of operation. It wants that condition changed to 6 a.m. to 2 a.m., or removed, because the walk-up coffee window there has gone out of business."
+    concept_as_filed: "Amend 'Hour of Operation' (as stated in Conditions of approval, Compliance, Monitoring, and Reporting, condition #18) to be 6am to 2am, as allowed by the SF Planning Code and the Alcohol and Beverage Control. Or remove Condition 18, which restricts hours, as there is no longer a Walk-up Coffee Window because it went out of business."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303; 174; 178; 723"
+        changed_since_filing: "no"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "178(c)(1); 723 Table (Bar: C)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2011.0097CUA-02"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={8B1BD821-FE9A-4A74-8B8E-2C09509F89F6}&fileGUID={5F92F74E-2DAC-4026-921C-7093D023FDBF}&showopendialog=1"
+    conditions_extracted: 5
+    conditions_not_standard: 1
+  - id: H09
+    group: decided
+    record: "2023-000022CUA"
+    address: "786 Lombard St, San Francisco, CA 94133"
+    zoning_district_on_record: "NCD-NORTH BEACH"
+    filed: 2023-01-06
+    closed: 2024-02-22
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Legalize the limited restaurant on this property."
+    concept_as_filed: "The proposal is for a Conditional Use Authorization (CUA) to seek legalization of the limited use restaurant on the property per Planning Code Section 780.3 (c)(6)."
+    triggers:
+      - family: legacy_business_replacement
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "780.3 (Legacy Business provision); 722; 303; Administrative Code 2A.242 (not read)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-000022CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={9A04C717-1C6B-451E-A591-2BC3DAA901E5}&fileGUID={6EB7DC1C-7E58-49F5-A03E-2310AE8B1444}&showopendialog=1"
+    conditions_extracted: 13
+    conditions_not_standard: 0
+  - id: H10
+    group: decided
+    record: "2023-002340CUA"
+    address: "999 Valencia St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-VALENCIA"
+    filed: 2023-04-04
+    closed: 2023-07-27
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Valencia Whole Foods wants to buy an ABC Type 20 licence from Ish's Community Market Corp."
+    concept_input_edit: "2026-11-12, after the two audits, before any run. Was: Whole Foods on Valencia Street wants to buy an ABC Type 20 licence from Ish's Community Market Corp. Why: Both audits flagged 'Whole Foods on Valencia Street': it reads as the national Whole Foods Market chain, which the record says this business is not. The record's own name, 'Valencia Whole Foods', is restored. Nothing else changed."
+    concept_as_filed: "The Project is seeking Conditional Use authorization from Planning Code Section 249.60 related to Valencia Whole Foods' purchase of a Type 20 liquor license from Ish's Community Market Corp."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "249.60(b)(2)(A); 249.60(d); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-002340CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={82937721-21FB-4A04-9617-0C070DCED936}&fileGUID={6DE5C06A-4240-4A76-A0F5-65C80346D536}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 1
+  - id: H11
+    group: decided
+    record: "2013.0530CUA-02"
+    address: "1301 Van Ness Ave, San Francisco, CA 94109"
+    zoning_district_on_record: "RC-4"
+    filed: 2025-07-28
+    closed: 2025-10-16
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "The existing BevMo! store wants longer delivery hours. Alcohol deliveries: Monday to Friday 10 a.m. to 2 a.m., Saturday 9 a.m. to 2 a.m., Sunday 10 a.m. to 2 a.m., with one more hour morning and evening in the holiday period. Deliveries of other items: 24 hours a day, seven days a week. The in-store retail hours set by the store's existing permission do not change."
+    concept_as_filed: "The request would modify the hours of operation at the existing BevMo! location to allow expanded delivery hours for alcohol until 2:00 a.m. seven days per week, which is the maximum allowed by the California Department of Alcoholic Beverage Control. Delivery of non-alcohol items would be allowed 24 hours per day. The in-store retail hours reflected in the current conditional use permit will not change. Requested Additional Language to Condition #8: The subject establishment is limited to the following hours of delivery operation: (i) for alcoholic beverages, Monday through Friday from 10:00 am to 2:00 am, Saturday from 9:00 am to 2:00 am, and Sunday from 10:00 am to 2:00 am, except during the holiday period where hours of operation may increase by one hour in the morning and evening hours; (ii) for items other than alcoholic beverages, 24 hours per day, seven days per week."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303(e)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2013.0530CUA-02"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={29DAF5A7-37CF-41A5-8AAB-1C41D8563A8E}&fileGUID={CC821C38-692E-4F27-A21D-472889E14D8A}&showopendialog=1"
+    conditions_extracted: 4
+    conditions_not_standard: 1
+  - id: H12
+    group: decided
+    record: "2023-011780CUA"
+    address: "3233 22nd St, San Francisco, CA 94110"
+    zoning_district_on_record: "NCT-MISSION"
+    filed: 2023-12-29
+    closed: 2024-03-07
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Change a limited restaurant into a full-service restaurant and specialty grocery, to get an ABC Type 41 licence."
+    concept_as_filed: "CB3P approved project is seeking Conditional Use Authorization pursuant to Planning Code Section 249.60 for a change of use from Limited Service Restaurant to Full Service Restaurant and Specialty Grocery to secure a Type 41 ABC license."
+    triggers:
+      - family: new_use_control
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "754 Table (Restaurant: C(7); Restaurant, Limited: P(7)); 754(c)(5) (three of four district purposes); 303"
+        changed_since_filing: "yes"
+      - family: new_use_control_special_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "249.60(f)(1); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-011780CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={1E4566F9-CE00-48F2-B04F-EF0853F08A7D}&fileGUID={ED8387DD-0846-421A-BC9A-2F6470257F36}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: H13
+    group: decided
+    record: "2024-004781CUA"
+    address: "1457 Haight St, San Francisco, CA 94117"
+    zoning_district_on_record: "NCD-HAIGHT"
+    filed: 2024-05-29
+    closed: 2024-09-12
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Change an existing limited restaurant into a full-service restaurant. No construction."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 719 and Bos Ordinance 249-23 for a change of use from an existing Limited-Restaurant in the Haight NCD to a Full Service Restaurant. No proposed work."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "781.9(c)(2); 781.9(c)(1)(B); 719 Table (Restaurant P(3); Note 3); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-004781CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={447BE2B4-03E3-459A-AF7D-F7A6DA607745}&fileGUID={4F0503F6-9C02-4ADC-B58B-2003334C6BCB}&showopendialog=1"
+    conditions_extracted: 9
+    conditions_not_standard: 0
+  - id: H14
+    group: decided
+    record: "2022-001116CUA"
+    address: "1548 California St, San Francisco, CA 94109"
+    zoning_district_on_record: "NCD-POLK"
+    filed: 2022-02-08
+    closed: 2022-04-28
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "An existing bar, Soda Popinski's, with an ABC Type 48 licence, wants to turn the front part of the bar into a package store selling beer, wine and spirits to take away. The liquor store area would be about 250 square feet. No exterior or interior changes."
+    concept_as_filed: "Conditional Use Authorization application request, pursuant to Planning Code Section 303, Section 723, Section 102, and Section 202(a)(6) to convert the front portion of an existing bar (ABC-Type 48 License), Soda Popinski's, into a retail package store selling beer, wine, and distilled spirits for off-site consumption. The new liquor store area of the retail establishment measures approximately 250 sq. ft. There will be no exterior or interior changes."
+    triggers:
+      - family: new_use_control
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "723 Table (Liquor Store: C); 303(c); 303(z) (Liquor Store findings); 102 (Liquor Store)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-001116CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={AB923396-4542-4D40-969C-642A05F5D540}&fileGUID={73465868-6C30-4865-969D-5C51CAB85068}&showopendialog=1"
+    conditions_extracted: 18
+    conditions_not_standard: 2
+  - id: H15
+    group: decided
+    record: "2025-007559CUA"
+    address: "1416 Haight St, San Francisco, CA 94117"
+    zoning_district_on_record: "NCD-HAIGHT"
+    filed: 2025-09-24
+    closed: 2025-12-11
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Open a new business at this address that sells liquor to take away."
+    concept_input_edit: "2026-11-12, after the two audits, before any run. Was: Open a new off-sale liquor establishment at this address. Why: Audit A flagged 'off-sale liquor establishment': it is the code's own category name in the Haight Street Alcohol RUSD (§ 781.9(c)(1)(C)) and points at the rule. Written in plain words with the same facts (new, sells liquor, for consumption off the premises)."
+    concept_as_filed: "Applicant seeks conditional use approval to establish a new off-sale liquor establishment in the Haight Street Alcohol Restricted Use Subdistrict (RUSD) as authorized pursuant to Section 781.9(c)(2), which new liquor establishment will be situated at 1416 Haight Street."
+    triggers:
+      - family: alcohol_licence_in_restricted_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "781.9(c)(2); 781.9(c)(1)(C); 781.9(c)(3)(A)-(B); 719 Table (Liquor Store NP; Note 3); 303(z)"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-007559CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={2C924720-57A7-4F1E-9EDA-6FE211F21CB8}&fileGUID={5B96129D-D06A-42AC-9389-3E64C12BE235}&showopendialog=1"
+    conditions_extracted: 13
+    conditions_not_standard: 3
+  - id: H16
+    group: decided
+    record: "2024-009436CUA"
+    address: "1210 9th Ave, San Francisco, CA 94122"
+    zoning_district_on_record: "NCD-INNER SUNSET"
+    filed: 2024-11-06
+    closed: 2025-01-23
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A restaurant that is part of a chain wants to open in a vacant ground-floor retail space. Interior remodel into a restaurant: new kitchen equipment, a serving area and customer seating; some partitions removed and one added; new finishes and lighting; plumbing, electrical and mechanical work in the kitchen. Outside: new paint and two new illuminated signs, a front-facing channel-letter sign and a blade sign."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Section 303.1 for a change of use for formula retail use. The project proposes an interior remodel of a vacant ground floor retail space into a new restaurant space, including new kitchen equipment, a serving area, and customer seating, including new millwork and seating throughout. Demo of selected partitions. New non-rated interior partition. New finishes. New lighting. Plumbing, electrical, and mechanical scope in the kitchen. The exterior will receive new exterior painting, along with new exterior signage, including a front facing channel letter signage and blade sign. Both illuminated."
+    triggers:
+      - family: formula_retail
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303.1(e)(1) (today (e)(5)); 303.1(b)-(d); 703.4(b); 730 Table (Formula Retail: C); 303(c)"
+        changed_since_filing: "text_only"
+    controls_changed_since_filing: "text_only"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-009436CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={68448C5C-A1AB-4CD3-A995-56FC8E547BA5}&fileGUID={E76E24F8-4F21-4F3E-8553-48FF4CFB3CEB}&showopendialog=1"
+    conditions_extracted: 10
+    conditions_not_standard: 0
+  - id: H17
+    group: decided
+    record: "2022-009099CUA"
+    address: "1111 California St, San Francisco, CA 94108"
+    zoning_district_on_record: "RM-4"
+    filed: 2022-09-20
+    closed: 2023-07-13
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "The Nob Hill Masonic Center, an entertainment venue with food and beverage service, operates under an existing permission whose conditions cap events with more than 250 attendees at 79 entertainment events a year, of which at most 54 may be music events. The operator wants the cap on large entertainment events raised from 79 to 91 a year, mostly for comedy shows, and keeps the limit of 54 large music events. No other change."
+    concept_as_filed: "In Motion No. 19020, dated November 14, 2013, the Planning Commission approved a conditional use application to change the use of the Nob Hill Masonic Center at 1111 California Street to \"Other Entertainment\" and to authorize food and beverage service within the building. The Commission imposed 50 conditions of approval, including Condition 49 that limits the annual number of music events with more than 250 attendees to 54, and Condition 48 that limits the annual number of entertainment events with more than 250 attendees to 79, including music events. The owner and applicant are filing this application to request a modification to Condition 48 to increase the annual number of large entertainment events from 79 to 91, while retaining the Condition 49 annual limit of 54 large music events. These additional 12 large entertainment events are contemplated to be primarily comedy shows. The owner and application seek no other modification to Motion No. 19020 and its 49 other conditions of approval."
+    triggers:
+      - family: amend_prior_conditions
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303"
+        changed_since_filing: "no"
+      - family: enlarge_or_intensify_existing_use
+        control_at_filing: "conditional"
+        basis: inferred_from_code
+        sections: "178(c)(1); 303"
+        changed_since_filing: "no"
+    controls_changed_since_filing: "no"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2022-009099CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={BF0D1718-B264-4687-9BB0-34F185DF8300}&fileGUID={B5B7B10E-90AE-40C6-AE1E-DACC9976E30E}&showopendialog=1"
+    conditions_extracted: 4
+    conditions_not_standard: 2
+  - id: H18
+    group: decided
+    record: "2025-000941CUA"
+    address: "3065 16th St, San Francisco, CA 94103"
+    zoning_district_on_record: "NCT-VALENCIA"
+    filed: 2025-02-04
+    closed: 2025-04-10
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Add a prefabricated escape room, a general entertainment use, at the rear of an existing restaurant."
+    concept_input_edit: "2026-11-12, after the two audits, before any run. Was: Add a prefabricated escape room at the rear of an existing restaurant. Why: Audit B noted the use class was dropped with the approval sought. H07 and H19 keep 'general entertainment' from their descriptions, so it is kept here too, for the same treatment. The approval sought ('Conditional Use Authorization') and 'CB3P-approved' stay out."
+    concept_as_filed: "The CB3P-approved project is seeking a Conditional Use Authorization for General Entertainment Use for the addition of a pre-fabricated escape room to the rear of an existing restaurant."
+    triggers:
+      - family: new_use_control
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "762 Table (Entertainment, General: C); 102 (Entertainment, General); 303"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2025-000941CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={E0819967-4992-42EC-A843-9837A8DEC640}&fileGUID={B72C4FED-546E-4E74-8519-CF0094791A4B}&showopendialog=1"
+    conditions_extracted: 17
+    conditions_not_standard: 1
+  - id: H19
+    group: decided
+    record: "2024-002799CUA"
+    address: "906 Broadway, San Francisco, CA 94133"
+    zoning_district_on_record: "RM-2"
+    filed: 2024-03-29
+    closed: 2025-10-02
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "Convert a vacant church building, a city landmark (No. 204), from an institutional use into an event space (general entertainment), open 8 a.m. to 10 p.m. daily."
+    concept_input_edit: "2026-11-12, after the two audits, before any run. Was: Convert a vacant church building, a city landmark (No. 204), into an event space (general entertainment), open 8 a.m. to 10 p.m. daily. Why: Audit B noted that 'from an institutional use', which is in the description, had been dropped. It is restored. Section numbers stay out."
+    concept_as_filed: "Conditional Use Authorization pursuant to Planning Code Sections 186.3, 209.2, 303, and 710 to convert vacant church building (Landmark #204) from an institutional use to an event space and change of use to General Entertainment. Proposed Hours of Operation 8 a.m. - 10 p.m. daily."
+    triggers:
+      - family: landmark_use_in_residential_district
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "186.3; 209.2 (RM-2 table); 710 (NC-1, by reference); 303; 303(p)"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: false
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2024-002799CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={D8A0C748-F887-4BE0-B8FB-2DEAA8345389}&fileGUID={BBBB279C-8660-44A5-B765-E52C527C028D}&showopendialog=1"
+    conditions_extracted: 23
+    conditions_not_standard: 6
+  - id: H20
+    group: decided
+    record: "2023-008363CUA"
+    address: "1567 Sloat Blvd, San Francisco, CA 94132"
+    zoning_district_on_record: "NC-S"
+    filed: 2023-09-08
+    closed: 2024-03-21
+    outcome: approved_with_conditions
+    status_on_record: "Closed - Approved"
+    concept_input: "A Crumbl Cookies location."
+    concept_as_filed: "The project is seeking Conditional Use Authorization pursuant to Planning Code Section 303 for a Crumbl Cookies location."
+    triggers:
+      - family: formula_retail
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "303.1(e)(1) (today (e)(5)); 303.1(b)-(d); 703.4(b); 713 Table (Formula Retail: C); 178(c)(3)(A) (different use category)"
+        changed_since_filing: "text_only"
+      - family: hours_of_operation
+        control_at_filing: "conditional"
+        basis: stated_in_record
+        sections: "780.1(b) zoning category .27; 713 Table note (1)"
+        changed_since_filing: "no"
+      - family: new_use_control_special_district
+        control_at_filing: "unclear"
+        basis: inferred_from_code
+        sections: "780.1(b) .69A (as in force before 1/14/2024); 713 Table (Restaurant, Limited: P(1))"
+        changed_since_filing: "yes"
+    controls_changed_since_filing: "yes"
+    readings_agree: true
+    sources:
+      planning_record: "https://sfplanninggis.org/pim?search=2023-008363CUA"
+      motion_pdf: "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={05323B04-2BBD-4EAC-9DD9-EED9C346074F}&fileGUID={00D02686-02C7-4A6B-A7FE-F55B86A15161}&showopendialog=1"
+    conditions_extracted: 16
+    conditions_not_standard: 1

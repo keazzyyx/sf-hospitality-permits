@@ -1,0 +1,385 @@
+{
+ "model": "claude-sonnet-4-5",
+ "batch": 1,
+ "items": 39,
+ "usage": {
+  "calls": 39,
+  "input": 52163,
+  "output": 5422,
+  "cache_read": 68133,
+  "cache_write": 0
+ },
+ "cost_usd": 0.2583,
+ "verdicts": {
+  "supported": 8,
+  "partially_supported": 31
+ },
+ "against_hand_check": {
+  "flagged_by_both": 27,
+  "hand_flagged_checker_passed": 4,
+  "checker_flagged_hand_passed": 4,
+  "passed_by_both": 4,
+  "share_of_hand_flags_caught": 0.871,
+  "share_of_checker_flags_right": 0.871,
+  "missed": [
+   "overall",
+   "row:zoning_use:0",
+   "row:alcohol:0",
+   "timeline"
+  ],
+  "extra": [
+   "row:building_change_of_use:2",
+   "condition:3",
+   "step:2",
+   "step:3"
+  ]
+ },
+ "results": [
+  {
+   "item_id": "overall",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:zoning_use:0",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "not_in_records": [
+    "establishing restaurant use, not bar use"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records show Type 41 license for eating place but do not state the conclusion that this establishes restaurant use, not bar use."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "not_in_records": [
+    "it is the only modern bar-use CUA filed on this block of Valencia"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record confirms the CUA for 970-974 Valencia, but does not establish it is the only one filed on this block."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "not_in_records": [
+    "ABC license continuations on Valencia Street",
+    "Type 41 eating-place license",
+    "distinguishing restaurant from bar under the Planning Code"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record shows one Type 41 continuation at 1007 1/2 Valencia, not multiple continuations on Valencia Street. Record doesn't identify Type 41 as 'eating-place' or state it distinguishes restaurant from bar under the Code."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "not_in_records": [
+    "no record shows such a license is available",
+    "the only bar CUA on this block was withdrawn in 2011"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records show bar is conditional in NCT-VALENCIA, SUD requires Type 42/48 transfer, and one CUA was withdrawn in 2011, but do not state no license is available or that it was the only bar CUA on this block."
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "not_in_records": [
+    "transferring it to a Type 42 bar license will require surrender of the Type 41",
+    "Planning approval of the change of use to bar"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record shows the active Type 41 license but does not state the requirements for transferring to Type 42 or the need for Planning approval."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "not_in_records": [
+    "adds 1\u20133 months to the timeline",
+    "requires a PCN letter from the Planning Commission or Board of Supervisors"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records say ABC will expect PCN finding from 'the City' and note local hearing is the long pole, but do not state the 1\u20133 month duration or that the letter must come from Planning Commission or Board of Supervisors."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "not_in_records": [
+    "Type 42 bar license is non-quota",
+    "ABC will issue it"
+   ],
+   "verdict": "partially_supported",
+   "note": "The catalog entry says Type 42 is non-quota, but also says nearly every city requires conditional use permit or local review before ABC will issue, not that ABC will issue."
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "not_in_records": [
+    "until 2 a.m.",
+    "Planning Code \u00a7762",
+    "Police Code \u00a71060"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record says 'until 2 am' not '2 a.m.', and does not cite Planning Code \u00a7762 or Police Code \u00a71060."
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "not_in_records": [
+    "showing POE permits are approved on this block"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record confirms an active POE permit at 998 Valencia St but does not itself state the conclusion that this shows POE permits are approved on this block."
+  },
+  {
+   "item_id": "row:entertainment:2",
+   "not_in_records": [
+    "showing the Commission grants POE permits with area caps"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record is a Planning approval of an Entertainment Commission referral, not a Commission permit; the conclusion about Commission practice is not stated."
+  },
+  {
+   "item_id": "row:entertainment:3",
+   "not_in_records": [
+    "indicating the Commission approves POE permits for food-and-drink concepts with entertainment in Mission NCT districts"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record shows one approval at one Mission NCT address but does not itself state the general conclusion about Commission approval patterns."
+  },
+  {
+   "item_id": "summary:entertainment",
+   "not_in_records": [
+    "after midnight",
+    "the nearest POE (Amados, 31 m away)",
+    "the Commission will hold a public hearing",
+    "may impose sound-level and hours conditions"
+   ],
+   "verdict": "partially_supported",
+   "note": "The catalog states when a POE is required and mentions a hearing, but does not specify 'after midnight'. The Amados distance is 31 m in the record but the record address is 998 Valencia, not confirmed as nearest."
+  },
+  {
+   "item_id": "row:health:0",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:health:1",
+   "not_in_records": [
+    "DPH approved"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record is a Planning Department referral to DPH recommending approval, not DPH's own approval decision."
+  },
+  {
+   "item_id": "row:health:2",
+   "not_in_records": [
+    "continuous restaurant use at 995 Valencia since at least 1999",
+    "DPH and ABC approvals"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records show approvals in those years but do not state continuous use throughout the period or identify approvals as being from DPH and ABC agencies."
+  },
+  {
+   "item_id": "summary:health",
+   "not_in_records": [
+    "limited-cooking food facility serving small plates",
+    "principally permitted"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records show DPH plan check, certified manager, and final inspection requirements, and continuous restaurant use since 1999, but do not specify limited-cooking or small plates, or principal permitted status."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "not_in_records": [
+    "routed to Planning for zoning review",
+    "neighborhood notification per Planning Code \u00a7312 where required"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record mentions Planning routing but does not state zoning review or neighborhood notification under Planning Code \u00a7312."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "not_in_records": [
+    "fees run $828\u2013$2,207"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record shows fees $828\u2013$2,500 (upper bound $2,500, not $2,207); $2,207 is one specific tier, not the full range."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "not_in_records": [
+    "ADA upgrades",
+    "change of use from restaurant to bar will trigger Planning Code \u00a7312 neighborhood notification"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records mention ADA upgrades and kitchen/hood work need permits but do not state the specific change of use from restaurant to bar or that it triggers Planning Code \u00a7312 notification."
+  },
+  {
+   "item_id": "condition:0",
+   "not_in_records": [
+    "State law prohibits alcohol sales after 2 a.m."
+   ],
+   "verdict": "partially_supported",
+   "note": "The record states hours 6 a.m.\u20132 a.m. are P and 2 a.m.\u20136 a.m. are C, but does not state the state law prohibition on alcohol sales after 2 a.m."
+  },
+  {
+   "item_id": "condition:1",
+   "not_in_records": [
+    "posted occupancy limits required",
+    "compliance with Fire Department Place of Assembly permit requirements if occupant load reaches 50",
+    "At 40 seats this concept is likely below the 50-person Place of Assembly threshold"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record confirms \u2153 floor area limit per Police Code \u00a71060(r) at 998 Valencia but does not mention occupancy posting, Fire Department requirements, or the 50-person threshold analysis."
+  },
+  {
+   "item_id": "condition:2",
+   "not_in_records": [
+    "Sound-level limits measured at the property line and at upstairs residential units",
+    "noise monitoring",
+    "POE permits for entertainment venues commonly include sound-level conditions"
+   ],
+   "verdict": "partially_supported",
+   "note": "The overlay states good-neighbor conditions apply; the catalog notes sound complaints are a stall risk but does not state that POE permits commonly include sound-level conditions."
+  },
+  {
+   "item_id": "condition:3",
+   "not_in_records": [
+    "license limited to beer and wine only"
+   ],
+   "verdict": "partially_supported",
+   "note": "The records state no minors allowed and RBS training mandatory within 60 days of hire, but do not state that the license is limited to beer and wine only."
+  },
+  {
+   "item_id": "condition:4",
+   "not_in_records": [
+    "applicable to 995 Valencia St",
+    "new Conditional Use Authorization required",
+    "Planning's policy for existing alcohol-serving uses in the Mission Alcohol SUD",
+    "Mission Alcohol SUD policy that existing bars cannot expand"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record is for 1101 Valencia (214m away) and does not mention 995 Valencia, CUA requirements, or state the broader Mission Alcohol SUD policy."
+  },
+  {
+   "item_id": "condition:5",
+   "not_in_records": [
+    "community liaison",
+    "posted complaint hotline",
+    "annual reporting on noise complaints and security incidents"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record states the use is subject to the Entertainment Commission's Good Neighbor Policy but does not detail what that policy requires (liaison, hotline, reporting)."
+  },
+  {
+   "item_id": "step:1",
+   "not_in_records": [
+    "Request a pre-application meeting under Planning Code \u00a7312",
+    "40-seat",
+    "limited kitchen",
+    "live music until midnight",
+    "transfer a Type 42 license from another bar within the Mission Alcohol SUD per \u00a7249.60",
+    "what conditions (hours, sound, security, good-neighbor policy) the Commission will require",
+    "whether the current restaurant use simplifies the hearing"
+   ],
+   "verdict": "partially_supported",
+   "note": "The record mentions CUA requirements and the Mission Alcohol SUD transfer rule generally, but does not state Planning Code \u00a7312, the specific details to mention (40 seats, kitchen, music hours), \u00a7249.60, or the specific conditions to ask about."
+  },
+  {
+   "item_id": "step:2",
+   "not_in_records": [
+    "neighborhood notification",
+    "environmental review",
+    "Frame as conversion of existing restaurant to beer-and-wine bar",
+    "occasional live music",
+    "40 seats",
+    "no dancing",
+    "good-neighbor policy",
+    "sound monitoring"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records state CUA required for bars, license transfer within SUD, and good-neighbor conditions apply, but do not specify filing details, project framing, capacity, hours, or attachments."
+  },
+  {
+   "item_id": "step:3",
+   "not_in_records": [
+    "email the Deputy Director to confirm zoning eligibility and request an intake meeting",
+    "explain that live music will be occasional (1\u20132 nights per week), end by midnight, and occupy no more than \u2153 of the floor area",
+    "commit to the Good Neighbor Policy, sound-level monitoring, and an annual report on complaints",
+    "attach the same acoustic study and security plan",
+    "state that the POE application will be complete once the CUA is approved"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record says to email Deputy Director to confirm zoning eligibility before applying but does not specify requesting intake meeting or what details to include in the email."
+  },
+  {
+   "item_id": "step:4",
+   "not_in_records": [
+    "file the application online",
+    "post the yellow notice",
+    "notify neighbors within 300 ft"
+   ],
+   "verdict": "partially_supported",
+   "note": "Record mentions 30-day posted notice but not that it's yellow or online filing; 300 ft notification distance not stated."
+  },
+  {
+   "item_id": "step:5",
+   "not_in_records": [
+    "After CUA approval",
+    "city's Public Convenience or Necessity finding",
+    "Planning Commission's PCN finding letter",
+    "30-day public notice",
+    "Post the 30-day public notice at the premises"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records show ABC may require a PCN finding and mention local conditional-use permit, but do not state CUA specifically, city issuing PCN, Planning Commission issuing it, or 30-day notice requirement."
+  },
+  {
+   "item_id": "step:6",
+   "not_in_records": [
+    "indicate that the CUA and POE permit are approved and attach copies"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records describe filing a building permit with routing to DPH, Fire, and Planning, and scheduling DPH inspections at 80% and final, but do not mention attaching CUA or POE permit copies."
+  },
+  {
+   "item_id": "step:7",
+   "not_in_records": [
+    "apply for Health Permit after final DBI and DPH inspections",
+    "obtain certifications in the final two weeks before opening",
+    "submit with proof that building permit final was issued",
+    "schedule the DPH final inspection"
+   ],
+   "verdict": "partially_supported",
+   "note": "Records say apply at least one month before opening; permit issued after final inspection. Records do not mention DBI inspections or building permit final as prerequisites."
+  },
+  {
+   "item_id": "timeline",
+   "not_in_records": [],
+   "verdict": "supported",
+   "note": ""
+  }
+ ]
+}

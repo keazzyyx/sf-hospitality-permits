@@ -1,0 +1,530 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 33,
+  "supported": 6,
+  "trimmed": 12,
+  "downgraded": 6,
+  "dropped": 9
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "An active ABC Type 47 licence (full bar, eating place) is on file at 1801 Haight St, issued June 6, 2024, and the rules read the space as a Restaurant from that licence type.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 47 licence (eating place) is on file at 1801 Haight St, issued June 6, 2024, and the rules read the space as a Restaurant from that licence type.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "An active ABC Type 47 licence (full bar, eating place) is on file at 1801 Haight St, issued June 6, 2024, and the rules read the space as a Restaurant from that licence type.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the permit as 'On-Sale General - Eating Place' but does not use the term 'full bar.'"
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Planning approved the current Type 47 licence in May 2024 as a continuation of existing use in the Haight Street Alcohol Restricted Use Subdistrict, finding that prior Type 06 and Type 74 craft distillery licences were similar to a Type 47, so no new on-sale liquor establishment was created.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved the current Type 47 licence in May 2024 as a continuation of existing use in the Haight Street Alcohol Restricted Use Subdistrict, finding that prior Type 06 and Type 74 licences were similar to a Type 47, so no new on-sale liquor establishment was created.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved the current Type 47 licence in May 2024 as a continuation of existing use in the Haight Street Alcohol Restricted Use Subdistrict, finding that prior Type 06 and Type 74 licences were similar to a Type 47, so no new on-sale liquor establishment was created.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2023-010501MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization approved in May 1992 expanded this restaurant from 820 sq ft to 2,270 sq ft at 1801 Haight St, establishing precedent for enlargement at this address.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization approved in May 1992 expanded this restaurant from 820 sq ft to 2,270 sq ft at 1801 Haight St.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A Conditional Use Authorization approved in May 1992 expanded this restaurant from 820 sq ft to 2,270 sq ft at 1801 Haight St.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:1992.148C"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use for new on-sale liquor establishments (ABC Types 40, 41, 42, 47, 48, 57), and a new restaurant here would require Conditional Use under that rule even though restaurants are principally permitted in NCD-HAIGHT zoning.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use for new on-sale liquor establishments (ABC Types 40, 41, 42, 47, 48, 57), and a new restaurant here would require Conditional Use under that rule even though restaurants are principally permitted in NCD-HAIGHT zoning.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show both districts apply at this address but list bar_permission and restaurant_permission as 'unknown'; they do not state the Conditional Use requirements or ABC license types."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Planning Code § 178 prohibits significantly altering, enlarging or intensifying a conditional use without a new Conditional Use Authorization, and enlarging an existing restaurant that would be conditional if new triggers this requirement.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 178 prohibits significantly altering, enlarging or intensifying a conditional use without a new Conditional Use Authorization, and enlarging an existing restaurant that would be conditional if new triggers this requirement.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention Planning Code § 178 or rules about altering conditional uses."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Enlarging the existing restaurant requires Conditional Use Authorization per Planning Code § 178 because a new restaurant would be conditional in the Haight Alcohol Restricted Use Subdistrict and the records do not establish whether the outdoor area meets all principally permitted limits.",
+   "verdict": "partially_supported",
+   "supported_text": "Enlarging the existing restaurant requires Conditional Use Authorization per Planning Code § 178 and the records do not establish whether the outdoor area meets all principally permitted limits.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Enlarging the existing restaurant requires Conditional Use Authorization per Planning Code § 178 and the records do not establish whether the outdoor area meets all principally permitted limits.",
+   "confidence": null,
+   "citations": [
+    "app:abc:654333",
+    "app:datasf_planning:2023-010501MIS",
+    "app:datasf_planning:1992.148C",
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use",
+    "zoning:NCD-HAIGHT"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "The business states it already holds the alcohol licence. An active ABC Type 47 (on-sale general, eating place) is on file at 1801 Haight St, issued June 6, 2024.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 47 (on-sale general, eating place) is on file at 1801 Haight St, issued June 6, 2024.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 47 (on-sale general, eating place) is on file at 1801 Haight St, issued June 6, 2024.",
+   "confidence": "verified",
+   "citations": [
+    "app:abc:654333"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Eight active on-sale ABC licences exist within 500 ft of this address, and 18 within 1,000 ft, triggering the density statistics' undue-concentration flag as a proxy for ABC's census tract test.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Eight active on-sale ABC licences exist within 500 ft of this address, and 18 within 1,000 ft, triggering the density statistics' undue-concentration flag as a proxy for ABC's census tract test.",
+   "confidence": "verified",
+   "citations": [
+    "stat:density"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "Planning approved three ABC licence transfers or continuations for existing restaurants in the Haight Street Alcohol Restricted Use Subdistrict within 100 meters of this address between August 2022 and May 2024, all as continuation of existing liquor establishments without requiring Conditional Use Authorization.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved three ABC licence transfers or continuations for existing restaurants in the Haight Street Alcohol Restricted Use Subdistrict within 100 meters of this address between August 2022 and May 2024, all as continuation of existing liquor establishments.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved three ABC licence transfers or continuations for existing restaurants in the Haight Street Alcohol Restricted Use Subdistrict within 100 meters of this address between August 2022 and May 2024, all as continuation of existing liquor establishments.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2023-010501MIS",
+    "app:datasf_planning:2022-007085MIS",
+    "app:datasf_planning:2022-008240MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The concept states it already holds the alcohol licence, but the description does not specify whether beer and wine or full liquor will be served, so the rules cannot determine which ABC licence type applies or whether Planning Code liquor-district rules are met.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The concept states it already holds the alcohol licence, but the description does not specify whether beer and wine or full liquor will be served, so the rules cannot determine which ABC licence type applies or whether Planning Code liquor-district rules are met.",
+   "confidence": null,
+   "citations": [
+    "app:abc:654333",
+    "stat:density",
+    "app:datasf_planning:2023-010501MIS",
+    "app:datasf_planning:2022-007085MIS",
+    "app:datasf_planning:2022-008240MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Any food facility needs a health permit to operate, issued by the SF Department of Public Health after plan check, equipment and finishes approval, and pre-opening inspection, without a Planning Commission hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "Any food facility needs a health permit to operate, issued by the SF Department of Public Health after pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Any food facility needs a health permit to operate, issued by the SF Department of Public Health after pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Six health-permit agency referrals for restaurants at 1801 Haight St and adjacent addresses on this parcel were approved between 2010 and 2024, most within 10 to 20 days, as continuation of existing restaurant use.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Six health-permit agency referrals for restaurants at 1801 Haight St and adjacent addresses on this parcel were approved between 2010 and 2024, most within 10 to 20 days, as continuation of existing restaurant use.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show only 2 agency referrals (one in 2010, one in 2017), not six."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued after plan check and final inspection without a discretionary hearing and is allowed for this restaurant enlargement.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is issued after plan check and final inspection without a discretionary hearing and is allowed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is issued after plan check and final inspection without a discretionary hearing and is allowed.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2017-007731MIS",
+    "app:datasf_planning:MB1000002"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Tenant improvements are described (raised outdoor structure, new restroom and exit signage), and any alteration with a kitchen build-out or change of occupancy requires a building permit from the SF Department of Building Inspection with plans stamped by an architect.",
+   "verdict": "partially_supported",
+   "supported_text": "Any alteration with a kitchen build-out or change of occupancy requires a building permit from the SF Department of Building Inspection with plans stamped by an architect.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Any alteration with a kitchen build-out or change of occupancy requires a building permit from the SF Department of Building Inspection with plans stamped by an architect.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules cannot determine which building permit applies without knowing whether the space is for fewer than 50 people and the existing occupancy group, which only plans or an inspection show; a change of occupancy is not established.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules cannot determine which building permit applies without knowing whether the space is for fewer than 50 people and the existing occupancy group, which only plans or an inspection show; a change of occupancy is not established.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:outdoor:0",
+   "kind": "finding",
+   "original": "An outdoor activity area elsewhere on the lot is a conditional use in NCD-HAIGHT zoning unless it keeps within the limits of Planning Code § 202.2(a)(7): on the ground level; operating only 9 a.m. to 10 p.m.; not with a Bar use; with a Restaurant, seated areas only with no standing; alcohol dispensed only inside or by wait staff at the patron's seat.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "An outdoor activity area elsewhere on the lot is a conditional use in NCD-HAIGHT zoning unless it keeps within the limits of Planning Code § 202.2(a)(7): on the ground level; operating only 9 a.m. to 10 p.m.; not with a Bar use; with a Restaurant, seated areas only with no standing; alcohol dispensed only inside or by wait staff at the patron's seat.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited record does not contain any information about outdoor activity areas, § 202.2(a)(7), or the conditions listed."
+  },
+  {
+   "item_id": "row:outdoor:2",
+   "kind": "finding",
+   "original": "Planning approved outdoor dining for an existing restaurant at 1650-1654 Haight St (230 m west in NCD-HAIGHT) in January 2008 through a Conditional Use Authorization filed in September 2007 and a Variance filed in December 2007.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Planning approved outdoor dining for an existing restaurant at 1650-1654 Haight St (230 m west in NCD-HAIGHT) in January 2008 through a Conditional Use Authorization filed in September 2007 and a Variance filed in December 2007.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2007.1046C",
+    "app:datasf_planning:2007.1046V"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:outdoor:3",
+   "kind": "finding",
+   "original": "Planning approved outdoor seating for an existing restaurant at 1640 Haight St (247 m west) in May 2013 as a continuation of use, citing language in prior CUA cases that permitted outdoor seating, with the explicit condition that no building expansion or lightwell infill was allowed.",
+   "verdict": "partially_supported",
+   "supported_text": "Planning approved outdoor seating for an existing restaurant at 1640 Haight St (247 m) in May 2013 as a continuation of use, citing language in prior CUA cases that permitted outdoor seating, with the explicit condition that no building expansion or lightwell infill was allowed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Planning approved outdoor seating for an existing restaurant at 1640 Haight St (247 m) in May 2013 as a continuation of use, citing language in prior CUA cases that permitted outdoor seating, with the explicit condition that no building expansion or lightwell infill was allowed.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MB1300620"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:outdoor:4",
+   "kind": "finding",
+   "original": "Planning approved a Limited Live Performance permit with outdoor entertainment and amplified sound in a parklet for the bar at 1807 Haight St (24 m away, same block) in June 2024.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Planning approved a Limited Live Performance permit with outdoor entertainment and amplified sound in a parklet for the bar at 1807 Haight St (24 m away, same block) in June 2024.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2024-004523MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:outdoor",
+   "kind": "summary",
+   "original": "The rules cannot say whether the outdoor activity area in the parking lot needs a Conditional Use Authorization without knowing whether it meets every limit of Planning Code § 202.2(a)(7) for principally permitted outdoor activity areas.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules cannot say whether the outdoor activity area needs a Conditional Use Authorization without knowing whether it meets every limit of Planning Code § 202.2(a)(7).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The rules cannot say whether the outdoor activity area needs a Conditional Use Authorization without knowing whether it meets every limit of Planning Code § 202.2(a)(7).",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-HAIGHT",
+    "app:datasf_planning:2007.1046C",
+    "app:datasf_planning:2007.1046V",
+    "app:datasf_planning:MB1300620",
+    "app:datasf_planning:2024-004523MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Outdoor dining hours limited to 9:00 a.m. to 10:00 p.m. if the outdoor area is to be principally permitted under Planning Code § 202.2(a)(7). Basis: Planning Code § 202.2(a)(7) permits outdoor activity areas without Conditional Use only if they operate between 9:00 a.m. and 10:00 p.m. The 2013 approval at 1640 Haight St cited this section for outdoor seating as a continuation of use, and the 2008 outdoor dining CUA at 1650 Haight St likely carried hour limits as well.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records do not contain the text of § 202.2(a)(7) or its hours requirement, and the 1640 Haight approval cites different code sections, not § 202.2(a)(7)."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Alcohol service outdoors limited to seated patrons only, with alcohol dispensed inside the premises or by wait staff at the patron's seat; no self-service bar or standing drink areas outdoors. Basis: Planning Code § 202.2(a)(7) permits outdoor activity areas with a Restaurant only if alcohol is dispensed inside or by wait staff at the seat. The Haight Alcohol Restricted Use Subdistrict's sensitivity to new alcohol establishments suggests any outdoor alcohol service will be scrutinized.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records do not contain Planning Code § 202.2(a)(7) or state the Subdistrict's sensitivity to alcohol establishments or scrutiny of outdoor service."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Outdoor seating area limited to seated dining only; no standing areas, loitering or congregation space outdoors. Basis: Planning Code § 202.2(a)(7) allows outdoor activity areas with a Restaurant only for seated areas with no standing. This is a standard condition to distinguish restaurant outdoor dining from bar-style outdoor areas.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not mention § 202.2(a)(7) or any rules about outdoor seating areas."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: The outdoor structure may not alter the building footprint, encroach on required rear yards under Planning Code § 134, or constitute building expansion that would require neighborhood notification or discretionary review. Basis: The 2013 approval at 1640 Haight St explicitly conditioned outdoor seating on 'no building expansion or lightwell infill.' Planning and DBI scrutinize whether outdoor structures in parking lots or rear yards comply with setback rules.",
+   "verdict": "partially_supported",
+   "supported_text": "Basis: The 2013 approval at 1640 Haight St explicitly conditioned outdoor seating on 'no building expansion or lightwell infill.'",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record states 'no building expansion or lightwell infill' but does not mention footprint, § 134, rear yards, or agency scrutiny of setback rules."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: The business must continue to operate as a bona fide eating place, with food service available during all hours alcohol is served, per Planning Code § 790.142. Basis: Multiple ABC referrals for restaurants in the Haight Street district (2017-007014MIS, 2017-007731MIS, MB1300289) were conditioned on operating as a bona fide eating place to maintain the restaurant use rather than becoming a bar use.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The business must continue to operate as a bona fide eating place, per Planning Code § 790.142. Basis: Multiple ABC referrals for restaurants in the Haight Street district (2017-007014MIS, 2017-007731MIS) were conditioned on operating as a bona fide eating place.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show bona fide eating place requirement but not the specific detail about food service during all alcohol service hours, do not mention MB1300289, and do not state the purpose of maintaining restaurant use vs. bar use."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Compliance with all conditions of the 1992 Conditional Use Authorization (case 1992.148C) unless explicitly modified by a new CUA or written determination from Planning. Basis: Planning Code § 303(e) requires a new Conditional Use Authorization to change the conditions of an earlier approval. The 1992 CUA is on file for this address, and the rules flagged that whether the proposal changes its conditions is not established.",
+   "verdict": "partially_supported",
+   "supported_text": "The 1992 CUA is on file for this address.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record confirms 1992 CUA exists at address but does not state Planning Code § 303(e) requirement or the compliance condition derived from it."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms a Conditional Use Authorization is required, prepare and file a CUA application with San Francisco Planning, including a project description, site plan, seating layout, hours of operation, alcohol service plan, and neighbor outreach documentation. What to say: Frame the proposal as an enlargement of a long-established restaurant (operating since at least 1992, previously approved for expansion under case 1992.148C) that improves the outdoor dining character of Haight Street. Emphasize that the existing ABC Type 47 licence continues without establishing a new on-sale liquor establishment, consistent with Planning's May 2024 interpretation in case 2023-010501MIS. Commit to hours ending by 10 p.m., seated service only, and alcohol served by wait staff at tables. Highlight that the adjacent bar at 1807 Haight St was approved for outdoor entertainment in a parklet in June 2024, showing current Planning support for outdoor uses on this block.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: If Planning confirms a Conditional Use Authorization is required, prepare and file a CUA application with San Francisco Planning, including a project description, site plan, seating layout, hours of operation, alcohol service plan, and neighbor outreach documentation. What to say: Frame the proposal as an enlargement of a long-established restaurant (operating since at least 1992, previously approved for expansion under case 1992.148C) that improves the outdoor dining character of Haight Street. Emphasize that the existing ABC Type 47 licence continues without establishing a new on-sale liquor establishment, consistent with Planning's May 2024 interpretation in case 2023-010501MIS. Commit to hours ending by 10 p.m., seated service only, and alcohol served by wait staff at tables. Highlight that the adjacent bar at 1807 Haight St was approved for outdoor entertainment in a parklet in June 2024, showing current Planning support for outdoor uses on this block.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:1992.148C",
+    "app:datasf_planning:2023-010501MIS",
+    "app:datasf_planning:2024-004523MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the SF Treasurer & Tax Collector to obtain a Business Account Number (BAN), required before any other city permit applications. What to say: File online or in person with the entity name, federal EIN, and business address. The BAN is needed for the health plan check, building permit, and any Planning applications.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the SF Treasurer & Tax Collector to obtain a Business Account Number (BAN), required before any other city permit applications.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record confirms BAN from Treasurer & Tax Collector is needed for other city permits, but does not specify filing methods or required information."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Submit building permit plans to the SF Department of Building Inspection for the tenant improvements (raised outdoor structure, new restroom, exit signage), with architectural plans stamped by a California-licensed architect. What to say: Include the site plan showing the parking-lot outdoor dining area, structural details of any raised platform, restroom and exit upgrades, and confirmation that no building footprint expansion or rear-yard encroachment occurs. Request routing to Planning (automatic under PC § 175(a)) and DPH. Attach the Letter of Determination or CUA approval from step 1 or 2 to show zoning compliance for the outdoor area.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit building permit plans to the SF Department of Building Inspection for the tenant improvements (raised outdoor structure, new restroom, exit signage), with architectural plans stamped by a California-licensed architect. What to say: Include the site plan showing the parking-lot outdoor dining area, structural details of any raised platform, restroom and exit upgrades, and confirmation that no building footprint expansion or rear-yard encroachment occurs. Request routing to Planning and DPH. Attach the Letter of Determination or CUA approval from step 1 or 2 to show zoning compliance for the outdoor area.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Submit building permit plans to the SF Department of Building Inspection for the tenant improvements (raised outdoor structure, new restroom, exit signage), with architectural plans stamped by a California-licensed architect. What to say: Include the site plan showing the parking-lot outdoor dining area, structural details of any raised platform, restroom and exit upgrades, and confirmation that no building footprint expansion or rear-yard encroachment occurs. Request routing to Planning and DPH. Attach the Letter of Determination or CUA approval from step 1 or 2 to show zoning compliance for the outdoor area.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Submit DPH plan check application for the kitchen and outdoor dining area through the SF Department of Public Health Environmental Health portal, including menu, equipment list, seating layout, and finishes schedule. What to say: Describe limited cooking (the concept states limited cooking type), the outdoor dining area as an extension of the existing restaurant, and any new handwash or prep sinks. Request a pre-final inspection at 80% construction completion and schedule the final pre-opening inspection at least two weeks in advance with the assigned plan reviewer.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit DPH plan check application for the kitchen and outdoor dining area through the SF Department of Public Health Environmental Health portal, including menu, equipment list, and finishes schedule. What to say: Describe limited cooking (the concept states limited cooking type), the outdoor dining area as an extension of the existing restaurant, and any new handwash or prep sinks. Request a pre-final inspection at 80% construction completion and schedule the final pre-opening inspection at least two weeks in advance with the assigned plan reviewer.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Submit DPH plan check application for the kitchen and outdoor dining area through the SF Department of Public Health Environmental Health portal, including menu, equipment list, and finishes schedule. What to say: Describe limited cooking (the concept states limited cooking type), the outdoor dining area as an extension of the existing restaurant, and any new handwash or prep sinks. Request a pre-final inspection at 80% construction completion and schedule the final pre-opening inspection at least two weeks in advance with the assigned plan reviewer.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: If the existing ABC Type 47 licence premises does not already include the outdoor area, file a premises modification application with the California Department of Alcoholic Beverage Control to add the parking-lot dining area to the licensed premises. What to say: Attach a diagram showing the indoor and outdoor service areas, the CUA or Letter of Determination from Planning approving the outdoor area, and confirmation that alcohol will be served only by wait staff at seated patrons' tables. ABC may require a 30-day public posting and local agency sign-off.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms an active Type 47 licence but does not describe the premises modification process, required attachments, or posting requirements."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: After DBI issues the building permit and DPH approves the plans, complete construction and request the final DPH pre-opening inspection, with a certified food safety manager on staff and the DPH-approved plans on site. What to say: Confirm all equipment, finishes, handwash sinks, and the outdoor dining area match the approved plans. The health permit to operate is issued after the final inspection passes.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: After DBI issues the building permit and DPH approves the plans, complete construction and request the final DPH pre-opening inspection, with a certified food safety manager on staff. What to say: Confirm handwash sinks match the approved plans. The health permit to operate is issued after the final inspection passes.",
+   "cut_problem": "keeps 'outdoor dining area match the approved plans', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record confirms certified food safety manager requirement, final inspection, and handwash sinks, but does not mention plans must be on site or specify equipment, finishes, or outdoor dining."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $18,500. Notes: This range is the time to approval if the Conditional Use Authorization and building permit are granted. It covers the CUA (120–300 days from filing to Commission approval per the 2007 outdoor dining case at 1650 Haight St and typical CUA timelines) and the building permit (14–120 days). The CUA is the critical path: pre-application meetings and preparation add 4–8 weeks before filing, environmental review and neighborhood notification add 60–90 days, and hearing scheduling takes another 30–60 days. If Planning determines at the pre-application meeting that the outdoor area is principally permitted under PC § 202.2(a)(7), the timeline drops to 14–120 days for the building permit and health permit only (submitted in parallel), and the cost drops to $800–$15,000 building permit plus $1,298–$3,500 health plan check and permit, totaling roughly $2,100–$18,500. The cost range shown assumes a CUA is required: approximately $3,100–$15,000 for a CUA (depending on construction valuation and fee waiver eligibility, based on catalog entry for sf.conditional_use_authorization) plus $800–$15,000 building permit, excluding the health permit fees already included in other approvals. These figures are government fees only and exclude architect, expediter, and construction costs. The outdoor dining cases at 1650 Haight St took 128 days (CUA filed Sept 2007, approved Jan 2008) plus 12 days for the variance, and at 1640 Haight St took 36 days (agency referral filed April 2013, approved May 2013), showing the wide range depending on the permit path.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $18,500. Notes: This range is the time to approval if the Conditional Use Authorization and building permit are granted. It covers the CUA (120–300 days from filing to Commission approval per the 2007 outdoor dining case at 1650 Haight St and typical CUA timelines) and the building permit (14–120 days). The CUA is the critical path: pre-application meetings and preparation add 4–8 weeks before filing, environmental review and neighborhood notification add 60–90 days, and hearing scheduling takes another 30–60 days. If Planning determines at the pre-application meeting that the outdoor area is principally permitted under PC § 202.2(a)(7), the timeline drops to 14–120 days for the building permit and health permit only (submitted in parallel), and the cost drops to $800–$15,000 building permit plus $1,298–$3,500 health plan check and permit, totaling roughly $2,100–$18,500. The cost range shown assumes a CUA is required: approximately $3,100–$15,000 for a CUA (depending on construction valuation and fee waiver eligibility, based on catalog entry for sf.conditional_use_authorization) plus $800–$15,000 building permit, excluding the health permit fees already included in other approvals. These figures are government fees only and exclude architect, expediter, and construction costs. The outdoor dining cases at 1650 Haight St took 128 days (CUA filed Sept 2007, approved Jan 2008) plus 12 days for the variance, and at 1640 Haight St took 36 days (agency referral filed April 2013, approved May 2013), showing the wide range depending on the permit path.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The CUA catalog entry referenced for costs is not among cited records; the 1650 Haight case shows no variance; timeline breakdowns for pre-application, environmental review, and hearing are not in records."
+  }
+ ]
+}

@@ -1,0 +1,1429 @@
+{
+ "format_version": 3,
+ "address": "1657 Powell St, San Francisco, CA 94133",
+ "lat": 37.79994773032032,
+ "lng": -122.4110125210572,
+ "parcel": "0118/002",
+ "description": "",
+ "headline_findings": [],
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 1 further review (zoning and use), 2 insufficient information (alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "citations": []
+ },
+ "pathway": {
+  "use": "not_covered",
+  "use_label": "a use the rule table does not cover",
+  "district": "NCD-NORTH BEACH",
+  "permission": "not_covered",
+  "permission_label": "Not covered by the rule table",
+  "existing_use": null,
+  "change_of_use": "not_established",
+  "change_of_use_label": "Change of use not established",
+  "lines": [
+   {
+    "rule_id": "T1.no_use",
+    "text": "The description does not say what kind of business it is, so no use control was looked up.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "T2.no_rule",
+    "text": "North Beach Special Use District: no use rule on file reaches this concept on 2024-03-04.",
+    "code_section": null,
+    "source_url": null,
+    "citations": [
+     "zoning:NCD-NORTH BEACH"
+    ]
+   },
+   {
+    "rule_id": "T4.no_rule",
+    "text": "North Beach Special Use District: no liquor licence rule on file reaches this concept on 2024-03-04.",
+    "code_section": null,
+    "source_url": null,
+    "citations": [
+     "zoning:NCD-NORTH BEACH"
+    ]
+   },
+   {
+    "rule_id": "T11.missing",
+    "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; NP 02:00-06:00; Planning Code § 722, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+    "code_section": "Planning Code § 722",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-722.-north-beach-neighborhood-commercial-district",
+    "citations": [
+     "zoning:NCD-NORTH BEACH"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1657 Powell St, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 722",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66848",
+    "citations": [
+     "overlay:static:sf:north_beach_sud",
+     "zoning:NCD-NORTH BEACH"
+    ]
+   }
+  ],
+  "rules_date": "2024-03-04",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.no_rule",
+      "text": "North Beach Special Use District: no use rule on file reaches this concept on 2024-03-04.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-NORTH BEACH"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.no_rule",
+      "text": "North Beach Special Use District: no liquor licence rule on file reaches this concept on 2024-03-04.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:NCD-NORTH BEACH"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T6.none",
+      "text": "No entertainment is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T7.below",
+      "text": "Zoning district NCD-NORTH BEACH: a use below 2,000 square feet is principally permitted, and 1,678 square feet is below it (Planning Code § 722, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 722",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-722.-north-beach-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-NORTH BEACH"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a retail use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether the conditions of an earlier approval are to be changed"
+    ],
+    "lines": [
+     {
+      "rule_id": "T10.missing",
+      "text": "An earlier Conditional Use decision is on file at this address (datasf_planning:2004.1174C, 2005-01-27) and a business stays. The description does not say whether the proposal changes a condition of that approval, so this is not decided (Planning Code § 303(e)).",
+      "code_section": "Planning Code §§ 303(e); 174",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-303.-conditional-uses",
+      "citations": [
+       "app:datasf_planning:2004.1174C"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time. Hours that are not principally permitted begin at 2 a.m. or later here (P 06:00-02:00; NP 02:00-06:00; Planning Code § 722, in force since before 2022-01-01); the rules did not check a closing time after 2 a.m.",
+      "code_section": "Planning Code § 722",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-7-neighborhood-commercial-districts/sec.-722.-north-beach-neighborhood-commercial-district",
+      "citations": [
+       "zoning:NCD-NORTH BEACH"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   }
+  ],
+  "changes": {
+   "planning_use": "not_established",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1657 Powell St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_required",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "Under the Planning Code as in force on 4 March 2024, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+     "code_section": "Planning Code § 311(b)(1)-(4)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: Use control of the zoning district.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "stories",
+     "label": "Stories the business is on",
+     "value": "First story",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "floor_area_sqft",
+     "label": "Floor area",
+     "value": "1,678 sq ft",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "No change",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "prior_approvals",
+     "label": "Earlier approved use decisions at this address",
+     "value": "Conditional Use Authorization (2005-01-27)",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": [
+      "app:datasf_planning:2004.1174C"
+     ]
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "alcohol",
+   "area_label": "Alcohol licence",
+   "approval": "ABC licence",
+   "agency": "California Department of Alcoholic Beverage Control",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "alcohol.status",
+     "text": "The description does not give the licence type and how the liquor licence will be obtained (new, or a transfer from another owner or another location), so the rules cannot say which licence rules apply: insufficient information.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "backtest.licences_status_unknown",
+     "text": "Licences with an unknown status on 2024-03-04: 5 ABC licences within 1,000 ft and 1 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+     "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+     "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "the licence type",
+    "how the liquor licence will be obtained (new, or a transfer from another owner or another location)"
+   ],
+   "facts": [
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "No change",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "active_licences",
+     "label": "Active ABC licences at this address",
+     "value": "None on file",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1657 Powell St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "facts": [
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Retail",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "No change",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "floor_area_sqft",
+     "label": "Floor area",
+     "value": "1,678 sq ft",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "facts": [
+  {
+   "fact": "food_service",
+   "label": "Kind of food or drink service (a business that serves no alcohol is not a Bar)",
+   "value": "None",
+   "origin": "description",
+   "origin_label": "Worked out by the rules from your description",
+   "derived": true,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "floor_area_sqft",
+   "label": "Floor area",
+   "value": "1,678 sq ft",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "existing_use_stated",
+   "label": "Last use of the space, as described",
+   "value": "Retail",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "changes_existing_business",
+   "label": "Change to a business already there",
+   "value": "No change",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "stories",
+   "label": "Stories the business is on",
+   "value": "First story",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "planning_uses",
+   "label": "Kind of business (Planning Code use)",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "licence_type",
+   "label": "Liquor licence type",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "alcohol_transaction",
+   "label": "How the liquor licence is obtained",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "amends_prior_approval",
+   "label": "Changes the conditions of an earlier approval",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: whether the conditions of an earlier approval are to be changed. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "amends_prior_approval"
+  },
+  {
+   "question": "Not known: the licence type. Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: how the liquor licence will be obtained (new, or a transfer from another owner or another location). Needed for: alcohol licence.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "liquor_licence"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space",
+   "intake_question": "existing_occupancy_group"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "NCD-NORTH BEACH",
+  "name": "North Beach Neighborhood Commercial District: bar and restaurant controls",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 722 (Zoning Control Table 722, Note 5)",
+  "citation_id": "zoning:NCD-NORTH BEACH"
+ },
+ "overlays": [
+  {
+   "name": "North Beach Neighborhood Commercial District: bar and restaurant controls",
+   "kind": "nc_rule",
+   "effect": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 722 (Zoning Control Table 722, Note 5)",
+   "citation_id": "overlay:static:sf:north_beach_sud"
+  },
+  {
+   "name": "Priority Equity Geographies SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.97",
+   "citation_id": "overlay:datasf_sud:priority_equity_geographies_sud"
+  }
+ ],
+ "base_rate": {
+  "approved": 5,
+  "approved_with_conditions": 3,
+  "denied": 0,
+  "withdrawn": 2,
+  "total": 10,
+  "window_years": 10,
+  "scope": "N = 10 dated decisions in zoning district NCD-NORTH BEACH (within 1,000 ft), last 10 years (fewer than 5 in the last 5); left out: 65 permits and licences, 290 records that are not use decisions for this kind of business",
+  "rate_shown": true,
+  "approval_rate_pct": 80.0,
+  "excluded_grant_only": 65,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 290,
+  "citation_id": "stat:base_rate",
+  "counted": [
+   {
+    "application_id": "datasf_planning:2022-008360CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "580 GREEN ST 94133",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2022-08-25",
+    "decided_at": "2023-03-30",
+    "source_url": "https://sfplanninggis.org/pim?search=2022-008360CUA"
+   },
+   {
+    "application_id": "datasf_planning:2022-002108CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "414 COLUMBUS AVE 94133",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2022-03-10",
+    "decided_at": "2022-12-05",
+    "source_url": "https://sfplanninggis.org/pim?search=2022-002108CUA"
+   },
+   {
+    "application_id": "datasf_planning:2021-009021MIS",
+    "permit_type": "Miscellaneous Permit",
+    "address": "716 COLUMBUS AVE 94133",
+    "outcome": "approved",
+    "filed_at": "2021-09-02",
+    "decided_at": "2021-09-21",
+    "source_url": "https://sfplanninggis.org/pim?search=2021-009021MIS"
+   },
+   {
+    "application_id": "datasf_planning:2019-013418CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "526 COLUMBUS AVE 94133",
+    "outcome": "approved_with_conditions",
+    "filed_at": "2019-07-01",
+    "decided_at": "2020-06-01",
+    "source_url": "https://sfplanninggis.org/pim?search=2019-013418CUA"
+   },
+   {
+    "application_id": "datasf_planning:2014.0835C",
+    "permit_type": "Conditional Use Authorization",
+    "address": null,
+    "outcome": "approved",
+    "filed_at": "2014-06-04",
+    "decided_at": "2018-02-20",
+    "source_url": "https://sfplanninggis.org/pim?search=2014.0835C"
+   },
+   {
+    "application_id": "datasf_planning:2015-014718CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "716 COLUMBUS AVE 94133",
+    "outcome": "approved",
+    "filed_at": "2015-11-05",
+    "decided_at": "2017-06-19",
+    "source_url": "https://sfplanninggis.org/pim?search=2015-014718CUA"
+   },
+   {
+    "application_id": "datasf_planning:2016-000388CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "1526 POWELL ST 94133",
+    "outcome": "approved",
+    "filed_at": "2016-02-03",
+    "decided_at": "2016-10-26",
+    "source_url": "https://sfplanninggis.org/pim?search=2016-000388CUA"
+   },
+   {
+    "application_id": "datasf_planning:2015-014178CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "653 UNION ST 94133",
+    "outcome": "approved",
+    "filed_at": "2015-10-22",
+    "decided_at": "2016-03-03",
+    "source_url": "https://sfplanninggis.org/pim?search=2015-014178CUA"
+   },
+   {
+    "application_id": "datasf_planning:2015-008520CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "524 GREEN ST 94133",
+    "outcome": "withdrawn",
+    "filed_at": "2015-07-07",
+    "decided_at": "2015-07-20",
+    "source_url": "https://sfplanninggis.org/pim?search=2015-008520CUA"
+   },
+   {
+    "application_id": "datasf_planning:2015-006403CUA",
+    "permit_type": "Conditional Use Authorization",
+    "address": "507 COLUMBUS AVE 94133",
+    "outcome": "cancelled",
+    "filed_at": "2015-05-21",
+    "decided_at": "2015-06-30",
+    "source_url": "https://sfplanninggis.org/pim?search=2015-006403CUA"
+   }
+  ]
+ },
+ "comparable_cases": [
+  {
+   "application_id": "datasf_planning:2023-002096MIS",
+   "citation_id": "app:datasf_planning:2023-002096MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1609 POWELL ST 94133",
+   "distance_m": 53.0,
+   "filed_at": "2023-03-08",
+   "decided_at": "2023-03-29",
+   "days_to_decision": 21,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.923,
+   "lat": 37.79947475035814,
+   "lng": -122.41093175678343,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002096MIS"
+  },
+  {
+   "application_id": "datasf_planning:2023-010459MIS",
+   "citation_id": "app:datasf_planning:2023-010459MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "526 COLUMBUS AVE 94133",
+   "distance_m": 146.7,
+   "filed_at": "2023-11-08",
+   "decided_at": "2023-11-09",
+   "days_to_decision": 1,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.909,
+   "lat": 37.79997768413267,
+   "lng": -122.40934692181828,
+   "source_url": "https://sfplanninggis.org/pim?search=2023-010459MIS"
+  },
+  {
+   "application_id": "datasf_planning:2019-013418CUA",
+   "citation_id": "app:datasf_planning:2019-013418CUA",
+   "source": "sf_planning_hearings",
+   "source_label": "Planning Commission motion",
+   "record_kind": "use_decision",
+   "record_kind_label": "Use decision",
+   "permit_type": "Conditional Use Authorization",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "526 COLUMBUS AVE 94133",
+   "distance_m": 146.7,
+   "filed_at": "2019-07-01",
+   "decided_at": "2020-06-01",
+   "days_to_decision": 336,
+   "outcome": "approved_with_conditions",
+   "hours_close": null,
+   "conditions": [
+    "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effective date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three-year period. For information about comp liance, contact Code Enforcement, Planning Department at 415 -575-6863, (standard)",
+    "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit appl ication, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+    "Diligent Pursuit: Once a site or Buildin g Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+    "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+    "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. DESIGN – COMPLIANCE AT PLAN STAGE (standard)",
+    "Garbage, Composting and R ecycling Storage: Space for the collection and storage of garbage, composting, and recycling shall be provided within enclosed areas on the property and clearly labeled and illustrated on the building permit plans. Space for the collection and storage of recyclable and compostable materials that meets the size, location, accessibility and other standards specified by the San Francisco Recycling Program shall be provided at the ground level of the buildings. (standard)",
+    "Rooftop Mechanical Equipment: Pursuant to Planning Code 141, the Project Sponsor shall submit a roof plan to the Planning Department prior to Planning approval of the building permit application. Rooftop mechanical equipment, if any is proposed as part of the Project, is required to be screened so as not to be visible from any point at or below the roof level of the subject building. For information about com pliance, contact the Case Planner, Planning Department at 415 -558-6378, (standard)",
+    "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escaping the premi ses once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans. Odor control ducting shall not be applied to the primary façade of the building. (standard)",
+    "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+    "Revocation due to Violation of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercia l lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. OPERATION (standard)",
+    "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Mainte nance Standards. In addition, the operator shall be responsible for daily monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance with Article 1, Section 34 of the San Francisco Police Code. (standard)",
+    "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed-source equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. (standard)",
+    "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passersby, appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+    "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from public view and placed outside only when being serviced by the disposal company. Trash shall be contained and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Department of Public Works. Works at 415-554-.5810, http://sfdpw.org. (standard)",
+    "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+    "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a commun ity liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, and telephone number of the community liaison. (standard)"
+   ],
+   "opposition_noted": null,
+   "similarity_score": 0.907,
+   "lat": 37.79997768413267,
+   "lng": -122.40934692181828,
+   "source_url": "https://sfplanninggis.org/pim?search=2019-013418CUA"
+  },
+  {
+   "application_id": "datasf_planning:2022-001132MIS",
+   "citation_id": "app:datasf_planning:2022-001132MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1609 POWELL ST 94133",
+   "distance_m": 53.0,
+   "filed_at": "2022-02-09",
+   "decided_at": "2022-02-23",
+   "days_to_decision": 14,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.906,
+   "lat": 37.79947475035814,
+   "lng": -122.41093175678343,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-001132MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-004682MIS",
+   "citation_id": "app:datasf_planning:2021-004682MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "701 UNION ST 94133",
+   "distance_m": 11.7,
+   "filed_at": "2021-05-07",
+   "decided_at": "2021-05-26",
+   "days_to_decision": 19,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.905,
+   "lat": 37.80005157625196,
+   "lng": -122.41103297677552,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004682MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-009252MIS",
+   "citation_id": "app:datasf_planning:2021-009252MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "678 GREEN ST 94133",
+   "distance_m": 74.2,
+   "filed_at": "2021-09-09",
+   "decided_at": "2022-03-07",
+   "days_to_decision": 179,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.902,
+   "lat": 37.79963556941248,
+   "lng": -122.41026694782003,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-009252MIS"
+  },
+  {
+   "application_id": "datasf_planning:2024-001001MIS",
+   "citation_id": "app:datasf_planning:2024-001001MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "1512 STOCKTON ST 94133",
+   "distance_m": 195.8,
+   "filed_at": "2024-02-02",
+   "decided_at": "2024-02-07",
+   "days_to_decision": 5,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.9,
+   "lat": 37.79979669567588,
+   "lng": -122.40879713621145,
+   "source_url": "https://sfplanninggis.org/pim?search=2024-001001MIS"
+  },
+  {
+   "application_id": "datasf_planning:2021-008777MIS",
+   "citation_id": "app:datasf_planning:2021-008777MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "678 GREEN ST 94133",
+   "distance_m": 74.2,
+   "filed_at": "2021-08-27",
+   "decided_at": "2021-10-07",
+   "days_to_decision": 41,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.895,
+   "lat": 37.79963556941248,
+   "lng": -122.41026694782003,
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008777MIS"
+  },
+  {
+   "application_id": "datasf_planning:2022-009279MIS",
+   "citation_id": "app:datasf_planning:2022-009279MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "532 COLUMBUS AVE 94133",
+   "distance_m": 141.2,
+   "filed_at": "2022-09-23",
+   "decided_at": "2022-10-18",
+   "days_to_decision": 25,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.894,
+   "lat": 37.80006596988882,
+   "lng": -122.40941594197014,
+   "source_url": "https://sfplanninggis.org/pim?search=2022-009279MIS"
+  },
+  {
+   "application_id": "datasf_planning:2020-011712MIS",
+   "citation_id": "app:datasf_planning:2020-011712MIS",
+   "source": "datasf_planning",
+   "source_label": "Planning case list (DataSF)",
+   "record_kind": "agency_referral",
+   "record_kind_label": "Agency referral",
+   "permit_type": "Miscellaneous Permit",
+   "use_types": [
+    "restaurant"
+   ],
+   "address": "561 COLUMBUS AVE 94133",
+   "distance_m": 88.9,
+   "filed_at": "2020-12-17",
+   "decided_at": "2020-12-31",
+   "days_to_decision": 14,
+   "outcome": "approved",
+   "hours_close": null,
+   "conditions": [],
+   "opposition_noted": null,
+   "similarity_score": 0.88,
+   "lat": 37.799952100877114,
+   "lng": -122.41000297200586,
+   "source_url": "https://sfplanninggis.org/pim?search=2020-011712MIS"
+  }
+ ],
+ "comparables_note": "Planning and Entertainment Commission records within 1,000 ft, ranked by a fixed score: the kind of business in common (40%), the distance (25%), how recent the record is (15%), late-night hours in common (10%) and whether the case was decided (10%); a Conditional Use case scores a little higher. The top 10 are listed, best first. Each row shows what the record says, with a link to it. No model picks them.",
+ "site_history": {
+  "matched_by": "Parcel 0118/002 or the address 1657 Powell St",
+  "total": 2,
+  "by_kind": {
+   "use_decision": 1,
+   "agency_referral": 1
+  },
+  "entries": [
+   {
+    "application_id": "datasf_planning:2018-014120MIS",
+    "citation_id": "app:datasf_planning:2018-014120MIS",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "agency_referral",
+    "record_kind_label": "Agency referral",
+    "permit_type": "Miscellaneous Permit",
+    "description": "Health - Other: Liquor Store: Recommend Approval - Temporary authorization until 3/18/21 for a liquor store displaced by fire is permitted within the North Beach NCD per P.C. Sec. 722 and BoS Ord. 263-18. Authorization is tied to BPA #2018.10.10.2827. It is the responsibility of the business owner…",
+    "address": "1657 POWELL ST 94133",
+    "filed_at": "2018-10-16",
+    "decided_at": "2019-01-02",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2018-014120MIS",
+    "use_types": [
+     "retail_alcohol"
+    ],
+    "hours_close": null,
+    "conditions": []
+   },
+   {
+    "application_id": "datasf_planning:2004.1174C",
+    "citation_id": "app:datasf_planning:2004.1174C",
+    "source": "datasf_planning",
+    "source_label": "Planning case list (DataSF)",
+    "record_kind": "use_decision",
+    "record_kind_label": "Use decision",
+    "permit_type": "Conditional Use Authorization",
+    "description": "Establish a retail coffee store",
+    "address": "1655 - 1661 POWELL ST, SAN FRANCISCO, CA 94133",
+    "filed_at": "2004-11-10",
+    "decided_at": "2005-01-27",
+    "outcome": "approved",
+    "status": "Closed - Approved",
+    "source_url": "https://sfplanninggis.org/pim?search=2004.1174C",
+    "use_types": [
+     "cafe"
+    ],
+    "hours_close": null,
+    "conditions": []
+   }
+  ],
+  "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  },
+  {
+   "source": "sf_planning_hearings",
+   "label": "Planning Commission motion",
+   "leaves_out": "Conditions as adopted at the hearing. Later amendments, enforcement history and whether the business opened are not included."
+  },
+  {
+   "source": "abc",
+   "label": "ABC licence export",
+   "leaves_out": "Licences that are active or pending today. Denied and withdrawn applications are absent and there is no filing date, so it cannot show a failure or a processing time."
+  }
+ ],
+ "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Health permit to operate",
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "citations": [
+  {
+   "id": "app:datasf_planning:2004.1174C",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 1655 - 1661 POWELL ST, SAN FRANCISCO, CA 94133 · approved (2005)",
+   "source_url": "https://sfplanninggis.org/pim?search=2004.1174C",
+   "excerpt": "Establish a retail coffee store"
+  },
+  {
+   "id": "app:datasf_planning:2018-014120MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1657 POWELL ST 94133 · approved (2019)",
+   "source_url": "https://sfplanninggis.org/pim?search=2018-014120MIS",
+   "excerpt": "Health - Other: Liquor Store: Recommend Approval - Temporary authorization until 3/18/21 for a liquor store displaced by fire is permitted within the North Beach NCD per P.C. Sec. 722 and BoS Ord. 263-18. Authorization is tied to BPA #2018.10.10.2827. It is the responsibility of the business owner t"
+  },
+  {
+   "id": "app:datasf_planning:2019-013418CUA",
+   "kind": "application",
+   "label": "Conditional Use Authorization · 526 COLUMBUS AVE 94133 · approved with conditions (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2019-013418CUA",
+   "excerpt": "Conditional Use Authorization to allow a full kitchen in an established restaurant space in the basement and ground floor of the building."
+  },
+  {
+   "id": "app:datasf_planning:2020-011712MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 561 COLUMBUS AVE 94133 · approved (2020)",
+   "source_url": "https://sfplanninggis.org/pim?search=2020-011712MIS",
+   "excerpt": "Recommend approval of ABC Type 41 (On-Sale Beer & Wine - Eating Place) for (n) Restaurant\ndba North Beach Gyros. Must operate and maintain the licensed premises as a bona fide eating\nplace. Continuation of existing Restaurant use, permitted in the North Beach Special Use District\nin a space that was"
+  },
+  {
+   "id": "app:datasf_planning:2021-004682MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 701 UNION ST 94133 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-004682MIS",
+   "excerpt": "Recommend approval; Restaurant is permitted as continuation of existing use per Planning Commission Motion No. 13133."
+  },
+  {
+   "id": "app:datasf_planning:2021-008777MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 678 GREEN ST 94133 · approved (2021)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-008777MIS",
+   "excerpt": "Recommend approval of ABC Type 41 - On-Sale Beer & Wine - Eating Place (Restaurant). Must operate and maintain the licensed premises as a bona fide eating place. Restaurant is a Retail Sales and Service use permitted as an accessory to the existing Theater (Nightime Entertainment) use. Approval reco"
+  },
+  {
+   "id": "app:datasf_planning:2021-009252MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 678 GREEN ST 94133 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2021-009252MIS",
+   "excerpt": "DPH referral - Restaurant"
+  },
+  {
+   "id": "app:datasf_planning:2022-001132MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1609 POWELL ST 94133 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-001132MIS",
+   "excerpt": "Recommend approval of DPH Restaurant referral for an existing Restaurant conditionally permitted in the North Beach NCD and SUD per P.C. Sec. 722 and 780.3; continuation of existing use."
+  },
+  {
+   "id": "app:datasf_planning:2022-009279MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 532 COLUMBUS AVE 94133 · approved (2022)",
+   "source_url": "https://sfplanninggis.org/pim?search=2022-009279MIS",
+   "excerpt": "ABC referral - Type 47 for existing restaurant DBA Flour and Water."
+  },
+  {
+   "id": "app:datasf_planning:2023-002096MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1609 POWELL ST 94133 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-002096MIS",
+   "excerpt": "Recommend approval of person-to-person transfer of Type 41 ABC License; Restaurant is a Retail Sales and Service Use conditionally permitted in the North Beach Neighborhood Commercial Zoning District and North Beach Special Use District per Planning Code Sections 722 and 780.3. Continuation of exist"
+  },
+  {
+   "id": "app:datasf_planning:2023-010459MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 526 COLUMBUS AVE 94133 · approved (2023)",
+   "source_url": "https://sfplanninggis.org/pim?search=2023-010459MIS",
+   "excerpt": "ABC referral - Type 41 - Recommend approval - Restaurant is conditionally permitted use on the 1st floor in the North Beach NCD & North Beach Special Use District per P.C. §722 and 780.3; continuation of an existing use. Honora.montano@sfgov.org"
+  },
+  {
+   "id": "app:datasf_planning:2024-001001MIS",
+   "kind": "application",
+   "label": "Miscellaneous Permit · 1512 STOCKTON ST 94133 · approved (2024)",
+   "source_url": "https://sfplanninggis.org/pim?search=2024-001001MIS",
+   "excerpt": "ABC - Type 47 & 58; Recommend approval; Existing established restaurant is permitted per Planning Code Sections 722 & 780 and has an existing Type 47 license. Adding a Type 58 Caterer's Permit. CUA not required to add Type 58 per 780.3."
+  },
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 1657 Powell St, San Francisco, CA 94133 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=442680",
+   "excerpt": "parcel 0118/002"
+  },
+  {
+   "id": "overlay:datasf_sud:priority_equity_geographies_sud",
+   "kind": "overlay",
+   "label": "Priority Equity Geographies SUD — Planning Code § 249.97",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68826",
+   "excerpt": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "overlay:static:sf:north_beach_sud",
+   "kind": "overlay",
+   "label": "North Beach Neighborhood Commercial District: bar and restaurant controls — Planning Code § 722 (Zoning Control Table 722, Note 5)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66848",
+   "excerpt": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 8 approved / 0 denied / 2 withdrawn; N = 10 dated decisions in zoning district NCD-NORTH BEACH (within 1,000 ft), last 10 years (fewer than 5 in the last 5); left out: 65 permits and licences, 290 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 65 Entertainment Commission permits and ABC licences (lists of grants only), 290 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "zoning:NCD-NORTH BEACH",
+   "kind": "zoning",
+   "label": "Zoning NCD-NORTH BEACH — Planning Code § 722 (Zoning Control Table 722, Note 5)",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-66848",
+   "excerpt": "The controls as they stood on 2024-03-04 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement with the issuing agency before relying on it.",
+  "Comparable cases and counts come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and are not a guarantee. Planning Commission and ABC decisions are discretionary.",
+  "No sentence in this report is written by an AI model. A model reads your description into facts; each fact shows the words it came from, and what your words do not state is listed as not known."
+ ],
+ "generated_at": "2026-11-16T12:14:27+00:00",
+ "model_versions": {},
+ "data_as_of": "2024-03-04"
+}

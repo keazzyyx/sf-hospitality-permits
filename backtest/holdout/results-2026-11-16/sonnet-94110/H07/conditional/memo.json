@@ -1,0 +1,956 @@
+{
+ "format_version": 3,
+ "address": "225 San Leandro Way, San Francisco, CA 94127",
+ "lat": 37.732701707122956,
+ "lng": -122.46843963954542,
+ "parcel": "3253/015",
+ "description": "",
+ "headline_findings": [],
+ "overall": {
+  "status": "further_review",
+  "line": "Of the 4 approvals this concept needs: 2 further review (zoning and use, entertainment permit), 1 insufficient information (building permit and change of use), 1 allowed (health permit).",
+  "citations": []
+ },
+ "pathway": {
+  "use": "not_covered",
+  "use_label": "a use the rule table does not cover",
+  "district": "RH-1(D)",
+  "permission": "not_covered",
+  "permission_label": "Not covered by the rule table",
+  "existing_use": null,
+  "change_of_use": "not_established",
+  "change_of_use_label": "Change of use not established",
+  "lines": [
+   {
+    "rule_id": "T1.no_use",
+    "text": "The description does not say what kind of business it is, so no use control was looked up.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "not_carried",
+    "text": "The dated rule table does not carry RH-1(D), so this was not decided.",
+    "code_section": null,
+    "source_url": null,
+    "citations": [
+     "zoning:RH-1(D)"
+    ]
+   },
+   {
+    "rule_id": "zoning.existing_use",
+    "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 225 San Leandro Way, so the records do not show what the space is used as now.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   },
+   {
+    "rule_id": "change.planning_use",
+    "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+    "code_section": null,
+    "source_url": null,
+    "citations": []
+   }
+  ],
+  "notes": [
+   {
+    "rule_id": "zoning.note",
+    "text": "Note on file, not evaluated by the rules: The controls as they stood on 2023-12-03 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+    "code_section": "Planning Code § 209.1",
+    "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077",
+    "citations": [
+     "zoning:RH-1(D)"
+    ]
+   }
+  ],
+  "rules_date": "2023-12-03",
+  "triggers": [
+   {
+    "rule_id": "T1",
+    "family": "new_use_control",
+    "label": "Use control of the zoning district",
+    "control": "not_decided",
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+    ],
+    "lines": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T2",
+    "family": "special_district_use_control",
+    "label": "Use control of a special use district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T2.none",
+      "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T3",
+    "family": "enlarge_or_intensify",
+    "label": "Enlarging or intensifying an existing use",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T3.no_use",
+      "text": "A business stays, but no use the rule table covers continues at the address. The uses proposed are read as new uses.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T4",
+    "family": "licence_in_restricted_district",
+    "label": "Liquor licence rule of a restricted district",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T4.none",
+      "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T5",
+    "family": "formula_retail",
+    "label": "Formula retail",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T6",
+    "family": "nighttime_entertainment",
+    "label": "Nighttime entertainment",
+    "control": "not_decided",
+    "missing_inputs": [
+     "whether there is entertainment, and what kind",
+     "the rule table does not carry this zoning district"
+    ],
+    "lines": [
+     {
+      "rule_id": "not_carried",
+      "text": "The dated rule table does not carry RH-1(D), so this was not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:RH-1(D)"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T7",
+    "family": "use_size",
+    "label": "Use size",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the floor area of the business, in square feet",
+     "the rule table does not carry this zoning district"
+    ],
+    "lines": [
+     {
+      "rule_id": "not_carried",
+      "text": "The dated rule table does not carry RH-1(D), so this was not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:RH-1(D)"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T8",
+    "family": "laundromat_removal",
+    "label": "Removal of a laundromat",
+    "control": "principal",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, another use, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T9",
+    "family": "outdoor_activity_area",
+    "label": "Outdoor activity area",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T9.none",
+      "text": "No outdoor area is described, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T10",
+    "family": "amend_prior_conditions",
+    "label": "Changing the conditions of an earlier approval",
+    "control": "does_not_apply",
+    "missing_inputs": [],
+    "lines": [
+     {
+      "rule_id": "T10.none",
+      "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   },
+   {
+    "rule_id": "T11",
+    "family": "hours_of_operation",
+    "label": "Hours of operation",
+    "control": "not_decided",
+    "missing_inputs": [
+     "the rule table does not carry this zoning district"
+    ],
+    "lines": [
+     {
+      "rule_id": "not_carried",
+      "text": "The dated rule table does not carry RH-1(D), so this was not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:RH-1(D)"
+      ]
+     }
+    ],
+    "in_force_from": null,
+    "ordinance": null,
+    "differs_today": false,
+    "contingent": [],
+    "unsettled_by": []
+   }
+  ],
+  "changes": {
+   "planning_use": "not_established",
+   "planning_use_lines": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 225 San Leandro Way, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "building_occupancy": "not_established",
+   "building_occupancy_lines": [
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "neighbourhood_notice": "not_established",
+   "neighbourhood_notice_lines": [
+    {
+     "rule_id": "change.notice",
+     "text": "On 3 December 2023 a change of use could need neighbourhood notice. Whether the use changes is not established, so whether notice was needed is not established.",
+     "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (b)(1)(C), (d)",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+     "citations": []
+    }
+   ]
+  }
+ },
+ "approvals": [
+  {
+   "area": "zoning_use",
+   "area_label": "Zoning and use",
+   "approval": "Conditional Use Authorization (Planning Code § 303)",
+   "agency": "San Francisco Planning",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "backtest.supplied_pathway",
+     "text": "Supplied for this run (the correct pathway under the rules in force on the rules date): a Conditional Use Authorization is required. What requires it: landmark_use_in_residential_district.",
+     "code_section": "Planning Code § 303",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "stories",
+     "label": "Stories the business is on",
+     "value": "First story",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "closing",
+     "label": "Closing time",
+     "value": "9:30 p.m.",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Another use",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "No change",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "entertainment_described",
+     "label": "Live music, amplified sound or dancing",
+     "value": "Live music or performance",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "prior_approvals",
+     "label": "Earlier approved use decisions at this address",
+     "value": "None on file",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  },
+  {
+   "area": "entertainment",
+   "area_label": "Entertainment permit",
+   "approval": "Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit",
+   "agency": "San Francisco Entertainment Commission",
+   "status": "further_review",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "entertainment.status",
+     "text": "A live performance, a DJ or karaoke needs a Place of Entertainment or Limited Live Performance permit (one performer without amplification who ends by 10 p.m. needs none). Regular amplified sound outdoors needs a Fixed Place Outdoor Amplified Sound permit. The Entertainment Commission holds a public hearing on each application. Recorded music indoors with no performer needs no entertainment permit. Where a permit is needed: further review.",
+     "code_section": "San Francisco Police Code § 1060 et seq. (Place of Entertainment; Limited Live Performance; Fixed Place Outdoor Amplified Sound)",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Place of Entertainment Permit application: this application is sent to the Police Department for review (Police Code § 1060.2(b)(1); § 1060.5(a)).",
+     "code_section": "Police Code § 1060.2(b)(1); § 1060.5(a)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Place of Entertainment Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2(b)(2)).",
+     "code_section": "Police Code § 1060.2(b)(2)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Place of Entertainment Permit application: this application is sent to the Department of Building Inspection for review (Police Code § 1060.2(b)(3)).",
+     "code_section": "Police Code § 1060.2(b)(3)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Place of Entertainment Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2(b)(4)).",
+     "code_section": "Police Code § 1060.2(b)(4)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Place of Entertainment Permit application: this application is sent to the Fire Department for review (Police Code § 1060.2(b)(5)).",
+     "code_section": "Police Code § 1060.2(b)(5)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Limited Live Performance Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.1(b)).",
+     "code_section": "Police Code § 1060.2.1(b)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Limited Live Performance Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2.1(b)).",
+     "code_section": "Police Code § 1060.2.1(b)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Police Department for review (Police Code § 1060.2.2(b)).",
+     "code_section": "Police Code § 1060.2.2(b)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Planning Department for review (Police Code § 1060.2.2(b)).",
+     "code_section": "Police Code § 1060.2.2(b)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0118-25.pdf",
+     "citations": []
+    },
+    {
+     "rule_id": "referral.step",
+     "text": "Fixed Place Outdoor Amplified Sound Permit application: this application is sent to the Department of Public Health for review (Police Code § 1060.2.2(b)).",
+     "code_section": "Police Code § 1060.2.2(b)",
+     "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0250-23.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [
+    {
+     "fact": "entertainment_described",
+     "label": "Live music, amplified sound or dancing",
+     "value": "Live music or performance",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "closing",
+     "label": "Closing time",
+     "value": "9:30 p.m.",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": "No outcome history for this pathway yet."
+  },
+  {
+   "area": "health",
+   "area_label": "Health permit",
+   "approval": "Health permit to operate",
+   "agency": "San Francisco Department of Public Health",
+   "status": "allowed",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "health.status",
+     "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+     "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+     "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+     "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [],
+   "facts": [],
+   "history_note": null
+  },
+  {
+   "area": "building_change_of_use",
+   "area_label": "Building permit and change of use",
+   "approval": "Building permit",
+   "agency": "San Francisco Department of Building Inspection",
+   "status": "insufficient_information",
+   "status_note": null,
+   "basis": [
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 225 San Leandro Way, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+     "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+     "source_url": "https://web.archive.org/web/20250508145116/https://up.codes/viewer/california/ca-building-code-2022/chapter/3/occupancy-classification-and-use",
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.occupancy",
+     "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "building.status",
+     "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+     "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "referral_steps": [
+    {
+     "rule_id": "referral.step",
+     "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+     "code_section": "Planning Code § 175(a)",
+     "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+     "citations": []
+    }
+   ],
+   "missing_inputs": [
+    "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+    "the existing occupancy group of the space, which only plans or an inspection show"
+   ],
+   "facts": [
+    {
+     "fact": "existing_use_stated",
+     "label": "Last use of the space, as described",
+     "value": "Another use",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "changes_existing_business",
+     "label": "Change to a business already there",
+     "value": "No change",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "occupants_under_50",
+     "label": "Fewer than 50 people",
+     "value": "Yes",
+     "origin": "description",
+     "origin_label": "Your description",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    },
+    {
+     "fact": "existing_use_records",
+     "label": "Use the records show at this address",
+     "value": "Not shown by the records",
+     "origin": "record",
+     "origin_label": "Records on file at this address",
+     "derived": false,
+     "quotes": [],
+     "citations": []
+    }
+   ],
+   "history_note": null
+  }
+ ],
+ "facts": [
+  {
+   "fact": "food_service",
+   "label": "Kind of food or drink service (a business that serves no alcohol is not a Bar)",
+   "value": "None",
+   "origin": "description",
+   "origin_label": "Worked out by the rules from your description",
+   "derived": true,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "alcohol_served",
+   "label": "Alcohol served",
+   "value": "No alcohol",
+   "origin": "description",
+   "origin_label": "Your description does not mention alcohol",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "existing_use_stated",
+   "label": "Last use of the space, as described",
+   "value": "Another use",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "changes_existing_business",
+   "label": "Change to a business already there",
+   "value": "No change",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "stories",
+   "label": "Stories the business is on",
+   "value": "First story",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "closing",
+   "label": "Closing time",
+   "value": "9:30 p.m.",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "entertainment_described",
+   "label": "Live music, amplified sound or dancing",
+   "value": "Live music or performance",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "occupants_under_50",
+   "label": "Fewer than 50 people",
+   "value": "Yes",
+   "origin": "description",
+   "origin_label": "Your description",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "planning_uses",
+   "label": "Kind of business (Planning Code use)",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "floor_area_sqft",
+   "label": "Floor area",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  },
+  {
+   "fact": "entertainment_kind",
+   "label": "Kind of entertainment",
+   "value": null,
+   "origin": "not_known",
+   "origin_label": "Not known",
+   "derived": false,
+   "quotes": [],
+   "citations": []
+  }
+ ],
+ "could_not_establish": [
+  {
+   "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: whether there is entertainment, and what kind. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "entertainment"
+  },
+  {
+   "question": "Not known: the rule table does not carry this zoning district. Needed for: zoning and use.",
+   "needs": "agency_answer",
+   "ask": "A written answer from San Francisco Planning, such as a Letter of Determination",
+   "intake_question": null
+  },
+  {
+   "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+   "needs": "applicant_history",
+   "ask": "The applicant: the project description does not say",
+   "intake_question": "floor_area_sqft"
+  },
+  {
+   "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+   "needs": "plans",
+   "ask": "Plans or a code analysis of the existing space",
+   "intake_question": "existing_occupancy_group"
+  }
+ ],
+ "records_limits": "Physical and cost issues are outside what public records can show: ventilation and kitchen exhaust, exits and occupant load, accessibility, the condition of the space, and the landlord's consent.",
+ "zoning": {
+  "district": "RH-1(D)",
+  "name": "RH-1(D)",
+  "bar_permission": "unknown",
+  "restaurant_permission": "unknown",
+  "rules": "The controls as they stood on 2023-12-03 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+  "code_section": "Planning Code § 209.1 (zoning control table for RH-1(D))",
+  "citation_id": "zoning:RH-1(D)"
+ },
+ "overlays": [
+  {
+   "name": "Family and Senior Housing Opportunity SUD",
+   "kind": "special_use_district",
+   "effect": "The controls as they stood on 2023-12-03 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+   "code_section": "Planning Code § 249.94",
+   "citation_id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud"
+  }
+ ],
+ "base_rate": {
+  "approved": 0,
+  "approved_with_conditions": 0,
+  "denied": 0,
+  "withdrawn": 0,
+  "total": 0,
+  "window_years": 10,
+  "scope": "N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 3 records that are not use decisions for this kind of business",
+  "rate_shown": false,
+  "approval_rate_pct": null,
+  "excluded_grant_only": 0,
+  "excluded_undated": 0,
+  "excluded_not_use_decision": 3,
+  "citation_id": "stat:base_rate",
+  "counted": []
+ },
+ "comparable_cases": [],
+ "comparables_note": "No Planning or Entertainment Commission record within 1,000 ft matched this kind of business.",
+ "site_history": {
+  "matched_by": "Parcel 3253/015 or the address 225 San Leandro Way",
+  "total": 0,
+  "by_kind": {},
+  "entries": [],
+  "note": "No records at this address or parcel in the data. That does not mean nothing was ever filed here."
+ },
+ "source_notes": [
+  {
+   "source": "datasf_planning",
+   "label": "Planning case list (DataSF)",
+   "leaves_out": "Outcome and dates only. Conditions are not in this list unless the Commission motion was read; withdrawn and cancelled cases carry no reason. The decision date is the date Planning closed the record."
+  }
+ ],
+ "entitlement_path": "Conditional Use Authorization (Planning Code § 303); Place of Entertainment, Limited Live Performance or Fixed Place Outdoor Amplified Sound permit; Health permit to operate",
+ "status_definitions": {
+  "allowed": "Allowed: the cited records or code sections show this approval is available as of right, or already exists for this space, without a discretionary hearing.",
+  "further_review": "Further review: the approval is obtainable only through a discretionary or multi-step review (a hearing, a referral, a licence investigation) whose result the records do not settle.",
+  "potential_blocker": "Potential blocker: a cited rule, cap or record could stop this approval or force a change to the concept unless a specific condition is met.",
+  "not_permitted": "Not permitted: a cited code section prohibits this use or approval at this address as the concept is described.",
+  "insufficient_information": "Insufficient information: the records in hand do not show whether this approval is needed or obtainable; the could-not-establish section says what would settle it."
+ },
+ "citations": [
+  {
+   "id": "geo:address",
+   "kind": "statistic",
+   "label": "Address record: 225 San Leandro Way, San Francisco, CA 94127 (datasf_eas)",
+   "source_url": "https://data.sf.gov/resource/3mea-di5p.json?eas_baseid=356846",
+   "excerpt": "parcel 3253/015"
+  },
+  {
+   "id": "overlay:datasf_sud:family_and_senior_housing_opportunity_sud",
+   "kind": "overlay",
+   "label": "Family and Senior Housing Opportunity SUD — Planning Code § 249.94",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-68325",
+   "excerpt": "The controls as they stood on 2023-12-03 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  },
+  {
+   "id": "stat:base_rate",
+   "kind": "statistic",
+   "label": "Dated Planning decisions: 0 approved / 0 denied / 0 withdrawn; N = 0 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 3 records that are not use decisions for this kind of business",
+   "source_url": "https://data.sf.gov",
+   "excerpt": "Not counted: 0 Entertainment Commission permits and ABC licences (lists of grants only), 3 Planning records that are not use decisions for this kind of business (agency referrals, building work, other records, decisions about other kinds of business) and 0 decided Planning rows without both dates."
+  },
+  {
+   "id": "zoning:RH-1(D)",
+   "kind": "zoning",
+   "label": "Zoning RH-1(D) — Planning Code § 209.1 (zoning control table for RH-1(D))",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20077",
+   "excerpt": "The controls as they stood on 2023-12-03 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day."
+  }
+ ],
+ "disclaimers": [
+  "Permit Memo is operational guidance, not legal advice. Confirm every requirement with the issuing agency before relying on it.",
+  "Comparable cases and counts come from public records (DataSF, California ABC, SF Planning) as of the data date shown; records may lag agency decisions by weeks.",
+  "Statuses are set by rules from the public record and are not a guarantee. Planning Commission and ABC decisions are discretionary.",
+  "No sentence in this report is written by an AI model. A model reads your description into facts; each fact shows the words it came from, and what your words do not state is listed as not known."
+ ],
+ "generated_at": "2026-11-16T12:16:59+00:00",
+ "model_versions": {},
+ "data_as_of": "2023-12-03"
+}

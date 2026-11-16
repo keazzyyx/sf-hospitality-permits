@@ -1,0 +1,429 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 26,
+  "supported": 7,
+  "trimmed": 6,
+  "downgraded": 9,
+  "dropped": 4
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "A restaurant on the first story is principally permitted in the NCD-INNER CLEMENT zoning district per Planning Code Section 716, in force since before 2022.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A restaurant on the first story is principally permitted in the NCD-INNER CLEMENT zoning district per Planning Code Section 716, in force since before 2022.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show restaurant_permission as 'unknown', not principally permitted, and do not state when the rule came into force."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Formula retail is a conditional use in the NCD-INNER CLEMENT district per Planning Code Section 716, but the description does not say whether the business is part of a chain.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Formula retail is a conditional use in the NCD-INNER CLEMENT district per Planning Code Section 716, but the description does not say whether the business is part of a chain.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state that formula retail is a conditional use; it only references the code section without stating the rule for formula retail."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A use of 2,500 square feet or more needs a Conditional Use in the NCD-INNER CLEMENT district per Planning Code Section 716, but the description does not give the floor area.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A use of 2,500 square feet or more needs a Conditional Use in the NCD-INNER CLEMENT district per Planning Code Section 716, but the description does not give the floor area.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state the 2,500 square foot threshold or Conditional Use requirement; it only references Section 716 without providing the rule text."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Nine agency referrals for restaurants with Type 41 ABC licenses within 100 meters (N = 9, at 852, 906, 908, 910 and 914 Clement St) were approved between 2016 and 2023 within 10 to 98 days from filing to approval, with no Planning Commission hearings and no site-specific operating conditions imposed.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Nine agency referrals for restaurants with Type 41 ABC licenses within 100 meters (N = 9, at 852, 906, 908, 910 and 914 Clement St) were approved between 2016 and 2023 within 10 to 98 days from filing to approval, with no Planning Commission hearings and no site-specific operating conditions imposed.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show only 4 Type 41 ABC referrals (one cited record is a DPH referral, not Type 41), at addresses 852, 906, 800, and 832 Clement; no mention of Planning Commission hearings."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "The rules could not decide whether a use authorization is required because the description does not say whether the business is part of a chain or give the floor area; formula retail and uses of 2,500 square feet or more are conditional uses in this district.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules could not decide whether a use authorization is required because the description does not say whether the business is part of a chain or give the floor area; formula retail is a conditional use in this district.",
+   "cut_problem": "keeps 'uses of 2,500 square feet or more are conditional uses in this district', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-INNER CLEMENT",
+    "overlay:static:sf:nc_ncd_inner_clement",
+    "app:datasf_planning:2016-010457MIS",
+    "app:datasf_planning:2021-008601MIS",
+    "app:datasf_planning:2022-007156MIS",
+    "app:datasf_planning:2022-003973MIS",
+    "app:datasf_planning:2021-006020MIS"
+   ],
+   "note": "The records do not state the 2,500 square feet threshold for conditional uses."
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "Census tract 402.00 has 22 active on-sale retail ABC licences against 19 authorised per ABC's September 2026 census tract authorisations, making the tract over-concentrated under California Business and Professions Code Section 23958.4.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Census tract 402.00 has 22 active on-sale retail ABC licences against 19 authorised per ABC's September 2026 census tract authorisations, making the tract over-concentrated under California Business and Professions Code Section 23958.4.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows 11 on-sale licenses within 500 ft and states this is a proxy, not the census tract test; it does not give the tract number, the 22/19 figures, or the code section."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Type 41 ABC licences for restaurants at 908 Clement St (issued 2016) and 914 Clement St (issued 2016) are active, both within 12 meters of 910 Clement St.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Type 41 ABC licences for restaurants at 908 Clement St (issued 2016) and 914 Clement St (issued 2016) are active, both within 12 meters of 910 Clement St.",
+   "confidence": "verified",
+   "citations": [
+    "license:abc:572077",
+    "license:abc:564298"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "Four Type 41 agency referrals at 852 Clement St (40 meters away) were approved between 2021 and 2022 within 10 to 14 days from filing to approval, each with the standard condition to operate as a bona fide eating place.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Four Type 41 agency referrals at 852 Clement St (40 meters away) were approved between 2021 and 2022 within 10 to 14 days from filing to approval, each with the standard condition to operate as a bona fide eating place.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show only 2 Type 41 agency referrals at 852 Clement St, not four."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "Over-concentrated census tracts typically require a Public Convenience or Necessity letter from the city to ABC, which adds 1 to 3 months to the ABC timeline per the catalog entry for Type 41 licences.",
+   "verdict": "partially_supported",
+   "supported_text": "Over-concentrated census tracts require a Public Convenience or Necessity letter from the city to ABC, which adds 1 to 3 months to the ABC timeline per the catalog entry for Type 41 licences.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Over-concentrated census tracts typically require a Public Convenience or Necessity letter from the city to ABC, which adds 1 to 3 months to the ABC timeline per the catalog entry for Type 41 licences.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record states undue-concentration tracts 'require' a PCN letter, not that they 'typically' do."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The rules could not decide the ABC licence status because the description does not say how the Type 41 license will be obtained (new application or transfer); the census tract is over its authorised on-sale licence count, which may require a Public Convenience or Necessity finding.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules could not decide the ABC licence status because the description does not say how the Type 41 license will be obtained (new application or transfer); the census tract is over its authorised on-sale licence count, which may require a Public Convenience or Necessity finding.",
+   "confidence": null,
+   "citations": [
+    "stat:density",
+    "license:abc:572077",
+    "license:abc:564298",
+    "app:datasf_planning:2021-008601MIS",
+    "app:datasf_planning:2022-007156MIS",
+    "catalog:ca.abc_type_41"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food or drink business needs a health permit to operate, issued after plan check and final inspection without a discretionary hearing per the California Retail Food Code and San Francisco Health Code Article 8.",
+   "verdict": "partially_supported",
+   "supported_text": "A food or drink business needs a health permit to operate, issued after plan check and final inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A food or drink business needs a health permit to operate, issued after plan check and final inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The 2026–27 permit-to-operate application fee is $470 and the annual licence fee for restaurants is $0 for 2026–28 per the Department of Public Health fee schedule.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 2026–27 permit-to-operate application fee is $470 and the annual licence fee for restaurants is $0 for 2026–28 per the Department of Public Health fee schedule.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "An agency referral for a bakery (limited restaurant) at 910 Clement St was approved by Planning on 2020-10-13, fifteen days after filing, with no conditions.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "An agency referral for a bakery (limited restaurant) at 910 Clement St was approved by Planning on 2020-10-13, fifteen days after filing, with no conditions.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2020-008667MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is issued by the San Francisco Department of Public Health after plan check and inspection, with no hearing required; it is allowed for this restaurant.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A health permit to operate is issued by the San Francisco Department of Public Health after plan check and inspection, with no hearing required; it is allowed for this restaurant.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2020-008667MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The site history shows nine agency referrals for restaurant use at 908-910 Clement St dating back to 2005, most recently a bakery approved in 2020, but no active ABC licence is on file at 910 Clement St now.",
+   "verdict": "partially_supported",
+   "supported_text": "The site history shows agency referrals for restaurant use at 908-910 Clement St dating back to 2005, most recently a bakery approved in 2020.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The site history shows agency referrals for restaurant use at 908-910 Clement St dating back to 2005, most recently a bakery approved in 2020.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2020-008667MIS",
+    "app:datasf_planning:MB0501110",
+    "app:datasf_planning:MB1300625"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "Tenant improvements are described, and the catalog entry for building permits notes that kitchen build-outs, hoods and any change of occupancy need a DBI permit with plans stamped by an architect.",
+   "verdict": "partially_supported",
+   "supported_text": "The catalog entry for building permits notes that kitchen build-outs, hoods and any change of occupancy need a DBI permit with plans stamped by an architect.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The catalog entry for building permits notes that kitchen build-outs, hoods and any change of occupancy need a DBI permit with plans stamped by an architect.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules could not decide the building permit requirement because the records do not show what the space was last used as, the description does not give the occupant load, and the existing occupancy group is not in public records; a Planning Code change of use and a Building Code change of occupan…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The rules could not decide the building permit requirement because the records do not show what the space was last used as, the description does not give the occupant load, and the existing occupancy group is not in public records; a Planning Code change of use and a Building Code change of occupan…",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2020-008667MIS",
+    "app:datasf_planning:MB0501110",
+    "app:datasf_planning:MB1300625",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online through the California Secretary of State bizfile portal. Within 90 days file the Statement of Information ($20 for an LLC). Apply for the EIN online at irs.gov the same day the entity is formed; it is issued immediately and is needed for the bank account, seller's permit and business registration. Make the lease contingent on approval of the health permit and ABC licence.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an Employer Identification Number (EIN) from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online through the California Secretary of State bizfile portal. Within 90 days file the Statement of Information ($20 for an LLC). Apply for the EIN online at irs.gov the same day the entity is formed; it is issued immediately and is needed for the bank account. Make the lease contingent on approval of the health permit and ABC licence.",
+   "cut_problem": "keeps 'needed for...seller's permit and business registration', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state EIN is needed for bank account and 'most state/local licenses' but do not specifically state seller's permit or business registration."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Register for the California Seller's Permit with CDTFA and for employer payroll taxes with the California Employment Development Department. What to say: Register for the seller's permit online at cdtfa.ca.gov; it is free and often issued the same day. ABC will not process a licence application until the seller's permit exists. Register as an employer with EDD within 15 days of the first payroll; the online registration takes 1 to 7 days. Subscribe to workers' compensation insurance from a licensed carrier or the State Compensation Insurance Fund before hiring employees.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register for the California Seller's Permit with CDTFA and for employer payroll taxes with the California Employment Development Department. What to say: Register for the seller's permit online at cdtfa.ca.gov; it is free and often issued the same day. Register as an employer with EDD within 15 days of the first payroll; the online registration takes 1 to 7 days. Subscribe to workers' compensation insurance from a licensed carrier or the State Compensation Insurance Fund before hiring employees.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record says ABC will not issue a license until permit exists, not that it will not process an application."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector and file the Fictitious Business Name statement with the County Clerk. What to say: Apply for the Business Registration Certificate online at sftreasurer.org within 30 days of starting business; the fee is tiered by gross receipts ($55 to $700) and the certificate is issued within 1 to 5 days. The registration year runs April 1 to March 31. File the FBN statement in person or by mail with the County Clerk, then publish it in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days. Every other city department asks for the Business Account Number, so complete this immediately.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector and file the Fictitious Business Name statement with the County Clerk. What to say: Apply for the Business Registration Certificate within 30 days of starting business; the fee is tiered by gross receipts ($55 to $700) and the certificate is issued within 1 to 5 days. The registration year runs April 1 to March 31. File the FBN statement in person or by mail with the County Clerk, then publish it in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days. Every other city department asks for the Business Account Number, so complete this immediately.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the San Francisco Office of the Treasurer & Tax Collector and file the Fictitious Business Name statement with the County Clerk. What to say: Apply for the Business Registration Certificate within 30 days of starting business; the fee is tiered by gross receipts ($55 to $700) and the certificate is issued within 1 to 5 days. The registration year runs April 1 to March 31. File the FBN statement in person or by mail with the County Clerk, then publish it in a court-approved newspaper once a week for four weeks and file proof of publication within 45 days. Every other city department asks for the Business Account Number, so complete this immediately.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Submit construction plans for Department of Public Health plan check and apply for the building permit with the Department of Building Inspection. What to say: Hire an architect licensed in California who has completed restaurant projects in San Francisco to prepare plans showing the kitchen layout, equipment, finishes, hand sinks, three-compartment sink, mop sink, food-prep surfaces, restroom upgrades and any structural or mechanical changes. Submit two sets of scaled drawings, interior and exterior photos, and the menu to DPH through the online portal; the 2026–27 plan-check fee is $828 to $2,207 depending on scope. File the building permit application with DBI at the same time and ensure 'health' is a routing station. Schedule a DPH pre-final inspection at 80 percent construction completion and a final inspection at least two weeks before opening. Install a grease interceptor per SFPUC FOG program requirements and submit the Installation Verification Form for a sewer-bill discount.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit construction plans for Department of Public Health plan check and apply for the building permit with the Department of Building Inspection. What to say: Hire an architect who has completed restaurant projects in San Francisco to prepare plans showing the kitchen layout, equipment, finishes, hand sinks, three-compartment sink, mop sink, food-prep surfaces, restroom upgrades and any structural or mechanical changes. Submit the menu to DPH; the 2026–27 plan-check fee is $828 to $2,207 depending on scope. File the building permit application with DBI at the same time and ensure 'health' is a routing station. Schedule a DPH pre-final inspection at 80 percent construction completion and a final inspection at least two weeks before opening. Install a grease interceptor per SFPUC FOG program requirements and submit the Installation Verification Form for a sewer-bill discount.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not specify two sets of scaled drawings, photos, online portal submission method, or California licensure requirement."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Obtain the Certified Food Protection Manager certificate and California Food Handler cards for all employees. What to say: One owner or employee must pass an ANSI-accredited food-safety certification exam (ServSafe, Prometric, NRFSP or 360training) within 60 days of opening; the course and proctored exam cost $100 to $250 and the certificate is valid for 5 years. Every employee who handles food must obtain a California Food Handler card within 30 days of hire by completing an online ANSI-accredited course ($7 to $15, valid 3 years). DPH asks for the manager certificate at the pre-opening inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain the Certified Food Protection Manager certificate and California Food Handler cards for all employees. What to say: One owner or employee must pass an ANSI-accredited food-safety certification exam (ServSafe, Prometric, NRFSP or 360training) within 60 days of opening; the course and proctored exam cost $100 to $250 and the certificate is valid for 5 years. Every employee who handles food must obtain a California Food Handler card within 30 days of hire by completing an online ANSI-accredited course ($7 to $15, valid 3 years).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain the Certified Food Protection Manager certificate and California Food Handler cards for all employees. What to say: One owner or employee must pass an ANSI-accredited food-safety certification exam (ServSafe, Prometric, NRFSP or 360training) within 60 days of opening; the course and proctored exam cost $100 to $250 and the certificate is valid for 5 years. Every employee who handles food must obtain a California Food Handler card within 30 days of hire by completing an online ANSI-accredited course ($7 to $15, valid 3 years).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the ABC Type 41 licence with the California Department of Alcoholic Beverage Control and coordinate the Planning and Police referrals. What to say: Confirm with an ABC licence broker how the licence will be obtained (new application or transfer of an existing licence at this address) and whether a Public Convenience or Necessity letter from the city is required because the census tract is over-concentrated. If applying for a new licence, file ABC Form 257 with a signed lease, the seller's permit, entity documents and the $1,000 to $1,600 initial fee; post the ABC public-notice sign at the premises for 30 days and notify Planning and the Police Department. ABC routes the application to Planning (interagency referral) and to the Police ABC Liaison Unit; Planning's review is typically 10 to 35 days for a restaurant Type 41 in this district. If a PCN letter is required, request it from the Board of Supervisors office at the same time as the ABC application to avoid a 1-to-3-month delay. Budget 60 to 120 days for ABC approval if unprote…",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the ABC Type 41 licence with the California Department of Alcoholic Beverage Control and coordinate the Planning and Police referrals. What to say: Confirm with an ABC licence broker how the licence will be obtained (new application or transfer of an existing licence at this address) and whether a Public Convenience or Necessity letter from the city is required because the census tract is over-concentrated. If applying for a new licence, file ABC Form 257 with a signed lease, the seller's permit, entity documents and the $1,000 to $1,600 initial fee; post the ABC public-notice sign at the premises for 30 days and notify Planning and the Police Department. ABC routes the application to Planning (interagency referral) and to the Police ABC Liaison Unit. If a PCN letter is required, request it from the Board of Supervisors office at the same time as the ABC application to avoid a 1-to-3-month delay. Budget 60 to 120 days for ABC approval if unprote…",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show two Planning reviews (11 and 28 days) but do not state that 10 to 35 days is typical."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening date. What to say: Submit the permit-to-operate application online at sfdph.org/ehsportal with the Business Account Number, Location ID and federal tax ID; the 2026–27 application fee is $470 and the annual licence fee for restaurants is $0 for 2026–28. Provide proof that a certified food safety manager is on staff. The permit is issued after the final DPH inspection confirms the facility matches the approved plans and all equipment is installed and operational. Schedule the final inspection at least two weeks before opening; failed inspections (missing hand sinks, unsealed surfaces, no hot water) delay openings by 2 to 3 weeks.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening date. What to say: Submit the permit-to-operate application online with the Business Account Number, Location ID and federal tax ID; the 2026–27 application fee is $470 and the annual licence fee for restaurants is $0 for 2026–28. Provide proof that a certified food safety manager is on staff. The permit is issued after the final DPH inspection confirms the facility matches the approved plans. Failed inspections (missing hand sinks, unsealed surfaces, no hot water) delay openings by 2 to 3 weeks.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening date. What to say: Submit the permit-to-operate application online with the Business Account Number, Location ID and federal tax ID; the 2026–27 application fee is $470 and the annual licence fee for restaurants is $0 for 2026–28. Provide proof that a certified food safety manager is on staff. The permit is issued after the final DPH inspection confirms the facility matches the approved plans. Failed inspections (missing hand sinks, unsealed surfaces, no hot water) delay openings by 2 to 3 weeks.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Complete Responsible Beverage Service training for all alcohol servers and managers, obtain music-licensing agreements, and apply for the sign permit if installing exterior signage. What to say: Every alcohol server and manager must complete RBS certification within 60 days of hire by registering on the ABC RBS Portal ($3), completing an approved course ($10 to $25) and passing the exam. Sign up for ASCAP and BMI public-performance licences online ($300 to $2,500 per year each, formula-based on occupancy and music use) before playing recorded music; both catalogues are required for a general mix. If installing new exterior signage, submit a sign-permit application to Planning and DBI; the fee is $300 to $1,500 and approval typically takes 7 to 45 days. Subscribe to organics collection service (green bin) with the city's hauler to comply with SB 1383 before opening.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Complete Responsible Beverage Service training for all alcohol servers and managers, obtain music-licensing agreements, and apply for the sign permit if installing exterior signage. What to say: Every alcohol server and manager must complete RBS certification within 60 days of hire by registering on the ABC RBS Portal ($3), completing an approved course ($10 to $25) and passing the exam. Sign up for ASCAP and BMI public-performance licences online ($300 to $2,500 per year each, formula-based on occupancy and music use) before playing recorded music; both catalogues are required for a general mix. If installing new exterior signage, submit a sign-permit application to Planning and DBI; the fee is $300 to $1,500 and approval typically takes 7 to 45 days. Subscribe to organics collection service (green bin) with the city's hauler to comply with SB 1383 before opening.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.rbs_training",
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license",
+    "catalog:sf.sign_permit",
+    "catalog:ca.calrecycle_organics_sb1383"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 14 to 45 days. Estimated government cost: $470 to $1,000. Notes: The day and cost ranges shown are for the one approval the rules found to be allowed: the health permit to operate. The catalog entry for that permit gives 14 to 45 days from application to issuance after the final inspection, and the 2026–27 application fee is $470 (the annual licence fee for restaurants is $0 for 2026–28, so the maximum government cost shown is $1,000 to include potential reinspection fees). This is a time to approval, not to a denial or withdrawal. No timeline or cost is given for the other three approvals (zoning and use, alcohol licence, building permit and change of use) because the rules could not decide their status due to missing inputs; once those inputs are provided, the timelines and costs for those approvals can be calculated from the catalog entries for an ABC Type 41 licence (60 to 120 days, $1,000 to $1,600, longer if a Public Convenience or Necessity finding is required), a building permit (14 to 120 days, $800 to $15,000 depending on construction valuation), and potentially a conditional use authorization if the floor area exceeds 2,500 square feet or the business is formula retail (120 to 300 days, $3,100 to $15,000). The overall timeline to open will be driven by the building permit and ABC licence, not the health permit, but the health permit is the only approval whose status the records establish.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 14 to 45 days. Estimated government cost: $470 to $1,000. Notes: The catalog entry for that permit gives 14 to 45 days from application to issuance after the final inspection, and the 2026–27 application fee is $470 (the annual licence fee for restaurants is $0 for 2026–28).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Estimated time: 14 to 45 days. Estimated government cost: $470 to $1,000. Notes: The day and cost ranges shown are for the one approval the rules found to be allowed: the health permit to operate. The catalog entry for that permit gives 14 to 45 days from application to issuance after the final inspection, and the 2026–27 application fee is $470 (the annual licence fee for restaurants is $0 for 2026–28, so the maximum government cost shown is $1,000 to include potential reinspection fees). This is a time to approval, not to a denial or withdrawal. No timeline or cost is given for the other three approvals (zoning and use, alcohol licence, building permit and change of use) because the rules could not decide their status due to missing inputs; once those inputs are provided, the timelines and costs for those approvals can be calculated from the catalog entries for an ABC Type 41 licence (60 to 120 days, $1,000 to $1,600, longer if a Public Convenience or Necessity finding is required), a building permit (14 to 120 days, $800 to $15,000 depending on construction valuation), and potentially a conditional use authorization if the floor area exceeds 2,500 square feet or the business is formula retail (120 to 300 days, $3,100 to $15,000). The overall timeline to open will be driven by the building permit and ABC licence, not the health permit, but the health permit is the only approval whose status the records establish.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The catalog supports the health permit timeline and costs, but not the claims about other approvals, missing inputs, or comparative conclusions."
+  }
+ ]
+}

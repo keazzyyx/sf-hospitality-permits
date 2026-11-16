@@ -1,0 +1,3528 @@
+{
+ "_doc": "Holdout reader A (one of two independent readers), written 2026-11-12. One object per case H01-H20, from the decision records (cached motion PDFs; cached withdrawal file items; local Planning and ABC copies) and the code (gocodebook.com mirror, text as of 2026-09-23; Ord. 249-23 from sfbos.org). Same fields as ../triggers.json (triggers, considered_not_triggers, net result) and ../inputs.json (input_facts from concept_input only, input_missing, record_facts with sources, intake_answers). Not read: reading-B.json or anything reader B wrote, apps/api/app/memo/, any report or rule output. No API spend. Not committed.",
+ "vocabulary_notes": {
+  "planning_use": "'not_covered' marks a Planning Code use with no value in the vocabulary: Liquor Store (H03, H11, H14, H15), General or Specialty Grocery (H01, H10, H12), General Entertainment (H05, H07, H17, H18, H19). The case's text names which.",
+  "control_at_filing": "conditional, not_permitted, principal, unclear (H20 third trigger only).",
+  "permission_changed_since_filing": "As in ../triggers.json, plus 'depends_on_facts' (H04 change-of-operator test after Ord. 62-25).",
+  "basis": "stated_in_record means a decision document or the record description names the ground; for H01 the record description names § 249.60(b)(2) and there is no decision document."
+ },
+ "new_families": {
+  "landmark_use_in_residential_district": "A non-residential use not permitted in an RH or RM district, allowed as a Conditional Use in an Article 10 City Landmark when it is P or C on the NC-1 ground floor (§ 186.3; repealed by Ord. 37-26, Eff. 4/11/2026; now § 202.11(d)(1) for Historic Buildings). H05, H07, H19.",
+  "hours_of_operation": "A district or special use district control that makes late hours a Conditional Use (here § 780.1(b) .27, Lakeshore Plaza: P 6 a.m.-11 p.m., C 11 p.m.-6 a.m.). H20."
+ },
+ "new_sub_rules": {
+  "mission_alcohol_sud_grocery_licence_transfer (§ 249.60(b)(2)(A))": "Grocery of 5,000 sq ft or less in the Mission Alcoholic Beverage SUD: Type 20 only, transferred from inside the SUD, with a CU. H01, H10.",
+  "mission_alcohol_sud_new_off_sale (§ 249.60(a) and (b)(2))": "New Liquor Store prohibited; groceries eligible only for licences transferred from inside the SUD. H02.",
+  "haight_alcohol_rusd_new_off_sale_establishment (§ 781.9(c)(2))": "Off-sale liquor establishment (a Liquor Store) in the Haight Street Alcohol RUSD: CU. H15.",
+  "north_beach_sud (legacy_business_replacement)": "North Beach SUD Legacy Business replacement (§ 780.3 at filing; Table 722 note 18 since 12/15/2025). H09.",
+  "lakeshore_plaza_sud_restaurant (§ 780.1(b) .69A, before 1/14/2024)": "Restaurants conditional in the Lakeshore Plaza SUD before Ord. 249-23. H20 (uncertain).",
+  "change_of_nonconforming_use (§ 182(b)/(c))": "existing sub-rule name reused for H17's intensification of a use granted under § 182(b)(1)."
+ },
+ "cases": {
+  "H01": {
+   "record": "2024-006665CUA",
+   "address": "2999 Mission St, San Francisco, CA 94110",
+   "group": "did_not_reach_approval",
+   "outcome": "withdrawn",
+   "filed": "2024-07-23",
+   "rules_date": "2024-07-22",
+   "zoning_district_at_filing": "NCT-MISSION (Mission Street NCT, § 754)",
+   "special_districts": [
+    "Mission Alcoholic Beverage Special Use District (§ 249.60): the site is inside it on the local map",
+    "Fringe Financial Service RUD (§ 249.35), not relevant",
+    "Priority Equity Geographies SUD (§ 249.97), not relevant"
+   ],
+   "proposed_uses": [
+    "General Grocery or Specialty Grocery (existing) adding off-sale beer and wine (ABC Type 20) by transfer"
+   ],
+   "existing_use": "Existing grocery and produce store of 4,647 sq ft (record description). No other document in the file says more about the use.",
+   "triggers": [
+    {
+     "family": "alcohol_licence_in_restricted_district",
+     "sub_rule": "mission_alcohol_sud_grocery_licence_transfer (§ 249.60(b)(2)(A))",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "A General or Specialty Grocery of 5,000 sq ft or less inside the Mission Alcoholic Beverage SUD may take a liquor licence only by transfer from within the SUD, only a Type 20, and only with a Conditional Use. The store is 4,647 sq ft and seeks a Type 20 by transfer.",
+     "code_sections_at_filing": [
+      "249.60(b)(2)(A)",
+      "249.60(d) (Good Neighbor Policies)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 249.60(b)(2): \"The following uses shall be eligible for liquor licenses transferred from within the district: (A) General Groceries or Specialty Groceries that are 5,000 square feet or smaller. Such use shall require a Conditional Use authorization and shall be limited to a Type 20 Liquor License\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12; the latest amendment to § 249.60 is Ord. 249-23, Eff. 1/14/2024, which added (b)(1)(E), before this filing).",
+     "evidence_from_record": "Record description: \"Conditional Use Authorization pursuant to Planning Code Section(s) 249.60 (b)(2) to permit transfer of Type 20 license to an existing grocery /produce store of 4,647 sf.\" No hearing, motion or staff report.",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "The amendment history on the mirror ends at Ord. 249-23 (Eff. 1/14/2024), before filing.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site is inside the Mission Alcoholic Beverage SUD (map)",
+      "the business is a General or Specialty Grocery, not a Liquor Store",
+      "floor area 5,000 sq ft or less (4,647)",
+      "licence is a Type 20 and comes by transfer from within the SUD"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "§ 249.60(a) prohibition of new Liquor Stores",
+     "why": "The record calls the business a grocery and produce store; nothing says alcohol would be more than incidental. If it were a Liquor Store the request would be not permitted."
+    },
+    {
+     "item": "Table 754 use controls, use size, hours, formula retail",
+     "why": "Nothing in the record; the store exists and only the licence is asked for."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "correct_pathway": "Conditional Use under § 249.60(b)(2)(A), and only if the Type 20 is transferred from inside the Mission Alcoholic Beverage SUD. A Type 20 from outside the SUD, or any other licence type, is not eligible (not permitted). The file does not say where the licence would come from.",
+   "controls_changed_since_filing": "no",
+   "why_closed_reading": "Agrees with cases.yaml: three Incomplete Application Notices (30 Aug, 27 Sep, 18 Dec 2024) ask for plan items and the unpaid CU fee; each says the project \"will not be assigned to a planner until the items listed in the attached checklist are submitted\". No zoning objection in the file. No ABC licence at 2999 Mission in the local ABC copy.",
+   "concept_input": "An existing grocery and produce store of 4,647 square feet wants to bring in an ABC Type 20 licence by transfer.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": "20",
+    "licences_already_held": null,
+    "alcohol_transaction": "premises_transfer",
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 4647,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "retail",
+    "existing_use_text": "An existing grocery and produce store of 4,647 square feet",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "where the transferred Type 20 comes from (inside or outside the Mission Alcoholic Beverage SUD); this decides eligible-with-CU against not permitted",
+    "whether the store is a General or Specialty Grocery with incidental alcohol, or would count as a Liquor Store",
+    "story (record: not stated)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": "20",
+    "licences_already_held": null,
+    "alcohol_transaction": "premises_transfer",
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": 4647,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Existing grocery / produce store of 4,647 sq ft at 2999 Mission St (record description).",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "record description (\"an existing grocery /produce store\"); no vocabulary value for a grocery",
+    "planning_use": "record description; General or Specialty Grocery is not in the vocabulary",
+    "serves_alcohol": "record description (\"transfer of Type 20 license\")",
+    "licence_type": "record description (\"Type 20 license\")",
+    "alcohol_transaction": "record description (\"transfer of Type 20 license to an existing grocery\"): a licence brought to these premises",
+    "floor_area_sqft": "record description (\"of 4,647 sf\")",
+    "existing_use_stated": "record description (\"existing grocery /produce store\")",
+    "existing_use_text": "record description"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 4647,
+    "liquor_licence": "transfer_from_another_location"
+   },
+   "intake_answers_notes": [
+    "Liquor licence: the record says only \"transfer\"; a licence brought to a store that holds none comes from another premises. Whether it is also from another owner is not stated."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Section number removed; nothing added. The deciding fact (licence from inside the SUD) is missing from the record text too."
+   },
+   "confidence": "medium",
+   "uncertain_points": [
+    "The application, CU supplement and plans in the parent PRJ were not read (not cached; not downloaded). They might give the licence source and the store type."
+   ]
+  },
+  "H02": {
+   "record": "2024-006641CUA",
+   "address": "3400 Cesar Chavez St, San Francisco, CA 94110",
+   "group": "did_not_reach_approval",
+   "outcome": "withdrawn",
+   "filed": "2024-07-23",
+   "rules_date": "2024-07-22",
+   "zoning_district_at_filing": "NCT-MISSION (Mission Street NCT, § 754)",
+   "special_districts": [
+    "Mission Alcoholic Beverage Special Use District (§ 249.60): the site is inside it on the local map",
+    "Fringe Financial Service RUD (§ 249.35), not relevant",
+    "Priority Equity Geographies SUD (§ 249.97), not relevant"
+   ],
+   "proposed_uses": [
+    "off-sale general (ABC Type 21) at an existing vacant store; kind of store not stated"
+   ],
+   "existing_use": "\"an existing vacant store\" (record description). Last use and size not in the cached file.",
+   "triggers": [
+    {
+     "family": "alcohol_licence_in_restricted_district",
+     "sub_rule": "mission_alcohol_sud_new_off_sale (§ 249.60(a) and (b)(2))",
+     "related_family": "new_use_control",
+     "basis": "inferred_from_code",
+     "what": "Inside the Mission Alcoholic Beverage SUD a new Liquor Store is prohibited, and a grocery may take an off-sale licence only by transfer from inside the SUD (a grocery of 5,000 sq ft or less: Type 20 only, with a Conditional Use). A new Type 21 at a store fits none of the allowed paths. The record names only § 754; Table 754 lists Liquor Store as NP.",
+     "code_sections_at_filing": [
+      "249.60(a)",
+      "249.60(b)(2)(A)-(B)",
+      "754 Table (Liquor Store: NP)",
+      "102 (Liquor Store; General and Specialty Grocery)"
+     ],
+     "control_at_filing": "not_permitted",
+     "code_quote_at_filing": "§ 249.60(a): \"No new Liquor Store, shall be permitted in the SUD, except that an existing Liquor Store may relocate\"; (b)(2): \"The following uses shall be eligible for liquor licenses transferred from within the district: (A) General Groceries or Specialty Groceries that are 5,000 square feet or smaller. Such use shall require a Conditional Use authorization and shall be limited to a Type 20 Liquor License ... (B) General Groceries or Specialty Groceries that are greater than 5,000 square feet.\" Table 754: \"Liquor Store | § 102 | NP | NP | NP\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12). Ord. 249-23 (Eff. 1/14/2024), which amended Table 754, did not touch the Liquor Store row (Ord. 249-23 as printed (sfbos.org/sites/default/files/o0249-23.pdf, fetched 2026-11-12)).",
+     "evidence_from_record": "Record description: \"Conditional Use Authorization pursuant to Planning Code Section 754 to permit new ABC Type 21 license for an existing vacant store.\" No hearing, motion or letter. Context only: the local ABC copy shows a Type 20 (licence 667446, Casa Guadalupe Supermarket 2) issued at this address on 2025-07-16, six months after the withdrawal.",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 249.60 has no amendment after Ord. 249-23 (Eff. 1/14/2024). Table 754 amendments after filing were not read line by line; the Liquor Store row reads NP today.",
+     "control_today": "not_permitted",
+     "facts_needed": [
+      "site is inside the Mission Alcoholic Beverage SUD (map)",
+      "what the store is (Liquor Store, or a General or Specialty Grocery with incidental alcohol)",
+      "store floor area (5,000 sq ft or less, or more)",
+      "licence type (Type 21) and whether it is new or transferred from inside the SUD"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "A Conditional Use under § 754 as the record names it",
+     "why": "Table 754 has no Conditional Use row for an off-sale licence; the Liquor Store row is NP. The section the applicant cited does not offer a Conditional Use path for this request."
+    },
+    {
+     "item": "§ 249.60(b)(2)(B) (grocery larger than 5,000 sq ft)",
+     "why": "Possible only if the store is a grocery over 5,000 sq ft and the licence comes by transfer from inside the SUD; the request is for a new licence and the size is not known."
+    }
+   ],
+   "net_result_at_filing": "not_permitted",
+   "correct_pathway": "As filed (a new Type 21 at a store in the Mission Alcoholic Beverage SUD) no path is open: a new Liquor Store is prohibited and groceries are eligible only for licences transferred from inside the SUD. If the store is a grocery of 5,000 sq ft or less, the open path is a Type 20 transferred from inside the SUD with a Conditional Use (§ 249.60(b)(2)(A)); if larger, a transfer from inside the SUD under (b)(2)(B). What happened next matches a Type 20 path (Type 20 issued 2025-07-16 by transfer), but no Planning record for it is in the local copy, so which path was used is not shown.",
+   "controls_changed_since_filing": "no",
+   "why_closed_reading": "No stated reason in the file (application, CU supplement, plans, intake checklist). Status Closed - Withdrawn 2025-01-15. Reading: the request as filed had no path under § 249.60; this is inferred, not stated.",
+   "concept_input": "A new ABC Type 21 licence for an existing store space that is vacant.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": true,
+    "licence_type": "21",
+    "licences_already_held": null,
+    "alcohol_transaction": "new_licence",
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "an existing store space that is vacant",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "what business would operate (Liquor Store or grocery); the text names only a licence",
+    "floor area (decides § 249.60(b)(2)(A) against (B))",
+    "story"
+   ],
+   "record_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": true,
+    "licence_type": "21",
+    "licences_already_held": null,
+    "alcohol_transaction": "new_licence",
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "An existing vacant store at 3400 Cesar Chavez St (record description); last use and size not in the cached file.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "serves_alcohol": "record description (\"new ABC Type 21 license\")",
+    "licence_type": "record description (\"Type 21\")",
+    "alcohol_transaction": "record description (\"to permit new ABC Type 21 license\")",
+    "existing_use_stated": "record description (\"an existing vacant store\"): a store space, now empty",
+    "existing_use_text": "record description"
+   },
+   "intake_answers": {
+    "liquor_licence": "new"
+   },
+   "intake_answers_notes": [
+    "Liquor licence 'new': the record says \"new ABC Type 21 license\". Business type and floor area are not stated, so those questions are skipped."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Section number removed; nothing added. \"existing store space that is vacant\" is a fair rewording of \"existing vacant store\"."
+   },
+   "confidence": "low",
+   "uncertain_points": [
+    "The application, CU supplement and plans in 2024-006641PRJ were not read (not cached; not downloaded); they would say what the store is and its size.",
+    "The withdrawal reason is not stated; 'no path under § 249.60' is my inference.",
+    "Whether the Planning Department would read a grocery with a Type 21 as a Liquor Store depends on the alcohol display share, which is not in the file."
+   ]
+  },
+  "H03": {
+   "record": "2024-001899CUA",
+   "address": "1657 Powell St, San Francisco, CA 94133",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2024-03-05",
+   "rules_date": "2024-03-04",
+   "zoning_district_at_filing": "NCD-NORTH BEACH (§ 722); North Beach SUD (§ 780.3, in force at filing); 40-X",
+   "special_districts": [
+    "North Beach Special Use District (§ 780.3; repealed by Ord. 217-25, Eff. 12/15/2025, content moved into Table 722)",
+    "Priority Equity Geographies SUD (§ 249.97), not relevant"
+   ],
+   "proposed_uses": [
+    "Liquor Store (Coit Liquors), permanent"
+   ],
+   "existing_use": "Coit Liquors, displaced by a 2018 fire at 585 Columbus Ave, operating at 1657 Powell since a Temporary Use Authorization of 27 Dec 2018 under Ord. 263-18 (temporary fire relocation without CU, extended to six years by Ord. 95-22). 1,678 sq ft ground-floor space; earlier a retail coffee store (2004 CU).",
+   "triggers": [
+    {
+     "family": "new_use_control",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "A Liquor Store is a Conditional Use on the first story of the North Beach NCD. The store had operated here only under the temporary fire-relocation allowance (no CU for up to six years from the fire); making it permanent at the new address needs a Conditional Use.",
+     "code_sections_at_filing": [
+      "722 Table (Liquor Store: C; note on fire relocation)",
+      "780.3 (SUD findings)",
+      "303(c)",
+      "303(z) (Liquor Store findings)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 722 today: \"Liquor Store | § 102 | C(12) | NP | NP\"; note (12): \"Temporary relocation of liquor stores in the North Beach Neighborhood Commercial District that have been closed as a result of a fire to another location ... shall not require a new Conditional Use Permit for the duration of up to six years of interim relocation, from the date of the fire.\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12). At filing the motion states the same control.",
+     "evidence_from_record": "Motion No. 21605 (cached PDF dc4c5a0f1fefc98b03626662.pdf), Required Commission Action: \"the Commission must grant a Conditional Use Authorization, pursuant to Planning Code Sections 303, 722, and 780.3 to allow the establishment of a new Liquor Store the North Beach NCD\". Project History: Ord. 263-18 let fire-closed liquor stores \"temporarily relocate without Conditional Use authorization for a duration of up to three years\"; Ord. 95-22 \"amended the duration from three years to six years\".",
+     "changed_since_filing": "text_only",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Table 722 amended after filing (Ord. 33-24, 62-24, 85-24, 173-25, 217-25, 245-25, 1-26, 37-26); Ord. 217-25 (Eff. 12/15/2025) repealed § 780.3 and moved its content into Table 722. The Liquor Store row reads C(12) today. The amendments were not compared line by line.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site is in the North Beach NCD",
+      "the use is a Liquor Store",
+      "first story",
+      "the store is not already lawfully established at this address (here: temporary fire relocation only)"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Note (12) temporary fire relocation",
+     "why": "It exempts only interim relocation; the request is permanent establishment."
+    },
+    {
+     "item": "Legacy Business replacement (§ 780.3 then, Table 722 note 18 now)",
+     "why": "Motion: \"The prior business within the commercial tenant space was not a Legacy Business.\""
+    },
+    {
+     "item": "Use size, hours, formula retail, licence type",
+     "why": "1,678 sq ft; no hours issue or chain named in the motion; the motion names no licence type."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "text_only",
+   "concept_input": "An existing liquor store wants to keep operating at this address.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "retail",
+    "existing_use_text": "An existing liquor store",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the store operates here only under a temporary fire-relocation authorization, so it is not lawfully established at this address; without this the text reads as a continuing use needing nothing",
+    "story (record: ground floor)",
+    "floor area (record: 1,678 sq ft)",
+    "licence type (record: not stated; Type 21 in the ABC copy from 2026)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Coit Liquors",
+    "floor_area_sqft": 1678,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Coit Liquors, operating since Dec 2018 under a Temporary Use Authorization after a fire at its original 585 Columbus Ave site (Ord. 263-18 / 95-22). Before that, a retail coffee store (2004 CU).",
+    "changes_existing_business": "none",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": false
+   },
+   "record_sources": {
+    "business_type": "Motion 21605 Project Description (\"a new Liquor Store (d.b.a. Coit Liquors)\"); no vocabulary value for a Liquor Store",
+    "planning_use": "Motion 21605 (Liquor Store, § 102); not in the vocabulary",
+    "serves_alcohol": "Motion 21605 (Liquor Store; condition 8, Liquor Stores)",
+    "operator_name": "Motion 21605 p.1 (\"d.b.a. Coit Liquors\")",
+    "floor_area_sqft": "Motion 21605 p.1 (\"within 1,678 square feet of ground floor commercial space\")",
+    "existing_use_stated": "Motion 21605 Project History (Temporary Use Authorization of 27 Dec 2018); related record 2018-014120MIS (\"Temporary authorization until 3/18/21 for a liquor store displaced by fire\")",
+    "existing_use_text": "Motion 21605 Project History; related record 2004.1174C (\"Establish a retail coffee store\")",
+    "changes_existing_business": "Motion 21605 p.3 (\"would not result in a change in the concentration of Liquor Stores\"; same business continues)",
+    "merges_storefronts": "Motion 21605 p.3 (\"No tenant improvements are proposed that would impact ... the small-scale commercial storefronts\")",
+    "story": "Motion 21605 p.1 (\"ground floor commercial space\")",
+    "tenant_improvements": "Motion 21605 p.1 (\"proposes to legalize minor storefront alterations\")",
+    "new_construction": "Motion 21605 p.1 (only minor storefront alterations)",
+    "legacy_business": "Motion 21605 p.3 (\"The prior business within the commercial tenant space was not a Legacy Business.\")"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 1678
+   },
+   "intake_answers_notes": [
+    "Liquor licence route not stated in the record (the store already sells alcohol, but the motion does not say under what licence at this address)."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Faithful to the description. It reads like a continuing use with nothing to approve; the deciding fact (temporary fire relocation) is missing from the description too."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Whether today's Table 722 row and notes (after Ord. 217-25 folded § 780.3 in) differ from the control at filing in any way that matters was not checked line by line."
+   ]
+  },
+  "H04": {
+   "record": "2022-004869CUA",
+   "address": "3352 Steiner St, San Francisco, CA 94123",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2022-06-01",
+   "rules_date": "2022-05-31",
+   "zoning_district_at_filing": "NC-2 (§ 711); 40-X",
+   "special_districts": [
+    "Chestnut Street Financial Service Subdistrict (map): financial services only, not relevant"
+   ],
+   "proposed_uses": [
+    "Restaurant (cafe), Formula Retail (Bluestone Lane)"
+   ],
+   "existing_use": "Vacant ground-floor commercial space of about 2,374 sq ft, last a Formula Retail restaurant (operator not named in the motion). Earlier a Large Fast Food bakery-cafe under a 2001 CU (Motion 16263).",
+   "triggers": [
+    {
+     "family": "formula_retail",
+     "sub_rule": "baseline_article7 (explains why a CUA was filed)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Establishing a Formula Retail use in an Article 7 NCD (NC-2) needs a Conditional Use.",
+     "code_sections_at_filing": [
+      "303.1(e)(1) (today (e)(5))",
+      "303.1(b)-(c)",
+      "703.4(b)",
+      "711 Table (Formula Retail: C)",
+      "303(c)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 303.1(e): \"A Conditional Use Authorization shall be required for a Formula Retail use in the following zoning districts unless explicitly exempted: (1) All Neighborhood Commercial Districts in Article 7\" (wording as quoted for 2022-2025 filings in backtest/triggers.json D04 and N04; not re-read here).",
+     "evidence_from_record": "Motion No. 21275 (cached PDF b5a1c279c324843ab73adc2f.pdf), Project Description: \"Conditional Use Authorization, pursuant to Planning Code Sections 303, 303.1, and 711 to establish an approximately 2,374 square-foot Formula Retail Use (d.b.a. Bluestone Lane) within a vacant ground floor commercial space\".",
+     "changed_since_filing": "text_only",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 303.1(e)(1) renumbered (e)(5) by Ord. 13-26 (Eff. 3/16/2026), per triggers.json D04/N04; not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "business is Formula Retail (11 or more other establishments)",
+      "Article 7 NCD that does not prohibit Formula Retail restaurants",
+      "operator name"
+     ],
+     "facts_in_concept_text": "all"
+    },
+    {
+     "family": "formula_retail",
+     "sub_rule": "change_of_operator_intensification (§ 303.1(j) + § 178(c)(3))",
+     "related_family": null,
+     "basis": "inferred_from_code",
+     "what": "The space was last a Formula Retail restaurant, so the deciding test is whether one chain replacing another is an intensification. At filing, § 178(c)(3)(E) made it one whenever the outgoing chain had never had its own Formula Retail CU; limbs (A)-(D) cover a different use category, a bigger use size, more locations and a new commercial kitchen. The motion does not discuss the change-of-operator test, so which limb applied is not shown. If the space had been vacant 18 months or more, § 178(d) would make it a new Formula Retail use anyway.",
+     "code_sections_at_filing": [
+      "178(c)(3)(A)-(E)",
+      "303.1(j)",
+      "178(d)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 178(c)(3) at filing: \"a change of owner or operator of a Formula Retail establishment is determined to be an intensification of use and a new Conditional Use authorization shall be required if ... (E) A pre-existing Formula Retail use that had not previously been authorized via a Conditional Use from the Commission\" (as quoted in backtest/triggers.json N04; not re-read here).",
+     "evidence_from_record": "Motion 21275, Comments: \"The addition of the proposed Formula Retail Use will not increase concentration of Formula Retail uses in the identified vicinity as it replaces an existing Formula Retail Use.\" Record description: \"Convert existing Formula Retail restaurant space to new Formula Retail restaurant user\".",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "depends_on_facts",
+     "change_detail": "Ord. 62-25 (Eff. 6/1/2025) deleted § 178(c)(3)(E) (per triggers.json N04/N15). Today a chain replacing a chain in the same use category needs no CU unless limbs (A)-(D) apply or the space was abandoned 18 months.",
+     "control_today": "conditional if a § 178(c)(3)(A)-(D) limb applies or the prior use was abandoned (§ 178(d)); principal (administrative) otherwise",
+     "facts_needed": [
+      "the space was last a Formula Retail use of the same use category (Restaurant)",
+      "whether the prior chain had its own Formula Retail CU (limb E, filings before 6/1/2025)",
+      "use size before and after",
+      "number of locations of each chain",
+      "whether a new commercial kitchen is added",
+      "how long the space was vacant"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Restaurant use in NC-2",
+     "why": "Restaurant is principally permitted on the first story of NC-2 (triggers.json D04 reading of Table 711; the motion names no use control other than Formula Retail)."
+    },
+    {
+     "item": "Use size, hours, alcohol, outdoor area",
+     "why": "2,374 sq ft; the motion names no other control. A Type 41 was referred later (2023-003670MIS) as an accessory to the approved restaurant."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "Bluestone Lane, a restaurant that is part of a chain, wants to take over an existing restaurant space last used by another restaurant that is part of a chain.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Bluestone Lane",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "restaurant",
+    "existing_use_text": "an existing restaurant space last used by another restaurant that is part of a chain",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "floor area (record: about 2,374 sq ft)",
+    "whether the space is vacant and since when (record: vacant; date not stated)",
+    "whether the previous chain restaurant had its own Formula Retail CU (decides § 178(c)(3)(E) at filing)",
+    "number of locations of each chain",
+    "story (record: ground floor)"
+   ],
+   "record_facts": {
+    "business_type": "cafe",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Bluestone Lane",
+    "floor_area_sqft": 2374,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant ground-floor commercial space last occupied by a Formula Retail restaurant (Motion 21275: \"replaces an existing Formula Retail Use\"); a Large Fast Food bakery-cafe was approved there in 2001 (Motion 16263).",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21275 Generalized Basis (\"The proposed use and character of the proposed cafe\")",
+    "planning_use": "record description (\"new Formula Retail restaurant user\"); related 2023-003670MIS (\"approved restaurant (dba Bluestone Lane)\")",
+    "formula_retail": "Motion 21275 p.1 (\"Formula Retail Use (d.b.a. Bluestone Lane)\")",
+    "operator_name": "Motion 21275 p.1",
+    "floor_area_sqft": "Motion 21275 p.1 (\"approximately 2,374 square-foot Formula Retail Use\")",
+    "existing_use_stated": "Motion 21275 p.1 (\"within a vacant ground floor commercial space\") and Comments (\"replaces an existing Formula Retail Use\"); record description (\"existing Formula Retail restaurant space\")",
+    "existing_use_text": "Motion 21275; related records 2001.0667C, MB0501183",
+    "story": "Motion 21275 p.1 (\"vacant ground floor commercial space of an existing three-story mixed-use building\")"
+   },
+   "intake_answers": {
+    "part_of_chain": true,
+    "other_locations": "11_or_more",
+    "floor_area_sqft": 2374
+   },
+   "intake_answers_notes": [
+    "Chain: the record calls the use Formula Retail, which by § 303.1 means eleven or more other establishments; the exact count is not in the record.",
+    "Liquor licence: the motion does not mention alcohol; a Type 41 referral came after the decision, so the question is left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "\"Formula Retail\" written as \"part of a chain\" as the rules require; nothing added."
+   },
+   "confidence": "medium",
+   "uncertain_points": [
+    "Which § 178(c)(3) limb (if any) applied is not in the motion; the motion simply applies the Formula Retail CU.",
+    "Code text for § 303.1 and § 178(c)(3) is taken from the 40-case trigger file, not re-read for this filing date."
+   ]
+  },
+  "H05": {
+   "record": "2025-005018CUA",
+   "address": "2007 Franklin St, San Francisco, CA 94109",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2025-06-05",
+   "rules_date": "2025-06-04",
+   "zoning_district_at_filing": "RH-2 (§ 209.1); 40-X",
+   "special_districts": [
+    "City Landmark No. 69 (Haas-Lilienthal House), Article 10",
+    "Family and Senior Housing Opportunity SUD (map), not relevant"
+   ],
+   "proposed_uses": [
+    "General Entertainment",
+    "Nighttime Entertainment",
+    "Bar",
+    "Outdoor Activity Area (front and rear gardens)"
+   ],
+   "existing_use": "Landmark house owned by SF Heritage since 1973: residence, museum, office and events space; events in the gardens for decades.",
+   "triggers": [
+    {
+     "family": "landmark_use_in_residential_district",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "General Entertainment, Nighttime Entertainment, Bar and Outdoor Activity Area uses are not permitted in RH-2. In an Article 10 landmark in an RH district, any use that is P or C on the NC-1 ground floor may be authorized as a Conditional Use (§ 186.3), if essential to preserving the landmark.",
+     "code_sections_at_filing": [
+      "186.3",
+      "209.1 (RH-2 table)",
+      "710 (NC-1 table, by reference)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21820, Required Commission Action: \"Section 186.3 permits any use listed as a principal or conditional use permitted on the ground floor in an NC-1 District, when located in a structure on a landmark designated pursuant to Article 10 with Conditional Use authorization.\" (§ 186.3 itself not read: repealed before the mirror's text date.)",
+     "evidence_from_record": "Motion No. 21820 (cached PDF cf98ce0bf30954a7894f0233.pdf), Issues: \"Per Planning Code Section 186.3, a City Landmark within the RH Zoning Districts may seek Conditional Use Authorization to authorize any use listed as a Principal or Conditional on the ground floor in the NC-1 Zoning District.\"",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 186.3 (added by Ord. 22-15; amended by Ord. 63-20 and Ord. 245-25, Eff. 1/12/2026) was repealed by Ord. 37-26 (File No. 250886, Eff. 4/11/2026). The same mechanism now sits in § 202.11(d)(1): \"In RH, RM, and RTO Districts, when located in a Historic Building, any Use that is not permitted in the District and is listed as a Principal or Conditional Use on the ground floor in the NC-1 District ... is permitted with Conditional Use authorization pursuant to Section 303\", plus a Planning Director determination under § 202.11(c)(1) (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12).",
+     "control_today": "conditional (§ 202.11(d)(1), if the building is a Historic Building under § 102 and the Planning Director determination is obtained)",
+     "facts_needed": [
+      "site is in an RH or RM district",
+      "building is an Article 10 landmark (today: a § 102 Historic Building)",
+      "the use is not permitted in the district",
+      "the use is P or C on the NC-1 ground floor"
+     ],
+     "facts_in_concept_text": "some"
+    },
+    {
+     "family": "nighttime_entertainment",
+     "sub_rule": "first_story",
+     "related_family": "landmark_use_in_residential_district",
+     "basis": "stated_in_record",
+     "what": "Through § 186.3 the NC-1 ground-floor control applies; Nighttime Entertainment is C there (General Entertainment and Bar are P).",
+     "code_sections_at_filing": [
+      "710 Table (Entertainment, Nighttime: C on the first story)",
+      "186.3"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21820: \"Nighttime Entertainment use and Outdoor Activity Area in the rear are permitted on the ground floor with conditional use authorization in the NC-1 Zoning District.\"",
+     "evidence_from_record": "Motion 21820, Issues: \"General Entertainment and Bar uses and an Outdoor Activity Area in the front are principally permitted on the ground floor in the NC-1 Zoning District. Nighttime Entertainment use and Outdoor Activity Area in the rear are permitted on the ground floor with conditional use authorization in the NC-1 Zoning District.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Table 710 not re-read; recorded as the motion states it.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "the use is Nighttime Entertainment",
+      "the NC-1 table applies through the landmark route"
+     ],
+     "facts_in_concept_text": "all"
+    },
+    {
+     "family": "outdoor_activity_area",
+     "sub_rule": null,
+     "related_family": "landmark_use_in_residential_district",
+     "basis": "stated_in_record",
+     "what": "An Outdoor Activity Area not at the front (here the rear garden) is a Conditional Use in NC-1 (§ 145.2(b)); the front garden is P.",
+     "code_sections_at_filing": [
+      "145.2(a)-(b)",
+      "710 Table (Outdoor Activity Area)",
+      "186.3"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Exhibit B plan sheet of Motion No. 21820 (font-encoded text, decoded by reader A): \"USE OF THE FRONT GARDEN AS AN OUTDOOR ACTIVITY AREA IS PRINCIPALLY PERMITTED WHEREAS USE OF THE REAR GARDEN AND/OR BACK PORCH REQUIRES CUA\". § 145.2 itself not re-read.",
+     "evidence_from_record": "Motion 21820: \"The Outdoor Activity Area at the rear would not be utilized past 10:00 p.m.\"; Required Commission Action cites \"Planning Code Sections 145.2, 186.3, 209.1, 303 and 710\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 145.2 not re-read; triggers.json D09 reports it unchanged since 2017.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "an Outdoor Activity Area",
+      "its location (front, or rear/side)"
+     ],
+     "facts_in_concept_text": "all"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Hours of operation",
+     "why": "Limited to 6 a.m.-10 p.m. (condition 12), inside the § 186 limited-commercial window the motion cites."
+    },
+    {
+     "item": "General Entertainment and Bar on their own",
+     "why": "P on the NC-1 ground floor; they need the CU only because of the landmark route."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "SF Heritage wants to formalize general entertainment, nighttime entertainment and bar uses at a landmark building, and an outdoor activity area in its front and rear gardens. The building's existing uses stay: a residence, a museum, an office and an events space. The new uses would bring in revenue needed to maintain the landmark building. No alteration or construction.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": [
+     "nighttime_entertainment",
+     "bar"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "SF Heritage",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "other",
+    "existing_use_text": "The building's existing uses stay: a residence, a museum, an office and an events space",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": [
+     "front",
+     "rear_or_side"
+    ],
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "zoning is from the address (RH-2); the text does not say it is a residential district",
+    "hours (record: 6 a.m.-10 p.m. daily)",
+    "whether the landmark is an Article 10 City Landmark (record: Landmark No. 69); the text says only 'landmark building'",
+    "general entertainment has no planning_use value; it is listed only in the text"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": [
+     "nighttime_entertainment",
+     "bar"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "SF Heritage",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other"
+    ],
+    "existing_use_text": "Haas-Lilienthal House (City Landmark No. 69), owned by SF Heritage since 1973; residence, museum, office and events space; garden events for decades.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "22:00",
+    "opening_hour": "06:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": [
+     "front",
+     "rear_or_side"
+    ],
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": false,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21820 Project Description (d.b.a. SF Heritage; nonprofit)",
+    "planning_use": "Motion 21820 Project Description (\"formalize General Entertainment, Nighttime Entertainment, and Bar uses\"); General Entertainment has no vocabulary value",
+    "serves_alcohol": "Motion 21820 (Bar use authorized)",
+    "operator_name": "Motion 21820 p.1 (Foundation for San Francisco's Architectural Heritage, d.b.a. SF Heritage)",
+    "existing_use_stated": "Motion 21820 Project Description (\"maintains the existing uses ... as a residence, museum, office, and events space\")",
+    "story": "Motion 21820 Issues (the NC-1 ground-floor control is applied)",
+    "closing_hour": "Motion 21820 condition 12 (\"daily from 6:00a.m. to 10:00p.m.\")",
+    "opening_hour": "Motion 21820 condition 12",
+    "outdoor_area": "Motion 21820 (\"Outdoor Activity Area in the front and rear gardens\")",
+    "amends_prior_approval": "Motion 21820 (no earlier approval named; CU 'formalizes' uses SF Heritage thought permitted)",
+    "tenant_improvements": "Motion 21820 Project Description (\"does not seek to expand or alter the envelope\"); record description (\"No alteration or construction\")",
+    "new_construction": "same",
+    "historic_building": "Motion 21820 Issues (\"designated as San Francisco City Landmark No. 69\")"
+   },
+   "intake_answers": {},
+   "intake_answers_notes": [
+    "Not a chain (nonprofit), but the record does not say so in chain terms; floor area and licence route not stated."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Section numbers removed. \"formalize\" (from the description) hints the uses already happen without approval; that is a fact, not an outcome."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Whether the Haas-Lilienthal House is a § 102 Historic Building for today's § 202.11 was not checked (an Article 10 landmark very likely is)."
+   ]
+  },
+  "H06": {
+   "record": "2025-003933CUA",
+   "address": "620 Jones St, San Francisco, CA 94102",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2025-05-05",
+   "rules_date": "2025-05-04",
+   "zoning_district_at_filing": "RC-4 (§ 209.3); 80-T-130-T",
+   "special_districts": [
+    "North of Market Residential SUD 1",
+    "Group Housing SUD",
+    "Priority Equity Geographies SUD (all not relevant)"
+   ],
+   "proposed_uses": [
+    "Restaurant and Nighttime Entertainment (existing)",
+    "Outdoor Activity Area (existing): live entertainment hours"
+   ],
+   "existing_use": "620 Jones: existing Restaurant and Nighttime Entertainment uses with an Outdoor Activity Area, approved under Motion No. 19270 (Case 2013.0255C), whose Condition 14 limited live entertainment in the Outdoor Activity Area to 7:00 p.m. daily. ABC Types 47 and 58 (local ABC copy).",
+   "triggers": [
+    {
+     "family": "amend_prior_conditions",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Live entertainment in the Outdoor Activity Area is limited by Condition 14 of an earlier Conditional Use; changing that condition needs a new Conditional Use. The Commission removed the limit entirely (the application asked for 8 p.m. / 10 p.m.).",
+     "code_sections_at_filing": [
+      "303 (303(e))",
+      "178"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21839, Exhibit A, Changes and Modifications: \"Significant changes and modifications of conditions shall require Planning Commission approval of a new Conditional Use authorization.\"",
+     "evidence_from_record": "Motion No. 21839 (cached PDF cc7185a67f7d88fc532c6eb0.pdf), Required Commission Action: \"the Commission must grant a Conditional Use Authorization, pursuant to Planning Code Sections 303 to amend Condition of Approval Number 14 from Planning Commission Motion No. 19270 ... to remove the hours of live entertainment restriction in an existing Outdoor Activity Area (from the previously approved limitation of 7:00 p.m. daily)\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read; § 303(e) and § 178 were reported unchanged in triggers.json D17.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "the business operates under an earlier Conditional Use with conditions",
+      "the request changes one of those conditions"
+     ],
+     "facts_in_concept_text": "all"
+    },
+    {
+     "family": "enlarge_or_intensify_existing_use",
+     "sub_rule": null,
+     "related_family": "amend_prior_conditions",
+     "basis": "stated_in_record",
+     "what": "Longer entertainment hours outdoors intensify a use authorized by Conditional Use. The basis for approval cites § 178; the motion never uses the word intensification (same reading as D17 in the 40).",
+     "code_sections_at_filing": [
+      "178(c)(1)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 178(c)(1): \"A permitted conditional use may not be significantly altered, enlarged, or intensified, except upon approval of a new conditional use application\" (as quoted in triggers.json D04; not re-read).",
+     "evidence_from_record": "Motion 21839, Generalized Basis: \"as set forth in Section 101.1, 178, 209.3, and 303(c)\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "existing conditional use",
+      "longer hours or more entertainment"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Nighttime Entertainment and Restaurant uses in RC-4",
+     "why": "\"There is no change in the existing Restaurant and Nighttime Entertainment uses.\""
+    },
+    {
+     "item": "Outdoor Activity Area itself",
+     "why": "Existing and already authorized; only the entertainment hours change."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "A business operates under an existing permission whose conditions limit the hours of entertainment in its outdoor activity area. It wants to extend those hours to 8 p.m. Sunday to Thursday and 10 p.m. Friday and Saturday. No construction.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": null,
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "conditions limit the hours of entertainment in its outdoor activity area (no times given)",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "what the business is (record: Restaurant and Nighttime Entertainment)",
+    "where the outdoor area is (record: patio on the adjacent lot; front or rear not stated)",
+    "the current limit (record: 7 p.m. daily)",
+    "kind of entertainment (record: live, amplified; Place of Entertainment permit)"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": [
+     "restaurant",
+     "nighttime_entertainment"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": [
+     "47",
+     "58"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "620 Jones",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "nighttime_entertainment"
+    ],
+    "existing_use_text": "Existing Restaurant and Nighttime Entertainment (dba 620 Jones) with an Outdoor Activity Area, approved under Motion No. 19270 (2013.0255C).",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": "place_of_entertainment",
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Motion No. 19270 Condition 14: live entertainment in the Outdoor Activity Area limited to 7:00 p.m. daily.",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21839 Project Description (\"existing Restaurant and Nighttime Entertainment uses\")",
+    "planning_use": "Motion 21839 Project Description",
+    "serves_alcohol": "local ABC copy (Types 47 and 58 at 620 Jones, issued 2011); plans show bars",
+    "licences_already_held": "local ABC copy (licence 483670, Types 47 and 58, ACTIVE)",
+    "alcohol_transaction": "no licence change in the record",
+    "operator_name": "Motion 21839 (dba 620 Jones)",
+    "existing_use_stated": "Motion 21839 Project Description",
+    "existing_use_text": "Motion 21839",
+    "changes_existing_business": "Motion 21839 Generalized Basis cites § 178; longer outdoor entertainment hours",
+    "entertainment_kind": "existing Nighttime Entertainment use; related 2025-012029MIS (after the decision): \"Place of Entertainment permit that includes outdoor entertainment and amplified sound on the patio\"",
+    "amplified_sound": "related 2025-012029MIS (after the decision)",
+    "live_entertainment": "Motion 21839 (\"hours of live entertainment restriction\")",
+    "amends_prior_approval": "Motion 21839 Required Commission Action",
+    "prior_approval_limits": "Motion 21839 Project Description (\"from the previously approved limitation of 7:00 p.m. daily\")",
+    "tenant_improvements": "Motion 21839 (\"No physical work is being proposed.\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "liquor_licence": "already_held"
+   },
+   "intake_answers_notes": [
+    "Liquor licence 'already_held': Types 47 and 58 at this address in the ABC copy; the motion does not discuss alcohol."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Motion number and section removed. Note the record asked for 8 p.m. / 10 p.m. but the Commission removed the limit; the input follows the request, as it should."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Outdoor area location (front, rear or side) could not be fixed from the motion; left null."
+   ]
+  },
+  "H07": {
+   "record": "2023-011096CUA",
+   "address": "225 San Leandro Way, San Francisco, CA 94127",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2023-12-04",
+   "rules_date": "2023-12-03",
+   "zoning_district_at_filing": "RH-1(D) (§ 209.1); 40-X",
+   "special_districts": [
+    "City Landmark No. 318 (The Gregangelo Museum), Article 10",
+    "Family and Senior Housing Opportunity SUD, not relevant"
+   ],
+   "proposed_uses": [
+    "General Entertainment (The Gregangelo Museum) alongside the single-family dwelling, which stays"
+   ],
+   "existing_use": "Detached one-story single-family house, authorized as one dwelling; a living folk-art museum operating there since 1989 without approval.",
+   "triggers": [
+    {
+     "family": "landmark_use_in_residential_district",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "General Entertainment is not permitted in RH-1(D). In an Article 10 landmark in an RH district, any use that is P or C on the NC-1 ground floor may be authorized as a Conditional Use (§ 186.3); General Entertainment is P in NC-1.",
+     "code_sections_at_filing": [
+      "186.3",
+      "209.1 (RH-1(D) table)",
+      "710 (NC-1 table, by reference)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21636 finding 6.A (2024): \"Per Planning Code Section 186.3, a City Landmark within the RH Zoning Districts may seek Conditional Use Authorization to authorize any use listed as a Principal or Conditional on the ground floor in the NC-1 Zoning District.\"",
+     "evidence_from_record": "Motion No. 21636 (cached PDF 2591f06e2ddf271b6484eee6.pdf), title: \"CONDITIONAL USE AUTHORIZATION, PURSUANT TO PLANNING CODE SECTIONS 186.3, 209.1, 303, AND 710, TO ALLOW A NON-RESIDENTIAL USE IN A LANDMARK BUILDING IN THE RH-ZONING DISTRICT\"; finding 6.A: \"General Entertainment is a principally permitted use in the NC-1 Zoning District.\"",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 186.3 (added by Ord. 22-15; amended by Ord. 63-20 and Ord. 245-25, Eff. 1/12/2026) was repealed by Ord. 37-26 (File No. 250886, Eff. 4/11/2026). The same mechanism now sits in § 202.11(d)(1): \"In RH, RM, and RTO Districts, when located in a Historic Building, any Use that is not permitted in the District and is listed as a Principal or Conditional Use on the ground floor in the NC-1 District ... is permitted with Conditional Use authorization pursuant to Section 303\", plus a Planning Director determination under § 202.11(c)(1) (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12).",
+     "control_today": "conditional (§ 202.11(d)(1), if a § 102 Historic Building and the Planning Director determination is obtained)",
+     "facts_needed": [
+      "site is in an RH or RM district",
+      "building is an Article 10 landmark",
+      "General Entertainment is P or C on the NC-1 ground floor"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Hours (§ 209.1: limited commercial uses 6 a.m.-10 p.m.)",
+     "why": "Proposed 10 a.m.-9:30 p.m.; inside the window (finding 6.B)."
+    },
+    {
+     "item": "Loss of the dwelling",
+     "why": "The dwelling is kept; the General Entertainment use overlays it (finding 6.A)."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "Change the use of a single-family house from residential to general entertainment.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "other",
+    "existing_use_text": "a single-family house ... from residential",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the house is City Landmark No. 318 (the only reason a CU path exists in RH-1(D)); without it the request reads as not permitted",
+    "that the dwelling is kept (record) while the text says the use changes from residential",
+    "hours, visitor numbers, amplified sound (record: 10 a.m.-9:30 p.m.; tours of 8-25; events up to 40; no amplified sound)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "The Gregangelo Museum",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other"
+    ],
+    "existing_use_text": "Single-family dwelling (one unit) at City Landmark No. 318, where The Gregangelo Museum has operated since 1989; the dwelling is retained.",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "21:30",
+    "opening_hour": "10:00",
+    "entertainment_kind": null,
+    "amplified_sound": false,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21636 finding 2 (General Entertainment use, d.b.a. The Gregangelo Museum)",
+    "planning_use": "Motion 21636 (General Entertainment; no vocabulary value)",
+    "operator_name": "Motion 21636 finding 2",
+    "existing_use_stated": "Motion 21636 finding 3 (\"authorized for residential use with one dwelling unit\")",
+    "existing_use_text": "Motion 21636 findings 3, 7(a)",
+    "changes_existing_business": "Motion 21636 finding 7(a) (\"will not increase or intensify operations\")",
+    "story": "Motion 21636 finding 3 (one-story house)",
+    "closing_hour": "Motion 21636 finding 6.B (private tours and events to 9:30 pm)",
+    "opening_hour": "Motion 21636 finding 6.B (10:00 am)",
+    "amplified_sound": "Motion 21636 finding 7(b)(iii) (\"no amplified music or sounds will be used\")",
+    "live_entertainment": "Motion 21636 finding 6.B (\"Shows ... with local artists\"); finding 7(a) (performance art)",
+    "tenant_improvements": "Motion 21636 finding 2 (\"does not seek to expand or alter the envelope\"); 7(d) (\"does not propose any construction or alterations\")",
+    "new_construction": "same",
+    "historic_building": "Motion 21636 title (\"DESIGNATED AS SAN FRANCISCO LANDMARK NO. 318\")"
+   },
+   "intake_answers": {},
+   "intake_answers_notes": [
+    "No chain, floor area or alcohol facts in the record (lot size 4,432 sq ft is not the use's floor area)."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Faithful to the description (sections removed). The description itself leaves out the landmark status, which is the deciding fact."
+   },
+   "confidence": "medium",
+   "uncertain_points": [
+    "The date Landmark No. 318 was designated was not found. If designation came after the 2023-12-04 filing, no CU path existed on the filing date (General Entertainment NP in RH-1(D)); the motion's preamble gives the application date as 2024-06-07, which may be after designation.",
+    "A former § 202.11 (Ord. 111-21, expired 9/4/2024) existed at filing; its content was not read."
+   ]
+  },
+  "H08": {
+   "record": "2011.0097CUA-02",
+   "address": "1423 Polk St, San Francisco, CA 94109",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2024-06-26",
+   "rules_date": "2024-06-25",
+   "zoning_district_at_filing": "NCD-POLK (§ 723); 65-A",
+   "special_districts": [
+    "Family and Senior Housing Opportunity SUD; Fringe Financial Service buffers (not relevant)"
+   ],
+   "proposed_uses": [
+    "Bar (existing, Hi-Lo Club): longer hours"
+   ],
+   "existing_use": "Bar (San Francisco Hi-Lo Club), ABC Type 48, approved with a walk-up coffee window by Motion No. 18348 (2011.0097C); Condition 18 limited hours to 4 p.m.-2 a.m.",
+   "triggers": [
+    {
+     "family": "amend_prior_conditions",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Condition 18 of the 2011 Conditional Use limits the bar to 4 p.m.-2 a.m.; changing it to 6 a.m.-2 a.m. (the district's principally permitted hours) needs a new Conditional Use.",
+     "code_sections_at_filing": [
+      "303",
+      "174",
+      "178",
+      "723"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21646 Exhibit A, Changes and Modifications: \"Significant changes and modifications of conditions shall require Planning Commission approval of a new Conditional Use authorization.\"",
+     "evidence_from_record": "Motion No. 21646 (cached PDF a927f667c0d67262db12c3c1.pdf), Required Commission Action: \"the Commission must grant a modification to the Conditions of Approval for an existing Conditional Use Authorization, Planning Commission Motion No. 18348, pursuant to Planning Code Sections 174, 178, 303, and 723 to change the allowable Hours of Operation for an existing Bar use.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "earlier Conditional Use with an hours condition",
+      "request changes that condition"
+     ],
+     "facts_in_concept_text": "all"
+    },
+    {
+     "family": "enlarge_or_intensify_existing_use",
+     "sub_rule": null,
+     "related_family": "amend_prior_conditions",
+     "basis": "stated_in_record",
+     "what": "Opening ten hours earlier intensifies a bar authorized by Conditional Use (a Bar is C in the Polk NCD). The motion cites § 178 without the word intensification.",
+     "code_sections_at_filing": [
+      "178(c)(1)",
+      "723 Table (Bar: C)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 178(c)(1) as quoted in triggers.json D04 (not re-read).",
+     "evidence_from_record": "Motion 21646 cites \"Planning Code Sections 174, 178, 303, and 723\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "existing conditional use",
+      "longer hours"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Hours of operation control of the district",
+     "why": "6 a.m.-2 a.m. is principally permitted in the Polk NCD (motion; also Motion 21107 finding 6.C)."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "A business operates under an existing permission with a condition that limits its hours of operation. It wants that condition changed to 6 a.m. to 2 a.m., or removed, because the walk-up coffee window there has gone out of business.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": "the walk-up coffee window there has gone out of business",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": "02:00",
+    "opening_hour": "06:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "a condition that limits its hours of operation (no times given)",
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "what the business is (record: a Bar, the Hi-Lo Club)",
+    "current hours (record: 4 p.m.-2 a.m.)",
+    "alcohol (record: Type 48)"
+   ],
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": "bar",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": [
+     "48"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "San Francisco Hi-Lo Club",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar"
+    ],
+    "existing_use_text": "Existing Bar (Hi-Lo Club), approved with a walk-up coffee window by Motion No. 18348 (2011.0097C); the coffee window business has closed.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": "02:00",
+    "opening_hour": "06:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Motion No. 18348 Condition 18: hours 4:00 p.m. to 2:00 a.m. every day.",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21646 Project Description (\"an existing Bar use (dba Hi-Lo Club)\")",
+    "planning_use": "Motion 21646",
+    "serves_alcohol": "Motion 21646 (Bar); local ABC copy (Type 48, licence 509171)",
+    "licences_already_held": "local ABC copy (Type 48, issued 2012)",
+    "alcohol_transaction": "no licence change in the record",
+    "operator_name": "Motion 21646 p.1 (sponsor DBLHAP, LLC; dba Hi-Lo Club); related 2025-001558MIS (\"San Francisco Hi-Lo Club\")",
+    "existing_use_stated": "Motion 21646",
+    "existing_use_text": "Motion 21646; related 2011.0097C (\"to add bar (dba 'Hi-Lo Club') and walk-up facility (coffee service window)\"); record description",
+    "changes_existing_business": "Motion 21646 cites § 178; hours extended",
+    "closing_hour": "Motion 21646 condition 5 (\"6 a.m. to 2 a.m.\")",
+    "opening_hour": "Motion 21646 condition 5",
+    "amends_prior_approval": "Motion 21646 Required Commission Action",
+    "prior_approval_limits": "Motion 21646 Project Description (\"from 4:00 pm to 2:00 am every day\")",
+    "tenant_improvements": "Motion 21646 (\"no physical changes to the interior or exterior\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "liquor_licence": "already_held"
+   },
+   "intake_answers_notes": [
+    "Liquor licence 'already_held': existing bar with a Type 48 (ABC copy); no licence change."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Condition number and motion reference removed. The business type is missing, as the description is."
+   },
+   "confidence": "high",
+   "uncertain_points": []
+  },
+  "H09": {
+   "record": "2023-000022CUA",
+   "address": "786 Lombard St, San Francisco, CA 94133",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2023-01-06",
+   "rules_date": "2023-01-05",
+   "zoning_district_at_filing": "NCD-NORTH BEACH (§ 722); North Beach SUD (§ 780.3, in force at filing); 40-X",
+   "special_districts": [
+    "North Beach Special Use District (§ 780.3; repealed by Ord. 217-25, Eff. 12/15/2025; Legacy Business control now Table 722 note 18)"
+   ],
+   "proposed_uses": [
+    "Restaurant (Fiddle Fig Café), legalization"
+   ],
+   "existing_use": "About 800 sq ft ground-floor space at 790 Lombard (motion address). Caffe Sapore, a Restaurant approved by CU in 1995/1998 and a registered Legacy Business (Dec 2019), vacated about 31 Dec 2019. Fiddle Fig Café opened about Aug 2022 after the Department wrongly said no CU was needed; enforcement case 2022-010623ENF.",
+   "triggers": [
+    {
+     "family": "legacy_business_replacement",
+     "sub_rule": "north_beach_sud (§ 780.3 at filing; Table 722 note 18 today)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "In the North Beach SUD any new non-residential use where the immediately prior use was a Legacy Business needs a Conditional Use, even when the use category stays the same (Restaurant to Restaurant).",
+     "code_sections_at_filing": [
+      "780.3 (Legacy Business provision)",
+      "722",
+      "303",
+      "Administrative Code 2A.242 (not read)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21522 finding 6.B: \"Within the North Beach Special Use District, Conditional Use authorization is required for a new non-residential use where the immediately prior Commercial Use was a Legacy Business.\" (§ 780.3 at filing not read directly.)",
+     "evidence_from_record": "Motion No. 21522 (cached PDF 745e176afbfac2f4d837ad24.pdf), finding 6.B: \"The project proposes to legalize a new non-residential use (Restaurant) within a tenant space previously occupied by a Legacy Business. Therefore, Conditional Use authorization is required.\"",
+     "changed_since_filing": "text_only",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Ord. 217-25 (Eff. 12/15/2025) repealed § 780.3 and moved the control to Table 722 note 18: \"Where an immediately prior use was a Legacy Business ... the controls require any new Non-Residential use to obtain Conditional Use authorization; provided, however, that this requirement shall not apply where: (A) the subject non-residential space has had no occupant and has not been open to the public for three or more years from the date the application for the new use is filed, or (B) the Legacy Business has removed itself or has been otherwise removed from the Legacy Business Registry\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12). Whether the 2023 text had the same exceptions was not checked; (A) would not apply here because Fiddle Fig occupied the space from Aug 2022.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in the North Beach NCD/SUD",
+      "the immediately prior use was a registered Legacy Business",
+      "the space was not empty and closed for three years before filing (today's exception)",
+      "the Legacy Business is still on the Registry"
+     ],
+     "facts_in_concept_text": "none"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Restaurant use (Table 722 Restaurant C(5); § 780.3 restaurant-replacement rule)",
+     "why": "Finding 6.A: a Restaurant may occupy a space last legally occupied by a Restaurant, not discontinued or abandoned, and \"no Conditional Use shall be required if the use remains the same as the prior authorized use\". The motion treats the 1995/1998 Restaurant use as continuing although the space was empty for about 32 months; how abandonment was avoided is not explained."
+    },
+    {
+     "item": "On-site alcohol (§ 780.3(c)(2)(A), North Beach restaurant liquor licence)",
+     "why": "A Type 41 was approved for the prior Restaurant by the 1998 CU (Motion 14618; related MA9900652). The Type 41 referral for Fiddle Fig (2022-011716MIS) treats it as a continuation. Not a trigger in the motion."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "text_only",
+   "concept_input": "Legalize the limited restaurant on this property.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": "limited_restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "limited_restaurant",
+    "existing_use_text": "the limited restaurant on this property (to be legalized)",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the immediately prior use was a registered Legacy Business (the only trigger)",
+    "that the use is a Restaurant in Planning terms (record), not a Limited Restaurant (description)",
+    "floor area (record: about 800 sq ft)",
+    "story (record: ground floor)",
+    "alcohol (record: Type 41)"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Fiddle Fig Café",
+    "floor_area_sqft": 800,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant"
+    ],
+    "existing_use_text": "Restaurant use authorized for Caffe Sapore (Motions 13936/14618), a registered Legacy Business that vacated about 31 Dec 2019; Fiddle Fig Café opened about Aug 2022 without the CU.",
+    "changes_existing_business": "none",
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": true
+   },
+   "record_sources": {
+    "business_type": "Motion 21522 finding 7(b)(ii) (\"The proposed full-service restaurant\")",
+    "planning_use": "Motion 21522 finding 6.A (\"continue the existing Restaurant Use\")",
+    "serves_alcohol": "Motion 21522 finding 8(5) (\"serving 'excellent coffee, tea, beer, and wine'\"); related 2022-011716MIS (ABC Type 41)",
+    "licence_type": "related 2022-011716MIS (\"ABC referral - Type 41 ... for new restaurant dba Fiddle Fig Cafe\"); local ABC copy (licence 644356, Type 41, 2024)",
+    "operator_name": "Motion 21522 title (DBA FIDDLE FIG CAFÉ)",
+    "floor_area_sqft": "Motion 21522 finding 2 (\"approximately 800 square-feet, ground floor tenant space\")",
+    "existing_use_stated": "Motion 21522 finding 2 and 6.A",
+    "existing_use_text": "Motion 21522 preamble and finding 2",
+    "changes_existing_business": "Motion 21522 finding 2 (\"No interior or exterior improvements are proposed. No changes of use are proposed.\")",
+    "merges_storefronts": "Motion 21522 finding 2 (no improvements)",
+    "story": "Motion 21522 finding 2 (ground floor tenant space)",
+    "tenant_improvements": "Motion 21522 finding 2",
+    "new_construction": "Motion 21522 finding 2",
+    "legacy_business": "Motion 21522 title and finding 6.B (immediately prior use Caffe Sapore, Legacy Business, Resolution No. 1108)"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 800
+   },
+   "intake_answers_notes": [
+    "Liquor licence: a Type 41 referral exists but the record does not say whether it is new or transferred; left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Faithful to the description (section removed). The description's 'limited use restaurant' disagrees with the motion's Restaurant; the input keeps the description's word, which is right for a neutral input."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Address: record 786 Lombard, motion 790 Lombard (same lot 0065/015A).",
+    "Whether the 2023 § 780.3 Legacy Business clause had the three-year vacancy exception; irrelevant here because the space was occupied from Aug 2022."
+   ]
+  },
+  "H10": {
+   "record": "2023-002340CUA",
+   "address": "999 Valencia St, San Francisco, CA 94110",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2023-04-04",
+   "rules_date": "2023-04-03",
+   "zoning_district_at_filing": "NCT-VALENCIA (§ 762); 55-X",
+   "special_districts": [
+    "Mission Alcoholic Beverage Special Use District (§ 249.60)",
+    "Fringe Financial Service RUD, Priority Equity Geographies SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "General Grocery (existing, Valencia Whole Foods) adding off-sale beer and wine (Type 20) by transfer"
+   ],
+   "existing_use": "General Grocery of about 1,700 sq ft (plus basement), dba Valencia Whole Foods, a registered Legacy Business, family-owned, not Formula Retail. Hours 8 a.m.-9 p.m.",
+   "triggers": [
+    {
+     "family": "alcohol_licence_in_restricted_district",
+     "sub_rule": "mission_alcohol_sud_grocery_licence_transfer (§ 249.60(b)(2)(A))",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "A General Grocery of 5,000 sq ft or less in the Mission Alcoholic Beverage SUD may take a Type 20 only by transfer from inside the SUD, with a Conditional Use. The Type 20 came from Evergreen Market at 2539 Mission St, inside the SUD.",
+     "code_sections_at_filing": [
+      "249.60(b)(2)(A)",
+      "249.60(d)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 249.60(b)(2)(A): \"General Groceries or Specialty Groceries that are 5,000 square feet or smaller. Such use shall require a Conditional Use authorization and shall be limited to a Type 20 Liquor License\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12; this text predates the filing).",
+     "evidence_from_record": "Motion No. 21370 (cached PDF 94810a5b8e80db871c6774df.pdf), title: \"PURSUANT TO PLANNING CODE SECTIONS 249.60 AND 303, TO ALLOW THE TRANSFER OF A LIQUOR LICENSE TYPE 20 TO A GENERAL GROCERY\"; finding 6.B: \"a General Grocery or Specialty Grocery ... being 5,000 square feet or less in size ... shall only be eligible for a liquor License transfer if the subject license is from within the geographic boundaries\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Only Ord. 249-23 (Eff. 1/14/2024) amended § 249.60 after filing, adding (b)(1)(E) (Type 90 music venues); (b)(2)(A) untouched.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site inside the Mission Alcoholic Beverage SUD",
+      "General or Specialty Grocery",
+      "5,000 sq ft or less",
+      "Type 20",
+      "transferred from inside the SUD"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "General Grocery use in NCT-Valencia",
+     "why": "Principally permitted (finding 6.A, which cites the wrong district table, § 762 '24th Street-Mission')."
+    },
+    {
+     "item": "Hours (CU for 2 a.m.-6 a.m.)",
+     "why": "8 a.m.-9 p.m.; no change."
+    },
+    {
+     "item": "Formula Retail",
+     "why": "Finding 6.A: \"is not considered a Formula retail use\"."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "Whole Foods on Valencia Street wants to buy an ABC Type 20 licence from Ish's Community Market Corp.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": true,
+    "licence_type": "20",
+    "licences_already_held": null,
+    "alcohol_transaction": "person_to_person_transfer",
+    "formula_retail": null,
+    "operator_name": "Whole Foods (Valencia Street)",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": null,
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the business is a grocery and its size (record: General Grocery, about 1,700 sq ft)",
+    "where the licence is now (record: Evergreen Market, 2539 Mission St, inside the SUD); decides eligibility",
+    "that 'Valencia Whole Foods' is a local Legacy Business, not the Whole Foods Market chain (record: not Formula Retail)",
+    "story (record: ground floor)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": "20",
+    "licences_already_held": null,
+    "alcohol_transaction": "premises_transfer",
+    "formula_retail": false,
+    "operator_name": "Valencia Whole Foods",
+    "floor_area_sqft": 1700,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "General Grocery (Valencia Whole Foods), about 1,700 sq ft plus basement, a registered Legacy Business operating 33 years; Type 20 transferred from Evergreen Market, 2539 Mission St.",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "21:00",
+    "opening_hour": "08:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": true
+   },
+   "record_sources": {
+    "business_type": "Motion 21370 finding 3 (\"General Grocery use ... dba Valencia Whole Foods\"); no vocabulary value",
+    "planning_use": "Motion 21370 finding 6.A (General Grocery, § 102)",
+    "serves_alcohol": "Motion 21370 finding 2 (Type 20 off-sale beer and wine)",
+    "licence_type": "Motion 21370 finding 2",
+    "alcohol_transaction": "Motion 21370 finding 2 (\"transfer a Type 20 ... from a General Grocery, dba Evergreen Market, to ... Valencia Whole Foods\"); finding 6.B (licence previously at 2539 Mission St). Another owner and another premises; premises transfer chosen because the SUD rule turns on location",
+    "formula_retail": "Motion 21370 finding 6.A (\"not considered a Formula retail use\")",
+    "operator_name": "Motion 21370 title",
+    "floor_area_sqft": "Motion 21370 finding 3 (\"roughly 1,700 square feet not including the basement\")",
+    "existing_use_stated": "Motion 21370 finding 3",
+    "existing_use_text": "Motion 21370 findings 2-3, 6.B",
+    "changes_existing_business": "Motion 21370 finding 7.A (\"will not change the overall use or operation\")",
+    "story": "Motion 21370 finding 6.A (\"It is located on the ground floor.\")",
+    "closing_hour": "Motion 21370 finding 6.C (\"8 a.m. - 9:00 p.m. every day\")",
+    "opening_hour": "Motion 21370 finding 6.C",
+    "tenant_improvements": "Motion 21370 finding 2 (\"No expansions or alterations\")",
+    "new_construction": "same",
+    "legacy_business": "Motion 21370 finding 3 (\"a registered Legacy Business\"); the business itself is the Legacy Business, it replaces none (same convention as D24)"
+   },
+   "intake_answers": {
+    "part_of_chain": false,
+    "floor_area_sqft": 1700,
+    "liquor_licence": "transfer_from_another_location"
+   },
+   "intake_answers_notes": [
+    "Chain: the motion says the business is not Formula Retail and is family-owned; it does not say whether it has any other location, so other_locations is skipped.",
+    "Liquor licence: transferred from another owner at another location (Evergreen Market, 2539 Mission); 'another location' chosen because that is what the SUD rule reads."
+   ],
+   "concept_input_audit": {
+    "verdict": "flag",
+    "flags": [
+     "\"Whole Foods on Valencia Street\" can be read as the Whole Foods Market chain, which would wrongly suggest Formula Retail; the business is Valencia Whole Foods, a local Legacy Business grocery. The wording comes from the description ('Valencia Whole Foods'), so this is a misleading rewording, not an added fact."
+    ],
+    "notes": "Section number removed. The seller name (Ish's Community Market Corp.) differs from the motion's Evergreen Market; both are from the record (description vs motion)."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Input alcohol_transaction: 'buy ... from' a company reads as an owner-to-owner transfer; the record shows a change of both owner and premises."
+   ]
+  },
+  "H11": {
+   "record": "2013.0530CUA-02",
+   "address": "1301 Van Ness Ave, San Francisco, CA 94109",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2025-07-28",
+   "rules_date": "2025-07-27",
+   "zoning_district_at_filing": "RC-4 (§ 209.3)",
+   "special_districts": [
+    "Van Ness SUD; Van Ness Automotive SUD; Fringe Financial Service buffers (not relevant)"
+   ],
+   "proposed_uses": [
+    "Liquor Store, Formula Retail (BevMo!, existing): longer delivery hours"
+   ],
+   "existing_use": "BevMo! Formula Retail liquor store approved by Motion No. 18947 (Case 2013.0530C); ABC Types 21, 42 and 86 (ABC copy). Condition 8 sets hours.",
+   "triggers": [
+    {
+     "family": "amend_prior_conditions",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Condition 8 of the 2013 Conditional Use sets the store's hours; adding late-night delivery hours (alcohol to 2 a.m., other items 24 hours) changes that condition and needs a new Conditional Use.",
+     "code_sections_at_filing": [
+      "303(e)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21845 Exhibit A, Changes and Modifications: \"Significant changes and modifications of conditions shall require Planning Commission approval of a new Conditional Use authorization.\"",
+     "evidence_from_record": "Motion No. 21845 (cached PDF 4f2d24d0b688140685e1752a.pdf), Required Commission Action: \"the Commission must grant a Conditional Use Authorization, pursuant to Planning Code Sections 303(e) to modify Conditions of Approval of a previously approved Conditional Use Application.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "earlier Conditional Use with an hours condition",
+      "the request changes that condition (delivery hours)"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Formula Retail and Liquor Store uses",
+     "why": "Existing and authorized in 2013; no change of use."
+    },
+    {
+     "item": "Hours controls of RC-4",
+     "why": "Not cited; the store's in-store hours do not change."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "The existing BevMo! store wants longer delivery hours. Alcohol deliveries: Monday to Friday 10 a.m. to 2 a.m., Saturday 9 a.m. to 2 a.m., Sunday 10 a.m. to 2 a.m., with one more hour morning and evening in the holiday period. Deliveries of other items: 24 hours a day, seven days a week. The in-store retail hours set by the store's existing permission do not change.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "BevMo!",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "retail",
+    "existing_use_text": "The existing BevMo! store",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the delivery hours are governed by a condition of the existing permission (record: Condition 8 of Motion No. 18947); the text says only that in-store hours are set by it",
+    "that the business is Formula Retail (the text gives the brand only)",
+    "what the store is in Planning terms (record: Liquor Store, Types 21/42/86)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": [
+     "21",
+     "42",
+     "86"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": true,
+    "operator_name": "BevMo!",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "BevMo! Formula Retail liquor store, approved by Motion No. 18947 (2013.0530C).",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": "21:00",
+    "opening_hour": "09:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Motion No. 18947 Condition 8: store hours (Mon-Fri 10 a.m.-9 p.m., Sat 9 a.m.-9 p.m., Sun 10 a.m.-7 p.m., plus one hour each way in the holidays); no delivery hours beyond them.",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21845 Project Description (\"existing Formula Retail use (d.b.a. BevMo!)\"); related MB1301703 (\"liquor store\"); no vocabulary value",
+    "planning_use": "related MB1301703 (\"ABC lisence type 21,42, 86 permitted in RC-4 district liquor store\")",
+    "serves_alcohol": "Motion 21845 (alcohol delivery)",
+    "licences_already_held": "local ABC copy (licence 538942: Types 21, 42, 86); related MB1301703",
+    "alcohol_transaction": "no licence change",
+    "formula_retail": "Motion 21845 Project Description",
+    "operator_name": "Motion 21845",
+    "existing_use_stated": "Motion 21845",
+    "existing_use_text": "Motion 21845; related 2013.0530C (\"Formula Retail store (Bev Mo)\")",
+    "changes_existing_business": "longer delivery operation of a conditional use (inferred; the motion cites only § 303(e))",
+    "closing_hour": "Motion 21845 condition 3 (store: latest 9 p.m.); delivery hours to 2 a.m. are not store hours",
+    "opening_hour": "Motion 21845 condition 3 (store: earliest 9 a.m. Saturday)",
+    "amends_prior_approval": "Motion 21845 Required Commission Action",
+    "prior_approval_limits": "Motion 21845 condition 3 (store hours unchanged from Condition 8)",
+    "tenant_improvements": "Motion 21845 (\"no direct or indirect physical change\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "part_of_chain": true,
+    "other_locations": "11_or_more",
+    "liquor_licence": "already_held"
+   },
+   "intake_answers_notes": [
+    "Chain: Formula Retail by the record, so eleven or more other establishments; exact count not stated.",
+    "Liquor licence 'already_held': Types 21, 42 and 86 at this address."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Motion number and condition number removed. The brand name is from the description; it lets a reader infer a chain, which the rules allow (operator name is a stated fact)."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "The Commission's motion quotes the earlier case as both 2013.0530C and 2016-0530C; the local copy has 2013.0530C and 2013.1329C for BevMo!. Not material."
+   ]
+  },
+  "H12": {
+   "record": "2023-011780CUA",
+   "address": "3233 22nd St, San Francisco, CA 94110",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2023-12-29",
+   "rules_date": "2023-12-28",
+   "zoning_district_at_filing": "NCT-MISSION (§ 754); 55-X",
+   "special_districts": [
+    "Mission Alcoholic Beverage Special Use District (§ 249.60), inside the § 249.60(f) area (Mission Street NCT)",
+    "Mission Street Formula Retail Restaurant Subdistrict (eliminated by Ord. 249-23, Eff. 1/14/2024; not relevant: not a chain)",
+    "Fringe Financial Service RUD, Priority Equity Geographies SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "Restaurant (Pasta Supply Co.) with on-sale beer and wine (Type 41)",
+    "Specialty Grocery (retail pasta shop)"
+   ],
+   "existing_use": "Vacant ground-floor space of about 2,100 sq ft in a one-story building, last a Limited Restaurant (Dumpling Club, since June 2021); restaurant uses at the space since 1999.",
+   "triggers": [
+    {
+     "family": "new_use_control",
+     "sub_rule": null,
+     "related_family": "new_use_control_special_district",
+     "basis": "stated_in_record",
+     "what": "A Restaurant is a Conditional Use on the first story of the Mission Street NCT; a Limited Restaurant is principal, so the change from Limited Restaurant to Restaurant needs a Conditional Use.",
+     "code_sections_at_filing": [
+      "754 Table (Restaurant: C(7); Restaurant, Limited: P(7))",
+      "754(c)(5) (three of four district purposes)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 754 as printed in Ord. 249-23 (existing text, unchanged in the row): \"Restaurant | §§ 102, 202.2(a), 249.60(f)(1) | C(7) | NP | NP\"; \"Restaurant, Limited | §§ 102, 202.2(a) | P(7) | NP | NP\" (Ord. 249-23 as printed (sfbos.org/sites/default/files/o0249-23.pdf, fetched 2026-11-12)). Mirror today reads the same.",
+     "evidence_from_record": "Motion No. 21531 (cached PDF 8e7c1ebc442509338d818576.pdf), Required Commission Action: \"the Commission must grant a Conditional Use Authorization, pursuant to Planning Code Sections 303 and 754 to establish a Restaurant use.\"",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Note (7), the cap on Eating and Drinking uses in the district, was changed after filing (Ord. 249-23, Eff. 1/14/2024, prints the old and new numbers run together as '179197167'; today 179). The C cell is unchanged.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in NCT-MISSION",
+      "use is a Restaurant (not a Limited Restaurant)",
+      "first story",
+      "district cap on Eating and Drinking uses not exceeded"
+     ],
+     "facts_in_concept_text": "some"
+    },
+    {
+     "family": "new_use_control_special_district",
+     "sub_rule": "mission_alcohol_sud_restaurant (§ 249.60(f)(1))",
+     "related_family": "new_use_control",
+     "basis": "stated_in_record",
+     "what": "Inside the § 249.60(f) area of the Mission Alcoholic Beverage SUD (east of the Mission Street NCT's western edge, north of Cesar Chavez) any proposed Restaurant needs a Conditional Use. Same cause as the Table 754 cell, written twice; count once.",
+     "code_sections_at_filing": [
+      "249.60(f)(1)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 249.60(f)(1): \"Any proposed Restaurant use, as defined in Planning Code Section 102, must obtain Conditional Use authorization from the Planning Commission pursuant to Planning Code Section 303.\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12; (f) added by Ord. 273-18, untouched since).",
+     "evidence_from_record": "Record description: \"seeking Conditional Use Authorization pursuant to Planning Code Section 249.60 for a change of use from Limited Service Restaurant to Full Service Restaurant\". The motion cites §§ 303 and 754 only.",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 249.60 amended after filing only by Ord. 249-23, which added (b)(1)(E).",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site inside the § 249.60(f) area of the SUD",
+      "use is a Restaurant"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "On-sale beer and wine (Type 41) in the Mission Alcoholic Beverage SUD",
+     "why": "§ 249.60(b)(1)(A): a Restaurant operating as a Bona Fide Eating Place may serve alcohol; no separate CU."
+    },
+    {
+     "item": "Specialty Grocery (pasta shop)",
+     "why": "Not named as a trigger in the motion."
+    },
+    {
+     "item": "Legacy Business replacement (§ 754(c)(4))",
+     "why": "Prior use Dumpling Club is not named a Legacy Business; the motion mentions only an adjacent Legacy Business (Make Out Room)."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "Change a limited restaurant into a full-service restaurant and specialty grocery, to get an ABC Type 41 licence.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "limited_restaurant",
+    "existing_use_text": "a limited restaurant",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "story (record: ground floor of a one-story building)",
+    "floor area (record: about 2,100 sq ft)",
+    "that the space is vacant (record: last a Limited Restaurant, now vacant)",
+    "new licence or transfer (record: not stated)",
+    "specialty grocery has no planning_use value; listed only in the text"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Pasta Supply Co.",
+    "floor_area_sqft": 2100,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant; most recently a Limited Restaurant (Dumpling Club) principally permitted since June 2021; restaurant uses at the space since 1999.",
+    "changes_existing_business": null,
+    "merges_storefronts": false,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21531 Project Description (\"change of use from Limited Restaurant to Restaurant (DBA Pasta Supply Co.)\")",
+    "planning_use": "Motion 21531 (Restaurant; plus Specialty Grocery, no vocabulary value)",
+    "serves_alcohol": "Motion 21531 (\"will permit on-sale beer and wine ... pending approval of a type 41 ABC license\")",
+    "licence_type": "Motion 21531 Project Description",
+    "operator_name": "Motion 21531",
+    "floor_area_sqft": "Motion 21531 (\"approximately 2,100 square-foot ground floor-level commercial space\")",
+    "existing_use_stated": "Motion 21531 (\"The space most recently occupied by a Limited Restaurant (DBA Dumpling Club) and is currently vacant.\")",
+    "existing_use_text": "Motion 21531 Project Description and CB3P comments",
+    "merges_storefronts": "Motion 21531 CB3P checklist (\"does not modify any existing storefront\")",
+    "story": "Motion 21531 (\"in a one-story commercial building\"; ground floor)",
+    "tenant_improvements": "Motion 21531 (\"No associated tenant improvements are proposed\")",
+    "new_construction": "Motion 21531 (\"will not alter or expand the existing commercial building\")"
+   },
+   "intake_answers": {
+    "part_of_chain": true,
+    "other_locations": 1,
+    "floor_area_sqft": 2100
+   },
+   "intake_answers_notes": [
+    "Chain: the motion refers to \"the existing Pasta Supply Co. storefront in the Inner Richmond neighborhood\", so one other location; not Formula Retail.",
+    "Liquor licence: Type 41 pending; new or transfer not stated, left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "\"CB3P approved\" and the section removed; nothing added."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Filed 16 days before Ord. 249-23 took effect; the Restaurant cell is C on both sides, only the cap number moved."
+   ]
+  },
+  "H13": {
+   "record": "2024-004781CUA",
+   "address": "1457 Haight St, San Francisco, CA 94117",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2024-05-29",
+   "rules_date": "2024-05-28",
+   "zoning_district_at_filing": "NCD-HAIGHT (§ 719); 40-X",
+   "special_districts": [
+    "Haight Street Alcohol Restricted Use Subdistrict (§ 781.9)",
+    "Fringe Financial Service RUD, Family and Senior Housing Opportunity SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "Restaurant with on-sale alcohol"
+   ],
+   "existing_use": "Existing Limited Restaurant, ground floor (ground floor area 898 sq ft on the plan sheet); plans mark a historic resource (category A) present.",
+   "triggers": [
+    {
+     "family": "alcohol_licence_in_restricted_district",
+     "sub_rule": "haight_alcohol_rusd_new_on_sale_establishment (§ 781.9(c)(2) / Table 719 Note 3)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "A Restaurant selling alcohol for on-site consumption is a new on-sale liquor establishment in the Haight Street Alcohol RUSD, allowed only as a Conditional Use. The Restaurant use itself is principal on the first story.",
+     "code_sections_at_filing": [
+      "781.9(c)(2)",
+      "781.9(c)(1)(B)",
+      "719 Table (Restaurant P(3); Note 3)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 781.9(c)(2): \"New on-sale or off-sale liquor establishments shall be permitted in the Haight Street RUSD as a Conditional Use.\" Table 719 note (3): \"Retail establishments selling off-sale or on-sale alcoholic beverages are permitted as a Conditional Use pursuant to Section 781.9.\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12; last amended by Ord. 85-24, Eff. 5/27/2024, before filing, in (c)(3) only).",
+     "evidence_from_record": "Motion No. 21606 (cached PDF b41b31914ac2b3e6064f51ce.pdf), Required Commission Action: \"pursuant to Planning Code Sections 303, 719, and 781.9 to allow a Restaurant Use which will sell on-sale alcoholic beverages on the ground floor\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "No amendment to § 781.9 after Ord. 85-24 (Eff. 5/27/2024), which preceded the filing.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in the Haight Street Alcohol RUSD",
+      "the business will sell alcohol on-sale (Types 40, 41, 42, 47, 48, 57)",
+      "it is new (not a continuing unpermitted establishment)"
+     ],
+     "facts_in_concept_text": "none"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Restaurant use without alcohol (Table 719)",
+     "why": "P on the first story; the cell is conditional only through note (3) when alcohol is sold."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "Change an existing limited restaurant into a full-service restaurant. No construction.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "limited_restaurant",
+    "existing_use_text": "an existing limited restaurant",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the restaurant will sell alcohol on-sale (the only trigger; record: yes, a Type 41 followed)",
+    "story (record: ground floor)",
+    "floor area"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": true,
+    "licence_type": "41",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Sandy's (BSP Ventures LLC)",
+    "floor_area_sqft": 898,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "limited_restaurant"
+    ],
+    "existing_use_text": "Existing Limited Restaurant on the ground floor; becomes a Restaurant with on-sale alcohol.",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21606 Project Description",
+    "planning_use": "Motion 21606 (\"change of use from an existing Limited Restaurant to a Restaurant\")",
+    "serves_alcohol": "Motion 21606 (\"which will sell on-sale alcoholic beverages\")",
+    "licence_type": "related 2025-004868MIS after the decision (\"Type 41 License permitted with Full service restaurant per 2024-004781CUA\"); ABC copy licence 669497 (Type 41, 2026)",
+    "operator_name": "Motion 21606 p.1 (sponsor BSP Ventures LLC); ABC copy (dba Sandy's)",
+    "floor_area_sqft": "Motion 21606 plan sheet (\"TOTAL GROUND FLOOR AREA (SQ. FT.): 898\"); building ground floor, taken as the restaurant",
+    "existing_use_stated": "Motion 21606 Project Description",
+    "existing_use_text": "Motion 21606",
+    "changes_existing_business": "same business continues; change of use class only (Motion 21606: \"The Project is only to memorialize the change of use\")",
+    "story": "Motion 21606 (\"on the ground floor\")",
+    "tenant_improvements": "Motion 21606 (\"No construction is proposed.\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 898
+   },
+   "intake_answers_notes": [
+    "Liquor licence route not in the motion (the Type 41 referral came later)."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Faithful to the description (sections and 'Haight NCD' removed). The description omits alcohol; the motion's whole basis is alcohol. The case cannot be reached from the text without the address-based RUSD and an alcohol fact."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Floor area 898 is the building's ground-floor area on the plan sheet; I take it as the restaurant's area."
+   ]
+  },
+  "H14": {
+   "record": "2022-001116CUA",
+   "address": "1548 California St, San Francisco, CA 94109",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2022-02-08",
+   "rules_date": "2022-02-07",
+   "zoning_district_at_filing": "NCD-POLK (§ 723); 65-A",
+   "special_districts": [
+    "Family and Senior Housing Opportunity SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "Liquor Store (accessory, off-sale beer, wine and spirits) inside an existing Bar"
+   ],
+   "existing_use": "Bar (Soda Popinski's) of 853 sq ft since 2012, ABC Type 48.",
+   "triggers": [
+    {
+     "family": "new_use_control",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "A Liquor Store is a Conditional Use on the first story of the Polk Street NCD; turning the front of the bar into an off-sale package store establishes one.",
+     "code_sections_at_filing": [
+      "723 Table (Liquor Store: C)",
+      "303(c)",
+      "303(z) (Liquor Store findings)",
+      "102 (Liquor Store)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 723 today: \"Liquor Store | § 102 | C(9) | NP | NP\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12); the motion states the same control at filing.",
+     "evidence_from_record": "Motion No. 21107 (cached PDF d0356e19d76c533cb3dccaeb.pdf), finding 6.A: \"The establishment of a Liquor Store use in the Polk Street NCD Zoning District requires a Conditional Use Authorization pursuant to Planning Code Section 723.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Row reads C today (note 9 concerns temporary closures during construction). Amendments to Table 723 after filing were not compared line by line.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in the Polk Street NCD",
+      "use is a Liquor Store (off-sale)",
+      "first story"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Use size",
+     "why": "Finding 6.B: the use stays inside the 853 sq ft bar, under the 1,999 sq ft principal limit."
+    },
+    {
+     "item": "Hours",
+     "why": "6 a.m.-2 a.m., principally permitted (finding 6.C)."
+    },
+    {
+     "item": "Bar intensification",
+     "why": "No physical change; the motion treats it as a new Liquor Store use, not a bar change."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "An existing bar, Soda Popinski's, with an ABC Type 48 licence, wants to turn the front part of the bar into a package store selling beer, wine and spirits to take away. The liquor store area would be about 250 square feet. No exterior or interior changes.",
+   "input_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "bar",
+     "not_covered"
+    ],
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": [
+     "48"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Soda Popinski's",
+    "floor_area_sqft": 250,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "bar",
+    "existing_use_text": "An existing bar, Soda Popinski's, with an ABC Type 48 licence",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "licence type for the package store (record: Type 21; the text describes off-sale beer, wine and spirits without naming the type)",
+    "story (record: ground floor)",
+    "whole premises size (record: 853 sq ft bar); 250 is the store area only"
+   ],
+   "record_facts": {
+    "business_type": "bar",
+    "planning_use": [
+     "bar",
+     "not_covered"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "21",
+    "licences_already_held": [
+     "48"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Soda Popinski's",
+    "floor_area_sqft": 853,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "bar"
+    ],
+    "existing_use_text": "Bar (Soda Popinski's) since 2012, 853 sq ft, Type 48; the front part becomes an accessory Liquor Store of about 150 sq ft (motion) or 250 sq ft (description).",
+    "changes_existing_business": "none",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "02:00",
+    "opening_hour": "06:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21107 finding 2 (\"an existing Bar Use (dba. Soda Popinski's)\")",
+    "planning_use": "Motion 21107 (Bar, plus Liquor Store with no vocabulary value)",
+    "serves_alcohol": "Motion 21107",
+    "licence_type": "related 2022-003451MIS and earlier (\"Recommend approval of ABC Type 21 -(Package Store) in conjunction of existing bar dba Soda Popinksi's\")",
+    "licences_already_held": "record description (\"existing bar (ABC-Type 48 License)\")",
+    "operator_name": "Motion 21107",
+    "floor_area_sqft": "Motion 21107 finding 6.B (\"within an existing 853 square foot Bar Use\")",
+    "existing_use_stated": "Motion 21107 finding 3",
+    "existing_use_text": "Motion 21107 findings 2-3, 6.B",
+    "changes_existing_business": "Motion 21107 finding 6.B (\"would not create additional space\"); the bar continues",
+    "story": "Motion 21107 finding 7.D (\"the intended use is located at the ground floor\")",
+    "closing_hour": "Motion 21107 finding 6.C (\"6am to 2am every day\")",
+    "opening_hour": "Motion 21107 finding 6.C",
+    "tenant_improvements": "Motion 21107 finding 2 (\"There will be no exterior or interior changes.\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 853
+   },
+   "intake_answers_notes": [
+    "Liquor licence for the store: Type 21 per the referrals; new or transfer not stated, left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Sections removed; nothing added. The description says 250 sq ft and the motion 150 sq ft for the store area."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Input floor_area_sqft 250 is the store area only; the whole premises is 853."
+   ]
+  },
+  "H15": {
+   "record": "2025-007559CUA",
+   "address": "1416 Haight St, San Francisco, CA 94117",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2025-09-24",
+   "rules_date": "2025-09-23",
+   "zoning_district_at_filing": "NCD-HAIGHT (§ 719); 40-X",
+   "special_districts": [
+    "Haight Street Alcohol Restricted Use Subdistrict (§ 781.9)",
+    "Fringe Financial Service RUD, Family and Senior Housing Opportunity SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "off-sale liquor establishment (Liquor Store) with Type 21, in a continuing grocery and deli"
+   ],
+   "existing_use": "Grocery store and deli (Amal's) of 2,814 sq ft with a Type 20 since about 1995, before the RUSD controls; a new owner upgrades to Type 21. About 180 sq ft for alcohol.",
+   "triggers": [
+    {
+     "family": "alcohol_licence_in_restricted_district",
+     "sub_rule": "haight_alcohol_rusd_new_off_sale_establishment (§ 781.9(c)(2))",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "In the Haight Street Alcohol RUSD an off-sale liquor establishment is a Liquor Store, and new ones are allowed only as a Conditional Use. The existing Type 20 grocery may continue as an unpermitted liquor establishment only with the same licence type (Type 21 to 20 is allowed, not 20 to 21), so the upgrade makes a new off-sale establishment. Table 719 lists Liquor Store NP, but note (3) and § 781.9 allow it as a Conditional Use.",
+     "code_sections_at_filing": [
+      "781.9(c)(2)",
+      "781.9(c)(1)(C)",
+      "781.9(c)(3)(A)-(B)",
+      "719 Table (Liquor Store NP; Note 3)",
+      "303(z)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 781.9(c)(1)(C): \"An 'off-sale liquor establishment' shall mean a Liquor Store use.\" (c)(2): \"New on-sale or off-sale liquor establishments shall be permitted in the Haight Street RUSD as a Conditional Use.\" (c)(3)(B)(v): \"A change from a Type 21 (off-sale general) to a Type 20 (off-sale beer and wine) license.\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12).",
+     "evidence_from_record": "Motion No. 21879 (cached PDF f8d89ffb6b9ed2b4d9189ba7.pdf), Required Commission Action: \"pursuant to Planning Code Sections 303 and 781.9 to allow the a Liquor Store use within the Haight Street Alcohol Restricted Use Subdistrict\"; Project Description: \"The off-sale liquor establishment is considered a Liquor Store use due to its location within the Alcohol Restricted Use Subdistrict\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 781.9 last amended by Ord. 85-24 (Eff. 5/27/2024), before filing.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in the Haight Street Alcohol RUSD",
+      "off-sale alcohol",
+      "new establishment, or a change of licence type beyond (c)(3)(B) (here Type 20 to Type 21)"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Grocery and deli use",
+     "why": "Continues; not a trigger."
+    },
+    {
+     "item": "Table 719 Liquor Store NP read alone",
+     "why": "A rule reading only the table cell would say not permitted; note (3) and § 781.9(c)(2) make it a Conditional Use."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "Open a new off-sale liquor establishment at this address.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": null,
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that a grocery and deli with a Type 20 since about 1995 already operates there (record)",
+    "licence type sought (record: Type 21)",
+    "floor area and alcohol area (record: 2,814 sq ft; about 180 sq ft for alcohol)",
+    "story"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": "21",
+    "licences_already_held": [
+     "20"
+    ],
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Amal's Market",
+    "floor_area_sqft": 2814,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail"
+    ],
+    "existing_use_text": "Grocery store and deli with an ABC Type 20 since about 1995 (before the RUSD moratorium); new owner continues it and upgrades to Type 21.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": false,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21879 Project Description (\"will operate as a grocery store and deli with off-sale liquor sales\"); no vocabulary value",
+    "planning_use": "Motion 21879 (Liquor Store use by the RUSD definition)",
+    "serves_alcohol": "Motion 21879",
+    "licence_type": "Motion 21879 (\"with an ABC Type 21 license\")",
+    "licences_already_held": "Motion 21879 (\"has operated as a grocery store and deli with an ABC Type 20 license since about 1995\")",
+    "operator_name": "Motion 21879 (d.b.a. Amal's Market)",
+    "floor_area_sqft": "Motion 21879 (\"Its total size is 2,814 square feet, with approximately 180 square feet devoted to the sale and display of alcohol\")",
+    "existing_use_stated": "Motion 21879",
+    "existing_use_text": "Motion 21879 Project Description",
+    "changes_existing_business": "Motion 21879 (\"upgrading from a Type 20 ... to a Type 21\"; same convention as D20)",
+    "tenant_improvements": "Motion 21879 (no work described; CEQA Class 1)"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 2814
+   },
+   "intake_answers_notes": [
+    "Liquor licence: the motion says 'upgrading' from Type 20 to Type 21; whether the Type 21 is new or transferred is not stated, left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "flag",
+    "flags": [
+     "\"off-sale liquor establishment\" is the Code's own term (§ 781.9(c)(1)(C)), kept from the description; it points at the RUSD category. Minor, since it is the description's wording."
+    ],
+    "notes": "Section and RUSD name removed. The input drops that a grocery with a Type 20 already operates there; the description does too."
+   },
+   "confidence": "high",
+   "uncertain_points": []
+  },
+  "H16": {
+   "record": "2024-009436CUA",
+   "address": "1210 9th Ave, San Francisco, CA 94122",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2024-11-06",
+   "rules_date": "2024-11-05",
+   "zoning_district_at_filing": "NCD-INNER SUNSET (§ 730); 40-X",
+   "special_districts": [
+    "Family and Senior Housing Opportunity SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "Restaurant, Formula Retail (Mixt)"
+   ],
+   "existing_use": "Vacant ground-floor retail space of about 1,882 sq ft in a one-story building (plans: previous use retail).",
+   "triggers": [
+    {
+     "family": "formula_retail",
+     "sub_rule": "baseline_article7 (explains why a CUA was filed)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Establishing a Formula Retail use (a Restaurant) in an Article 7 NCD needs a Conditional Use. Inner Sunset does not prohibit Formula Retail restaurants.",
+     "code_sections_at_filing": [
+      "303.1(e)(1) (today (e)(5))",
+      "303.1(b)-(d)",
+      "703.4(b)",
+      "730 Table (Formula Retail: C)",
+      "303(c)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 730 today: \"Formula Retail | §§ 102, 303.1 | C\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12); § 303.1(e)(1) wording as quoted in triggers.json D18 (same district, filed 2024).",
+     "evidence_from_record": "Motion No. 21672 (cached PDF 8c207b4c90d44c262346ee82.pdf), Required Commission Action: \"pursuant to Planning Code Sections 303, 303.1, and 730 for the establishment of a Formula Retail use in the Inner Sunset Neighborhood Commercial Zoning District\".",
+     "changed_since_filing": "text_only",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 303.1(e)(1) renumbered (e)(5) by Ord. 13-26 (Eff. 3/16/2026), per triggers.json D18. Table 730 Formula Retail still C.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "Formula Retail (11 or more other establishments)",
+      "Article 7 NCD that does not prohibit Formula Retail restaurants"
+     ],
+     "facts_in_concept_text": "all"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Restaurant use in the Inner Sunset NCD",
+     "why": "P on the first story (Table 730)."
+    },
+    {
+     "item": "Change-of-operator test (§ 178(c)(3))",
+     "why": "The prior use was retail, not shown as Formula Retail; this is a new Formula Retail use of a different category."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "text_only",
+   "concept_input": "A restaurant that is part of a chain wants to open in a vacant ground-floor retail space. Interior remodel into a restaurant: new kitchen equipment, a serving area and customer seating; some partitions removed and one added; new finishes and lighting; plumbing, electrical and mechanical work in the kitchen. Outside: new paint and two new illuminated signs, a front-facing channel-letter sign and a blade sign.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "a vacant ground-floor retail space",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "operator name (record: Mixt)",
+    "floor area (record: about 1,882 sq ft)"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": "restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Mixt",
+    "floor_area_sqft": 1882,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant ground-floor retail space in a one-story building; plans: previous use retail.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21672 Project Description (\"a Formula Retail use for a Restaurant (d.b.a Mixt)\")",
+    "planning_use": "Motion 21672",
+    "formula_retail": "Motion 21672",
+    "operator_name": "Motion 21672",
+    "floor_area_sqft": "Motion 21672 (\"commercial space approximating 1,882 square feet\")",
+    "existing_use_stated": "Motion 21672 (\"would fill a vacant storefront\"); plan sheet (\"PREVIOUS USE: RETAIL\")",
+    "existing_use_text": "Motion 21672 and plan sheet",
+    "story": "Motion 21672 (one-story building); record description (ground floor)",
+    "tenant_improvements": "plan sheet (\"INTERIOR REMODEL OF A VACANT, GROUND FLOOR RETAIL SPACE INTO A NEW RESTAURANT SPACE\")",
+    "new_construction": "plan sheet (interior remodel and signage only)"
+   },
+   "intake_answers": {
+    "part_of_chain": true,
+    "other_locations": "11_or_more",
+    "floor_area_sqft": 1882
+   },
+   "intake_answers_notes": [
+    "Chain: Formula Retail by the record; exact count not stated. No alcohol in the motion."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "\"formula retail use\" written as \"part of a chain\"; section removed; nothing added."
+   },
+   "confidence": "high",
+   "uncertain_points": []
+  },
+  "H17": {
+   "record": "2022-009099CUA",
+   "address": "1111 California St, San Francisco, CA 94108",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2022-09-20",
+   "rules_date": "2022-09-19",
+   "zoning_district_at_filing": "RM-4 (§ 209.2); 65-A; Nob Hill SUD",
+   "special_districts": [
+    "Nob Hill Special Use District",
+    "Fringe Financial Service buffer (not relevant)"
+   ],
+   "proposed_uses": [
+    "General Entertainment (existing, Nob Hill Masonic Center): more large events a year"
+   ],
+   "existing_use": "Nob Hill Masonic Center, about 118,000 sq ft of assembly and entertainment space; nonconforming since 1978, changed to General Entertainment (then Other Entertainment) with food and beverage service by Motion No. 19020 (2013) under § 182(b)(1); Conditions 48 and 49 cap large events at 79 a year, of which 54 music. ABC Types 47 and 58.",
+   "triggers": [
+    {
+     "family": "amend_prior_conditions",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Conditions 48 and 49 of the 2013 Conditional Use cap events with more than 250 attendees; raising the cap from 79 to 91 needs a new Conditional Use.",
+     "code_sections_at_filing": [
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21356 title: \"CONDITIONAL USE AUTHORIZATION PURSUANT TO PLANNING CODE SECTION 303 TO AMEND CONDITION NOS. 48 AND 49 OF PLANNING COMMISSION MOTION NO. 19020\".",
+     "evidence_from_record": "Motion No. 21356 (cached PDF 9ac1339b5a5dbfea2eba412d.pdf), finding 2: \"The current request for Conditional Use authorization is to amend condition no. 48 and no. 49 of Motion No. 19020 ... to increase the maximum number of large entertainment events ... from 79 to 91 events annually, while maintaining a maximum of 54 music concerts per year.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "earlier Conditional Use with event caps",
+      "request raises a cap"
+     ],
+     "facts_in_concept_text": "all"
+    },
+    {
+     "family": "enlarge_or_intensify_existing_use",
+     "sub_rule": "change_of_nonconforming_use (§ 182(b)/(c))",
+     "related_family": "amend_prior_conditions",
+     "basis": "inferred_from_code",
+     "what": "More large events intensify a use authorized by Conditional Use (the General Entertainment use granted under § 182(b)(1) in an RM-4 district where it is not otherwise permitted). The motion cites only § 303 and does not use the word intensification.",
+     "code_sections_at_filing": [
+      "178(c)(1)",
+      "182(b)(1)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21356 finding 6.A: \"Section 182(b)(1) permits a non-conforming use within a Residential District to change to another use which is permitted as a Conditional Use in an NC-1 District ... through the Conditional Use authorization process.\"",
+     "evidence_from_record": "Motion 21356 finding 6.A: \"The request does not propose to change the conditionally approved use of the Center.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Not re-read.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "existing conditional use",
+      "more events"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Change of use",
+     "why": "None; the 2013 General Entertainment use continues (finding 6.A)."
+    },
+    {
+     "item": "Hours, alcohol",
+     "why": "Existing conditions on hours and alcohol service stay in effect."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "The Nob Hill Masonic Center, an entertainment venue with food and beverage service, operates under an existing permission whose conditions cap events with more than 250 attendees at 79 entertainment events a year, of which at most 54 may be music events. The operator wants the cap on large entertainment events raised from 79 to 91 a year, mostly for comedy shows, and keeps the limit of 54 large music events. No other change.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Nob Hill Masonic Center",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "other",
+    "existing_use_text": "an entertainment venue with food and beverage service",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "events with more than 250 attendees capped at 79 a year, at most 54 of them music events",
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "zoning is from the address (RM-4); the text does not say the use is otherwise not permitted there",
+    "whether 'beverage' includes alcohol (record: Types 47 and 58)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": [
+     "47",
+     "58"
+    ],
+    "alcohol_transaction": "licence_already_held",
+    "formula_retail": null,
+    "operator_name": "Nob Hill Masonic Center (Live Nation)",
+    "floor_area_sqft": 118000,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other"
+    ],
+    "existing_use_text": "General Entertainment use with food and beverage service, authorized by Motion No. 19020 (2013) under § 182(b)(1); nonconforming entertainment use since 1978.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": true,
+    "prior_approval_limits": "Motion No. 19020 Condition 48: at most 79 events a year with more than 250 attendees; Condition 49: at most 54 of them music events.",
+    "tenant_improvements": false,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21356 finding 2 (venue for music, comedy, cultural and civic events)",
+    "planning_use": "Motion 21356 (General Entertainment; no vocabulary value)",
+    "serves_alcohol": "Motion 21356 preamble (\"limit the hours of operation for events and for alcohol services\"); ABC copy (licence 484162, Types 47 and 58)",
+    "licences_already_held": "local ABC copy",
+    "alcohol_transaction": "no licence change",
+    "operator_name": "Motion 21356 p.1 (sponsor [name withheld], Live Nation)",
+    "floor_area_sqft": "Motion 21356 finding 3 (\"approximately 118,000 square feet of assembly and entertainment space\")",
+    "existing_use_stated": "Motion 21356 finding 2",
+    "existing_use_text": "Motion 21356 preamble and finding 6.A",
+    "changes_existing_business": "more large events (12 more a year)",
+    "live_entertainment": "Motion 21356 finding 2 (music, comedy)",
+    "amends_prior_approval": "Motion 21356 title",
+    "prior_approval_limits": "Motion 21356 finding 2",
+    "tenant_improvements": "Motion 21356 finding 7.B(1) (\"would not change\")",
+    "new_construction": "same"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 118000,
+    "liquor_licence": "already_held"
+   },
+   "intake_answers_notes": [
+    "Floor area is the assembly and entertainment space only (finding 3); 17,000 sq ft of Masonic offices not counted."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Motion number and condition numbers removed. Faithful."
+   },
+   "confidence": "high",
+   "uncertain_points": []
+  },
+  "H18": {
+   "record": "2025-000941CUA",
+   "address": "3065 16th St, San Francisco, CA 94103",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2025-02-04",
+   "rules_date": "2025-02-03",
+   "zoning_district_at_filing": "NCT-VALENCIA (§ 762); 65-X",
+   "special_districts": [
+    "Mission Alcoholic Beverage Special Use District (§ 249.60); outside the § 249.60(f) restaurant area (Valencia NCT)",
+    "Priority Equity Geographies SUD (not relevant)"
+   ],
+   "proposed_uses": [
+    "General Entertainment (escape room, 540 sq ft) added to an existing Restaurant with a Type 47"
+   ],
+   "existing_use": "Existing 3,600 sq ft Restaurant use on the ground floor, vacant for over five years (motion); a bar (El Tinpan) with a Type 47 is on record there in 2008-2016.",
+   "triggers": [
+    {
+     "family": "new_use_control",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "General Entertainment is a Conditional Use on the first story of the Valencia Street NCT.",
+     "code_sections_at_filing": [
+      "762 Table (Entertainment, General: C)",
+      "102 (Entertainment, General)",
+      "303"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 762 today: \"Entertainment, General | §102 | C NP NP\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12); the motion states the same control at filing.",
+     "evidence_from_record": "Motion No. 21723 (cached PDF f323d5663f7871d4c3748fb6.pdf), Required Commission Action: \"In the Valencia Street (NCT) Zoning District, Planning Code Sections 762 and 102 requires that a new General Entertainment Use obtain Conditional Use Authorization.\"",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "Table 762 amendments after filing not compared; the row reads C today.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in NCT-VALENCIA",
+      "the new use is General Entertainment (escape room)",
+      "first story"
+     ],
+     "facts_in_concept_text": "some"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Alcohol in the Mission Alcoholic Beverage SUD",
+     "why": "§ 249.60(b)(1)(A)/(C): a Bona Fide Eating Place, and General Entertainment integrated with a Restaurant (without a Place of Entertainment permit), may serve alcohol."
+    },
+    {
+     "item": "Restaurant use, § 303(o)",
+     "why": "Motion: \"Food uses are permitted as of right within the Valencia Street NCT District.\""
+    },
+    {
+     "item": "Nighttime Entertainment",
+     "why": "Motion: \"This approval does not establish\" uses needing a Place of Entertainment permit."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "no",
+   "concept_input": "Add a prefabricated escape room at the rear of an existing restaurant.",
+   "input_facts": {
+    "business_type": "restaurant",
+    "planning_use": [
+     "restaurant",
+     "not_covered"
+    ],
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": "restaurant",
+    "existing_use_text": "an existing restaurant",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that an escape room is General Entertainment (no planning_use value)",
+    "hours (record: 6 a.m.-2 a.m. condition)",
+    "alcohol (record: Type 47)",
+    "size (record: escape room 540 sq ft in a 3,600 sq ft restaurant)",
+    "story (record: ground floor)",
+    "that the space has been vacant over five years (record)"
+   ],
+   "record_facts": {
+    "business_type": "restaurant",
+    "planning_use": [
+     "restaurant",
+     "not_covered"
+    ],
+    "serves_alcohol": true,
+    "licence_type": "47",
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": false,
+    "operator_name": "Lore Escapes",
+    "floor_area_sqft": 3600,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "restaurant",
+     "vacant"
+    ],
+    "existing_use_text": "Existing 3,600 sq ft Restaurant use at the commercial ground floor, vacant over five years; earlier a bar (El Tinpan) with a Type 47.",
+    "changes_existing_business": "intensify",
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "02:00",
+    "opening_hour": "06:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21723 Project Description (existing Restaurant; \"full food and drink menu\")",
+    "planning_use": "Motion 21723 (Restaurant + General Entertainment; GE has no vocabulary value)",
+    "serves_alcohol": "Motion 21723 (\"with a type 47 liquor license\")",
+    "licence_type": "Motion 21723; ABC copy licence 666657 (Type 47, issued 2025-05-27)",
+    "formula_retail": "Motion 21723 (\"is not considered a formula retail use\")",
+    "operator_name": "Motion 21723 (dba Lore Escapes)",
+    "floor_area_sqft": "Motion 21723 (\"the existing 3,600 square foot Restaurant Use\"); plans: escape room 540 sq ft",
+    "existing_use_stated": "Motion 21723 Project Description and Basis (\"a space that has remained vacant for over five years\")",
+    "existing_use_text": "Motion 21723; related MB0800492, 2016-013253PRL (bar El Tinpan)",
+    "changes_existing_business": "a new use added to the restaurant",
+    "story": "Motion 21723 (\"located at the commercial ground floor\")",
+    "closing_hour": "Motion 21723 condition 14 (\"Monday through Sunday from 6:00 a.m. to 2:00 am\")",
+    "opening_hour": "Motion 21723 condition 14",
+    "tenant_improvements": "plans (\"ASSEMBLE ESCAPE ROOM INTO RM 3\")"
+   },
+   "intake_answers": {
+    "part_of_chain": false,
+    "floor_area_sqft": 3600
+   },
+   "intake_answers_notes": [
+    "Chain: the motion says not formula retail; whether it has other locations is not stated (part_of_chain false is the record's 'not formula retail', a weaker statement).",
+    "Liquor licence: Type 47 named; whether new, transferred or held is not stated, left unanswered."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "\"CB3P-approved\" and \"Conditional Use Authorization for General Entertainment Use\" removed; the input says 'escape room' and leaves the use class out, as it should."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Whether the Restaurant use survived five-plus years of vacancy is not discussed; the motion calls it existing.",
+    "intake part_of_chain False rests on 'not formula retail' only."
+   ]
+  },
+  "H19": {
+   "record": "2024-002799CUA",
+   "address": "906 Broadway, San Francisco, CA 94133",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2024-03-29",
+   "rules_date": "2024-03-28",
+   "zoning_district_at_filing": "RM-2 (§ 209.2); 40-X",
+   "special_districts": [
+    "City Landmark No. 204 (Our Lady of Guadalupe Church), Article 10"
+   ],
+   "proposed_uses": [
+    "General Entertainment (event space, The Melody of San Francisco); first applied for as Nighttime Entertainment with extended hours, amended 2024-09-09"
+   ],
+   "existing_use": "Vacant church of about 15,000 sq ft (Institutional), religious use ended about 25 years ago; school until 2011; vacant since.",
+   "triggers": [
+    {
+     "family": "landmark_use_in_residential_district",
+     "sub_rule": null,
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "General Entertainment is not permitted in RM-2. In an Article 10 landmark in an RM district, any use that is P or C on the NC-1 ground floor may be authorized as a Conditional Use (§ 186.3); General Entertainment is P in NC-1 to 11 p.m.",
+     "code_sections_at_filing": [
+      "186.3",
+      "209.2 (RM-2 table)",
+      "710 (NC-1, by reference)",
+      "303",
+      "303(p)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Motion No. 21838 finding 6.C: \"Per Planning Code Section 186.3, an Article 10 City Landmark within the RM (Residential Mixed) Zoning Districts may seek a Conditional Use Authorization to authorize any Non-Residential use or Commercial Use Characteristic that is Principally or Conditionally allowed on the ground floor in the NC-1 Zoning District.\"",
+     "evidence_from_record": "Motion No. 21838 (cached PDF a7ef4e3c95909403631bc54a.pdf), finding 6.A: \"General Entertainment is not a permitted use within the RM-2 Zoning District. Therefore, the Project Sponsor is pursuing a Conditional Use Authorization per Planning Code Section 186.3.\"",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 186.3 (added by Ord. 22-15; amended by Ord. 63-20 and Ord. 245-25, Eff. 1/12/2026) was repealed by Ord. 37-26 (File No. 250886, Eff. 4/11/2026). The same mechanism now sits in § 202.11(d)(1): \"In RH, RM, and RTO Districts, when located in a Historic Building, any Use that is not permitted in the District and is listed as a Principal or Conditional Use on the ground floor in the NC-1 District ... is permitted with Conditional Use authorization pursuant to Section 303\", plus a Planning Director determination under § 202.11(c)(1) (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12).",
+     "control_today": "conditional (§ 202.11(d)(1), if a § 102 Historic Building and the Planning Director determination is obtained)",
+     "facts_needed": [
+      "site in an RH or RM district",
+      "Article 10 landmark",
+      "General Entertainment P or C on the NC-1 ground floor"
+     ],
+     "facts_in_concept_text": "all"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Rear yard (§ 134) for the new egress stair",
+     "why": "Needs a Variance, not a Conditional Use (finding 6.D)."
+    },
+    {
+     "item": "Nighttime Entertainment and extended hours",
+     "why": "In the first application; withdrawn by the 2024-09-09 amendment."
+    },
+    {
+     "item": "Hours",
+     "why": "8 a.m.-10 p.m., inside NC-1's 6 a.m.-11 p.m. (finding 6.B)."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "Convert a vacant church building, a city landmark (No. 204), into an event space (general entertainment), open 8 a.m. to 10 p.m. daily.",
+   "input_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": null,
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "other",
+     "vacant"
+    ],
+    "existing_use_text": "a vacant church building, a city landmark (No. 204)",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": "22:00",
+    "opening_hour": "08:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "size and capacity (record: about 15,000 sq ft; capacity 400)",
+    "alcohol (record: only by caterers with their own licences)",
+    "entertainment kind (record: Limited Live Performance permit; amplified system)",
+    "exterior work (record: new rear egress stair; Variance)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "not_covered",
+    "serves_alcohol": true,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "The Melody of San Francisco",
+    "floor_area_sqft": 15012,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": 400,
+    "existing_use_stated": [
+     "other",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant church (Institutional use; Landmark No. 204), church use ended about 25 years ago, school until 2011, vacant since.",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": [
+     "first",
+     "basement"
+    ],
+    "closing_hour": "22:00",
+    "opening_hour": "08:00",
+    "entertainment_kind": "limited_live_performance",
+    "amplified_sound": true,
+    "live_entertainment": true,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": true,
+    "historic_building": true,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21838 finding 6.A (multipurpose event space; \"not a restaurant, bar, or nightclub\")",
+    "planning_use": "Motion 21838 (General Entertainment; no vocabulary value)",
+    "serves_alcohol": "Motion 21838 finding 6.A (\"Alcoholic beverage service can only be provided by catering and food services businesses that have State-issued Alcoholic Beverage Control permits\"); the venue holds no licence",
+    "operator_name": "Motion 21838 title",
+    "floor_area_sqft": "Motion 21838 title (\"EXISTING 15,012 SQUARE-FOOT VACANT CHURCH\")",
+    "occupants": "Motion 21838 finding 6.E (\"a proposed capacity of 400\")",
+    "existing_use_stated": "Motion 21838 finding 3 and 6.E (previously an Institutional use; vacant since 2011)",
+    "existing_use_text": "Motion 21838 finding 3",
+    "story": "Motion 21838 finding 2 (5,175 sq ft sanctuary and 4,635 sq ft basement)",
+    "closing_hour": "Motion 21838 condition 19 (\"Daily, 8 a.m. to 10 p.m.\")",
+    "opening_hour": "Motion 21838 condition 19",
+    "entertainment_kind": "Motion 21838 finding 6.A (\"will be seeking a Limited Live Performance Permit\")",
+    "amplified_sound": "Motion 21838 finding 6.A (\"proposed interior audio amplification system\")",
+    "live_entertainment": "Motion 21838 finding 8(a) (accessory live entertainment)",
+    "tenant_improvements": "Motion 21838 finding 2 (exterior and interior alterations)",
+    "new_construction": "Motion 21838 finding 2 (\"a new rear exterior stair enclosure for required egress\"); 6.D (Variance)",
+    "historic_building": "Motion 21838 title (Landmark No. 204)"
+   },
+   "intake_answers": {
+    "floor_area_sqft": 15012
+   },
+   "intake_answers_notes": [
+    "Liquor licence: the venue holds none; caterers bring their own. Not answered as 'none' because alcohol is served at events."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Sections removed. \"(general entertainment)\" is the use class from the description, not a code section; the landmark number is a fact. Note the description is the amended one (GE, 10 p.m.), not the first application (Nighttime Entertainment, extended hours)."
+   },
+   "confidence": "high",
+   "uncertain_points": [
+    "Record serves_alcohol True means caterers serve at events; the venue holds no licence. A rule may treat this either way."
+   ]
+  },
+  "H20": {
+   "record": "2023-008363CUA",
+   "address": "1567 Sloat Blvd, San Francisco, CA 94132",
+   "group": "decided",
+   "outcome": "approved_with_conditions",
+   "filed": "2023-09-08",
+   "rules_date": "2023-09-07",
+   "zoning_district_at_filing": "NC-S (§ 713); Lakeshore Plaza SUD (§ 780.1); 26-40-X",
+   "special_districts": [
+    "Lakeshore Plaza Special Use District (§ 780.1)",
+    "Family Housing Opportunity SUD; Fringe Financial Service buffer (not relevant)"
+   ],
+   "proposed_uses": [
+    "Limited Restaurant, Formula Retail (Crumbl Cookies), open to midnight Friday and Saturday"
+   ],
+   "existing_use": "Vacant 2,053 sq ft first-story space in the Lakeshore Plaza shopping center, last a Formula Retail store (AT&T Authorized Retailer).",
+   "triggers": [
+    {
+     "family": "formula_retail",
+     "sub_rule": "baseline_article7 (explains why a CUA was filed)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "Formula Retail in the NC-S district needs a Conditional Use. The prior tenant was Formula Retail too, but of a different use category (retail store against Limited Restaurant), so the change-of-operator path does not avoid the CU.",
+     "code_sections_at_filing": [
+      "303.1(e)(1) (today (e)(5))",
+      "303.1(b)-(d)",
+      "703.4(b)",
+      "713 Table (Formula Retail: C)",
+      "178(c)(3)(A) (different use category)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "Table 713 today: \"Formula Retail | §§ 102, 303.1 | C\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12); the motion states the same at decision.",
+     "evidence_from_record": "Motion No. 21536 (cached PDF 15723ae819c9ba83aeb19bde.pdf), finding 6.B: \"Planning Code Section 303.1 and 713 state that Formula Retail Uses require Conditional Use Authorization in the Neighborhood Commercial Shopping Center Zoning District. A search of City records revealed the establishment of a Formula Retail Use for the previous tenant (d.b.a AT&T Authorized Retailer)\".",
+     "changed_since_filing": "text_only",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 303.1(e)(1) renumbered (e)(5) (Ord. 13-26), per triggers.json; § 178(c)(3)(E) deleted by Ord. 62-25 does not matter here because limb (A) applies.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "Formula Retail",
+      "NC-S district",
+      "prior use's category, if it was Formula Retail"
+     ],
+     "facts_in_concept_text": "some"
+    },
+    {
+     "family": "hours_of_operation",
+     "sub_rule": "lakeshore_plaza_sud (§ 780.1(b) .27)",
+     "related_family": null,
+     "basis": "stated_in_record",
+     "what": "In the Lakeshore Plaza SUD, hours from 11 p.m. to 6 a.m. are a Conditional Use; the business would stay open to midnight on Friday and Saturday.",
+     "code_sections_at_filing": [
+      "780.1(b) zoning category .27",
+      "713 Table note (1)"
+     ],
+     "control_at_filing": "conditional",
+     "code_quote_at_filing": "§ 780.1(b) .27: \"Hours of Operation shall be permitted as a Principal Use from 6 a.m. to 11 p.m. and as a Conditional Use from 11p.m. to 6 a.m.\" (gocodebook.com mirror of the SF Planning Code, text as of 2026-09-23, fetched 2026-11-12).",
+     "evidence_from_record": "Motion 21536 finding 6.C: \"Planning Code Section 780.1 states that the Hours of Operation shall be permitted as a Principal Use from 6 a.m. to 11 p.m. and as a Conditional Use from 11 p.m. to 6 a.m within the Lakeshore Plaza Special Use District. The Project is seeking Conditional Use Authorization for the proposed hours\".",
+     "changed_since_filing": "no",
+     "permission_changed_since_filing": "no",
+     "change_detail": "§ 780.1(b) amended by Ord. 249-23, 33-24 and 245-25; the .27 row reads as the motion quotes it.",
+     "control_today": "conditional",
+     "facts_needed": [
+      "site in the Lakeshore Plaza SUD",
+      "closing time after 11 p.m."
+     ],
+     "facts_in_concept_text": "none"
+    },
+    {
+     "family": "new_use_control_special_district",
+     "sub_rule": "lakeshore_plaza_sud_restaurant (§ 780.1(b) .69A, before 1/14/2024)",
+     "related_family": null,
+     "basis": "inferred_from_code",
+     "what": "Before Ord. 249-23 (Eff. 1/14/2024) the Lakeshore Plaza SUD made Restaurants a Conditional Use on the first and second stories, and Table 713 marked Limited Restaurant 'P(1)' with note (1) pointing to § 780.1. The filing (2023-09-08) is before that change; the hearing (2024-03-21) after, and the motion applies the new law: Limited Restaurant principal. Whether the old .69A row reached Limited Restaurants is not settled from the printed ordinance.",
+     "code_sections_at_filing": [
+      "780.1(b) .69A (as in force before 1/14/2024)",
+      "713 Table (Restaurant, Limited: P(1))"
+     ],
+     "control_at_filing": "unclear",
+     "code_quote_at_filing": "Ord. 249-23 amending § 780.1(b) row .69A to read \"Restaurants are permitted as principal uses at the first story and as Conditional Uses at the second story\"; the struck old text is partly illegible in the print but reads as Conditional Uses at the first and second stories. Table 713: \"Restaurant, Limited | §§ 102, 202.2(a) | P(1) | P(1) | NP\" changed to \"P | P | NP\" (Ord. 249-23 as printed (sfbos.org/sites/default/files/o0249-23.pdf, fetched 2026-11-12)).",
+     "evidence_from_record": "Motion 21536 finding 6.A: \"Pursuant to the Citywide Expansion of Allowable Commercial, Restaurant, and Retail Uses Ordinance No. 249-23, effective 1/14/2024, and Planning Code Section 713 Limited Restaurant use shall be permitted as a Principal Use.\"",
+     "changed_since_filing": "yes",
+     "permission_changed_since_filing": "yes",
+     "change_detail": "Ord. 249-23 (File No. 230701, Eff. 1/14/2024).",
+     "control_today": "principal",
+     "facts_needed": [
+      "site in the Lakeshore Plaza SUD",
+      "use is a Restaurant or Limited Restaurant",
+      "story",
+      "filing date before 2024-01-14"
+     ],
+     "facts_in_concept_text": "none"
+    }
+   ],
+   "considered_not_triggers": [
+    {
+     "item": "Change of Formula Retail operator without CU (§ 178(c)(3), § 303.1(j))",
+     "why": "Different use category (retail to Limited Restaurant): limb (A), so a CU is needed."
+    }
+   ],
+   "net_result_at_filing": "conditional",
+   "controls_changed_since_filing": "yes",
+   "concept_input": "A Crumbl Cookies location.",
+   "input_facts": {
+    "business_type": null,
+    "planning_use": null,
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": null,
+    "operator_name": "Crumbl Cookies",
+    "floor_area_sqft": null,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": null,
+    "existing_use_text": null,
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": null,
+    "closing_hour": null,
+    "opening_hour": null,
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": null,
+    "new_construction": null,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "input_missing": [
+    "that the business is a chain (record: Formula Retail)",
+    "what kind of business (record: Limited Restaurant, cookie bakery)",
+    "hours (record: open to midnight Friday and Saturday, past the 11 p.m. limit)",
+    "existing use (record: vacant, last an AT&T Authorized Retailer, Formula Retail)",
+    "floor area (record: 2,053 sq ft)",
+    "story (record: first)"
+   ],
+   "record_facts": {
+    "business_type": "other",
+    "planning_use": "limited_restaurant",
+    "serves_alcohol": null,
+    "licence_type": null,
+    "licences_already_held": null,
+    "alcohol_transaction": null,
+    "formula_retail": true,
+    "operator_name": "Crumbl Cookies",
+    "floor_area_sqft": 2053,
+    "floor_area_before_sqft": null,
+    "seats": null,
+    "occupants": null,
+    "existing_use_stated": [
+     "retail",
+     "vacant"
+    ],
+    "existing_use_text": "Vacant 2,053 sq ft space in Lakeshore Plaza, last occupied by a Formula Retail store (AT&T Authorized Retailer).",
+    "changes_existing_business": null,
+    "merges_storefronts": null,
+    "story": "first",
+    "closing_hour": "00:00",
+    "opening_hour": "08:00",
+    "entertainment_kind": null,
+    "amplified_sound": null,
+    "live_entertainment": null,
+    "outdoor_area": null,
+    "outdoor_alcohol_service": null,
+    "amends_prior_approval": null,
+    "prior_approval_limits": null,
+    "tenant_improvements": true,
+    "new_construction": false,
+    "historic_building": null,
+    "legacy_business": null
+   },
+   "record_sources": {
+    "business_type": "Motion 21536 (Formula Retail Limited Restaurant, Crumbl Cookies); cookie shop has no closer vocabulary value",
+    "planning_use": "Motion 21536 finding 6.A-B",
+    "formula_retail": "Motion 21536 title",
+    "operator_name": "Motion 21536 preamble",
+    "floor_area_sqft": "Motion 21536 preamble (\"measuring approximately 2,053 square feet\")",
+    "existing_use_stated": "Motion 21536 finding 3 (\"The vacant 2,053 square foot space ... was most recently occupied by a formula retail use (d.b.a AT&T Authorized Retailer)\")",
+    "existing_use_text": "Motion 21536 finding 3",
+    "story": "Motion 21536 finding 2 (\"on the first story\")",
+    "closing_hour": "Motion 21536 condition 13 (\"Friday through Saturday 8:00am to 12:00am\")",
+    "opening_hour": "Motion 21536 condition 13",
+    "tenant_improvements": "Motion 21536 finding 2 (\"Interior tenant improvements are proposed\")",
+    "new_construction": "Motion 21536 finding 7(b)(i) (\"no expansion of the existing building\")"
+   },
+   "intake_answers": {
+    "part_of_chain": true,
+    "other_locations": "11_or_more",
+    "floor_area_sqft": 2053
+   },
+   "intake_answers_notes": [
+    "Chain: Formula Retail by the record; exact count not stated. No alcohol in the record."
+   ],
+   "concept_input_audit": {
+    "verdict": "clean",
+    "flags": [],
+    "notes": "Section removed; nothing added. The brand name lets a reader infer a chain; the text does not say so."
+   },
+   "confidence": "medium",
+   "uncertain_points": [
+    "The third trigger (Lakeshore Plaza restaurant control before 1/14/2024) is uncertain: the struck text in the printed ordinance is partly illegible, and whether it reached Limited Restaurants is not shown. The motion applied the post-2024 law.",
+    "Filing date: record 2023-09-08, motion preamble 2023-11-08; both before Ord. 249-23."
+   ]
+  }
+ }
+}

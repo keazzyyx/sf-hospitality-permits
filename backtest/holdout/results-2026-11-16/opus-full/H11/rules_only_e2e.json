@@ -1,0 +1,1436 @@
+{
+ "profile": {
+  "business_type": "other",
+  "business_name": "BevMo!",
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": null,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": true,
+  "alcohol_type": "unknown",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": true,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": null,
+  "licences_held": [],
+  "alcohol_transaction": "licence_already_held",
+  "formula_retail": true,
+  "no_alcohol_answer_over_description": false,
+  "no_alcohol_stated": false,
+  "outdoor_alcohol_answer_over_description": false,
+  "part_of_chain": true,
+  "other_locations": 11,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "retail"
+  ],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "existing_occupancy_group": null,
+  "target_open_date": null,
+  "intake_cleared": {},
+  "intake_answered": [
+   "alcohol_transaction",
+   "formula_retail",
+   "other_locations",
+   "part_of_chain",
+   "serves_alcohol"
+  ],
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "not_covered",
+   "use_label": "a use the rule table does not cover",
+   "district": "RC-4",
+   "permission": "not_covered",
+   "permission_label": "Not covered by the rule table",
+   "existing_use": null,
+   "change_of_use": "not_established",
+   "change_of_use_label": "Change of use not established",
+   "lines": [
+    {
+     "rule_id": "T1.no_use",
+     "text": "The description does not say what kind of business it is, so no use control was looked up.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.no_limit",
+     "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2025-07-27 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 209.3",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19790#rid-0-0-0-20083",
+     "citations": [
+      "zoning:RC-4"
+     ]
+    }
+   ],
+   "rules_date": "2025-07-27",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "not_decided",
+     "missing_inputs": [
+      "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)"
+     ],
+     "lines": [
+      {
+       "rule_id": "T1.no_use",
+       "text": "The description does not say what kind of business it is, so no use control was looked up.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T5.no_use",
+       "text": "The concept has no use that the formula retail rows on file cover.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.missing",
+       "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 209.3",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+       "citations": [
+        "zoning:RC-4"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [
+      {
+       "control": "conditional",
+       "condition": "the floor area is from 6,000 to 120,000 square feet",
+       "missing_inputs": [
+        "the floor area of the business, in square feet"
+       ]
+      },
+      {
+       "control": "not_permitted",
+       "condition": "the floor area is 120,001 square feet or more",
+       "missing_inputs": [
+        "the floor area of the business, in square feet"
+       ]
+      }
+     ],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.outside",
+       "text": "Removing a laundromat needed a Conditional Use from 2021-12-20 to 2024-12-20 (Planning Code § 202.12). That rule was not in force on 2025-07-27, so this trigger does not apply.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T11.no_limit",
+       "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+       "code_section": "Planning Code § 209.3",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+       "citations": [
+        "zoning:RC-4"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false,
+     "contingent": [],
+     "unsettled_by": []
+    }
+   ],
+   "changes": {
+    "planning_use": "not_established",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_required",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "Under the Planning Code as in force on 27 July 2025, a change of use does not by itself need neighbourhood notice: the change-of-use trigger has been out of Planning Code § 311 since 14 January 2024 (Ord. 248-23, File No. 230446). Notice for work that enlarges a building, and for demolition or new construction, is a separate question the rules did not check.",
+      "code_section": "Planning Code § 311(b)(1)-(4)",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-3-zoning-procedures/sec.-311.-permit-review-procedures",
+      "citations": []
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Use authorization (not covered by the rule table)",
+    "agency": "San Francisco Planning",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "T1.no_use",
+      "text": "The description does not say what kind of business it is, so no use control was looked up.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.no_use",
+      "text": "The concept has no use that the formula retail rows on file cover.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     },
+     {
+      "rule_id": "T11.no_limit",
+      "text": "Zoning district RC-4 has no hours of operation control on file (Planning Code § 209.3, in force since before 2022-01-01), so this trigger does not apply.",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The rules could not decide: use control of the zoning district and use size. What is missing: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue); the floor area of the business, in square feet. Until that is known the rules cannot say what zoning asks of the concept: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the floor area of the business, in square feet"
+    ]
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.transaction",
+      "text": "The business already holds the licence, as the applicant states.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "The description does not give the licence type, so the rules cannot say which licence rules apply: insufficient information.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2025-07-27: 1 ABC licence within 1,000 ft and 0 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": [
+     "the licence type"
+    ]
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "insufficient_information",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 1301 Van Ness Ave, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "The rules have no Planning Code use for the concept, so it was not compared with the last use of the space and a change of use is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2022 California Building Code).",
+      "code_section": "California Building Code 2022 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12 as amended by Ord. 241-24",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0241-24.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The rules have no Planning Code use for the concept, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "Without what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue) and the existing occupancy group of the space, which only plans or an inspection show, the rules cannot say whether this is a change of use or of occupancy, so they cannot say which building permit applies: insufficient information.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": [
+     "what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue)",
+     "the existing occupancy group of the space, which only plans or an inspection show"
+    ]
+   }
+  ],
+  "overall_status": "insufficient_information",
+  "overall_line": "A Conditional Use Authorization is needed if the floor area is from 6,000 to 120,000 square feet (use size). Zoning does not permit the concept if the floor area is 120,001 square feet or more (use size). Of the 4 approvals this concept needs: 3 insufficient information (zoning and use, alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Health permit to operate",
+  "open_questions": [
+   {
+    "question": "Not known: what kind of business it is (a bar, a restaurant, a cafe or an entertainment venue). Needed for: zoning and use; building permit and change of use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": "floor_area_sqft"
+   },
+   {
+    "question": "Not known: the licence type. Needed for: alcohol licence.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say",
+    "intake_question": null
+   },
+   {
+    "question": "Not known: the existing occupancy group of the space, which only plans or an inspection show. Needed for: building permit and change of use.",
+    "needs": "plans",
+    "ask": "Plans or a code analysis of the existing space",
+    "intake_question": "existing_occupancy_group"
+   }
+  ],
+  "headline_findings": [
+   {
+    "kind": "conditional_if",
+    "sentence": "If the floor area is from 6,000 to 120,000 square feet, the concept needs a Conditional Use Authorization, which the Planning Commission decides at a public hearing (Planning Code § 303). What would ask for one: use size. Not known: the floor area of the business, in square feet.",
+    "area": "zoning_use",
+    "status": "insufficient_information",
+    "trigger": "T7",
+    "trigger_label": "use size",
+    "definite": false,
+    "condition": "the floor area is from 6,000 to 120,000 square feet",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ],
+    "basis": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "not_permitted_if",
+    "sentence": "If the floor area is 120,001 square feet or more, zoning does not permit the concept as described at this address. What would bar it: use size. Not known: the floor area of the business, in square feet.",
+    "area": "zoning_use",
+    "status": "insufficient_information",
+    "trigger": "T7",
+    "trigger_label": "use size",
+    "definite": false,
+    "condition": "the floor area is 120,001 square feet or more",
+    "missing_inputs": [
+     "the floor area of the business, in square feet"
+    ],
+    "code_section": "Planning Code § 209.3",
+    "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+    "citations": [
+     "zoning:RC-4"
+    ],
+    "basis": [
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district RC-4: a use of 6,000 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 209.3, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 209.3",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-2-use-districts/sec.-209.-description-and-purpose-of-residential-and-residential-commercial-districts/sec.-209.3.-rc-residential-commercial-districts",
+      "citations": [
+       "zoning:RC-4"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "records": {
+  "zoning": "RC-4",
+  "overlays": [
+   "Van Ness",
+   "Van Ness Automotive",
+   "Within 1/4 Mile of an Existing Fringe Financial Service",
+   "Within 1/4 Mile of the Fringe Financial Services RUD",
+   "RC-4"
+  ],
+  "tract": "151.00",
+  "site_history": {
+   "matched_by": "Parcel 0671/002 or the address 1301 Van Ness Ave",
+   "total": 4,
+   "by_kind": {
+    "use_decision": 2,
+    "agency_referral": 1,
+    "licence": 1
+   },
+   "entries": [
+    {
+     "application_id": "abc:538942",
+     "citation_id": "app:abc:538942",
+     "source": "abc",
+     "source_label": "ABC licence export",
+     "record_kind": "licence",
+     "record_kind_label": "ABC licence",
+     "permit_type": "Type 21 – Off-Sale General",
+     "description": "BEVERAGES & MORE — Type 21 – Off-Sale General (ACTIVE on 2025-07-27)",
+     "address": "1301 VAN NESS AVE, SAN FRANCISCO, CA 94109",
+     "filed_at": null,
+     "decided_at": "2014-05-22",
+     "outcome": "approved",
+     "status": "ACTIVE",
+     "source_url": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=538942",
+     "use_types": [
+      "retail_alcohol",
+      "bar"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:2013.1329C",
+     "citation_id": "app:datasf_planning:2013.1329C",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Conditional Use Authorization",
+     "description": "Change of use for Formula Retail",
+     "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+     "filed_at": "2013-09-17",
+     "decided_at": "2014-01-16",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2013.1329C",
+     "use_types": [],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:MB1301703",
+     "citation_id": "app:datasf_planning:MB1301703",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "- ABC lisence type 21,42, 86 permitted in RC-4 district liquor store per Planning Code Section 209.8 Conditional use Authorized for formula retail (BevMo!) (8/8/2013)",
+     "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+     "filed_at": "2013-10-31",
+     "decided_at": "2013-11-21",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1301703",
+     "use_types": [
+      "retail_alcohol"
+     ],
+     "hours_close": null,
+     "conditions": []
+    },
+    {
+     "application_id": "datasf_planning:1993.214C",
+     "citation_id": "app:datasf_planning:1993.214C",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Conditional Use Authorization",
+     "description": "To allow expansion of non-conforming use in the van ness ave. sud. per Sec. 182., and Off-street parking Expand 24-Hour Nautilus on second floor into former auto storare area.",
+     "address": "1301 VAN NESS AV, SAN FRANCISCO, CA 94109",
+     "filed_at": "1993-04-14",
+     "decided_at": "1993-08-12",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=1993.214C",
+     "use_types": [],
+     "hours_close": null,
+     "conditions": []
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 19,
+   "bars": 10,
+   "abc_on_sale_licenses": 11,
+   "abc_licenses_1000ft": 55,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 6,
+   "approved_with_conditions": 1,
+   "denied": 0,
+   "withdrawn": 1,
+   "total": 8,
+   "window_years": 10,
+   "scope": "N = 8 dated decisions within 1,000 ft, last 10 years (fewer than 5 in the last 5); too few for a rate; left out: 58 permits and licences, 350 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 58,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 350,
+   "counted": [
+    {
+     "source": "datasf_planning",
+     "source_id": "2014-000285CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2014-000285CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2014-000285CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Enrolled in CB3P. Change of use from Personal Service (tattoo vacant space) to Limited Restaurant; new type I hood; restroom and storefront approved under previous permit.",
+     "address": "1515 PINE ST 94109",
+     "lat": 37.78939462037462,
+     "lng": -122.42075658271287,
+     "parcel": "0667/021",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2014-11-19",
+     "decided_at": "2015-12-04",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Nicholas Foster",
+      "premises": true,
+      "parent_id": "2014-000285PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2015-12-04T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1515 PINE ST",
+      "applicant_org": "Shatara Architecture"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2016-005143CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2016-005143CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194650972626Z-y673-d69b-p0004.json",
+     "id": "datasf_planning:2016-005143CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant",
+      "cafe"
+     ],
+     "description": "Conditional Use Authorization request to permit the change of use from Limited Restaurant to a Restaurant of 1335 Polk to legalize the expansion of existing restaurant (Ben Thai Café) to adjacent storefront.",
+     "address": "1331 POLK ST 94109",
+     "lat": 37.789246355927844,
+     "lng": -122.42065281491386,
+     "parcel": "0667/002",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2016-04-20",
+     "decided_at": "2016-10-05",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Nicholas Foster",
+      "premises": true,
+      "parent_id": "2016-005143PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2016-10-05T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1331-1335  POLK ST"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2016-007216CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2016-007216CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194646526050Z-y673-d69b-p0003.json",
+     "id": "datasf_planning:2016-007216CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "To permit the extension of hours (from 2:00 a.m. to 4:00 a.m.) at an existing restaurant d.b.ba. as Mustafios Pizza .",
+     "address": "1116 Polk ST, SAN FRANCISCO, CA",
+     "lat": 37.78711057323854,
+     "lng": -122.41971850992418,
+     "parcel": "0692/012",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2016-06-01",
+     "decided_at": "2016-11-21",
+     "hours_close": "04:00",
+     "late_night": true,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Andrew Perry",
+      "premises": true,
+      "parent_id": "2016-007216PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2016-11-21T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1116 POLK ST",
+      "applicant_org": "CLA Consulting"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2016-014513CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2016-014513CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2016-014513CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant",
+      "retail_alcohol"
+     ],
+     "description": "Conditional Use Authorization to establish a Formula Retail Limited Restaurant (d.b.a. Genji Sushi, specializing in sushi packaged for takeout) inside the existing Whole Foods Market grocery store, to occupy a portion of the existing deli and food preparation area with approximately 400 square feet of floor area. The proposal will not involve tenant improvements to the ground floor commercial tenant space. There will be no expansion of the existing building envelope.",
+     "address": "1765 CALIFORNIA ST 94109",
+     "lat": 37.78992442985958,
+     "lng": -122.42338431296237,
+     "parcel": "0647/013",
+     "zoning_district": "NC-3",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2016-11-08",
+     "decided_at": "2017-12-05",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NC-3",
+      "planner": "Sharon Young",
+      "premises": true,
+      "parent_id": "2016-014513PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2017-12-05T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "NEIGHBORHOOD COMMERCIAL, MODERATE SCALE",
+      "hearing_date": null,
+      "neighborhood": "Western Addition",
+      "project_name": "1765 CALIFORNIA ST",
+      "applicant_org": "Genji Pacific"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2017-016488MIS",
+     "source_url": "https://sfplanninggis.org/pim?search=2017-016488MIS",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2017-016488MIS",
+     "kind": "planning_other",
+     "permit_type": "Miscellaneous Permit",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Change of use from Office Use (travel agent) to establish a Restaurant Use with Type 41 ABC License at 1406 Sutter St. PC Sec 312 notification complete 4/24/2018-5/24/2018. \nABC - Type 41",
+     "address": "1405 FRANKLIN ST 94109",
+     "lat": 37.787482200418104,
+     "lng": -122.42368710575082,
+     "parcel": "0672/002A",
+     "zoning_district": "NC-3",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2017-12-27",
+     "decided_at": "2018-05-30",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NC-3",
+      "planner": "Mathew Chandler",
+      "premises": true,
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2018-05-30T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "MIS",
+      "zoning_name": "NEIGHBORHOOD COMMERCIAL, MODERATE SCALE",
+      "hearing_date": null,
+      "neighborhood": "Western Addition",
+      "project_name": "1406 Sutter Street - Limoncello"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2019-017608CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-017608CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194634672744Z-y673-d69b-p0001.json",
+     "id": "datasf_planning:2019-017608CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "restaurant"
+     ],
+     "description": "Conditional Use authorization to establish a Change of Use from Restaurant to Full-Service Restaurant.",
+     "address": "1141 POLK ST 94109",
+     "lat": 37.78746580945333,
+     "lng": -122.42029838980024,
+     "parcel": "0691/001",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Approved",
+     "outcome": "approved",
+     "filed_at": "2019-10-01",
+     "decided_at": "2021-09-30",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Kevin Guy",
+      "premises": true,
+      "parent_id": "2019-017608PRJ",
+      "use_class": "restaurant_or_cafe",
+      "close_date": "2021-09-30T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1141 POLK ST"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2019-020049CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-020049CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194630242419Z-y673-d69b-p0000.json",
+     "id": "datasf_planning:2019-020049CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "bar",
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization to allow nighttime entertainment use and a non-residential use size greater than 2,000 square feet in association with a restaurant and bar measuring approximately 3,570 square feet.",
+     "address": "1131 POLK ST 94109",
+     "lat": 37.78746580945333,
+     "lng": -122.42029838980024,
+     "parcel": "0691/001",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Approved",
+     "outcome": "approved_with_conditions",
+     "filed_at": "2019-10-25",
+     "decided_at": "2021-04-15",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [
+      "Nighttime Entertainment: The Nighttime Entertainment shall be performed within the enclosed building only. The building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -s ource equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure.",
+      "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effecti ve date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three -year period. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, cons truction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. (standard)",
+      "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization. (standard)",
+      "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since the date that the Planning Code text am endment(s) and/or Zoning Map amendment(s) became effective. (standard)",
+      "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay. (standard)",
+      "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Design – Compliance at Plan Stage (standard)",
+      "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise. (standard)",
+      "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escapi n g the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans if applicable as dete rmined by the project planner. Odor control ducting shall not be applied to the primary façade of the building. (standard)",
+      "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction. (standard)",
+      "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation (standard)",
+      "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for dai l y monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance wit h Article 1, Section 34 of the San Francisco Police Code. (standard)",
+      "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulat ed for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise sha ll not exceed the decibel level s specified in the San Francisco Noise Control Ordinance. (standard)",
+      "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passer sby , appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises. (standard)",
+      "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from publ i c view, and placed outside only when being serviced by the disposal company. Trash shall be contai n ed and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Departmen t of Public Works. Works at 628.271.2000, www.sfpublicworks.org (standard)",
+      "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards. (standard)",
+      "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison. (standard)",
+      "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block dri veways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment. (standard)",
+      "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjac ent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property. (standard)"
+     ],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Kevin Guy",
+      "premises": true,
+      "parent_id": "2019-020049PRJ",
+      "use_class": "nighttime_entertainment",
+      "close_date": "2021-04-15T00:00:00.000",
+      "motion_url": "https://citypln-m-extnl.sfgov.org/External/link.ashx?Action=Download&ObjectVersion=-1&vault={A4A7DACD-B0DC-4322-BD29-F6F07103C6E0}&objectGUID={88632EA3-2CA1-44A8-90CC-2DEFF5F6A621}&fileGUID={529FD127-B08D-41BD-95AA-554CE159EA06}&showopendialog=1",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "source_kind": "motion",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1131 POLK ST",
+      "motion_outcome": "approved_with_conditions",
+      "conditions_detail": [
+       {
+        "text": "Nighttime Entertainment: The Nighttime Entertainment shall be performed within the enclosed building only. The building shall be adequately soundproofed or insulated for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building and fixed -s ource equipment noise shall not exceed the decibel levels specified in the San Francisco Noise Control Ordinance. Bass and vibrations shall also be contained within the enclosed structure.",
+        "title": "Nighttime Entertainment",
+        "number": "15",
+        "standard": false,
+        "categories": [
+         "entertainment",
+         "noise"
+        ]
+       },
+       {
+        "text": "Validity: The authorization and right vested by virtue of this action is valid for three (3) years from the effecti ve date of the Motion. The Department of Building Inspection shall have issued a Building Permit or Site Permit to construct the project and/or commence the approved use within this three -year period.",
+        "title": "Validity",
+        "number": "1",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "2",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, cons truction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since this Authorization was approved.",
+        "title": "Diligent Pursuit",
+        "number": "3",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "4",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval.",
+        "title": "Conformity with Current Law",
+        "number": "5",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Expiration and Renewal: Should a Building or Site Permit be sought after the three (3) year period has lapsed, the project sponsor must seek a renewal of this Authorization by filing an application for an amendment to the original Authorization or a new application for Authorization. Should the project sponsor decline to so file, and decline to withdraw the permit application, the Commission shall conduct a public hearing in order to consider the revocation of the Authorization.",
+        "title": "Expiration and Renewal",
+        "number": "6",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Diligent Pursuit: Once a site or Building Permit has been issued, construction must commence within the timeframe required by the Department of Building Inspection and be continued diligently to completion. Failure to do so shall be grounds for the Commission to consider revoking the approval if more than three (3) years have passed since the date that the Planning Code text am endment(s) and/or Zoning Map amendment(s) became effective.",
+        "title": "Diligent Pursuit",
+        "number": "7",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Extension: All time limits in the preceding three paragraphs may be extended at the discretion of the Zoning Administrator where implementation of the project is delayed by a public agency, an appeal or a legal challenge and only by the length of time for which such public agency, appeal or challenge has caused delay.",
+        "title": "Extension",
+        "number": "8",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Conformity with Current Law: No application for Building Permit, Site Permit, or other entitlement shall be approved unless it complies with all applicable provisions of City Codes in effect at the time of such approval. Design – Compliance at Plan Stage",
+        "title": "Conformity with Current Law",
+        "number": "9",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Noise: Plans submitted with the building permit application for the approved project shall incorporate acoustical insulation and other sound proofing measures to control noise.",
+        "title": "Noise",
+        "number": "10",
+        "standard": true,
+        "categories": [
+         "noise"
+        ]
+       },
+       {
+        "text": "Odor Control Unit: In order to ensure any significant noxious or offensive odors are prevented from escapi n g the premises once the project is operational, the building permit application to implement the project shall include air cleaning or odor control equipment details and manufacturer specifications on the plans if applicable as dete rmined by the project planner. Odor control ducting shall not be applied to the primary façade of the building.",
+        "title": "Odor Control Unit",
+        "number": "11",
+        "standard": true,
+        "categories": [
+         "odor"
+        ]
+       },
+       {
+        "text": "Enforcement: Violation of any of the Planning Department conditions of approval contained in this Motion or of any other provisions of Planning Code applicable to this Project shall be subject to the enforcement procedures and administrative penalties set forth under Planning Code Section 176 or Section 176.1. The Planning Department may also refer the violation complaints to other city departments and agencies for appropriate enforcement action under their jurisdiction.",
+        "title": "Enforcement",
+        "number": "12",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Revocation due to Viola tion of Conditions: Should implementation of this Project result in complaints from interested property owners, residents, or commercial lessees which are not resolved by the Project Sponsor and found to be in violation of the Planning Code and/or the specific conditions of approval for the Project as set forth in Exhibit A of this Motion, the Zoning Administrator shall refer such complaints to the Commission, after which it may hold a public hearing on the matter to consider revocation of this authorization. Operation",
+        "title": "Revocation due to Viola tion of Conditions",
+        "number": "13",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (A): The business operator shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Street and Sidewalk Maintenance Standards. In addition, the operator shall be responsible for dai l y monitoring of the sidewalk within a one-block radius of the subject business to maintain the sidewalk free of paper or other litter associated with the business during business hours, in accordance wit h Article 1, Section 34 of the San Francisco Police Code.",
+        "title": "Eating and Drinking Uses (A)",
+        "number": "14A",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (B): When located within an enclosed space, the premises shall be adequately soundproofed or insulat ed for noise and operated so that incidental noise shall not be audible beyond the premises or in other sections of the building, and fixed -source equipment noise sha ll not exceed the decibel level s specified in the San Francisco Noise Control Ordinance.",
+        "title": "Eating and Drinking Uses (B)",
+        "number": "14B",
+        "standard": true,
+        "categories": [
+         "noise"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (C): While it is inevitable that some low level of odor may be detectable to nearby residents and passer sby , appropriate odor control equipment shall be installed in conformance with the approved plans and maintained to prevent any significant noxious or offensive odors from escaping the premises.",
+        "title": "Eating and Drinking Uses (C)",
+        "number": "14C",
+        "standard": true,
+        "categories": [
+         "odor"
+        ]
+       },
+       {
+        "text": "Eating and Drinking Uses (D): Garbage, recycling, and compost containers shall be kept within the premises and hidden from publ i c view, and placed outside only when being serviced by the disposal company. Trash shall be contai n ed and disposed of pursuant to garbage and recycling receptacles guidelines set forth by the Departmen t of Public Works. Works at 628.271.2000, www.sfpublicworks.org",
+        "title": "Eating and Drinking Uses (D)",
+        "number": "14D",
+        "standard": true,
+        "categories": [
+         "garbage"
+        ]
+       },
+       {
+        "text": "Sidewalk Maintenance: The Project Sponsor shall maintain the main entrance to the building and all sidewalks abutting the subject property in a clean and sanitary condition in compliance with the Department of Public Works Streets and Sidewalk Maintenance Standards.",
+        "title": "Sidewalk Maintenance",
+        "number": "16",
+        "standard": true,
+        "categories": [
+         "other"
+        ]
+       },
+       {
+        "text": "Community Liaison: Prior to issuance of a building permit to construct the project and implement the approved use, the Project Sponsor shall appoint a community liaison officer to deal with the issues of concern to owners and occupants of nearby properties. The Project Sponsor shall provide the Zoning Administrator and all registered neighborhood groups for the area with written notice of the name, business address, an d telephone number of the community liaison.",
+        "title": "Community Liaison",
+        "number": "17",
+        "standard": true,
+        "categories": [
+         "community_liaison"
+        ]
+       },
+       {
+        "text": "Notices Posted at Bars and Entertainment Venues: Notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion and to not litter or block dri veways in the neighborhood, shall be well-lit and prominently displayed at all entrances to and exits from the establishment.",
+        "title": "Notices Posted at Bars and Entertainment Venues",
+        "number": "18",
+        "standard": true,
+        "categories": [
+         "entertainment",
+         "good_neighbor",
+         "garbage"
+        ]
+       },
+       {
+        "text": "Lighting: All Project lighting shall be directed onto the Project site and immediately surrounding sidewalk area only, and designed and managed so as not to be a nuisance to adjac ent residents. Nighttime lighting shall be the minimum necessary to ensure safety, but shall in no case be directed so as to constitute a nuisance to any surrounding property.",
+        "title": "Lighting",
+        "number": "19",
+        "standard": true,
+        "categories": [
+         "lighting"
+        ]
+       }
+      ],
+      "conditions_source": "motion (full-conditions pass)"
+     }
+    },
+    {
+     "source": "datasf_planning",
+     "source_id": "2023-001438CUA",
+     "source_url": "https://sfplanninggis.org/pim?search=2023-001438CUA",
+     "fetched_at": "2025-07-27T23:59:00Z",
+     "raw_ref": "/home/runner/work/permit_memo/permit_memo/data/raw/datasf_planning/20261109T194658390274Z-y673-d69b-p0005.json",
+     "id": "datasf_planning:2023-001438CUA",
+     "kind": "cua",
+     "permit_type": "Conditional Use Authorization",
+     "use_types": [
+      "bar",
+      "restaurant"
+     ],
+     "description": "Conditional Use Authorization application request pursuant to Planning Code 102(e) requirement to permit change of use from bar/restaurant to nighttime entertainment.",
+     "address": "1237 POLK ST 94109",
+     "lat": 37.7883571621477,
+     "lng": -122.42056440132576,
+     "parcel": "0670/003",
+     "zoning_district": "NCD-POLK",
+     "status": "Closed - Cancelled",
+     "outcome": "withdrawn",
+     "filed_at": "2023-02-16",
+     "decided_at": "2023-07-11",
+     "hours_close": null,
+     "late_night": null,
+     "conditions": [],
+     "opposition_noted": null,
+     "decision_summary": null,
+     "extraction_confidence": "medium",
+     "license_type": null,
+     "extra": {
+      "zoning": "NCD-POLK",
+      "planner": "Victoria Lewis",
+      "premises": true,
+      "parent_id": "2023-001438PRJ",
+      "use_class": "nighttime_entertainment",
+      "close_date": "2023-07-11T00:00:00.000",
+      "record_kind": "use_decision",
+      "record_type": "CUA",
+      "zoning_name": "POLK STREET NEIGHBORHOOD COMMERCIAL",
+      "hearing_date": null,
+      "neighborhood": "Nob Hill",
+      "project_name": "1237 POLK ST",
+      "applicant_org": "1237 Polk Street LLC"
+     }
+    }
+   ]
+  },
+  "applications_within_1000ft": 240,
+  "licences_within_500ft": 14,
+  "licences_within_1000ft": 58,
+  "businesses_within_500ft": 19
+ }
+}

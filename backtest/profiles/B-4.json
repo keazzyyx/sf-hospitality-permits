@@ -1,0 +1,363 @@
+{
+  "cases": {
+    "D10": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [
+          "Borderline: 'The restaurant already serves alcohol'. The filed text says 'expand the existing liquor establishment'. This is a plain-words rendering of 'existing liquor establishment', tied to 'the associated restaurant'; it adds no licence type and no new deciding fact."
+        ],
+        "facts_dropped": [],
+        "verdict": "ok",
+        "notes": "Re-read against the current concept_input (reworded after the first pass, which had dropped the fact that the alcohol business already exists and is being expanded; that is now stated). No approval, section, district or outcome word is left. 'outdoor area' replaces the Code term 'Outdoor Activity Area' and 'authorized public parking lot use' becomes 'a public parking lot'; both are fine. Size, the ten of 81 spaces and the retained parking lot all match the filed text. The filed text gives no licence type, hours or seats, and none is added."
+      },
+      "input_facts": {
+        "business_type": "restaurant",
+        "planning_use": "restaurant",
+        "serves_alcohol": true,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": "Casements",
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": [
+          "restaurant",
+          "other"
+        ],
+        "existing_use_text": "A restaurant (Casements) ... The restaurant already serves alcohol; the outdoor area would be in part of the existing public parking lot next to it",
+        "changes_existing_business": "enlarge",
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": "parking_lot",
+        "outdoor_alcohol_service": true,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "floor_area_sqft is null: 1,777 square feet is the size of the outdoor area, not the floor area of the restaurant, and there is no field for outdoor area size. Also stated and without a field: ten of the lot's 81 parking spaces would be used and the rest stay a public parking lot. serves_alcohol is true ('already serves alcohol'). licence_type and licences_already_held are null: no type is stated. alcohol_transaction is null: the text says the restaurant already serves alcohol and that its alcohol service would expand outdoors, but does not mention a licence or say whether the expansion is under the licence held, a new one or a transfer; if 'already serves alcohol' is taken as a licence held, the value is 'licence_already_held'. changes_existing_business is 'enlarge' from the words 'its alcohol service would expand into the outdoor area' (an existing business taking added area); the text does not say intensify. existing_use_stated is a list because two spaces are described: 'restaurant' is the existing business; 'other' is the ground the outdoor area would take, an existing public parking lot."
+    },
+    "D11": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [],
+        "facts_dropped": [],
+        "verdict": "ok",
+        "notes": "Re-read against the current concept_input (reworded after the first pass, which had personified the change as an existing business that 'wants to become' a full restaurant; that is gone). No approval, section, district or outcome word is left. 'limited restaurant' and 'full restaurant' are the filed text's own words for what the business is. The filed text gives nothing else, and nothing else is added."
+      },
+      "input_facts": {
+        "business_type": "restaurant",
+        "planning_use": "restaurant",
+        "serves_alcohol": null,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": "limited_restaurant",
+        "existing_use_text": "a limited restaurant",
+        "changes_existing_business": null,
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "changes_existing_business is null: the text states a change of use category (limited restaurant to full restaurant), carried by existing_use_stated and planning_use; it does not say enlarge or intensify, and calling the change an intensification would be a legal reading, not a stated fact. The text does not say whether the limited restaurant is operating or whether the same business carries on. serves_alcohol is null: 'full restaurant' says nothing about alcohol."
+    },
+    "D12": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [],
+        "facts_dropped": [],
+        "verdict": "ok",
+        "notes": "Clean. 'next door' stands for 'adjacent'. The three Code sections are stripped. The filed description gives no size, hours, alcohol or last tenant of the retail space, and concept_input adds none; whatever the retail space was last used as is absent from the filed text and is rightly not supplied."
+      },
+      "input_facts": {
+        "business_type": "restaurant",
+        "planning_use": "restaurant",
+        "serves_alcohol": null,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": [
+          "restaurant",
+          "vacant",
+          "retail"
+        ],
+        "existing_use_text": "An existing restaurant; the vacant retail space next door",
+        "changes_existing_business": "enlarge",
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "existing_use_stated is a list because the text describes two spaces: 'restaurant' is the existing business being expanded; 'vacant' and 'retail' both describe the space next door (vacant now, called a retail space). The kind of retail is not stated. changes_existing_business is 'enlarge' from the words 'wants to expand into'. merges_storefronts is null: expanding into the space next door is stated, but the text does not say storefronts are merged or that either space has a storefront. No sizes are given."
+    },
+    "D13": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [],
+        "facts_dropped": [],
+        "verdict": "ok",
+        "notes": "Clean. 'change of use from dry cleaning to restaurant' becomes 'Convert a dry cleaner into a restaurant'; the three Code sections are stripped. Nothing else is in the filed text."
+      },
+      "input_facts": {
+        "business_type": "restaurant",
+        "planning_use": "restaurant",
+        "serves_alcohol": null,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": "laundromat",
+        "existing_use_text": "a dry cleaner",
+        "changes_existing_business": null,
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "existing_use_stated: the words are 'a dry cleaner'. The value list has no dry cleaner value. 'laundromat' is used because the spec's rule T8 names its deciding fact as 'Last use is a laundromat or dry cleaner', so that value is the one meant to carry a dry cleaner. This is a mapping choice, not a statement that the text says laundromat; if the settling rule wants the literal word only, the value is 'other'. The text does not say whether the dry cleaner is operating or closed."
+    },
+    "D14": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [
+          "Borderline: 'operate from 11:00 am to 2:00 am'. The filed text says 'a proposed change of operation hours from 11:00 am to 2:00 am'. That most likely means new hours of 11:00 am to 2:00 am, and concept_input settles on that reading; the filed wording could also be read as a change from one hour to another. The 2:00 am closing is supported on either reading; the 11:00 am opening rests on the reading chosen."
+        ],
+        "facts_dropped": [
+          "Borderline: that the hours are a change from the current hours ('a proposed change of operation hours'). concept_input gives the hours without saying they differ from today's."
+        ],
+        "verdict": "ok",
+        "notes": "No approval, section, district or outcome word is left; the two Code sections are stripped. 'Castro Street' appears only inside the two street addresses, which the filed text also gives. 'nighttime entertainment' is the Planning Code's name for the use, but it is also the only description of the business the filed text offers, so it is kept as what the business is. The filed text gives no size for the merged space and none is added."
+      },
+      "input_facts": {
+        "business_type": "other",
+        "planning_use": "nighttime_entertainment",
+        "serves_alcohol": null,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": "restaurant",
+        "existing_use_text": "change from a restaurant",
+        "changes_existing_business": null,
+        "merges_storefronts": true,
+        "story": null,
+        "closing_hour": "02:00",
+        "opening_hour": "11:00",
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "business_type is 'other': the proposed business is described only as nighttime entertainment, which is none of restaurant, bar, cafe or food truck. entertainment_kind, live_entertainment and amplified_sound are null: the text names the use but not the kind of entertainment or the permit. serves_alcohol is null: not stated. The text does not say which of the two storefronts (500 or 504 Castro Street) is the restaurant, whether either is vacant, the size before or after combining, or the story. changes_existing_business is null: the text states a change of use and a combining of storefronts, and does not say whether an existing business is continuing."
+    },
+    "D15": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [],
+        "facts_dropped": [
+          "Borderline: 'gross area'. The filed text says 'approximately 4,500 sq. ft. of gross area'; concept_input says 'about 4,500 square feet' without saying it is the gross figure.",
+          "Borderline: that the restaurant is to be established, that is, new ('to establish a restaurant'). concept_input says 'A restaurant' and leaves new or existing unsaid."
+        ],
+        "verdict": "ok",
+        "notes": "No approval, section, district or outcome word is left. 'CB3P approved' (a processing programme status) and 'Section 102' are stripped. Neither borderline drop changes any field below. If the text is touched for other reasons, 'A new restaurant with about 4,500 square feet of gross area.' carries both without naming anything."
+      },
+      "input_facts": {
+        "business_type": "restaurant",
+        "planning_use": "restaurant",
+        "serves_alcohol": null,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": 4500,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": null,
+        "existing_use_text": null,
+        "changes_existing_business": null,
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "floor_area_sqft 4500 is approximate ('about 4,500 square feet'); the text does not say gross or occupied. Nothing is said about what the space was last used as, whether the restaurant is new or existing, or whether it enlarges or merges anything."
+    },
+    "D16": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [
+          "Borderline: 'whose previous business was registered'. The filed text says 'tenant space previously registered as a Legacy Business': the past tense is on the registration, and it is the space that is described. concept_input turns this into a statement that the previous business in the space was the registered Legacy Business. A likely reading and a small step, not a new deciding fact."
+        ],
+        "facts_dropped": [],
+        "verdict": "ok",
+        "notes": "No approval, section, district or outcome word is left; 'Section 754' is stripped. 'Legacy Business' is a registry status of the space's past occupant, something an operator taking the space would know, not the name of the approval, so it is kept. A wording that tracks the filed text exactly, if wanted: 'A bar in a tenant space that was previously registered as a Legacy Business.' The filed text does not say what kind of business the Legacy Business was, and concept_input rightly does not say either."
+      },
+      "input_facts": {
+        "business_type": "bar",
+        "planning_use": "bar",
+        "serves_alcohol": true,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": null,
+        "existing_use_text": "a space whose previous business was registered as a Legacy Business",
+        "changes_existing_business": null,
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": null,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": true
+      },
+      "reader_notes": "legacy_business is true for the previous business in the space, not for the proposed bar: the text says the previous business was registered as a Legacy Business and says nothing of the bar's own status. existing_use_stated is null because the kind of previous business is not stated ('other' would claim a known use outside the list); the words are kept in existing_use_text. serves_alcohol is true because the business is a bar; no licence type or transaction is stated. The text does not say the space is vacant."
+    },
+    "D17": {
+      "audit": {
+        "names_approval_section_or_outcome": [],
+        "facts_added": [
+          "Borderline: 'An existing bar'. The filed text says 'the existing entertainment hours ... for Legacy North Beach Bar'; 'existing' is attached to the hours, and the bar's existence follows from it.",
+          "Borderline: 'described as a legacy bar'. The filed text says 'Legacy North Beach Bar' and nothing more. The hedge is fair and adds no claim of registration."
+        ],
+        "facts_dropped": [
+          "Borderline: 'North Beach', the neighbourhood in 'Legacy North Beach Bar'. Left out on purpose because it is also the name of the zoning district and special use district; the address given to the report carries the location, so nothing an operator would add is lost."
+        ],
+        "verdict": "ok",
+        "notes": "Re-read against the current concept_input (reworded after the first pass, which had carried the district name 'North Beach' and blurred 'add amplified sound' and 'existing entertainment hours'; all three are now as the filed text has them). No approval, section, district or outcome word is left. 'amend' is rightly rendered as 'change': the filed text does not state that a prior approval set the hours, and concept_input does not add one. Neither text says whether the new hours are later or longer, nor what kind of entertainment the bar has."
+      },
+      "input_facts": {
+        "business_type": "bar",
+        "planning_use": "bar",
+        "serves_alcohol": true,
+        "licence_type": null,
+        "licences_already_held": null,
+        "alcohol_transaction": null,
+        "formula_retail": null,
+        "operator_name": null,
+        "floor_area_sqft": null,
+        "floor_area_before_sqft": null,
+        "seats": null,
+        "occupants": null,
+        "existing_use_stated": "bar",
+        "existing_use_text": "An existing bar, described as a legacy bar",
+        "changes_existing_business": null,
+        "merges_storefronts": null,
+        "story": null,
+        "closing_hour": null,
+        "opening_hour": null,
+        "entertainment_kind": null,
+        "amplified_sound": true,
+        "live_entertainment": null,
+        "outdoor_area": null,
+        "outdoor_alcohol_service": null,
+        "amends_prior_approval": null,
+        "prior_approval_limits": null,
+        "tenant_improvements": null,
+        "new_construction": null,
+        "historic_building": null,
+        "legacy_business": null
+      },
+      "reader_notes": "planning_use is 'bar' only: the text states the bar has existing entertainment hours and wants to add amplified sound, but not the kind of entertainment, the hours, or a permit, so a second use of nighttime_entertainment is not stated; whether entertainment with amplified sound makes it one is for the derivation rule. entertainment_kind and live_entertainment are null for the same reason (entertainment exists; its kind is not stated). amplified_sound is true as proposed ('add amplified sound'), which also says the bar does not have it now. changes_existing_business is null: a change to an existing bar is stated (entertainment hours, added amplified sound) but 'change' of hours does not say later or longer, and the text does not call the change enlarging or intensifying; if adding amplified sound counts by the settling rule, the value is 'intensify'. amends_prior_approval and prior_approval_limits are null: no prior approval is mentioned. legacy_business is null: the text says only 'described as a legacy bar' and does not say the bar is registered as a Legacy Business; if the field means described as legacy rather than registered, the value is true. 'legacy' says nothing of the building, so historic_building is null. closing_hour and opening_hour are null: no hours are given."
+    }
+  }
+}

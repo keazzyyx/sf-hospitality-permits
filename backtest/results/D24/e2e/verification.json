@@ -1,0 +1,630 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 40,
+  "supported": 4,
+  "trimmed": 13,
+  "downgraded": 15,
+  "dropped": 8
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Planning Code Section 719 establishes that a bar on the first story in the Haight Street NCD is a conditional use, in force from January 14, 2024.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code Section 719 establishes that a bar on the first story in the Haight Street NCD is a conditional use, in force from January 14, 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows bar_permission as 'unknown' and provides no effective date; it does not state the conditional use status or the January 14, 2024 date."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A Conditional Use Authorization was approved on October 24, 1996 (Case No. 1996.520C) to allow a place of entertainment for non-amplified music at 1501-1509 Haight Street, taking 50 days from filing to approval.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization was approved on October 24, 1996 (Case No. 1996.520C) to allow a place of entertainment for non-amplified music at 1501-1509 Haight Street.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "A Conditional Use Authorization was approved on October 24, 1996 (Case No. 1996.520C) to allow a place of entertainment for non-amplified music at 1501-1509 Haight Street, taking 50 days from filing to approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows filing date 1996-09-04 and approval date 1996-10-24, but does not state the 50-day calculation."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "A February 2017 health referral for Club Deluxe bar at 1509 Haight Street required the operator to abide by conditions of Planning Commission Motion No. 14221 (the 1996 CUA) and retain the same Type 48 license under Planning Code Section 781.9.",
+   "verdict": "partially_supported",
+   "supported_text": "A February 2017 health referral for Club Deluxe bar at 1509 Haight Street required the operator to abide by conditions of Planning Commission Motion No. 14221 and retain the same license under Planning Code Section 781.9.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A February 2017 health referral for Club Deluxe bar at 1509 Haight Street required the operator to abide by conditions of Planning Commission Motion No. 14221 and retain the same license under Planning Code Section 781.9.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2017-002299MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Planning Code Section 303(e) provides that changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use, requiring Commission approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code Section 303(e) provides that changing a condition of a Conditional Use goes through the same procedure as a new Conditional Use, requiring Commission approval.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not contain Planning Code Section 303(e) or any text about Conditional Use procedures."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use for new on-sale liquor establishments (Types 40, 41, 42, 47, 48, 57) under Planning Code Section 781.9(c)(2), but the description does not specify whether beer and wine or full liquor will be served.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Haight Street Alcohol Restricted Use Subdistrict requires Conditional Use for new on-sale liquor establishments (Types 40, 41, 42, 47, 48, 57) under Planning Code Section 781.9(c)(2), but the description does not specify whether beer and wine or full liquor will be served.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms the district exists but does not state the Conditional Use requirement, license types, or subsection reference."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required because a bar is a conditional use in NCD-HAIGHT and the concept seeks to amend conditions of the 1996 CUA (Motion No. 14221) that approved place of entertainment at this address.",
+   "verdict": "partially_supported",
+   "supported_text": "A Conditional Use Authorization is required because a bar is a conditional use in NCD-HAIGHT and the concept seeks to amend conditions of the 1996 CUA that approved place of entertainment on this parcel.",
+   "cut_problem": "adds or moves 'on': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-HAIGHT",
+    "app:datasf_planning:1996.520C",
+    "app:datasf_planning:2017-002299MIS",
+    "overlay:datasf_sud:haight_street_alcohol_restricted_use"
+   ],
+   "note": "Records do not mention 'Motion No. 14221', and the 1996 CUA was for 1501-1509 Haight St (same parcel), not at 1511 Haight St."
+  },
+  {
+   "item_id": "row:alcohol:0",
+   "kind": "finding",
+   "original": "An active ABC Type 48 license (on-sale general public premises, full bar) is on file at 1569 Haight Street, 72 meters away, issued April 28, 2010.",
+   "verdict": "partially_supported",
+   "supported_text": "An active ABC Type 48 license (on-sale general public premises) is on file at 1569 Haight Street, 72 meters away, issued April 28, 2010.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "An active ABC Type 48 license (on-sale general public premises) is on file at 1569 Haight Street, 72 meters away, issued April 28, 2010.",
+   "confidence": "verified",
+   "citations": [
+    "license:abc:486132"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "Six active on-sale ABC licenses are within 500 feet (Types 21, 17, 47, 48), and 18 total licenses are within 1,000 feet, triggering the undue concentration flag in the density statistics.",
+   "verdict": "partially_supported",
+   "supported_text": "Six active on-sale ABC licenses are within 500 feet, and 18 total licenses are within 1,000 feet, triggering the undue concentration flag in the density statistics.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Six active on-sale ABC licenses are within 500 feet, and 18 total licenses are within 1,000 feet, triggering the undue concentration flag in the density statistics.",
+   "confidence": "verified",
+   "citations": [
+    "stat:density"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "The 2017 health referral for this address required that the bar retain the same type of retail liquor license under Planning Code Section 781.9, but the records do not show which license type was held in 2017.",
+   "verdict": "partially_supported",
+   "supported_text": "The 2017 health referral required that the bar retain the same type of retail liquor license under Planning Code Section 781.9, but the records do not show which license type was held in 2017.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 2017 health referral required that the bar retain the same type of retail liquor license under Planning Code Section 781.9, but the records do not show which license type was held in 2017.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2017-002299MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The type of ABC license needed cannot be established because the description does not specify whether the bar will serve beer and wine only or full liquor, and how the license will be obtained (new application or transfer).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The type of ABC license needed cannot be established because the description does not specify whether the bar will serve beer and wine only or full liquor, and how the license will be obtained (new application or transfer).",
+   "confidence": null,
+   "citations": [
+    "license:abc:486132",
+    "stat:density",
+    "app:datasf_planning:2017-002299MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:0",
+   "kind": "finding",
+   "original": "A Place of Entertainment permit was approved on September 8, 2016 for 609 Ashbury Street (this parcel, filed under a different address) as continuation of the 1996 CUA entertainment use (Case No. 1996.520C, Motion No. 14221).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Place of Entertainment permit was approved on September 8, 2016 for 609 Ashbury Street (this parcel, filed under a different address) as continuation of the 1996 CUA entertainment use (Case No. 1996.520C, Motion No. 14221).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2016-011401MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:1",
+   "kind": "finding",
+   "original": "Police Code Section 1060 et seq. requires a Place of Entertainment permit when entertainment is a primary use or shows run until 2 a.m., or a Limited Live Performance permit when live performance is secondary and ends by 10 or 11 p.m. in a performance area of 200 sq ft or less.",
+   "verdict": "partially_supported",
+   "supported_text": "A Place of Entertainment permit is required when entertainment is a primary use or shows run until 2 a.m.",
+   "cut_problem": "adds or moves 'required': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Police Code Section 1060 et seq. requires a Place of Entertainment permit when entertainment is a primary use or shows run until 2 a.m., or a Limited Live Performance permit when live performance is secondary and ends by 10 or 11 p.m. in a performance area of 200 sq ft or less.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not cite Police Code Section 1060 et seq. or mention a Limited Live Performance permit or its conditions."
+  },
+  {
+   "item_id": "row:entertainment:2",
+   "kind": "finding",
+   "original": "At 1566 Haight (87m away), a December 2020 CUA approved bar hours to 2 a.m. but conditioned that amplified music be limited to 10 p.m. weeknights and 2 a.m. weekends only, with soundproofing so incidental noise is not audible beyond the premises.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "At 1566 Haight (87m away), a December 2020 CUA approved bar hours to 2 a.m. but conditioned that amplified music be limited to 10 p.m. weeknights and 2 a.m. weekends only, with soundproofing so incidental noise is not audible beyond the premises.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:3",
+   "kind": "finding",
+   "original": "A Limited Live Performance permit was approved at 1569 Haight (72m away) on March 21, 2022 as an accessory use to the existing bar, taking 4 days from filing to approval.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Limited Live Performance permit was approved at 1569 Haight (72m away) on March 21, 2022 as an accessory use to the existing bar, taking 4 days from filing to approval.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-002436MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:entertainment:4",
+   "kind": "finding",
+   "original": "Entertainment was denied at 1576-1580 Haight (87m away) in April 1995, and a 2008 referral confirmed the denial remained in effect with no new CUA filed, indicating the Commission views some sites as unsuitable for entertainment across multiple operators.",
+   "verdict": "partially_supported",
+   "supported_text": "Entertainment was denied at 1576-1580 Haight (87m away) in April 1995, and a 2008 referral confirmed the denial remained in effect with no new CUA filed.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Entertainment was denied at 1576-1580 Haight (87m away) in April 1995, and a 2008 referral confirmed the denial remained in effect with no new CUA filed, indicating the Commission views some sites as unsuitable for entertainment across multiple operators.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show the specific denials but do not state the general conclusion about Commission views."
+  },
+  {
+   "item_id": "summary:entertainment",
+   "kind": "summary",
+   "original": "A Place of Entertainment or Limited Live Performance permit is required because live entertainment and amplified sound are described, and the Entertainment Commission holds a public hearing on each application.",
+   "verdict": "partially_supported",
+   "supported_text": "A Place of Entertainment or Limited Live Performance permit is required, and the Entertainment Commission holds a public hearing on each application.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2016-011401MIS",
+    "catalog:sf.place_of_entertainment_permit",
+    "app:datasf_planning:2019-017867CUA",
+    "app:datasf_planning:2022-002436MIS",
+    "app:datasf_planning:1994.633C",
+    "app:datasf_planning:MB0800611"
+   ],
+   "note": "The rule record lists 'whether there is entertainment, and what kind' as a missing input, so live entertainment and amplified sound being described is not in the records."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "California Retail Food Code Sections 114380–114381 and San Francisco Health Code Article 8 require a health permit for any food or drink business, issued after inspection without a hearing.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "California Retail Food Code Sections 114380–114381 and San Francisco Health Code Article 8 require a health permit for any food or drink business, issued after inspection without a hearing.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes business registration from the Treasurer & Tax Collector, not health permits or health code requirements."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The 2017 health referral approved continued bar use at 1509 Haight (this address) under Planning Code Sections 186.1 and 719.41, demonstrating health permits are issued for bar use when Planning approvals are in place.",
+   "verdict": "partially_supported",
+   "supported_text": "The 2017 health referral approved continued bar use at 1509 Haight under Planning Code Sections 186.1 and 719.41.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 2017 health referral approved continued bar use at 1509 Haight under Planning Code Sections 186.1 and 719.41.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2017-002299MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is allowed as of right for a bar serving drinks, issued after plan check and inspection without a discretionary hearing.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is allowed for a bar serving drinks, issued after plan check and inspection without a discretionary hearing.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.business_registration",
+    "app:datasf_planning:2017-002299MIS"
+   ],
+   "note": "The rule record shows the bar use requires conditional use approval, contradicting 'as of right.'"
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Planning Code Section 102 defines nighttime entertainment to bar as a change of use with the last use of the space as described.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code Section 102 defines nighttime entertainment to bar as a change of use with the last use of the space as described.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references Section 102 but does not contain its text or state what it defines regarding change of use."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "Under the California Building Code 2022 edition, a bar is Assembly Group A-2, and 150 seats means at least 50 people, so the proposed occupancy is Group A-2.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Under the California Building Code 2022 edition, a bar is Assembly Group A-2, and 150 seats means at least 50 people, so the proposed occupancy is Group A-2.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning record does not contain Building Code occupancy classifications or seat count thresholds."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so whether a Building Code change of occupancy is required is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The existing occupancy group of the space is not in public records; only plans or an inspection show it, so whether a Building Code change of occupancy is required is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record does not address occupancy groups or Building Code change of occupancy requirements."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "San Francisco Building Code Section 106A.1 requires a building permit for tenant improvements and any change of use, and the permit must conform to the Planning Code before it is issued under Planning Code Section 175.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "San Francisco Building Code Section 106A.1 requires a building permit for tenant improvements and any change of use, and the permit must conform to the Planning Code before it is issued under Planning Code Section 175.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The catalog entry describes when a building permit is needed but does not cite Building Code Section 106A.1 or Planning Code Section 175 or state their requirements."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required because nighttime entertainment to bar is a Planning Code change of use and tenant improvements are described, but the Building Code change of occupancy cannot be established without the existing occupancy group.",
+   "verdict": "partially_supported",
+   "supported_text": "A building permit with change of use is required, but the Building Code change of occupancy cannot be established without the existing occupancy group.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A building permit with change of use is required, but the Building Code change of occupancy cannot be established without the existing occupancy group.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCD-HAIGHT",
+    "catalog:sf.building_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation split by activity: bar open to 2 a.m., amplified music limited to 10 p.m. weeknights and 2 a.m. weekends (Friday and Saturday nights). Basis: The December 2020 CUA at 1566 Haight (87m away, same district) approved 2 a.m. bar hours but imposed this differential hours condition for amplified music, showing the Commission routinely restricts entertainment hours more than bar hours in residential-adjacent locations.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation split by activity: bar open to 2 a.m., amplified music limited to 10 p.m. weeknights and 2 a.m. weekends (Friday and Saturday nights). Basis: The December 2020 CUA at 1566 Haight (87m away, same district) approved 2 a.m. bar hours but imposed this differential hours condition for amplified music.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Hours of operation split by activity: bar open to 2 a.m., amplified music limited to 10 p.m. weeknights and 2 a.m. weekends (Friday and Saturday nights). Basis: The December 2020 CUA at 1566 Haight (87m away, same district) approved 2 a.m. bar hours but imposed this differential hours condition for amplified music.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing: the building must be adequately soundproofed so incidental noise is not audible beyond the premises or in other sections of the building, and bass and vibrations must be contained within the enclosed structure. Basis: The 2019-017867CUA at 1566 Haight required that entertainment be performed within the enclosed building with soundproofing so noise does not escape, and similar conditions appear in every entertainment approval in the Haight NCD.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Soundproofing: the building must be adequately soundproofed so incidental noise is not audible beyond the premises or in other sections of the building, and bass and vibrations must be contained within the enclosed structure. Basis: The 2019-017867CUA at 1566 Haight required that entertainment be performed within the enclosed building with soundproofing so noise does not escape.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Soundproofing: the building must be adequately soundproofed so incidental noise is not audible beyond the premises or in other sections of the building, and bass and vibrations must be contained within the enclosed structure. Basis: The 2019-017867CUA at 1566 Haight required that entertainment be performed within the enclosed building with soundproofing so noise does not escape.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Patron behavior notices: well-lit notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion must be prominently displayed at all entrances and exits. Basis: Standard condition in the 2019-017867CUA and required for all bars and entertainment venues under San Francisco Entertainment Commission guidelines.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Patron behavior notices: well-lit notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion must be prominently displayed at all entrances and exits. Basis: Standard condition in the 2019-017867CUA.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Patron behavior notices: well-lit notices urging patrons to leave the establishment and neighborhood in a quiet, peaceful, and orderly fashion must be prominently displayed at all entrances and exits. Basis: Standard condition in the 2019-017867CUA.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Community liaison: appoint a community liaison officer before building permit issuance to deal with issues of concern to nearby property owners and occupants, with written notice to the Zoning Administrator and registered neighborhood groups. Basis: Required in all three recent Haight NCD CUAs: 2024-010575CUA, 2024-004781CUA, and 2019-017867CUA, making it a standard condition for any bar or entertainment use in this district.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Community liaison: appoint a community liaison officer before building permit issuance to deal with issues of concern to nearby property owners and occupants, with written notice to the Zoning Administrator and registered neighborhood groups. Basis: Required in all three recent Haight NCD CUAs: 2024-010575CUA, 2024-004781CUA, and 2019-017867CUA.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Community liaison: appoint a community liaison officer before building permit issuance to deal with issues of concern to nearby property owners and occupants, with written notice to the Zoning Administrator and registered neighborhood groups. Basis: Required in all three recent Haight NCD CUAs: 2024-010575CUA, 2024-004781CUA, and 2019-017867CUA.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2024-010575CUA",
+    "app:datasf_planning:2024-004781CUA",
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Sidewalk maintenance: maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and monitor the sidewalk within a one-block radius during business hours to keep it free of litter associated with the business. Basis: Standard condition in the 2019-017867CUA and required under San Francisco Police Code Article 1, Section 34 for all eating and drinking uses in neighborhood commercial districts.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sidewalk maintenance: maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and monitor the sidewalk within a one-block radius during business hours to keep it free of litter associated with the business. Basis: Standard condition in the 2019-017867CUA and required under San Francisco Police Code Article 1, Section 34.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Sidewalk maintenance: maintain the main entrance and all sidewalks abutting the property in a clean and sanitary condition, and monitor the sidewalk within a one-block radius during business hours to keep it free of litter associated with the business. Basis: Standard condition in the 2019-017867CUA and required under San Francisco Police Code Article 1, Section 34.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Entertainment Commission approval required before operation if a Place of Entertainment permit is issued. Basis: The 2019-017867CUA explicitly required that the project sponsor obtain all necessary approvals from the Entertainment Commission prior to operation, as standard practice when entertainment is part of the approved use.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Entertainment Commission approval required before operation if a Place of Entertainment permit is issued. Basis: The 2019-017867CUA explicitly required that the project sponsor obtain all necessary approvals from the Entertainment Commission prior to operation.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record states Entertainment Commission approval is required prior to operation, but the characterization as 'standard practice when entertainment is part of the approved use' is the sentence's own conclusion."
+  },
+  {
+   "item_id": "condition:6",
+   "kind": "condition",
+   "original": "Expected condition: Retain the same type of retail liquor license as existed under the 1996 CUA per Planning Code Section 781.9 (Haight Alcohol Subdistrict). Basis: The 2017 health referral for this address required that the bar retain the same type of retail liquor license, and Planning Code Section 781.9 restricts license type changes in the Haight Alcohol Subdistrict.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The 2017 referral is for 1509 Haight St (same parcel but different address), not 1511; the overlay record doesn't state what Section 781.9 restricts."
+  },
+  {
+   "item_id": "condition:7",
+   "kind": "condition",
+   "original": "Expected condition: Fire Department Place of Assembly permit for occupant load of 150 (at least 50 people), with posted occupancy sign. Basis: Police Code Section 1060 et seq. and catalog entry sf.fire_place_of_assembly require a Place of Assembly permit for occupant loads of 50 or more, with inspection and approval before the Entertainment Commission issues a permit.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Fire Department Place of Assembly permit for occupant load of 150 (at least 50 people), with posted occupancy sign. Basis: catalog entry sf.fire_place_of_assembly require a Place of Assembly permit for occupant loads of 50 or more.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not mention Police Code Section 1060 et seq. or specify timing relative to Entertainment Commission permit issuance."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Request the full text of Motion No. 14221 from the 1996 CUA (Case No. 1996.520C) from San Francisco Planning Department, and confirm in writing whether the proposed bar use with live entertainment and amplified sound to 2 a.m. fits within those conditions or requires a new CUA. What to say: Write to the Zoning Administrator: 'I am preparing to operate a bar with live entertainment and amplified sound until 2 a.m. at 1511 Haight Street. A 1996 Conditional Use Authorization (Case No. 1996.520C, Motion No. 14221) approved a place of entertainment at this address, and a 2017 health referral required compliance with those conditions. Please provide the full text of Motion No. 14221 and confirm in writing whether the proposed use requires a new CUA application or can proceed under the existing authorization.' Attach the concept description. Do not file a CUA application or pay the fee until Planning confirms a new application is required.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Request the full text of Motion No. 14221 from the 1996 CUA (Case No. 1996.520C) from San Francisco Planning Department, and confirm in writing whether the proposed bar use with live entertainment and amplified sound to 2 a.m. fits within those conditions or requires a new CUA. What to say: Write to the Zoning Administrator: 'I am preparing to operate a bar with live entertainment and amplified sound until 2 a.m. at 1511 Haight Street. A 1996 Conditional Use Authorization (Case No. 1996.520C, Motion No. 14221) approved a place of entertainment on this parcel, and a 2017 health referral required compliance with those conditions. Please provide the full text of Motion No. 14221 and confirm in writing whether the proposed use requires a new CUA application or can proceed under the existing authorization.' Attach the concept description. Do not file a CUA application or pay the fee until Planning confirms a new application is required.",
+   "cut_problem": "adds or moves 'on': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show 1996 CUA and 2017 referral were on the same parcel but at addresses 1501-1509 Haight St, not at 1511 Haight St."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain an EIN from the IRS, then register the business with the SF Office of the Treasurer & Tax Collector to receive a Business Account Number (BAN). What to say: File LLC Articles of Organization ($70) or corporate articles ($100) with the California Secretary of State online at bizfile.sos.ca.gov. Within 90 days, file the Statement of Information ($20 LLC, $25 corporation). Apply for an EIN online at irs.gov (free, issued immediately). Then register the business in San Francisco at treasurer.sfgov.org within 30 days of starting business, paying $55–$700 based on projected gross receipts. The BAN is required for every other city permit and license.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain an EIN from the IRS, then register the business with the SF Office of the Treasurer & Tax Collector to receive a Business Account Number (BAN). What to say: File LLC Articles of Organization ($70) or corporate articles ($100) with the California Secretary of State online. Within 90 days, file the Statement of Information ($20 LLC, $25 corporation). Apply for an EIN online (free, issued immediately). Then register the business in San Francisco within 30 days of starting business, paying $55–$700 based on projected gross receipts.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Form the legal entity with the California Secretary of State (LLC or corporation) and obtain an EIN from the IRS, then register the business with the SF Office of the Treasurer & Tax Collector to receive a Business Account Number (BAN). What to say: File LLC Articles of Organization ($70) or corporate articles ($100) with the California Secretary of State online. Within 90 days, file the Statement of Information ($20 LLC, $25 corporation). Apply for an EIN online (free, issued immediately). Then register the business in San Francisco within 30 days of starting business, paying $55–$700 based on projected gross receipts.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sos_entity_registration",
+    "catalog:us.ein",
+    "catalog:sf.business_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms a new CUA is required, file the Conditional Use Authorization application for a bar use with entertainment, including pre-application community meeting, and schedule the Planning Commission hearing (4–10 months). What to say: File the CUA application with the Planning Department (application fee approximately $3,100–$15,000 depending on project cost). In the application, describe the bar use with live entertainment and amplified sound to 2 a.m., propose operating conditions addressing soundproofing, patron behavior, community liaison and sidewalk maintenance, and commit to Entertainment Commission approval before operation. Propose differential hours: bar to 2 a.m., amplified music to 10 p.m. weeknights and 2 a.m. weekends. Conduct the required community meeting and 300-foot mailed notice, then wait for the hearing date (typically scheduled 3–6 months after filing). Budget 120–300 days from filing to decision.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If Planning confirms a new CUA is required, file the Conditional Use Authorization application for a bar use with entertainment, including pre-application community meeting, and schedule the Planning Commission hearing (4–10 months). What to say: File the CUA application with the Planning Department (application fee approximately $3,100–$15,000 depending on project cost). In the application, describe the bar use with live entertainment and amplified sound to 2 a.m., propose operating conditions addressing soundproofing, patron behavior, community liaison and sidewalk maintenance, and commit to Entertainment Commission approval before operation. Propose differential hours: bar to 2 a.m., amplified music to 10 p.m. weeknights and 2 a.m. weekends. Conduct the required community meeting and 300-foot mailed notice, then wait for the hearing date. Budget 120–300 days from filing to decision.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: If Planning confirms a new CUA is required, file the Conditional Use Authorization application for a bar use with entertainment, including pre-application community meeting, and schedule the Planning Commission hearing (4–10 months). What to say: File the CUA application with the Planning Department (application fee approximately $3,100–$15,000 depending on project cost). In the application, describe the bar use with live entertainment and amplified sound to 2 a.m., propose operating conditions addressing soundproofing, patron behavior, community liaison and sidewalk maintenance, and commit to Entertainment Commission approval before operation. Propose differential hours: bar to 2 a.m., amplified music to 10 p.m. weeknights and 2 a.m. weekends. Conduct the required community meeting and 300-foot mailed notice, then wait for the hearing date. Budget 120–300 days from filing to decision.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.conditional_use_authorization",
+    "app:datasf_planning:2019-017867CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Once the CUA is approved (or if Planning confirms the 1996 CUA covers this use), file the Entertainment Commission application for a Place of Entertainment permit, including Police, Planning, DBI, DPH and Fire Department referrals, and post the 30-day notice at the premises. What to say: Email the Entertainment Commission Deputy Director to confirm zoning eligibility, then submit the POE application with the $2,708 fee (2026–27 schedule), a copy of the lease or the CUA approval, the business registration certificate, and proof of workers' compensation insurance. The application routes to Police, Planning, DBI, Health and Fire for review. Post the yellow notice at the premises for 30 days. Prepare an acoustic report and soundproofing plan if entertainment will be amplified. Attend the Entertainment Commission hearing (typically 45–120 days from filing) and be ready to address noise control, patron management and community concerns.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Once the CUA is approved (or if Planning confirms the 1996 CUA covers this use), file the Entertainment Commission application for a Place of Entertainment permit, including Police and Planning referrals, and post the 30-day notice at the premises. What to say: Email the Entertainment Commission Deputy Director to confirm zoning eligibility, then submit the POE application with the $2,708 fee (2026–27 schedule), a copy of the lease or the CUA approval, and the business registration certificate. The application routes to Police and Planning for review. Post the notice at the premises for 30 days. Prepare an acoustic report and soundproofing plan if entertainment will be amplified. Attend the Entertainment Commission hearing (typically 45–120 days from filing) and be ready to address noise control, patron management and community concerns.",
+   "cut_problem": "adds or moves 'Planning': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records mention Police and Planning review but do not list DBI, DPH/Health, or Fire as reviewing departments; do not mention workers' compensation insurance or notice color."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: If tenant improvements are required, hire an architect to prepare plans showing the bar layout, finishes, ADA compliance, occupant load and fire exits, and submit the building permit application to DBI with Planning and Health Department plan check routing. What to say: Engage an architect licensed in California who has done San Francisco bars or restaurants. Prepare stamped plans showing the bar, seating, restrooms, ADA path of travel, occupant load calculation (for 150 capacity), and fire exits. Submit the building permit application to DBI with 'Planning' and 'Health' as routing stations. The permit application will route to Planning for zoning review (Section 175 compliance) and to DPH for approval of finishes, equipment and menu. Budget 14–120 days for plan review and $800–$15,000 in permit fees depending on construction valuation. Licensed subcontractors will pull electrical, plumbing and mechanical permits.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: If tenant improvements are required, hire an architect to prepare plans and submit the building permit application to DBI with Planning and Health Department plan check routing. What to say: Engage an architect who has done San Francisco bars or restaurants. Prepare stamped plans. Submit the building permit application to DBI with Planning and Health as routing stations. Budget 14–120 days for plan review and $800–$15,000 in permit fees depending on construction valuation. Licensed subcontractors will pull electrical, plumbing and mechanical permits.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not specify California licensure, 150 capacity, Section 175, Planning zoning review routing, or DPH approval items (finishes, equipment, menu)."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Schedule the Fire Department Place of Assembly inspection for occupant load 150 (at least 50 people) and obtain the permit and posted occupancy sign before the Entertainment Commission final approval. What to say: After the building permit is issued, apply for the Place of Assembly permit at the SFFD Permit Center (49 South Van Ness Suite 560) with the building permit number and approved occupant load calculation. The application fee is $446. Schedule the fire inspection to verify exits, fire suppression, emergency lighting and occupancy signage. The Entertainment Commission requires this permit before issuing the Place of Entertainment permit, so complete the fire inspection at ~80% construction complete.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Schedule the Fire Department Place of Assembly inspection for occupant load 150 (at least 50 people) and obtain the permit and posted occupancy sign before the Entertainment Commission final approval. What to say: After the building permit is issued, apply for the Place of Assembly permit at the SFFD Permit Center (49 South Van Ness Suite 560) with the building permit number. The application fee is $446. The Entertainment Commission requires this permit before issuing the Place of Entertainment permit.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not specify approved occupant load calculation as required, inspection items verified, or 80% construction timing."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Appoint a community liaison officer, register for RBS training for all alcohol servers, obtain ASCAP and BMI music licenses, and complete the health permit application with proof of a certified food safety manager on staff before opening. What to say: Before the building permit issues, appoint a community liaison (an owner, manager or designated employee) and provide written notice with name, business address and phone number to the Zoning Administrator and registered neighborhood groups. Register all bartenders and managers for California RBS training on the ABC RBS Portal ($3 registration, $10–$25 course, complete within 60 days of hire). Apply for ASCAP and BMI public performance licenses online (approximately $300–$2,500 per year each, based on occupancy and music use). File the health permit application online with the DPH at least one month before opening, with the BAN, Location ID, EIN, and proof that a certified food safety manager (ServSafe or equivalent) is on staff. Schedule the pre-opening health inspection after construction is substantially complete.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Appoint a community liaison officer, register for RBS training for all alcohol servers, and obtain ASCAP and BMI music licenses before opening. What to say: Before the building permit issues, appoint a community liaison (an owner, manager or designated employee) and provide written notice with name, business address and phone number to the Zoning Administrator and registered neighborhood groups. Register all bartenders and managers for California RBS training on the ABC RBS Portal ($3 registration, $10–$25 course, complete within 60 days of hire). Apply for ASCAP and BMI public performance licenses online (approximately $300–$2,500 per year each, based on occupancy and music use).",
+   "cut_problem": "adds or moves 'obtain': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records do not mention health permit application requirements, DPH filing, BAN/Location ID/EIN, food safety manager certification, or pre-opening health inspection."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 165 to 720 days. Estimated government cost: $6,763 to $34,700. Notes: This range is the time to obtain the Conditional Use Authorization, Place of Entertainment permit and building permit with change of use when they are granted, based on catalog entries for those approvals. It does not include time to obtain the ABC license (which depends on whether beer and wine or full liquor is required) or the health permit (which is issued after final inspection). The CUA takes 120–300 days from filing to approval. The Place of Entertainment permit takes 45–120 days from filing to hearing and can be filed in parallel once the CUA is approved. The building permit takes 14–120 days for plan review and issuance. The cost range includes the CUA application fee ($3,100–$15,000), the POE application fee ($2,708), the building permit fee ($800–$15,000), the business registration certificate ($55–$700), the Fire Place of Assembly permit ($446), the sign permit ($300–$1,500), entity registration ($70–$150), seller's permit ($0), EDD registration ($0), RBS training ($3–$30 per person), ASCAP and BMI licenses ($600–$5,000 combined), and workers' compensation insurance (percentage of payroll, not a government fee). It does not include the ABC license cost: for beer and wine the application fee is $1,000–$1,600 and takes 60–150 days; for full liquor the market price for an existing license is $100,000–$450,000 and the transfer takes 90–240 days. The critical path is the CUA hearing (4–10 months), which must be approved before the Entertainment Commission will schedule the POE hearing. If the 1996 CUA conditions already permit this use, the CUA step drops out and the timeline shortens by 4–10 months, but that cannot be confirmed until Planning answers in writing.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 165 to 720 days. Estimated government cost: $6,763 to $34,700. Notes: This range is the time to obtain the Conditional Use Authorization, Place of Entertainment permit and building permit with change of use when they are granted, based on catalog entries for those approvals. It does not include time to obtain the ABC license (which depends on whether beer and wine or full liquor is required) or the health permit (which is issued after final inspection). The CUA takes 120–300 days from filing to approval. The Place of Entertainment permit takes 45–120 days from filing to hearing and can be filed in parallel once the CUA is approved. The building permit takes 14–120 days for plan review and issuance. The cost range includes the CUA application fee ($3,100–$15,000), the POE application fee ($2,708), the building permit fee ($800–$15,000), the business registration certificate ($55–$700), the Fire Place of Assembly permit ($446), the sign permit ($300–$1,500), entity registration ($70–$150), seller's permit ($0), EDD registration ($0), RBS training ($3–$30 per person), ASCAP and BMI licenses ($600–$5,000 combined), and workers' compensation insurance (percentage of payroll, not a government fee). It does not include the ABC license cost: for beer and wine the application fee is $1,000–$1,600 and takes 60–150 days; for full liquor the market price for an existing license is $100,000–$450,000 and the transfer takes 90–240 days. The critical path is the CUA hearing (4–10 months), which must be approved before the Entertainment Commission will schedule the POE hearing. If the 1996 CUA conditions already permit this use, the CUA step drops out and the timeline shortens by 4–10 months, but that cannot be confirmed until Planning answers in writing.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited records support CUA, POE, building permit, business registration and Fire permit times and most fees, but not sign permit, entity registration, seller's permit, EDD, RBS training, ASCAP/BMI, workers' comp or ABC license information."
+  }
+ ]
+}

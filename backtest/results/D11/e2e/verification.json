@@ -1,0 +1,458 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 29,
+  "supported": 3,
+  "trimmed": 9,
+  "downgraded": 11,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "Zoning district NCT-MISSION and the Mission Alcoholic Beverage Special Use District both require Conditional Use Authorization for a Restaurant use at this location, per Planning Code §754 and §249.60(f)(1).",
+   "verdict": "partially_supported",
+   "supported_text": "Zoning district NCT-MISSION and the Mission Alcoholic Beverage Special Use District both apply at this location, per Planning Code §754 and §249.60(f)(1).",
+   "cut_problem": "adds or moves 'apply': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Zoning district NCT-MISSION and the Mission Alcoholic Beverage Special Use District both require Conditional Use Authorization for a Restaurant use at this location, per Planning Code §754 and §249.60(f)(1).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records confirm the districts apply and cite the code sections, but show restaurant_permission as 'unknown' and do not state the CU requirement."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The records show a 2008 Conditional Use Authorization (case 2008.0360C, approved June 26, 2008) at this address for a small self-service restaurant (dba Tortas el Primo) within the Mission Street Fast Food Special Use District.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The records show a 2008 Conditional Use Authorization (case 2008.0360C, approved June 26, 2008) at this address for a small self-service restaurant (dba Tortas el Primo) within the Mission Street Fast Food Special Use District.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2008.0360C"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Between 2016 and 2020, Planning approved six health and ABC referrals at 3224 22nd St for Limited Restaurant continuations (dba Futo, Pushcart Fare, Breakfast Little) as principally permitted uses per §754, not requiring conditional use hearings.",
+   "verdict": "partially_supported",
+   "supported_text": "Between 2016 and 2020, Planning approved health referrals at 3224 22nd St for Limited Restaurant continuations (dba Futo, Pushcart Fare, Breakfast Little).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "Between 2016 and 2020, Planning approved six health and ABC referrals at 3224 22nd St for Limited Restaurant continuations (dba Futo, Pushcart Fare, Breakfast Little) as principally permitted uses per §754, not requiring conditional use hearings.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Only three referrals are in the cited records, not six. Only one record mentions §754 or 'principally permitted'. None state they did not require conditional use hearings."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "A 2017 ABC referral at this address approved a Type 41 license as accessory to an 'existing legal full service restaurant,' but no CUA on file shows how the site moved from Limited Restaurant to full Restaurant between 2016 and 2017.",
+   "verdict": "partially_supported",
+   "supported_text": "A 2017 ABC referral at this address approved a Type 41 license as accessory to an 'existing legal full service restaurant.'",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A 2017 ABC referral at this address approved a Type 41 license as accessory to an 'existing legal full service restaurant.'",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2017-004559MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The description does not state whether the business is part of a formula-retail chain, and the records do not show the current count of eating and drinking uses in NCT-MISSION against the cap of 167, so those triggers are not decided.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The description does not state whether the business is part of a formula-retail chain, and the records do not show the current count of eating and drinking uses in NCT-MISSION against the cap of 167, so those triggers are not decided.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not mention formula-retail chains, a count or cap of eating and drinking uses, the number 167, or triggers."
+  },
+  {
+   "item_id": "row:zoning_use:5",
+   "kind": "finding",
+   "original": "In recent comparable cases (2020-2021), Planning approved new Restaurant uses in NCT-MISSION within the Mission Alcohol SUD via building permit referrals (without CUA) when the concept did not include bars or hard liquor (e.g., 2512 Mission St approved via BPA and ABC/DPH referrals).",
+   "verdict": "partially_supported",
+   "supported_text": "In recent comparable cases (2020-2021), Planning approved Restaurant uses in NCT-MISSION via building permit referrals (e.g., 2512 Mission St approved via BPA and ABC/DPH referrals).",
+   "cut_problem": "drops 'without' and keeps the words after it",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "In recent comparable cases (2020-2021), Planning approved new Restaurant uses in NCT-MISSION within the Mission Alcohol SUD via building permit referrals (without CUA) when the concept did not include bars or hard liquor (e.g., 2512 Mission St approved via BPA and ABC/DPH referrals).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show approvals but don't mention Mission Alcohol SUD, whether CUA was needed, or what the concept included/excluded."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "Conditional Use Authorization is required because the Mission Alcoholic Beverage Special Use District mandates CUA for any Restaurant use in this sub-area, and the intensification from Limited Restaurant to full Restaurant constitutes a change of use; however, the district cap count and the formula…",
+   "verdict": "partially_supported",
+   "supported_text": "Conditional Use Authorization is required because the Mission Alcoholic Beverage Special Use District mandates CUA for any Restaurant use in this sub-area, and the change from Limited Restaurant to full Restaurant constitutes a change of use; however, the district cap count and the formula…",
+   "cut_problem": "adds or moves 'from': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2008.0360C",
+    "app:datasf_planning:2018-016198MIS",
+    "app:datasf_planning:2018-012706MIS",
+    "app:datasf_planning:2016-006153MIS",
+    "app:datasf_planning:2017-004559MIS",
+    "app:datasf_planning:2020-009285MIS",
+    "app:datasf_planning:2021-004360MIS"
+   ],
+   "note": "The records state it is a change of use from Limited Restaurant to Restaurant but do not characterize it as an 'intensification'."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Every food facility needs a health permit to operate, issued after DPH plan check and pre-opening inspection without a hearing, per California Retail Food Code §§114380-114381 and San Francisco Health Code Article 8.",
+   "verdict": "partially_supported",
+   "supported_text": "Every food facility needs a health permit to operate, issued after DPH plan check and pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Every food facility needs a health permit to operate, issued after DPH plan check and pre-opening inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The most recent health referral at this address (case 2018-016198MIS, approved December 10, 2018) recommended approval for continuation of a Limited Restaurant (dba Breakfast Little) as principally permitted in NCT-MISSION.",
+   "verdict": "partially_supported",
+   "supported_text": "The health referral at this address (case 2018-016198MIS, approved December 10, 2018) recommended approval for continuation of a Limited Restaurant (dba Breakfast Little) as principally permitted in NCT-MISSION.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The health referral at this address (case 2018-016198MIS, approved December 10, 2018) recommended approval for continuation of a Limited Restaurant (dba Breakfast Little) as principally permitted in NCT-MISSION.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2018-016198MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is allowed after plan check and final inspection, issued administratively by the Department of Public Health; the site has an active history of approved health referrals for food uses since 2001.",
+   "verdict": "partially_supported",
+   "supported_text": "A health permit to operate is allowed after plan check and final inspection, issued administratively by the Department of Public Health.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A health permit to operate is allowed after plan check and final inspection, issued administratively by the Department of Public Health.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2018-016198MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The concept proposes tenant improvements and full cooking equipment, which require a building permit with plans stamped by an architect, per San Francisco Building Code §106A.1.",
+   "verdict": "partially_supported",
+   "supported_text": "The concept proposes tenant improvements and full cooking equipment, which require a building permit with plans stamped by an architect.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The concept proposes tenant improvements and full cooking equipment, which require a building permit with plans stamped by an architect, per San Francisco Building Code §106A.1.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not cite San Francisco Building Code §106A.1."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "Planning Code change of use: Limited Restaurant to Restaurant is a change of use, per Planning Code §102 definitions, as stated in the pathway determination.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code change of use: Limited Restaurant to Restaurant is a change of use, per Planning Code §102 definitions, as stated in the pathway determination.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references §102 but does not state the definitions or that Limited Restaurant to Restaurant is a change of use."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Building Code change of occupancy: the description does not give the occupant load (seats or standing capacity), so the proposed occupancy group (Assembly A-2 or Business B) cannot be established, and a change of occupancy is not established.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Building Code change of occupancy: the description does not give the occupant load (seats or standing capacity), so the proposed occupancy group (Assembly A-2 or Business B) cannot be established, and a change of occupancy is not established.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record discusses building permits for change of occupancy generally but does not state that occupant load is missing or that occupancy group cannot be established."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Neighbourhood notification (Planning Code §311) was required on the rules date (June 8, 2023) for a change of use to Restaurant in an NCT district when the new use was not principally permitted, which it is not here.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Neighbourhood notification (Planning Code §311) was required on the rules date (June 8, 2023) for a change of use to Restaurant in an NCT district when the new use was not principally permitted, which it is not here.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show restaurant_permission as 'unknown' and do not state §311 notification requirements or that Restaurant is not principally permitted in NCT-MISSION district."
+  },
+  {
+   "item_id": "row:building_change_of_use:4",
+   "kind": "finding",
+   "original": "The building permit is routed to Planning for zoning review per §175(a), and Planning must confirm the use complies with the Planning Code before DBI issues the permit.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The building permit is routed to Planning for zoning review per §175(a), and Planning must confirm the use complies with the Planning Code before DBI issues the permit.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes building permit requirements but does not mention routing to Planning per §175(a) or Planning's confirmation of Planning Code compliance."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required for the tenant improvements and kitchen build-out; the Planning Code change of use from Limited Restaurant to Restaurant is established, but the Building Code change of occupancy is not because the occupant load is not stated, and the permit must con…",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A building permit with change of use is required for the tenant improvements and kitchen build-out; the Planning Code change of use from Limited Restaurant to Restaurant is established, but the Building Code change of occupancy is not because the occupant load is not stated, and the permit must con…",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.building_permit",
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Operating hours ending by 10 pm or 11 pm on weekdays and midnight on weekends, typical for restaurants in the Mission Alcohol SUD without entertainment. Basis: Comparable restaurant approvals in NCT-MISSION within the Mission Alcohol SUD (e.g., 2512 Mission St, 2526 Mission St) were conditioned to close by midnight or earlier to limit impacts on residential neighbors. The 2008 CUA at this address for a small self-service restaurant likely carried similar hours limits.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The cited records show no closing hour conditions; the 2008 CUA has an empty conditions array, and the 2512 Mission St record is a miscellaneous permit with no conditions stated."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Noise and odor control plan, including acoustic treatment, kitchen exhaust filtration, and limits on outdoor queuing or deliveries. Basis: Conditional use authorizations for restaurants in mixed-use buildings routinely require noise and odor mitigation to protect residential units above or adjacent. The 404 sq ft space suggests a ground-floor storefront in a multi-unit building.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record shows an approved CUA for a restaurant but lists no conditions and does not state what CUAs routinely require or what the space size suggests."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Good neighbor policy requiring the operator to maintain a complaint log, provide a contact number for neighbors, and respond to noise or queue complaints within 24 hours. Basis: Neighborhood commercial CUAs in the Mission commonly include good neighbor policies to address ongoing operational issues without further Planning hearings.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The overlay record does not mention CUAs, good neighbor policies, or what conditions are commonly included."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: No change of ownership or transfer of the permit without Planning approval, and no change to the conditions without a new conditional use hearing per Planning Code §303(e). Basis: Standard condition in every conditional use authorization, codified in Planning Code §303(e) and §174.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The zoning district record does not contain Planning Code §303(e) or §174, or any information about conditional use conditions."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Compliance with the Fats, Oils & Grease (FOG) Control Ordinance: installation of a grease interceptor sized to DPH and SFPUC standards before final inspection. Basis: Every food service establishment that cooks must install grease-capturing equipment per the FOG Control Ordinance; SFPUC assigns the device type based on the cooking volume, and DBI withholds final sign-off if the interceptor is undersized or missing.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Compliance with the Fats, Oils & Grease (FOG) Control Ordinance: installation of a grease interceptor before final inspection. Basis: Every food service establishment that cooks must install grease-capturing equipment per the FOG Control Ordinance; SFPUC assigns the device type, and DBI withholds final sign-off if the interceptor is undersized or missing.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Compliance with the Fats, Oils & Grease (FOG) Control Ordinance: installation of a grease interceptor before final inspection. Basis: Every food service establishment that cooks must install grease-capturing equipment per the FOG Control Ordinance; SFPUC assigns the device type, and DBI withholds final sign-off if the interceptor is undersized or missing.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: If Planning confirms a new CUA is required, file a Conditional Use Authorization application with San Francisco Planning (fee approximately $3,100 for a no-construction CUA, CPI-adjusted). What to say: Describe the concept as a 404 sq ft full-service restaurant with full commercial kitchen, no alcohol service, five employees, operating before midnight. Emphasize that the concept serves food as the primary use with no bar, no hard liquor, and no entertainment, so it falls outside the most restrictive Mission Alcohol SUD controls. Commit to closing hours (e.g., 10 pm weekdays, 11 pm or midnight weekends), a noise and odor control plan, a good neighbor policy with a complaint log and contact number, and compliance with FOG and fire safety requirements. Submit a floor plan showing the kitchen layout, seating area, and restroom. Schedule the pre-application community meeting at least 30 days before filing, and prepare for a 30-day neighborhood notification (Planning Code §311) and a Planning Commission hearing 120-180 days after filing.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records name the zoning district and overlay but state the actual controls and procedures are in rule lines not provided; the building permit catalog does not cover CUA fees or timelines."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File for a San Francisco Business Registration Certificate with the Office of the Treasurer & Tax Collector immediately after forming the legal entity. What to say: Register online with the EIN and legal entity name; pay the tiered fee ($55 up to $100k gross receipts, $95 up to $250k, plus $4 state fee). Every other city department asks for the Business Account Number (BAN), so obtain this before filing the building permit or health applications.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File for a San Francisco Business Registration Certificate with the Office of the Treasurer & Tax Collector immediately after forming the legal entity. What to say: Register with the EIN and legal entity name; pay the tiered fee ($55 up to $100k gross receipts, $95 up to $250k, plus $4 state fee). Every other city department asks for the Business Account Number (BAN), so obtain this.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File for a San Francisco Business Registration Certificate with the Office of the Treasurer & Tax Collector immediately after forming the legal entity. What to say: Register with the EIN and legal entity name; pay the tiered fee ($55 up to $100k gross receipts, $95 up to $250k, plus $4 state fee). Every other city department asks for the Business Account Number (BAN), so obtain this.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Engage an architect to prepare building permit plans for the tenant improvements, kitchen build-out, and any change of occupancy, and submit the DPH plan check application concurrently with the building permit. What to say: Hire an architect who has done San Francisco restaurant projects. The plans must show the kitchen layout (hood, cooking line, sinks, storage), seating area, restroom, and ADA compliance. Submit scaled drawings, equipment cut sheets, and a menu to DPH for plan check (fee $828-$2,207 depending on project scope). File the building permit application with DBI, routing it to Planning for zoning review (Planning Code §175) and to SFFD for hood and fire safety review. State on the DBI application that Planning approval (CUA) is pending and that the building permit is contingent on that entitlement. Schedule a DPH pre-final inspection at ~80% construction completion and a final inspection before opening.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Engage an architect to prepare building permit plans for the tenant improvements, kitchen build-out, and any change of occupancy, and submit the DPH plan check application concurrently with the building permit. What to say: Hire an architect who has done San Francisco restaurant projects. The plans must show the kitchen layout (hood, cooking line, sinks, storage), seating area, restroom, and ADA compliance. Submit scaled drawings, equipment cut sheets, and a menu to DPH for plan check (fee $828-$2,207 depending on project scope). File the building permit application with DBI. State on the DBI application that Planning approval (CUA) is pending and that the building permit is contingent on that entitlement. Schedule a DPH pre-final inspection at ~80% construction completion and a final inspection before opening.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not mention Planning Code §175 or routing to SFFD for hood and fire safety review."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening, after DPH plan check is approved. What to say: Submit the application online with the BAN, Location ID (LIN), and federal tax ID. Confirm that at least one owner or employee has completed a Certified Food Protection Manager course (ServSafe or equivalent, $100-$250, valid 5 years). Schedule the pre-opening inspection with the DPH plan reviewer at least two weeks in advance. The inspector will confirm the facility matches the approved plans, all equipment is installed, sinks have hot water, and surfaces are sealed. The permit ($470 application fee, $0 annual license fee for 2026-28) is issued after the final inspection passes.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening, after DPH plan check is approved. What to say: Submit the application online with the BAN, Location ID (LIN), and federal tax ID. Confirm that at least one owner or employee has completed a Certified Food Protection Manager course (ServSafe or equivalent, $100-$250, valid 5 years). The permit ($470 application fee, $0 annual license fee for 2026-28) is issued after the final inspection passes.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Apply for the Health Permit to Operate at least one month before the planned opening, after DPH plan check is approved. What to say: Submit the application online with the BAN, Location ID (LIN), and federal tax ID. Confirm that at least one owner or employee has completed a Certified Food Protection Manager course (ServSafe or equivalent, $100-$250, valid 5 years). The permit ($470 application fee, $0 annual license fee for 2026-28) is issued after the final inspection passes.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:ca.food_safety_manager_cert"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Obtain California Food Handler Cards for all employees within 30 days of hire (online course, $7-$15 per person, valid 3 years). What to say: Every employee who handles food must complete an ANSI-accredited food handler course per California Health & Safety Code §113948. The online course takes about two hours. Keep the cards on site for health inspections.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain California Food Handler Cards for all employees within 30 days of hire (online course, $7-$15 per person, valid 3 years). What to say: Every employee who handles food must complete an ANSI-accredited food handler course per California Health & Safety Code §113948. The online course takes about two hours.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain California Food Handler Cards for all employees within 30 days of hire (online course, $7-$15 per person, valid 3 years). What to say: Every employee who handles food must complete an ANSI-accredited food handler course per California Health & Safety Code §113948. The online course takes about two hours.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_handler_card"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Register for organics recycling service (SB 1383) with the San Francisco-approved hauler before opening. What to say: Every commercial food generator must subscribe to organics (green bin) collection per SB 1383. Set up the service with Recology or the approved hauler; the city enforces compliance through the business license or health inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register for organics recycling service (SB 1383) with the San Francisco-approved hauler before opening. What to say: Every commercial food generator must subscribe to organics (green bin) collection per SB 1383. Set up the service with the approved hauler; the city enforces compliance through the business license or health inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register for organics recycling service (SB 1383) with the San Francisco-approved hauler before opening. What to say: Every commercial food generator must subscribe to organics (green bin) collection per SB 1383. Set up the service with the approved hauler; the city enforces compliance through the business license or health inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.calrecycle_organics_sb1383"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Obtain ASCAP and BMI public performance licenses before opening if the restaurant plays recorded music (background music, streaming services). What to say: Federal copyright law requires a blanket license to play music publicly. Sign up online with ASCAP and BMI (each $300-$2,500 per year, formula-based on occupancy and music use). The licenses are effective immediately and take under a week to set up.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Obtain ASCAP and BMI public performance licenses before opening if the restaurant plays recorded music (background music, streaming services). What to say: Federal copyright law requires a blanket license to play music publicly. Sign up online with ASCAP and BMI (each $300-$2,500 per year, formula-based on occupancy and music use). The licenses are effective immediately and take under a week to set up.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:us.ascap_license",
+    "catalog:us.bmi_license"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $5,500 to $21,000. Notes: The timeline is 120-300 days and the cost is $5,500-$21,000 for the entitlement path (Conditional Use Authorization, Health permit to operate, Building permit with change of use) when those approvals are granted. The range covers: CUA application and hearing (120-180 days, $3,100 fee), building permit review and issuance (14-120 days, $800-$15,000 depending on construction valuation), DPH plan check (21-60 days, $828-$2,207), and health permit to operate (14-45 days, $470 application fee). The timeline runs from CUA filing to final health permit issuance; it does not include time spent before filing (pre-application meetings, architect's design, or the Letter of Determination request). If Planning determines a new CUA is not required and the concept can proceed as an administrative change of use, the timeline and cost would drop to approximately 60-150 days and $2,500-$8,000 (building permit, DPH plan check, and health permit only). The cost does not include state business formation, architect and engineering fees, construction costs, grease interceptor installation, or insurance. Add 30-60 days to the timeline for pre-application community meetings and plan preparation before the CUA filing. The CUA is the critical path: 6-10 months including environmental review, neighborhood notification, and Planning Commission hearing scheduling. File the CUA application before or in parallel with lease negotiations, with a lease contingency clause.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $5,500 to $21,000. Notes: The timeline is 120-300 days and the cost is $5,500-$21,000 for the entitlement path (Conditional Use Authorization, Health permit to operate, Building permit with change of use) when those approvals are granted. The range covers: CUA application and hearing (120-180 days, $3,100 fee), building permit review and issuance (14-120 days, $800-$15,000 depending on construction valuation), DPH plan check (21-60 days, $828-$2,207), and health permit to operate (14-45 days, $470 application fee). The timeline runs from CUA filing to final health permit issuance; it does not include time spent before filing (pre-application meetings, architect's design, or the Letter of Determination request). If Planning determines a new CUA is not required and the concept can proceed as an administrative change of use, the timeline and cost would drop to approximately 60-150 days and $2,500-$8,000 (building permit, DPH plan check, and health permit only). The cost does not include state business formation, architect and engineering fees, construction costs, grease interceptor installation, or insurance. Add 30-60 days to the timeline for pre-application community meetings and plan preparation before the CUA filing. The CUA is the critical path: 6-10 months including environmental review, neighborhood notification, and Planning Commission hearing scheduling. File the CUA application before or in parallel with lease negotiations, with a lease contingency clause.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records provide only building permit (14-120 days, $800-$15,000), health plan check (21-60 days, $828-$2,207), and health permit (14-45 days, $470) data; no CUA information or combined timeline calculations."
+  }
+ ]
+}

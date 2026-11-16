@@ -1,0 +1,17 @@
+# The API image is built from the repo root (apps/api/Dockerfile). Keep secrets and local state out of the
+# build context: `COPY apps/api apps/api` would otherwise bake apps/api/.env into the image.
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/.next
+**/.vercel
+data
+apps/web
+supabase/.temp
+.git

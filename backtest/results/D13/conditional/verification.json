@@ -1,0 +1,317 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 19,
+  "supported": 2,
+  "trimmed": 7,
+  "downgraded": 6,
+  "dropped": 4
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The space was last used as a laundromat, and Planning Code Section 202.12 required a Conditional Use Authorization for any change of use or demolition of a laundromat from December 20, 2021, to December 20, 2024. The rules date is July 18, 2023, which falls within that window.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The space was last used as a laundromat, and Planning Code Section 202.12 required a Conditional Use Authorization for any change of use or demolition of a laundromat from December 20, 2021, to December 20, 2024. The rules date is July 18, 2023, which falls within that window.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited zoning record contains no information about laundromats, Section 202.12, Conditional Use Authorization requirements, or the dates mentioned."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "Restaurant use is principally permitted on the ground floor in the RC-4 zoning district as a Retail Sales and Service use under Planning Code Section 209.3. Seven restaurant approvals within 200 meters (550 Powell, 560 Powell, 650 Bush, 850 Bush, 878 Bush, 891 Bush) all cited this section and were approved without conditions.",
+   "verdict": "partially_supported",
+   "supported_text": "Restaurant use is principally permitted on the ground floor in the RC-4 zoning district as a Retail Sales and Service use under Planning Code Section 209.3. Restaurant approvals within 200 meters (550 Powell, 560 Powell, 650 Bush, 850 Bush, 878 Bush, 891 Bush) all cited this section and were approved without conditions.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "Restaurant use is principally permitted on the ground floor in the RC-4 zoning district as a Retail Sales and Service use under Planning Code Section 209.3. Seven restaurant approvals within 200 meters (550 Powell, 560 Powell, 650 Bush, 850 Bush, 878 Bush, 891 Bush) all cited this section and were approved without conditions.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show 6 distinct addresses with approvals, not seven."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "At 779 Bush St (14 meters away, same RC-4 zoning), ABC Type 48 bar application was denied September 8, 2022, with Planning citing Section 202.12: 'Although Bar use at the ground floor is principally permitted in the RC-4 zoning district, PC Section 202.12 stipulates that a change of use or demolition of a Laundromat requires a Conditional Use.' A CUA was filed November 2, 2022, and remains pending.",
+   "verdict": "partially_supported",
+   "supported_text": "At 779 Bush St (14 meters away, same RC-4 zoning), ABC Type 48 bar application was denied September 8, 2022, with Planning citing Section 202.12: 'Although Bar use at the ground floor is principally permitted in the RC-4 zoning district, PC Section 202.12 stipulates that a change of use or demolition of a Laundromat requires a Conditional Use.' A CUA was filed November 2, 2022.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "At 779 Bush St (14 meters away, same RC-4 zoning), ABC Type 48 bar application was denied September 8, 2022, with Planning citing Section 202.12: 'Although Bar use at the ground floor is principally permitted in the RC-4 zoning district, PC Section 202.12 stipulates that a change of use or demolition of a Laundromat requires a Conditional Use.' A CUA was filed November 2, 2022.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2022-008099MIS",
+    "app:datasf_planning:2022-010729CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "No prior permits, applications, or ABC licenses are on file at 767 Bush St or parcel 0284/018 in the data, so the records do not show what improvements or equipment exist in the space today.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "No prior permits, applications, or ABC licenses are on file at 767 Bush St or parcel 0284/018 in the data, so the records do not show what improvements or equipment exist in the space today.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record is only an address geocoding record and does not state whether permits, applications, or licenses are or are not on file."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The nearest comparable CUA for laundromat conversion in this neighborhood, if approved, would establish the conditions and findings Planning expects. The 779 Bush CUA has been pending since November 2022 with no decision date, so its outcome and conditions are not yet known.",
+   "verdict": "partially_supported",
+   "supported_text": "The 779 Bush CUA has been pending since November 2022 with no decision date.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The 779 Bush CUA has been pending since November 2022 with no decision date.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2022-010729CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A Conditional Use Authorization is required because Planning Code Section 202.12 mandated discretionary review for any change of use or demolition of a laundromat between December 2021 and December 2024, even though restaurant use is principally permitted in RC-4 zoning.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A Conditional Use Authorization is required because Planning Code Section 202.12 mandated discretionary review for any change of use or demolition of a laundromat between December 2021 and December 2024, even though restaurant use is principally permitted in RC-4 zoning.",
+   "confidence": null,
+   "citations": [
+    "zoning:RC-4",
+    "app:datasf_planning:2022-003970MIS",
+    "app:datasf_planning:2022-003972MIS",
+    "app:datasf_planning:2021-010775MIS",
+    "app:datasf_planning:2021-006653MIS",
+    "app:datasf_planning:2020-010398MIS",
+    "app:datasf_planning:2019-012891MIS",
+    "app:datasf_planning:2018-007481MIS",
+    "app:datasf_planning:2022-008099MIS",
+    "app:datasf_planning:2022-010729CUA",
+    "geo:address"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food facility with a kitchen must obtain a health permit to operate from the San Francisco Department of Public Health, issued after plan review and inspection per California Retail Food Code Sections 114380–114381 and San Francisco Health Code Article 8. The permit application is referred to Planning for zoning sign-off.",
+   "verdict": "partially_supported",
+   "supported_text": "A food facility with a kitchen must obtain a health permit to operate from the San Francisco Department of Public Health, issued after plan review and inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A food facility with a kitchen must obtain a health permit to operate from the San Francisco Department of Public Health, issued after plan review and inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "Seven restaurant health-permit referrals within 200 meters in RC-4 zoning were approved in 2–19 days with zero conditions. All were described as 'continuation of existing use,' meaning the prior space was already food/beverage, unlike this laundromat conversion.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Seven restaurant health-permit referrals within 200 meters in RC-4 zoning were approved in 2–19 days with zero conditions. All were described as 'continuation of existing use,' meaning the prior space was already food/beverage, unlike this laundromat conversion.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Only 5 referrals cited (not 7); approval times were 5-19 days (not 2-19); interpretation about food/beverage space and laundromat comparison not in records."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A health permit to operate is required and is issued after plan check and pre-opening inspection, without a discretionary hearing; it is allowed as of right for a restaurant with a kitchen.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A health permit to operate is required and is issued after plan check and pre-opening inspection, without a discretionary hearing; it is allowed as of right for a restaurant with a kitchen.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "app:datasf_planning:2022-003970MIS",
+    "app:datasf_planning:2022-003972MIS",
+    "app:datasf_planning:2021-006653MIS",
+    "app:datasf_planning:2020-010398MIS",
+    "app:datasf_planning:2018-007481MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "Laundromat to restaurant is a change of use under Planning Code Section 102, so the building permit must receive Planning Department zoning review and sign-off per Planning Code Section 175 before it can be issued.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Laundromat to restaurant is a change of use under Planning Code Section 102, so the building permit must receive Planning Department zoning review and sign-off per Planning Code Section 175 before it can be issued.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records do not cite Planning Code Sections 102 or 175, nor state the Planning Department review requirement or that laundromat to restaurant is a change of use."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Tenant improvements with a kitchen typically require DPH plan check, mechanical permits for hood and HVAC, plumbing for grease interceptor and handwash sinks, electrical work, and ADA compliance review. The grease interceptor installation must be verified by SFPUC under the FOG ordinance before DBI issues final sign-off.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements with a kitchen typically require DPH plan check.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Tenant improvements with a kitchen typically require DPH plan check.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.health_plan_check",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required for the tenant improvements; the permit cannot be issued until Planning approves the Conditional Use Authorization for the laundromat conversion, and the occupancy group depends on whether the restaurant seats fewer than 50 people.",
+   "verdict": "partially_supported",
+   "supported_text": "A building permit with change of use is required for the tenant improvements, and the occupancy group depends on whether the restaurant seats fewer than 50 people.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "A building permit with change of use is required for the tenant improvements, and the occupancy group depends on whether the restaurant seats fewer than 50 people.",
+   "confidence": null,
+   "citations": [
+    "zoning:RC-4",
+    "catalog:sf.building_permit",
+    "catalog:sf.health_plan_check",
+    "catalog:sf.fog_wastewater_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online at bizfile.sos.ca.gov, then apply for the federal EIN at irs.gov the same day. The EIN and entity name are required for the San Francisco business registration, bank account, lease signature, and all subsequent permit applications. File the Statement of Information with the Secretary of State within 90 days ($20 LLC / $25 corporation).",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online, then apply for the federal EIN the same day. The EIN and entity name are required for bank account, lease signature, and most state/local licenses. File the Statement of Information with the Secretary of State within 90 days ($20 LLC / $25 corporation).",
+   "cut_problem": "adds or moves 'most': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not state the specific URLs (bizfile.sos.ca.gov, irs.gov) or that EIN/entity are required for San Francisco business registration and all subsequent permit applications."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Submit the business registration online at sftreasurer.org/business within 30 days of forming the entity. Provide the EIN, entity name, 767 Bush St address, and NAICS code 722511 (Full-Service Restaurants). Pay the tiered fee based on projected gross receipts ($55 minimum). The BAN is required by every other City department (Planning, DPH, DBI, SFPUC) before they will accept an application.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Submit the business registration within 30 days of forming the entity. Pay the tiered fee based on projected gross receipts ($55 minimum). The BAN is required by every other City department (Planning, DPH, DBI, SFPUC).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector to obtain a Business Account Number (BAN). What to say: Submit the business registration within 30 days of forming the entity. Pay the tiered fee based on projected gross receipts ($55 minimum). The BAN is required by every other City department (Planning, DPH, DBI, SFPUC).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: File the Conditional Use Authorization application with San Francisco Planning, including a project narrative, site photos, preliminary floor plan, and a statement addressing the laundromat-removal findings. What to say: Describe the concept as a limited-service restaurant serving [cuisine type] to neighborhood residents and workers, operating [proposed hours]. State that the prior laundromat ceased operations and the space has been vacant, and that you made reasonable efforts to locate a laundromat operator but none were interested in the location (document outreach if possible). Emphasize that the restaurant will provide an affordable dining option meeting a demonstrated neighborhood need, preserving a commercial storefront and providing local jobs. Commit to good-neighbor practices: post a complaint contact, maintain cleanliness, manage noise, and operate as a quiet daytime/early-evening use compatible with residential surroundings. Include a floor plan showing seating, kitchen, accessible restroom, and confirm the restaurant will seat fewer than [X] to remain under any size threshold. Request that t…",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record only identifies the zoning district; it does not state the filing procedures, application requirements, or laundromat-removal findings described."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Hire an architect licensed in California to prepare building permit plans for the tenant improvements, including DPH plan check sheets, mechanical hood drawings, plumbing for grease interceptor and hand sinks, electrical, and ADA compliance. What to say: Engage an architect experienced with San Francisco restaurant projects to design the kitchen, dining area, restrooms, and all code-required elements. The plans must be routed for simultaneous review by DBI, DPH, SFPUC (FOG), and Planning (zoning sign-off on the CUA). Include the occupancy calculation, exiting plan, accessibility path of travel, commercial hood with Type I suppression system, three-compartment sink, prep sink, handwash sinks at the kitchen and restroom, grease interceptor sized per SFPUC guidance, floor finishes, and equipment schedule. Submit the DPH plan check application ($828–$2,207) at the same time as or before the building permit to avoid delays.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm architect-stamped plans, DPH fee range, and simultaneous submission, but do not list the specific plan elements or agencies named."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: After the CUA is approved and the Motion is signed, file the building permit application with DBI, attaching the CUA Motion and all stamped plan sets from DPH, mechanical, plumbing, and electrical review. What to say: Submit the building permit online at dbiweb.sfgov.org, routing it to Planning (zoning sign-off on the approved CUA), DPH (health plan check), SFPUC (FOG interceptor), Fire (kitchen hood suppression), and any other required departments. Pay the permit fees (percentage of construction valuation, typically $800–$15,000). The permit will not be issued until Planning confirms the CUA is final (after the 30-day appeal period) and all plan corrections are completed. Licensed subcontractors will pull separate electrical, plumbing, and mechanical permits as needed.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the building permit application with DBI. What to say: Pay the permit fees (percentage of construction valuation, typically $800–$15,000). Licensed subcontractors will pull separate electrical, plumbing, and mechanical permits as needed.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: File the building permit application with DBI. What to say: Pay the permit fees (percentage of construction valuation, typically $800–$15,000). Licensed subcontractors will pull separate electrical, plumbing, and mechanical permits as needed.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: During construction, schedule the DPH pre-final inspection at ~80% completion and the final health inspection once all equipment is installed, to obtain the Health Permit to Operate. What to say: Contact your DPH plan reviewer at least two weeks before each inspection to book the appointment. At the pre-final, the inspector will identify any missing sinks, finishes, or equipment; correct those items before the final inspection. At the final, demonstrate that one employee holds a Food Manager Certification, the kitchen is clean and ready, all plumbing has hot water, and the menu matches the approved plans. The permit to operate ($470 application fee in FY 2026–27, $0 annual license fee for 2026–28) is issued after the inspector approves; you cannot serve the public before it is issued.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: During construction, schedule the final health inspection once all equipment is installed, to obtain the Health Permit to Operate. What to say: At the final, demonstrate that one employee holds a Food Manager Certification, all plumbing has hot water, and the menu matches the approved plans. The permit to operate ($470 application fee in FY 2026–27, $0 annual license fee for 2026–28) is issued after the inspector approves; you cannot serve the public before it is issued.",
+   "cut_problem": "keeps 'the menu matches the approved plans', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record does not specify pre-final inspection timing, two-week booking window, what pre-final inspection identifies, clean kitchen requirement, or menu matching requirement."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $2,803 to $18,850. Notes: This range is the time to obtain the three approvals (CUA, health permit, building permit) when they are granted, not the time to a denial or withdrawal. The Conditional Use Authorization is the critical path: approximately 120–300 days from filing to approval including pre-application meeting, environmental review, neighborhood notification if required, Planning Commission hearing, and the 30-day appeal period. The building permit (14–120 days) and health permit (14–45 days) follow sequentially because DBI will not issue the building permit until the CUA is final, and DPH will not issue the health permit until construction and final inspection are complete. Government fees include CUA application (estimated $3,000–$3,500 based on typical 2023 rates, adjusted annually), building permit ($800–$15,000 depending on construction value), DPH plan check ($828–$2,500), health permit to operate ($470), business registration ($55–$700), entity formation ($70–$150), and small fees for EDD, fictitious business name, sign permit, and FOG program. This estimate excludes construction costs, architect fees, insurance, and any deposits. The 779 Bush St CUA (14 m away, filed November 2022 for a laundromat-to-bar conversion) has been pending with no decision as of the data cut-off, suggesting that laundromat-removal CUAs may face longer review or neighbor opposition; confirm the likely timeline at the pre-application meeting.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $2,803 to $18,850. Notes: This range is the time to obtain the three approvals (CUA, health permit, building permit) when they are granted, not the time to a denial or withdrawal. The Conditional Use Authorization is the critical path: approximately 120–300 days from filing to approval including pre-application meeting, environmental review, neighborhood notification if required, Planning Commission hearing, and the 30-day appeal period. The building permit (14–120 days) and health permit (14–45 days) follow sequentially because DBI will not issue the building permit until the CUA is final, and DPH will not issue the health permit until construction and final inspection are complete. Government fees include CUA application (estimated $3,000–$3,500 based on typical 2023 rates, adjusted annually), building permit ($800–$15,000 depending on construction value), DPH plan check ($828–$2,500), health permit to operate ($470), business registration ($55–$700), entity formation ($70–$150), and small fees for EDD, fictitious business name, sign permit, and FOG program. This estimate excludes construction costs, architect fees, insurance, and any deposits. The 779 Bush St CUA (14 m away, filed November 2022 for a laundromat-to-bar conversion) has been pending with no decision as of the data cut-off, suggesting that laundromat-removal CUAs may face longer review or neighbor opposition; confirm the likely timeline at the pre-application meeting.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records lack a CUA catalog entry with timeline/fees; don't state the sequential dependencies between CUA, building permit, and health permit; the interpretation about laundromat-removal CUAs is not in the records."
+  }
+ ]
+}

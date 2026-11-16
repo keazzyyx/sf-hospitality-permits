@@ -1,0 +1,64 @@
+name: SF ingest (manual)
+
+# Refreshes the SF precedent data in Supabase (PostGIS): every source except California ABC, then the bar
+# enrichment. abc.ca.gov returns 403 to GitHub's hosted-runner address ranges (the project's own user agent is
+# fine from elsewhere), so ABC is refreshed from a workstation with `make ingest-abc`; the job logs how stale
+# the ABC rows are. Replaces the Render cron job so the API can stay on Render's free plan.
+# Manual only in this repository, so a fork never runs it on a schedule. To refresh nightly, add
+#   schedule:
+#     - cron: "10 9 * * *" # 09:10 UTC = 02:10 PT
+# and the repository secrets it reads.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sf-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    name: precedent.ingest --all
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      ENV: prod
+      PRECEDENT_DATABASE_URL: ${{ secrets.PRECEDENT_DATABASE_URL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      NEATLOGS_API_KEY: ${{ secrets.NEATLOGS_API_KEY }}
+      PRECEDENT_RAW_DIR: ${{ github.workspace }}/data/raw
+      PRECEDENT_DATA_DIR: ${{ github.workspace }}/data
+    steps:
+      - name: Require the database secret
+        run: |
+          if [ -z "$PRECEDENT_DATABASE_URL" ]; then
+            echo "::error::PRECEDENT_DATABASE_URL is not set; without it the ingest would write to a throwaway local store"
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          # No uv.lock in this repo: key the cache on the project files instead of the default **/uv.lock,
+          # which made the step fail with "No file matched to [**/uv.lock]".
+          cache-dependency-glob: "packages/precedent/pyproject.toml"
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: uv venv .venv && uv pip install --python .venv ./packages/precedent
+      # Long-lived caches (ABC detail pages + geocodes, Planning Commission PDFs + lookups) carry over between
+      # runs so each night only fetches what changed; per-run raw pages are not cached.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/raw/abc/_cache/detail
+            data/raw/abc/_cache/reports
+            data/raw/abc/_cache/geocode.json
+            data/raw/sf_planning_hearings/pdf
+            data/raw/sf_planning_hearings/lookups
+          key: sf-ingest-raw-${{ github.run_id }}
+          restore-keys: sf-ingest-raw-
+      - name: Ingest every SF source except ABC into Supabase
+        working-directory: packages/precedent
+        run: ../../.venv/bin/python -m precedent.ingest --all --skip abc

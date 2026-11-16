@@ -1,0 +1,324 @@
+{
+ "label": "pilot",
+ "cases": [
+  {
+   "case": "N09",
+   "as_of": "2024-07-30",
+   "rules_only": "done",
+   "e2e": "done in 23.0 min",
+   "conditional": "done"
+  },
+  {
+   "case": "D02",
+   "as_of": "2022-03-09",
+   "rules_only": "done",
+   "e2e": "done in 23.0 min",
+   "conditional": "done"
+  }
+ ],
+ "minutes": 31.0,
+ "cost_usd": 2.6009,
+ "replayed_from_journal": 0,
+ "stopped": null,
+ "batches": [
+  {
+   "id": "msgbatch_removed_06",
+   "requests": 2,
+   "stages": [
+    "e2e/intake"
+   ],
+   "estimate_usd": 0.1015,
+   "cost_usd": 0.0549,
+   "errors": {},
+   "minutes": 1.4
+  },
+  {
+   "id": "msgbatch_removed_07",
+   "requests": 2,
+   "stages": [
+    "e2e/records"
+   ],
+   "estimate_usd": 0.1912,
+   "cost_usd": 0.137,
+   "errors": {},
+   "minutes": 2.1
+  },
+  {
+   "id": "msgbatch_removed_08",
+   "requests": 2,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.1241,
+   "cost_usd": 0.0735,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_09",
+   "requests": 2,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.1302,
+   "cost_usd": 0.0528,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_10",
+   "requests": 2,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.1367,
+   "cost_usd": 0.1077,
+   "errors": {},
+   "minutes": 3.1
+  },
+  {
+   "id": "msgbatch_removed_11",
+   "requests": 2,
+   "stages": [
+    "e2e/precedent"
+   ],
+   "estimate_usd": 0.1545,
+   "cost_usd": 0.1164,
+   "errors": {},
+   "minutes": 1.4
+  },
+  {
+   "id": "msgbatch_removed_12",
+   "requests": 2,
+   "stages": [
+    "e2e/risk"
+   ],
+   "estimate_usd": 0.3204,
+   "cost_usd": 0.2929,
+   "errors": {},
+   "minutes": 2.1
+  },
+  {
+   "id": "msgbatch_removed_13",
+   "requests": 2,
+   "stages": [
+    "e2e/risk"
+   ],
+   "estimate_usd": 0.3409,
+   "cost_usd": 0.2812,
+   "errors": {},
+   "minutes": 2.7
+  },
+  {
+   "id": "msgbatch_removed_14",
+   "requests": 47,
+   "stages": [
+    "e2e/verify"
+   ],
+   "estimate_usd": 0.8788,
+   "cost_usd": 0.4453,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_15",
+   "requests": 18,
+   "stages": [
+    "e2e/verify"
+   ],
+   "estimate_usd": 0.3465,
+   "cost_usd": 0.1586,
+   "errors": {},
+   "minutes": 1.7
+  },
+  {
+   "id": "msgbatch_removed_16",
+   "requests": 2,
+   "stages": [
+    "conditional/risk"
+   ],
+   "estimate_usd": 0.3136,
+   "cost_usd": 0.2594,
+   "errors": {},
+   "minutes": 3.1
+  },
+  {
+   "id": "msgbatch_removed_17",
+   "requests": 57,
+   "stages": [
+    "conditional/verify"
+   ],
+   "estimate_usd": 1.0292,
+   "cost_usd": 0.4675,
+   "errors": {},
+   "minutes": 1.8
+  },
+  {
+   "id": "msgbatch_removed_18",
+   "requests": 21,
+   "stages": [
+    "conditional/verify"
+   ],
+   "estimate_usd": 0.3757,
+   "cost_usd": 0.1536,
+   "errors": {},
+   "minutes": 2.1
+  }
+ ],
+ "by_case_run_stage": [
+  {
+   "case": "D02",
+   "run": "conditional",
+   "stage": "risk",
+   "calls": 1.0,
+   "cost_usd": 0.14734425,
+   "input_tokens": 65886.0,
+   "output_tokens": 6284.0,
+   "cache_read_input_tokens": 9235.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "conditional",
+   "stage": "verify",
+   "calls": 48.0,
+   "cost_usd": 0.38728590000000007,
+   "input_tokens": 74748.0,
+   "output_tokens": 34013.0,
+   "cache_read_input_tokens": 133776.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "e2e",
+   "stage": "intake",
+   "calls": 1.0,
+   "cost_usd": 0.009586049999999999,
+   "input_tokens": 1545.0,
+   "output_tokens": 739.0,
+   "cache_read_input_tokens": 11507.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "e2e",
+   "stage": "precedent",
+   "calls": 4.0,
+   "cost_usd": 0.1662762,
+   "input_tokens": 70521.0,
+   "output_tokens": 7403.0,
+   "cache_read_input_tokens": 33148.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "e2e",
+   "stage": "records",
+   "calls": 1.0,
+   "cost_usd": 0.07393155,
+   "input_tokens": 40825.0,
+   "output_tokens": 1472.0,
+   "cache_read_input_tokens": 11027.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "e2e",
+   "stage": "risk",
+   "calls": 2.0,
+   "cost_usd": 0.30086999999999997,
+   "input_tokens": 146343.0,
+   "output_tokens": 10478.0,
+   "cache_read_input_tokens": 18470.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "D02",
+   "run": "e2e",
+   "stage": "verify",
+   "calls": 36.0,
+   "cost_usd": 0.33306075,
+   "input_tokens": 68442.0,
+   "output_tokens": 27654.0,
+   "cache_read_input_tokens": 97545.0,
+   "cache_creation_input_tokens": 2787.0
+  },
+  {
+   "case": "N09",
+   "run": "conditional",
+   "stage": "risk",
+   "calls": 1.0,
+   "cost_usd": 0.11205525,
+   "input_tokens": 56025.0,
+   "output_tokens": 3551.0,
+   "cache_read_input_tokens": 9235.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "N09",
+   "run": "conditional",
+   "stage": "verify",
+   "calls": 30.0,
+   "cost_usd": 0.2337885,
+   "input_tokens": 42728.0,
+   "output_tokens": 20954.0,
+   "cache_read_input_tokens": 83610.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "N09",
+   "run": "e2e",
+   "stage": "intake",
+   "calls": 1.0,
+   "cost_usd": 0.0453435,
+   "input_tokens": 1520.0,
+   "output_tokens": 1139.0,
+   "cache_read_input_tokens": 0.0,
+   "cache_creation_input_tokens": 11507.0
+  },
+  {
+   "case": "N09",
+   "run": "e2e",
+   "stage": "precedent",
+   "calls": 4.0,
+   "cost_usd": 0.18409365000000003,
+   "input_tokens": 71389.0,
+   "output_tokens": 6456.0,
+   "cache_read_input_tokens": 24861.0,
+   "cache_creation_input_tokens": 8287.0
+  },
+  {
+   "case": "N09",
+   "run": "e2e",
+   "stage": "records",
+   "calls": 1.0,
+   "cost_usd": 0.06310455000000001,
+   "input_tokens": 33897.0,
+   "output_tokens": 1414.0,
+   "cache_read_input_tokens": 11027.0,
+   "cache_creation_input_tokens": 0.0
+  },
+  {
+   "case": "N09",
+   "run": "e2e",
+   "stage": "risk",
+   "calls": 2.0,
+   "cost_usd": 0.27323624999999996,
+   "input_tokens": 119334.0,
+   "output_tokens": 8686.0,
+   "cache_read_input_tokens": 9235.0,
+   "cache_creation_input_tokens": 9235.0
+  },
+  {
+   "case": "N09",
+   "run": "e2e",
+   "stage": "verify",
+   "calls": 29.0,
+   "cost_usd": 0.27087945,
+   "input_tokens": 62369.0,
+   "output_tokens": 22027.0,
+   "cache_read_input_tokens": 80823.0,
+   "cache_creation_input_tokens": 0.0
+  }
+ ]
+}

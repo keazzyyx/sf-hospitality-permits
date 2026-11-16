@@ -1,0 +1,498 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 31,
+  "supported": 4,
+  "trimmed": 10,
+  "downgraded": 8,
+  "dropped": 9
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The site is in the Chinatown Visitor Retail (CVR) zoning district where a restaurant use on the first story is principally permitted per Planning Code § 811, effective January 14, 2024.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The site is in the Chinatown Visitor Retail (CVR) zoning district where a restaurant use on the first story is principally permitted per Planning Code § 811, effective January 14, 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records show restaurant_permission as unknown and provide no effective date of January 14, 2024."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "A 1999 Planning Department agency referral at 675 Jackson St (the same address) approved a full-service restaurant as permitted in the CVR District per Planning Code § 811.42.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A 1999 Planning Department agency referral at 675 Jackson St (the same address) approved a full-service restaurant as permitted in the CVR District per Planning Code § 811.42.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:MA9901227"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "Planning Code § 811 treats restaurant hours of 6 a.m. to 11 p.m. as principally permitted and 11 p.m. to 2 a.m. as conditional use; the pathway could not determine this concept's status because no closing hour was stated.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Planning Code § 811 treats restaurant hours of 6 a.m. to 11 p.m. as principally permitted and 11 p.m. to 2 a.m. as conditional use; the pathway could not determine this concept's status because no closing hour was stated.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references § 811 but does not state the specific hour-based permission rules or explain why status could not be determined."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "Three nearby restaurant Conditional Use Authorizations in CVR and CRNC (54 m, 125 m, 127 m away) were approved with hours limited to 7 a.m.–10 p.m. or 6 a.m.–midnight, suggesting that late-night operation triggers conditional use review even where daytime restaurant is principally permitted.",
+   "verdict": "partially_supported",
+   "supported_text": "Three nearby restaurant Conditional Use Authorizations in CVR and CRNC (54 m, 125 m, 127 m away) were approved with hours limited to 7 a.m.–10 p.m. or 6 a.m.–midnight.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Three nearby restaurant Conditional Use Authorizations in CVR and CRNC (54 m, 125 m, 127 m away) were approved with hours limited to 7 a.m.–10 p.m. or 6 a.m.–midnight.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2021-008505CUA",
+    "app:datasf_planning:2019-020999CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "Within 1,000 feet, N = 11 dated use decisions over the last 5 years show 7 approvals (1 outright, 6 with conditions) and 4 withdrawals, for a 63.6% approval rate; no denials were recorded.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Within 1,000 feet, N = 11 dated use decisions over the last 5 years show 7 approvals (1 outright, 6 with conditions) and 4 withdrawals, for a 63.6% approval rate; no denials were recorded.",
+   "confidence": "verified",
+   "citations": [
+    "stat:base_rate"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A restaurant on the first story and basement is principally permitted in the CVR District under Planning Code § 811 as of January 2024, so no Conditional Use Authorization is required for the use itself.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A restaurant on the first story and basement is principally permitted in the CVR District under Planning Code § 811 as of January 2024, so no Conditional Use Authorization is required for the use itself.",
+   "confidence": null,
+   "citations": [
+    "zoning:CVR",
+    "overlay:static:sf:nc_cvr",
+    "app:datasf_planning:MA9901227",
+    "app:datasf_planning:2019-006948CUA",
+    "app:datasf_planning:2021-008505CUA",
+    "app:datasf_planning:2019-020999CUA",
+    "stat:base_rate"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "Every food facility that prepares or serves food needs a Health Permit to Operate from SF Department of Public Health, issued after plan review, construction, and final inspection confirm compliance with the California Retail Food Code and SF Health Code Article 8.",
+   "verdict": "partially_supported",
+   "supported_text": "Every food facility that prepares or serves food needs a Health Permit to Operate from SF Department of Public Health, issued after plan review, construction, and final inspection.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Every food facility that prepares or serves food needs a Health Permit to Operate from SF Department of Public Health, issued after plan review, construction, and final inspection.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The 2026–27 fee schedule sets the Permit to Operate application (including initial inspection) at $470, with a $0 annual license fee for restaurants for 2026–28; reinspections are billed at $276 per hour.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The 2026–27 fee schedule sets the Permit to Operate application (including initial inspection) at $470, with a $0 annual license fee for restaurants for 2026–28; reinspections are billed at $276 per hour.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "DPH plan check for a new or remodeled kitchen costs $828 to $2,207 depending on project scope (flat fees of 3 to 8 hours at $276/hour), with extra review time billed hourly; limited cooking may qualify for the lower tier.",
+   "verdict": "partially_supported",
+   "supported_text": "DPH plan check for a new or remodeled kitchen costs $828 to $2,207 depending on project scope (flat fees of 3 to 8 hours at $276/hour), with extra review time billed hourly.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "DPH plan check for a new or remodeled kitchen costs $828 to $2,207 depending on project scope (flat fees of 3 to 8 hours at $276/hour), with extra review time billed hourly.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:health:3",
+   "kind": "finding",
+   "original": "The building permit application will be routed to Planning for review under Planning Code § 175(a), and to DPH for kitchen plan check; coordinate the plan sets to avoid resubmission delays.",
+   "verdict": "partially_supported",
+   "supported_text": "The building permit application will be routed to DPH for kitchen plan check.",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "downgraded",
+   "shown": "The building permit application will be routed to Planning for review under Planning Code § 175(a), and to DPH for kitchen plan check; coordinate the plan sets to avoid resubmission delays.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record mentions DPH plan check but does not state routing to Planning under § 175(a) or that coordination avoids delays."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A Health Permit to Operate is issued after plan check and pre-opening inspection without a hearing, so it is available as of right once the facility meets code and a certified food safety manager is on staff.",
+   "verdict": "partially_supported",
+   "supported_text": "A Health Permit to Operate is issued after plan check and pre-opening inspection without a hearing once a certified food safety manager is on staff.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.health_permit",
+    "catalog:sf.health_plan_check",
+    "catalog:sf.building_permit"
+   ],
+   "note": "Records state it is issued without a hearing after inspection; they do not use the phrase 'as of right' or 'meets code'."
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "The concept describes a change from retail to restaurant use; under Planning Code § 102 definitions retail and restaurant are distinct uses, so a Planning Code change of use applies.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The concept describes a change from retail to restaurant use; under Planning Code § 102 definitions retail and restaurant are distinct uses, so a Planning Code change of use applies.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record references § 102 but does not provide its definitions or state that retail and restaurant are distinct uses."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "Neighborhood notification (Planning Code § 311) for a change of use was removed from the code on January 14, 2024 by Ordinance 248-23, so no § 311 notice is required for this project under the rules in force on January 21, 2024.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Neighborhood notification (Planning Code § 311) for a change of use was removed from the code on January 14, 2024 by Ordinance 248-23, so no § 311 notice is required for this project under the rules in force on January 21, 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The zoning district record contains no information about § 311, notification requirements, Ordinance 248-23, or any removal of requirements."
+  },
+  {
+   "item_id": "row:building_change_of_use:3",
+   "kind": "finding",
+   "original": "Tenant improvements affecting a kitchen require a building permit reviewed by DBI, DPH, and Planning; fees run from approximately $800 to $15,000 depending on construction valuation, and the timeline is 14 to 120 days from application to issuance when plans are complete.",
+   "verdict": "partially_supported",
+   "supported_text": "Tenant improvements affecting a kitchen require a building permit; fees run from approximately $800 to $15,000 depending on construction valuation, and the timeline is 14 to 120 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Tenant improvements affecting a kitchen require a building permit; fees run from approximately $800 to $15,000 depending on construction valuation, and the timeline is 14 to 120 days.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:building_change_of_use:4",
+   "kind": "finding",
+   "original": "One DPH health referral at 801 Kearny (114 m away) was denied after 38 months (filed June 2016, denied August 2019) with no reason documented, illustrating that incomplete building readiness can stall or kill a project even when the use is permitted.",
+   "verdict": "partially_supported",
+   "supported_text": "One DPH health referral at 801 Kearny (114 m away) was denied after 38 months (filed June 2016, denied August 2019) with no reason documented.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "One DPH health referral at 801 Kearny (114 m away) was denied after 38 months (filed June 2016, denied August 2019) with no reason documented.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2016-008214MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "A building permit with change of use is required because the concept describes a retail-to-restaurant conversion with tenant improvements, and the permit must be reviewed by Planning under § 175 to confirm zoning compliance.",
+   "verdict": "partially_supported",
+   "supported_text": "A building permit with change of use is required because the concept describes a retail-to-restaurant conversion with tenant improvements, and the permit must be reviewed by Planning under § 175.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:CVR",
+    "catalog:sf.building_permit",
+    "app:datasf_planning:2016-008214MIS"
+   ],
+   "note": "The records state the review is required and cite § 175(a), but do not state the purpose is to confirm zoning compliance."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to closing by 10 p.m. or midnight, depending on Planning's assessment of neighborhood impact. Basis: Three comparable restaurant CUAs within 125 meters imposed 7 a.m.–10 p.m. or 6 a.m.–midnight closing; CVR § 811 treats 11 p.m.–2 a.m. as conditional. Even if no CUA is required, DPH or DBI may reference these standards.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to closing by 10 p.m. or midnight, depending on Planning's assessment of neighborhood impact. Basis: Three comparable restaurant CUAs within 125 meters imposed 7 a.m.–10 p.m. or 6 a.m.–midnight closing.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The CVR record does not state what § 811 says about 11 p.m.–2 a.m. hours; records do not state DPH or DBI may reference these standards."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Sidewalk maintenance within one block radius: the operator must monitor and clean litter daily during business hours per Police Code Article 1 § 34. Basis: Standard eating and drinking use condition imposed on every restaurant CUA in the comparable set, codified as a Planning Department standard condition.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Sidewalk maintenance within one block radius: the operator must monitor and clean litter daily during business hours per Police Code Article 1 § 34. Basis: Standard eating and drinking use condition, codified as a Planning Department standard condition.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Sidewalk maintenance within one block radius: the operator must monitor and clean litter daily during business hours per Police Code Article 1 § 34. Basis: Standard eating and drinking use condition, codified as a Planning Department standard condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2021-008505CUA",
+    "app:datasf_planning:2019-006948CUA"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Odor control equipment with manufacturer specifications on building permit plans; ducting shall not be applied to the primary façade. Basis: Required for all full-kitchen restaurants in the comparable approvals; DPH and Planning both condition permits on odor control to prevent noxious odors from escaping.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Odor control equipment with manufacturer specifications on building permit plans; ducting shall not be applied to the primary façade. Basis: to prevent noxious odors from escaping.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Odor control equipment with manufacturer specifications on building permit plans; ducting shall not be applied to the primary façade. Basis: to prevent noxious odors from escaping.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2021-008505CUA",
+    "app:datasf_planning:2019-006948CUA",
+    "catalog:sf.health_plan_check"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Garbage, recycling, and compost containers kept within the premises and hidden from public view, placed outside only when serviced. Basis: Standard eating and drinking condition on every restaurant approval; also required under DPW Streets and Sidewalk Maintenance Standards and SB 1383 organics rules.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Garbage, recycling, and compost containers kept within the premises and hidden from public view, placed outside only when serviced. Basis: Standard eating and drinking condition.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: Garbage, recycling, and compost containers kept within the premises and hidden from public view, placed outside only when serviced. Basis: Standard eating and drinking condition.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2021-008505CUA",
+    "catalog:ca.calrecycle_organics_sb1383"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing: the premises shall be adequately insulated so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed SF Noise Control Ordinance limits. Basis: Standard condition on every restaurant CUA in the comparables; also referenced in DBI building permit reviews for change-of-use projects with mechanical equipment.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Soundproofing: the premises shall be adequately insulated so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed SF Noise Control Ordinance limits.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show this condition in two restaurant CUAs but don't state it's on every CUA or that it's referenced in DBI building permit reviews."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Community liaison officer appointed prior to building permit issuance, with contact information provided to the Zoning Administrator and registered neighborhood groups. Basis: Universal condition on restaurant CUAs in CVR and CRNC within the comparable set; even if no CUA is required, Planning may request this as a best practice for new uses.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show the condition was imposed on these three CUAs but do not state it is universal or that Planning may request it as a best practice when no CUA is required."
+  },
+  {
+   "item_id": "step:0",
+   "kind": "playbook",
+   "original": "Filing step: Obtain federal EIN online from the IRS and form the legal entity (LLC or corporation) with the California Secretary of State. What to say: File IRS Form SS-4 online (takes one business day). Then file Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the CA SOS bizfile portal. File the Statement of Information within 90 days ($20 LLC, $25 corporation). These registrations are prerequisites for the city business account and the building permit application.",
+   "verdict": "partially_supported",
+   "supported_text": "File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) on the CA SOS bizfile portal. File the Statement of Information within 90 days ($20 LLC, $25 corporation).",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records say to form the legal entity first, then get the EIN (opposite order). Form SS-4 and building permit prerequisite not mentioned in records."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Register for a San Francisco Business Account Number (BAN) with the Treasurer & Tax Collector and file a Fictitious Business Name statement with the County Clerk. What to say: Apply online or in person for the Business Registration Certificate; fee is tiered by gross receipts (likely $55–$95 for a new small restaurant plus $4 state fee). The BAN is required before any other city permit can be issued. File the DBA statement with the County Clerk (photo ID required in person, or mail with notarized signature), then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register for a San Francisco Business Account Number (BAN) with the Treasurer & Tax Collector and file a Fictitious Business Name statement with the County Clerk. What to say: Apply online or in person for the Business Registration Certificate; fee is tiered by gross receipts (likely $55–$95 for a new small restaurant plus $4 state fee). The BAN is required before any other city permit can be issued. File the DBA statement with the County Clerk (photo ID required in person, or mail), then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record mentions filing by mail but does not state that a notarized signature is required."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California Seller's Permit from CDTFA, register as an employer with EDD, and secure workers' compensation insurance. What to say: Register online with CDTFA for the seller's permit (free, often same-day). Register with EDD within 15 days of paying wages; this is also free and online. Quote and bind workers' comp insurance from a licensed carrier or State Fund (restaurants typically pay 2–6% of payroll). These three items are needed for the health permit and for payroll compliance, so complete them before filing the building permit.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain a California Seller's Permit from CDTFA, register as an employer with EDD, and secure workers' compensation insurance. What to say: Register online with CDTFA for the seller's permit (free, often same-day). Register with EDD within 15 days of paying wages; this is also free and online. Quote and bind workers' comp insurance from a licensed carrier or State Fund (restaurants typically pay 2–6% of payroll).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Obtain a California Seller's Permit from CDTFA, register as an employer with EDD, and secure workers' compensation insurance. What to say: Register online with CDTFA for the seller's permit (free, often same-day). Register with EDD within 15 days of paying wages; this is also free and online. Quote and bind workers' comp insurance from a licensed carrier or State Fund (restaurants typically pay 2–6% of payroll).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sellers_permit",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.workers_comp_insurance"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Confirm with SF Planning that the intended closing hour does not require a Conditional Use Authorization under CVR § 811. What to say: Email or call the Planning Information Center (628-652-7600) and state: 'We are planning a restaurant at 675 Jackson St (CVR District) with limited cooking and no alcohol service. Our intended hours are [state hours]. The zoning control table shows 6 a.m.–11 p.m. as principally permitted and 11 p.m.–2 a.m. as conditional. Please confirm in writing whether our hours require a CUA or are permitted by right.' Save the written response; it is evidence of zoning compliance for the building permit routing.",
+   "verdict": "partially_supported",
+   "supported_text": "",
+   "cut_problem": "empty",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record references CVR § 811 but does not state the phone number or the specific hours and their permission status."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Engage an architect to prepare building permit plans with DPH kitchen plan check and DBI change-of-use routing. What to say: Hire an architect experienced in SF restaurant tenant improvements. The plans must show: kitchen layout, equipment schedule, finishes (sealed surfaces, hand sinks, three-compartment sinks), mechanical (hood, HVAC, grease interceptor), plumbing, electrical, ADA compliance, occupancy calculation, and means of egress. Submit the DPH plan check application online with two sets of plans, menu, and equipment specs; specify 'health' as a routing station on the DBI application. Budget $828–$2,207 for DPH plan review (3–8 hours) and coordinate a pre-submittal meeting with DPH to avoid resubmission.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Engage an architect to prepare building permit plans with DPH kitchen plan check and DBI change-of-use routing. What to say: Hire an architect experienced in SF restaurant tenant improvements. Submit the DPH plan check application with menu, and equipment specs; specify 'health' as a routing station on the DBI application. Budget $828–$2,207 for DPH plan review (3–8 hours).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Engage an architect to prepare building permit plans with DPH kitchen plan check and DBI change-of-use routing. What to say: Hire an architect experienced in SF restaurant tenant improvements. Submit the DPH plan check application with menu, and equipment specs; specify 'health' as a routing station on the DBI application. Budget $828–$2,207 for DPH plan review (3–8 hours).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.health_plan_check",
+    "catalog:sf.building_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: File the building permit application with DBI, routed to Planning under § 175(a) and to DPH for kitchen review. What to say: Submit the complete building permit application online or at 49 South Van Ness with: stamped architectural plans, occupancy calculation, code analysis, proof of BAN registration, and the confirmation from Planning (Step 4) that no CUA is required. Pay the DBI plan check and permit fees ($800–$15,000 depending on construction valuation). DBI will route to Planning for zoning compliance review and to DPH for health plan check. Respond promptly to any plan check corrections to keep the application moving; incomplete submittals can add weeks or months.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File the building permit application with DBI and to DPH for kitchen review. What to say: Submit the complete building permit application with stamped architectural plans. Pay the DBI plan check and permit fees ($800–$15,000 depending on construction valuation). DBI will route to DPH for health plan check. Incomplete submittals can add weeks or months.",
+   "cut_problem": "keeps 'DBI will route to Planning for zoning compliance review', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records confirm DBI building permit, DPH kitchen routing, fee range, and stamped plans requirement, but not the specific filing location, § 175(a), Planning routing, or complete document list."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Complete construction, install the grease interceptor per SFPUC FOG rules, and schedule DPH and DBI final inspections. What to say: Licensed contractors pull electrical, plumbing, and mechanical permits as sub-permits under the main building permit. Install the grease interceptor sized per SFPUC's assigned Discharger Category and submit the Installation Verification Form to earn the 14.2% sewer bill reduction. Once construction is substantially complete, schedule a pre-final walkthrough with the DPH plan reviewer (at least two weeks ahead) to catch any deficiencies. After corrections, schedule the final DPH inspection and the DBI final inspection; pass both before applying for the Permit to Operate.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Complete construction, install the grease interceptor per SFPUC FOG rules, and schedule DPH and DBI final inspections. What to say: Licensed contractors pull electrical, plumbing, and mechanical permits as sub-permits under the main building permit. Install the grease interceptor sized per SFPUC's assigned Discharger Category and submit the Installation Verification Form to earn the 14.2% sewer bill reduction. Once construction is substantially complete, schedule the final DPH inspection and the DBI final inspection; pass both before applying for the Permit to Operate.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records do not state the requirement to schedule a pre-final walkthrough with DPH plan reviewer at least two weeks ahead."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a Certified Food Protection Manager certificate, apply for the Health Permit to Operate, and pass the pre-opening inspection. What to say: At least one owner or employee must pass an ANSI-accredited food safety manager exam (ServSafe, Prometric, etc.) within 60 days of opening; the certificate is valid five years and costs roughly $100–$250. Apply online for the Permit to Operate with the BAN, Location ID (LIN), EIN, and proof of the food manager certificate. The application fee is $470 (includes initial inspection); annual license fee is $0 for restaurants in 2026–28. Schedule the pre-opening inspection at least one month before the target open date. The inspector will verify that the facility matches approved plans, equipment is installed and functioning, hot water is available, hand sinks are accessible, and all surfaces are sealed. The permit is issued after a passing inspection.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Obtain a Certified Food Protection Manager certificate, apply for the Health Permit to Operate, and pass the pre-opening inspection. What to say: At least one owner or employee must pass an ANSI-accredited food safety manager exam (ServSafe, Prometric, etc.) within 60 days of opening; the certificate is valid five years and costs roughly $100–$250. Apply online for the Permit to Operate with the BAN, Location ID (LIN), and proof of the food manager certificate. The application fee is $470 (includes initial inspection); annual license fee is $0 for restaurants in 2026–28. Schedule the pre-opening inspection at least one month before the target open date. The inspector will verify that the facility matches approved plans. The permit is issued after a passing inspection.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records say 'federal tax ID' not 'EIN'; specific inspection checklist items appear only in stall_risk notes, not as what inspector verifies."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 63 to 225 days. Estimated government cost: $2,168 to $18,878. Notes: The timeline of 63 to 225 days and the cost of $2,170 to $18,880 are the government fees and processing times to obtain the Health Permit to Operate and the Building Permit with change of use, the two approvals in the entitlement path. These are times to approval, not to denial or withdrawal. The minimums assume straightforward plan check with no corrections and immediate scheduling of inspections; the maximums assume one round of plan corrections and rescheduled inspections. DPH plan check takes 21–60 days, building permit review and issuance 14–120 days, and construction and final inspections vary by scope (typically 30–90 days for a limited-cooking tenant improvement). Fees include: SF business registration $55–$700, DPH plan check $828–$2,207, DPH Permit to Operate $470, building permit $800–$15,000 (valuation-based), and state/federal registrations (EIN free, CA SOS entity $70–$150, seller's permit free). Not included: construction costs, architect and engineer fees, contractor labor, grease interceptor equipment, insurance premiums, or the sign permit ($300–$1,500 if exterior signage is installed). The 1999 site-history record and the three nearby restaurant approvals indicate that daytime restaurant use is well-established on this block; the critical path is building permit plan review and kitchen inspection readiness, not discretionary zoning review, assuming the closing hour does not extend past 11 p.m.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 63 to 225 days. Estimated government cost: $2,168 to $18,878. Notes: The timeline of 63 to 225 days and the cost of $2,170 to $18,880 are the government fees and processing times to obtain the Health Permit to Operate and the Building Permit with change of use, the two approvals in the entitlement path. These are times to approval, not to denial or withdrawal. The minimums assume straightforward plan check with no corrections and immediate scheduling of inspections; the maximums assume one round of plan corrections and rescheduled inspections. DPH plan check takes 21–60 days, building permit review and issuance 14–120 days, and construction and final inspections vary by scope (typically 30–90 days for a limited-cooking tenant improvement). Fees include: SF business registration $55–$700, DPH plan check $828–$2,207, DPH Permit to Operate $470, building permit $800–$15,000 (valuation-based), and state/federal registrations (EIN free, CA SOS entity $70–$150, seller's permit free). Not included: construction costs, architect and engineer fees, contractor labor, grease interceptor equipment, insurance premiums, or the sign permit ($300–$1,500 if exterior signage is installed). The 1999 site-history record and the three nearby restaurant approvals indicate that daytime restaurant use is well-established on this block; the critical path is building permit plan review and kitchen inspection readiness, not discretionary zoning review, assuming the closing hour does not extend past 11 p.m.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The day range (63-225) and cost range ($2,168-$18,878) do not match the cited catalog entries; catalogs show different time/fee combinations, and several fees and conclusions are not in the records."
+  }
+ ]
+}

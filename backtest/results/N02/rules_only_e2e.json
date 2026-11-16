@@ -1,0 +1,812 @@
+{
+ "profile": {
+  "business_type": "restaurant",
+  "business_name": null,
+  "city_name": "San Francisco",
+  "city_slug": "san_francisco",
+  "state": "CA",
+  "neighborhood": null,
+  "seats": null,
+  "square_feet": null,
+  "employees": 5,
+  "hotel_rooms": null,
+  "serves_food": true,
+  "has_kitchen": true,
+  "cooking_type": "limited",
+  "serves_alcohol": true,
+  "alcohol_type": "beer_wine",
+  "closes_after_midnight": false,
+  "closes_after_2am": false,
+  "live_entertainment": false,
+  "amplified_sound": false,
+  "dancing": false,
+  "outdoor_seating": false,
+  "sidewalk_or_parklet": false,
+  "change_of_use": false,
+  "tenant_improvements": true,
+  "new_construction": false,
+  "exterior_signage": true,
+  "plays_recorded_music": true,
+  "mobile_vending": false,
+  "uses_commissary": false,
+  "sells_packaged_goods": false,
+  "licence_type": "41",
+  "licences_held": [],
+  "alcohol_transaction": "new_licence",
+  "formula_retail": null,
+  "no_alcohol_answer_over_description": false,
+  "part_of_chain": null,
+  "other_locations": null,
+  "floor_area_before_sqft": null,
+  "existing_use_stated": [
+   "limited_restaurant"
+  ],
+  "changes_existing_business": null,
+  "merges_storefronts": null,
+  "stories": [],
+  "closing_hour": null,
+  "entertainment_kind": null,
+  "outdoor_area": null,
+  "outdoor_alcohol_service": null,
+  "amends_prior_approval": null,
+  "occupants_under_50": null,
+  "target_open_date": null,
+  "assumptions": []
+ },
+ "determinations": {
+  "pathway": {
+   "use": "restaurant",
+   "use_label": "Restaurant",
+   "district": "CRNC",
+   "permission": "conditional",
+   "permission_label": "Conditional use",
+   "existing_use": null,
+   "change_of_use": "yes",
+   "change_of_use_label": "Change of use",
+   "lines": [
+    {
+     "rule_id": "zoning.use",
+     "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T1.cell",
+     "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+     "code_section": "Planning Code § 812",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+     "citations": [
+      "zoning:CRNC"
+     ]
+    },
+    {
+     "rule_id": "T1.first_story",
+     "text": "No story is stated, so the first story was read.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "T11.missing",
+     "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-23:00; C 23:00-02:00; Planning Code § 812, in force since before 2022-01-01), so this is not decided.",
+     "code_section": "Planning Code § 812",
+     "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+     "citations": [
+      "zoning:CRNC"
+     ]
+    },
+    {
+     "rule_id": "zoning.existing_use",
+     "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+     "code_section": null,
+     "source_url": null,
+     "citations": []
+    },
+    {
+     "rule_id": "change.planning_use",
+     "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+     "code_section": "Planning Code § 102",
+     "source_url": null,
+     "citations": []
+    }
+   ],
+   "notes": [
+    {
+     "rule_id": "zoning.note",
+     "text": "Note on file, not evaluated by the rules: The controls as they stood on 2022-04-20 are in the rule lines (read from the dated Planning Code controls); today's summary of this district is not shown in a report made as of a past day.",
+     "code_section": "Planning Code § 812",
+     "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-26489#rid-0-0-0-26729",
+     "citations": [
+      "overlay:static:sf:nc_crnc",
+      "zoning:CRNC"
+     ]
+    }
+   ],
+   "rules_date": "2022-04-20",
+   "triggers": [
+    {
+     "rule_id": "T1",
+     "family": "new_use_control",
+     "label": "Use control of the zoning district",
+     "control": "conditional",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T1.cell",
+       "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 812",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+       "citations": [
+        "zoning:CRNC"
+       ]
+      },
+      {
+       "rule_id": "T1.first_story",
+       "text": "No story is stated, so the first story was read.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T2",
+     "family": "special_district_use_control",
+     "label": "Use control of a special use district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T2.none",
+       "text": "No special use district on file for this address carries a use control the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T3",
+     "family": "enlarge_or_intensify",
+     "label": "Enlarging or intensifying an existing use",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T3.none",
+       "text": "No existing business is described as staying, and the records show no existing use of this kind at the address, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T4",
+     "family": "licence_in_restricted_district",
+     "label": "Liquor licence rule of a restricted district",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T4.none",
+       "text": "No special use district on file for this address carries a liquor licence rule the rules read, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T5",
+     "family": "formula_retail",
+     "label": "Formula retail",
+     "control": "not_decided",
+     "missing_inputs": [
+      "whether the business is part of a chain that shares its name, look or menu with other locations"
+     ],
+     "lines": [
+      {
+       "rule_id": "T5.row",
+       "text": "Zoning district CRNC: formula retail is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 812",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+       "citations": [
+        "zoning:CRNC"
+       ]
+      },
+      {
+       "rule_id": "T5.not_permitted_for",
+       "text": "Zoning district CRNC: formula retail is not permitted for Restaurant (Planning Code § 812, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 812",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+       "citations": [
+        "zoning:CRNC"
+       ]
+      },
+      {
+       "rule_id": "T5.missing",
+       "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T6",
+     "family": "nighttime_entertainment",
+     "label": "Nighttime entertainment",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T6.none",
+       "text": "No entertainment is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T7",
+     "family": "use_size",
+     "label": "Use size",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the floor area of the business, in square feet"
+     ],
+     "lines": [
+      {
+       "rule_id": "T7.missing",
+       "text": "Zoning district CRNC: a use of 2,501 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 812, in force since before 2022-01-01).",
+       "code_section": "Planning Code § 812",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+       "citations": [
+        "zoning:CRNC"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T8",
+     "family": "laundromat_removal",
+     "label": "Removal of a laundromat",
+     "control": "principal",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T8.not_laundromat",
+       "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+       "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+       "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T9",
+     "family": "outdoor_activity_area",
+     "label": "Outdoor activity area",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T9.none",
+       "text": "No outdoor area is described, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T10",
+     "family": "amend_prior_conditions",
+     "label": "Changing the conditions of an earlier approval",
+     "control": "does_not_apply",
+     "missing_inputs": [],
+     "lines": [
+      {
+       "rule_id": "T10.none",
+       "text": "The description does not say that the conditions of an earlier approval are to be changed, and the rules found no earlier Conditional Use at the address with a business that stays, so this trigger does not apply.",
+       "code_section": null,
+       "source_url": null,
+       "citations": []
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    },
+    {
+     "rule_id": "T11",
+     "family": "hours_of_operation",
+     "label": "Hours of operation",
+     "control": "not_decided",
+     "missing_inputs": [
+      "the closing time"
+     ],
+     "lines": [
+      {
+       "rule_id": "T11.missing",
+       "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-23:00; C 23:00-02:00; Planning Code § 812, in force since before 2022-01-01), so this is not decided.",
+       "code_section": "Planning Code § 812",
+       "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+       "citations": [
+        "zoning:CRNC"
+       ]
+      }
+     ],
+     "in_force_from": null,
+     "ordinance": null,
+     "differs_today": false
+    }
+   ],
+   "changes": {
+    "planning_use": "yes",
+    "planning_use_lines": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "building_occupancy": "not_established",
+    "building_occupancy_lines": [
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "neighbourhood_notice": "not_established",
+    "neighbourhood_notice_lines": [
+     {
+      "rule_id": "change.notice",
+      "text": "On 20 April 2022 neighbourhood notice for a change of use applied in Residential, NC, NCT and Eastern Neighborhoods Mixed Use districts. The rules do not place CRNC inside or outside that list, so whether notice was needed is not established.",
+      "code_section": "Planning Code § 311(b), (b)(1)(A), (b)(1)(B), (d)",
+      "source_url": "https://web.archive.org/web/20220121023941/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-22334",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ]
+   }
+  },
+  "rows": [
+   {
+    "area": "zoning_use",
+    "approval": "Conditional Use Authorization (Planning Code § 303)",
+    "agency": "San Francisco Planning",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.use",
+      "text": "The concept is looked up as a Restaurant (Planning Code § 102).",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T1.cell",
+      "text": "Zoning district CRNC: a Restaurant on the first story is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T1.first_story",
+      "text": "No story is stated, so the first story was read.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T5.row",
+      "text": "Zoning district CRNC: formula retail is a conditional use (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T5.not_permitted_for",
+      "text": "Zoning district CRNC: formula retail is not permitted for Restaurant (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T5.missing",
+      "text": "The description does not say whether the business is part of a chain, so this is not decided.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "T7.missing",
+      "text": "Zoning district CRNC: a use of 2,501 square feet or more needs a Conditional Use. The description does not give the floor area, so this is not decided (Planning Code § 812, in force since before 2022-01-01).",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "T8.not_laundromat",
+      "text": "The space is, or was last, a Limited Restaurant, not a laundromat, so the laundromat rule in force from 2021-12-20 to 2024-12-20 asks for nothing.",
+      "code_section": "Planning Code §§ 202.12; 102 (Laundromat)",
+      "source_url": "https://sfbos.archive.sf.gov/sites/default/files/o0209-21.pdf",
+      "citations": []
+     },
+     {
+      "rule_id": "T11.missing",
+      "text": "Hours: the description gives no closing time, and hours that are not principally permitted begin before 2 a.m. here (P 06:00-23:00; C 23:00-02:00; Planning Code § 812, in force since before 2022-01-01), so this is not decided.",
+      "code_section": "Planning Code § 812",
+      "source_url": "https://gocodebook.com/library/us/ca/san-francisco-planning/article-8-mixed-use-districts/sec.-812.-chinatown-residential-neighborhood-commercial-district",
+      "citations": [
+       "zoning:CRNC"
+      ]
+     },
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "zoning.status",
+      "text": "The concept as described needs a Conditional Use Authorization here. What asks for one: use control of the zoning district. Not decided as well: formula retail, use size and hours of operation; the lines above name what is missing: further review.",
+      "code_section": "Planning Code § 303",
+      "source_url": null,
+      "citations": [
+       "zoning:CRNC"
+      ]
+     }
+    ],
+    "referral_steps": [],
+    "missing_inputs": []
+   },
+   {
+    "area": "alcohol",
+    "approval": "ABC licence, Type 41 (on-sale beer and wine, eating place)",
+    "agency": "California Department of Alcoholic Beverage Control",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "alcohol.licence",
+      "text": "The licence looked up is ABC Type 41 (on-sale beer and wine, eating place), as stated in the description.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.transaction",
+      "text": "The licence is to be obtained as a new licence, as the applicant states.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "alcohol.status",
+      "text": "ABC investigates every licence application, and the applicant must post public notice, before a licence is issued: further review.",
+      "code_section": "California Business and Professions Code §§ 23958 (investigation) and 23985 (public notice)",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "backtest.licences_status_unknown",
+      "text": "Licences with an unknown status on 2022-04-20: 15 ABC licences within 1,000 ft and 0 in the census tract were on file, but ABC's daily reports do not show their status that day (it changed two or more times since). They are left out of the licence counts, the census tract count and what the space is read as.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Police Department (ABC Liaison Unit) for review (California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Board of Supervisors fact sheet on liquor licences",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     },
+     {
+      "rule_id": "referral.step",
+      "text": "ABC licence application: original application or transfer of any licence: this application is sent to the Planning Department for review (California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page).",
+      "code_section": "California Business and Professions Code § 23987; San Francisco Planning Department, Interagency Permit Referrals handout and web page",
+      "source_url": "https://web.archive.org/web/20250922010857/https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=9.&title=&part=&chapter=6.&article=2.",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "health",
+    "approval": "Health permit to operate",
+    "agency": "San Francisco Department of Public Health",
+    "status": "allowed",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "health.status",
+      "text": "A food or drink business needs a health permit to operate, which is issued after plan check and inspection without a hearing: allowed.",
+      "code_section": "California Retail Food Code §§ 114380–114381; San Francisco Health Code Article 8",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Department of Public Health permit to operate (bar, restaurant, retail beverage shop): this application is sent to the Planning Department for review (San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines').",
+      "code_section": "San Francisco Planning Department, 'Interagency Permit Referrals' handout (March 2022, V. 12.15.2021) and web page 'Interagency Miscellaneous Permit Referrals Guidelines'",
+      "source_url": "https://sfplanning.org/sites/default/files/documents/publications/InteragencyPermitReferral_Guidelines.pdf",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   },
+   {
+    "area": "building_change_of_use",
+    "approval": "Building permit with change of use",
+    "agency": "San Francisco Department of Building Inspection",
+    "status": "further_review",
+    "status_note": null,
+    "basis": [
+     {
+      "rule_id": "zoning.existing_use",
+      "text": "No active ABC licence of a type the rules read (Types 41, 42, 47, 48, 61, 75) is on file at 735 Jackson St, so the records do not show what the space is used as now.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.planning_use",
+      "text": "Limited Restaurant to Restaurant is a change of use, with the last use of the space as described.",
+      "code_section": "Planning Code § 102",
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "Building Code: a restaurant or bar is Assembly Group A-2, and a space for fewer than 50 people is Group B (2019 California Building Code).",
+      "code_section": "California Building Code 2019 edition, § 303.1.1, § 303.3; San Francisco Building Code § 106A.1.12",
+      "source_url": "https://web.archive.org/web/20220703210925/https://up.codes/viewer/california/ibc-2018/chapter/3/occupancy-classification-and-use",
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The description does not give whether the space is for fewer than 50 people, so the proposed occupancy group is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "change.occupancy",
+      "text": "The existing occupancy group of the space is not in public records; only plans or an inspection show it. A change of occupancy is not established.",
+      "code_section": null,
+      "source_url": null,
+      "citations": []
+     },
+     {
+      "rule_id": "building.status",
+      "text": "A change of use needs a building permit, and the permit must conform to the Planning Code before it is issued: further review.",
+      "code_section": "San Francisco Building Code § 106A.1; Planning Code § 175",
+      "source_url": null,
+      "citations": []
+     }
+    ],
+    "referral_steps": [
+     {
+      "rule_id": "referral.step",
+      "text": "Building permit application (and any other City permit or licence authorizing a use): this application is sent to the Planning Department for review (Planning Code § 175(a)).",
+      "code_section": "Planning Code § 175(a)",
+      "source_url": "https://web.archive.org/web/20230408042415/https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-19340",
+      "citations": []
+     }
+    ],
+    "missing_inputs": []
+   }
+  ],
+  "overall_status": "further_review",
+  "overall_line": "Of the 4 approvals this concept needs: 3 further review (zoning and use, alcohol licence, building permit and change of use), 1 allowed (health permit).",
+  "entitlement_path": "Conditional Use Authorization (Planning Code § 303); ABC licence, Type 41 (on-sale beer and wine, eating place); Health permit to operate; Building permit with change of use",
+  "open_questions": [
+   {
+    "question": "Not known: whether the business is part of a chain that shares its name, look or menu with other locations. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the floor area of the business, in square feet. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   },
+   {
+    "question": "Not known: the closing time. Needed for: zoning and use.",
+    "needs": "applicant_history",
+    "ask": "The applicant: the project description does not say"
+   }
+  ]
+ },
+ "records": {
+  "zoning": "CRNC",
+  "overlays": [
+   "Chinatown Residential Neighborhood Commercial District",
+   "Group Housing Special Use District",
+   "Priority Equity Geographies SUD",
+   "CRNC"
+  ],
+  "tract": "611.02",
+  "site_history": {
+   "matched_by": "Parcel 0193/033 or the address 735 Jackson St",
+   "total": 4,
+   "by_kind": {
+    "use_decision": 2,
+    "agency_referral": 2
+   },
+   "entries": [
+    {
+     "application_id": "datasf_planning:2019-013905MIS",
+     "citation_id": "app:datasf_planning:2019-013905MIS",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Recommend approval. Limited restaurant (bakery) dba Golden Gate Fortune Cookies Company principally permitted in Chinatown Residential NCD per Sec. 812.43. Continuation of existing use. Subject to eating/drinking uses operating conditions per Sec. 202.2.(a).",
+     "address": "56 ROSS ALY 94108",
+     "filed_at": "2019-07-12",
+     "decided_at": "2019-08-19",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=2019-013905MIS"
+    },
+    {
+     "application_id": "datasf_planning:MB1100829",
+     "citation_id": "app:datasf_planning:MB1100829",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Miscellaneous Permit",
+     "description": "Conditional use authorization required for small self-service restaurant -",
+     "address": "735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133",
+     "filed_at": "2011-03-28",
+     "decided_at": "2011-04-01",
+     "outcome": "denied",
+     "status": "Closed - Disapproved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB1100829"
+    },
+    {
+     "application_id": "datasf_planning:MB0500563",
+     "citation_id": "app:datasf_planning:MB0500563",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "agency_referral",
+     "record_kind_label": "Agency referral",
+     "permit_type": "Miscellaneous Permit",
+     "description": "FULL-SERVICE RESTAURANT PERMITTED PER SECTION 812.42. -",
+     "address": "735 - 737 JACKSON ST ST, SAN FRANCISCO, CA 94133",
+     "filed_at": "2005-04-20",
+     "decided_at": "2005-05-20",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=MB0500563"
+    },
+    {
+     "application_id": "datasf_planning:1989.286C",
+     "citation_id": "app:datasf_planning:1989.286C",
+     "source": "datasf_planning",
+     "source_label": "Planning case list (DataSF)",
+     "record_kind": "use_decision",
+     "record_kind_label": "Use decision",
+     "permit_type": "Conditional Use Authorization",
+     "description": "To allow small fast-food restaurant inA CRNC Districtper Sec. 812.43 add dim sum to existing restaurant.",
+     "address": "735 - 737 JACKSON ST, SAN FRANCISCO, CA 94133",
+     "filed_at": "1989-05-24",
+     "decided_at": "1989-07-13",
+     "outcome": "approved",
+     "status": "Closed - Approved",
+     "source_url": "https://sfplanninggis.org/pim?search=1989.286C"
+    }
+   ],
+   "note": "Records on file at this address or parcel, newest first. Building work is listed here and is not counted in the outcome counts."
+  },
+  "density": {
+   "radius_m": 152,
+   "food_or_drink_businesses": 49,
+   "bars": 4,
+   "abc_on_sale_licenses": 22,
+   "abc_licenses_1000ft": 87,
+   "undue_concentration_flag": true,
+   "note": "ABC's undue-concentration test compares on-sale licenses in the census tract with the county ratio and crime reporting district; this count of active on-sale licenses within 500 ft is a proxy, not that test. The alcohol licence row says what the census tract shows."
+  },
+  "base_rate": {
+   "approved": 3,
+   "approved_with_conditions": 5,
+   "denied": 0,
+   "withdrawn": 2,
+   "total": 10,
+   "window_years": 5,
+   "scope": "N = 10 dated decisions within 1,000 ft, last 5 years; left out: 90 permits and licences, 503 records that are not use decisions for this kind of business",
+   "excluded_grant_only": 90,
+   "excluded_undated": 0,
+   "excluded_not_use_decision": 503
+  },
+  "applications_within_1000ft": 229,
+  "licences_within_500ft": 26,
+  "licences_within_1000ft": 90,
+  "businesses_within_500ft": 49
+ }
+}

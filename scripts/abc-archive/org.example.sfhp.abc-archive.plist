@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- Template of a launchd agent (macOS). Replace __REPO__ with the path of your checkout of this repository
+     and __HOME__ with your home directory, then copy it to ~/Library/LaunchAgents/ and load it with
+     launchctl bootstrap gui/$(id -u) <file>. The job needs DATA_REPO (see the run script). -->
+<dict>
+  <key>Label</key><string>org.example.sfhp.abc-archive</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>__REPO__/scripts/abc-archive/run-daily.sh</string>
+  </array>
+  <!-- 09:20 local time, after ABC refreshes the Daily Data Export (~07:00 Pacific). If the Mac is asleep
+       then, launchd runs the job when it wakes. -->
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>20</integer></dict>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/sfhp-abc-archive.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/sfhp-abc-archive.log</string>
+  <key>ProcessType</key><string>Background</string>
+  <key>LowPriorityIO</key><true/>
+</dict>
+</plist>

@@ -1,0 +1,430 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 27,
+  "supported": 7,
+  "trimmed": 4,
+  "downgraded": 9,
+  "dropped": 7
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The rule table covers bars, restaurants, cafes and nighttime entertainment but has no use control on file for mobile food facilities, so no zoning lookup was performed.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The rule table covers bars, restaurants, cafes and nighttime entertainment but has no use control on file for mobile food facilities, so no zoning lookup was performed.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows bar and restaurant permissions as 'unknown' and does not mention cafes, nighttime entertainment, mobile food facilities, or whether a lookup was performed."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "430 Beach St operated as a limited restaurant and tea shop between January and April 2018, with three Planning health referrals approved (filed 2018-01-29, 2018-03-16, 2018-04-12) stating continuation of existing permitted restaurant use in C-2.",
+   "verdict": "partially_supported",
+   "supported_text": "Three Planning health referrals approved (filed 2018-01-29, 2018-03-16, 2018-04-12) in C-2.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Three Planning health referrals approved (filed 2018-01-29, 2018-03-16, 2018-04-12) in C-2.",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2018-001584MIS",
+    "app:datasf_planning:2018-003754MIS",
+    "app:datasf_planning:2018-005598MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "The C-2 district has no hours-of-operation control on file (Planning Code § 210.1, in force since before 2022-01-01), so evening or late service would not trigger a conditional use hearing for hours alone.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The C-2 district has no hours-of-operation control on file (Planning Code § 210.1, in force since before 2022-01-01), so evening or late service would not trigger a conditional use hearing for hours alone.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record does not state what controls exist or don't exist for C-2, or draw any conclusions about conditional use hearings."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "The Waterfront 2 Special Use District (Planning Code § 240.2) overlays this parcel and may impose additional use, design, or operational controls beyond base C-2 zoning, but the rules as they stood on 2022-04-14 are not exposed in this report.",
+   "verdict": "partially_supported",
+   "supported_text": "The Waterfront 2 Special Use District (Planning Code § 240.2) overlays this parcel.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The Waterfront 2 Special Use District (Planning Code § 240.2) overlays this parcel.",
+   "confidence": "verified",
+   "citations": [
+    "overlay:datasf_sud:waterfront_2"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "The rules could not decide whether a mobile food facility is permitted, conditional, or prohibited in C-2 because the rule table does not cover mobile vending, and the records do not show what 430 Beach St was last used as.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules could not decide because the rule table does not cover this kind of business, and the records do not show what 430 Beach St was last used as.",
+   "cut_problem": "adds or moves 'this': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:C-2",
+    "app:datasf_planning:2018-001584MIS",
+    "app:datasf_planning:2018-003754MIS",
+    "app:datasf_planning:2018-005598MIS",
+    "overlay:datasf_sud:waterfront_2"
+   ],
+   "note": "The records state the rule table has no use on file for 'this kind of business' but do not identify it as a mobile food facility or mobile vending."
+  },
+  {
+   "item_id": "row:health:0",
+   "kind": "finding",
+   "original": "A food truck or cart needs a Mobile Food Facility health permit from DPH, covering plan review of the vehicle, a commissary agreement, and the permit application with initial inspection; the 2026–27 annual license fee for mobile food facilities is $0, and the permit application is $470 with plan review of $414 (low-risk) or $690 (high-risk).",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A food truck or cart needs a Mobile Food Facility health permit from DPH, covering plan review of the vehicle, a commissary agreement, and the permit application with initial inspection; the 2026–27 annual license fee for mobile food facilities is $0, and the permit application is $470 with plan review of $414 (low-risk) or $690 (high-risk).",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.mobile_food_facility_health_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The truck must be permitted by San Francisco DPH even if it holds a health permit from another California county; submit two sets of scaled drawings, interior and exterior photos, a menu, and a commissary agreement through the DPH portal.",
+   "verdict": "partially_supported",
+   "supported_text": "The truck must be permitted by San Francisco DPH even if it holds a health permit from another California county; submit two sets of scaled drawings, interior and exterior photos, and a menu through the DPH portal.",
+   "cut_problem": "adds or moves 'menu': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The truck must be permitted by San Francisco DPH even if it holds a health permit from another California county; submit two sets of scaled drawings, interior and exterior photos, a menu, and a commissary agreement through the DPH portal.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record lists commissary agreement as covered but does not state it should be submitted through the DPH portal."
+  },
+  {
+   "item_id": "row:health:2",
+   "kind": "finding",
+   "original": "A certified food protection manager (one per facility, valid 5 years) is required within 60 days of opening; every employee who handles food must obtain a California Food Handler Card within 30 days of hire.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A certified food protection manager (one per facility, valid 5 years) is required within 60 days of opening; every employee who handles food must obtain a California Food Handler Card within 30 days of hire.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:3",
+   "kind": "finding",
+   "original": "The DPH mobile food health permit application is sent to the Planning Department for zoning review as an interagency referral, meaning Planning will confirm the mobile food use is permitted before DPH issues the health permit.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The DPH mobile food health permit application is sent to the Planning Department for zoning review as an interagency referral, meaning Planning will confirm the mobile food use is permitted before DPH issues the health permit.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the DPH permit process but does not mention Planning Department review or interagency referral."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A mobile food facility needs a Department of Public Health mobile food facility health permit, which is issued after plan check and vehicle inspection without a hearing and is allowed.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "A mobile food facility needs a Department of Public Health mobile food facility health permit, which is issued after plan check and vehicle inspection without a hearing and is allowed.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.mobile_food_facility_health_permit",
+    "catalog:ca.food_safety_manager_cert",
+    "catalog:ca.food_handler_card"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:building_change_of_use:0",
+   "kind": "finding",
+   "original": "A food truck operates in the public right-of-way or on a private lot and does not alter the interior occupancy or use of the building at 430 Beach St, so a building permit and change-of-use review for the fixed structure is not applicable unless the operator installs fixed equipment or makes tenant improvements inside the building.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "A food truck operates in the public right-of-way or on a private lot and does not alter the interior occupancy or use of the building at 430 Beach St, so a building permit and change-of-use review for the fixed structure is not applicable unless the operator installs fixed equipment or makes tenant improvements inside the building.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The records describe mobile food facility permits but do not address building permits or change-of-use review requirements."
+  },
+  {
+   "item_id": "row:building_change_of_use:2",
+   "kind": "finding",
+   "original": "If the truck uses a commissary for food prep and storage, as the concept profile states, no cooking or storage facilities are installed at 430 Beach St and no building permit for kitchen build-out is needed at this address.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "If the truck uses a commissary for food prep and storage, as the concept profile states, no cooking or storage facilities are installed at 430 Beach St and no building permit for kitchen build-out is needed at this address.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record describes the mobile food facility health permit process but does not state that using a commissary means no building permit is needed at the address."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "The rules could not decide whether a building permit or change-of-use review is needed because a mobile food facility operates in a vehicle or cart, not inside the building at 430 Beach St, and the existing occupancy group of the space is not in the records.",
+   "verdict": "partially_supported",
+   "supported_text": "The rules could not decide whether a building permit or change-of-use review is needed because the existing occupancy group of the space is not in the records.",
+   "cut_problem": "drops 'not' and keeps the words after it",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "catalog:sf.mobile_food_facility_health_permit",
+    "catalog:sf.mobile_food_facility_location_permit"
+   ],
+   "note": "The records do not state that this mobile food facility operates in a vehicle rather than inside the building at this address."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: The mobile food facility health permit requires a commissary agreement with a DPH-permitted commissary for food prep, storage, and vehicle cleaning. Basis: Every San Francisco mobile food permit requires a commissary (catalog entry sf.mobile_food_facility_health_permit notes commissary agreement is a prerequisite). No nearby mobile food decisions are in the data, but the DPH portal instructions mandate it for all trucks.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The mobile food facility health permit requires a commissary agreement. Basis: Every San Francisco mobile food permit requires a commissary (catalog entry sf.mobile_food_facility_health_permit notes commissary agreement is a prerequisite).",
+   "cut_problem": null,
+   "recheck": "unsupported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record states a commissary agreement is required but does not specify the purposes, that it must be DPH-permitted, or mention nearby decisions or portal instructions."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: The Public Works location permit will require posting a yellow notice at the proposed site for 10 days, mailing notice to all addresses within 75 feet, and a 30-day public comment period; unresolved objections go to a public hearing. Basis: The location permit process (catalog entry sf.mobile_food_facility_location_permit) requires on-site posting, 75-foot neighbor notification, and a 30-day comment period, with a hearing if objections are not resolved. The catalog notes location permits are routinely appealed by nearby restaurants.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The Public Works location permit will require posting a notice at the proposed site for 10 days, notifying all addresses within 75 feet, and a 30-day public comment period; unresolved objections go to a public hearing. Basis: The location permit process (catalog entry sf.mobile_food_facility_location_permit) requires on-site posting, 75-foot neighbor notification, and a 30-day comment period, with a hearing if objections are not resolved. The catalog notes location permits are routinely appealed by nearby restaurants.",
+   "cut_problem": "adds or moves 'notifying': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record states notice posting and notification within 75 feet but does not specify the notice color or that notification is by mailing."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: The location permit will require $2 million commercial general liability insurance naming the City and County of San Francisco as additional insured. Basis: The catalog entry for the Public Works location permit states final issuance requires $2M liability insurance naming the City, along with the DPH health permit, fire certificate, and DMV registration.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: The location permit will require $2 million commercial general liability insurance naming the City and County of San Francisco as additional insured. Basis: The catalog entry for the Public Works location permit states final issuance requires $2M liability insurance naming the City, along with the DPH health permit, fire certificate, and DMV registration.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.mobile_food_facility_location_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Each street location needs a separate Public Works location permit; multiple locations each need their own 10-day posting, 75-foot notification, and 30-day comment period. Basis: The catalog entry for sf.mobile_food_facility_location_permit states Public Works issues a permit for each street location, starting at $1,151 per location. The stall-risk note says to apply for 2–3 candidate locations at once because location permits are routinely appealed.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Each street location needs a separate Public Works location permit; multiple locations each need their own 10-day posting, 75-foot notification, and 30-day comment period. Basis: The catalog entry for sf.mobile_food_facility_location_permit states Public Works issues a permit for each street location, starting at $1,151 per location. The stall-risk note says to apply for 2–3 candidate locations at once because location permits are routinely appealed.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.mobile_food_facility_location_permit"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: If the truck operates on a private lot instead of the public right-of-way, a Planning zoning review and DPH approval are required instead of the Public Works location permit process. Basis: The catalog entry sf.mobile_food_facility_location_permit states that private lots go through Planning and DPH instead of Public Works. No mobile food precedent on private lots is in the records, but the catalog lays out the alternate path.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: If the truck operates on a private lot instead of the public right-of-way, a Planning zoning review and DPH approval are required instead of the Public Works location permit process. Basis: The catalog entry sf.mobile_food_facility_location_permit states that private lots go through Planning and DPH instead of Public Works. The catalog lays out the alternate path.",
+   "cut_problem": "drops 'no' and keeps the words after it",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The catalog entry does not state whether mobile food precedents on private lots are in the records."
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: The business must subscribe to organics (green bin) collection service under SB 1383 and may need to participate in edible food recovery above size thresholds. Basis: California SB 1383 requires every commercial food generator to subscribe to organics collection; cities enforce it through business license or health inspection (catalog entry ca.calrecycle_organics_sb1383). Set up hauler service before opening.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: The business must subscribe to organics (green bin) collection service under SB 1383 and may need to participate in edible food recovery above size thresholds. Basis: California SB 1383 requires every commercial food generator to subscribe to organics collection; cities enforce it through business license or health inspection (catalog entry ca.calrecycle_organics_sb1383). Set up hauler service before opening.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.calrecycle_organics_sb1383"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online through bizfile. File the Statement of Information within 90 days ($20 LLC, $25 corporation). Apply for the EIN online at IRS.gov the same day the entity is formed; the EIN is issued immediately Monday–Friday. The entity name and EIN are required for the business registration, seller's permit, bank account, and all city permits.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Form the legal entity (LLC or corporation) with the California Secretary of State and obtain an EIN from the IRS. What to say: File Articles of Organization (LLC-1, $70) or Articles of Incorporation (ARTS-GS, $100) online through bizfile. File the Statement of Information within 90 days ($20 LLC, $25 corporation). Apply for the EIN online at IRS.gov; the EIN is issued immediately Monday–Friday.",
+   "cut_problem": "keeps 'Apply for the EIN the same day the entity is formed', which the checker listed as not in the records",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records don't specify applying for EIN the same day entity is formed, and list different requirements (bank account, payroll taxes, state/local licenses) not business registration/seller's permit/city permits."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector and obtain a Business Account Number (BAN), and file a Fictitious Business Name statement with the County Clerk if the doing-business-as name differs from the legal entity name. What to say: Register online at sftreasurer.org within 30 days of starting business; the fee is tiered by gross receipts ($55 up to $100k for 2026–27). The BAN is required for every other city permit. File the FBN statement with the County Clerk in person or by mail, then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days. The bank and DPH will ask for the filed FBN statement.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector and obtain a Business Account Number (BAN), and file a Fictitious Business Name statement with the County Clerk if the doing-business-as name differs from the legal entity name. What to say: Register within 30 days of starting business; the fee is tiered by gross receipts ($55 up to $100k for 2026–27). File the FBN statement with the County Clerk in person or by mail, then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Register the business with the San Francisco Treasurer & Tax Collector and obtain a Business Account Number (BAN), and file a Fictitious Business Name statement with the County Clerk if the doing-business-as name differs from the legal entity name. What to say: Register within 30 days of starting business; the fee is tiered by gross receipts ($55 up to $100k for 2026–27). File the FBN statement with the County Clerk in person or by mail, then publish once a week for four weeks in a court-approved newspaper and file proof of publication within 45 days.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.business_registration",
+    "catalog:sf.fictitious_business_name"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:3",
+   "kind": "playbook",
+   "original": "Filing step: Obtain a California Seller's Permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register online at cdtfa.ca.gov for the seller's permit (free, usually issued the same day); it is required for selling food and drinks. If hiring employees, register with EDD e-Services for Business within 15 days of paying more than $100 in wages; free, takes 1–7 days. Set up workers' compensation insurance from a licensed carrier or State Fund before the first employee starts.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Filing step: Obtain a California Seller's Permit from CDTFA and register as an employer with EDD if hiring employees. What to say: Register online at cdtfa.ca.gov for the seller's permit (free, usually issued the same day); it is required for selling food and drinks. If hiring employees, register with EDD e-Services for Business within 15 days of paying more than $100 in wages; free, takes 1–7 days. Set up workers' compensation insurance from a licensed carrier or State Fund before the first employee starts.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:ca.sellers_permit",
+    "catalog:ca.edd_employer_registration",
+    "catalog:ca.workers_comp_insurance"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: Have at least one owner or manager obtain a Certified Food Protection Manager certificate and set up California Food Handler Card training for all employees. What to say: Register and take an ANSI-accredited food safety exam (ServSafe, Prometric, 360training, etc.) within 60 days of opening; valid 5 years; cost about $100–$250. Every employee who handles food must complete a Food Handler Card course ($7–$15 online, about 2 hours) within 30 days of hire; valid 3 years. DPH asks for the manager certificate at the pre-opening inspection and the handler card list on file.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Have at least one owner or manager obtain a Certified Food Protection Manager certificate and set up California Food Handler Card training for all employees. What to say: Register and take an ANSI-accredited food safety exam (ServSafe, Prometric, 360training, etc.) within 60 days of opening; valid 5 years; cost about $100–$250. Every employee who handles food must complete a Food Handler Card course ($7–$15 online, about 2 hours) within 30 days of hire; valid 3 years. DPH asks for the manager certificate at the pre-opening inspection.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records state inspectors ask for the manager certificate at pre-opening but do not mention asking for handler card list on file."
+  },
+  {
+   "item_id": "step:5",
+   "kind": "playbook",
+   "original": "Filing step: Submit the mobile food facility health permit application to San Francisco DPH at least two months before the intended opening date, with vehicle drawings, photos, menu, and a signed commissary agreement. What to say: Apply through the DPH portal with the BAN, two sets of scaled drawings of the truck interior showing equipment and plumbing, exterior and interior photos, a menu describing food prep steps, and a commissary agreement signed by a DPH-permitted commissary. The application is routed to Planning as an interagency referral to confirm zoning approval, then to the Fire Department for vehicle inspection. The 2026–27 fees are $470 application plus $414 (low-risk) or $690 (high-risk) plan review. Schedule the vehicle inspection at least two weeks in advance once plans are approved; the permit is issued after the inspection passes.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Submit the mobile food facility health permit application to San Francisco DPH, with vehicle drawings, photos, menu, and a commissary agreement. What to say: Apply through the DPH portal with two sets of scaled drawings of the truck interior, exterior and interior photos, a menu describing food prep steps, and a commissary agreement. The 2026–27 fees are $470 application plus $414 (low-risk) or $690 (high-risk) plan review.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Filing step: Submit the mobile food facility health permit application to San Francisco DPH, with vehicle drawings, photos, menu, and a commissary agreement. What to say: Apply through the DPH portal with two sets of scaled drawings of the truck interior, exterior and interior photos, a menu describing food prep steps, and a commissary agreement. The 2026–27 fees are $470 application plus $414 (low-risk) or $690 (high-risk) plan review.",
+   "confidence": "verified",
+   "citations": [
+    "catalog:sf.mobile_food_facility_health_permit"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "step:6",
+   "kind": "playbook",
+   "original": "Filing step: Apply for a Public Works mobile food facility location permit for each street location where the truck will operate, starting at least four months before the intended opening date. What to say: File online at sfpublicworks.org for each address; the fee is $1,151+ per location with half due at application. Post a yellow notice at the site for 10 days, mail notice to all addresses within 75 feet, and submit proof of posting. After a 30-day public comment period, Public Works issues a 90-day tentative approval if no objections are filed; unresolved objections go to a public hearing. Final issuance requires the DPH mobile health permit, SFFD fire certificate, DMV registration, and $2M liability insurance naming the City. The catalog warns location permits are routinely appealed by nearby restaurants, so apply for 2–3 candidate locations at once. If operating on a private lot, go through Planning and DPH for a zoning review instead.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Apply for a Public Works mobile food facility location permit for each street location where the truck will operate. What to say: File for each address; the fee is $1,151+ per location with half due at application. Post a notice at the site for 10 days, and notify all addresses within 75 feet. After a 30-day public comment period, Public Works issues a 90-day tentative approval if no objections are filed; unresolved objections go to a public hearing. Final issuance requires the DPH mobile health permit, SFFD fire certificate, DMV registration, and $2M liability insurance naming the City. The catalog warns location permits are routinely appealed by nearby restaurants, so apply for 2–3 candidate locations at once. If operating on a private lot, go through Planning and DPH instead.",
+   "cut_problem": "adds or moves 'notify': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Record doesn't specify four-month lead time, online filing URL, notice color, mailing method, proof of posting requirement, or 'zoning review' terminology."
+  },
+  {
+   "item_id": "step:7",
+   "kind": "playbook",
+   "original": "Filing step: Set up organics recycling service (green bin) with a licensed hauler before opening. What to say: Contact Recology or another licensed hauler to subscribe to organics (food waste) collection service as required under California SB 1383 for all commercial food generators. Cities enforce it through the business license or health inspection. Arrange service before the first day of operation.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: Set up organics recycling service (green bin) with a licensed hauler before opening. What to say: Contact a licensed hauler to subscribe to organics (food waste) collection service as required under California SB 1383 for all commercial food generators. Cities enforce it through the business license or health inspection. Arrange service before the first day of operation.",
+   "cut_problem": "adds or moves 'a': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record does not name Recology as a specific hauler option."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 90 to 270 days. Estimated government cost: $2,600 to $8,500. Notes: The day range (90–270 days) is the time to obtain the mobile food facility health permit and one Public Works location permit when both are granted, not a time to a denial or withdrawal. The health permit takes 30–90 days (catalog entry sf.mobile_food_facility_health_permit); the location permit takes 60–180 days including posting, neighbor notification, the 30-day comment period, and final issuance (catalog entry sf.mobile_food_facility_location_permit). These run sequentially because the location permit requires the health permit as a prerequisite, so the total is 90–270 days. The cost range ($2,600–$8,500) covers government fees only: entity formation ($70–$150, catalog ca.sos_entity_registration), business registration ($55–$700, sf.business_registration), FBN filing ($60–$120, sf.fictitious_business_name), food safety manager cert ($100–$250, ca.food_safety_manager_cert), mobile health permit ($880–$1,500, sf.mobile_food_facility_health_permit), and one location permit ($1,151–$5,000, sf.mobile_food_facility_location_permit). Each additional location adds $1,151–$5,000 and 60–180 days. These figures assume Planning confirms mobile food vending is permitted in C-2/Waterfront 2; if it is not, or if the concept must be changed to fit within a permitted use, no cost or timeline can be given until the zoning answer is known. The stall risk is high: the catalog warns location permits are routinely appealed by nearby restaurants, and the Fisherman's Wharf tourist corridor has 20 registered food businesses and 11 ABC licenses within 500 ft, so neighbor opposition and appeals are likely to push timelines to the upper end or beyond.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 90 to 270 days. Estimated government cost: $2,600 to $8,500. Notes: The day range (90–270 days) is the time to obtain the mobile food facility health permit and one Public Works location permit when both are granted, not a time to a denial or withdrawal. The health permit takes 30–90 days (catalog entry sf.mobile_food_facility_health_permit); the location permit takes 60–180 days including posting, neighbor notification, the 30-day comment period, and final issuance (catalog entry sf.mobile_food_facility_location_permit). These run sequentially because the location permit requires the health permit as a prerequisite, so the total is 90–270 days. The cost range ($2,600–$8,500) covers government fees only: entity formation ($70–$150, catalog ca.sos_entity_registration), business registration ($55–$700, sf.business_registration), FBN filing ($60–$120, sf.fictitious_business_name), food safety manager cert ($100–$250, ca.food_safety_manager_cert), mobile health permit ($880–$1,500, sf.mobile_food_facility_health_permit), and one location permit ($1,151–$5,000, sf.mobile_food_facility_location_permit). Each additional location adds $1,151–$5,000 and 60–180 days. These figures assume Planning confirms mobile food vending is permitted in C-2/Waterfront 2; if it is not, or if the concept must be changed to fit within a permitted use, no cost or timeline can be given until the zoning answer is known. The stall risk is high: the catalog warns location permits are routinely appealed by nearby restaurants, and the Fisherman's Wharf tourist corridor has 20 registered food businesses and 11 ABC licenses within 500 ft, so neighbor opposition and appeals are likely to push timelines to the upper end or beyond.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited records' fees total $2,316–$7,720, not $2,600–$8,500. Other facts (number of nearby businesses, Planning confirmation, predictions about appeals) are also not in the records."
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+ "summary": {
+  "ran": true,
+  "model": "claude-sonnet-4-5",
+  "checked": 24,
+  "supported": 4,
+  "trimmed": 4,
+  "downgraded": 10,
+  "dropped": 6
+ },
+ "outcomes": [
+  {
+   "item_id": "row:zoning_use:0",
+   "kind": "finding",
+   "original": "The address sits in the Mission Street NCT district, where a bar on the first story is a conditional use under Planning Code Section 754, in force from January 14, 2024.",
+   "verdict": "partially_supported",
+   "supported_text": "The address sits in the Mission Street NCT district under Planning Code Section 754.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The address sits in the Mission Street NCT district under Planning Code Section 754.",
+   "confidence": "verified",
+   "citations": [
+    "zoning:NCT-MISSION"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "row:zoning_use:1",
+   "kind": "finding",
+   "original": "The Mission Alcoholic Beverage Special Use District treats a new or relocated bar as a conditional use and requires the bar to use a liquor license transferred from another bar located inside the district, per Planning Code Section 249.60(b)(2)(C).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Mission Alcoholic Beverage Special Use District treats a new or relocated bar as a conditional use and requires the bar to use a liquor license transferred from another bar located inside the district, per Planning Code Section 249.60(b)(2)(C).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record has bar_permission: unknown and does not state the conditional use status, license transfer requirement, or specific subsection."
+  },
+  {
+   "item_id": "row:zoning_use:2",
+   "kind": "finding",
+   "original": "NCT-MISSION Table 754 Note 7 caps eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district at 179 total, and a new one is not permitted if it would take the total above that; the records do not show how many exist.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "NCT-MISSION Table 754 Note 7 caps eating and drinking uses (Restaurants, Limited Restaurants and Bars) in the district at 179 total, and a new one is not permitted if it would take the total above that; the records do not show how many exist.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record identifies the district and code section but does not state the 179 cap, the restriction rule, or information about existing uses."
+  },
+  {
+   "item_id": "row:zoning_use:3",
+   "kind": "finding",
+   "original": "At 2901 16th St, 195 meters away in the UMU district, Planning approved a Type 48 bar use in 2017 after confirming the license was transferred from 2950 16th Street City Club, already within the Mission Alcohol Restrict SUD.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "At 2901 16th St, 195 meters away in the UMU district, Planning approved a Type 48 bar use in 2017 after confirming the license was transferred from 2950 16th Street City Club, already within the Mission Alcohol Restrict SUD.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:zoning_use:4",
+   "kind": "finding",
+   "original": "The Mission Alcoholic Beverage Special Use District requires all liquor establishments to comply with Planning Code Section 202.2 operating conditions, and new or relocated ones must provide outside lighting, keep window signage to 33% and maintain 50% clear glazing on street-facing facades, per Section 249.60(d).",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Mission Alcoholic Beverage Special Use District requires all liquor establishments to comply with Planning Code Section 202.2 operating conditions, and new or relocated ones must provide outside lighting, keep window signage to 33% and maintain 50% clear glazing on street-facing facades, per Section 249.60(d).",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms the district exists but does not state any of the specific requirements: Section 202.2, outside lighting, 33% signage, 50% glazing, or subsection (d)."
+  },
+  {
+   "item_id": "summary:zoning_use",
+   "kind": "summary",
+   "original": "A bar is a conditional use in NCT-MISSION and the Mission Alcoholic Beverage Special Use District requires a Type 48 license transferred from another bar already within the district; the district also caps eating and drinking uses at 179 total, but the records do not show the current count, so furt…",
+   "verdict": "partially_supported",
+   "supported_text": "The Mission Alcoholic Beverage Special Use District requires a license transferred from another bar already within the district; the district also caps eating and drinking uses at 179 total, but the records do not show the current count, so further review",
+   "cut_problem": "adds or moves 'further': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "zoning:NCT-MISSION",
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": "Records state liquor licence (not Type 48 specifically); conditional use comes from the SUD overlay, while NCT-MISSION control is 'Not decided'."
+  },
+  {
+   "item_id": "row:alcohol:1",
+   "kind": "finding",
+   "original": "The Mission Alcoholic Beverage Special Use District requires a new bar to use a Type 48 license transferred from another bar already within the district, not a new license issued by ABC.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The Mission Alcoholic Beverage Special Use District requires a new bar to use a Type 48 license transferred from another bar already within the district, not a new license issued by ABC.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record confirms the district exists and applies here but does not state the Type 48 license transfer requirement."
+  },
+  {
+   "item_id": "row:alcohol:2",
+   "kind": "finding",
+   "original": "The Type 48 license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024, the same day as this report, ending the bar use (DBA Uptown) that operated at this address from at least 2015 through early 2024.",
+   "verdict": "partially_supported",
+   "supported_text": "The Type 48 license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024, the same day as this report.",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "downgraded",
+   "shown": "The Type 48 license at 200 Capp St (ABC #559557) was surrendered on February 21, 2024, the same day as this report, ending the bar use (DBA Uptown) that operated at this address from at least 2015 through early 2024.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "Records show the license was surrendered but do not state the DBA name, operational dates, or that the surrender ended the bar use."
+  },
+  {
+   "item_id": "row:alcohol:3",
+   "kind": "finding",
+   "original": "ABC records show 44 active on-sale licenses within 1,000 feet of the address, including four within 500 feet, indicating the census tract may be an undue-concentration area for ABC purposes.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "ABC records show 44 active on-sale licenses within 1,000 feet of the address, including four within 500 feet, indicating the census tract may be an undue-concentration area for ABC purposes.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The record shows 39 licenses within 1,000 feet, not 44. The conclusion about the census tract is not stated by this record."
+  },
+  {
+   "item_id": "summary:alcohol",
+   "kind": "summary",
+   "original": "The description does not state what alcohol will be served (beer and wine, or spirits) or how the license will be obtained (new application or transfer), so the rules cannot determine which ABC license type applies or whether it is available; insufficient information.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "The description does not state what alcohol will be served (beer and wine, or spirits) or how the license will be obtained (new application or transfer), so the rules cannot determine which ABC license type applies or whether it is available; insufficient information.",
+   "confidence": null,
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "license:abc:559557",
+    "app:abc:559557",
+    "stat:density"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "row:health:1",
+   "kind": "finding",
+   "original": "The health permit application is referred to Planning for a zoning review; at 200 Capp St in 2019, Planning approved a health permit referral for continuation of the existing bar use (DBA Uptown) with Type 48 license.",
+   "verdict": "partially_supported",
+   "supported_text": "The health permit application is referred to Planning for a zoning review; at 200 Capp St in 2019, Planning approved a health permit referral for continuation of the existing bar use (DBA Uptown).",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "The health permit application is referred to Planning for a zoning review; at 200 Capp St in 2019, Planning approved a health permit referral for continuation of the existing bar use (DBA Uptown).",
+   "confidence": "verified",
+   "citations": [
+    "app:datasf_planning:2019-002293MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:health",
+   "kind": "summary",
+   "original": "A bar serving drinks without food requires a health permit to operate, issued after inspection and plan review without a discretionary hearing; allowed.",
+   "verdict": "partially_supported",
+   "supported_text": "A bar requires a health permit to operate, issued after inspection and plan review without a hearing; allowed.",
+   "cut_problem": "drops 'without' and keeps the words after it",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "app:datasf_planning:2019-002293MIS"
+   ],
+   "note": "The records state a bar needs a health permit issued after plan check and inspection without a hearing, but do not specify 'without food' or call the hearing 'discretionary'."
+  },
+  {
+   "item_id": "row:building_change_of_use:1",
+   "kind": "finding",
+   "original": "No active ABC license is on file at 200 Capp St after the February 21, 2024 surrender, so the records do not show what the space is used as now, and the description does not say what it was last used as.",
+   "verdict": "partially_supported",
+   "supported_text": "No active ABC license is on file at 200 Capp St after the February 21, 2024 surrender.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "No active ABC license is on file at 200 Capp St after the February 21, 2024 surrender.",
+   "confidence": "verified",
+   "citations": [
+    "license:abc:559557"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "summary:building_change_of_use",
+   "kind": "summary",
+   "original": "Tenant improvements and exterior signage require a building permit; whether a change of use or change of occupancy is triggered depends on the prior use and occupancy group and whether the bar will have fewer than 50 people, which the records and description do not establish; insufficient informati…",
+   "verdict": "partially_supported",
+   "supported_text": "Whether a change of use or change of occupancy is triggered depends on the prior use and occupancy group and whether the bar will have fewer than 50 people, which the records and description do not establish; insufficient information.",
+   "cut_problem": "adds or moves 'information': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "The cited records did not support this summary. See the findings below.",
+   "confidence": null,
+   "citations": [
+    "license:abc:559557"
+   ],
+   "note": "The records do not state that tenant improvements and exterior signage require a building permit."
+  },
+  {
+   "item_id": "condition:0",
+   "kind": "condition",
+   "original": "Expected condition: The Type 48 liquor license must be transferred from another bar located within the Mission Alcoholic Beverage Special Use District. Basis: Planning Code Section 249.60(b)(2)(C) requires a new bar in the Mission Alcoholic Beverage SUD to use a license transferred from another bar inside the district. Two 2017 referrals at 2901 16th St confirmed the license came from 2950 16th Street City Club within the district before approval.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: The Type 48 liquor license must be transferred from another bar located within the Mission Alcoholic Beverage Special Use District. Basis: Two 2017 referrals at 2901 16th St confirmed the license came from 2950 16th Street City Club within the district before approval.",
+   "cut_problem": null,
+   "recheck": "supported",
+   "result": "trimmed",
+   "shown": "Expected condition: The Type 48 liquor license must be transferred from another bar located within the Mission Alcoholic Beverage Special Use District. Basis: Two 2017 referrals at 2901 16th St confirmed the license came from 2950 16th Street City Club within the district before approval.",
+   "confidence": "verified",
+   "citations": [
+    "overlay:datasf_sud:mission_alcohol_restrict",
+    "app:datasf_planning:2017-008715MIS",
+    "app:datasf_planning:2017-010303MIS"
+   ],
+   "note": "Cut down to the part the cited record states."
+  },
+  {
+   "item_id": "condition:1",
+   "kind": "condition",
+   "original": "Expected condition: Comply with Planning Code Section 202.2 operating conditions: maintain a community liaison, post a telephone number, and implement a good-neighbor policy including soundproofing and litter control. Basis: Planning Code Section 249.60(d) requires all liquor establishments in the Mission Alcoholic Beverage SUD to comply with Section 202.2. Recent CUA approvals at 2022 Mission St and 2214 Mission St imposed community liaison and patron behavior notices as conditions.",
+   "verdict": "partially_supported",
+   "supported_text": "Recent CUA approvals at 2022 Mission St and 2214 Mission St imposed community liaison and patron behavior notices as conditions.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "Records show CUA approvals imposed these conditions but don't contain the text of Section 249.60(d) or Section 202.2 or establish the requirement to comply with them. Posting a telephone number publicly is not stated."
+  },
+  {
+   "item_id": "condition:2",
+   "kind": "condition",
+   "original": "Expected condition: Provide outside lighting, keep window signage to 33% of window area, and maintain 50% clear glazing on street-facing facades. Basis: Planning Code Section 249.60(d) imposes these requirements on new, relocated, or expanded liquor establishments in the Mission Alcoholic Beverage Special Use District.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record identifies the district and code section but does not state the specific requirements about lighting, signage percentages, or glazing."
+  },
+  {
+   "item_id": "condition:3",
+   "kind": "condition",
+   "original": "Expected condition: Soundproofing and noise control measures so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed the decibel levels in the Noise Control Ordinance. Basis: Recent CUA approvals at 2022 Mission St (2020-011615CUA) and 2034 Mission St (2021-006276CUA) and 2214 Mission St (2023-001895CUA) all imposed soundproofing and noise control conditions on eating and drinking uses in the NCT-MISSION corridor.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Soundproofing and noise control measures so that incidental noise is not audible beyond the premises and fixed-source equipment noise does not exceed the decibel levels in the Noise Control Ordinance. Basis: Recent CUA approvals at 2022 Mission St (2020-011615CUA) and 2034 Mission St (2021-006276CUA) and 2214 Mission St (2023-001895CUA) all imposed soundproofing and noise control conditions on eating and drinking uses in the NCT-MISSION corridor.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2020-011615CUA",
+    "app:datasf_planning:2021-006276CUA",
+    "app:datasf_planning:2023-001895CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:4",
+   "kind": "condition",
+   "original": "Expected condition: Post well-lit notices at all entrances and exits urging patrons to leave the establishment and neighborhood quietly and not to litter or block driveways. Basis: CUA approvals at 2022 Mission St (2020-011615CUA) and 2214 Mission St (2023-001895CUA) in NCT-MISSION imposed this condition on bars and entertainment venues.",
+   "verdict": "supported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "kept",
+   "shown": "Expected condition: Post well-lit notices at all entrances and exits urging patrons to leave the establishment and neighborhood quietly and not to litter or block driveways. Basis: CUA approvals at 2022 Mission St (2020-011615CUA) and 2214 Mission St (2023-001895CUA) in NCT-MISSION imposed this condition on bars and entertainment venues.",
+   "confidence": "likely_applicable",
+   "citations": [
+    "app:datasf_planning:2020-011615CUA",
+    "app:datasf_planning:2023-001895CUA"
+   ],
+   "note": null
+  },
+  {
+   "item_id": "condition:5",
+   "kind": "condition",
+   "original": "Expected condition: Hours of operation limited to between 6 a.m. or 8 a.m. and 10 p.m. or 2 a.m., depending on the concept and neighborhood context. Basis: Recent CUA approvals in NCT-MISSION imposed 10 p.m. closing for a beer-and-wine restaurant (2021-006276CUA at 2034 Mission St) and 10 p.m. for outdoor dining (2023-001895CUA at 2214 Mission St), but 2 a.m. closing for a restaurant with place of entertainment (2020-011615CUA at 2022 Mission St). The Commission manages late-night impacts through hour restrictions.",
+   "verdict": "partially_supported",
+   "supported_text": "Expected condition: Hours of operation limited to between 6 a.m. or 8 a.m. and 10 p.m. or 2 a.m., depending on the concept and neighborhood context. Basis: Recent CUA approvals in NCT-MISSION imposed 10 p.m. closing for a beer-and-wine restaurant (2021-006276CUA at 2034 Mission St) and 10 p.m. for outdoor dining (2023-001895CUA at 2214 Mission St), but 2 a.m. closing for a restaurant with place of entertainment (2020-011615CUA at 2022 Mission St).",
+   "cut_problem": null,
+   "recheck": "partially_supported",
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records show the specific hour restrictions imposed but do not state the general principle about how the Commission manages late-night impacts."
+  },
+  {
+   "item_id": "step:1",
+   "kind": "playbook",
+   "original": "Filing step: Engage a liquor license broker to identify and secure a Type 48 license from another bar located within the Mission Alcoholic Beverage Special Use District that is willing to transfer. What to say: Tell the broker the license must come from a bar (Type 48 holder) currently located within the Mission Alcoholic Beverage Special Use District boundaries, as required by Planning Code Section 249.60(b)(2)(C). Confirm the source location and that the seller has no outstanding ABC violations. Do not close on the license purchase until Planning has issued the Conditional Use Authorization, because the CUA is required before ABC will approve the transfer. Make the lease contingent on obtaining both the CUA and the license transfer approval.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms the district and code section but does not contain the rule text or the specific transfer and CUA requirements cited."
+  },
+  {
+   "item_id": "step:2",
+   "kind": "playbook",
+   "original": "Filing step: File a Conditional Use Authorization application with San Francisco Planning for a bar use at 200 Capp St, referencing the Type 48 license transfer from within the Mission SUD. What to say: State that the bar will use a Type 48 license transferred from [source address within the Mission Alcoholic Beverage SUD]. Commit to all Planning Code Section 202.2 operating conditions: appoint a community liaison, post a contact telephone number, implement a good-neighbor policy including soundproofing and litter control within a one-block radius. Commit to the Section 249.60(d) facade and lighting requirements: provide outside lighting, limit window signage to 33% of window area, and maintain 50% clear glazing on street-facing facades. Propose operating hours (state the proposed closing time; expect the Commission may condition it). Describe the concept as a neighborhood bar with recorded music, no food service, and no live entertainment or dancing. Include a sound study if the space shares walls or floors with residential units.",
+   "verdict": "unsupported",
+   "supported_text": "",
+   "cut_problem": null,
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The records confirm CUA requirement and license transfer within Mission SUD but do not state the specific Section 202.2 or 249.60(d) requirements, Commission conditioning of hours, or sound study requirement."
+  },
+  {
+   "item_id": "step:4",
+   "kind": "playbook",
+   "original": "Filing step: File a building permit application with DBI for tenant improvements and exterior signage, routing it to Planning for zoning review under Planning Code Section 175. What to say: Submit plans showing the bar layout, finishes, any structural or mechanical work, and the occupant load calculation. Attach the approved CUA. If the occupant load is 50 or more, the space is Assembly Group A-2 and the permit must address accessibility, exits, and fire-safety systems for that group. If fewer than 50, it is Group B. Identify the existing occupancy group and whether a change of occupancy is triggered; if so, the permit must bring the space into full code compliance for the new group. Route the sign permit through Planning for compliance with Article 6 sign controls.",
+   "verdict": "partially_supported",
+   "supported_text": "Filing step: File a building permit application with DBI for tenant improvements and exterior signage. Identify the existing occupancy group and whether a change of occupancy is triggered; if so, the permit must bring the space into full code compliance for the new group.",
+   "cut_problem": "does not keep the labelled layout",
+   "recheck": null,
+   "result": "dropped",
+   "shown": null,
+   "confidence": null,
+   "citations": [],
+   "note": "The record confirms DBI building permit for tenant improvements and change of occupancy but does not state the routing, plan requirements, occupancy classifications, or sign permit procedures."
+  },
+  {
+   "item_id": "timeline",
+   "kind": "timeline",
+   "original": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day and cost ranges cover the Conditional Use Authorization (120 to 300 days, $3,100 to $15,000 per the catalog) from filing to Commission approval, which is the critical path. These are times and costs to approval for the CUA. ABC license transfer (90 to 180 days, cost depends on the purchase price of the license from the seller, typically $100,000 to $450,000 in San Francisco) and the building permit (14 to 120 days, $800 to $15,000) run in parallel or follow the CUA. The CUA timeline depends on pre-application meetings, environmental review, hearing scheduling, and any appeals; the catalog estimates 120 to 300 days. The building permit depends on the scope of tenant improvements and plan completeness. Government fees for the CUA, building permit, business registration, sign permit, and health permit total roughly $4,000 to $17,000; the Type 48 license purchase from another bar is the largest cost but is paid to a private seller, not a government agency, so it is not included in the cost range shown here. If the count of eating and drinking uses in NCT-MISSION is already at or above the 179-unit cap, the CUA may not be grantable, in which case no time or cost to approval can be given until Planning confirms the count.",
+   "verdict": "partially_supported",
+   "supported_text": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day and cost ranges cover the Conditional Use Authorization (120 to 300 days, $3,100 to $15,000 per the catalog) from filing to Commission approval, which is the critical path. These are times and costs to approval for the CUA. The building permit (14 to 120 days, $800 to $15,000) runs in parallel or follows the CUA. The CUA timeline depends on pre-application meetings, environmental review, hearing scheduling, and any appeals; the catalog estimates 120 to 300 days. The building permit depends on the scope of tenant improvements and plan completeness.",
+   "cut_problem": "adds or moves 'runs': a cut keeps the sentence's own words in their order",
+   "recheck": null,
+   "result": "downgraded",
+   "shown": "Estimated time: 120 to 300 days. Estimated government cost: $3,100 to $15,000. Notes: The day and cost ranges cover the Conditional Use Authorization (120 to 300 days, $3,100 to $15,000 per the catalog) from filing to Commission approval, which is the critical path. These are times and costs to approval for the CUA. ABC license transfer (90 to 180 days, cost depends on the purchase price of the license from the seller, typically $100,000 to $450,000 in San Francisco) and the building permit (14 to 120 days, $800 to $15,000) run in parallel or follow the CUA. The CUA timeline depends on pre-application meetings, environmental review, hearing scheduling, and any appeals; the catalog estimates 120 to 300 days. The building permit depends on the scope of tenant improvements and plan completeness. Government fees for the CUA, building permit, business registration, sign permit, and health permit total roughly $4,000 to $17,000; the Type 48 license purchase from another bar is the largest cost but is paid to a private seller, not a government agency, so it is not included in the cost range shown here. If the count of eating and drinking uses in NCT-MISSION is already at or above the 179-unit cap, the CUA may not be grantable, in which case no time or cost to approval can be given until Planning confirms the count.",
+   "confidence": "needs_confirmation",
+   "citations": [],
+   "note": "The cited catalogs do not mention ABC license transfer times/costs, the $4,000-$17,000 total, other permit types, or the 179-unit NCT-MISSION cap."
+  }
+ ]
+}
