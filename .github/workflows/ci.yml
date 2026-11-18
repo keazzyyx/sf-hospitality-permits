@@ -14,8 +14,8 @@ jobs:
     name: Catalog schema
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: python3 packages/catalog/scripts/validate.py
 
@@ -23,8 +23,8 @@ jobs:
     name: Conditions search (node --test)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: 22 }
       - run: node --test tools/conditions-search/tests/*.test.mjs
 
@@ -44,14 +44,14 @@ jobs:
       WEB_VERIFY_ENABLED: "false"
       PRECEDENT_TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sfhp_test
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
         with:
           enable-cache: true
           # The Python pins are apps/api/requirements-lock.txt (uv pip compile), not a uv.lock: key the cache on it
           # and the project files instead of the default **/uv.lock.
           cache-dependency-glob: "apps/api/requirements-lock.txt\napps/api/pyproject.toml\npackages/precedent/pyproject.toml"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: uv venv .venv && . .venv/bin/activate && uv pip install -r requirements-lock.txt -e "../../packages/precedent[dev]" -e ".[dev]"
       - run: . .venv/bin/activate && ruff check app tests && ruff format --check app tests
@@ -72,11 +72,11 @@ jobs:
       NEXT_PUBLIC_API_URL: http://localhost:8000
       NEXT_PUBLIC_SITE_URL: http://localhost:3100
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # pnpm's version comes from the root package.json "packageManager" field (one source of truth);
       # pnpm/action-setup fails when a version is also given here.
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter web lint
@@ -84,7 +84,7 @@ jobs:
       - run: pnpm --filter web build
       - run: pnpm --filter web exec playwright install --with-deps chromium
       - run: pnpm --filter web test:e2e
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: playwright-report
@@ -95,10 +95,10 @@ jobs:
     name: Search site front end (tsc, build, playwright)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # (the conditions search's own node tests run in the conditions job above)
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter showcase typecheck
@@ -107,7 +107,7 @@ jobs:
       # builds the app, serves it and the current page (python3 -m http.server), and runs e2e/ (the public site's
       # own checks, e2e-site/, need a built site and the live site's folder outside the repository: run them locally)
       - run: pnpm --filter showcase test:e2e
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: showcase-playwright
