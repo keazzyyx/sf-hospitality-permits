@@ -15,7 +15,7 @@ The repository holds three things:
 1. **SF Conditions Search**, a public, read-only search over every condition of approval in the San Francisco
    Planning Commission's Conditional Use motions on food, drink and entertainment premises decided from January
    2010 on: 5,049 conditions from 352 motions (motions decided 14 Jan 2010 to 3 Sep 2026). Each result links to
-   the adopted motion at the page where the condition starts. Live at **https://sf-conditions-search.vercel.app**.
+   the adopted motion at the page where the condition starts. Live at **(https://permits.kartikeyjandial.com)**.
    Every result card has a "Wrong or missing? Tell me" e-mail link, and page views are counted by Vercel Web
    Analytics without cookies (see [The conditions search](#the-conditions-search)).
 2. **A rules engine** that reads the San Francisco Planning Code controls and the public record for an address
