@@ -1,0 +1,1526 @@
+/* Prototype C, the living grid: San Francisco's streets are the ground of the whole page. The world is one fixed
+   canvas behind everything; the gate, the story's panel and the search are paper laid over it. */
+
+:root {
+  --c-head: 64px;
+  /* the motion sheet's paper, a shade off the ground so it reads as a thing lying on it */
+  --c-sheet: var(--paper);
+  --c-sheet-edge: color-mix(in srgb, var(--ink) 42%, var(--paper));
+  --stamp-paper: var(--c-sheet);
+  --c-panel-w: clamp(384px, 35vw, 520px);
+}
+:root[data-theme="blueprint"] {
+  --c-sheet: color-mix(in srgb, var(--paper) 84%, var(--line));
+  --c-sheet-edge: color-mix(in srgb, var(--ink) 46%, var(--paper));
+}
+
+/* the streets are the grid here: the graph paper of the other pages is left out */
+body.page-c {
+  background-image: none;
+}
+.page-c .shell-head {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--paper);
+}
+.page-c .shell-main,
+.page-c .shell-foot {
+  position: relative;
+  z-index: 2;
+}
+.page-c .shell-foot {
+  margin-top: 0;
+  background: var(--paper);
+  z-index: 6;
+}
+/* one grid for the whole page: the header runs the full width with the story's own gutters, so the wordmark sits
+   over the chapter text and the theme button over the map's legend */
+.page-c .shell-head__inner {
+  width: auto;
+  margin-inline: var(--c-gutter);
+}
+:root {
+  --c-gutter: 48px;
+}
+@media (max-width: 899px), (max-aspect-ratio: 21/20) {
+  :root {
+    --c-gutter: 16px;
+  }
+}
+
+/* ---- the world ------------------------------------------------------------------------------------------------ */
+
+.c-world,
+.c-flat {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 320ms linear;
+}
+.c-world.is-on,
+.c-flat.is-on {
+  opacity: 1;
+}
+.c-flat path {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.c-flat .c-flat__minor {
+  stroke: var(--line);
+  stroke-width: 0.8;
+  opacity: 0.26;
+}
+.c-flat .c-flat__major {
+  stroke: var(--line);
+  stroke-width: 1.3;
+  opacity: 0.6;
+}
+:root[data-theme="blueprint"] .c-flat .c-flat__minor {
+  opacity: 0.2;
+}
+:root[data-theme="blueprint"] .c-flat .c-flat__major {
+  opacity: 0.5;
+}
+.c-flat circle {
+  fill: var(--ink);
+  transition:
+    opacity var(--dur-2) var(--ease),
+    r var(--dur-2) var(--ease);
+}
+.c-flat circle.is-dim {
+  opacity: 0.25;
+}
+.c-flat circle.is-lit {
+  r: 3.6px;
+}
+.c-flat circle.is-hero {
+  fill: var(--stamp);
+  r: 4.5px;
+  opacity: 1;
+}
+
+/* ---- what is drawn over the world: the readout, the scale, the label of the nearest motion --------------------- */
+
+.c-hud {
+  position: fixed;
+  inset: var(--c-head) 0 0 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: var(--ink-2);
+  opacity: 0;
+  transition: opacity 320ms linear;
+}
+.c-hud.is-on {
+  opacity: 1;
+}
+/* the legend: a plate of paper in the corner, so no street runs through it */
+.c-readout {
+  position: absolute;
+  right: var(--c-gutter);
+  bottom: 20px;
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  padding: 7px 10px 6px;
+  background: var(--paper);
+  font-variant-numeric: tabular-nums;
+  white-space: pre;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.c-readout__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.c-north {
+  display: block;
+  overflow: visible;
+}
+.c-north path {
+  fill: var(--ink-2);
+}
+.c-north g {
+  transition: transform 120ms linear;
+}
+.c-readout__where {
+  display: none;
+}
+.c-readout__where.is-on {
+  display: block;
+}
+.c-readout__where b {
+  font-weight: 400;
+  color: var(--ink);
+}
+.c-scale {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.c-scale i {
+  display: block;
+  height: 5px;
+  border: 1px solid var(--ink-2);
+  border-top: 0;
+}
+.c-caption {
+  position: absolute;
+  left: 24px;
+  top: 18px;
+  margin: 0;
+  text-transform: uppercase;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.c-caption b {
+  font-weight: 400;
+  color: var(--ink);
+}
+.c-hud[data-mode="gate"] .c-caption,
+.c-hud[data-mode="story"] .c-caption {
+  opacity: 0;
+}
+.c-tag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 1px 6px 0;
+  background: var(--ink);
+  color: var(--paper);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 120ms linear,
+    visibility 0s linear 120ms;
+  will-change: transform;
+}
+.c-tag.is-on {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.c-tag i {
+  /* a short leader from the plate down to its point */
+  position: absolute;
+  left: -9px;
+  top: 100%;
+  width: 13px;
+  height: 1px;
+  background: var(--ink);
+  transform-origin: 100% 0;
+  rotate: -42deg;
+}
+.c-tag[data-side="left"] i {
+  left: auto;
+  right: -9px;
+  transform-origin: 0 0;
+  rotate: 42deg;
+}
+/* a few matches, each named: paper plates, lighter than the one under the pointer */
+.c-tag--mark,
+.c-tag--wire {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.c-wire {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.c-wire line,
+.c-wire circle {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+  opacity: 0;
+  transition: opacity 140ms linear;
+}
+.c-wire circle {
+  stroke-width: 1.5;
+}
+.c-wire.is-on line,
+.c-wire.is-on circle {
+  opacity: 0.9;
+}
+
+html.c-gl-lost .c-labels,
+html.c-gl-lost .c-hud {
+  visibility: hidden;
+}
+
+/* ---- the gate: the motion lies on the grid, the stamp hangs over it ------------------------------------------------ */
+
+html.c-gate-on {
+  overflow: hidden;
+}
+.c-gate {
+  position: fixed;
+  inset: var(--c-head) 0 0 0;
+  z-index: 20;
+  overflow: hidden;
+  touch-action: pinch-zoom;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+.c-gate__stage {
+  position: absolute;
+  inset: 0;
+}
+/* the first paint's ground: the city's outline, until its streets draw on */
+.c-outline {
+  position: absolute;
+  left: 0;
+  top: calc(var(--c-head) * -1);
+  width: 100%;
+  height: calc(100% + var(--c-head));
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity 700ms linear;
+}
+.c-outline path {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+  opacity: 0.55;
+}
+.c-outline.is-gone {
+  opacity: 0;
+}
+/* the plane of the ground, as the camera sees it: the script lays it with a matrix */
+.c-plane {
+  position: absolute;
+  left: 0;
+  top: calc(var(--c-head) * -1);
+  width: 560px;
+  height: 724px;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+.c-stack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 560px;
+  height: 724px;
+}
+.c-under {
+  position: absolute;
+  inset: 0;
+  rotate: 1.5deg;
+  translate: 3px 3px;
+  background: var(--c-sheet);
+  border: 1px solid var(--c-sheet-edge);
+}
+.c-under::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  rotate: -2.4deg;
+  translate: -2px 1px;
+  background: var(--c-sheet);
+  border: 1px solid var(--c-sheet-edge);
+}
+.c-motion {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 53px 28px;
+  background: var(--c-sheet);
+  border: 1px solid var(--c-sheet-edge);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 1.34;
+}
+.c-motion__staple {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  width: 19px;
+  border-top: 2px solid color-mix(in srgb, var(--ink) 70%, var(--paper));
+  rotate: -38deg;
+}
+.c-motion__head {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--ink);
+}
+.c-motion__title {
+  font-size: 34.5px;
+  line-height: 1.04;
+  letter-spacing: -0.012em;
+}
+.c-motion__hearing {
+  margin-top: 11px;
+  font-family: var(--font-data);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+}
+.c-motion__fields {
+  display: grid;
+  grid-template-columns: 106px 1fr;
+  gap: 5px 7px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.c-motion__fields dt {
+  font-style: italic;
+  font-size: 15.2px;
+  line-height: 1.22;
+}
+.c-motion__fields dd {
+  font-family: var(--font-data);
+  font-size: 11px;
+  line-height: 1.52;
+  padding-top: 1.5px;
+  font-variant-numeric: tabular-nums;
+}
+.c-motion__asked {
+  margin-top: 16px;
+  font-size: 19.2px;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.c-motion__section {
+  margin-top: 14px;
+  font-family: var(--font-data);
+  font-size: 9px;
+  line-height: 1.3;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.c-motion__ruled {
+  margin-top: 5px;
+}
+.c-motion__ruled i {
+  display: block;
+  height: 1px;
+  margin: 10.2px 0 0;
+  background: color-mix(in srgb, var(--ink) 34%, var(--c-sheet));
+}
+.c-motion__ruled i:first-child {
+  margin-top: 8.4px;
+}
+.c-motion__line {
+  margin-top: 6.4px;
+  margin-bottom: -2px;
+}
+.c-motion__foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 8.4px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-data);
+  font-size: 8.4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* what a press does to the sheet: a pencil ring that closes, and the die's shade */
+.c-press {
+  position: absolute;
+  width: 0;
+  height: 0;
+  rotate: var(--mark-tilt, -7deg);
+  pointer-events: none;
+}
+.c-press__dent {
+  position: absolute;
+  translate: -50% -50%;
+  background: color-mix(in srgb, var(--ink) 16%, transparent);
+  opacity: 0;
+}
+:root[data-theme="blueprint"] .c-press__dent {
+  background: color-mix(in srgb, var(--ink-2) 22%, transparent);
+}
+.c-press__gauge {
+  position: absolute;
+  translate: -50% -50%;
+  overflow: visible;
+  opacity: 0;
+}
+.c-press__gauge path {
+  fill: none;
+  stroke: var(--ink-2);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+.c-stack .stamp-mark.is-ghost {
+  opacity: var(--ghost, 0.2);
+  animation: c-ghost 2.5s linear forwards;
+}
+@keyframes c-ghost {
+  to {
+    opacity: 0;
+  }
+}
+
+.c-gate__prompt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.c-gate__button {
+  appearance: none;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+  padding: 6px 14px;
+  background: var(--paper);
+  border: 0;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.c-gate__key {
+  display: inline-block;
+  padding: 3px 10px 2px;
+  border: 1px solid var(--ink);
+  border-bottom-width: 3px;
+  border-radius: 2px;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  transition:
+    translate 80ms linear,
+    border-bottom-width 80ms linear;
+}
+.c-gate[data-gate="charging"] .c-gate__key,
+.c-gate__button.is-pressed .c-gate__key,
+.c-gate__button:active .c-gate__key {
+  translate: 0 2px;
+  border-bottom-width: 1px;
+}
+@media (pointer: coarse) {
+  .c-gate__key {
+    display: none;
+  }
+}
+.c-gate--still .c-gate__button {
+  border: 1px solid var(--edge);
+  letter-spacing: 0.16em;
+}
+.c-gate--still .c-gate__button:hover {
+  border-color: var(--line);
+  color: var(--line);
+}
+.c-gate__note {
+  position: absolute;
+  left: calc(50% + 250px);
+  bottom: 22%;
+  width: 15ch;
+  margin: 0;
+  text-align: left;
+  font-family: var(--font-hand);
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--ink-2);
+  /* a halo of the ground round each letter, as the map's labels have their plate: no street runs through a word */
+  text-shadow:
+    0 0 2px var(--paper),
+    0 0 2px var(--paper),
+    0 0 4px var(--paper),
+    0 0 8px var(--paper);
+  pointer-events: none;
+  transition: opacity 200ms linear;
+}
+.c-gate__note span {
+  display: inline-block;
+  white-space: pre;
+  opacity: 0;
+  animation: c-write var(--write, 120ms) linear var(--at, 0ms) forwards;
+}
+.c-gate__note.is-erased {
+  opacity: 0;
+}
+@keyframes c-write {
+  to {
+    opacity: 1;
+  }
+}
+.c-gate[data-gate="stamped"] .c-gate__prompt,
+.c-gate[data-gate="cracking"] .c-gate__prompt,
+.c-gate[data-gate="open"] .c-gate__prompt,
+.c-gate.is-fading {
+  opacity: 0;
+}
+.c-gate.is-fading {
+  transition: opacity 150ms linear;
+}
+
+/* the motion button, by the theme flip: two bars while the map moves of itself, a triangle once it is paused */
+.c-pause {
+  order: 3;
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: -6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--ink);
+  transition: color var(--dur-1) var(--ease);
+}
+.c-pause[hidden] {
+  display: none;
+}
+.c-pause:hover {
+  color: var(--line);
+}
+.c-pause svg path {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+.c-pause .c-pause__play {
+  display: none;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.c-pause[aria-pressed="true"] .c-pause__bars {
+  display: none;
+}
+.c-pause[aria-pressed="true"] .c-pause__play {
+  display: inline;
+}
+@media (pointer: coarse) {
+  .c-pause {
+    width: var(--tap);
+    height: var(--tap);
+    margin-right: -8px;
+  }
+}
+@media print {
+  .c-pause {
+    display: none;
+  }
+}
+
+/* the seal: a small copy of the mark by the wordmark; pressing it replays the opening */
+.c-seal {
+  order: 1;
+  appearance: none;
+  position: relative;
+  width: 76px;
+  height: 40px;
+  margin-right: auto;
+  padding: 0;
+  background: none;
+  border: 0;
+}
+.c-seal[hidden] {
+  display: none;
+}
+.c-seal .stamp-mark {
+  left: 50%;
+  top: 50%;
+  transition: scale var(--dur-2) var(--ease);
+}
+.c-seal:hover .stamp-mark {
+  scale: 1.06;
+}
+.shell-head__inner:has(.c-seal:not([hidden])) .mark-link {
+  margin-right: 0;
+}
+@media (max-width: 560px) {
+  .c-seal {
+    width: 60px;
+    height: var(--tap);
+  }
+  /* no room beside "Skip to search": the seal waits for the search, where that link has gone */
+  html[data-c-mode="story"] .c-seal {
+    display: none;
+  }
+  /* (and the wordmark keeps the free space, so the controls on the right never move between states) */
+  html[data-c-mode="story"] .page-c .shell-head__inner .mark-link,
+  html[data-c-mode="story"] .shell-head__inner .mark-link {
+    margin-right: auto;
+  }
+  /* the plain layout (a short window: a page zoomed to 400%, a phone on its side) keeps "Skip to search" in sight in
+     the search too, so the seal never has room beside it there: it waits (the story is in the page as sections) */
+  html.c-flow .c-seal {
+    display: none;
+  }
+  html.c-flow .page-c .shell-head__inner .mark-link {
+    margin-right: auto;
+  }
+  .page-c .shell-head__inner {
+    gap: var(--s-3);
+  }
+}
+
+/* under 400 px (a phone, or 1440 by 900 zoomed to 400%) the wordmark, "Skip to search" in words, the pause and the
+   theme flip do not fit at their full size: the skip link keeps its arrow and gives up its words (they stay its
+   name), as on the narrowest phones, so the buttons keep their size and nothing scrolls sideways */
+@media (max-width: 399px) {
+  .page-c .shell-skip {
+    min-width: var(--tap);
+    min-height: var(--tap);
+    justify-content: center;
+  }
+  .page-c .shell-skip span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* ---- the story: a sticky stage over the world, a paper panel for the text ------------------------------------------ */
+
+.c-story {
+  z-index: 4;
+}
+.c-stage {
+  pointer-events: none;
+}
+.c-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--c-panel-w);
+  background: var(--paper);
+  border-right: 1px solid var(--rule);
+  pointer-events: auto;
+  /* --in: 0 away, 1 in place */
+  transform: translate3d(calc((var(--in, 0) - 1) * 101%), 0, 0);
+  will-change: transform;
+}
+.c-story.is-waiting .c-panel {
+  transform: translate3d(-101%, 0, 0);
+}
+.c-story.is-arriving .c-panel {
+  transition: transform 620ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.c-chapter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  gap: 16px;
+  padding: 40px 40px 56px var(--c-gutter);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  opacity: 0;
+}
+.c-chapter__kicker {
+  margin-bottom: 4px;
+  color: var(--ink-2);
+}
+.c-chapter__title {
+  font-size: var(--fs-h2);
+  line-height: 1.04;
+  max-width: 11em;
+  hyphens: manual;
+}
+.c-chapter[data-chapter="7"] .c-chapter__title {
+  font-size: var(--fs-h1);
+}
+.c-count {
+  font-variant-numeric: tabular-nums;
+}
+.c-chapter__body {
+  font-size: var(--fs-read);
+  line-height: 1.55;
+  max-width: 30em;
+}
+.c-chapter__quote {
+  margin: 0;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  max-width: 22em;
+}
+.c-chapter__source,
+.c-chapter__aside {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-width: 34em;
+}
+.c-chapter__source {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.c-cue {
+  margin-top: 16px;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--line);
+}
+.c-cue__arrow {
+  display: inline-block;
+}
+/* the arrow nudges a few times while the first chapter is on screen, and only then (a hidden arrow that kept
+   moving would have the page painted at every frame) */
+html[data-c-mode="story"]:not(.c-still) .c-story:not(.is-waiting)[data-chapter="0"] .c-cue__arrow {
+  animation: c-nudge 1.8s var(--ease-in-out) 4;
+}
+@keyframes c-nudge {
+  50% {
+    translate: 0 4px;
+  }
+}
+
+/* the vote, as the motion prints it */
+.c-vote {
+  display: grid;
+  gap: 6px;
+  margin-top: 2px;
+}
+.c-vote div {
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  align-items: baseline;
+  padding-top: 6px;
+  border-top: 1px solid var(--rule);
+}
+.c-vote dt {
+  color: var(--ink-2);
+}
+.c-vote dd {
+  font-size: var(--fs-read);
+  line-height: 1.5;
+}
+.c-vote__name {
+  color: var(--ink-2);
+  opacity: 0.45;
+  transition:
+    opacity var(--dur-2) var(--ease),
+    color var(--dur-2) var(--ease);
+}
+.c-vote__name.is-in {
+  color: var(--ink);
+  opacity: 1;
+}
+
+/* the featured conditions, one at a time */
+.c-steps {
+  position: relative;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  min-height: 230px;
+}
+.c-step {
+  position: absolute;
+  inset: 0 0 auto 0;
+  display: grid;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ink);
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 8px;
+  transition:
+    opacity var(--dur-2) var(--ease),
+    translate var(--dur-3) var(--ease),
+    visibility 0s linear var(--dur-2);
+}
+.c-step.is-current {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+  transition-delay: 0s;
+}
+.c-step .label {
+  color: var(--ink-2);
+}
+.c-step__title {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--fs-lead);
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+.c-step__gloss {
+  font-size: var(--fs-read);
+  line-height: 1.5;
+  max-width: 28em;
+}
+.c-step__link {
+  justify-self: start;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin-top: 4px;
+  padding: 0 12px;
+  border: 1px solid var(--edge);
+  font-size: var(--fs-small);
+  color: var(--line);
+  text-decoration: none;
+}
+.c-step__link:hover {
+  border-color: var(--line);
+}
+
+/* the rail of chapters, down the right-hand edge, on its own strip of paper: it never lies over the map */
+.c-railstrip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--c-rail-w, 48px);
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  pointer-events: auto;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.c-story--tall .c-railstrip {
+  display: none;
+}
+.c-rail {
+  right: 8px;
+  top: 22%;
+  bottom: 22%;
+  pointer-events: auto;
+  transition: opacity var(--dur-2) var(--ease);
+}
+.c-story.is-waiting .c-rail,
+.c-story.is-ended .c-rail,
+.c-story.is-waiting .c-railstrip,
+.c-story.is-ended .c-railstrip {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---- labels on the map ----------------------------------------------------------------------------------------------- */
+
+.c-labels {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.c-labels > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  will-change: transform;
+}
+/* every label on the map stands on its own plate of paper: no line runs through a word */
+.c-plate {
+  padding: 2px 7px 1px;
+  background: var(--paper);
+}
+.c-leaders {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  opacity: 1;
+  visibility: visible;
+}
+.c-leaders line {
+  stroke: var(--ink-2);
+  stroke-width: 1;
+  opacity: 0;
+}
+.c-note {
+  font-family: var(--font-hand);
+  font-size: 19px;
+  line-height: 1.15;
+  color: var(--ink-2);
+}
+.c-nowrap {
+  white-space: nowrap;
+}
+.c-note--street {
+  font-size: 17px;
+}
+.c-note--line {
+  color: var(--ink);
+}
+.c-tally,
+.c-place,
+.c-seat {
+  font-size: var(--fs-micro);
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.c-tally b,
+.c-place b {
+  font-weight: 400;
+}
+.c-seat {
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+.c-mark {
+  transform-origin: 0 0;
+}
+.c-mark .stamp-mark {
+  left: 50%;
+  top: 50%;
+}
+
+/* the page of the motion, set in type */
+.c-page {
+  position: absolute;
+  left: calc(var(--c-free-x) + var(--c-free-w) / 2);
+  top: 50%;
+  width: min(430px, var(--c-free-w) - 48px);
+  padding: 26px 30px 22px;
+  background: var(--c-sheet);
+  border: 1px solid var(--c-sheet-edge);
+  pointer-events: auto;
+  opacity: var(--in, 0);
+  transform: translate3d(-50%, calc(-50% + (1 - var(--in, 0)) * 28px), 0) rotate(-1.2deg);
+}
+.c-page__head {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--ink);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.c-page__item {
+  display: grid;
+  grid-template-columns: 2.2em 1fr;
+  padding: 9px 6px 9px 4px;
+  margin-inline: -6px;
+  border-bottom: 1px solid var(--rule);
+  transition: background-color var(--dur-2) var(--ease);
+}
+.c-page__item.is-current {
+  background: var(--wash);
+}
+/* (on the highlighter the secondary ink is too faint: the current row's number is set in the ink) */
+.c-page__item.is-current .c-page__num {
+  color: var(--ink);
+}
+.c-page__num {
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.c-page__text {
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.c-page__item.is-current .c-page__text {
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+.c-page__text b {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 13px;
+}
+.c-page__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin-top: 6px;
+  font-size: var(--fs-small);
+}
+
+/* ---- the search, in the world: an opaque panel, the map beside it ----------------------------------------------------- */
+
+.c-search {
+  position: relative;
+  z-index: 5;
+  margin-top: calc(var(--c-overlap, 0px) * -1);
+  pointer-events: none;
+}
+.c-search__panel {
+  width: var(--c-search-w, 64vw);
+  min-height: calc(100vh - var(--c-head));
+  padding: 8px clamp(24px, 3.4vw, 56px) 96px var(--c-gutter);
+  background: var(--paper);
+  border-right: 1px solid var(--rule);
+  pointer-events: auto;
+}
+.c-search__panel .cs-card {
+  transition: background-color var(--dur-1) var(--ease);
+}
+
+/* ---- the flip: the new theme spreads as a circle from the mark ------------------------------------------------------- */
+
+html.c-flip::view-transition-old(root),
+html.c-flip::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+html.c-flip::view-transition-old(root) {
+  z-index: 1;
+}
+html.c-flip::view-transition-new(root) {
+  z-index: 2;
+}
+
+/* ---- a tall window (a phone): the map on top, the text below it -------------------------------------------------------- */
+
+.c-story--tall .c-panel {
+  top: auto;
+  width: 100%;
+  height: var(--c-panel-h);
+  border-right: 0;
+  border-top: 1px solid var(--rule);
+  transform: translate3d(0, calc((1 - var(--in, 0)) * 101%), 0);
+}
+.c-story--tall.is-waiting .c-panel {
+  transform: translate3d(0, 101%, 0);
+}
+/* the text scrolls inside its panel when it does not fit; the previous / next pair has its own strip under it */
+.c-story--tall .c-chapter {
+  bottom: 52px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 18px 20px 16px var(--c-gutter);
+}
+.c-story--tall .c-panel::after {
+  content: "";
+  position: absolute;
+  left: var(--c-gutter);
+  right: var(--c-gutter);
+  bottom: 52px;
+  border-top: 1px solid var(--rule-quiet);
+}
+/* seven names under seven seats do not fit across a phone: the panel prints them, the map keeps the count */
+.c-story--tall .c-seat {
+  display: none;
+}
+.c-story--tall .c-chapter__title {
+  font-size: 1.75rem;
+}
+.c-story--tall .c-chapter[data-chapter="7"] .c-chapter__title {
+  font-size: var(--fs-h2);
+}
+.c-story--tall .c-chapter__body,
+.c-story--tall .c-step__gloss,
+.c-story--tall .c-vote dd {
+  font-size: var(--fs-note);
+  line-height: 1.45;
+}
+.c-story--tall .c-chapter__quote {
+  font-size: 1.125rem;
+}
+
+.c-story--tall .c-steps {
+  min-height: 200px;
+}
+.c-story--tall .c-step__title {
+  font-size: var(--fs-read);
+}
+.c-story--tall .c-rail {
+  top: auto;
+  right: 8px;
+  bottom: 6px;
+}
+.c-story--tall .c-page {
+  left: 50%;
+  top: calc(var(--c-free-h) / 2 + 4px);
+  width: calc(100% - 32px);
+  padding: 12px 16px 10px;
+  transform: translate3d(-50%, calc(-50% + (1 - var(--in, 0)) * 28px), 0) rotate(-0.6deg);
+}
+.c-story--tall .c-page__item {
+  padding-block: 4px;
+}
+.c-story--tall .c-page__text {
+  font-size: 13px;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+.c-story--tall .c-page__item.is-current .c-page__text {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.c-story--tall .c-note {
+  font-size: 16px;
+}
+
+@media (max-width: 899px), (max-aspect-ratio: 21/20) {
+  .c-search__panel {
+    width: 100%;
+    border-right: 0;
+    border-top: 1px solid var(--rule);
+    padding-inline: var(--sheet-gutter);
+  }
+  /* the map is a band over the list: the canvas comes in front of the page, cut to the band */
+  .c-world.is-band,
+  .c-flat.is-band {
+    z-index: 30;
+    background: var(--paper);
+    clip-path: inset(calc(var(--c-head) + 30px) 0 calc(100% - var(--c-head) - 30px - var(--c-band, 30vh)) 0);
+  }
+  .c-hud.is-band {
+    z-index: 31;
+    bottom: auto;
+    height: calc(var(--c-band, 30vh) + 30px);
+    border-bottom: 1px solid var(--rule);
+  }
+  /* the band scrolls away with the page (as if it stood at the top of the search) and comes back with it: it never
+     covers a line of the results; the header stays over it */
+  .c-world.is-band,
+  .c-flat.is-band,
+  .c-hud.is-band {
+    transform: translate3d(0, calc(var(--c-band-shift, 0px) * -1), 0);
+  }
+  html.c-band-gone .c-world.is-band,
+  html.c-band-gone .c-flat.is-band,
+  html.c-band-gone .c-hud.is-band {
+    visibility: hidden;
+  }
+  /* a phone has no room for the legend: the map is a band, and the place under a finger is the tag's to say */
+  .c-readout {
+    display: none;
+  }
+  /* the search's caption has its own row of paper over the band: no stack runs through it */
+  .c-hud.is-band .c-caption {
+    left: 0 !important;
+    right: 0;
+    top: 0 !important;
+    height: 30px;
+    padding: 8px var(--c-gutter) 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+  }
+  .c-gate__note {
+    left: 16px;
+    right: 16px;
+    top: 14px;
+    bottom: auto;
+    width: auto;
+    text-align: center;
+    font-size: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-cue__arrow {
+    animation: none;
+  }
+}
+
+.c-flat__stems line {
+  stroke: var(--line);
+  stroke-width: 2.5;
+}
+.c-flat .c-flat__minor,
+.c-flat .c-flat__major {
+  stroke-width: calc(0.8px + var(--near, 0) * 0.5px);
+}
+.c-flat .c-flat__major {
+  stroke-width: calc(1.3px + var(--near, 0) * 0.9px);
+}
+.c-flat__slab {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.c-flat__slab.is-back {
+  opacity: 0.55;
+}
+.c-flat__slab.is-picked {
+  fill: var(--ink);
+}
+.c-flat__slab-top {
+  fill: color-mix(in srgb, var(--line) 18%, var(--paper));
+  stroke: var(--ink);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+.c-flat__seats circle {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.c-flat__seats circle.is-lit {
+  fill: var(--ink);
+}
+
+/* whatever the page brings into view (a focused link, a linked card) lands under the sticky header, never behind
+   it; the map's band on a phone scrolls away with the page, so it is never in the way */
+html[data-c-mode] {
+  scroll-padding-top: calc(var(--c-head, 64px) + 12px);
+}
+.c-search__panel [data-cs-card] {
+  scroll-margin-top: 4px;
+}
+.c-flat .c-flat__route {
+  stroke: var(--ink);
+  stroke-width: 2.6;
+  stroke-linejoin: round;
+}
+/* the drawn map has no pointer to read and no camera to measure: it keeps the caption and the hairline only */
+.c-hud--flat .c-readout {
+  display: none;
+}
+
+/* ---- the story put away: a returning visit or a link opens on the search alone ----------------------------------- */
+
+html.c-direct .c-story {
+  display: none;
+}
+html.c-direct .c-search {
+  margin-top: 0;
+}
+/* the one line that says the story is there, and brings it back (only while it is put away) */
+.c-replay {
+  display: none;
+  margin: 0;
+  padding: 12px 0 0;
+  font-size: var(--fs-small);
+}
+html.c-direct .c-replay {
+  display: block;
+}
+.c-replay__button {
+  appearance: none;
+  min-height: 32px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  color: var(--line);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.c-replay__button:hover {
+  text-decoration-thickness: 2px;
+}
+@media (pointer: coarse) {
+  .c-replay__button {
+    min-height: var(--tap);
+  }
+}
+/* a phone opened on the search alone: no map over it (the story brings the map back) */
+html.c-mapless .c-world,
+html.c-mapless .c-flat,
+html.c-mapless .c-hud {
+  display: none;
+}
+@media (max-width: 899px), (max-aspect-ratio: 21/20) {
+  html.c-direct:not(.c-mapless) .c-search__panel {
+    padding-top: calc(var(--c-band, 30vh) + 38px);
+  }
+}
+/* the line lines up with the search's own column (the search moves its text in by 64 px from 720 px wide) */
+.c-search__panel {
+  container: c-panel / inline-size;
+}
+@container c-panel (min-width: 720px) {
+  .c-replay {
+    padding-left: 64px;
+  }
+}
+
+/* ---- a chapter longer than its panel: the foot fades, and says there is more ------------------------------------------ */
+
+.c-chapter.is-more {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 64px), transparent calc(100% - 6px));
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 64px), transparent calc(100% - 6px));
+}
+.c-more {
+  position: absolute;
+  right: 40px;
+  bottom: 18px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  min-height: 32px;
+  padding: 0 12px;
+  background: var(--paper);
+  border: 1px solid var(--edge);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--line);
+  cursor: pointer;
+}
+.c-more[hidden] {
+  display: none;
+}
+.c-more:hover {
+  border-color: var(--line);
+}
+/* on a phone the cue sits just over the previous / next strip */
+.c-story--tall .c-more {
+  right: 16px;
+  bottom: 60px;
+}
+
+/* ---- a short window (a page zoomed in, a phone on its side): the story as plain sections the page scrolls through ---- */
+
+.c-story--flow .story-stage {
+  position: static;
+  height: auto;
+  overflow: visible;
+}
+.c-story--flow:not(.is-waiting) .c-panel {
+  visibility: visible !important;
+}
+.c-story--flow .c-panel,
+.c-story--flow.c-story--tall .c-panel {
+  position: static;
+  width: auto;
+  height: auto;
+  border: 0;
+  transform: none !important;
+  will-change: auto;
+}
+.c-story--flow .c-panel::after,
+.c-story--flow .c-labels,
+.c-story--flow .c-railstrip,
+.c-story--flow .c-rail,
+.c-story--flow .c-page,
+.c-story--flow .c-more,
+.c-story--flow .c-cue {
+  display: none;
+}
+.c-story--flow .c-chapter,
+.c-story--flow.c-story--tall .c-chapter {
+  position: static;
+  inset: auto;
+  overflow: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-mask-image: none;
+  mask-image: none;
+  padding: 28px var(--sheet-gutter, 16px) 28px var(--c-gutter);
+  border-bottom: 1px solid var(--rule);
+}
+.c-story--flow .c-steps,
+.c-story--flow.c-story--tall .c-steps {
+  display: grid;
+  gap: 20px;
+  min-height: 0;
+}
+.c-story--flow .c-step {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  translate: none;
+  transition: none;
+}
+html.c-flow .c-search {
+  margin-top: 0;
+}
+/* the map shows at the gate; after it, a window this short gives every line to the text */
+html.c-flow:not(.c-gate-on) .c-world,
+html.c-flow:not(.c-gate-on) .c-flat,
+html.c-flow:not(.c-gate-on) .c-hud {
+  display: none;
+}
+
+/* ---- the map could not be loaded: no empty panel is kept for it --------------------------------------------------- */
+
+html.c-map-failed .c-world,
+html.c-map-failed .c-flat,
+html.c-map-failed .c-hud {
+  display: none;
+}
+html.c-map-failed .c-search__panel {
+  width: 100%;
+  border-right: 0;
+}
+html.c-direct.c-map-failed .c-search__panel {
+  padding-top: 8px;
+}
+.c-mapnote {
+  position: absolute;
+  left: var(--c-free-x);
+  top: 0;
+  width: var(--c-free-w);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 24px;
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  text-align: center;
+  pointer-events: none;
+}
+.c-story--tall .c-mapnote {
+  left: 0;
+  width: 100%;
+  height: var(--c-free-h);
+}
+.c-story--flow .c-mapnote {
+  display: none;
+}
+
+/* forced colours: the current row of the page and the chapter cue keep a visible mark */
+@media (forced-colors: active) {
+  .c-page__item.is-current {
+    outline: 2px solid Highlight;
+    outline-offset: -2px;
+  }
+  .c-more {
+    border-color: CanvasText;
+  }
+}
+
+/* The search panel takes focus (tabindex -1) at the story's end after a touch: no ring for that. */
+#search:focus:not(:focus-visible) {
+  outline: none;
+}

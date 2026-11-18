@@ -1,0 +1,200 @@
+/* /coverage/: the detail behind the coverage notice, set as a document: one reading column, tables ruled like the
+   record, numbers in the data face. */
+
+.cov {
+  padding-top: var(--s-5);
+  /* at least a screen tall, so the footer is not in view to jump when the numbers arrive */
+  min-height: 100vh;
+}
+.cov-back {
+  color: var(--line);
+}
+.cov-head {
+  max-width: var(--measure);
+}
+.cov-title {
+  margin-top: var(--s-4);
+  font-size: clamp(2.5rem, 1.9rem + 2.6vw, 3.5rem);
+  line-height: 1.05;
+}
+.cov-sub {
+  margin-top: 12px;
+  color: var(--ink-2);
+  line-height: 24px;
+}
+.cov-section {
+  margin-top: var(--s-7);
+}
+.cov-h2 {
+  padding-top: 15px;
+  border-top: 1px solid var(--ink);
+  font-size: var(--fs-h3);
+  line-height: 32px;
+  scroll-margin-top: 16px;
+}
+.cov-note {
+  margin-top: 8px;
+  max-width: var(--measure);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cov-lead,
+.cov-text {
+  margin-top: 16px;
+  max-width: var(--measure);
+  line-height: 26px;
+}
+.cov-loading {
+  margin-top: 24px;
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  line-height: 32px;
+}
+.cov-error {
+  margin-top: 24px;
+  padding: 4px 0 8px 20px;
+  border-left: 1px solid var(--stamp);
+}
+.cov-error__line {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  line-height: 32px;
+}
+.cov-error p + p {
+  margin-top: 16px;
+}
+
+/* the numbers: a ruled ledger, labels left, figures right in the data face */
+.cov-facts {
+  width: 100%;
+  max-width: 44rem;
+  margin-top: 24px;
+  border-collapse: collapse;
+  border-top: 1px solid var(--rule);
+}
+.cov-facts th,
+.cov-facts td {
+  padding: 7px 0 8px;
+  border-bottom: 1px solid var(--rule-quiet);
+  vertical-align: top;
+  font-size: var(--fs-note);
+  line-height: 24px;
+}
+.cov-facts th {
+  padding-right: 24px;
+  text-align: left;
+  font-weight: 400;
+  color: var(--ink-2);
+}
+.cov-facts td {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--ink);
+  font-size: var(--fs-small);
+}
+.cov-facts .is-sub th {
+  padding-left: 24px;
+}
+
+/* a wide table scrolls inside its own box, never the page */
+.cov-scroll {
+  margin-top: 24px;
+  overflow-x: auto;
+}
+.cov-table {
+  width: 100%;
+  min-width: 40rem;
+  border-collapse: collapse;
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cov-table th {
+  padding: 6px 16px 6px 0;
+  text-align: left;
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--ink);
+}
+.cov-table td {
+  padding: 6px 16px 7px 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule-quiet);
+}
+.cov-table td:first-child {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* the README's sections, as prose */
+.cov-prose h3 {
+  margin-top: var(--s-5);
+  font-family: var(--font-ui);
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  scroll-margin-top: 16px;
+}
+.cov-prose h4 {
+  margin-top: var(--s-4);
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: var(--ink-2);
+}
+.cov-prose p,
+.cov-prose ul,
+.cov-prose ol {
+  margin-top: 12px;
+  max-width: var(--measure);
+  line-height: 26px;
+  overflow-wrap: anywhere;
+}
+.cov-prose ul,
+.cov-prose ol {
+  padding-left: 20px;
+}
+.cov-prose li + li {
+  margin-top: 6px;
+}
+.cov-prose code {
+  font-family: var(--font-data);
+  font-size: 0.8125em;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.cov-prose b {
+  font-weight: 600;
+}
+.cov-foot {
+  margin-top: var(--s-7);
+  padding-top: 15px;
+  border-top: 1px solid var(--rule);
+}
+
+/* a narrow phone: a long value (the two dates) may take two lines, so the ledger never runs off the side */
+@media (max-width: 420px) {
+  .cov-facts th {
+    padding-right: 16px;
+  }
+  .cov-facts td {
+    white-space: normal;
+  }
+}
+
+@media (pointer: coarse) {
+  .cov-back {
+    display: inline-block;
+    padding-block: 12px;
+    margin-block: -12px;
+  }
+}

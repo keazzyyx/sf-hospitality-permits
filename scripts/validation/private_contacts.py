@@ -81,3 +81,23 @@ def withhold_private_contacts(text: str | None) -> str | None:
     text = PHONE.sub(_phone, text)
     text = ADDRESS.sub(lambda m: m.group(1) + PLACEHOLDER, text)
     return text
+
+
+def private_contact_strings(text: str | None) -> list[str]:
+    """The strings withhold_private_contacts would take out of `text`: each liaison name, private phone number,
+    private e-mail address and street address, as written. Empty when it would change nothing. (Used by the public
+    site's build to prove none of them is in its output.)"""
+    if not text or not LIAISON.search(text):
+        return []
+    found: list[str] = []
+    for m in NAME.finditer(text):
+        name = m.group(2)
+        if name[0].isupper() and not name.lower().startswith(("the ", "a ", "an ")):
+            found.append(name)
+    found += [m.group(0) for m in EMAIL.finditer(text) if not CITY_EMAIL_DOMAINS.search(m.group(0))]
+    for m in PHONE.finditer(text):
+        digits = re.sub(r"\D", "", m.group(0))
+        if digits not in CITY_PHONES and not digits.startswith(CITY_PHONE_PREFIXES):
+            found.append(m.group(0))
+    found += [m.group(2) for m in ADDRESS.finditer(text)]
+    return found

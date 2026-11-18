@@ -40,3 +40,12 @@ data/
 # conditions search page: local links to cached motion PDFs, never committed
 tools/conditions-search/pdf/
 !tools/conditions-search/data/
+
+# UI concept prototypes (apps/showcase): its prepared data, its coverage page and per-builder build folders
+!apps/showcase/public/data/
+!apps/showcase/src/data/
+!apps/showcase/coverage/
+apps/showcase/dist-*/
+
+# Local MCP client config (per-user; never committed, never published)
+/.mcp.json

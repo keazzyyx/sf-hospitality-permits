@@ -1,5 +1,10 @@
 # sf-hospitality-permits
 
+![The conditions search: stamp, story and search on San Francisco's street grid](docs/ui/proof/c/c.gif)
+
+The conditions search's front page: a stamp opens it, then the story of one motion plays over the city's street
+grid on the way to the search.
+
 Open tools for finding out what a bar, restaurant, cafe or entertainment venue needs from the City of San
 Francisco before it can open at a given address, built only from public records.
 
@@ -102,6 +107,7 @@ this repository.
 ```
 apps/api/            FastAPI service: rules engine (app/memo), intake, reports and PDFs, backtest harness (app/backtest)
 apps/web/            Next.js app: memo pages, checklist, account, admin (Playwright smoke tests in e2e/)
+apps/showcase/       SF Conditions Search's front end (Vite): the stamp, the story over the street grid, the search
 packages/precedent/  ingestion sources, PostGIS and local stores, geocoder, PDF text, ABC archive
 packages/catalog/    permit catalog (JSON + JSON Schema + validator + TypeScript types)
 supabase/            Postgres migrations (schema, RLS policies), auth e-mail templates

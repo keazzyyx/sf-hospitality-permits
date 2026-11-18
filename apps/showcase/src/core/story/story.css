@@ -1,0 +1,175 @@
+/* The scroll story's bones: a tall parent, a sticky stage, and the chapter rail. A page sets --story-top (where
+   the stage sticks: under a sticky header) and gives the stage its height. */
+
+.story-root {
+  position: relative;
+}
+.story-stage {
+  position: sticky;
+  top: var(--story-top, 0px);
+  height: calc(100svh - var(--story-top, 0px));
+  overflow: hidden;
+}
+
+/* ---- the rail: thin ticks down the margin ------------------------------------------------------------------ */
+
+.story-rail {
+  --tick: 12px;
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+}
+.story-rail__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.story-rail__list li {
+  display: flex;
+  flex: 1 1 0;
+}
+.story-rail__track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: var(--rule);
+}
+.story-rail__fill {
+  position: absolute;
+  inset: 0;
+  background: var(--line);
+  transform-origin: 50% 0;
+  transform: scaleY(0);
+}
+.story-rail__tick {
+  appearance: none;
+  position: relative;
+  flex: 1;
+  min-width: 32px;
+  min-height: 28px;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ink-2);
+}
+/* the tick itself: a short rule that meets the track */
+.story-rail__tick::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: var(--tick);
+  height: 1px;
+  background: currentColor;
+  transition:
+    width var(--dur-2) var(--ease),
+    background-color var(--dur-2) var(--ease);
+}
+.story-rail__tick.is-done {
+  color: var(--line);
+}
+.story-rail__tick[aria-current="step"] {
+  color: var(--line);
+}
+.story-rail__tick[aria-current="step"]::before {
+  width: calc(var(--tick) * 2);
+  height: 2px;
+  margin-top: -0.5px;
+}
+.story-rail__tick:hover::before,
+.story-rail__tick:focus-visible::before {
+  width: calc(var(--tick) * 2);
+}
+.story-rail__name {
+  position: absolute;
+  right: calc(var(--tick) * 2 + 10px);
+  top: 50%;
+  transform: translate(6px, -50%);
+  padding: 3px 8px 2px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--dur-1) var(--ease),
+    transform var(--dur-2) var(--ease);
+}
+.story-rail__tick:hover .story-rail__name,
+.story-rail__tick:focus-visible .story-rail__name {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+.story-rail__tick:focus-visible {
+  outline-offset: -2px;
+}
+
+/* ---- the stepper: previous, "4 / 9", next (small touch screens) -------------------------------------------- */
+
+.story-rail__stepper {
+  display: none;
+  align-items: center;
+  gap: 2px;
+}
+.story-rail__step {
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--line);
+}
+.story-rail__step:disabled {
+  color: var(--rule);
+  cursor: default;
+}
+.story-rail__step:active:not(:disabled) {
+  color: var(--ink);
+}
+.story-rail__where {
+  min-width: 3.2em;
+  text-align: center;
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+/* a rail laid across instead of down: the page adds .story-rail--across */
+.story-rail--across .story-rail__list,
+.story-rail--across .story-rail__track {
+  display: none;
+}
+.story-rail--across .story-rail__stepper {
+  display: flex;
+}
+
+/* forced colours (Windows contrast themes): the rail is drawn with backgrounds, which the system would paint over
+   with the page colour; it keeps the system's own text and highlight colours instead */
+@media (forced-colors: active) {
+  .story-rail__track,
+  .story-rail__tick::before {
+    background: CanvasText;
+    forced-color-adjust: none;
+  }
+  .story-rail__fill,
+  .story-rail__tick[aria-current="step"]::before {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}

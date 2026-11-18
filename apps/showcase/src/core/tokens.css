@@ -1,0 +1,384 @@
+/* The material world: paper, ink and a rubber stamp. Three colours per theme (ground, ink, one drawing line) and
+   the stamp. Everything else on a page is one of these six tokens or a mix of two of them. */
+
+:root,
+:root[data-theme="paper"] {
+  color-scheme: light;
+  --paper: #f2ede1; /* ground */
+  --paper-2: #e8e1d0; /* rules, wells */
+  --ink: #171a21; /* text */
+  --ink-2: #474c5b; /* secondary text: 7.3 to 1 on the ground */
+  --line: #1c3bc4; /* cobalt: drawing lines, links, focus, highlights: 7.3 to 1 */
+  --stamp: #e23a2b; /* vermilion: the stamp */
+  --wash: color-mix(in srgb, var(--line) 26%, transparent); /* the highlighter */
+  --paper-0: #fbfaf6; /* a sheet of white paper lying on the ground (prototype A's motion and its slips) */
+}
+
+:root[data-theme="blueprint"] {
+  color-scheme: dark;
+  --paper: #0a0f1f;
+  --paper-2: #131b36;
+  --ink: #dde1ee; /* 14.6 to 1: a step under white, for long reading on the dark ground */
+  --ink-2: #9aa3c0;
+  --line: #9db2ff;
+  --stamp: #ff4d3a;
+  --wash: color-mix(in srgb, var(--line) 30%, transparent);
+  --paper-0: color-mix(in srgb, var(--paper) 86%, var(--line)); /* a sheet lying on the dark ground */
+}
+
+/* before the theme script has run (or without scripts): follow the system */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #0a0f1f;
+    --paper-2: #131b36;
+    --ink: #dde1ee;
+    --ink-2: #9aa3c0;
+    --line: #9db2ff;
+    --stamp: #ff4d3a;
+    --wash: color-mix(in srgb, var(--line) 30%, transparent);
+    --paper-0: color-mix(in srgb, var(--paper) 86%, var(--line));
+  }
+}
+
+:root {
+  /* mixes of the tokens above, named by what they are for */
+  --rule: color-mix(in srgb, var(--ink) 30%, var(--paper)); /* hairlines that carry structure */
+  --rule-quiet: var(--paper-2); /* hairlines between like things */
+  --edge: color-mix(in srgb, var(--ink) 50%, var(--paper)); /* the one line that bounds a control: 3 to 1 or more */
+  --grid-minor: color-mix(in srgb, var(--line) 3.25%, transparent);
+  --grid-major: color-mix(in srgb, var(--line) 7.5%, transparent);
+
+  /* type */
+  --font-display: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-stamp: "Big Shoulders Display", "Arial Narrow", "Helvetica Neue", Impact, sans-serif;
+  --font-hand: "Architects Daughter", "Bradley Hand", "Segoe Print", cursive;
+
+  /* scale: body 16, then a loose fourth upward; micro and small for data */
+  --fs-micro: 0.6875rem; /* 11: labels in mono capitals */
+  --fs-small: 0.8125rem; /* 13: data lines, small print */
+  --fs-note: 0.9375rem; /* 15: notes, tips, menus */
+  --fs-body: 1rem; /* 16 */
+  --fs-read: 1.0625rem; /* 17: text meant to be read at length */
+  --fs-lead: 1.25rem; /* 20 */
+  --fs-h3: 1.75rem; /* 28 */
+  --fs-h2: 2.5rem; /* 40 */
+  --fs-h1: 3.5rem; /* 56 */
+  --fs-hero: 4.5rem; /* 72 */
+
+  /* space: the 8 px minor grid */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 64px;
+  --s-8: 96px;
+  --s-9: 128px;
+
+  /* the sheet: at most 18 major squares wide, always a whole number of 16 px, so its edges sit on grid lines */
+  --sheet-max: 1152px;
+  --sheet-gutter: clamp(16px, 4vw, 48px);
+  --measure: 34.5rem; /* the reading column: 62 to 72 characters a line at --fs-read */
+
+  /* motion: short for UI; spring only for physical things */
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.6, 0, 0.3, 1);
+
+  --radius: 2px;
+  --tap: 44px; /* the least height of anything a finger has to hit */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0.01ms;
+    --dur-2: 0.01ms;
+    --dur-3: 0.01ms;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+}
+
+/* The ground: paper with a faint cobalt graph grid, 8 px minor and 64 px major. The grid is centred, and the sheet
+   is centred and a whole number of 16 px wide, so the sheet's edges always fall on grid lines (on major lines at
+   full width). The "gradients" are hard-edged 1 px lines, not shading. */
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-minor) 1px, transparent 1px);
+  background-size:
+    64px 64px,
+    64px 64px,
+    8px 8px,
+    8px 8px;
+  background-position:
+    calc(50% + 32px) 0,
+    0 0,
+    calc(50% + 4px) 0,
+    0 0;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  font-kerning: normal;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+/* the sheet: every page's content column */
+.sheet {
+  width: min(var(--sheet-max), round(down, 100% - 2 * var(--sheet-gutter), 16px));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--line);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color var(--dur-1) var(--ease);
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+a:active {
+  color: var(--ink);
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* one focus style everywhere: a square cobalt ring, never removed */
+:focus-visible {
+  outline: 2px solid var(--line);
+  outline-offset: 3px;
+  border-radius: 0;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--line) 28%, transparent);
+  color: var(--ink);
+}
+
+kbd {
+  font-family: var(--font-data);
+  font-size: 0.85em;
+}
+
+/* one weight of the mono face does all the data and the labels (a second weight is a second download) */
+b.data,
+.data b,
+.label b {
+  font-weight: 400;
+}
+
+/* utilities */
+
+/* labels: mono capitals, small and tracked */
+.label {
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: var(--ink-2);
+}
+
+.data {
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.serif {
+  font-family: var(--font-display);
+}
+
+.hand {
+  font-family: var(--font-hand);
+  color: var(--line);
+}
+
+.measure {
+  max-width: var(--measure);
+}
+
+.quiet {
+  color: var(--ink-2);
+}
+
+.hairline {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0;
+}
+
+/* in the page for screen readers, not on the screen */
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* a quiet text button: mono, underlined on hover */
+.text-button {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  color: var(--line);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.text-button:hover {
+  text-decoration-thickness: 2px;
+}
+.text-button:active {
+  color: var(--ink);
+}
+
+/* a ruled control: mono in a hairline cobalt box */
+.ruled-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  min-height: 32px;
+  padding: 5px 12px 4px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--line);
+  text-decoration: none;
+  transition:
+    background-color var(--dur-1) var(--ease),
+    color var(--dur-1) var(--ease);
+}
+.ruled-button:hover {
+  background: var(--line);
+  color: var(--paper);
+}
+/* the focus ring is square on everything, this button included */
+.ruled-button:focus-visible {
+  border-radius: 0;
+}
+.ruled-button:active {
+  background: color-mix(in srgb, var(--line) 85%, var(--ink));
+  border-color: color-mix(in srgb, var(--line) 85%, var(--ink));
+  color: var(--paper);
+}
+
+/* a finger needs more to hit than a mouse does: the box grows, the type and the page do not */
+@media (pointer: coarse) {
+  .text-button {
+    padding: 12px 8px;
+    margin: -12px -8px;
+  }
+  .ruled-button {
+    min-height: var(--tap);
+  }
+}
+
+/* a browser without color-mix() (iOS Safari before 16.2): the mixed tokens as plain colours, worked out from the
+   six above, so the highlighter, the rules and the control edges still show */
+@supports not (color: color-mix(in srgb, red 50%, blue)) {
+  :root,
+  :root[data-theme="paper"] {
+    --wash: rgba(28, 59, 196, 0.26);
+    --rule: #b0aea7;
+    --edge: #858481;
+    --grid-minor: rgba(28, 59, 196, 0.0325);
+    --grid-major: rgba(28, 59, 196, 0.075);
+  }
+  :root[data-theme="blueprint"] {
+    --wash: rgba(157, 178, 255, 0.3);
+    --paper-0: #1f263e;
+    --rule: #494e5d;
+    --edge: #747887;
+    --grid-minor: rgba(157, 178, 255, 0.0325);
+    --grid-major: rgba(157, 178, 255, 0.075);
+  }
+}

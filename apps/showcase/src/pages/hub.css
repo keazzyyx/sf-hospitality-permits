@@ -1,0 +1,129 @@
+/* The hub: a plain, well-set contents page for the local prototypes. */
+
+.hub {
+  padding-top: var(--s-7);
+}
+.hub__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+.hub__eyebrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--stamp);
+}
+.hub__title {
+  margin-top: var(--s-4);
+  font-size: clamp(3rem, 1.6rem + 6.4vw, 5.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.018em;
+}
+.hub__title em {
+  display: block;
+}
+.hub__lead {
+  margin-top: var(--s-5);
+  max-width: 34rem;
+  font-size: var(--fs-lead);
+  line-height: 30px;
+  color: var(--ink-2);
+}
+.hub__lead b {
+  font-weight: 500;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.hub__head {
+  position: relative;
+}
+.hub__aside {
+  display: none;
+}
+
+.hub__list {
+  margin: var(--s-7) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--ink);
+}
+.hub__row {
+  border-bottom: 1px solid var(--rule);
+}
+.hub__link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px 0;
+  padding: 22px 0 24px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color var(--dur-1) var(--ease);
+}
+.hub__link:hover {
+  background: color-mix(in srgb, var(--line) 5%, transparent);
+}
+.hub__link:focus-visible {
+  outline-offset: -2px;
+}
+.hub__key {
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+}
+.hub__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.hub__link:hover .hub__name {
+  color: var(--line);
+}
+.hub__what {
+  max-width: 34rem;
+  color: var(--ink-2);
+  line-height: 24px;
+}
+.hub__path {
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  color: var(--line);
+  white-space: nowrap;
+}
+.hub__status {
+  color: var(--ink-2);
+}
+
+@media (min-width: 880px) {
+  .hub__link {
+    grid-template-columns: 64px minmax(0, 5fr) minmax(0, 7fr) auto;
+    gap: 0;
+    align-items: baseline;
+    padding: 26px 0 28px;
+  }
+  .hub__what {
+    padding-right: 32px;
+  }
+  .hub__path {
+    text-align: right;
+  }
+  /* a pencilled margin note, top right of the heading */
+  .hub__aside {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 13rem;
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    transform: rotate(-2.5deg);
+    transform-origin: right top;
+  }
+  .hub__aside svg {
+    display: block;
+    margin: 6px 0 0 4px;
+  }
+}

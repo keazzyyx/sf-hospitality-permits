@@ -1,0 +1,143 @@
+{
+  "file": "sf-streets.bin",
+  "format": "SFG1",
+  "version": 1,
+  "endianness": "little",
+  "units": {
+    "metresPerUnit": 1,
+    "type": "Int16"
+  },
+  "projection": {
+    "type": "equirectangular",
+    "origin": {
+      "lon": -122.4376,
+      "lat": 37.7577
+    },
+    "earthRadiusM": 6371008.8,
+    "metresPerDegLon": 87911.641,
+    "metresPerDegLat": 111195.08,
+    "metresPerUnit": 1,
+    "axes": "x east, y north (map north is +y; in three.js use (x, 0, -y) for a y-up world)",
+    "formula": "x = round((lon - origin.lon) * metresPerDegLon / metresPerUnit); y = round((lat - origin.lat) * metresPerDegLat / metresPerUnit)"
+  },
+  "bounds": {
+    "minX": -6683,
+    "minY": -5613,
+    "maxX": 6411,
+    "maxY": 5924,
+    "widthM": 13094,
+    "heightM": 11537
+  },
+  "segments": 19841,
+  "minorSegments": 17132,
+  "majorSegments": 2709,
+  "order": "minor segments first [0, minorSegments), then major [minorSegments, segments)",
+  "classes": {
+    "0": "minor (collector, residential, park, private, pedestrian)",
+    "1": "major (classcode 2 major street / 3 arterial, plus all of Market Street)"
+  },
+  "byteLayout": [
+    {
+      "offset": 0,
+      "bytes": 4,
+      "type": "ascii",
+      "name": "magic",
+      "value": "SFG1"
+    },
+    {
+      "offset": 4,
+      "bytes": 2,
+      "type": "Uint16",
+      "name": "version",
+      "value": 1
+    },
+    {
+      "offset": 6,
+      "bytes": 2,
+      "type": "Uint16",
+      "name": "centimetresPerUnit",
+      "value": 100
+    },
+    {
+      "offset": 8,
+      "bytes": 4,
+      "type": "Uint32",
+      "name": "segments",
+      "value": 19841
+    },
+    {
+      "offset": 12,
+      "bytes": 4,
+      "type": "Uint32",
+      "name": "majorSegments",
+      "value": 2709
+    },
+    {
+      "offset": 16,
+      "bytes": 158728,
+      "type": "Int16[4 * segments]",
+      "name": "positions",
+      "note": "x1,y1,x2,y2 per segment"
+    },
+    {
+      "offset": 158744,
+      "bytes": 19841,
+      "type": "Uint8[segments]",
+      "name": "class",
+      "note": "0 minor, 1 major"
+    }
+  ],
+  "bytes": 178585,
+  "gzipBytes": 83077,
+  "simplification": {
+    "method": "Douglas-Peucker per centreline",
+    "toleranceM": 6
+  },
+  "filter": {
+    "active": true,
+    "layersKept": [
+      "STREETS",
+      "STREETS_PEDESTRI",
+      "STREETS_HUNTERSP",
+      "PARKS",
+      "PARKS_NPS_PRESIDIO",
+      "PARKS_NPS_FTMASON",
+      "PRIVATE",
+      "UPROW"
+    ],
+    "classcodesDropped": {
+      "1": "freeway",
+      "6": "freeway ramp"
+    },
+    "islands": "Treasure Island and Yerba Buena Island left out"
+  },
+  "stats": {
+    "featuresIn": 16378,
+    "droppedByLayer": {
+      "PAPER_FWYS": 209,
+      "PAPER": 115,
+      "PAPER_WATER": 136,
+      "PSEUDO": 2,
+      "STREETS_TI": 141,
+      "STREETS_YBI": 28,
+      "PRIVATE_PARKING": 9
+    },
+    "droppedFreeway": 219,
+    "droppedIsland": 117,
+    "kept": 15402,
+    "verticesIn": 51080
+  },
+  "source": {
+    "publisher": "City and County of San Francisco (DataSF), Public Works",
+    "dataset": "Streets – Active and Retired",
+    "id": "3psu-pn9h",
+    "url": "https://data.sf.gov/d/3psu-pn9h",
+    "api": "https://data.sf.gov/resource/3psu-pn9h.geojson?$where=active=true",
+    "dataUpdated": "2026-11-16",
+    "fetched": "2026-11-17T07:38:29.532Z"
+  },
+  "licence": {
+    "name": "Open Data Commons Public Domain Dedication and License (PDDL) 1.0",
+    "url": "https://opendatacommons.org/licenses/pddl/1-0/"
+  }
+}

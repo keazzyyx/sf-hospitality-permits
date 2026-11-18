@@ -90,3 +90,26 @@ jobs:
           name: playwright-report
           path: apps/web/playwright-report
           retention-days: 7
+
+  showcase:
+    name: Search site front end (tsc, build, playwright)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # (the conditions search's own node tests run in the conditions job above)
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter showcase typecheck
+      - run: pnpm --filter showcase build
+      - run: pnpm --filter showcase exec playwright install --with-deps chromium
+      # builds the app, serves it and the current page (python3 -m http.server), and runs e2e/ (the public site's
+      # own checks, e2e-site/, need a built site and the live site's folder outside the repository: run them locally)
+      - run: pnpm --filter showcase test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: showcase-playwright
+          path: apps/showcase/test-results
+          retention-days: 7

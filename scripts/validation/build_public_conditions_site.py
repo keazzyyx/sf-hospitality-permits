@@ -1,15 +1,30 @@
-"""Build "SF Conditions Search": the public, read-only static copy of the local conditions search page.
+"""Build "SF Conditions Search": the public, read-only static site of the conditions search.
 
-Reads tools/conditions-search/ (index.html, search.js, coverage.js, coverage.html, data/conditions.json) and
-tools/conditions-search/public/coverage.md, and writes a self-contained static site: no server, no AI, no login,
-no product name. Changes from the local page:
+Two front ends over the same public data (--front):
 
-- the title and heading read "SF Conditions Search";
+- "c" (the default since 2026-11-17): the front page of apps/showcase, "the living grid": a stamp gate over San
+  Francisco's street grid, the story of one motion flown over it, and the search beside the map (a returning visitor
+  or a link that carries a search opens on the search alone), with its coverage page in the same design. The builder
+  prepares the public data (below), then runs `pnpm --dir apps/showcase exec vite build --mode site` against it
+  (vite_site: SHOWCASE_DATA, SHOWCASE_COVERAGE_MD and SHOWCASE_CONTACT, in a temporary folder), which writes
+  index.html, coverage.html and assets/: Vite's scripts, styles, fonts and icon (assets/<name>-<hash>.<ext>), and the
+  data files named by their content as below (the search data, the map's streets and motions, the coverage text).
+  The search logic is tools/conditions-search/search.js itself, imported unchanged, so the results are the live
+  page's; the data file is byte for byte the one the classic front end publishes (same name, same hash).
+- "classic": tools/conditions-search's plain page, byte for byte as deployed until 2026-11-17 (kept so that the old
+  site can be rebuilt and deployed again). It reads tools/conditions-search/ (index.html, search.js, coverage.js,
+  coverage.html) and rewrites them as below.
+
+Both publish the same data, coverage text, vercel.json and PDF manifest. What the build does to the local data and
+pages:
+
+- the title reads "SF Conditions Search" (and "Coverage · SF Conditions Search"); the C front end keeps the wordmark
+  of apps/showcase/src/core/brand.ts on the page;
 - every motion link opens a copy of the adopted motion PDF in the site's file storage (the public Vercel Blob
   store, PDF_BASE_URL<record>.pdf, or --pdf-base-url) at the condition's page (#page=N), with a second, smaller
-  link to Planning's own copy. The site itself is only HTML, scripts and JSON: the PDFs are not copied into it
-  (since 2026-11-13; before, they were served from pdf/ on the site). The builder writes a manifest of the copies
-  to upload (PDF manifest, outside the site: record, local file, bytes, sha256, public URL), and
+  link to Planning's own copy. The site itself is only HTML, scripts, styles, fonts and data: the PDFs are not
+  copied into it (since 2026-11-13; before, they were served from pdf/ on the site). The builder writes a manifest
+  of the copies to upload (PDF manifest, outside the site: record, local file, bytes, sha256, public URL), and
   tools/conditions-search/upload-pdfs.mjs uploads them to the store. Planning's link
   (link.ashx?Action=Download) makes the browser download the PDF, which loses the page jump, and the hearing
   packets on commissions.sfplanning.org hold the staff report and the DRAFT motion (other page numbers, and
@@ -31,30 +46,49 @@ no product name. Changes from the local page:
   is checked against the original (check_pdf: page count, and each condition's opening words still on its page)
   and cached under $LOCAL_DATA_DIR/conditions_pdf_public/. The bucket serves them as application/pdf with no
   Content-Disposition (inline, so the browser's viewer opens them at #page=N) and a long cache;
-- the coverage detail page shows tools/conditions-search/public/coverage.md (plain, public wording) and the
-  list of motions left out, built from the data, in place of the local README;
-- a contact line is added under the page, and the "Wrong or missing? Tell me" link on every result card
-  (search.js, feedbackLink) emails the same CONTACT address: the build sets the page's FEEDBACK_TO to it, so the
-  address comes only from CONTACT_EMAIL at build time (the local page, and a build without CONTACT_EMAIL, leave
-  FEEDBACK_TO empty and show no link);
+- the coverage detail page shows tools/conditions-search/public/coverage.md (plain, public wording) with "Text
+  quality" and the list of motions left out, built from the data (public_coverage_md), in place of the local README;
+- a contact line is added under the page, and the "Wrong or missing? Tell me" link on every result card emails the
+  same CONTACT address (classic: the build sets the page's FEEDBACK_TO; C: the Vite build is given it as
+  SHOWCASE_CONTACT and passes it to the search's feedbackTo), so the address comes only from CONTACT_EMAIL at build
+  time (the local pages, and a build without CONTACT_EMAIL, leave it empty and show no link);
 - both pages load Vercel Web Analytics from the site itself (/_vercel/insights/script.js, the plain-HTML snippet
-  with its window.va queue, in the source pages): cookieless page views, with the part of the address after "#"
-  (the search typed) taken off before a view is sent. It is the only tracker. The content-hashing step leaves
-  that path alone (it only renames FINGERPRINTED files), and the Content-Security-Policy allows it: the script and
-  its requests are same-origin ('self'), and the queue is an inline script ('unsafe-inline'). It counts only once
-  Web Analytics is enabled for the Vercel project; until then the script is not found and nothing is sent;
-- the data file drops the build notes and the raw first readings of conditions;
-- comments are taken out of the scripts.
+  with its window.va queue, as tools/conditions-search/index.html carries it; the C build copies it from there):
+  cookieless page views, with the part of the address after "#" (the search typed) taken off before a view is
+  sent. It is the only tracker. The Content-Security-Policy (CSP) allows it: the script and its requests are
+  same-origin ('self'), and the queue is an inline script ('unsafe-inline');
+- the data file drops the build notes and the raw first readings of conditions, and withholds private liaison
+  contacts ("[contact in the motion]", private_contacts.py);
+- the files the pages load are named by their content under /assets/ (served immutable); the pages themselves are
+  served "no-cache" (vercel.json), with the same security headers and CSP for both front ends;
+- comments are taken out of the classic scripts (the C bundles are minified by Vite, with no source maps).
 
-The build stops if any output text file still names the product or an internal path, table or tool (FORBIDDEN).
-No model, no network. Needs ghostscript (gs) and poppler (pdftotext, pdfinfo).
+Before a file is written, check_site reads every text file of the output (the pages, Vite's script and style
+bundles, the data, the coverage text) and the build stops on: the product name or an internal path, table or tool
+(FORBIDDEN); a "raw_text" field; a link to page 1 of a motion; a withheld private contact (the strings the
+withholding takes out, read from the local data, story.json and the data as it was before the withholding began,
+from git), a phone number that is not the City's, an e-mail address that is not the City's or CONTACT; a published
+condition the withholding would still change; the analytics snippet not exactly once in each page's head; a motion
+link outside the file storage; and, for the C front end, a source map, any file outside the expected set
+(C_PAGES, vercel.json, C_ASSET), a content name that is not its content's, or a data file missing; and, since a
+card's links (its feedback e-mail among them) are only written as the page runs, the built C site is opened in a
+headless browser (apps/showcase/tools/check-links.mjs, check_links) on every motion read with no page and on a long
+list: any link or feedback e-mail that would open a motion without a page of 2 or more stops the build (so does a
+browser that cannot be had: the check is never skipped).
+No model, no network. Needs ghostscript (gs) and poppler (pdftotext, pdfinfo); --front c also needs pnpm and the
+repository's node_modules (pnpm install).
 
-    python3 scripts/validation/build_public_conditions_site.py [--out DIR] [--pdf-base-url URL] [--manifest FILE]
+    python3 scripts/validation/build_public_conditions_site.py [--front c|classic] [--out DIR] [--manifest FILE]
+                                                               [--pdf-base-url URL] [--pdf-root DIR]
 
 The default output is $LOCAL_DATA_DIR/sf-conditions-search-site/ (outside the repo, so the deploy uploads
 only the site), and the PDF manifest goes next to it: <out's parent>/sf-conditions-search-pdfs/manifest.json
-(never inside the site). Upload the PDFs first (node tools/conditions-search/upload-pdfs.mjs --apply), then deploy
-the site, both by hand: vercel deploy --prod from the site folder.
+(never inside the site). --pdf-root is where the local data's pdf/<record>.pdf paths are (default
+tools/conditions-search; a git worktree has none: pass the main checkout's). Upload the PDFs first (node
+tools/conditions-search/upload-pdfs.mjs --apply), then deploy the site, both by hand: vercel deploy
+--prod from the site folder. To look at a build first: node apps/showcase/tools/serve-site.mjs DIR PORT
+(vercel.json's headers and CSP applied); apps/showcase/e2e-site/site.spec.ts holds it to the live site
+(SITE_DIR=DIR pnpm --filter showcase test:site).
 """
 
 from __future__ import annotations
@@ -70,12 +104,13 @@ import sys
 import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "tools" / "conditions-search"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from private_contacts import withhold_private_contacts  # noqa: E402
+from private_contacts import private_contact_strings, withhold_private_contacts  # noqa: E402
+from private_contacts import CITY_EMAIL_DOMAINS, CITY_PHONE_PREFIXES, CITY_PHONES, EMAIL, PHONE  # noqa: E402
 DEFAULT_OUT = Path(os.environ.get("LOCAL_DATA_DIR", "~/sfhp-local")).expanduser() / "sf-conditions-search-site"
 NAME = "SF Conditions Search"
 # The contact address printed under the page: set CONTACT_EMAIL when building (for example
@@ -604,11 +639,12 @@ def default_manifest(out: Path) -> Path:
     return out.resolve().parent / MANIFEST_DIR_NAME / "manifest.json"
 
 
-def stage_pdfs(data: dict, sources: dict[str, str]) -> dict[str, dict]:
+def stage_pdfs(data: dict, sources: dict[str, str], root: Path | None = None) -> dict[str, dict]:
     """Make (or take from the cache) the small copy of every linked motion PDF, without copying it anywhere: the
     copies stay in PDF_CACHE and are uploaded from there. `sources`: the local PDF of each record, as the local
-    data has it ("pdf/<record>.pdf", under SRC; the public data links the bucket instead). Returns compress_pdf's
-    meta per record, plus the copy's "path"."""
+    data has it ("pdf/<record>.pdf", under `root`, by default SRC; the public data links the bucket instead).
+    Returns compress_pdf's meta per record, plus the copy's "path"."""
+    root = root or SRC
     by_record: dict[str, list[dict]] = {}
     for c in data["conditions"]:
         if c.get("pdf"):
@@ -616,7 +652,7 @@ def stage_pdfs(data: dict, sources: dict[str, str]) -> dict[str, dict]:
 
     def one(item: tuple[str, list[dict]]) -> tuple[str, dict]:
         record, conds = item
-        original = (SRC / sources[record]).resolve()
+        original = (root / sources[record]).resolve()
         if not original.exists():
             sys.exit(f"build_public_conditions_site: no PDF for {record} ({sources[record]})")
         small, meta = compress_pdf(record, original, conds, conds[0].get("decided"))
@@ -667,12 +703,34 @@ def sub(text: str, old: str, new: str, what: str) -> str:
     return text.replace(old, new)
 
 
-def build(out: Path, pdf_base_url: str = PDF_BASE_URL, manifest: Path | None = None) -> dict:
-    base = check_pdf_base_url(pdf_base_url)
-    manifest = (manifest or default_manifest(out)).resolve()
-    if manifest.is_relative_to(out.resolve()):
-        sys.exit(f"build_public_conditions_site: the PDF manifest must be outside the site folder: {manifest}")
-    data = json.loads((SRC / "data" / "conditions.json").read_text())
+# ---- the two front ends ------------------------------------------------------------------------------------------
+# "c" (the default since 2026-11-17): the front page of apps/showcase ("the living grid": the stamp gate, the story of
+# one motion over the city's street grid, the search beside the map) and its coverage page, built by Vite
+# (`vite build --mode site`, see apps/showcase/vite.config.ts) against the public data prepared here. "classic": the
+# plain page of tools/conditions-search, byte for byte as it was deployed until then (kept so that the old site can
+# be rebuilt and deployed again).
+FRONTS = ("c", "classic")
+DEFAULT_FRONT = "c"
+SHOWCASE = ROOT / "apps" / "showcase"
+# The files a C build may hold besides the two pages and vercel.json: Vite's (assets/<name>-<8-char hash>.<ext>) and
+# the data files named here by their content (assets/<name>.<12 hex>.<ext>). Anything else stops the build.
+C_PAGES = ("index.html", "coverage.html")
+C_ASSET = re.compile(r"assets/(?:[\w.-]+-[\w-]{8}\.(?:js|css|woff2|svg)|[\w-]+\.[0-9a-f]{12}\.(?:json|bin|md))")
+# Where the C front end opens the motion of a condition that has no page (it would otherwise open at page 1, which
+# prints the project sponsor's name and address): the page its conditions begin on, by record.
+SECTION_PAGES = SHOWCASE / "src" / "core" / "search" / "section-pages.json"
+TEXT_SUFFIXES = (".html", ".js", ".css", ".json", ".md", ".svg", ".txt")
+# The C build's own data files beside the search data: the map (its streets and motions) and the coverage text.
+C_DATA = {"motions": "json", "sf-streets": "bin", "coverage": "md", "conditions": "json"}
+# The snippet of Vercel Web Analytics that comes before ANALYTICS_SCRIPT on both live pages (the queue).
+ANALYTICS_QUEUE = 'window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };'
+
+
+def public_data(source: dict, base: str) -> tuple[dict, dict[str, str]]:
+    """The public data (as both front ends publish it) and the local PDF of each record: build notes and the raw
+    first readings dropped, private liaison contacts withheld, motion links to the file storage and to Planning's
+    copy."""
+    data = json.loads(json.dumps(source))
     for k in DROP_TOP_FIELDS:
         data.pop(k, None)
     (data.get("review") or {}).pop("file", None)
@@ -688,7 +746,93 @@ def build(out: Path, pdf_base_url: str = PDF_BASE_URL, manifest: Path | None = N
                 c[field] = withhold_private_contacts(c[field])
         for k in DROP_CONDITION_FIELDS:
             c.pop(k, None)
+    return data, sources
 
+
+def data_text(data: dict) -> str:
+    """The data file as published: compact JSON, one line, UTF-8 (the same bytes from either front end)."""
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n"
+
+
+def public_coverage_md(data: dict) -> str:
+    """The coverage text both front ends publish: public/coverage.md, then "Text quality" and the list of motions
+    left out, built from the data."""
+    left_out = "\n".join(
+        f"- {m['record']}, {m['address']}: {m.get('what') or 'not food or drink'}"
+        + (" (removed by the hand review)" if m.get("left_out_by") == "review" else "")
+        for m in data["removed_motions"]
+    )
+    review = data.get("review") or {}
+    by_review = sum(m.get("left_out_by") == "review" for m in data["removed_motions"])
+    return (SRC / "public" / "coverage.md").read_text().rstrip() + (
+        "\n\n## Text quality\n\nOlder motions are scanned. Each condition was checked for pieces that do not read "
+        "(stray symbols, letters mixed with digits, page footers left in). Page furniture was removed; a condition "
+        "that still read badly was read again from the PDF's text layer or by OCR, and the second reading was used "
+        "only when it was the same text, read better. Conditions that still could not be read cleanly are marked "
+        "and link to the motion page.\n"
+        "\n## Motions left out: not food or drink\n\n"
+        f"These {len(data['removed_motions'])} motions are not about a food, drink or entertainment premises, so "
+        f"they are not on the search page: {len(data['removed_motions']) - by_review} left out by the classifier "
+        f"and {by_review} removed by the hand review"
+        + (f" (the review also added back {len(review.get('added_back', []))} the classifier had left out)"
+           if review.get("added_back") else "")
+        + ". The reviewed list above gives the reason for each change the review made.\n\n"
+        + left_out
+        + "\n"
+    )
+
+
+# The Content-Security-Policy of the site, the same for both front ends (the C front end needs nothing more: its
+# scripts, styles, fonts and data are all the site's own files, its WebGL and canvas drawing need no directive,
+# its only inline script is the theme set before the first paint, beside the analytics queue that needed
+# 'unsafe-inline' already, and its styles are set through element.style, which 'unsafe-inline' in style-src already
+# allowed). The motion PDFs are in the bucket, opened by plain links, which the CSP does not restrict; Vercel Web
+# Analytics is same-origin (/_vercel/insights/script.js and its requests: script-src and connect-src 'self'); its
+# queue is inline ('unsafe-inline'); mailto: links are not restricted by the CSP.
+CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
+       "connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")  # fmt: skip
+
+
+def vercel_json() -> str:
+    """vercel.json: the pages no-cache, the content-named files immutable, the security headers and the CSP."""
+    security = [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
+    ]
+    return json.dumps(
+        {
+            "cleanUrls": False,
+            "headers": [
+                # the pages are checked with the server on every load, so a normal reload always gets the
+                # latest deploy; the files they load are named by their content (see fingerprint)
+                *(
+                    {"source": page, "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
+                    for page in PAGES
+                ),
+                {
+                    # scripts, styles, fonts, data and the coverage text: a new deploy that changes one gives it a
+                    # new name
+                    "source": f"/{ASSETS}/(.*)",
+                    "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}],
+                },
+                {
+                    # every file (see CSP)
+                    "source": "/(.*)",
+                    "headers": [
+                        *security,
+                        {"key": "X-Frame-Options", "value": "DENY"},
+                        {"key": "Content-Security-Policy", "value": CSP},
+                    ],
+                },
+            ],
+        },
+        indent=2,
+    ) + "\n"
+
+
+def classic_files(data: dict, coverage_md: str) -> dict[str, str]:
+    """The classic front end's files (before fingerprinting): tools/conditions-search's two pages, rewritten for the
+    public, its two scripts without comments, the coverage text, the data and vercel.json."""
     index = (SRC / "index.html").read_text()
     index = sub(
         index,
@@ -738,102 +882,248 @@ def build(out: Path, pdf_base_url: str = PDF_BASE_URL, manifest: Path | None = N
                                           "Worked out from the data as this page loads.")
     coverage_html = re.sub(r"// The README's Coverage section.*?\n(?://.*\n)*", "", coverage_html)
 
-    left_out = "\n".join(
-        f"- {m['record']}, {m['address']}: {m.get('what') or 'not food or drink'}"
-        + (" (removed by the hand review)" if m.get("left_out_by") == "review" else "")
-        for m in data["removed_motions"]
-    )
-    review = data.get("review") or {}
-    by_review = sum(m.get("left_out_by") == "review" for m in data["removed_motions"])
-    coverage_md = (SRC / "public" / "coverage.md").read_text().rstrip() + (
-        "\n\n## Text quality\n\nOlder motions are scanned. Each condition was checked for pieces that do not read "
-        "(stray symbols, letters mixed with digits, page footers left in). Page furniture was removed; a condition "
-        "that still read badly was read again from the PDF's text layer or by OCR, and the second reading was used "
-        "only when it was the same text, read better. Conditions that still could not be read cleanly are marked "
-        "and link to the motion page.\n"
-        "\n## Motions left out: not food or drink\n\n"
-        f"These {len(data['removed_motions'])} motions are not about a food, drink or entertainment premises, so "
-        f"they are not on the search page: {len(data['removed_motions']) - by_review} left out by the classifier "
-        f"and {by_review} removed by the hand review"
-        + (f" (the review also added back {len(review.get('added_back', []))} the classifier had left out)"
-           if review.get("added_back") else "")
-        + ". The reviewed list above gives the reason for each change the review made.\n\n"
-        + left_out
-        + "\n"
-    )
-
-    if out.exists():
-        keep = out / ".vercel"
-        for p in out.iterdir():
-            if p != keep:
-                shutil.rmtree(p) if p.is_dir() else p.unlink()
-    security = [
-        {"key": "X-Content-Type-Options", "value": "nosniff"},
-        {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
-    ]
     files = {
         "index.html": index,
         "coverage.html": coverage_html,
         "coverage.md": coverage_md,
         "search.js": strip_comments((SRC / "search.js").read_text()),
         "coverage.js": strip_comments((SRC / "coverage.js").read_text()),
-        "data/conditions.json": json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n",
-        "vercel.json": json.dumps(
-            {
-                "cleanUrls": False,
-                "headers": [
-                    # the pages are checked with the server on every load, so a normal reload always gets the
-                    # latest deploy; the files they load are named by their content (see fingerprint)
-                    *(
-                        {"source": page, "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
-                        for page in PAGES
-                    ),
-                    {
-                        # scripts, data and the coverage text: a new deploy that changes one gives it a new name
-                        "source": f"/{ASSETS}/(.*)",
-                        "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}],
-                    },
-                    {
-                        # every file: the site is only pages, scripts and data (the motion PDFs are in the
-                        # bucket, opened by plain links, which the CSP does not restrict). Vercel Web Analytics
-                        # is same-origin (/_vercel/insights/script.js and its requests: script-src and
-                        # connect-src 'self'); its queue is inline ('unsafe-inline'); mailto: links are not
-                        # restricted by the CSP
-                        "source": "/(.*)",
-                        "headers": [
-                            *security,
-                            {"key": "X-Frame-Options", "value": "DENY"},
-                            {
-                                "key": "Content-Security-Policy",
-                                "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; "
-                                "style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; "
-                                "frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
-                            },
-                        ],
-                    },
-                ],
-            },
-            indent=2,
-        )
-        + "\n",
+        "data/conditions.json": data_text(data),
+        "vercel.json": vercel_json(),
     }
     files = fingerprint(files)
     for page in ("index.html", "coverage.html"):
         if files[page].count(ANALYTICS_SCRIPT) != 1:
             sys.exit(f"build_public_conditions_site: {page} must load the analytics script once: {ANALYTICS_SCRIPT}")
+    return files
+
+
+def vite_site(data: str, coverage_md: str, base: str = PDF_BASE_URL) -> dict[str, bytes]:
+    """The C front end: `vite build --mode site` of apps/showcase against this build's public data and coverage text
+    (in a temporary folder), with CONTACT as the site's contact address (none when it is empty: no contact line and
+    no card link) and `base` as the store the story's own motion links point at. Every file it wrote, by its path."""
+    pnpm = shutil.which("pnpm")
+    if not pnpm:
+        sys.exit("build_public_conditions_site: --front c needs pnpm (and `pnpm install` in the repo)")
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp = Path(tmp_dir)
+        (tmp / "conditions.json").write_bytes(data.encode("utf-8"))
+        (tmp / "coverage.md").write_bytes(coverage_md.encode("utf-8"))
+        site = tmp / "site"
+        env = {k: v for k, v in os.environ.items() if not k.startswith("SHOWCASE_")}
+        env.update({
+            "SHOWCASE_DATA": str(tmp / "conditions.json"),
+            "SHOWCASE_COVERAGE_MD": str(tmp / "coverage.md"),
+            "SHOWCASE_CONTACT": CONTACT,
+            "SHOWCASE_PDF_BASE": base,
+        })  # fmt: skip
+        res = subprocess.run(
+            [pnpm, "--dir", str(SHOWCASE), "exec", "vite", "build", "--mode", "site", "--outDir", str(site),
+             "--emptyOutDir", "--logLevel", "warn"],
+            env=env, capture_output=True, text=True, check=False,
+        )  # fmt: skip
+        if res.returncode != 0:
+            sys.exit(f"build_public_conditions_site: the Vite site build failed:\n{res.stdout[-2000:]}\n{res.stderr[-2000:]}")
+        return {p.relative_to(site).as_posix(): p.read_bytes() for p in sorted(site.rglob("*")) if p.is_file()}
+
+
+def c_files(data: dict, coverage_md: str, base: str = PDF_BASE_URL) -> dict[str, bytes]:
+    """The C front end's files: the Vite site build and vercel.json. The data and the coverage text in it must be
+    this build's own, byte for byte, under the names the classic build gives them."""
+    text = data_text(data)
+    files = vite_site(text, coverage_md, base)
+    for rel, body in (("data/conditions.json", text), ("coverage.md", coverage_md)):
+        name = fingerprinted_name(rel, body)
+        if files.get(name) != body.encode("utf-8"):
+            sys.exit(f"build_public_conditions_site: the C build does not carry {rel} as {name}, byte for byte")
+    if "vercel.json" in files:
+        sys.exit("build_public_conditions_site: the Vite site build wrote a vercel.json of its own")
+    files["vercel.json"] = vercel_json().encode("utf-8")
+    return files
+
+
+# ---- the guards ----------------------------------------------------------------------------------------------------
+PRIVATE_CONTACTS = Path(__file__).resolve().parent / "private_contacts.py"
+DATA_REL = "tools/conditions-search/data/conditions.json"
+
+
+def withheld_strings(source: dict) -> tuple[list[str], str]:
+    """The private contact strings the published data must never hold (private_contact_strings): those still in the
+    local data (every text field, before withholding), in story.json, and in the data as it was before the
+    withholding began (the version of DATA_REL before the commit that added private_contacts.py, read from git
+    when the history has it; the strings are only held in memory). A history that starts with the withholding in
+    place (a fresh clone of this repository, or a shallow one) has no such version: that source is skipped and the
+    others are used. Also says where they were read from."""
+    texts = [c.get(f) for c in source["conditions"] for f in ("text", "raw_text", "text_display")]
+    story = SHOWCASE / "src" / "data" / "story.json"
+    if story.exists():
+        texts += [c.get(f) for c in json.loads(story.read_text())["conditions"] for f in ("text", "text_display")]
+    note = "the local data and story.json"
+    try:
+        first = subprocess.run(["git", "-C", str(ROOT), "log", "--diff-filter=A", "--format=%H", "--",
+                                str(PRIVATE_CONTACTS.relative_to(ROOT))],
+                               capture_output=True, text=True, check=True).stdout.split()  # fmt: skip
+        parent = f"{first[-1]}^" if first else ""
+        if parent and subprocess.run(["git", "-C", str(ROOT), "rev-parse", "--verify", "--quiet", parent + "^{commit}"],
+                                     capture_output=True, check=False).returncode == 0:  # fmt: skip
+            old = subprocess.run(["git", "-C", str(ROOT), "show", f"{parent}:{DATA_REL}"], capture_output=True,
+                                 check=True).stdout  # fmt: skip
+            texts += [c.get(f) for c in json.loads(old)["conditions"] for f in ("text", "raw_text")]
+            note += f", and the data before the withholding (git {first[-1][:7]}^)"
+        else:
+            note += " (the history here starts after the withholding: the data before it was not read)"
+    except (subprocess.CalledProcessError, FileNotFoundError, ValueError):
+        note += " (no git history here: the data before the withholding was not read)"
+    found = sorted({s for t in texts for s in private_contact_strings(t) if len(s.strip()) >= 4})
+    return found, note
+
+
+CHECK_LINKS = SHOWCASE / "tools" / "check-links.mjs"
+# a long list of conditions read with their pages, beside every motion read with none
+CHECK_LINKS_ALSO = ("#q=noise&kind=all",)
+
+
+def check_links(files: dict[str, bytes], hashes: list[str]) -> list[str]:
+    """Open the built C site (`files`, written to a temporary folder) in a headless browser at each URL hash and
+    read every link on its cards, and the subject and body of every feedback e-mail: what would open a motion PDF
+    without a page of 2 or more (page 1 prints the sponsor's name and address). A check that cannot run is a
+    problem too (node, Playwright or its Chromium missing)."""
+    node = shutil.which("node")
+    if not node:
+        return ["the links could not be checked in a browser: no node"]
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp = Path(tmp_dir)
+        for rel, body in files.items():
+            (tmp / rel).parent.mkdir(parents=True, exist_ok=True)
+            (tmp / rel).write_bytes(body)
+        try:
+            res = subprocess.run([node, str(CHECK_LINKS), str(tmp), *hashes], cwd=SHOWCASE, capture_output=True,
+                                 text=True, check=False, timeout=600)  # fmt: skip
+        except subprocess.TimeoutExpired:
+            return ["the links could not be checked in a browser: it took over 10 minutes"]
+    try:
+        return list(json.loads(res.stdout.strip().splitlines()[-1])["problems"]) if res.returncode == 0 else [
+            f"the links could not be checked in a browser: {(res.stderr or res.stdout).strip()[-400:]}"]
+    except (IndexError, KeyError, ValueError):
+        return [f"the links could not be checked in a browser: {(res.stderr or res.stdout).strip()[-400:]}"]
+
+
+def check_site(files: dict[str, bytes], data: dict, base: str, front: str, withheld: list[str],
+               browse: bool = False) -> list[str]:  # fmt: skip
+    """What is wrong with a site about to be written (empty when nothing is). Every text file is read: the pages,
+    the scripts and styles (also Vite's bundles), the data, the coverage text. With `browse` (the C build), the site
+    is also opened in a browser and the links its cards write are read (check_links)."""
     problems = []
-    for rel, text in files.items():
+    texts: dict[str, str] = {}
+    for rel, body in files.items():
+        if rel.endswith(".map"):
+            problems.append(f"{rel}: a source map")
+        if rel.endswith(TEXT_SUFFIXES):
+            try:
+                texts[rel] = body.decode("utf-8")
+            except UnicodeDecodeError:
+                problems.append(f"{rel}: not UTF-8 text")
+    if front == "c":
+        unexpected = [rel for rel in files if rel not in (*C_PAGES, "vercel.json") and not C_ASSET.fullmatch(rel)]
+        problems += [f"{rel}: not a file the site is made of" for rel in unexpected]
+        for rel in files:
+            m = re.fullmatch(r"assets/([\w-]+)\.([0-9a-f]{12})\.(\w+)", rel)
+            if m and hashlib.sha256(files[rel]).hexdigest()[:12] != m[2]:
+                problems.append(f"{rel}: its name is not its content's")
+        for stem, ext in C_DATA.items():
+            if not [rel for rel in files if re.fullmatch(rf"assets/{stem}\.[0-9a-f]{{12}}\.{ext}", rel)]:
+                problems.append(f"no assets/{stem}.<hash>.{ext}")
+    # the product name and internal names
+    for rel, text in texts.items():
         for m in FORBIDDEN.finditer(text):
-            problems.append(f"{rel}: {text[max(0, m.start() - 40) : m.end() + 40]!r}")
-    if problems:
-        sys.exit("build_public_conditions_site: internal names left in the public site:\n" + "\n".join(problems[:40]))
-    off_base = [c["record"] for c in data["conditions"] if c.get("pdf") and not c["pdf"].startswith(base)]
+            problems.append(f"{rel}: internal names left in the public site: {text[max(0, m.start() - 40) : m.end() + 40]!r}")
+    # Vercel Web Analytics on both pages, once each (its queue, then its script)
+    for page in ("index.html", "coverage.html"):
+        html = texts.get(page, "")
+        if html.count(ANALYTICS_SCRIPT) != 1 or html.count(ANALYTICS_QUEUE) != 1:
+            problems.append(f"{page}: must load the analytics queue and script once each")
+        elif not html.index(ANALYTICS_QUEUE) < html.index(ANALYTICS_SCRIPT) < html.index("</head>"):
+            problems.append(f"{page}: the analytics snippet is not in the head, queue first")
+    # no raw first readings: not in the data, not as a key anywhere
+    for rel, text in texts.items():
+        if '"raw_text"' in text:
+            problems.append(f"{rel}: holds a raw_text field")
+    if any("raw_text" in c for c in data["conditions"]):
+        problems.append("the data still holds raw_text")
+    # never a link to page 1 of a motion (it prints private names and addresses)
+    for rel, text in texts.items():
+        for m in re.finditer(r"#page=1(?!\d)", text):
+            problems.append(f"{rel}: a link to page 1: {text[max(0, m.start() - 60) : m.end()]!r}")
+    page_one = [f"{c['record']} #{c['number']}" for c in data["conditions"] if c.get("pdf") and c.get("page") == 1]
+    problems += [f"a condition linked to page 1: {x}" for x in page_one]
+    if front == "c":
+        # a condition with no page would open its motion at page 1: the front end needs where its conditions begin
+        sections = json.loads(SECTION_PAGES.read_text())["pages"] if SECTION_PAGES.exists() else {}
+        pageless = sorted({c["record"] for c in data["conditions"] if c.get("pdf") and not c.get("page")})
+        for record in pageless:
+            page = (sections.get(record) or {}).get("page")
+            if not isinstance(page, int) or page < 2:
+                problems.append(f"{record}: conditions with no page and no section page in {SECTION_PAGES.name} (they would open page 1)")
+        # the links the page writes as it runs (a card's motion link, its feedback e-mail), read in a browser
+        if browse:
+            hashes = [f"#{urlencode({'q': record, 'kind': 'all'})}" for record in pageless]
+            problems += check_links(files, [*hashes, *CHECK_LINKS_ALSO])
+    # no private contact: none of the withheld strings, no phone that is not the City's, no e-mail that is not the
+    # City's or CONTACT, in any file; and the published conditions pass through the withholding unchanged
+    for rel, text in texts.items():
+        low = text.lower()
+        problems += [f"{rel}: a withheld private contact ({len(s)} characters)" for s in withheld if s.lower() in low]
+        for m in PHONE.finditer(text):
+            digits = re.sub(r"\D", "", m.group(0))
+            if digits not in CITY_PHONES and not digits.startswith(CITY_PHONE_PREFIXES):
+                problems.append(f"{rel}: a phone number that is not the City's ({len(digits)} digits)")
+        for m in EMAIL.finditer(text):
+            if m.group(0) != CONTACT and not CITY_EMAIL_DOMAINS.search(m.group(0)):
+                problems.append(f"{rel}: an e-mail address that is not the City's or the contact address")
+    for c in data["conditions"]:
+        if withhold_private_contacts(c.get("text")) != c.get("text"):
+            problems.append(f"{c['record']} #{c['number']}: a private contact in the published text")
+    # every motion link under the file storage
+    off_base = sorted({c["record"] for c in data["conditions"] if c.get("pdf") and not c["pdf"].startswith(base)})
     if off_base:
-        sys.exit(f"build_public_conditions_site: motion links not under {base}: {sorted(set(off_base))[:10]}")
-    for rel, text in files.items():
+        problems.append(f"motion links not under {base}: {off_base[:10]}")
+    return problems
+
+
+def build(out: Path, pdf_base_url: str = PDF_BASE_URL, manifest: Path | None = None, front: str = "classic",
+          pdf_root: Path | None = None) -> dict:  # fmt: skip
+    """Build the site into `out` with the `front` end ("c" or "classic"; the command line's default is "c", this
+    function's "classic", which its older tests call without saying), stage the motion PDFs (from `pdf_root`, by
+    default tools/conditions-search: their "pdf/<record>.pdf") and write the PDF manifest. Stops (SystemExit) on any
+    guard (check_site) before a file is written."""
+    if front not in FRONTS:
+        sys.exit(f"build_public_conditions_site: --front must be one of {FRONTS}: {front!r}")
+    base = check_pdf_base_url(pdf_base_url)
+    manifest = (manifest or default_manifest(out)).resolve()
+    if manifest.is_relative_to(out.resolve()):
+        sys.exit(f"build_public_conditions_site: the PDF manifest must be outside the site folder: {manifest}")
+    source = json.loads((SRC / "data" / "conditions.json").read_text())
+    data, sources = public_data(source, base)
+    coverage_md = public_coverage_md(data)
+
+    if front == "classic":
+        files = {rel: text.encode() for rel, text in classic_files(data, coverage_md).items()}
+    else:
+        files = c_files(data, coverage_md, base)
+    withheld, withheld_from = withheld_strings(source)
+    problems = check_site(files, data, base, front, withheld, browse=front == "c")
+    if problems:
+        sys.exit("build_public_conditions_site: the site was not written:\n" + "\n".join(problems[:40]))
+
+    if out.exists():
+        keep = out / ".vercel"
+        for p in out.iterdir():
+            if p != keep:
+                shutil.rmtree(p) if p.is_dir() else p.unlink()
+    for rel, body in files.items():
         (out / rel).parent.mkdir(parents=True, exist_ok=True)
-        (out / rel).write_text(text)
-    pdfs = stage_pdfs(data, sources)
+        (out / rel).write_bytes(body)
+    pdfs = stage_pdfs(data, sources) if pdf_root is None else stage_pdfs(data, sources, pdf_root)
     listed = pdf_manifest(pdfs, base)
     too_big = [f["record"] for f in listed["files"] if f["bytes"] > UPLOAD_LIMIT_BYTES]
     if too_big:
@@ -842,9 +1132,16 @@ def build(out: Path, pdf_base_url: str = PDF_BASE_URL, manifest: Path | None = N
     manifest.parent.mkdir(parents=True, exist_ok=True)
     manifest.write_text(json.dumps(listed, indent=1) + "\n")
     sizes = sorted(m["bytes"] for m in pdfs.values())
+    data_name = fingerprinted_name("data/conditions.json", data_text(data))
     return {
+        "front": front,
         "conditions": len(data["conditions"]),
         "files": len(files),
+        "site_bytes": sum(len(b) for b in files.values()),
+        "data_file": data_name,
+        "data_sha256": hashlib.sha256(files[data_name]).hexdigest(),
+        "withheld": len(withheld),
+        "withheld_from": withheld_from,
         "manifest": str(manifest),
         "pdfs": len(pdfs),
         "pdf_bytes": sum(sizes),
@@ -867,9 +1164,18 @@ def main() -> int:
                    help=f"where the motion links point, ending in '/' (default {PDF_BASE_URL})")  # fmt: skip
     p.add_argument("--manifest", type=Path, default=None,
                    help=f"the PDF manifest for the upload step (default <out's parent>/{MANIFEST_DIR_NAME}/manifest.json)")
+    p.add_argument("--front", choices=FRONTS, default=DEFAULT_FRONT,
+                   help="the front end: c (the living grid, apps/showcase; default) or classic (the plain page, as "
+                        "deployed until 2026-11-17)")  # fmt: skip
+    p.add_argument("--pdf-root", type=Path, default=None,
+                   help="the folder the local data's pdf/<record>.pdf paths are under (default tools/conditions-search;"
+                        " a git worktree has no pdf/ of its own: pass the main checkout's)")  # fmt: skip
     args = p.parse_args()
-    counts = build(args.out, args.pdf_base_url, args.manifest)
-    print(f"{NAME}: {counts['conditions']} conditions, {counts['files']} files in {args.out} (no PDFs)")
+    counts = build(args.out, args.pdf_base_url, args.manifest, args.front, args.pdf_root)
+    print(f"{NAME} ({counts['front']} front end): {counts['conditions']} conditions, {counts['files']} files, "
+          f"{counts['site_bytes'] / 1e6:.2f} MB in {args.out} (no PDFs)")
+    print(f"data: {counts['data_file']} sha256 {counts['data_sha256']}")
+    print(f"private contacts checked absent: {counts['withheld']} strings, from {counts['withheld_from']}")
     print(f"motion PDFs for the file storage ({args.pdf_base_url}): manifest {counts['manifest']}")
     print(f"motion PDFs: {counts['pdfs']}, {counts['pdf_bytes'] / 1e6:.0f} MB (from {counts['pdf_source_bytes'] / 1e6:.0f}"
           f" MB), largest {counts['pdf_largest'] / 1e6:.1f} MB; settings used {counts['pdf_settings']}")  # fmt: skip

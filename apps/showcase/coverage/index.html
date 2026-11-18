@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Coverage</title>
+<meta name="description" content="What the conditions search includes, how the motions were picked, what is left out, and the known gaps.">
+<meta name="theme-color" content="#f2ede1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0f1f" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="/src/core/favicon.svg">
+<script>
+  // the theme before first paint: the remembered choice, else the system's (src/core/theme.ts keeps it from here)
+  (function () {
+    try {
+      var t = localStorage.getItem("showcase:theme");
+      if (t !== "paper" && t !== "blueprint") t = matchMedia("(prefers-color-scheme: dark)").matches ? "blueprint" : "paper";
+      document.documentElement.dataset.theme = t;
+      // the browser's own chrome takes the ground colour of the theme in use
+      var metas = document.querySelectorAll('meta[name="theme-color"]');
+      for (var i = 0; i < metas.length; i++) metas[i].setAttribute("content", t === "paper" ? "#f2ede1" : "#0a0f1f");
+    } catch (e) {}
+  })();
+</script>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource-variable/public-sans/files/public-sans-latin-wght-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/big-shoulders-display/files/big-shoulders-display-latin-800-normal.woff2">
+<link rel="stylesheet" href="/src/core/base.css">
+<script type="module" src="/src/pages/coverage.ts"></script>
+</head>
+<body>
+<noscript>
+  <p style="max-width: 40rem; margin: 4rem auto; padding: 0 1rem">This page is drawn by a script: it works out what
+  the search covers from the conditions it holds, and shows the notes on how they were read. Turn JavaScript on to
+  see it.</p>
+</noscript>
+</body>
+</html>

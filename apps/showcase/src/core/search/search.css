@@ -1,0 +1,1141 @@
+/* The search: a reading room for the public record. The query field is the hero, a form line on a legal document;
+   each result is a typeset excerpt with its condition number hanging in the margin.
+
+   Layout follows the width of the element the search is mounted in (container queries), not the window, so a
+   prototype can put it in a panel and it still sets itself correctly.
+
+   Vertical metrics are whole pixels on the 8 px grid of the ground: the title is 40 or 48 high, the field 56 or 80
+   with its rule, a row of controls 48, the count bar 48, a card's padding 24 above and 32 below with its rule.
+
+   Type sizes come from tokens.css and nothing in between: 11 (labels), 13 (data, small print), 15 (notes, menus),
+   16 (body), 17 (the conditions), 20 (a condition's title). */
+
+.cs-root {
+  container: cs / inline-size;
+}
+
+.cs {
+  --cs-gutter: 0px; /* the margin the condition numbers hang in */
+  --cs-aside: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding-top: var(--s-4);
+}
+
+/* ---- heading ------------------------------------------------------------------------------------------------ */
+
+.cs-head {
+  padding-left: var(--cs-gutter);
+  margin-bottom: 16px;
+}
+.cs-title {
+  font-size: clamp(2rem, 1.35rem + 2.6cqi, 2.75rem);
+  line-height: 40px;
+}
+.cs-sub {
+  margin-top: 8px;
+  max-width: 62ch;
+  color: var(--ink-2);
+  line-height: 24px;
+}
+
+/* ---- the query: a large serif input on a ruled line ------------------------------------------------------ */
+
+.cs-form {
+  padding-left: var(--cs-gutter);
+}
+.cs-query__label {
+  display: block;
+  transition: color var(--dur-1) var(--ease);
+}
+/* a narrow page shows the short wording on one line; the full wording stays the field's name */
+.cs-query__full {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.cs-query:has(.cs-input:focus) .cs-query__label {
+  color: var(--line);
+}
+.cs-field {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  border-bottom: 1px solid var(--ink);
+  transition:
+    border-color var(--dur-1) var(--ease),
+    box-shadow var(--dur-1) var(--ease);
+}
+/* the focus ring of the field is its rule: it turns cobalt and doubles in weight */
+.cs-field:focus-within {
+  border-bottom-color: var(--line);
+  box-shadow: 0 1px 0 0 var(--line);
+}
+.cs-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  appearance: none;
+  margin: 0;
+  padding: 4px 0 3px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  color: var(--ink);
+  caret-color: var(--line);
+  font-family: var(--font-display);
+  font-size: clamp(2.125rem, 1.2rem + 4.2cqi, 3.5rem);
+  line-height: 48px;
+  letter-spacing: -0.012em;
+  text-overflow: ellipsis;
+}
+.cs-input:focus-visible {
+  outline: none;
+}
+.cs-input::placeholder {
+  color: color-mix(in srgb, var(--ink-2) 85%, transparent);
+  font-style: italic;
+  opacity: 1;
+  transition: opacity 160ms var(--ease);
+}
+.cs-input.is-swapping::placeholder {
+  opacity: 0;
+}
+.cs-input::-webkit-search-cancel-button,
+.cs-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* while the data cannot be loaded the field keeps its text and waits */
+.cs-input:read-only {
+  color: var(--ink-2);
+}
+.cs-clear {
+  flex: none;
+  align-self: flex-end;
+  margin-bottom: 12px;
+}
+.cs-key {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  align-self: flex-end;
+  margin-bottom: 12px;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  color: var(--ink-2);
+  font-size: var(--fs-micro);
+  line-height: 1;
+}
+.cs-clear:not([hidden]) + .cs-key,
+.cs[data-cs-state="error"] .cs-clear,
+.cs[data-cs-state="error"] .cs-key {
+  display: none;
+}
+@media (hover: none) {
+  .cs-key,
+  .cs-hint__keys {
+    display: none;
+  }
+}
+
+.cs-under {
+  display: flex;
+  align-items: baseline;
+  gap: 0 20px;
+  margin-top: 8px;
+  font-size: var(--fs-small);
+  line-height: 24px;
+  color: var(--ink-2);
+}
+.cs-hint {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.cs-hint kbd,
+.cs-tips__body kbd {
+  padding: 0 4px;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  font-size: var(--fs-micro);
+}
+/* "Search tips" and (between a phone and a wide page) "Coverage": a word that opens the panel under the field */
+.cs-more-about {
+  flex: none;
+  white-space: nowrap;
+}
+.cs-more-about::after {
+  content: " +";
+  white-space: pre;
+  display: inline-block;
+  text-decoration: none;
+}
+.cs-more-about[aria-expanded="true"]::after {
+  content: " −";
+}
+.cs-more-about--coverage {
+  display: none;
+}
+.cs-fold__body {
+  display: none;
+}
+.cs-fold__body[data-open] {
+  display: block;
+}
+.cs-tips__body {
+  margin-top: 12px;
+  padding: 16px 20px 16px;
+  max-width: calc(60ch + 40px);
+  border-left: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper-2) 55%, transparent);
+  color: var(--ink);
+  font-size: var(--fs-note);
+  line-height: 24px;
+}
+.cs-tips__body ul {
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+
+/* ---- filters: a quiet row of form fields ------------------------------------------------------------------- */
+
+.cs-filters {
+  margin-top: 16px;
+}
+/* a narrow page folds the filters and the coverage notice away under one row, half each */
+.cs-folds {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.cs-fold {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px; /* 48 with the rules above and below the row */
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  transition: background-color var(--dur-1) var(--ease);
+}
+.cs-fold + .cs-fold {
+  padding-left: 16px;
+  border-left: 1px solid var(--rule);
+}
+.cs-fold:first-child {
+  padding-right: 16px;
+}
+.cs-fold .label {
+  color: var(--ink);
+  transition: color var(--dur-1) var(--ease);
+}
+.cs-fold:hover .label,
+.cs-fold:hover .cs-chevron,
+.cs-fold[aria-expanded="true"] .label {
+  color: var(--line);
+}
+.cs-fold:active {
+  background: var(--wash);
+}
+.cs-fold__note {
+  line-height: 16px;
+  color: var(--ink-2);
+}
+.cs-fold__note[data-cs-set] {
+  color: var(--line);
+}
+.cs-chevron {
+  flex: none;
+  margin-left: auto;
+  color: var(--ink-2);
+  transition:
+    transform var(--dur-2) var(--ease),
+    color var(--dur-1) var(--ease);
+}
+.cs-fold[aria-expanded="true"] .cs-chevron {
+  transform: rotate(180deg);
+}
+.cs-filters__body {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px 24px;
+  padding-block: 20px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.cs-filters__body[data-open] {
+  display: grid;
+}
+.cs-select label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cs-select__box {
+  position: relative;
+}
+.cs-select__box::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -5px;
+  border-right: 1.25px solid var(--ink-2);
+  border-bottom: 1.25px solid var(--ink-2);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.cs-select select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  margin: 0;
+  padding: 8px 22px 8px 0;
+  background: transparent;
+  border: 0;
+  /* the menu's one boundary: strong enough to find (3 to 1 or more) */
+  border-bottom: 1px solid var(--edge);
+  border-radius: 0;
+  color: var(--ink-2);
+  font-size: 1rem; /* 16 on a phone: a smaller field makes iOS zoom the page on focus */
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color var(--dur-1) var(--ease);
+}
+.cs-select select:hover {
+  border-bottom-color: var(--ink);
+}
+.cs-select select:active {
+  border-bottom-color: var(--line);
+}
+.cs-select select:focus-visible {
+  outline-offset: 4px;
+}
+.cs-select.is-set select {
+  color: var(--ink);
+  font-weight: 550;
+  border-bottom-color: var(--line);
+}
+.cs-select.is-set label {
+  color: var(--line);
+}
+.cs-select select:disabled {
+  cursor: default;
+}
+
+/* ---- coverage: the notice on the reading-room wall ----------------------------------------------------- */
+
+.cs-coverage {
+  padding-left: var(--cs-gutter);
+}
+.cs-coverage__body {
+  padding-block: 16px 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.cs-coverage__label {
+  display: none;
+}
+.cs-coverage__text {
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cs-coverage__text p + p {
+  margin-top: 8px;
+}
+.cs-coverage__text b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---- the count line -------------------------------------------------------------------------------------- */
+
+.cs-bar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 16px;
+  margin-top: 16px;
+  padding: 12px 0 10px var(--cs-gutter);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  min-height: 48px;
+}
+.cs-count {
+  color: var(--ink);
+  line-height: 24px;
+}
+.cs-count:has([data-cs-count-text]:empty) {
+  min-height: 24px;
+}
+/* on a narrow page the sentence is two lines: what was found, then what is hidden ("8 boilerplate hidden"). The
+   dot between them and the words "approval-" and "conditions" stay in the text (it is the current site's sentence,
+   for a screen reader and for a copy) but take no room. "Clear all" sits at the end of the last line. */
+.cs-count {
+  flex: 1 1 100%;
+}
+.cs-count__found,
+.cs-count__hidden {
+  display: block;
+}
+.cs-count__hidden {
+  color: var(--ink-2);
+}
+.cs-count__word {
+  font-size: 0;
+  line-height: 0;
+}
+/* (top, not baseline: on a touch screen the button's box is taller than the line and must not push it apart) */
+.cs-showall {
+  vertical-align: top;
+}
+.cs-bar:has(.cs-reset:not([hidden])) .cs-count > :last-child {
+  padding-right: 78px;
+}
+.cs-reset {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  margin: 0;
+  line-height: 24px;
+}
+.cs[data-cs-state="loading"] .cs-bar,
+.cs[data-cs-state="error"] .cs-bar {
+  border-bottom-color: transparent;
+}
+
+/* ---- results: typeset excerpts ---------------------------------------------------------------------------- */
+
+.cs-results {
+  min-height: 40vh;
+}
+.cs-list {
+  position: relative;
+}
+
+/* a list from one motion names the motion once, above the list */
+.cs-case {
+  padding: 16px 0 15px var(--cs-gutter);
+  border-bottom: 1px solid var(--rule);
+}
+.cs-case .cs-meta {
+  margin-top: 4px;
+}
+
+.cs-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  /* a little room either side, so the wash of a linked card and the focus rings of its links clear the text */
+  margin-inline: -8px;
+  padding: 24px 8px 32px;
+  /* the rule under the card, drawn as wide as the text column */
+  background: linear-gradient(var(--rule), var(--rule)) 8px 100% / calc(100% - 16px) 1px no-repeat;
+  scroll-margin-top: 16px;
+  /* cards far down the page are not laid out until they are near: typing stays quick on a slow machine */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 440px;
+}
+.cs-list--laid-out .cs-card {
+  content-visibility: visible;
+}
+.cs-card.is-target {
+  background-color: color-mix(in srgb, var(--line) 7%, transparent);
+  box-shadow: inset 2px 0 0 var(--line);
+}
+.cs-card:focus-visible {
+  outline-offset: 0;
+}
+
+.cs-kicker {
+  order: -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5em;
+  margin-bottom: 8px;
+}
+.cs-kind {
+  color: var(--ink);
+}
+.cs-kind--specific {
+  color: var(--line);
+}
+.cs-cat::before {
+  content: "· ";
+}
+
+.cs-card__title {
+  display: grid;
+  /* the titles share an edge down the list whatever the number's length (most are one to three characters) */
+  grid-template-columns: minmax(24px, max-content) minmax(0, 1fr);
+  column-gap: 8px;
+  align-items: baseline;
+  font-family: var(--font-ui);
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.cs-card__num {
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  line-height: 16px; /* shorter than the title's line, so sitting on its baseline does not make the row taller */
+  font-weight: 400;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+/* which case, where, when: straight under the title, where the eye scans for it */
+.cs-meta {
+  margin: 4px 0 0;
+  max-width: var(--measure);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+/* each fact is one piece: a line breaks between facts, never inside a case number, a date or a business type */
+.cs-meta > div {
+  display: inline;
+  white-space: nowrap;
+}
+.cs-meta > .cs-meta__address {
+  white-space: normal;
+}
+.cs-meta dd {
+  display: inline;
+  margin: 0;
+}
+.cs-meta > div:not(:last-child)::after {
+  content: " ·";
+  white-space: pre;
+}
+/* the second line: business, decision date, zoning */
+.cs-meta > .cs-meta__address:not(:last-child)::after {
+  content: none;
+}
+.cs-meta > .cs-meta__second::before {
+  content: "\A";
+  white-space: pre;
+}
+.cs-meta__record {
+  color: var(--ink);
+}
+/* in a list from one motion the cards do not repeat it on the screen (it stays for a screen reader, and on the
+   card a link points at) */
+.cs-list--one-case .cs-card:not(.is-target) .cs-meta {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cs-text {
+  margin-top: 12px;
+  max-width: var(--measure);
+  font-size: var(--fs-read);
+  line-height: 28px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+  hanging-punctuation: first;
+}
+/* every condition's text opens by repeating its title: the heading has said it, so the run is set quieter */
+.cs-text__lead {
+  color: var(--ink-2);
+}
+
+/* a match: a cobalt highlighter stroke, and nothing that could be taken for a link */
+.cs mark {
+  background: var(--wash);
+  /* (the ink, whatever the text round it: secondary ink on the highlighter is under 4.5 to 1 on the dark ground) */
+  color: var(--ink);
+  padding: 0.1em 0.12em;
+  margin: 0 -0.12em;
+  text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.cs-text__lead mark {
+  color: var(--ink);
+}
+
+.cs-unreadable {
+  margin-top: 12px;
+  max-width: var(--measure);
+  padding: 12px 16px 12px;
+  border-left: 1px solid var(--stamp);
+  background: color-mix(in srgb, var(--paper-2) 55%, transparent);
+  font-size: var(--fs-note);
+  line-height: 24px;
+}
+.cs-unreadable summary {
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+}
+.cs-unreadable .cs-text {
+  font-size: var(--fs-note);
+  line-height: 24px;
+  color: var(--ink-2);
+}
+
+.cs-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-top: 16px;
+  max-width: var(--measure);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cs-pdf__dot {
+  opacity: 0.6;
+}
+.cs-arrow {
+  flex: none;
+  margin-left: -1px;
+}
+.cs-alt a,
+.cs-permalink {
+  color: var(--ink-2);
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+.cs-alt a:hover,
+.cs-permalink:hover {
+  color: var(--line);
+  text-decoration-color: currentColor;
+}
+.cs-alt a:active,
+.cs-permalink:active {
+  color: var(--ink);
+}
+.cs-links .feedback {
+  margin-left: auto;
+}
+
+.cs-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding: 24px 0 0 var(--cs-gutter);
+}
+.cs-more__status {
+  color: var(--ink-2);
+}
+.cs-more .ruled-button {
+  min-height: 40px;
+  padding-inline: 16px;
+}
+
+/* ---- loading, nothing found, could not load -------------------------------------------------------------- */
+
+.cs-loading,
+.cs-empty {
+  padding: 48px 0 64px var(--cs-gutter);
+}
+.cs-loading__line,
+.cs-empty__line {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.3rem + 1.6cqi, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+.cs-loading__line {
+  font-style: italic;
+}
+.cs-progress {
+  position: relative;
+  height: 1px;
+  max-width: var(--measure);
+  margin-top: 20px;
+  background: var(--rule);
+  overflow: hidden;
+}
+.cs-progress span {
+  position: absolute;
+  inset: 0;
+  background: var(--line);
+  transform: scaleX(var(--cs-progress, 0));
+  transform-origin: left center;
+  transition: transform 120ms linear;
+}
+.cs-progress.is-open-ended span {
+  transform: none;
+  width: 30%;
+  animation: cs-sweep 1.4s var(--ease-in-out) infinite alternate;
+}
+@keyframes cs-sweep {
+  from {
+    translate: -20% 0;
+  }
+  to {
+    translate: 320% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-progress.is-open-ended span {
+    animation: none;
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+.cs-loading__bytes {
+  margin-top: 10px;
+  color: var(--ink-2);
+}
+.cs-empty__note {
+  margin-top: 12px;
+  max-width: 62ch;
+  color: var(--ink-2);
+  line-height: 24px;
+}
+/* the way on: clear what was asked, or try a search that finds something */
+.cs-empty__ways {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  margin-top: 24px;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cs-empty__ways .ruled-button {
+  min-height: 40px;
+  padding-inline: 16px;
+}
+/* could not load: the headline stays ink (vermilion is the stamp's), with a thin vermilion rule as the signal */
+.cs-empty--error {
+  margin: 48px 0 64px var(--cs-gutter);
+  padding: 4px 0 8px 20px;
+  border-left: 1px solid var(--stamp);
+}
+
+/* ---- the notes under the results --------------------------------------------------------------------------- */
+
+.cs-notes {
+  margin-top: var(--s-8);
+  padding-left: var(--cs-gutter);
+}
+.cs-notes:empty {
+  display: none;
+}
+.cs-note {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px 0;
+  padding: 16px 0 23px;
+  border-top: 1px solid var(--rule);
+}
+.cs-note:first-child {
+  border-top-color: var(--ink);
+}
+.cs-note__head {
+  color: var(--ink);
+}
+.cs-note p {
+  max-width: 60ch;
+  font-size: var(--fs-note);
+  line-height: 24px;
+  color: var(--ink-2);
+}
+/* a list too long for a sentence: folded away as a table (the motions with no conditions, the motions left out) */
+.cs-table {
+  font-size: var(--fs-small);
+  line-height: 20px;
+  color: var(--ink-2);
+}
+.cs-none {
+  margin-top: 8px;
+}
+.cs-removed {
+  padding: 16px 0 0;
+  border-top: 1px solid var(--rule);
+}
+.cs-table summary {
+  width: max-content;
+  max-width: 100%;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  color: var(--line);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.cs-table summary::-webkit-details-marker {
+  display: none;
+}
+.cs-table summary::after {
+  content: " +";
+  white-space: pre;
+  display: inline-block;
+  text-decoration: none;
+}
+.cs-table[open] summary::after {
+  content: " −";
+}
+.cs-table summary:hover,
+.cs-more-about:hover {
+  text-decoration-thickness: 2px;
+}
+.cs-table summary:active {
+  color: var(--ink);
+}
+.cs-table__scroll {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+.cs-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cs-table th {
+  padding: 6px 16px 6px 0;
+  text-align: left;
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--ink);
+  white-space: nowrap;
+}
+.cs-table td {
+  padding: 6px 16px 6px 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule-quiet);
+}
+.cs-table td:first-child {
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+/* ---- a finger: every control at least 44 px, with no two overlapping ------------------------------------- */
+
+@media (pointer: coarse) {
+  .cs-select select {
+    min-height: 48px;
+  }
+  /* "Clear all" at the end of the count's last line: 48 px to the touch, its words where they were */
+  .cs-reset {
+    right: -8px;
+    bottom: -2px;
+  }
+  .cs-more .ruled-button,
+  .cs-empty__ways .ruled-button {
+    min-height: var(--tap);
+  }
+  /* the small links under a card: each is 44 px tall to the touch, and the rows are far enough apart that no
+     two of them (or the button above) overlap */
+  .cs-links {
+    row-gap: 16px;
+  }
+  .cs-alt a,
+  .cs-notes p a,
+  .cs-coverage__more a {
+    padding-block: 15px;
+  }
+  .cs-permalink,
+  .cs-links .feedback {
+    padding-block: 12px;
+  }
+  .cs-table summary {
+    padding-block: 12px;
+  }
+  .cs-removed {
+    padding-top: 4px;
+  }
+  .cs-none {
+    margin-top: -4px;
+  }
+}
+
+/* ---- a phone with room for two menus side by side ----------------------------------------------------------- */
+
+@container cs (min-width: 340px) {
+  .cs-filters__body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cs-select--kind {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---- from a tablet up: the numbers hang in the margin ------------------------------------------------------ */
+
+@container cs (min-width: 720px) {
+  .cs {
+    --cs-gutter: 64px;
+  }
+  .cs-title {
+    line-height: 48px;
+  }
+  .cs-query__full {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+  }
+  .cs-query__short {
+    display: none;
+  }
+  .cs-input {
+    padding: 8px 0 7px;
+    line-height: 64px;
+  }
+  .cs-clear,
+  .cs-key {
+    margin-bottom: 20px;
+  }
+  /* the coverage notice is a word under the field here, next to "Search tips"; it opens above the results */
+  .cs-more-about--coverage {
+    display: inline-block;
+  }
+  .cs-filters {
+    margin-top: 24px;
+  }
+  .cs-folds {
+    display: none;
+  }
+  .cs-select select {
+    font-size: var(--fs-note);
+  }
+  /* three menus, then the year and "Which conditions" at twice the width, so its long default is never cut */
+  .cs-filters__body,
+  .cs-filters__body[data-open] {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 16px;
+    padding-block: 0;
+    border-bottom: 0;
+  }
+  .cs-select--kind {
+    grid-column: span 2;
+  }
+  .cs-coverage__body {
+    margin-top: 24px;
+    padding-block: 0;
+    border-bottom: 0;
+  }
+  .cs-coverage__label {
+    display: block;
+  }
+  .cs-coverage__text {
+    padding-top: 8px;
+    columns: 3;
+    column-gap: 32px;
+  }
+  .cs-coverage__text p {
+    break-inside: avoid;
+  }
+  .cs-coverage__text p + p {
+    margin-top: 0;
+  }
+  .cs-bar {
+    margin-top: 24px;
+    align-items: baseline;
+  }
+  /* the count is one sentence on one line again */
+  .cs-count {
+    flex: 0 1 auto;
+  }
+  .cs-count__found,
+  .cs-count__hidden {
+    display: inline;
+    color: inherit;
+  }
+  .cs-bar:has(.cs-reset:not([hidden])) .cs-count > :last-child {
+    padding-right: 0;
+  }
+  .cs-count__word {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .cs-reset {
+    position: static;
+    margin: 0 0 0 auto;
+  }
+  .cs-card {
+    margin-inline: 0;
+    padding: 24px 0 32px var(--cs-gutter);
+    background-position: 0 100%;
+    background-size: 100% 1px;
+  }
+  .cs-card:focus-visible {
+    outline-offset: -2px;
+  }
+  /* the margin line of ruled paper, with the condition numbers to its left */
+  .cs-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--cs-gutter) - 16px);
+    width: 1px;
+    background: color-mix(in srgb, var(--line) 34%, transparent);
+  }
+  .cs-card__title {
+    grid-template-columns: var(--cs-gutter) minmax(0, 1fr);
+    column-gap: 0;
+    margin-left: calc(-1 * var(--cs-gutter));
+  }
+  .cs-card__num {
+    justify-self: end;
+    padding-right: 28px;
+  }
+  .cs-note {
+    grid-template-columns: 176px minmax(0, 1fr);
+    gap: 0 16px;
+  }
+  .cs-note__head {
+    padding-top: 4px;
+  }
+}
+
+/* ---- wide: all five menus on one line; the coverage notice moves to the right-hand margin and stays in view -- */
+
+@container cs (min-width: 1040px) {
+  .cs {
+    --cs-aside: 288px;
+    padding-top: var(--s-5);
+    grid-template-columns: minmax(0, 1fr) var(--cs-aside);
+    column-gap: 64px;
+    /* the notes keep to the left column, so the notice in the margin has the right one to itself all the way down */
+    grid-template-areas:
+      "head head"
+      "form form"
+      "bar bar"
+      "results coverage"
+      "notes coverage";
+  }
+  .cs-head {
+    grid-area: head;
+    margin-bottom: 24px;
+  }
+  .cs-sub {
+    max-width: none;
+  }
+  .cs-form {
+    grid-area: form;
+  }
+  /* four menus share the line; "Which conditions" takes the width of its longest choice */
+  .cs-filters__body,
+  .cs-filters__body[data-open] {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) max-content;
+    column-gap: 20px;
+  }
+  .cs-select--kind {
+    grid-column: auto;
+  }
+  .cs-more-about--coverage {
+    display: none;
+  }
+  .cs-bar {
+    grid-area: bar;
+    margin-top: 32px;
+  }
+  .cs-results {
+    grid-area: results;
+  }
+  .cs-notes {
+    grid-area: notes;
+  }
+  .cs-coverage {
+    grid-area: coverage;
+    align-self: start;
+    position: sticky;
+    top: 24px;
+    margin-top: 24px;
+    padding: 0 0 0 20px;
+    border-left: 1px solid var(--line);
+  }
+  .cs-coverage__body,
+  .cs-coverage__body[data-open] {
+    display: block;
+    margin-top: 0;
+  }
+  .cs-coverage__text {
+    columns: auto;
+  }
+  .cs-coverage__text p + p {
+    margin-top: 12px;
+  }
+}
+
+/* a tablet: "Clear all" is in the line again, and keeps its 48 px to the touch without making the bar taller */
+@media (pointer: coarse) {
+  @container cs (min-width: 720px) {
+    .cs-reset {
+      margin: -12px -8px -12px auto;
+    }
+  }
+}
+
+@media print {
+  .cs-form,
+  .cs-more,
+  .cs-reset,
+  .cs-showall,
+  .cs-empty__ways {
+    display: none;
+  }
+  .cs-card {
+    content-visibility: visible;
+  }
+  .cs-list--one-case .cs-card .cs-meta {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 4px 0 0;
+    clip-path: none;
+    white-space: normal;
+  }
+}
+
+/* forced colours: a match is the system's own highlighter, its text the system's text on it */
+@media (forced-colors: active) {
+  .cs mark {
+    background: Mark;
+    color: MarkText;
+    forced-color-adjust: none;
+  }
+}

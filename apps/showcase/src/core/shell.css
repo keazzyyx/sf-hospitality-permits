@@ -1,0 +1,206 @@
+/* Page chrome: the wordmark top left, the skip link (always visible, first in the tab order), the theme flip top
+   right, and a slim footer with the coverage facts. */
+
+.shell-head {
+  flex: none;
+  border-bottom: 1px solid var(--rule);
+}
+.shell-head__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  height: 63px; /* with the rule: 64, one major square */
+}
+
+.mark-link {
+  order: 1;
+  display: inline-flex;
+  color: var(--stamp);
+  text-decoration: none;
+  margin-right: auto;
+}
+.mark {
+  display: block;
+  color: var(--stamp);
+  overflow: visible;
+}
+
+/* first in the document, so the first Tab lands on it; shown at the right, next to the theme flip */
+.shell-skip {
+  order: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-data);
+  font-size: var(--fs-small);
+  line-height: 24px;
+  color: var(--line);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.shell-skip span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+.shell-skip:hover span {
+  text-decoration-thickness: 2px;
+}
+.shell-skip:active {
+  color: var(--ink);
+}
+.shell-skip svg {
+  flex: none;
+  transition: transform var(--dur-2) var(--ease);
+}
+/* on a page that is the search already there is nothing to skip: the link waits off screen for the keyboard */
+.shell-skip--quiet:not(:focus):not(:focus-visible) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.shell-skip:hover svg {
+  transform: translateY(2px);
+}
+
+.theme-flip {
+  order: 3;
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: -6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--ink);
+  transition: color var(--dur-1) var(--ease);
+}
+.theme-flip:hover {
+  color: var(--line);
+}
+.theme-flip:active {
+  color: var(--ink);
+  background: var(--wash);
+}
+.theme-flip svg {
+  transition: transform var(--dur-3) var(--ease-in-out);
+}
+.theme-flip[data-theme="blueprint"] svg {
+  transform: rotate(180deg);
+}
+.theme-flip:focus-visible {
+  border-radius: 50%;
+}
+
+.shell-main {
+  flex: 1 0 auto;
+  display: block;
+}
+
+.shell-foot {
+  flex: none;
+  margin-top: var(--s-8);
+  border-top: 1px solid var(--rule);
+}
+.shell-foot__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-2) var(--s-5);
+  padding-block: 20px 28px;
+  font-family: var(--font-data);
+  font-size: var(--fs-micro);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+}
+.shell-foot__inner p {
+  text-wrap: balance;
+}
+.shell-foot a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+.shell-foot a:hover {
+  color: var(--line);
+  text-decoration-color: currentColor;
+}
+.shell-foot a:active {
+  color: var(--ink);
+}
+.shell-foot a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: none;
+}
+.shell-foot__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25em;
+}
+
+@media (max-width: 520px) {
+  .shell-head__inner {
+    gap: var(--s-3);
+  }
+}
+
+/* the narrowest phones, and a small window zoomed to 200%: the skip link keeps its arrow and gives up its words
+   (they stay its name), so the header fits and nothing scrolls sideways */
+@media (max-width: 359px) {
+  .shell-head__inner {
+    gap: var(--s-2);
+  }
+  .shell-skip {
+    min-width: var(--tap);
+    min-height: var(--tap);
+    justify-content: center;
+  }
+  .shell-skip span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* a finger needs 44 px */
+@media (pointer: coarse) {
+  .mark-link {
+    align-items: center;
+    min-height: var(--tap);
+  }
+  .shell-skip {
+    min-height: var(--tap);
+  }
+  .theme-flip {
+    width: var(--tap);
+    height: var(--tap);
+    margin-right: -12px;
+  }
+  .shell-foot__nav {
+    gap: 0 20px;
+    margin-block: -8px;
+  }
+  .shell-foot__nav a {
+    padding-block: 14px;
+  }
+}
+
+@media print {
+  body {
+    background-image: none;
+  }
+  .shell-skip,
+  .theme-flip {
+    display: none;
+  }
+}
