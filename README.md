@@ -385,6 +385,11 @@ Supabase project ref (`supabase/push-auth-templates.sh` takes it as an argument 
 The deploy files (`render.yaml`, `apps/api/fly.toml`, `apps/api/railway*.toml`) hold no secrets or account ids; the GitHub
 workflow `ingest.yml` runs only when started by hand.
 
+## Security
+
+Report a vulnerability privately through the repository's Security tab ("Report a vulnerability"), not in a
+public issue. What is in scope and what to expect: [SECURITY.md](SECURITY.md).
+
 ## Licence
 
 Copyright the sf-hospitality-permits contributors. Licensed under the GNU Affero General Public License v3.0 only

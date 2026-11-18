@@ -1,11 +1,11 @@
 // Page chrome shared by every page: the wordmark top left, a "skip to search" link that is first in the tab order
 // (always visible on a page with an opening to skip; shown on focus on a page that is the search already), the
-// theme flip top right, and a slim footer with the coverage facts.
+// theme flip top right, and a slim footer with the coverage facts, the pages, and the source code and its licence.
 
 import { coverageFacts, day } from "@conditions/coverage";
 import { createMarkLink } from "./brand";
 import { coveragePage, homePage, sitePath } from "./paths";
-import { contactLine, SITE } from "./site";
+import { contactLine, SITE, SOURCE } from "./site";
 import { createThemeFlip, initTheme } from "./theme";
 import type { ConditionsData } from "./search/types";
 
@@ -120,6 +120,20 @@ export function mountShell(options: ShellOptions): Shell {
     if (page.id === options.current) a.setAttribute("aria-current", "page");
     nav.append(a);
   }
+  // the code and its licence (external: the repository on GitHub)
+  const source = document.createElement("nav");
+  source.className = "shell-foot__nav shell-foot__source";
+  source.setAttribute("aria-label", "Source code");
+  for (const link of [
+    { href: SOURCE.repo, label: "Source code", rel: "noopener" },
+    { href: SOURCE.licence, label: `${SOURCE.licenceName} licence`, rel: "license noopener" },
+  ]) {
+    const a = document.createElement("a");
+    a.href = link.href;
+    a.textContent = link.label;
+    a.rel = link.rel;
+    source.append(a);
+  }
   // the public site: its contact line, in the live site's words (one address, also on every card)
   let small: HTMLParagraphElement;
   if (SITE) small = contactLine(SITE.contact);
@@ -127,7 +141,7 @@ export function mountShell(options: ShellOptions): Shell {
     small = document.createElement("p");
     small.textContent = "Local pages, not published. Built from public San Francisco Planning records. Not legal advice.";
   }
-  foot.append(facts, nav, small);
+  foot.append(facts, nav, source, small);
   footer.append(foot);
 
   body.append(header, main, footer);

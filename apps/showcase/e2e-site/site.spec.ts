@@ -187,6 +187,10 @@ test.describe("no CSP violation, no console error, the whole way", () => {
         await expect(page.locator(".shell-contact")).not.toContainText("Questions or corrections");
       }
       await expect(page.locator(".shell-contact")).toContainText("Page views are counted by Vercel Web Analytics, without cookies.");
+      // the footer offers the source code and its licence (what the AGPL asks of a network service)
+      const source = page.getByRole("navigation", { name: "Source code" });
+      await expect(source.getByRole("link", { name: "Source code" })).toHaveAttribute("href", "https://github.com/keazzyyx/sf-hospitality-permits");
+      await expect(source.getByRole("link", { name: "AGPL-3.0 licence" })).toHaveAttribute("rel", "license noopener");
       // the flip
       await page.locator(".theme-flip").click();
       await expect(page.locator("html")).not.toHaveClass(/c-flip/, { timeout: 10_000 });

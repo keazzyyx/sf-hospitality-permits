@@ -4,6 +4,8 @@
 
 export const SITE = __SITE__;
 
+export { SOURCE } from "./source";
+
 /** The site's contact line, in the live site's words: one address for questions, corrections and the card links. */
 export function contactLine(address: string): HTMLParagraphElement {
   const p = document.createElement("p");

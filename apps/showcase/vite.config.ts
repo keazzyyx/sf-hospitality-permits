@@ -4,6 +4,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { defineConfig, type Plugin } from "vite";
 import { readSubset, SOURCE as STORY_SOURCE } from "./tools/story-facts.mjs";
+import { SOURCE } from "./src/core/source";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repo = resolve(here, "../..");
@@ -210,6 +211,11 @@ export default defineConfig(({ mode }) => {
             // the notes in the inline script are for this repository, not for the public
             .replace(/^[ \t]*\/\/[^\n]*\n/gm, "");
           if (!coverage) out = out.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${SITE_DESCRIPTION}">`);
+          // without scripts the page still links its source code and licence (the footer's links)
+          out = out.replace(
+            "</noscript>",
+            `  <p style="max-width: 40rem; margin: 1rem auto; padding: 0 1rem"><a href="${SOURCE.repo}">Source code</a> under the <a rel="license" href="${SOURCE.licence}">${SOURCE.licenceName} licence</a>.</p>\n</noscript>`,
+          );
           // without scripts the page still says who to write to (the contact line's own words)
           const contact = siteConfig?.contact;
           if (contact) {

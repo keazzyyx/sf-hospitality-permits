@@ -13,6 +13,17 @@ async function open(page: Page, urlHash = "", path = "/search/"): Promise<void> 
 }
 
 test.describe("desktop", () => {
+  test("every page's footer links the source code and its licence", async ({ page }) => {
+    for (const path of ["/search/", "/coverage/"]) {
+      await page.goto(path);
+      const source = page.getByRole("navigation", { name: "Source code" });
+      await expect(source.getByRole("link", { name: "Source code" })).toHaveAttribute("href", "https://github.com/keazzyyx/sf-hospitality-permits");
+      const licence = source.getByRole("link", { name: "AGPL-3.0 licence" });
+      await expect(licence).toHaveAttribute("href", "https://github.com/keazzyyx/sf-hospitality-permits/blob/main/LICENSE");
+      await expect(licence).toHaveAttribute("rel", "license noopener");
+    }
+  });
+
   test("the coverage notice in the margin never sits on top of the notes (1440 px)", async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await open(page, hash({ q: "outdoor seating" }));
