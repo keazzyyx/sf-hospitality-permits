@@ -329,9 +329,12 @@ def test_the_c_build(tmp_path: Path, fake_stage: None) -> None:
     for html in (index, coverage):
         assert html.count(B.ANALYTICS_SCRIPT) == 1 and html.count(B.ANALYTICS_QUEUE) == 1
         assert 'name="robots"' not in html and "Prototype" not in html
-        # every file the page loads is the site's own, by its content name (the contact line's mailto: aside)
-        assert all(u.startswith("/assets/") or u == "/_vercel/insights/script.js"
-                   for u in re.findall(r'(?:src|href)="(?!mailto:)([^"#]+)"', html))  # fmt: skip
+        # every file the page loads is the site's own, by its content name (plain <a> links, such as the noscript
+        # text's source code and licence, load nothing)
+        loaded = re.findall(r'<(?:script|link|img)\b[^>]*?\b(?:src|href)="([^"#]+)"', html)
+        assert loaded and all(
+            u.startswith("/assets/") or u == "/_vercel/insights/script.js" for u in loaded
+        ), loaded
         # the notices of every package in it, named in the head
         (license_name,) = re.findall(
             r'<link rel="license" href="/(assets/third-party-licenses\.[0-9a-f]{12}\.md)">', html
